@@ -5,9 +5,12 @@ order: 4
 what: Cancer that has spread to nearby lymph nodes (IVA) or to bones or other distant organs (IVB).
 level: 2
 burden: heavy
+burden_why: Lifelong hormone therapy and other drugs whose side effects build up over years.
 survival: Around 50% survive at least 5 years (5-year net survival, England, diagnosed 2013-2017); ~40%
   for distant spread in the US (SEER, 2016-2022)
-share: ~9% of new US cases have distant spread (SEER)
+share: About 1 in 11 US prostate cancers have spread to distant organs at diagnosis (SEER 'distant', 9%);
+  node-only stage IVA adds more
+share_url: https://seer.cancer.gov/statfacts/html/prost.html
 treatment: Lifelong hormone therapy plus an androgen receptor drug, sometimes chemotherapy, PARP inhibitors
   or PSMA radioligand therapy; side effects build up over years. Distant spread is controlled for years
   but not cured; node-only (IVA) disease is often treated with radiation and hormone therapy aiming to

@@ -5,8 +5,11 @@ order: 2
 what: A thin melanoma (up to 2 mm, or up to 1 mm if the surface is broken) with no spread to lymph nodes.
 level: 5
 burden: light
+burden_why: Usually an outpatient excision, sometimes with a lymph node biopsy.
 survival: ~98% melanoma-specific survival at 5 years, 95% at 10 years (AJCC 8th edition)
-share: Most of the ~77% of US cases found while localized (SEER, stages I-II combined)
+share: Most of the roughly 3 in 4 US melanomas found before spreading beyond the skin (SEER 'localized',
+  77%, stages I-II)
+share_url: https://seer.cancer.gov/statfacts/html/melan.html
 treatment: Wide excision, usually outpatient; thicker stage IB tumors often add a sentinel lymph node
   biopsy. Nearly all are cured.
 caveat: SEER share is for localized disease (stage I and II together), not stage I alone. About 95% survive

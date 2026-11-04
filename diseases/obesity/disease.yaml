@@ -8,6 +8,10 @@ summary: A chronic disease of excess body fat that raises the risk of diabetes, 
 toll:
   text: Over 1 billion people worldwide live with obesity (WHO/World Obesity, 2025 reports).
   url: https://data.worldobesity.org/publications/world-obesity-atlas-2025-v7.pdf
+  ratio: "2 in 5"
+  ratio_caption: "US adults has obesity"
+  ratio_url: https://www.cdc.gov/obesity/adult-obesity-facts/index.html
+  ratio_basis: "CDC Adult Obesity Facts: prevalence of obesity among US adults 20+ was 41.9% (2017-March 2020); about 2 in 5."
 status:
   level: 2
   why: GLP-1-based drugs and surgery now give large, lasting weight loss for many, but weight usually

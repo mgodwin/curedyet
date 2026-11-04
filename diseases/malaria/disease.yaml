@@ -8,6 +8,10 @@ summary: A mosquito-borne parasite infection that causes fever and can kill, mos
 toll:
   text: About 282 million cases and 610,000 deaths in 2024 (WHO World Malaria Report 2025)
   url: https://www.who.int/teams/global-malaria-programme/reports/world-malaria-report-2025
+  ratio: "1 case per 29"
+  ratio_caption: "people worldwide in 2024 (some people are infected more than once)"
+  ratio_url: https://www.who.int/news-room/fact-sheets/detail/malaria
+  ratio_basis: "Derived: WHO's 282 million malaria cases in 2024 divided by UN world population of 8.2 billion (https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/). Cases, not people. Alternative: WHO says children under 5 are about 3 in 4 malaria deaths in Africa."
 status:
   level: 5
   why: Artemisinin combination therapies cure most uncomplicated cases in 3 days when given promptly.

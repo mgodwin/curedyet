@@ -6,6 +6,9 @@ what: The earlier stages of dry macular degeneration, where yellow deposits buil
   and vision is often still good.
 level: 1
 burden: light
+burden_why: Treatment is at most daily vitamin supplements and regular eye checks.
+share: About 9 in 10 Americans with AMD have the early or intermediate form
+share_url: https://healthdata.org/research-article/prevalence-age-related-macular-degeneration-us-2019
 treatment: For intermediate AMD, daily AREDS2 vitamin and mineral supplements cut the risk of progressing
   to advanced AMD by about a quarter; otherwise care is monitoring and not smoking. Nothing reverses it,
   and many still progress.

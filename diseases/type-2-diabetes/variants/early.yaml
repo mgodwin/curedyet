@@ -6,6 +6,8 @@ what: Type 2 diabetes diagnosed within about the last six years, in people with 
   weight loss can still bring blood sugar back to normal.
 level: 3
 burden: moderate
+burden_why: Lifelong pills or weekly injections; reaching remission takes a demanding very-low-calorie
+  diet or bariatric surgery.
 survival: ~46% in remission at 1 year, 36% at 2 years and ~10% at 5 years (DiRECT diet programme)
 treatment: Most people take lifelong pills or weekly GLP-1 or GIP/GLP-1 injections, which control blood
   sugar but must be continued. A structured very-low-calorie diet programme, or bariatric surgery, can

@@ -6,6 +6,11 @@ what: The late form of dry macular degeneration, where patches of retinal cells 
   slowly die off.
 level: 1
 burden: moderate
+burden_why: Eye injections every one to two months that only slow the damage and raise the risk of wet
+  AMD.
+share: Part of the roughly 1 in 13 Americans with AMD who have a late form (geographic atrophy or wet
+  AMD)
+share_url: https://healthdata.org/research-article/prevalence-age-related-macular-degeneration-us-2019
 treatment: Pegcetacoplan or avacincaptad pegol eye injections every one to two months slowed lesion growth
   by roughly 16-22% over two years, without a clear benefit on vision, and raised the risk of developing
   wet AMD. Lost vision is not restored and the disease keeps advancing.

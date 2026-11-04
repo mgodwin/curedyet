@@ -6,6 +6,7 @@ what: A tumor 2 to 5 cm, or a smaller tumor that has spread to a few (1 to 3) ne
   or a larger tumor with no node spread.
 level: 3
 burden: heavy
+burden_why: Surgery and radiation are usually joined by chemotherapy, HER2 drugs or years of hormone therapy.
 survival: About 90% survive at least 5 years (5-year net survival, England, diagnosed 2018-2022)
 treatment: Surgery and usually radiation, with chemotherapy common, HER2 drugs for HER2-positive disease,
   and years of endocrine therapy for hormone-positive disease. Most are cured, but late relapses can occur

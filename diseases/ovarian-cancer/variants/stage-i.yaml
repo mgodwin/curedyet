@@ -5,7 +5,11 @@ order: 1
 what: The cancer is found only in one or both ovaries or fallopian tubes.
 level: 4
 burden: heavy
+burden_why: Major surgery to remove the ovaries, tubes and womb, and higher-risk tumors add chemotherapy.
 survival: ~95% alive at 5 years (net survival, England 2016-2020)
+share: About 1 in 5 US ovarian cancers are found while still confined to the ovary (SEER 'localized',
+  22%)
+share_url: https://seer.cancer.gov/statfacts/html/ovary.html
 treatment: Surgery to remove the ovaries, tubes and womb and check for spread usually cures it; higher-risk
   tumors also get several cycles of chemotherapy.
 caveat: About 95% survive 5 years in England, and even allowing for some late relapse the long-term cure

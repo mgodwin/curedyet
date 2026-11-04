@@ -5,6 +5,7 @@ order: 1
 what: 'Melanoma in situ: cancer cells only in the top layer of the skin, not growing deeper.'
 level: 5
 burden: light
+burden_why: A minor excision under local anesthetic, then regular skin checks.
 survival: Essentially all cured by excision; no stage-specific survival figure verified
 treatment: A minor outpatient excision with a small margin under local anesthetic, then regular skin checks.
   Cures almost everyone.

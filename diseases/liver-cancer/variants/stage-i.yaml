@@ -5,7 +5,12 @@ order: 1
 what: A single tumor in the liver that has not grown into blood vessels or spread.
 level: 3
 burden: heavy
+burden_why: Cure needs surgery, needle ablation or a liver transplant, and the cancer often returns in
+  a damaged liver.
 survival: ~50% alive at 4 years (net survival, all primary liver cancer, England)
+share: Part of the nearly half of US liver cancers found while still confined to the liver (SEER 'localized',
+  45%)
+share_url: https://seer.cancer.gov/statfacts/html/livibd.html
 treatment: Small tumors can be removed by surgery, destroyed by ablation through a needle, or cured by
   a liver transplant. Whether cure is possible depends mostly on how well the rest of the liver works
   (BCLC very early or early stage, and transplant criteria), and the cancer often returns in a cirrhotic

@@ -5,6 +5,8 @@ order: 3
 what: A rarer Ebola virus species, driving the large 2026 epidemic in the Democratic Republic of the Congo.
 level: 1
 burden: heavy
+burden_why: There is no specific drug or vaccine, so care is isolation and intensive supportive care for
+  a life-threatening illness.
 survival: ~49% of confirmed cases in the 2026 DRC epidemic have died (ECDC counts); past outbreaks ~30%
   and ~50% (WHO)
 treatment: No vaccine or specific treatment is approved, so care is isolation with fluids and symptom

@@ -7,6 +7,10 @@ summary: A bacterial infection, usually of the lungs, spread through the air.
 toll:
   text: About 1.23 million deaths in 2024; 8.3M people diagnosed, a record (WHO Global TB Report 2025)
   url: https://www.pbs.org/newshour/health/global-tuberculosis-case-rise-to-a-record-but-deaths-fall-reports-who
+  ratio: "1 in 4"
+  ratio_caption: "people worldwide is estimated to have been infected with TB bacteria, though most never fall ill"
+  ratio_url: https://www.who.int/news-room/fact-sheets/detail/tuberculosis
+  ratio_basis: "WHO TB fact sheet: 'About a quarter of the global population is estimated to have been infected with TB bacteria.'"
 status:
   level: 4
   why: Standard multi-drug regimens cure most people with drug-susceptible TB, and 6-month all-oral regimens

@@ -5,7 +5,12 @@ order: 3
 what: The cancer has spread to nearby lymph nodes but not to distant organs.
 level: 3
 burden: heavy
+burden_why: Bowel surgery is followed by 3 to 6 months of chemotherapy that can cause nerve damage, fatigue
+  and gut upset.
 survival: ~65% alive at 5 years (net survival, England 2016-2020)
+share: Most of the roughly 37% of US colorectal cancers diagnosed after spreading to nearby lymph nodes
+  or tissue (SEER 'regional')
+share_url: https://seer.cancer.gov/statfacts/html/colorect.html
 treatment: Surgery followed by 3 to 6 months of chemotherapy (which can cause nerve damage, fatigue and
   gut upset) cures roughly two in three; rectal cancers usually also need chemoradiation. A small mismatch-repair-deficient
   subset now responds to immunotherapy.

@@ -7,6 +7,10 @@ summary: A viral liver infection that can become chronic and cause cirrhosis and
 toll:
   text: 240 million living with chronic HBV and 1.1 million deaths in 2024; 0.9M new infections/yr (WHO)
   url: https://www.who.int/news-room/fact-sheets/detail/hepatitis-b
+  ratio: "About 1 in 34"
+  ratio_caption: "people worldwide is living with chronic hepatitis B"
+  ratio_url: https://www.who.int/news-room/fact-sheets/detail/hepatitis-b
+  ratio_basis: "Derived: WHO's 240 million living with chronic HBV in 2024 divided by UN world population of 8.2 billion in 2024 (https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/)."
 status:
   level: 3
   why: Antivirals control most patients for life, and in Oct 2026 the FDA approved bepirovirsen, which

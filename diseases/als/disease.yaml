@@ -9,6 +9,10 @@ toll:
   text: About 1.9 new cases per 100,000 people per year worldwide; median survival about 2-4 years from
     onset (published estimates).
   url: https://en.wikipedia.org/wiki/Amyotrophic_lateral_sclerosis
+  ratio: "1 in 400"
+  ratio_caption: "people will develop ALS in their lifetime"
+  ratio_url: https://jamanetwork.com/journals/jama/fullarticle/2830516
+  ratio_basis: "Lifetime risk of about 1 in 400, stated in Turnbull, 'Platform Trials in ALS', JAMA 2025 editorial."
 status:
   level: 1
   why: Riluzole, edaravone and tofersen modestly slow decline in some patients, but ALS still progresses

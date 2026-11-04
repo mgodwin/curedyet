@@ -5,9 +5,12 @@ order: 1
 what: Epilepsy in which daily antiseizure medicines stop the seizures.
 level: 2
 burden: moderate
+burden_why: Daily pills for years or life, with side effects like tiredness, dizziness or mood changes,
+  but seizures are controlled.
 survival: ~64% seizure-free for at least a year on medicines (30-year Glasgow cohort of newly treated
   patients)
-share: About two-thirds of newly treated patients
+share: About 2 in 3 people newly treated for epilepsy become seizure-free on medicines
+share_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5885858
 treatment: Most people become seizure-free on one or two daily antiseizure medicines, usually taken for
   years or for life, with side effects such as tiredness, dizziness or mood changes and pregnancy concerns
   with some drugs. Seizures are controlled, not cured, though some can later stop medicines.

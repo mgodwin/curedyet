@@ -6,6 +6,8 @@ what: The cancer has grown through the bowel wall, possibly into nearby tissue, 
   nodes.
 level: 4
 burden: heavy
+burden_why: Bowel surgery is needed, and some add months of chemotherapy or, for rectal tumors, radiation
+  beforehand.
 survival: ~85% alive at 5 years (net survival, England 2016-2020)
 treatment: Bowel surgery is the main treatment and cures most people; higher-risk tumors may add a few
   months of chemotherapy, and rectal tumors often need radiation or chemoradiation first.

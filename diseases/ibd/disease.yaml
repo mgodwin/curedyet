@@ -8,6 +8,10 @@ summary: Inflammatory bowel diseases where the immune system inflames the gut, c
 toll:
   text: About 6.8M people had IBD worldwide in 2017 (GBD 2017).
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7026709/
+  ratio: "About 1 in 140"
+  ratio_caption: "Americans has been diagnosed with Crohn's disease or ulcerative colitis"
+  ratio_url: https://stacks.cdc.gov/view/cdc/134534
+  ratio_basis: "Lewis et al., Gastroenterology 2023 (CDC-funded claims study): standardized IBD prevalence 721 per 100,000, about 2.39 million Americans; 721 per 100,000 is about 1 in 140."
 status:
   level: 2
   why: Biologics and small molecules keep many patients in long remission, but most need lifelong treatment

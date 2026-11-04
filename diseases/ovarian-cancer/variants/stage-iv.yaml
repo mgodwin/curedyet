@@ -5,7 +5,12 @@ order: 4
 what: The cancer has spread to distant organs such as the liver, lungs or the fluid around the lungs.
 level: 1
 burden: heavy
+burden_why: Chemotherapy and surgery, then maintenance drugs and repeated treatment as it keeps coming
+  back.
 survival: ~15% alive at 5 years (net survival, England 2016-2020)
+share: Part of the more than half of US ovarian cancers found after spreading beyond the pelvis (SEER
+  'distant', 54%)
+share_url: https://seer.cancer.gov/statfacts/html/ovary.html
 treatment: Chemotherapy and surgery where possible, then maintenance drugs; it usually returns and is
   treated again with more chemotherapy or newer drugs. It extends life but rarely cures.
 url: https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/survival

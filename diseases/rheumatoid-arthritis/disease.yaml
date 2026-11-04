@@ -8,6 +8,10 @@ summary: An autoimmune disease where the immune system attacks joint linings, ca
 toll:
   text: About 17.6M people had RA worldwide in 2020, projected to reach about 31.7M by 2050 (GBD).
   url: https://spiral.imperial.ac.uk/handle/10044/1/109351
+  ratio: "About 1 in 480"
+  ratio_caption: "people worldwide has rheumatoid arthritis"
+  ratio_url: https://spiral.imperial.ac.uk/handle/10044/1/109351
+  ratio_basis: "GBD 2021 RA Collaborators (Lancet Rheumatology 2023): 17.6 million people with RA in 2020, age-standardised prevalence 208.8 per 100,000; about 1 in 480."
 status:
   level: 2
   why: Methotrexate, biologics and JAK inhibitors bring many patients to remission or low activity, but

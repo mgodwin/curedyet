@@ -35,6 +35,7 @@ Prefer, in roughly this order: regulators (FDA, EMA), WHO, CDC and national heal
 | `tracking` | `proposed` for new diseases. The weekly review switches it to `active` once forecasts are in. |
 | `summary` | One sentence: what the disease is. |
 | `toll.text`, `toll.url` | How many people it affects, with year and source. |
+| `toll.ratio`, `toll.ratio_caption`, `toll.ratio_url` | Optional headline ratio for "How many people", e.g. `1 in 24` + `Americans will get it in their lifetime`, with the page that states it. Prefer lifetime risk, then share living with it now. |
 | `status.level` | 0 to 6 on the cure ladder, for the typical patient. On a disease with variants it anchors the pooled forecast and history but isn't shown as a verdict. See [METHODOLOGY.md](METHODOLOGY.md#the-cure-ladder). |
 | `status.why` | One plain sentence explaining the level. It shows on the disease's card. |
 | `status.today` | Two or three sentences on what treatment can do now, and for whom. |
@@ -60,7 +61,8 @@ A disease whose stages or types are really different diseases (cancer stages, MS
 | `what` | One plain sentence on what this stage or type is. |
 | `level` | 0 to 6 on the cure ladder, rated as if it were its own disease. Level 4 needs at least ~85% cured; level 5 also needs a light burden. |
 | `burden` | `light`, `moderate` or `heavy` for its standard treatment. |
-| `survival`, `share` | Prognosis figure with its measure, and optionally the share of patients in this variant. |
+| `burden_why` | One sentence on why the treatment gets that rating. |
+| `survival`, `share`, `share_url` | Prognosis figure with its measure, and optionally the share of patients with this variant as a plain sentence, with its source. |
 | `treatment` | One or two sentences on the standard treatment, its toll, and whether it cures. |
 | `caveat` | Optional: limits of the evidence or judgement calls. Shown on the page. |
 | `url` | The page stating the survival figure. |

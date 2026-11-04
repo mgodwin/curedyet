@@ -6,7 +6,11 @@ what: Cystic fibrosis in people whose gene variants or young age mean current mo
   used.
 level: 1
 burden: heavy
-share: ~7% of people in the US CF registry (2024)
+burden_why: Hours a day of airway clearance and inhaled drugs, plus hospital antibiotic courses, and some
+  eventually need a lung transplant.
+share: About 7% of people in the US CF registry can't use current modulator pills, including young children
+  who may become eligible
+share_url: https://www.cff.org/medical-professionals/2024-patient-registry-highlights
 treatment: Care is daily airway clearance, inhaled medicines and antibiotics, digestive enzymes and frequent
   hospital courses of IV antibiotics, taking hours a day; lung damage still progresses and some need a
   lung transplant. The CF Foundation says median survival is lower, possibly by more than a decade, than

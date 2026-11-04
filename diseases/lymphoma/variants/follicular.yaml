@@ -5,8 +5,11 @@ order: 3
 what: A slow-growing B-cell lymphoma that often causes few symptoms for years.
 level: 2
 burden: moderate
+burden_why: Many are just watched, and others get rituximab-based treatment repeated over the years as
+  it relapses.
 survival: ~89% alive at 5 years (SEER 5-year relative survival, 2016-2022); ~97% stage I
-share: About 1 in 5 lymphomas (ACS)
+share: About 1 in 5 lymphomas are follicular
+share_url: https://www.cancer.org/cancer/types/non-hodgkin-lymphoma/about/b-cell-lymphoma.html
 treatment: Many patients are watched without treatment, and others get rituximab with or without chemotherapy,
   repeated over the years as it relapses. People often live a long, near-normal life, but advanced disease
   is not cured; early stage I disease can sometimes be cured with radiation.

@@ -9,6 +9,10 @@ toll:
   text: About 2.6M new cases and 1.9M deaths/yr worldwide (2024); ~229,410 US cases and ~124,990 US deaths
     est. 2026.
   url: https://pressroom.cancer.org/global-cancer-statistics-2026
+  ratio: "1 in 19"
+  ratio_caption: "Americans will develop lung cancer in their lifetime"
+  ratio_url: https://www.cancer.org/cancer/types/lung-cancer/about/key-statistics.html
+  ratio_basis: "American Cancer Society key statistics: 'the chance that a person will develop lung cancer in their lifetime is about 1 in 19.'"
 status:
   level: 3
   why: Early-stage and some oncogene-driven or immunotherapy-responsive patients are cured or in long

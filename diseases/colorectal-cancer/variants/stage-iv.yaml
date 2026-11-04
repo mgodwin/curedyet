@@ -5,7 +5,12 @@ order: 4
 what: The cancer has spread to distant organs, most often the liver or lungs.
 level: 1
 burden: heavy
+burden_why: Most people stay on chemotherapy and targeted drugs indefinitely, and the few who can be cured
+  need surgery on the liver or lungs.
 survival: ~10% alive at 5 years (net survival, England 2016-2020)
+share: About 1 in 4 US colorectal cancers have spread to distant organs at diagnosis (SEER 'distant',
+  23%)
+share_url: https://seer.cancer.gov/statfacts/html/colorect.html
 treatment: Most people get ongoing chemotherapy with targeted drugs, which extends life but rarely cures.
   A minority with a few removable liver or lung spots can be cured by surgery, and mismatch-repair-deficient
   tumors can respond for years to immunotherapy.

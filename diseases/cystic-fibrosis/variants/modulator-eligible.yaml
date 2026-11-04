@@ -6,8 +6,11 @@ what: Cystic fibrosis caused by gene variants that daily CFTR modulator pills ca
   protein level.
 level: 2
 burden: moderate
+burden_why: Pills are taken every day for life with liver tests, and some airway therapy continues, but
+  daily life is far lighter than before.
 survival: Median predicted survival ~65 years for US births 2020-2024 (all people with CF)
-share: ~93% of people in the US CF registry (2024)
+share: About 93% of people in the US CF registry have gene variants that modulator pills can treat
+share_url: https://www.cff.org/medical-professionals/2024-patient-registry-highlights
 treatment: Patients take triple modulator pills (Trikafta or Alyftrek) every day for life, with liver
   tests and occasional rash or mood effects, plus some ongoing airway therapy. Lung function and survival
   improve sharply, especially when started young, but the gene is not fixed.

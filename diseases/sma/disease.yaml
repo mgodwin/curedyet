@@ -9,6 +9,10 @@ toll:
   text: About 1 in 7,000-10,000 births (US/Europe); the leading genetic cause of infant death before modern
     treatment.
   url: https://en.wikipedia.org/wiki/Spinal_muscular_atrophy
+  ratio: "1 in 8,000 to 10,000"
+  ratio_caption: "people worldwide is affected by spinal muscular atrophy"
+  ratio_url: https://medlineplus.gov/genetics/condition/spinal-muscular-atrophy/
+  ratio_basis: "NIH MedlinePlus Genetics: 'Spinal muscular atrophy affects 1 per 8,000 to 10,000 people worldwide.' Other sources give about 1 in 10,000 births."
 status:
   level: 3
   why: Infants found by newborn screening and treated before symptoms, often with one-time Zolgensma,

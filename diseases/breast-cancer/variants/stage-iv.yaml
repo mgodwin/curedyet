@@ -6,8 +6,11 @@ what: Cancer that has spread beyond the breast and nearby nodes to distant organ
   lungs or brain.
 level: 2
 burden: heavy
+burden_why: 'Treatment never stops: drug after drug is given in sequence for life as each one stops working.'
 survival: ~34% alive at 5 years (5-year relative survival, SEER distant stage, 2016-2022)
-share: ~6% of new US cases (SEER distant), plus earlier cancers that later return
+share: About 6% of US breast cancers have already spread to distant organs at diagnosis (SEER 'distant');
+  more reach this stage when earlier cancers return
+share_url: https://seer.cancer.gov/statfacts/html/breast.html
 treatment: 'Ongoing treatment for life: endocrine pills with CDK4/6 inhibitors, HER2 drugs, antibody-drug
   conjugates or chemotherapy, given in sequence as each stops working. Many live years with good quality
   of life, especially with hormone-positive or HER2-positive disease, but it is rarely cured.'

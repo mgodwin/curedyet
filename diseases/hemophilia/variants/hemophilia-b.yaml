@@ -6,7 +6,11 @@ what: A rarer form of hemophilia, where the blood lacks clotting factor IX, caus
   bleeds.
 level: 3
 burden: moderate
+burden_why: Most use lifelong preventive infusions or injections that control bleeding well; the one-time
+  gene therapy is costly and needs liver monitoring.
 survival: 94% still off regular preventive treatment 4 years after one-time Hemgenix (HOPE-B, 54 men)
+share: About 1 in 5 to 1 in 4 people with hemophilia have type B
+share_url: https://www.cdc.gov/hemophilia/about/index.html
 treatment: Most patients still use lifelong preventive factor IX infusions or newer injections, which
   control bleeding well. A one-time gene therapy (Hemgenix) lets most adults who get it stop regular treatment
   for years, but it costs about $3.5 million, needs liver monitoring, and few have had it.

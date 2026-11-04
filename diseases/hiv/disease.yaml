@@ -7,6 +7,10 @@ summary: A viral infection that destroys immune cells and, untreated, leads to A
 toll:
   text: 41.0M people living with HIV, 1.2M new infections and 570,000 AIDS-related deaths in 2025 (UNAIDS)
   url: https://www.unaids.org/sites/default/files/2026-07/2026_UNAIDS_Global_HIV_Factsheet_en.pdf
+  ratio: "About 1 in 200"
+  ratio_caption: "people worldwide is living with HIV"
+  ratio_url: https://www.unaids.org/sites/default/files/2026-07/2026_UNAIDS_Global_HIV_Factsheet_en.pdf
+  ratio_basis: "Derived: UNAIDS 2026 fact sheet's 41.0 million living with HIV in 2025 divided by UN world population of 8.2 billion in 2024 (https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/)."
 status:
   level: 2
   why: Antiretroviral therapy gives near-normal life expectancy and stops transmission, but must be taken

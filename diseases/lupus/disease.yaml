@@ -8,6 +8,10 @@ summary: Systemic lupus erythematosus is an autoimmune disease that can attack s
 toll:
   text: About 3.4M people live with SLE worldwide (2023 estimate), mostly women.
   url: https://ard.bmj.com/content/82/3/351
+  ratio: "About 1 in 1,400"
+  ratio_caption: "Americans has lupus (SLE), most of them women"
+  ratio_url: https://stacks.cdc.gov/view/cdc/106843
+  ratio_basis: "Izmirly et al., Arthritis & Rheumatology 2021 (CDC National Lupus Registry network): pooled SLE prevalence 72.8 per 100,000 in 2018 (128.7 in women, 14.6 in men); about 1 in 1,400."
 status:
   level: 1
   why: Treatments reduce flares and improve survival, but organ damage still builds over time and few

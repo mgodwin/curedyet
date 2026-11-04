@@ -6,8 +6,11 @@ what: Chronic lymphocytic leukemia, a slow-growing cancer of mature lymphocytes,
   in adults.
 level: 2
 burden: moderate
+burden_why: Many are just watched; when needed, treatment is pills or a fixed course with side effects
+  like bleeding or heart rhythm problems.
 survival: ~90% alive at 5 years (SEER 5-year relative survival, 2016-2022)
-share: ~22,760 US cases est. 2026 (SEER), median age 71
+share: Roughly 1 in 3 new leukemias in the US are CLL
+share_url: https://seer.cancer.gov/statfacts/html/clyl.html
 treatment: Many people are just watched for years; when treatment is needed it is usually ongoing BTK
   inhibitor pills or a fixed course of venetoclax-based pills or infusions, with side effects like bleeding,
   heart rhythm problems or infections. It is well controlled for years but almost always comes back, so

@@ -6,6 +6,7 @@ what: Drug-resistant epilepsy where seizures start in one brain area that surgeo
   destroy.
 level: 3
 burden: heavy
+burden_why: It is brain surgery after extensive testing, with risks to memory, mood or vision.
 survival: ~52% seizure-free 5 years and ~47% 10 years after epilepsy surgery (adult cohort, simple partial
   seizures allowed)
 treatment: After detailed testing, part of the brain is removed or laser-ablated; this is brain surgery

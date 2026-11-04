@@ -8,6 +8,10 @@ toll:
   text: About 47 million living with chronic HCV, 0.9M new infections/yr and about 239,000 deaths in 2024
     (WHO)
   url: https://www.who.int/news-room/fact-sheets/detail/hepatitis-c
+  ratio: "About 1 in 175"
+  ratio_caption: "people worldwide is living with chronic hepatitis C"
+  ratio_url: https://www.who.int/news-room/fact-sheets/detail/hepatitis-c
+  ratio_basis: "Derived: WHO's 47 million with chronic HCV divided by UN world population of 8.2 billion in 2024 (https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/). WHO does not state the data year for the 47M."
 status:
   level: 5
   why: Direct-acting antivirals cure more than 95% of people treated, usually in 8-12 weeks.

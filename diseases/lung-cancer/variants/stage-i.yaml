@@ -5,7 +5,12 @@ order: 1
 what: A small non-small cell tumor confined to the lung, with no spread to lymph nodes.
 level: 3
 burden: heavy
+burden_why: Lung surgery is major, though people who can't have it get a short, much easier course of
+  targeted radiation.
 survival: ~65% alive at 5 years (net survival, all lung cancer types, England 2016-2020)
+share: Part of the roughly 1 in 4 US lung cancers found while still confined to the lung (SEER 'localized',
+  24%)
+share_url: https://seer.cancer.gov/statfacts/html/lungb.html
 treatment: Surgery to remove part of the lung cures most people; those who cannot have surgery get a short
   course of targeted radiation (SBRT), which is much easier. Some EGFR-positive patients add years of
   targeted pills.

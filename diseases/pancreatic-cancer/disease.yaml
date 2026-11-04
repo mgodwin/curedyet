@@ -9,6 +9,10 @@ toll:
   text: About 491,000 deaths/yr worldwide (2024); ~67,530 US cases and ~52,740 US deaths est. 2026; 5-year
     survival about 13%.
   url: https://pressroom.cancer.org/global-cancer-statistics-2026
+  ratio: "1 in 56"
+  ratio_caption: "US men (and 1 in 60 women) will get pancreatic cancer in their lifetime"
+  ratio_url: https://www.cancer.org/cancer/types/pancreatic-cancer/about/key-statistics.html
+  ratio_basis: "American Cancer Society key statistics: average lifetime risk about 1 in 56 in men and 1 in 60 in women."
 status:
   level: 1
   why: Only the minority who can have surgery have a chance at cure, and treatment for advanced disease

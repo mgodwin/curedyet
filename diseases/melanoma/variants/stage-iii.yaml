@@ -6,9 +6,12 @@ what: Melanoma that has spread to nearby lymph nodes or to skin close to the ori
   distant organs.
 level: 3
 burden: heavy
+burden_why: Surgery plus about a year of immunotherapy or targeted pills, with immune side effects that
+  can be serious or permanent.
 survival: ~77% melanoma-specific survival at 5 years, 69% at 10 years (AJCC 8th edition; ranges from 93%
   for IIIA to 32% for IIID)
-share: ~10% of new US cases (SEER regional)
+share: About 1 in 10 US melanomas have spread to nearby lymph nodes or skin at diagnosis (SEER 'regional')
+share_url: https://seer.cancer.gov/statfacts/html/melan.html
 treatment: Surgery plus about a year of immunotherapy (increasingly started before surgery), or BRAF/MEK
   pills for BRAF-mutant disease; immune side effects can be serious or permanent. Most are cured, though
   IIID often relapses.

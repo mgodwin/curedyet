@@ -6,7 +6,9 @@ what: The most common form of MS, where the immune system attacks nerves in flar
   then partly or fully ease.
 level: 2
 burden: moderate
-share: ~85% of people at diagnosis
+burden_why: Infusions or injections taken indefinitely, with infection risk and lab monitoring.
+share: About 85% of people with MS have the relapsing form at diagnosis
+share_url: https://www.msaustralia.org.au/types-of-ms/
 treatment: Standard care is a high-efficacy disease-modifying drug such as anti-CD20 infusions every six
   months or monthly injections, taken indefinitely with infection risk and lab monitoring; in trials ocrelizumab
   roughly halved relapses versus an older interferon drug. Many people stay relapse-free and live near-normal

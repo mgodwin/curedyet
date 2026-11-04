@@ -5,8 +5,10 @@ order: 1
 what: A small tumor still inside the pancreas that surgeons can usually remove (resectable).
 level: 3
 burden: heavy
+burden_why: Major surgery such as a Whipple operation followed by about six months of tough chemotherapy.
 survival: ~44% alive at 5 years (SEER 'localized' stage, 5-year relative survival, 2015-2021)
-share: ~6% of cases (SEER 2004-2012, AJCC 7th edition)
+share: About 6% of pancreatic cancers are found at stage I
+share_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6402557/
 treatment: Standard care is major surgery such as a Whipple operation followed by about six months of
   chemotherapy like FOLFIRINOX. Surgery offers the only real chance of cure, but most patients still relapse.
 caveat: SEER reports localized/regional/distant, not AJCC stages; 'localized' is the closest match to

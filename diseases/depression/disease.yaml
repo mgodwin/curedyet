@@ -7,6 +7,10 @@ summary: A mood disorder with persistent low mood or loss of interest that impai
 toll:
   text: About 322 million people worldwide, roughly 4% of the population (WHO, 2023 estimate)
   url: https://www.who.int/news-room/fact-sheets/detail/depression
+  ratio: "1 in 12"
+  ratio_caption: "US adults had a major depressive episode in the past year"
+  ratio_url: https://www.nimh.nih.gov/health/statistics/major-depression
+  ratio_basis: "NIMH: 8.3% of US adults (21.0 million) had a past-year major depressive episode in 2021; 8.3% is about 1 in 12."
 status:
   level: 2
   why: Many patients reach remission with therapy and medication, but relapse is common and a sizable

@@ -123,8 +123,9 @@ def validate_variant(v, errs, where):
         errs.append(f"{where}: level must be 0-{MAX_LEVEL}"); level = 0
     if v.get("burden") not in BURDENS:
         errs.append(f"{where}: burden must be light, moderate or heavy")
-    if v.get("url") and not URL_RE.match(str(v["url"])):
-        errs.append(f"{where}: url must be an http(s) link")
+    for k in ("url", "share_url"):
+        if v.get(k) and not URL_RE.match(str(v[k])):
+            errs.append(f"{where}: {k} must be an http(s) link")
     if level == 5 and v.get("burden") != "light":
         errs.append(f"{where}: level 5 (cured easily) needs a light burden")
     if v.get("forecast") is not None:
@@ -195,8 +196,11 @@ def validate(data: dict) -> list[str]:
         if tx.get("burden") is not None and tx["burden"] not in BURDENS:
             errs.append(f"{where}: treatment.burden must be light, moderate or heavy")
         toll = rec.get("toll") or {}
-        if toll.get("url") and not URL_RE.match(str(toll["url"])):
-            errs.append(f"{where}: toll.url must be an http(s) link")
+        for k in ("url", "ratio_url"):
+            if toll.get(k) and not URL_RE.match(str(toll[k])):
+                errs.append(f"{where}: toll.{k} must be an http(s) link")
+        if toll.get("ratio") and not str(toll.get("ratio_caption") or "").strip():
+            errs.append(f"{where}: toll.ratio needs a ratio_caption")
         fc = rec.get("forecast") or {}
         if fc.get("bottleneck") is not None and fc["bottleneck"] not in BOTTLENECKS:
             errs.append(f"{where}: forecast.bottleneck must be one of {sorted(BOTTLENECKS)}")
@@ -267,7 +271,7 @@ def blend(n, f, idx):
     return round(n + (f - n) * idx / 100)
 
 
-VARIANT_KEYS = ("id", "name", "what", "level", "burden", "survival", "share", "caveat", "url", "forecast", "easy", "reached", "reached_easy")
+VARIANT_KEYS = ("id", "name", "what", "level", "burden", "burden_why", "survival", "share", "share_url", "caveat", "url", "forecast", "easy", "reached", "reached_easy")
 
 
 def compile_variants(d: dict, data: dict) -> list[dict]:
@@ -303,7 +307,8 @@ def compile_site(data: dict) -> dict:
         x = {
             "id": r["id"], "order": i + 1, "name": r["name"], "category": r["category"], "tracking": r.get("tracking", "proposed"),
             "short": r.get("summary"), "burden": (r.get("toll") or {}).get("text"), "burdenUrl": (r.get("toll") or {}).get("url"),
-            "level": level, "levelWhy": st.get("why"), "groups": compile_variants(d, data), "reachedEasy": fc.get("reached_easy"), "status": st.get("today"), "lastDeep": str(st["last_reviewed"]) if st.get("last_reviewed") else None,
+            "level": level, "levelWhy": st.get("why"), "groups": compile_variants(d, data), "reachedEasy": fc.get("reached_easy"),
+            "ratio": {k: (r.get("toll") or {}).get(k) for k in ("ratio", "ratio_caption", "ratio_url")} if (r.get("toll") or {}).get("ratio") else None, "status": st.get("today"), "lastDeep": str(st["last_reviewed"]) if st.get("last_reviewed") else None,
             "bestTherapies": tx.get("best") or [], "txBurden": tx.get("burden"), "txBurdenNote": tx.get("burden_note"),
             "bottleneck": fc.get("bottleneck"), "accelNote": fc.get("faster_note"), "outlook": fc.get("outlook"), "interim": fc.get("milestones") or [],
             "pipeline": r.get("pipeline") or [], "breakthroughs": r.get("recent") or [], "nextMilestone": r.get("next_milestone"),

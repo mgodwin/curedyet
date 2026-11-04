@@ -5,8 +5,12 @@ order: 1
 what: A fast-growing cancer of immature white blood cells (lymphocytes), the most common cancer in children.
 level: 4
 burden: heavy
+burden_why: Two to three years of multi-drug chemotherapy, intense at first, with infection risk and possible
+  long-term effects.
 survival: ~90% of children alive at 5 years (ACS)
-share: About half of ALL cases are in people under 20 (SEER 2019-2023)
+share: About 1 in 20 people with leukemia have ALL diagnosed in childhood or the teens; about half of
+  all ALL cases
+share_url: https://seer.cancer.gov/statfacts/html/alyl.html
 treatment: Treatment is about two to three years of multi-drug chemotherapy, intense in the first months,
   with infection risk and possible long-term effects. Most children are cured; CAR-T or transplant is
   used for relapse.

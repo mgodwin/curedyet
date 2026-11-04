@@ -6,7 +6,11 @@ what: The more common form of hemophilia, where the blood lacks clotting factor 
   and can damage joints.
 level: 2
 burden: moderate
+burden_why: Lifelong preventive injections or infusions are needed and very costly, but they prevent most
+  bleeds.
 survival: ~96-97% fewer treated bleeds than no prophylaxis on emicizumab; 56-60% had none (HAVEN 3)
+share: About 3 in 4 to 4 in 5 people with hemophilia have type A
+share_url: https://www.cdc.gov/hemophilia/about/index.html
 treatment: Most patients take lifelong preventive treatment, usually emicizumab injections under the skin
   every one to four weeks or factor VIII infusions, which cost hundreds of thousands a year but prevent
   most bleeds. It is controlled, not cured, now that the only approved gene therapy (Roctavian) was pulled

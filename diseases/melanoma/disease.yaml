@@ -9,6 +9,10 @@ toll:
   text: ~112,000 US cases and ~8,510 US deaths est. 2026; distant-stage 5-year survival has risen to about
     35%.
   url: https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2026/2026-cancer-facts-and-figures.pdf
+  ratio: "1 in 45"
+  ratio_caption: "Americans will be diagnosed with melanoma in their lifetime"
+  ratio_url: https://seer.cancer.gov/statfacts/html/melan.html
+  ratio_basis: "NCI SEER Cancer Stat Facts: about 2.2% of men and women diagnosed with melanoma of the skin in their lifetime (2021-2023 data). ACS gives 1 in 33 for White people, 1 in 1,000 for Black people."
 status:
   level: 5
   why: Most melanomas are found early and cured by excision, and immunotherapy now gives durable remissions

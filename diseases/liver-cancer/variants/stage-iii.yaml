@@ -6,7 +6,11 @@ what: Large or multiple tumors, or cancer that has grown into a major vein of th
   without distant spread.
 level: 1
 burden: heavy
+burden_why: Repeated liver-directed procedures or ongoing immunotherapy that extends life but rarely cures.
 survival: ~10% alive at 4 years (net survival, all primary liver cancer, England)
+share: Part of the roughly 1 in 4 US liver cancers that have grown into nearby vessels, organs or nodes
+  (SEER 'regional', 23%)
+share_url: https://seer.cancer.gov/statfacts/html/livibd.html
 treatment: Usually TACE or radiation directed at the liver, or ongoing immunotherapy combinations such
   as atezolizumab plus bevacizumab. These extend life but rarely cure.
 caveat: 4-year figures for all primary liver cancer, not hepatocellular carcinoma alone.

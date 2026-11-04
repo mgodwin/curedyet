@@ -6,7 +6,12 @@ what: Cancer that has grown through the outer edge of the prostate or into nearb
   high PSA (20+) or the most aggressive grade, but has not spread to lymph nodes or bones.
 level: 3
 burden: heavy
+burden_why: Radiation plus 1.5 to 3 years of hormone therapy with hot flashes, fatigue and bone and muscle
+  loss, or surgery plus radiation.
 survival: Around 95% survive at least 5 years (5-year net survival, England, diagnosed 2013-2017)
+share: Includes most of the roughly 1 in 7 US prostate cancers that have grown beyond the prostate (SEER
+  'regional', 14%)
+share_url: https://seer.cancer.gov/statfacts/html/prost.html
 treatment: Radiation plus 1.5 to 3 years of hormone therapy (hot flashes, fatigue, weight gain, bone and
   muscle loss, low libido), or surgery often followed by radiation. Most are cured, but PSA comes back
   in a sizable minority.

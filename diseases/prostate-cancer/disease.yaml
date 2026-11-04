@@ -8,6 +8,10 @@ toll:
   text: About 1.5M new cases and 420,000 deaths/yr worldwide (2024); ~333,830 US cases and ~36,320 US
     deaths est. 2026.
   url: https://pressroom.cancer.org/global-cancer-statistics-2026
+  ratio: "1 in 8"
+  ratio_caption: "US men will be diagnosed with prostate cancer in their lifetime"
+  ratio_url: https://www.cancer.org/cancer/types/prostate-cancer/about/key-statistics.html
+  ratio_basis: "American Cancer Society key statistics: 'About 1 in 8 men will be diagnosed with prostate cancer during their lifetime.'"
 status:
   level: 4
   why: Most cases are found while localized and are cured or safely monitored, with US 5-year survival

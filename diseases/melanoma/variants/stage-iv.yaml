@@ -5,8 +5,10 @@ order: 5
 what: Melanoma that has spread to distant skin, lymph nodes or organs such as the lungs, liver or brain.
 level: 3
 burden: heavy
+burden_why: Combination immunotherapy or targeted pills, with severe immune side effects common.
 survival: ~34% alive at 5 years (5-year relative survival, SEER distant stage, 2016-2022)
-share: ~5% of new US cases (SEER distant)
+share: About 1 in 20 US melanomas have spread to distant organs at diagnosis (SEER 'distant')
+share_url: https://seer.cancer.gov/statfacts/html/melan.html
 treatment: Combination immunotherapy (nivolumab with ipilimumab or relatlimab) or BRAF/MEK pills, with
   TIL cell therapy as a later option; severe immune side effects are common with combinations. A meaningful
   share get long remissions that look like cures, but most do not.

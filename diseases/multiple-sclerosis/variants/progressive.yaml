@@ -6,8 +6,10 @@ what: Forms of MS where disability slowly worsens over time with few or no flare
   start or after years of relapsing disease.
 level: 1
 burden: moderate
-share: ~10-15% of people have primary progressive MS at diagnosis; many with relapsing MS later become
-  progressive
+burden_why: Ongoing infusions or pills with infection risk, while disability usually still advances.
+share: About 10-15% of people with MS have primary progressive MS from the start, and many with relapsing
+  MS later become progressive
+share_url: https://www.msaustralia.org.au/types-of-ms/
 treatment: Ocrelizumab is approved for primary progressive MS but only modestly slows it (about 30% vs
   34% had lasting worsening in its main trial), and tolebrutinib was approved in the EU in 2026 for non-active
   secondary progressive MS. Treatment is ongoing with infection risk, and disability still advances for

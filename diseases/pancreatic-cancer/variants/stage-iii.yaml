@@ -6,9 +6,12 @@ what: A tumor wrapped around major blood vessels near the pancreas, so it usuall
   advanced), but it hasn't spread to distant organs.
 level: 1
 burden: heavy
+burden_why: Months of intensive chemotherapy, sometimes radiation, and surgery only for the few who respond
+  well.
 survival: Median overall survival ~24 months with FOLFIRINOX (patient-level meta-analysis of 315 patients,
   Suker et al., Lancet Oncology 2016)
-share: ~10% of cases (SEER 2004-2012, AJCC 7th edition)
+share: About 1 in 10 pancreatic cancers are found at stage III
+share_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6402557/
 treatment: Treatment is months of intensive chemotherapy, sometimes followed by radiation. A minority
   respond well enough to have surgery and may then have a chance at cure, but for most it slows the cancer
   rather than curing it.

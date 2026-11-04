@@ -5,7 +5,12 @@ order: 2
 what: Cancer still inside the prostate, but with a higher PSA (10 to 20) or a more aggressive grade.
 level: 4
 burden: heavy
+burden_why: Surgery or weeks of radiation, often with hormone therapy, commonly leaving erectile, urinary
+  or bowel problems.
 survival: Almost 100% survive at least 5 years (5-year net survival, England, diagnosed 2013-2017)
+share: Part of the roughly 7 in 10 US prostate cancers found while still inside the prostate (SEER 'localized',
+  69%)
+share_url: https://seer.cancer.gov/statfacts/html/prost.html
 treatment: Surgery to remove the prostate or several weeks of radiation, often with a few months of hormone
   therapy; erectile problems and some urinary leakage or bowel problems are common and can be lasting.
   Some favorable cases can still be watched. Most are cured.

@@ -6,8 +6,11 @@ what: An uncommon B-cell lymphoma, usually found in older men at an advanced sta
   coming back.
 level: 2
 burden: heavy
+burden_why: Intensive chemo-immunotherapy, sometimes a stem cell transplant, then ongoing maintenance
+  drugs, and it almost always returns.
 survival: ~60% alive at 5 years (SEER 2000-2021, Kaplan-Meier overall survival, 11,450 patients)
-share: About 5% of lymphomas (ACS)
+share: About 1 in 20 lymphomas are mantle cell
+share_url: https://www.cancer.org/cancer/types/non-hodgkin-lymphoma/about/b-cell-lymphoma.html
 treatment: Younger patients get intensive chemo-immunotherapy, sometimes with a stem cell transplant,
   and most then get maintenance rituximab or BTK inhibitor pills; older patients get gentler combinations.
   Remissions can last years but the disease almost always returns, so it is controlled rather than cured.

@@ -5,7 +5,12 @@ order: 2
 what: A single tumor that has grown into blood vessels, or several small tumors, all within the liver.
 level: 3
 burden: heavy
+burden_why: Surgery or transplant for some, and repeated procedures to block the tumor's blood supply
+  for others.
 survival: ~35% alive at 4 years (net survival, all primary liver cancer, England)
+share: Part of the nearly half of US liver cancers found while still confined to the liver (SEER 'localized',
+  45%)
+share_url: https://seer.cancer.gov/statfacts/html/livibd.html
 treatment: Some can be cured by surgery or a transplant if they meet transplant size and number limits;
   others get repeated treatment that blocks the tumor's blood supply (TACE), which controls but does not
   usually cure.

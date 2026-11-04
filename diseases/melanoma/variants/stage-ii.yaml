@@ -6,8 +6,13 @@ what: A thicker melanoma (over 1 to 4+ mm, sometimes with a broken surface) that
   nodes.
 level: 4
 burden: moderate
+burden_why: Surgery with a lymph node biopsy, and higher-risk cases add a year of immunotherapy with possible
+  lasting immune side effects.
 survival: ~90% melanoma-specific survival at 5 years, 84% at 10 years (AJCC 8th edition; 82% at 5 years
   for stage IIC)
+share: Part of the roughly 3 in 4 US melanomas found before spreading beyond the skin (SEER 'localized',
+  77%, stages I-II)
+share_url: https://seer.cancer.gov/statfacts/html/melan.html
 treatment: Wide excision with sentinel lymph node biopsy; for higher-risk IIB and IIC, a year of adjuvant
   immunotherapy is offered, with a risk of lasting immune side effects such as thyroid damage. Most are
   cured.

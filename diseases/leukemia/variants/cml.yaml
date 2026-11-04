@@ -6,8 +6,11 @@ what: Chronic myeloid leukemia, a slow-growing marrow cancer caused by one gene 
   daily pills can block.
 level: 2
 burden: moderate
+burden_why: A daily pill with regular blood tests, usually for life, with manageable side effects like
+  fatigue and cramps.
 survival: ~71% alive at 5 years (SEER 5-year relative survival, 2016-2022)
-share: ~9,650 US cases est. 2026 (SEER), median age 67
+share: About 1 in 7 new leukemias in the US are CML
+share_url: https://seer.cancer.gov/statfacts/html/cmyl.html
 treatment: Patients take a daily tyrosine kinase inhibitor pill with regular blood tests, usually for
   life, with manageable side effects like fatigue and cramps. Most live near-normal lives, and some in
   deep remission can stop treatment, but it is controlled rather than cured.

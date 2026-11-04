@@ -8,6 +8,10 @@ toll:
   text: Over 12,000 new US cases per year; about 95% of patients die within five years (NFCR, accessed
     2026).
   url: https://www.nfcr.org/gbm-agile-what-is-gbm/
+  ratio: "About 3 in 100,000"
+  ratio_caption: "Americans are diagnosed with glioblastoma each year"
+  ratio_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4185005/
+  ratio_basis: "Average annual age-adjusted incidence of 3.19 per 100,000 (CBTRUS 2013 report), cited in Cancer Epidemiol Biomarkers Prev 2014 review."
 status:
   level: 1
   why: Surgery, radiation, temozolomide and tumor treating fields extend life by months, but the tumor

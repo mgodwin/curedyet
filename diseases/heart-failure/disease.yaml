@@ -8,6 +8,10 @@ summary: The heart cannot pump or fill well enough to meet the body's needs, cau
 toll:
   text: Roughly 64M people live with heart failure worldwide (GBD 2017 estimate cited in reviews).
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10398425/
+  ratio: "1 in 4"
+  ratio_caption: "people will develop heart failure in their lifetime"
+  ratio_url: https://hfsa.org/hf-stats-2025-heart-failure-epidemiology-and-outcomes-statistics
+  ratio_basis: "Heart Failure Society of America, HF Stats 2025: lifetime risk of HF has increased to 24%, about 1 in 4."
 status:
   level: 1
   why: Modern drug combinations slow decline and cut deaths, but most patients still worsen and about

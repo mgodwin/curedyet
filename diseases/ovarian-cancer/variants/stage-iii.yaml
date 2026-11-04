@@ -5,7 +5,11 @@ order: 3
 what: The cancer has spread through the lining of the abdomen or to lymph nodes at the back of the abdomen.
 level: 3
 burden: heavy
+burden_why: Extensive surgery and six cycles of chemotherapy, then often years of maintenance drugs.
 survival: More than 30% alive at 5 years (net survival, England 2016-2020)
+share: Part of the more than half of US ovarian cancers found after spreading beyond the pelvis (SEER
+  'distant', 54%)
+share_url: https://seer.cancer.gov/statfacts/html/ovary.html
 treatment: Extensive debulking surgery and six cycles of chemotherapy, then up to years of PARP inhibitor
   or bevacizumab maintenance. Most women relapse, but some, especially with BRCA or HRD tumors, stay in
   long remission.

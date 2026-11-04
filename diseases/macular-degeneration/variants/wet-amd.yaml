@@ -6,8 +6,12 @@ what: A late form of macular degeneration where leaky blood vessels grow under t
   blur central vision.
 level: 2
 burden: moderate
+burden_why: Eye injections every one to four months, indefinitely, with frequent clinic visits and a small
+  infection risk.
 survival: ~27% of treated eyes still had good vision (about 20/40 or better) after 10 years of injections
   (real-world meta-analysis)
+share: Part of the roughly 1 in 13 Americans with AMD who have a late form (wet AMD or geographic atrophy)
+share_url: https://healthdata.org/research-article/prevalence-age-related-macular-degeneration-us-2019
 treatment: Standard care is anti-VEGF injections into the eye every one to four months, indefinitely,
   with frequent clinic visits and a small risk of infection or inflammation. It usually stops the rapid
   vision loss and often improves vision at first, but it controls rather than cures, and vision tends

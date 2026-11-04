@@ -5,6 +5,8 @@ order: 1
 what: The heart muscle is weakened and squeezes too little blood out with each beat.
 level: 1
 burden: moderate
+burden_why: Four lifelong drug types with frequent blood tests, and some need an implanted defibrillator
+  or pacing device.
 survival: ~46% alive 5 years after a first heart failure hospitalization
 treatment: Four lifelong drug classes (ARNI, beta blocker, MRA, SGLT2 inhibitor), plus implanted defibrillators
   or pacing devices for some, extend life a lot and can partly restore heart function. They need frequent

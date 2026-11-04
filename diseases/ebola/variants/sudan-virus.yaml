@@ -6,6 +6,8 @@ what: A different Ebola virus species, found mainly in Uganda and South Sudan, t
   of severe illness.
 level: 1
 burden: heavy
+burden_why: With no approved drug, care is intensive supportive treatment in isolation, managing fluids,
+  oxygen and organ failure.
 survival: Past outbreaks killed 41-70% of cases (WHO); ~39% of confirmed cases in Uganda 2022
 treatment: There is no approved treatment, so care is intensive supportive care in isolation (fluids,
   oxygen, managing organ failure), which improves survival but does not target the virus. There is no

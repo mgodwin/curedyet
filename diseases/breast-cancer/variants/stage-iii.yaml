@@ -6,8 +6,12 @@ what: 'Locally advanced cancer: a large tumor, spread to many nearby lymph nodes
   or chest wall, but not to distant organs.'
 level: 3
 burden: heavy
+burden_why: It takes chemotherapy or targeted drugs, surgery, radiation and years of hormone or HER2 therapy,
+  and relapse is still common.
 survival: Around 75% survive at least 5 years (5-year net survival, England, diagnosed 2018-2022)
-share: Part of the ~27% of US cases with regional spread (SEER)
+share: Part of the roughly 1 in 4 US breast cancers diagnosed after spreading to nearby lymph nodes or
+  tissue (SEER 'regional', 27%)
+share_url: https://seer.cancer.gov/statfacts/html/breast.html
 treatment: Chemotherapy or targeted drugs often given before surgery, then surgery, radiation and years
   of endocrine or HER2 therapy. Many are cured, but relapse is common, especially in stage IIIC.
 caveat: 'SEER regional stage also includes some stage II cases. Rated 3: around 75% survive 5 years but

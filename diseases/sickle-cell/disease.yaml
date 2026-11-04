@@ -9,6 +9,10 @@ toll:
   text: About 7.7M people living with SCD and ~515,000 affected births/yr; 34,000 deaths as underlying
     cause, ~376,000 with SCD contributing (2021).
   url: https://healthdata.org/research-article/global-regional-and-national-prevalence-and-mortality-burden-sickle-cell-disease
+  ratio: "1 in 365"
+  ratio_caption: "Black or African American babies in the US is born with sickle cell disease"
+  ratio_url: https://www.cdc.gov/sickle-cell/data/index.html
+  ratio_basis: "CDC: 'SCD occurs in about 1 out of every 365 Black or African American births' (1 in 16,300 Hispanic American births); 1 in 13 Black babies has sickle cell trait."
 status:
   level: 3
   why: Stem cell transplant and approved gene therapies (Casgevy, Lyfgenia) end crises in over 90% of

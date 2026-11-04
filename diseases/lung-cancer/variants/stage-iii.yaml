@@ -6,7 +6,12 @@ what: The non-small cell cancer has spread to lymph nodes in the middle of the c
   nearby structures, but not to distant organs.
 level: 3
 burden: heavy
+burden_why: Chemoradiation followed by a year of immunotherapy, or surgery with chemo-immunotherapy, at
+  a heavy toll.
 survival: ~15% alive at 5 years (net survival, all lung cancer types, England 2016-2020)
+share: Part of the roughly 1 in 5 US lung cancers that have spread to nearby lymph nodes or tissue (SEER
+  'regional', 21%)
+share_url: https://seer.cancer.gov/statfacts/html/lungb.html
 treatment: Usually chemoradiation followed by a year of immunotherapy (durvalumab), or surgery with chemo-immunotherapy
   for some. It cures a meaningful minority at a heavy toll.
 caveat: Covers all lung cancer types including small cell, and many England patients did not get full-intensity

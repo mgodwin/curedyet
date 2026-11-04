@@ -6,8 +6,10 @@ what: A larger tumor or one that has reached nearby lymph nodes, still removable
   by surgery.
 level: 3
 burden: heavy
+burden_why: Intensive chemotherapy plus major pancreatic surgery.
 survival: ~17% alive at 5 years (SEER 'regional' stage, 5-year relative survival, 2015-2021)
-share: ~28% of cases (SEER 2004-2012, AJCC 7th edition)
+share: About 28% of pancreatic cancers are found at stage II
+share_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6402557/
 treatment: Patients get chemotherapy and major surgery, sometimes with chemo first to shrink a borderline
   tumor. In the PRODIGE 24 trial about 43% of fit patients given FOLFIRINOX after surgery were alive at
   5 years, but most relapse and only a minority are cured.

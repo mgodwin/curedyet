@@ -6,6 +6,8 @@ what: The Ebola virus species behind most past outbreaks, including West Africa 
   severe fever, bleeding and organ failure.
 level: 3
 burden: heavy
+burden_why: Even with an approved antibody, patients need intensive care in isolation for a life-threatening
+  illness, and some have lasting effects.
 survival: ~66% alive at 28 days with REGN-EB3 (Inmazeb) vs ~49% on the older comparator, in the DRC PALM
   trial
 treatment: Patients get a single infusion of an approved antibody (Inmazeb or Ebanga) plus intensive supportive

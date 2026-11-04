@@ -9,6 +9,10 @@ toll:
   text: About 2.4M new cases and 694,000 deaths/yr worldwide (2024); ~324,580 US cases and ~42,670 US
     deaths est. 2026.
   url: https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2026/2026-cancer-facts-and-figures.pdf
+  ratio: "1 in 8"
+  ratio_caption: "US women will develop breast cancer in their lifetime"
+  ratio_url: https://www.cancer.org/cancer/types/breast-cancer/about/how-common-is-breast-cancer.html
+  ratio_basis: "American Cancer Society: 'about 1 in 8 women will develop breast cancer.'"
 status:
   level: 4
   why: Most patients are diagnosed at an early stage and are cured with surgery, radiation and systemic

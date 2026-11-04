@@ -5,8 +5,11 @@ order: 1
 what: Abnormal cells (DCIS) inside the milk ducts that have not grown into surrounding breast tissue.
 level: 4
 burden: moderate
+burden_why: Surgery, usually with weeks of radiation and sometimes years of hormone pills, is lighter
+  than invasive-cancer treatment but far from a quick fix.
 survival: Nearly all cured (ACS); no stage-specific 5-year figure on the source page
-share: ~1 in 5 new breast cancers (ACS)
+share: About 1 in 6 new breast cancers in the US are DCIS (stage 0)
+share_url: https://www.cancer.org/cancer/types/breast-cancer/about/how-common-is-breast-cancer.html
 treatment: Lumpectomy usually followed by a few weeks of radiation, or mastectomy, sometimes with 5 years
   of tamoxifen or an aromatase inhibitor for hormone-positive DCIS. It is cured in nearly all women, though
   many may be treated for cells that would never have spread.

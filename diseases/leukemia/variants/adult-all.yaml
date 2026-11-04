@@ -5,7 +5,11 @@ order: 2
 what: The same fast-growing cancer of immature lymphocytes, but in adults, where it is harder to cure.
 level: 3
 burden: heavy
+burden_why: Two to three years of intensive chemotherapy, often a stem cell transplant, with serious infection
+  and organ risks.
 survival: ~40% long-term disease-free survival with intensive chemotherapy (NCI PDQ); 60-80% reach remission
+share: About 1 in 20 people with leukemia have ALL diagnosed as adults
+share_url: https://seer.cancer.gov/statfacts/html/alyl.html
 treatment: Adults get intensive multi-drug chemotherapy for two to three years, often a stem cell transplant,
   and newer antibody drugs or CAR-T, with serious infection and organ risks. A meaningful minority are
   cured, more so in younger adults and with targeted drugs for Philadelphia-positive disease.

@@ -6,8 +6,11 @@ what: Acute myeloid leukemia, a fast-growing cancer of immature blood-forming ce
   mostly in older adults.
 level: 3
 burden: heavy
+burden_why: Intensive chemotherapy and often a stem cell transplant carry high risks of infection and
+  treatment-related death.
 survival: ~33% alive at 5 years (SEER 5-year relative survival, all AML, 2016-2022)
-share: ~22,720 US cases est. 2026 (SEER), median age 70
+share: Roughly 1 in 3 new leukemias in the US are AML
+share_url: https://seer.cancer.gov/statfacts/html/amyl.html
 treatment: Fit patients get intensive chemotherapy and often a stem cell transplant, with high risks of
   infection and death from treatment; older or frail patients usually get gentler venetoclax-based treatment
   that controls it for a time. Cure is mainly reached in younger, fitter patients and in favorable genetic

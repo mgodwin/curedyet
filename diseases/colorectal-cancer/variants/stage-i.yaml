@@ -6,7 +6,11 @@ what: The cancer has grown into the inner layers of the bowel wall but not throu
   lymph nodes.
 level: 4
 burden: heavy
+burden_why: It usually means bowel surgery and its recovery, though no chemotherapy is needed.
 survival: ~90% alive at 5 years (net survival, England 2016-2020)
+share: Part of the roughly 1 in 3 US colorectal cancers found while still confined to the bowel (SEER
+  'localized', 34%)
+share_url: https://seer.cancer.gov/statfacts/html/colorect.html
 treatment: Surgery to remove the affected section of bowel (small early tumors can sometimes be cut out
   through a scope) usually cures it, with no chemotherapy needed. The toll is recovery from bowel surgery.
 caveat: Around 90% survive 5 years, and since most bowel cancer relapses happen within 5 years that is

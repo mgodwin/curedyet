@@ -8,6 +8,10 @@ toll:
   text: About 50 million people worldwide; premature death risk up to 3x higher (WHO fact sheet, accessed
     2026)
   url: https://www.who.int/news-room/fact-sheets/detail/epilepsy
+  ratio: "1 in 26"
+  ratio_caption: "people will develop epilepsy during their lifetime"
+  ratio_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3032191/
+  ratio_basis: "Hesdorffer et al., Neurology 2011 (Rochester, Minnesota population study): 'One in 26 people will develop epilepsy during their lifetime.' Data are from 1960-1979."
 status:
   level: 2
   why: Up to 70% of patients can become seizure free on antiseizure medicines, but most need lifelong

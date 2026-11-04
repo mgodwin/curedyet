@@ -5,9 +5,12 @@ order: 1
 what: A lymph-node cancer with distinctive large cells, most common in young adults and older people.
 level: 4
 burden: heavy
+burden_why: Months of chemotherapy, sometimes radiation, with risks of infertility and later heart, lung
+  or second cancers.
 survival: ~89% alive at 5 years (SEER 5-year relative survival, 2016-2022); ~93-95% for stage I-II, ~83%
   for stage IV
-share: ~10% of lymphomas (8,920 of 88,240 US cases est. 2026, ACS)
+share: About 1 in 10 lymphomas are Hodgkin
+share_url: https://www.cancer.org/cancer/types/hodgkin-lymphoma/about/key-statistics.html
 treatment: Treatment is a few months of chemotherapy, now often with the immune drug nivolumab for advanced
   stages, sometimes plus radiation, with risks of infertility and later heart, lung or second-cancer effects.
   Most patients are cured, including many with advanced stage.

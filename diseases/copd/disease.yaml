@@ -9,6 +9,10 @@ toll:
   text: About 3.4M deaths worldwide in 2023, the third leading cause of death (WHO); about 213M people
     affected (2021).
   url: https://www.who.int/news-room/fact-sheets/detail/chronic-obstructive-pulmonary-disease-(copd)
+  ratio: "1 in 23"
+  ratio_caption: "US adults has been diagnosed with COPD, emphysema or chronic bronchitis"
+  ratio_url: https://www.cdc.gov/nchs/fastats/copd.htm
+  ratio_basis: "CDC/NCHS FastStats: 4.4% of US adults ever diagnosed with COPD, emphysema or chronic bronchitis (NHIS 2025); 4.4% is about 1 in 23."
 status:
   level: 1
   why: Inhalers and biologics ease symptoms and cut flare-ups, but lung damage is permanent and the disease

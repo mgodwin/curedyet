@@ -5,8 +5,12 @@ order: 4
 what: The cancer has spread to lymph nodes or distant organs such as the lungs or bones.
 level: 1
 burden: heavy
+burden_why: Ongoing immunotherapy or targeted pills with immune side effects and bleeding risk, extending
+  life without cure.
 survival: ~5% alive at 4 years (net survival, all primary liver cancer, England); US SEER distant stage
   3% at 5 years
+share: About 1 in 5 US liver cancers have spread to distant organs at diagnosis (SEER 'distant', 21%)
+share_url: https://seer.cancer.gov/statfacts/html/livibd.html
 treatment: Ongoing immunotherapy combinations or targeted pills extend survival by months to a few years,
   with immune side effects and, for bevacizumab, bleeding risk. Cure is very rare.
 caveat: 4-year figures for all primary liver cancer, not hepatocellular carcinoma alone.

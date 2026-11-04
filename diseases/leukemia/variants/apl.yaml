@@ -6,8 +6,12 @@ what: Acute promyelocytic leukemia, a rare type of acute myeloid leukemia driven
   fusion that targeted drugs can switch off.
 level: 4
 burden: moderate
+burden_why: No traditional chemotherapy, but about eight months of drugs and urgent hospital care through
+  risky early weeks.
 survival: ~99% alive and ~97% event-free at about 4 years with ATRA plus arsenic trioxide (APL0406 trial,
   low/intermediate-risk patients)
+share: About 1 in 10 people with AML have APL, roughly 4% of all leukemias
+share_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7082115/
 treatment: Standard care is a vitamin A-derived drug (ATRA) plus arsenic trioxide for about eight months,
   usually with no traditional chemotherapy, and it cures nearly everyone who gets through the first weeks.
   The early weeks carry a real risk of fatal bleeding and a serious reaction called differentiation syndrome,

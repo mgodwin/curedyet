@@ -5,8 +5,11 @@ order: 4
 what: Cancer that has spread to distant organs such as the liver or lungs (metastatic).
 level: 1
 burden: heavy
+burden_why: Chemotherapy continues until it stops working, then further drugs, without cure.
 survival: ~3% alive at 5 years (SEER 'distant' stage, 5-year relative survival, 2015-2021)
-share: ~51% of cases (SEER 'distant', 2016-2022)
+share: About half of US pancreatic cancers have spread to distant organs at diagnosis (SEER 'distant',
+  51%)
+share_url: https://seer.cancer.gov/statfacts/html/pancreas.html
 treatment: Patients get chemotherapy such as FOLFIRINOX or gemcitabine-based regimens until it stops working,
   and since 2026 the RAS inhibitor daraxonrasib after first-line chemo. These extend life by months and
   ease symptoms but do not cure.

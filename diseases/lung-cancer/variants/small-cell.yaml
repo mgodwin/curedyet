@@ -6,8 +6,11 @@ what: A fast-growing type of lung cancer, strongly linked to smoking, that has u
   it is found.
 level: 1
 burden: heavy
+burden_why: Chemotherapy, radiation and immunotherapy, and for most it returns within months.
 survival: ~9% alive at 5 years (5-year relative survival, all SEER stages, US diagnosed 2012-2018; 34%
   localized, 4% distant)
+share: About 1 in 8 lung cancers are small cell (10-15%)
+share_url: https://www.cancer.org/cancer/types/lung-cancer/about/what-is.html
 treatment: Limited-stage disease gets chemoradiation, now followed by immunotherapy, and some are cured.
   Most have extensive-stage disease, where chemotherapy plus immunotherapy shrinks it at first but it
   nearly always returns within months.

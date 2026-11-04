@@ -6,7 +6,11 @@ what: The heart pumps out a normal share of blood but is stiff and cannot fill p
   up into the lungs and body.
 level: 1
 burden: moderate
+burden_why: Lifelong water pills and other daily drugs plus managing other illnesses, without serious
+  procedures for most.
 survival: ~43% alive 5 years after a first heart failure hospitalization
+share: About half of people with heart failure have this type
+share_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9002335
 treatment: Water pills ease fluid buildup, and SGLT2 inhibitors, finerenone and, in obese patients, GLP-1
   drugs reduce hospital stays and symptoms, alongside treating blood pressure, diabetes and weight. None
   has clearly been shown to extend life, and the disease usually advances.

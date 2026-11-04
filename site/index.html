@@ -457,7 +457,7 @@ function railHTML(d,extra,variant){const t=d.timeline||{};
   const ai=d.aiNote?`<section class="card"><h2 class="ch">Is AI helping?</h2><span>${d.aiImpact?`<b>${esc(d.aiImpact[0].toUpperCase()+d.aiImpact.slice(1))}.</b> `:""}${esc(d.aiNote)}</span>
     ${!variant&&d.medianNormal!=null&&d.medianAccel!=null&&d.medianNormal>d.medianAccel?`<div style="border-top:1px solid var(--rule);padding-top:10px;display:flex;flex-direction:column;gap:2px"><span class="eyebrow">How much faster it could get</span><b class="display" style="font-size:22px">~${d.medianNormal-d.medianAccel} years sooner</b><span class="muted" style="font-size:13px">If AI and faster rules make the drug pipeline much faster, the best guess moves from ~${d.medianNormal} to ~${d.medianAccel}.</span></div>`:""}
     <a href="#pipeline" style="font-size:13px;font-weight:600">How the pipeline could speed up →</a></section>`:"";
-  return `<aside class="drail">${extra||""}<section class="card"><span class="eyebrow">How many people</span><span>${safe(d.burdenUrl)?link(d.burdenUrl,d.burden):esc(d.burden)}</span>
+  return `<aside class="drail">${extra||""}<section class="card"><span class="eyebrow">How many people</span>${d.ratio?`<b class="display num" style="font-size:40px;line-height:1">${esc(d.ratio.ratio)}</b><span style="font-weight:600">${safe(d.ratio.ratio_url)?link(d.ratio.ratio_url,d.ratio.ratio_caption):esc(d.ratio.ratio_caption)}</span><span class="muted" style="font-size:13px">${safe(d.burdenUrl)?link(d.burdenUrl,d.burden):esc(d.burden)}</span>`:`<span>${safe(d.burdenUrl)?link(d.burdenUrl,d.burden):esc(d.burden)}</span>`}
     ${d.nextMilestone?`<div style="border-top:1px solid var(--rule);padding-top:10px;display:flex;flex-direction:column;gap:2px"><span class="eyebrow">Next to watch · ${fd(d.nextMilestone.date)}</span>${link(d.nextMilestone.url,d.nextMilestone.what)}</div>`:""}</section>${ai}</aside>`}
 function sourcesHTML(list){return list&&list.length?`<section class="srcs"><h2 style="font-size:15px">Sources</h2><ol>${list.map(s=>`<li>${link(s.url,s.title)}</li>`).join("")}</ol></section>`:""}
 function footerHTML(){const repo=S.meta?.repo;
@@ -531,14 +531,14 @@ function variantPage(d,g){const gl=g.level|0,col=vcolor(gl,g.burden),f=g.forecas
   return `${headerHTML(d,title,g.what,crumb)}
   <div class="dlayout"><main class="dmain">
     <section class="card"><span class="eyebrow">Where it stands</span><span class="display" style="font-size:30px;line-height:1">${esc(LEVELS[gl])}</span>${ladderHTML(gl,col)}
-      ${g.survival?`<span style="font-size:14px"><b>Prognosis:</b> ${esc(g.survival)}</span>`:""}${g.share?`<span class="muted" style="font-size:13px">${esc(g.share)}</span>`:""}</section>
+      ${g.survival?`<span style="font-size:14px"><b>Prognosis:</b> ${esc(g.survival)}</span>`:""}</section>
     <section class="card"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><h2 class="ch" style="font-size:22px">Treatment today</h2>${burdenTip(g.burden,g.id)}</div>
-      <p style="margin:0">${esc(g.note)}</p>${g.caveat?`<span class="muted" style="font-size:12px">${esc(g.caveat)}</span>`:""}</section>
+      <p style="margin:0">${esc(g.note)}</p>${g.burden_why?`<div class="why"><b>Why it's rated ${esc(bword(g.burden))}:</b> ${esc(g.burden_why)}</div>`:""}${g.caveat?`<span class="muted" style="font-size:12px">${esc(g.caveat)}</span>`:""}</section>
     ${forecastHTML({head:`When will most people with ${g.name.replace(/^Stage /,"stage ")} be curable?`,level:gl,f,note:f.note,reached:g.reached?.year,reachedEasy:g.reached_easy?.year,easy:g.easy,
       trend:`<div class="placeholder">Years-until-cure history for ${esc(g.name)} starts with the next weekly update.</div>`})}
     ${catalystsHTML(g.catalysts,g.name)}${logHTML(logRows)}
     ${sourcesHTML([g.url?{url:g.url,title:"Survival figure"}:null,g.reached?.url?{url:g.reached.url,title:`Cured for most since ~${g.reached.year}`}:null].filter(Boolean))}
-  </main>${railHTML(d,`<section class="card"><span class="eyebrow">Part of ${esc(d.name)}</span><a href="#d-${esc(d.id)}" style="font-weight:600">See every ${w}, the overall forecast and how many people are affected →</a></section>`,true)}</div>${footerHTML()}`}
+  </main>${railHTML(d,`${g.share?`<section class="card"><span class="eyebrow">How common</span><span style="font-weight:600">${safe(g.share_url)?link(g.share_url,g.share):esc(g.share)}</span></section>`:""}<section class="card"><span class="eyebrow">Part of ${esc(d.name)}</span><a href="#d-${esc(d.id)}" style="font-weight:600">See every ${w}, the overall forecast and how many people are affected →</a></section>`,true)}</div>${footerHTML()}`}
 
 function detail(id,vid){const d=S.dz.find(x=>x.id===id);
   if(!d)return `<a class="back" href="#">← All diseases</a><div class="empty">${S.ready?"That disease isn't in the tracker.":"Loading…"}</div>`;

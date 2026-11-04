@@ -6,7 +6,11 @@ what: The immune system inflames the inner lining of the large bowel (colon and 
   diarrhea and urgency.
 level: 3
 burden: moderate
+burden_why: Lifelong pills, injections or infusions keep it controlled; surgery that ends it is major
+  and leaves a pouch or stoma.
 survival: ~10% have the colon removed within 10 years of diagnosis
+share: More than half of Americans with IBD have ulcerative colitis
+share_url: https://stacks.cdc.gov/view/cdc/134534
 treatment: Most patients are managed with lifelong anti-inflammatory pills, biologic injections or infusions,
   or JAK pills, which control it but do not cure it. Removing the colon and rectum ends the disease, but
   it is major surgery that leaves a pouch or stoma, so it is mainly used when medicines fail.

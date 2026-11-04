@@ -9,6 +9,10 @@ toll:
   text: Underlies most of the roughly 60M+ deaths per year worldwide; age is the top risk factor for cancer,
     heart disease and dementia (rough figure, no single source).
   url: https://www.who.int/news-room/fact-sheets/detail/ageing-and-health
+  ratio: "1 in 6"
+  ratio_caption: "people in the world will be aged 60 or older by 2030"
+  ratio_url: https://www.who.int/news-room/fact-sheets/detail/ageing-and-health
+  ratio_basis: "WHO Ageing and health fact sheet: 'By 2030, 1 in 6 people in the world will be aged 60 years or over.'"
 status:
   level: 1
   why: Exercise and calorie restriction modestly slow age-related decline and aging biomarkers in trials,

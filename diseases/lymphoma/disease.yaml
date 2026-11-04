@@ -8,6 +8,10 @@ summary: Cancers of lymphocytes, split into Hodgkin lymphoma and many non-Hodgki
 toll:
   text: ~88,240 US cases (8,920 Hodgkin, 79,320 non-Hodgkin) and ~21,070 US deaths est. 2026.
   url: https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2026/2026-cancer-facts-and-figures.pdf
+  ratio: "1 in 50"
+  ratio_caption: "Americans will be diagnosed with non-Hodgkin lymphoma in their lifetime"
+  ratio_url: https://seer.cancer.gov/statfacts/html/nhl.html
+  ratio_basis: "NCI SEER Cancer Stat Facts: about 2.0% of men and women diagnosed with non-Hodgkin lymphoma in their lifetime (2021-2023 data). Excludes Hodgkin lymphoma, which is much rarer."
 status:
   level: 3
   why: Hodgkin lymphoma and most DLBCL are cured with first-line therapy, but indolent lymphomas like

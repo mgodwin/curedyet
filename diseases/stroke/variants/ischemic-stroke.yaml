@@ -5,8 +5,11 @@ order: 1
 what: A clot blocks an artery to the brain, starving part of it of blood.
 level: 3
 burden: heavy
+burden_why: Emergency clot-busting drugs or catheter procedures, then rehab and lifelong prevention pills,
+  often with lasting deficits.
 survival: ~46% functionally independent at 90 days after thrombectomy (vs ~27% without)
-share: ~87% of strokes
+share: About 87% of strokes are caused by a blocked artery
+share_url: https://www.cdc.gov/stroke/data-research/facts-stats/index.html
 treatment: Clot-busting drugs within about 4.5 hours, or catheter clot removal for large blockages within
   up to 24 hours in selected patients, can fully reverse some strokes, followed by rehab and lifelong
   prevention pills. Many patients arrive too late or are far from a thrombectomy center, and survivors

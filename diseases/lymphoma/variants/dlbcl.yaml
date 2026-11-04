@@ -5,9 +5,11 @@ order: 2
 what: Diffuse large B-cell lymphoma, the most common fast-growing non-Hodgkin lymphoma.
 level: 3
 burden: heavy
+burden_why: Four to five months of chemo-immunotherapy, with hair loss, infections and nerve damage.
 survival: ~65% alive at 5 years (SEER 5-year relative survival, 2016-2022); ~80% stage I vs ~56% stage
   IV
-share: About 1 in 3 lymphomas (ACS)
+share: About 1 in 3 lymphomas are DLBCL
+share_url: https://www.cancer.org/cancer/types/non-hodgkin-lymphoma/about/b-cell-lymphoma.html
 treatment: Standard care is about six cycles of chemo-immunotherapy (R-CHOP or Pola-R-CHP) over four to
   five months, causing hair loss, infections and nerve damage; older patients can get reduced doses. Most
   are cured, and CAR-T or bispecific antibodies can still cure some after relapse.

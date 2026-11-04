@@ -9,6 +9,10 @@ toll:
   text: About 595M people worldwide had osteoarthritis in 2020 (7.6% of the population), with knee cases
     projected to rise about 75% by 2050.
   url: https://healthdata.org/research-analysis/library/global-regional-and-national-burden-osteoarthritis-1990-2020-and
+  ratio: "1 in 13"
+  ratio_caption: "people worldwide has osteoarthritis"
+  ratio_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10477960/
+  ratio_basis: "GBD 2021 Osteoarthritis Collaborators, Lancet Rheumatology 2023: 595 million people (7.6% of the global population) had osteoarthritis in 2020; 7.6% is about 1 in 13."
 status:
   level: 1
   why: Treatments ease pain and joint replacement fixes end-stage knees and hips, but no approved drug

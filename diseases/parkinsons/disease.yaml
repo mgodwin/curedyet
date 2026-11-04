@@ -9,6 +9,10 @@ toll:
   text: More than 10 million people worldwide and about 1.1 million in the US; nearly 90,000 US diagnoses
     per year (Parkinson's Foundation).
   url: https://www.parkinson.org/understanding-parkinsons/statistics
+  ratio: "About 1 in 300"
+  ratio_caption: "Americans is living with Parkinson's disease"
+  ratio_url: https://www.parkinson.org/understanding-parkinsons/statistics
+  ratio_basis: "Derived: Parkinson's Foundation estimate of 1.1 million (1,112,643) people in the US with PD divided by the Census Vintage 2025 US population of 341.8 million (https://www.census.gov/newsroom/press-releases/2026/population-growth-slows.html)."
 status:
   level: 1
   why: Levodopa and related drugs ease symptoms well for years, but nothing has been proven to slow the

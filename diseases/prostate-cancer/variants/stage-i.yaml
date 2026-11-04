@@ -5,7 +5,11 @@ order: 1
 what: A small, slow-growing, lowest-grade cancer still inside the prostate, with a PSA under 10.
 level: 4
 burden: moderate
+burden_why: Most are watched with regular PSA tests, MRI scans and repeat biopsies rather than treated.
 survival: Almost 100% survive at least 5 years (5-year net survival, England, diagnosed 2013-2017)
+share: Part of the roughly 7 in 10 US prostate cancers found while still inside the prostate (SEER 'localized',
+  69%)
+share_url: https://seer.cancer.gov/statfacts/html/prost.html
 treatment: 'Most men are offered active surveillance: regular PSA tests, MRI scans and repeat biopsies,
   with surgery or radiation only if it grows. Very few die of it; men who choose treatment face the side
   effects listed for stage II.'

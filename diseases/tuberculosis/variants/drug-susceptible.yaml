@@ -5,7 +5,11 @@ order: 1
 what: TB caused by bacteria that the standard first-line antibiotics can still kill.
 level: 4
 burden: moderate
+burden_why: Four to six months of daily antibiotic pills with nausea, rash or liver irritation that need
+  monitoring.
 survival: ~88% treatment success worldwide
+share: About 97% of people newly diagnosed with TB worldwide have TB that standard drugs can treat
+share_url: https://www.who.int/teams/global-programme-on-tuberculosis-and-lung-health/tb-reports/global-tuberculosis-report-2025/tb-disease-burden/1-3-drug-resistant-tb
 treatment: A 4 to 6 month course of daily antibiotic pills (usually isoniazid, rifampicin, pyrazinamide
   and ethambutol) cures most patients. Side effects such as nausea, rash and liver irritation need monitoring,
   but treatment is usually free.

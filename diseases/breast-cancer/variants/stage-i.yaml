@@ -6,8 +6,12 @@ what: A small invasive tumor (up to 2 cm) with no spread to lymph nodes, or only
   in them.
 level: 4
 burden: heavy
+burden_why: Even small tumors mean surgery, usually radiation, and often 5 to 10 years of hormone pills
+  with joint pain and hot flashes.
 survival: Almost 100% survive at least 5 years (5-year net survival, England, diagnosed 2018-2022)
-share: Most of the ~64% of US cases found while still localized (SEER, invasive only)
+share: Most of the roughly 2 in 3 US invasive breast cancers found before they spread beyond the breast
+  (SEER 'localized', 64%)
+share_url: https://seer.cancer.gov/statfacts/html/breast.html
 treatment: Surgery, usually with radiation; most tumors are hormone-positive and need 5-10 years of endocrine
   pills with joint pain, hot flashes or bone loss, and HER2-positive or triple-negative tumors often add
   chemotherapy. Most are cured.

@@ -5,7 +5,11 @@ order: 2
 what: The cancer has spread beyond the ovaries to other organs in the pelvis, such as the womb or bladder.
 level: 3
 burden: heavy
+burden_why: Major surgery and about six cycles of chemotherapy, with hair loss and nerve damage.
 survival: More than 70% alive at 5 years (net survival, England 2016-2020)
+share: Part of the roughly 1 in 5 US ovarian cancers that have spread into the pelvis or nearby nodes
+  (SEER 'regional', 18%)
+share_url: https://seer.cancer.gov/statfacts/html/ovary.html
 treatment: Surgery followed by about six cycles of carboplatin and paclitaxel, with hair loss and nerve
   damage. Most women are alive at five years, though some relapse later.
 caveat: 'Late relapses happen, so 5-year survival somewhat overstates the cure rate. Rated 3: just over

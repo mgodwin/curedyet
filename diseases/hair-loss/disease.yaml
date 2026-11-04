@@ -9,6 +9,10 @@ toll:
   text: Affects an estimated 80M Americans (about 50M men and 30M women), per the American Academy of
     Dermatology.
   url: https://www.aad.org/media/stats-numbers
+  ratio: "More than 1 in 2"
+  ratio_caption: "men over 50 have some degree of hair loss"
+  ratio_url: https://medlineplus.gov/genetics/condition/androgenetic-alopecia/
+  ratio_basis: "NIH MedlinePlus Genetics (androgenetic alopecia): 'more than 50 percent of men over age 50 have some degree of hair loss'; affects about 50M men and 30M women in the US."
 status:
   level: 2
   why: Finasteride plus minoxidil stops loss in most men and regrows some hair, and transplants restore

@@ -6,6 +6,8 @@ what: Adults with long-term hepatitis B who already keep the virus suppressed wi
   no cirrhosis, and have a low level of a virus protein (HBsAg) in the blood.
 level: 3
 burden: moderate
+burden_why: Six months of injections on top of daily pills, with injection-site pain and a temporary liver
+  enzyme rise.
 survival: ~19% functional cure 6 months after stopping all treatment (B-Well, HBsAg up to 3,000 IU/mL);
   ~26% if HBsAg up to 1,000
 treatment: They can add six months of bepirovirsen (Hibsago) injections to their daily antiviral pills,

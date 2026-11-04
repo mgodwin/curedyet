@@ -8,6 +8,10 @@ summary: Cancer of the ovaries, fallopian tubes or peritoneum, usually found lat
 toll:
   text: About 21,010 new US cases and 12,450 US deaths expected in 2026 (ACS); 5-year survival 52% overall.
   url: https://www.cancer.org/cancer/types/ovarian-cancer/about/key-statistics.html
+  ratio: "1 in 91"
+  ratio_caption: "US women will get ovarian cancer in their lifetime"
+  ratio_url: https://www.cancer.org/cancer/types/ovarian-cancer/about/key-statistics.html
+  ratio_basis: "American Cancer Society key statistics: 'A woman's risk of getting ovarian cancer during her lifetime is about 1 in 91.'"
 status:
   level: 3
   why: Early-stage disease is usually cured by surgery, but over half of cases are found at a distant

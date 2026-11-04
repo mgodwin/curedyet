@@ -9,6 +9,10 @@ toll:
   text: About 843,000 new cases and 732,000 deaths worldwide (2024, GLOBOCAN); about 42,340 US cases and
     30,980 US deaths expected in 2026.
   url: https://ascopost.com/news/july-2026/american-cancer-society-reports-latest-global-cancer-statistics/
+  ratio: "1 in 91"
+  ratio_caption: "Americans will be diagnosed with liver or bile duct cancer in their lifetime"
+  ratio_url: https://seer.cancer.gov/statfacts/html/livibd.html
+  ratio_basis: "NCI SEER Cancer Stat Facts: about 1.1% of men and women diagnosed with liver and intrahepatic bile duct cancer in their lifetime (2021-2023 data); 1.1% is about 1 in 91."
 status:
   level: 3
   why: Small tumors found early can be cured by resection, ablation or transplant, but most patients are

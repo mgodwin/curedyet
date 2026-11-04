@@ -6,7 +6,11 @@ what: The immune system inflames any part of the gut, often deep into the bowel 
   narrowing and abnormal channels (fistulas).
 level: 2
 burden: moderate
+burden_why: Lifelong biologic or immune-calming drugs with scopes, blood tests and infection risk, and
+  many eventually need bowel surgery.
 survival: ~26% need major bowel surgery within 10 years of diagnosis
+share: Nearly half of Americans with IBD have Crohn's disease
+share_url: https://stacks.cdc.gov/view/cdc/134534
 treatment: Lifelong biologics or other immune-calming drugs put many patients into long remission, with
   regular scopes and blood tests and some infection risk. Surgery removes damaged bowel but does not cure
   Crohn's, which often returns near the join.

@@ -8,6 +8,10 @@ summary: An inherited bleeding disorder caused by missing clotting factor VIII (
 toll:
   text: About 1 in 5,000 male births for hemophilia A and 1 in 40,000 for B; ~18,000 people in the US.
   url: https://en.wikipedia.org/wiki/Haemophilia
+  ratio: "1 in 4,000 to 5,000"
+  ratio_caption: "baby boys is born with hemophilia A, the most common type"
+  ratio_url: https://medlineplus.gov/genetics/condition/hemophilia/
+  ratio_basis: "NIH MedlinePlus Genetics: hemophilia A affects 1 in 4,000 to 1 in 5,000 males worldwide; hemophilia B about 1 in 20,000 newborn males."
 status:
   level: 2
   why: Lifelong prophylaxis gives most patients near-normal lives, but no cure is in reach for most; the
