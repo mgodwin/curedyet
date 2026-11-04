@@ -1,0 +1,94 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: epilepsy
+name: Epilepsy
+category: neuro
+tracking: active
+summary: A brain disorder that causes repeated, unprovoked seizures.
+toll:
+  text: About 50 million people worldwide; premature death risk up to 3x higher (WHO fact sheet, accessed
+    2026)
+  url: https://www.who.int/news-room/fact-sheets/detail/epilepsy
+status:
+  level: 2
+  why: Up to 70% of patients can become seizure free on antiseizure medicines, but most need lifelong
+    treatment and about a third have drug-resistant epilepsy.
+  today: Most patients control seizures with one or two antiseizure medicines taken every day. Surgery
+    can stop seizures for some people with drug-resistant focal epilepsy, and devices such as responsive
+    neurostimulation reduce seizures for others. In low-income countries about three quarters of patients
+    do not get the treatment they need.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Antiseizure medicines (e.g. levetiracetam, lamotrigine, cenobamate)
+  - Resective epilepsy surgery or laser ablation
+  - Responsive neurostimulation (RNS)
+  - Vagus nerve stimulation
+  - Ketogenic diet therapy
+  burden: moderate
+  burden_note: Usually lifelong daily antiseizure pills with dizziness, fatigue, mood changes or rare
+    serious rashes, plus birth defect concerns with some drugs; surgery helps select drug-resistant patients.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 4
+    p2045: 16
+    median: 2058
+    low: 2040
+    high: 2100
+  faster:
+    p2035: 8
+    p2045: 35
+    median: 2047
+    low: 2036
+    high: 2085
+  faster_note: One-time cell and gene therapies could cure subtypes sooner, but epilepsy has many causes,
+    so the lift depends on AI mapping and designing for each and is moderate.
+  outlook: New drugs mostly add control rather than cure. One-time cell and genetic therapies could cure
+    specific subtypes, such as temporal lobe epilepsy or Dravet syndrome, within 5 to 10 years. Curing
+    most of a disease with many causes will take much longer.
+pipeline:
+- name: Azetukalner (Kv7 opener)
+  note: Xenon submitted the NDA for focal seizures in Sept 2026 after the positive Phase 3 X-TOLE2.
+  stage: Filed
+  url: https://www.neurologylive.com/view/xenon-submits-new-drug-application-azetukalner-treatment-focal-seizures
+- name: NRTX-1001 (inhibitory interneuron cell therapy)
+  note: One-time implant for drug-resistant mesial temporal lobe epilepsy; Phase 1/2 showed median 92%
+    seizure reduction in the low-dose group.
+  stage: Phase 3
+  url: https://www.neurologylive.com/view/phase-3-epic-trial-evaluate-nrtx-1001-cell-therapy-drug-resistant-mesial-temporal-lobe-epilepsy
+- name: Zorevunersen (SCN1A antisense, Dravet syndrome)
+  note: EMPEROR fully enrolled in June 2026; readout expected Q3 2027 and possible US launch early 2028.
+  stage: Phase 3
+  url: https://www.biospace.com/press-releases/stoke-therapeutics-announces-second-quarter-2026-financial-results-and-provides-business-updates
+- name: ETX101 (AAV gene therapy, Dravet syndrome)
+  note: Early-stage trials; Breakthrough Therapy designation in Jan 2026 after sustained seizure reductions
+    from one dose. Exact phase unclear.
+  stage: Phase 2
+  url: https://xtalks.com/international-epilepsy-day-2026-advances-across-therapies-devices-and-monitoring-4606
+- name: NeuroPace RNS for generalized epilepsy
+  note: PMA supplement for idiopathic generalized epilepsy is under FDA review, based on the NAUTILUS
+    study.
+  stage: Filed
+  url: https://xtalks.com/international-epilepsy-day-2026-advances-across-therapies-devices-and-monitoring-4606
+recent:
+- date: 2026-03
+  text: Azetukalner cut focal seizures by a median 53% at 25 mg vs 10% on placebo in Phase 3 X-TOLE2.
+  url: https://www.sec.gov/Archives/edgar/data/0001582313/000119312526211843/xene-ex99_1.htm
+- date: 2025-12
+  text: Neurona reported some NRTX-1001 patients kept over 97% seizure reduction for up to 24 months after
+    one dose.
+  url: https://www.biospace.com/press-releases/neurona-therapeutics-presents-new-long-term-clinical-data-from-nrtx-1001-cell-therapy-trials-at-2025-annual-meeting-of-the-american-epilepsy-society
+- date: 2026-04
+  text: Neurona presented the design of the Phase 3 EPIC sham-controlled trial of its one-time cell therapy
+    at AAN 2026.
+  url: https://www.neurologylive.com/view/phase-3-epic-trial-evaluate-nrtx-1001-cell-therapy-drug-resistant-mesial-temporal-lobe-epilepsy
+next_milestone:
+  date: 2026-11
+  url: https://www.neurologylive.com/view/xenon-submits-new-drug-application-azetukalner-treatment-focal-seizures
+  what: FDA decision on whether to accept the azetukalner NDA for review (about 60 days after the Sept
+    2026 submission)
+ai:
+  impact: some
+  note: AI-enabled wearable EEG, such as the CE-marked EPISERAS earpiece, is improving seizure monitoring,
+    but AI is not yet driving new cures.
+markets: []

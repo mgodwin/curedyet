@@ -1,0 +1,19 @@
+# Prostate cancer: research
+
+Evidence behind this disease's record. Every claim in disease.yaml should trace back to a source listed here.
+
+## Sources
+
+- [ACS global cancer statistics 2026](https://pressroom.cancer.org/global-cancer-statistics-2026)
+- [ACS Cancer Facts & Figures 2026](https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2026/2026-cancer-facts-and-figures.pdf)
+- [AACR: First AKT inhibitor approved for prostate cancer](https://www.aacr.org/patients-caregivers/progress-against-cancer/first-akt-inhibitor-approved-for-prostate-cancer/)
+- [Purdue: FDA approves Pluvicto with ARPI](https://nuclear.pharmacy.purdue.edu/news-and-updates/fda-approves-lutetium-lu-177-vipivotide-tetraxetan-androgen-receptor-pathway)
+- [RTTNews: Talzenna plus Xtandi priority review](https://www.rttnews.com/3669562/pfizer-secures-fda-priority-review-for-talzenna-plus-xtandi-in-metastatic-prostate-cancer.aspx)
+
+## Research log
+
+- 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
+
+## Open questions
+
+- No exact PDUFA date found for talazoparib plus enzalutamide; milestone set to 2026-12.

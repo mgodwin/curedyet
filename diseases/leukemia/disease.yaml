@@ -1,0 +1,89 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: leukemia
+name: Leukemias
+category: cancer
+tracking: active
+summary: Blood cancers of the bone marrow, including AML, ALL, CLL and CML.
+toll:
+  text: ~67,790 US cases and ~23,910 US deaths est. 2026; global figures not given in ACS 2026 summary.
+  url: https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2026/2026-cancer-facts-and-figures.pdf
+status:
+  level: 3
+  why: Childhood ALL and APL are cured in most patients and CML is well controlled, but AML in older adults
+    and relapsed disease are usually fatal.
+  today: About 90% of children with ALL are cured, and CML patients on tyrosine kinase inhibitors live
+    near-normal lives. CLL is controlled for years with BTK inhibitors and venetoclax, now including an
+    all-oral fixed-duration regimen. AML remains the hardest, with cure mostly limited to younger fit
+    patients who get intensive chemo or a transplant, though menin and other targeted inhibitors are adding
+    options.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Multi-agent chemotherapy for childhood ALL
+  - Tyrosine kinase inhibitors for CML
+  - BTK inhibitors and venetoclax for CLL
+  - Venetoclax with hypomethylating agents for older AML
+  - Allogeneic stem cell transplant and CAR-T for ALL
+  burden: heavy
+  burden_note: Childhood ALL needs about 2-3 years of multi-agent chemo and AML needs intensive chemo
+    or transplant with infection and organ risks; CML and CLL use lifelong or fixed-duration oral drugs.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 18
+    p2045: 50
+    median: 2045
+    low: 2034
+    high: 2070
+  faster:
+    p2035: 30
+    p2045: 72
+    median: 2039
+    low: 2032
+    high: 2055
+  faster_note: Faster design and testing of menin inhibitors, fixed-duration CLL regimens and cheaper
+    CAR-T could raise cure rates in older AML patients, the main holdout, giving a solid lift since many
+    candidates already exist.
+  outlook: 'Leukemia is a mix: some types are already cured for most and others are controlled, so the
+    bar hinges on AML and CLL. Menin inhibitors and fixed-duration CLL regimens could raise cure or deep-remission
+    rates, but older AML patients remain the bottleneck. Wider CAR-T and bispecific use in adult ALL is
+    a further lever.'
+pipeline:
+- name: Ziftomenib with 7+3 in new AML (KOMET-007)
+  note: Menin inhibitor approved Nov 2025 for relapsed NPM1 AML; frontline combo showed 96% CRc in NPM1-mutant
+    patients.
+  stage: Phase 3
+  url: https://www.delveinsight.com/eha-conference/eha-2026/phase-iii-komet-007-trial
+- name: Acalabrutinib plus venetoclax
+  note: Approved Feb 19, 2026 as fixed-duration all-oral first-line CLL therapy (AMPLIFY).
+  stage: Approved 2025-26
+  url: https://www.fda.gov//drugs/resources-information-approved-drugs/fda-approves-acalabrutinib-venetoclax-chronic-lymphocytic-leukemia-or-small-lymphocytic-lymphoma
+- name: Oral decitabine-cedazuridine plus venetoclax
+  note: Approved May 13, 2026 as an all-oral option for unfit newly diagnosed AML.
+  stage: Approved 2025-26
+  url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-oral-combination-decitabine-and-cedazuridine-tablets-venetoclax-newly-diagnosed-acute
+- name: Enzomenib
+  note: Menin inhibitor given breakthrough designation Oct 2026 for relapsed KMT2A-rearranged acute leukemia.
+  stage: Phase 2
+  url: https://www.onclive.com/view/fda-flashback-hematologic-cancer-decisions-and-news-from-september-2026
+recent:
+- date: 2026-02
+  text: FDA approved the first all-oral fixed-duration BTK plus BCL2 regimen for untreated CLL.
+  url: https://www.fda.gov//drugs/resources-information-approved-drugs/fda-approves-acalabrutinib-venetoclax-chronic-lymphocytic-leukemia-or-small-lymphocytic-lymphoma
+- date: 2026-06
+  text: KOMET-007 data at EHA showed high MRD-negative remission rates when adding ziftomenib to induction
+    chemo in NPM1 and KMT2A AML.
+  url: https://www.delveinsight.com/eha-conference/eha-2026/phase-iii-komet-007-trial
+- date: 2026-05
+  text: An all-oral decitabine-cedazuridine plus venetoclax regimen won approval for older or unfit AML
+    patients.
+  url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-oral-combination-decitabine-and-cedazuridine-tablets-venetoclax-newly-diagnosed-acute
+next_milestone:
+  date: '2026-12-12'
+  url: https://www.hematology.org/meetings/annual-meeting
+  what: ASH 2026 Annual Meeting (Dec 12-15, New Orleans) with major AML, ALL and CLL trial data.
+ai:
+  impact: low
+  note: AI helps with flow cytometry and marrow slide analysis, but no AI-discovered leukemia drug is
+    near approval.
+markets: []

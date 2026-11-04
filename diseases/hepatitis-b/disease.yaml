@@ -1,0 +1,71 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: hepatitis-b
+name: Hepatitis B
+category: infectious
+tracking: active
+summary: A viral liver infection that can become chronic and cause cirrhosis and liver cancer.
+toll:
+  text: 240 million living with chronic HBV and 1.1 million deaths in 2024; 0.9M new infections/yr (WHO)
+  url: https://www.who.int/news-room/fact-sheets/detail/hepatitis-b
+status:
+  level: 3
+  why: Antivirals control most patients for life, and in Oct 2026 the FDA approved bepirovirsen, which
+    gave a functional cure to about 19-26% of an eligible low-HBsAg subgroup.
+  today: Daily tenofovir or entecavir suppresses the virus and cuts liver damage, but rarely clears it.
+    Bepirovirsen (Hibsago), added to antivirals, now offers a finite-course functional cure for some adults
+    with low HBsAg and no cirrhosis. A vaccine prevents infection with near 100% protection, but coverage
+    gaps remain, especially in Africa.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Tenofovir (TDF/TAF)
+  - Entecavir
+  - Bepirovirsen (Hibsago) add-on
+  - Hepatitis B vaccine (birth dose)
+  burden: moderate
+  burden_note: Usually lifelong daily tenofovir or entecavir pills that are well tolerated and cheap as
+    generics, but need periodic liver, kidney and viral monitoring; bepirovirsen adds months of injections.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 12
+    p2045: 48
+    median: 2046
+    low: 2034
+    high: 2070
+  faster:
+    p2035: 22
+    p2045: 70
+    median: 2040
+    low: 2032
+    high: 2058
+  faster_note: Faster design and testing of siRNA, antibody and antisense combinations could push functional
+    cure rates past half, a sizeable lift because the first cure drug is already approved.
+  outlook: The first functional cure drug is now approved, but it works for only a fraction of a subgroup.
+    Combining siRNAs, antibodies, antisense and immune boosters could push cure rates past 50%. That is
+    plausible within 15-20 years, but the hidden viral cccDNA makes it hard.
+pipeline:
+- name: Bepirovirsen (Hibsago, antisense)
+  note: FDA approved Oct 2026; Japan decision expected H2 2026, EU and China H1 2027.
+  stage: Approved 2025-26
+  url: https://www.healio.com/news/gastroenterology/20261021/hibsago-scores-fda-approval-as-first-antisense-therapy-for-chronic-hepatitis-b
+- name: Tobevibart + elebsiran (antibody + siRNA)
+  note: Vir's MARCH study tests finite combinations aiming for functional cure.
+  stage: Phase 2
+  url: https://investors.vir.bio/news/news-details/2025/Vir-Biotechnology-Announces-Preliminary-24-Week-Post-End-of-Treatment-Data-for-Tobevibart-and-Elebsiran-Combinations-in-Chronic-Hepatitis-B-From-the-MARCH-Study/default.aspx
+recent:
+- date: 2026-10
+  text: FDA approved bepirovirsen as the first antisense therapy for chronic hepatitis B.
+  url: https://www.healio.com/news/gastroenterology/20261021/hibsago-scores-fda-approval-as-first-antisense-therapy-for-chronic-hepatitis-b
+- date: 2026-01
+  text: B-Well 1 and 2 Phase 3 trials met their functional cure endpoint; 19% cured vs none on placebo.
+  url: https://www.businesswire.com/news/home/20260106121974/en/Ionis-partner-GSK-announces-positive-topline-results-from-B-Well-1-and-B-Well-2-Phase-3-studies-for-bepirovirsen-a-potential-first-in-class-medicine-for-chronic-hepatitis-B
+next_milestone:
+  date: 2026-12
+  url: https://www.sec.gov/Archives/edgar/data/0001131399/000119312526384439/d331501d6k.htm
+  what: Japan regulatory decision on bepirovirsen (GSK guided H2 2026)
+ai:
+  impact: low
+  note: 'Unclear: the leading cure candidates are antisense and siRNA drugs, with no clear AI-discovery
+    role.'
+markets: []

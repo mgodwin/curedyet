@@ -1,0 +1,108 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: ebola
+name: Ebola
+category: outbreaks
+tracking: active
+summary: A severe, often fatal viral hemorrhagic fever caused by several ebolavirus species, spread by
+  contact with body fluids.
+toll:
+  text: '2026 Bundibugyo outbreak: 10,274 confirmed cases and 4,992 deaths in DRC as of 28 Oct 2026 (ECDC),
+    up from WHO''s 9,704 cases and 4,687 deaths as of 20 Oct; historic outbreaks kill roughly 25-90% of
+    cases.'
+  url: https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026
+status:
+  level: 3
+  why: For Zaire ebolavirus, a licensed vaccine and two FDA-approved antibody drugs save most early-treated
+    patients, but Bundibugyo and Sudan virus disease still have only supportive care and kill about half
+    of patients.
+  today: 'Zaire ebolavirus, the cause of most past outbreaks, has a licensed vaccine (Ervebo, plus Zabdeno/Mvabea)
+    and approved antibody treatments (Inmazeb and Ebanga), which raise survival most when given early.
+    Bundibugyo virus, which drives the 2026 DRC epidemic, and Sudan virus have no approved vaccine or
+    treatment, so care is fluids, symptom management and isolation; about 49% of confirmed DRC cases in
+    2026 have died. Post-exposure prevention is being tested: oral obeldesivir for contacts and ring vaccination
+    in the TUMAINI trial.'
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Ebanga (ansuvimab), Zaire only
+  - Inmazeb (REGN-EB3), Zaire only
+  - Ervebo vaccine, Zaire only
+  - Early intensive supportive care
+  burden: heavy
+  burden_note: Single antibody infusion for Zaire virus, but patients need isolated intensive care with
+    IV fluids in outbreak zones where access is poor; non-Zaire strains have supportive care only.
+forecast:
+  bottleneck: trial-limited
+  normal:
+    p2035: 30
+    p2045: 55
+    median: 2042
+    low: 2030
+    high: 2075
+  faster:
+    p2035: 45
+    p2045: 72
+    median: 2036
+    low: 2029
+    high: 2060
+  faster_note: Pan-ebolavirus antibodies and antivirals are already in randomized trials during the 2026
+    Bundibugyo epidemic, so faster trials and approval plus outbreak-zone delivery would lift odds a lot
+    even by 2035.
+  outlook: Zaire Ebola is already close to curable when treated early, so the gap is the other species.
+    The huge 2026 Bundibugyo epidemic is generating randomized trial data fast; if the pan-species MBP134
+    or remdesivir shows a clear survival benefit in 2027, approvals covering all major ebolaviruses could
+    follow within a few years. Uneven access to care in outbreak zones keeps real-world survival below
+    rich-country levels.
+pipeline:
+- name: TUMAINI ring-vaccination platform trial (Ervebo first; Moderna and Oxford/Serum Institute Bundibugyo
+    vaccines to join)
+  note: Phase 2/3 adaptive trial in high-risk contacts; first participant vaccinated in Bunia on 23 Oct
+    2026.
+  stage: Phase 3
+  url: https://africa.com/featuresopinion/first-participant-vaccinated-in-pivotal-phase-2-3-bundibugyo-ebola-vaccine-trial-in-drc
+- name: MBP134 (Mapp pan-ebolavirus antibody cocktail)
+  note: Tested alone and with remdesivir versus standard care in the PARTNERS randomized trial in Bunia;
+    28-day mortality endpoint, 700-1,000 patients planned.
+  stage: Phase 2
+  url: https://www.itg.be/en/health-stories/press-releases/partners-trial
+- name: Remdesivir (Gilead)
+  note: Repurposed antiviral in the PARTNERS trial arms for Bundibugyo patients, started 2 Jul 2026.
+  stage: Phase 2
+  url: https://www.itg.be/en/health-stories/press-releases/partners-trial
+- name: Obeldesivir (oral, Gilead) post-exposure prophylaxis
+  note: Twice-daily pill for close contacts to prevent infection; trial slated to start in July 2026.
+  stage: Phase 2
+  url: https://www.wunc.org/2026-07-07/theres-no-treatment-designed-for-the-ebola-strain-ravaging-drc-but-now-theres-hope
+- name: Sabin cAd3-Sudan ebolavirus vaccine
+  note: Enrollment complete in all Phase 2 trials as of March 2026; Phase 3 in planning.
+  stage: Phase 2
+  url: https://www.sabin.org/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine/
+recent:
+- date: 2026-10
+  text: TUMAINI, the first pivotal Phase 2/3 vaccine trial against Bundibugyo virus, vaccinated its first
+    participant in Bunia, DRC.
+  url: https://africa.com/featuresopinion/first-participant-vaccinated-in-pivotal-phase-2-3-bundibugyo-ebola-vaccine-trial-in-drc
+- date: 2026-07
+  text: The PARTNERS randomized trial began testing MBP134 and remdesivir in Bundibugyo patients within
+    two months of the outbreak's PHEIC declaration.
+  url: https://www.itg.be/en/health-stories/press-releases/partners-trial
+- date: 2026-06
+  text: CEPI funded three Bundibugyo vaccine candidates from Moderna, Oxford and IAVI.
+  url: https://en.wikipedia.org/wiki/2026_Central_Africa_Ebola_epidemic
+next_milestone:
+  date: 2027-01
+  url: https://www.itg.be/en/health-stories/press-releases/partners-trial
+  what: PARTNERS trial (MBP134, remdesivir) reaches its planned six-month mark; first efficacy data on
+    Bundibugyo treatments possible
+ai:
+  impact: low
+  note: Current Ebola antibodies and antivirals came from survivor B cells and conventional screening;
+    AI mainly helps with genomic surveillance and outbreak modeling.
+markets:
+- url: https://manifold.markets/bens/2026-ebola-epidemic-case-count
+  what: '2026 Ebola epidemic total suspected case count: leading buckets 20,000-24,999 (21%) and 25,000-29,999
+    (20%)'
+  who: Manifold
+- url: https://manifold.markets/bens/2026-ebola-epidemic-deaths
+  what: 2026 Ebola epidemic deaths (multi-bucket market)
+  who: Manifold

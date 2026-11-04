@@ -1,0 +1,81 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: heart-failure
+name: Heart failure
+category: cardio
+tracking: active
+summary: The heart cannot pump or fill well enough to meet the body's needs, causing breathlessness, fluid
+  buildup and early death.
+toll:
+  text: Roughly 64M people live with heart failure worldwide (GBD 2017 estimate cited in reviews).
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10398425/
+status:
+  level: 1
+  why: Modern drug combinations slow decline and cut deaths, but most patients still worsen and about
+    half die within five years of diagnosis.
+  today: For reduced ejection fraction, four drug classes (ARNI, beta blocker, MRA, SGLT2 inhibitor) plus
+    devices extend life a lot. Preserved ejection fraction now has SGLT2 inhibitors, finerenone (FDA approved
+    2025) and GLP-1 drugs in obese patients. Heart transplant or LVAD helps a small number with end-stage
+    disease.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Sacubitril/valsartan
+  - SGLT2 inhibitors
+  - Beta blockers + MRAs (incl. finerenone)
+  - ICD/CRT devices
+  - Heart transplant / LVAD
+  burden: moderate
+  burden_note: Lifelong multi-drug regimen with low blood pressure, dizziness and kidney or potassium
+    problems needing frequent blood tests; implanted devices, LVAD or transplant are heavy options for
+    a few.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 2
+    p2045: 8
+    median: 2065
+    low: 2045
+    high: 2100
+  faster:
+    p2035: 4
+    p2045: 20
+    median: 2052
+    low: 2040
+    high: 2100
+  faster_note: Curing heart failure needs heart muscle regeneration or repair, which is still mostly biology;
+    acceleration could find regeneration targets but they then need years of trials, so the lift is small
+    by 2035.
+  outlook: Drugs keep shaving risk, but heart failure is the end point of many diseases and damaged heart
+    muscle does not regrow. A cure for most would need working cardiac gene therapy or regeneration, which
+    is still in early trials. Prevention through better control of blood pressure, diabetes and obesity
+    is the likelier near-term win.
+pipeline:
+- name: AZD5462 (AstraZeneca), oral relaxin receptor agonist
+  note: LUMINARA Phase 2b in about 260 chronic HF patients presented at ESC 2026.
+  stage: Phase 2
+  url: https://www.consultantlive.com/view/european-society-of-cardiology-2026-preview-6-trials-to-know
+- name: AB-1002 (AskBio), cardiac gene therapy
+  note: Phase 1 showed no drug-related adverse events and clinical gains; randomized GenePHIT trial enrolling.
+  stage: Phase 2
+  url: https://www.indianpharmapost.com/biotech/lite/askbios-gene-therapy-shows-promising-12-month-results-for-heart-failure-18088
+- name: Finerenone for HFmrEF/HFpEF
+  note: FDA approved for HF with LVEF 40% or more in 2025.
+  stage: Approved 2025-26
+  url: https://cardiovascularbusiness.com/topics/clinical/heart-failure/fda-approves-bayers-finerenone-treat-wide-range-heart-failure-patients
+- name: Aficamten (cardiac myosin inhibitor)
+  note: ACACIA-HCM improved symptoms and exercise in nonobstructive HCM, a cause of HF.
+  stage: Phase 3
+  url: https://www.consultantlive.com/view/european-society-of-cardiology-2026-preview-6-trials-to-know
+recent:
+- date: 2026-05
+  text: Aficamten met endpoints in nonobstructive hypertrophic cardiomyopathy in the ACACIA-HCM trial.
+  url: https://www.consultantlive.com/view/european-society-of-cardiology-2026-preview-6-trials-to-know
+- date: 2025-10
+  text: AB-1002 gene therapy showed 12-month safety and efficacy signals in Nature Medicine.
+  url: https://www.indianpharmapost.com/biotech/lite/askbios-gene-therapy-shows-promising-12-month-results-for-heart-failure-18088
+next_milestone: null
+ai:
+  impact: some
+  note: AI-ECG algorithms that flag low ejection fraction are cleared by the FDA and help find patients
+    earlier.
+markets: []

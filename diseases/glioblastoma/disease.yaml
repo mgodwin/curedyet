@@ -1,0 +1,94 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: glioblastoma
+name: Glioblastoma
+category: cancer
+tracking: active
+summary: The most common and most aggressive primary brain cancer in adults, growing from glial cells.
+toll:
+  text: Over 12,000 new US cases per year; about 95% of patients die within five years (NFCR, accessed
+    2026).
+  url: https://www.nfcr.org/gbm-agile-what-is-gbm/
+status:
+  level: 1
+  why: Surgery, radiation, temozolomide and tumor treating fields extend life by months, but the tumor
+    almost always comes back and kills.
+  today: Standard care is maximal safe surgery, then radiation with temozolomide, then maintenance temozolomide
+    with Optune tumor treating fields. Median survival is still well under two years, and tumors with
+    unmethylated MGMT respond worst. Recurrent disease has no reliably effective option; bevacizumab delays
+    progression but does not extend survival.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Maximal safe resection
+  - Radiation plus temozolomide
+  - Tumor treating fields (Optune)
+  - Bevacizumab at recurrence
+  burden: heavy
+  burden_note: Brain surgery, six weeks of radiation with temozolomide, then months of maintenance chemo
+    and wearing Optune scalp arrays about 18 hours a day, with fatigue and low blood counts.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 1
+    p2045: 5
+    median: 2070
+    low: 2048
+    high: 2100
+  faster:
+    p2035: 3
+    p2045: 20
+    median: 2052
+    low: 2040
+    high: 2100
+  faster_note: Tumor heterogeneity and brain delivery are the core problems, so AI would need to crack
+    biology and design brain-reaching therapies; the lift is small by 2035 and only moderate by 2045 because
+    no candidate is near cure.
+  outlook: Glioblastoma has resisted nearly every new drug class for 20 years, and the 2026 TRIDENT result
+    was another null. Brain-delivered CAR-T is the most exciting signal but is still in small early trials
+    with short responses. A cure for most patients by 2035 is very unlikely; gradual survival gains are
+    more plausible.
+pipeline:
+- name: CART-EGFR-IL13Ra2 (bivalent CAR-T, Penn)
+  note: Intrathecal dual-target CAR-T gave 12.0 months median OS in 18 recurrent EGFR-amplified patients
+    at ASCO 2026.
+  stage: Phase 1
+  url: https://www.ascopost.com/news/september-2026/bivalent-car-t-cell-therapy-shows-no-delayed-toxicity-and-promising-survival-in-recurrent-glioblastoma/
+- name: Optune plus temozolomide plus pembrolizumab (EF-41/KEYNOTE D58)
+  note: Tests adding a checkpoint inhibitor to tumor treating fields in newly diagnosed disease.
+  stage: Phase 3
+  url: https://clinicaltrials.gov/study/NCT06556563
+- name: Niraparib (Gliofocus)
+  note: Brain-penetrant PARP inhibitor tested against temozolomide in MGMT-unmethylated glioblastoma.
+  stage: Phase 3
+  url: https://trial.medpath.com/news/expediting-clinical-trial-processes-to-advance-brain-cancer-research
+- name: DCVax-L (dendritic cell vaccine)
+  note: UK MHRA application under review; phase 3 used external controls, so evidence is debated.
+  stage: Filed
+  url: https://braintumourresearch.org/blogs/research-campaigning-news/in-the-news-glioblastoma-vaccine-to-be-reviewed-for-licensing-in-the-uk
+- name: SurVaxM (survivin vaccine)
+  note: Randomized phase 2b in newly diagnosed glioblastoma.
+  stage: Phase 2
+  url: https://practicalneurology.com/news/survaxm-vaccine-evaluated-in-phase-2b-trial-for-those-with-newly-diagnosed-glioblastoma/2488651/
+recent:
+- date: 2026-06
+  text: 'Phase 3 TRIDENT failed: starting tumor treating fields during chemoradiation did not improve
+    survival (17.7 vs 17.5 months).'
+  url: https://www.targetedonc.com/view/phase-3-trident-trial-misses-survival-end-point-in-glioblastoma
+- date: 2026-05
+  text: Penn's dual-target CAR-T showed durable tumor shrinkage in some recurrent patients and no delayed
+    toxicity at ASCO 2026.
+  url: https://www.ascopost.com/news/september-2026/bivalent-car-t-cell-therapy-shows-no-delayed-toxicity-and-promising-survival-in-recurrent-glioblastoma/
+next_milestone:
+  date: '2026-11-12'
+  url: https://www.soc-neuro-onc.org/meetings-education/31st-society-for-neuro-oncology-annual-meeting-education-day
+  what: Society for Neuro-Oncology 2026 Annual Meeting in Philadelphia (Nov 12-15), main venue for new
+    CAR-T and trial data.
+ai:
+  impact: some
+  note: AI is mostly used for MRI and pathology analysis and for drug repurposing screens, with no AI-discovered
+    glioblastoma drug yet showing clinical benefit.
+markets:
+- url: https://manifold.markets/chrisjbillington/will-glioblastoma-an-aggressive-bra
+  what: Will US glioblastoma 5-year relative survival exceed 15% in the 2035 CBTRUS report? About 41%
+    yes (play money, 14 traders).
+  who: Manifold

@@ -1,0 +1,87 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: ovarian-cancer
+name: Ovarian cancer
+category: cancer
+tracking: active
+summary: Cancer of the ovaries, fallopian tubes or peritoneum, usually found late because early symptoms
+  are vague.
+toll:
+  text: About 21,010 new US cases and 12,450 US deaths expected in 2026 (ACS); 5-year survival 52% overall.
+  url: https://www.cancer.org/cancer/types/ovarian-cancer/about/key-statistics.html
+status:
+  level: 3
+  why: Early-stage disease is usually cured by surgery, but over half of cases are found at a distant
+    stage where most women relapse.
+  today: Localized disease has about 92% 5-year survival, but 54% of cases are diagnosed at a distant
+    stage with about 32% 5-year survival. Surgery plus platinum chemotherapy, then PARP inhibitor maintenance
+    (especially for BRCA or HRD tumors) gives some advanced patients long remissions. Platinum-resistant
+    relapse remains hard to treat, though new options like mirvetuximab, relacorilant and pembrolizumab
+    arrived recently.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Debulking surgery plus carboplatin-paclitaxel
+  - PARP inhibitors (olaparib, niraparib)
+  - Bevacizumab
+  - Mirvetuximab soravtansine (FRa-high)
+  - Relacorilant plus nab-paclitaxel
+  burden: heavy
+  burden_note: Most women need extensive debulking surgery and about six cycles of carboplatin-paclitaxel
+    with hair loss and neuropathy, then up to years of PARP inhibitors causing anemia and fatigue.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 6
+    p2045: 20
+    median: 2058
+    low: 2040
+    high: 2100
+  faster:
+    p2035: 12
+    p2045: 40
+    median: 2047
+    low: 2037
+    high: 2080
+  faster_note: Faster ADC development in first-line care and an AI-found early-detection biomarker would
+    matter most; the lift is moderate because no screening method has yet shown it saves lives.
+  outlook: Antibody-drug conjugates are rapidly improving outcomes in relapsed disease and are moving
+    into first-line use, which is where cures happen. The biggest lever is earlier detection, and no screening
+    test has yet been shown to reduce deaths. Survival will likely keep rising, but curing most women
+    within a decade is unlikely.
+pipeline:
+- name: Relacorilant (Lifyorli) plus nab-paclitaxel
+  note: FDA approved March 25, 2026 for platinum-resistant disease; OS 16.0 vs 11.9 months in ROSELLA.
+  stage: Approved 2025-26
+  url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-relacorilant-nab-paclitaxel-platinum-resistant-epithelial-ovarian-fallopian-tube-or
+- name: Pembrolizumab plus paclitaxel
+  note: FDA approved in Q1 2026 for PD-L1-positive platinum-resistant disease.
+  stage: Approved 2025-26
+  url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-paclitaxel-platinum-resistant-epithelial-ovarian-fallopian-tube-or
+- name: Rinatabart sesutecan (Rina-S, FRa ADC)
+  note: 45.9% response rate in 109 platinum-resistant patients; phase 3 RAINFOL-02 ongoing.
+  stage: Phase 3
+  url: https://www.targetedonc.com/view/rinatabart-sesutecan-shows-durable-responses-in-platinum-resistant-ovarian-cancer
+- name: Raludotatug deruxtecan (R-DXd, CDH6 ADC)
+  note: FDA breakthrough designation; about 50% response in platinum-resistant disease; first-line maintenance
+    trials started.
+  stage: Phase 3
+  url: https://www.merck.com/news/raludotatug-deruxtecan-granted-breakthrough-therapy-designation-by-u-s-fda-for-patients-with-cdh6-expressing-platinum-resistant-ovarian-primary-peritoneal-or-fallopian-tube-cancers-previously-treat/
+- name: Torvutatug samrotecan (AZD5335, FRa ADC)
+  note: 56.6% response in expansion cohorts at ESMO 2026; phase 3 TREVI-OC-01 recruiting.
+  stage: Phase 3
+  url: https://www.targetedonc.com/view/esmo-2026-gynecologic-cancer-adcs-ovarian-cervical
+recent:
+- date: 2026-03
+  text: FDA approved relacorilant, a first-in-class glucocorticoid receptor blocker, which extended survival
+    in platinum-resistant disease.
+  url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-relacorilant-nab-paclitaxel-platinum-resistant-epithelial-ovarian-fallopian-tube-or
+- date: 2026-10
+  text: Several new antibody-drug conjugates showed 45-62% response rates in platinum-resistant disease
+    at IGCS and ESMO 2026.
+  url: https://www.targetedonc.com/view/esmo-2026-gynecologic-cancer-adcs-ovarian-cervical
+next_milestone: null
+ai:
+  impact: some
+  note: AI is being applied to imaging and pathology to predict HRD status and treatment response, but
+    no AI-discovered ovarian cancer drug is in late-stage trials.
+markets: []

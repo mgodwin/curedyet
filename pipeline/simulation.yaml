@@ -1,0 +1,79 @@
+# A stage of the cure pipeline. Field guide: METHODOLOGY.md.
+id: simulation
+order: 3
+name: Simulation
+kind: booster
+question: Can computers predict what a drug will do in the body well enough to skip experiments?
+cleared_when: Cleared when computational models (virtual cell / bio foundation models, physics and AI
+  models of drug-target binding and toxicity, digital twins, in-silico trials) routinely replace a meaningful
+  share of wet-lab or patient experiments and are accepted by regulators as evidence, e.g. digital-twin
+  control arms shrinking trials and in-silico evidence in submissions.
+status: easing
+odds_much_faster:
+  by_2030: 29
+  by_2035: 55
+ai_linked: true
+status_note: 'Narrow mechanistic models are already accepted: FDA took Certara Simcyp PBPK simulations
+  in place of at least ten clinical pharmacology studies for asciminib (Mar 2026), EMA has qualified Unlearn''s
+  digital-twin PROCOVA method, and in Jun 2026 FDA accepted its first in-silico tool (an AI digital liver
+  model for DILI) into ISTAND, though only at the letter-of-intent stage. The AI-heavy frontier lags:
+  Arc''s 2025 Virtual Cell Challenge models did not consistently beat naive baselines, Boltz-2 affinity
+  correlation hit about 0.66 on an FEP+ subset but did poorly on 5 of 8 blinded Recursion assays, and
+  FDA''s Jan 2025 AI-credibility guidance was still a draft as of Apr 2026 (FDA and EMA did publish joint
+  good-AI-practice principles in Jan 2026). pOpen2030 = 0.55 x 0.30 (transformative) + 0.20 x 0.60 (jagged)
+  + 0.05 x 0.10 (plateau) = 0.29.'
+shortens:
+- preclinical
+- trials
+effect_note: Model-informed drug development saved one large sponsor about 10 months of cycle time and
+  roughly $5 million per program on average (2021-2023) by replacing or shrinking studies, and EMA-qualified
+  digital-twin controls cut outcome variance (18% in one ALS analysis, about 92 fewer patients) so pivotal
+  trials can enroll fewer people. FDA's 2025 plan to accept AI toxicity models and organoids in place
+  of some animal studies targets the preclinical stage, though no time savings have been quantified yet.
+signals:
+- asOf: 2026-11
+  name: 'Virtual Cell Challenge: top models beat naive baselines on all metrics'
+  url: https://arcinstitute.org/news/virtual-cell-challenge-2026
+  value: No (2025 results); 2026 zero-shot round winners due mid-to-late Nov 2026
+- asOf: 2026-04
+  name: FDA AI-credibility guidance for drug development (Jan 2025 draft)
+  url: https://intuitionlabs.ai/articles/fda-ai-drug-development-guidance
+  value: Still draft, not finalized
+- asOf: 2026-06
+  name: In-silico tools in FDA ISTAND qualification
+  url: https://www.fda.gov/drugs/drug-alerts-and-statements/fda-accepts-first-silico-drug-development-tool-under-istand-program-help-predict-drug-induced-liver
+  value: 1 accepted at LOI stage (AI digital liver model for DILI, Jun 2026); 0 qualified
+- asOf: 2026-03
+  name: Clinical studies replaced by accepted simulation in a single NDA (best case)
+  url: https://stocks.observer-reporter.com/observerreporter/article/gnwcq-2026-3-3-certara-simcyp-simulator-results-replace-ten-human-trials-for-chronic-myeloid-leukemia-cml-therapy-asciminib
+  value: At least 10 (asciminib PBPK, Certara Simcyp)
+watch: Arc 2026 Virtual Cell Challenge results (Nov 2026) and whether FDA finalizes its AI-credibility
+  guidance or qualifies an AI/in-silico tool.
+sources:
+- title: Impact of Model-Informed Drug Development on Drug Development Cycle Times and Clinical Trial
+    Cost (CPT 2025)
+  url: https://www.citedrive.com/en/discovery/impact-of-modelinformed-drug-development-on-drug-development-cycle-times-and-clinical-trial-cost
+- title: 'Unlearn: Summary of the EMA September 2022 qualification opinion for PROCOVA'
+  url: https://www.unlearn.ai/resources/summary-of-the-ema-september-2022-qualification-opinion-for-procova-tm
+- title: 'Unlearn: Digital twins in neurodegeneration trials (ALS case study)'
+  url: https://www.unlearn.ai/alzheimers-disease
+- title: 'BioPharm International: FDA intends to phase out mAb animal testing requirement'
+  url: https://www.biopharminternational.com/view/fda-intends-phase-out-mab-animal-testing-requirement
+- title: 'GenomeWeb: Virtual Cell Challenge 2025 results'
+  url: https://www.genomeweb.com/node/646871
+- title: 'Arc Institute: The 2026 Virtual Cell Challenge'
+  url: https://arcinstitute.org/news/virtual-cell-challenge-2026
+- title: Benchmarking virtual cell models for in-the-wild perturbation response (arXiv 2604.27646)
+  url: https://arxiv.org/html/2604.27646
+- title: 'Boltz-2: Towards Accurate and Efficient Binding Affinity Prediction'
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12262699
+- title: FDA accepts first in silico DDT under ISTAND to predict DILI
+  url: https://www.fda.gov/drugs/drug-alerts-and-statements/fda-accepts-first-silico-drug-development-tool-under-istand-program-help-predict-drug-induced-liver
+- title: Certara Simcyp results replace ten human trials for asciminib
+  url: https://stocks.observer-reporter.com/observerreporter/article/gnwcq-2026-3-3-certara-simcyp-simulator-results-replace-ten-human-trials-for-chronic-myeloid-leukemia-cml-therapy-asciminib
+- title: 'Clinical Trials Arena: EMA qualifies Unlearn approach'
+  url: https://www.clinicaltrialsarena.com/news/ema-qualifies-unlearn-approach/
+- title: 'IntuitionLabs: FDA AI guidance credibility framework (status)'
+  url: https://intuitionlabs.ai/articles/fda-ai-drug-development-guidance
+- title: 'Jones Day: EMA and FDA align on good AI practice in drug development'
+  url: https://www.jonesday.com/en/insights/2026/01/ema-and-fda-align-on-good-ai-practice-in-drug-development

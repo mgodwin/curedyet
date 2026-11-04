@@ -1,0 +1,80 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: rabies
+name: Rabies
+category: outbreaks
+tracking: active
+summary: A viral brain infection spread mostly by dog bites that is almost always fatal once symptoms
+  start.
+toll:
+  text: About 44,000 deaths/yr worldwide by WHO's 2021 model (true toll likely higher; CDC cites ~70,000),
+    mostly children in Africa and Asia; under 10 US deaths/yr but ~100,000 Americans get PEP yearly.
+  url: https://www.who.int/news-room/fact-sheets/detail/rabies
+status:
+  level: 0
+  why: Once symptoms appear rabies is virtually 100% fatal and no therapy changes that, even though prompt
+    post-exposure prophylaxis prevents nearly all deaths.
+  today: 'Prevention works: wound washing plus a vaccine course and, when indicated, rabies immunoglobulin
+    or monoclonal antibodies given soon after a bite stop the virus before it reaches the brain. Pre-exposure
+    vaccination protects high-risk groups, and mass dog vaccination can end dog-mediated spread. After
+    symptoms start there is no effective treatment; the Milwaukee protocol and similar coma approaches
+    have not reliably worked, and survivors are extremely rare.'
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Post-exposure prophylaxis (vaccine + RIG or monoclonal antibodies)
+  - Pre-exposure vaccination
+  - Mass dog vaccination
+  - Palliative care once symptomatic
+  burden: moderate
+  burden_note: Post-exposure vaccine series over about two weeks plus immunoglobulin, with mild side effects,
+    but immunoglobulin is scarce in poor regions and costly in the US; symptomatic disease is untreatable.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 2
+    p2045: 10
+    median: 2062
+    low: 2042
+    high: 2100
+  faster:
+    p2035: 4
+    p2045: 25
+    median: 2050
+    low: 2038
+    high: 2100
+  faster_note: The core need is designing brain-penetrant antibodies or antivirals that work after symptoms,
+    which AI design could speed; the lift is mostly by 2045 since work is still in mice and patients are
+    few.
+  outlook: Rabies is already preventable, but curing symptomatic patients requires getting drugs past
+    the blood-brain barrier after neurons are damaged, and work is still only in mice. Few patients and
+    little funding make human trials slow, so even a first proven survival benefit (Manifold gives 36%
+    by 2040) is far from curing most patients.
+pipeline:
+- name: SynB1 peptide-linked antibody cocktail (brain-penetrant)
+  note: Cell-penetrating peptide carried three antibodies into the mouse brain; 80% of mice survived when
+    treated 5 days after infection (PNAS).
+  stage: Preclinical
+  url: https://hzaml.hzau.edu.cn/info/1069/8043.htm
+- name: Two-antibody intrathecal/IV cocktail plus favipiravir (Institut Pasteur)
+  note: Combination of two human monoclonals cured symptomatic rabies in mice, a template for human trials.
+  stage: Preclinical
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7645379
+- name: AAV antibody gene therapy
+  note: Academic work on delivering antibody genes to the nervous system to treat established infection.
+  stage: Preclinical
+  url: https://etd.auburn.edu/handle/10415/10188?show=full
+recent:
+- date: 2025-12
+  text: Huazhong Agricultural University reported in PNAS that a peptide-linked antibody cocktail rescued
+    80% of mice treated 5 days after rabies infection.
+  url: https://hzaml.hzau.edu.cn/info/1069/8043.htm
+next_milestone: null
+ai:
+  impact: low
+  note: No AI-designed rabies therapy is in trials; progress comes from conventional antibody engineering
+    and delivery work.
+markets:
+- url: https://manifold.markets/event/cure-for-symptomatic-rabies-by-2040
+  what: 'Cure for symptomatic rabies by 2040 (strong evidence a post-symptom treatment improves survival):
+    36%'
+  who: Manifold

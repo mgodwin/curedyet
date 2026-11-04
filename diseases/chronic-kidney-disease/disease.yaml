@@ -1,0 +1,76 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: chronic-kidney-disease
+name: Chronic kidney disease
+category: other
+tracking: active
+summary: A gradual loss of kidney function, mostly from diabetes and high blood pressure, that can end
+  in dialysis or transplant.
+toll:
+  text: Kidney diseases rose to the 9th leading cause of death worldwide in 2023, up 86% since 2000 (WHO);
+    hundreds of millions affected.
+  url: https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death
+status:
+  level: 1
+  why: New drugs slow loss of kidney function, but damage is not reversed and many patients still progress
+    to kidney failure.
+  today: ACE inhibitors or ARBs, SGLT2 inhibitors, finerenone and semaglutide (approved for diabetic CKD
+    in 2025) together slow decline substantially. Targeted drugs like atrasentan and sibeprenlimab now
+    treat IgA nephropathy. Transplant restores function for some with kidney failure but needs lifelong
+    immunosuppression and donors are scarce.
+  last_reviewed: null
+treatment:
+  best:
+  - SGLT2 inhibitors
+  - ACE inhibitors / ARBs
+  - Finerenone
+  - Semaglutide (diabetic CKD)
+  - Kidney transplant
+  burden: moderate
+  burden_note: Lifelong daily pills with regular kidney function and potassium blood tests, SGLT2 genital
+    infections and finerenone high potassium; progression means dialysis or transplant with immunosuppression.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 1
+    p2045: 6
+    median: 2070
+    low: 2046
+    high: 2100
+  faster:
+    p2035: 3
+    p2045: 15
+    median: 2058
+    low: 2042
+    high: 2100
+  faster_note: Reversing CKD needs kidney regeneration or engineered organs, which are preclinical; acceleration
+    speeds discovery but slow kidney endpoints keep the lift small.
+  outlook: Stacking drug classes can delay kidney failure by many years, and earlier screening will help.
+    Regrowing kidney tissue or engineered organs would be needed for a cure, and these are preclinical.
+    Xenotransplant could help a few with kidney failure but is not a cure for most.
+pipeline:
+- name: Baxdrostat + dapagliflozin
+  note: Baxdrostat approved for hypertension May 2026; CKD trials with dapagliflozin ongoing.
+  stage: Phase 3
+  url: https://www.drugs.com/history/baxdrostat.html
+- name: Sibeprenlimab (anti-APRIL) for IgA nephropathy
+  note: Accelerated approval November 2025 to reduce proteinuria.
+  stage: Approved 2025-26
+  url: https://www.drugs.com/history/sibeprenlimab.html
+- name: Pacibekitug (IL-6 antibody)
+  note: TRANQUILITY cut hs-CRP by 85% or more in CKD patients with high cardiovascular risk.
+  stage: Phase 2
+  url: https://www.consultantlive.com/view/european-society-of-cardiology-2026-preview-6-trials-to-know
+recent:
+- date: 2025-11
+  text: FDA granted accelerated approval to sibeprenlimab for IgA nephropathy.
+  url: https://www.drugs.com/history/sibeprenlimab.html
+- date: 2026-05
+  text: FDA approved baxdrostat, an aldosterone synthase inhibitor, for hard-to-control hypertension,
+    a main CKD driver.
+  url: https://www.drugs.com/history/baxdrostat.html
+next_milestone: null
+ai:
+  impact: some
+  note: AI models that predict CKD progression from lab and records data are being tested to target treatment
+    earlier.
+markets: []

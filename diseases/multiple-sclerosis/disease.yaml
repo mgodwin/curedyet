@@ -1,0 +1,81 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: multiple-sclerosis
+name: Multiple sclerosis
+category: neuro
+tracking: active
+summary: An autoimmune disease in which the immune system attacks myelin in the brain and spinal cord,
+  causing relapses and disability.
+toll:
+  text: About 3.1 million people living with MS worldwide (2024).
+  url: https://en.wikipedia.org/wiki/Multiple_sclerosis
+status:
+  level: 2
+  why: High-efficacy therapies now suppress relapses and new lesions for most relapsing patients, but
+    progressive MS still advances.
+  today: 'Relapsing MS is well controlled for many patients with anti-CD20 antibodies (ocrelizumab, ofatumumab),
+    natalizumab and others, and many live near-normal lives. Progressive forms respond poorly, though
+    ocrelizumab helps primary progressive MS modestly. BTK inhibitors are arriving: tolebrutinib was approved
+    in the EU in June 2026, and fenebrutinib is under FDA priority review.'
+  last_reviewed: null
+treatment:
+  best:
+  - Ocrelizumab (Ocrevus)
+  - Ofatumumab
+  - Natalizumab
+  - Autologous stem cell transplant (selected patients)
+  - Tolebrutinib (EU, nrSPMS)
+  burden: moderate
+  burden_note: Indefinite anti-CD20 infusions every six months or monthly injections raise infection risk
+    and need lab monitoring; natalizumab carries PML brain infection risk, and all are very expensive.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 4
+    p2045: 18
+    median: 2055
+    low: 2038
+    high: 2095
+  faster:
+    p2035: 8
+    p2045: 40
+    median: 2046
+    low: 2035
+    high: 2080
+  faster_note: Understanding progressive MS and testing immune-reset approaches like CAR-T or EBV vaccines
+    faster would matter most; relapsing MS is already controlled, so the gain is about turning control
+    into cure, mostly after 2035.
+  outlook: Relapsing MS is close to fully controlled, and BTK inhibitors may finally slow progressive
+    disease somewhat. A true cure would need durable immune reset (stem cell transplant, CAR-T) or prevention
+    via Epstein-Barr virus vaccines, both still early. 'Cured for most' by 2035 is unlikely, but control
+    will keep improving.
+pipeline:
+- name: Fenebrutinib (Roche/Genentech, BTK inhibitor)
+  note: FDA accepted NDA with priority review Sept 29, 2026; non-inferior to Ocrevus in PPMS, halved relapses
+    vs teriflunomide.
+  stage: Filed
+  url: https://www.gene.com/media/press-releases/15130/2026-09-29/genentechs-fenebrutinib-is-the-first-btk
+- name: Tolebrutinib (Cenrifki, Sanofi)
+  note: EU approved June 2026 for non-relapsing secondary progressive MS; FDA did not approve.
+  stage: Approved 2025-26
+  url: https://www.sanofi.com/en/media-room/press-releases
+- name: CD19 CAR-T for MS
+  note: Early trials aim to reset the immune system in refractory MS; no efficacy data yet.
+  stage: Phase 1
+  url: https://en.wikipedia.org/wiki/Multiple_sclerosis
+recent:
+- date: 2026-06
+  text: Tolebrutinib became the first BTK inhibitor approved for MS, in the EU for non-relapsing secondary
+    progressive disease.
+  url: https://www.sanofi.com/en/media-room/press-releases
+- date: 2026-09
+  text: FDA accepted fenebrutinib for priority review in both relapsing and primary progressive MS.
+  url: https://www.gene.com/media/press-releases/15130/2026-09-29/genentechs-fenebrutinib-is-the-first-btk
+next_milestone:
+  date: 2027-04
+  url: https://www.gene.com/media/press-releases/15130/2026-09-29/genentechs-fenebrutinib-is-the-first-btk
+  what: Expected FDA decision on fenebrutinib for relapsing and primary progressive MS (estimate from
+    priority review timing; no date published).
+ai:
+  impact: low
+  note: AI mainly helps with MRI lesion quantification and monitoring; leading new MS drugs were not AI-discovered.
+markets: []

@@ -1,0 +1,81 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: stroke
+name: Stroke
+category: cardio
+tracking: active
+summary: A blocked or burst brain artery kills brain tissue, often causing death or lasting disability.
+toll:
+  text: About 11.9M new strokes and 7.3M deaths worldwide in 2021 (GBD 2021); 6.8M deaths in 2023 (WHO).
+  url: https://touchneurology.com/insight/study-uncovers-growing-stroke-burden-worldwide
+status:
+  level: 1
+  why: Clot-busters and thrombectomy restore independence for some, but many survivors keep permanent
+    deficits and no drug repairs brain damage.
+  today: Fast clot-busting drugs and mechanical thrombectomy can fully reverse some ischemic strokes if
+    given within hours. Blood pressure control, statins, antiplatelets and anticoagulants prevent many
+    first and repeat strokes. Most patients worldwide do not reach these treatments in time, and no neuroprotective
+    drug is approved.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - IV thrombolysis (alteplase/tenecteplase)
+  - Mechanical thrombectomy
+  - Blood pressure control
+  - Antiplatelets / anticoagulants
+  - Stroke-unit care and rehab
+  burden: heavy
+  burden_note: Clot-busters carry brain bleeding risk and thrombectomy is an emergency catheter procedure,
+    both only within hours at stroke centers, followed by months of rehab and lifelong prevention drugs.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 2
+    p2045: 8
+    median: 2068
+    low: 2046
+    high: 2100
+  faster:
+    p2035: 4
+    p2045: 18
+    median: 2055
+    low: 2040
+    high: 2100
+  faster_note: Acceleration would most help by finding neuroprotection and brain-repair targets, which
+    have repeatedly failed; even then fast-access thrombectomy and prevention limit reach, so the lift
+    stays small.
+  outlook: Prevention and acute care are improving steadily, and factor XI drugs may make anticoagulation
+    safer. Curing most strokes would need either near-universal prevention or drugs that protect and regrow
+    brain tissue, and neither is close. Access to thrombectomy remains the main bottleneck.
+pipeline:
+- name: Asundexian (Bayer), factor XIa inhibitor
+  note: Cut recurrent ischemic stroke 26% with no rise in major bleeding; FDA priority review granted
+    May 2026.
+  stage: Filed
+  url: https://www.hcplive.com/view/fda-priority-review-asundexian-secondary-prevention-after-ischemic-stroke
+- name: Intra-arterial cooling during thrombectomy
+  note: CHILL-ART improved 90-day independence, but FOCUS did not, so evidence conflicts.
+  stage: Phase 3
+  url: https://touchneurology.com/insight/esoc-2026-highlights-personalized-thrombectomy-strategies-and-neuroprotection-reshape-stroke-care/
+- name: Reperfusion-guided blood pressure targets after thrombectomy
+  note: HOPE trial raised functional independence to 60% vs 47%.
+  stage: Phase 3
+  url: https://touchneurology.com/insight/esoc-2026-highlights-personalized-thrombectomy-strategies-and-neuroprotection-reshape-stroke-care/
+recent:
+- date: 2026-02
+  text: 'OCEANIC-STROKE: asundexian lowered recurrent stroke (6.2% vs 8.4%) without extra major bleeding
+    in 12,327 patients.'
+  url: https://www.tctmd.com/news/oceanic-stroke-asundexian-prevents-recurrent-strokes-no-added-bleeding
+- date: 2026-05
+  text: At ESOC 2026, intra-arterial cooling showed the first positive neuroprotection signal in a randomized
+    trial.
+  url: https://touchneurology.com/insight/esoc-2026-highlights-personalized-thrombectomy-strategies-and-neuroprotection-reshape-stroke-care/
+next_milestone:
+  date: 2026-12
+  url: https://www.businesswire.com/news/home/20260518787299/en/bayer-granted-priority-review-by-u.s.-fda-for-asundexian-in-patients-after-a-non-cardioembolic-ischemic-stroke-or-transient-ischemic-attack/
+  what: FDA decision on asundexian for secondary stroke prevention (priority review accepted May 2026;
+    exact action date not disclosed, timing is an estimate)
+ai:
+  impact: some
+  note: AI software that flags large-vessel occlusions on CT scans, such as Viz.ai, is widely used to
+    speed thrombectomy.
+markets: []

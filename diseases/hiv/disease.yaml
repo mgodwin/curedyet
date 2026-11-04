@@ -1,0 +1,91 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: hiv
+name: HIV/AIDS
+category: infectious
+tracking: active
+summary: A viral infection that destroys immune cells and, untreated, leads to AIDS.
+toll:
+  text: 41.0M people living with HIV, 1.2M new infections and 570,000 AIDS-related deaths in 2025 (UNAIDS)
+  url: https://www.unaids.org/sites/default/files/2026-07/2026_UNAIDS_Global_HIV_Factsheet_en.pdf
+status:
+  level: 2
+  why: Antiretroviral therapy gives near-normal life expectancy and stops transmission, but must be taken
+    for life; cures have only come from rare stem cell transplants.
+  today: Daily pills or long-acting injections keep the virus undetectable, and 32.1M people (78%) were
+    on treatment in 2025. Twice-yearly lenacapavir injections prevent HIV in at least 96% of cases and
+    are rolling out in Africa. Antibody combinations can hold the virus off without drugs for some people
+    in trials, but no cure is ready.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Single-tablet ART (e.g. bictegravir/FTC/TAF)
+  - Long-acting cabotegravir/rilpivirine injections
+  - Twice-yearly lenacapavir PrEP (Yeztugo)
+  - Oral PrEP
+  burden: moderate
+  burden_note: Lifelong daily single-tablet ART or bimonthly injections is well tolerated with few side
+    effects, but requires regular viral load monitoring and strict adherence.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 4
+    p2045: 20
+    median: 2052
+    low: 2038
+    high: 2090
+  faster:
+    p2035: 8
+    p2045: 45
+    median: 2045
+    low: 2035
+    high: 2075
+  faster_note: AI-designed antibody combinations and gene editors that clear or silence the reservoir
+    would be the key change, with a big lift by 2045 but little by 2035 because drug-free remission is
+    still in Phase 2.
+  outlook: Control and prevention keep getting easier, with weekly pills and twice-yearly shots. A cure
+    for most requires clearing or permanently silencing the latent reservoir. Antibody and gene-editing
+    approaches show partial remission, but none is close to routine use. Funding cuts in 2025-26 also
+    threaten progress.
+pipeline:
+- name: Once-weekly oral lenacapavir PrEP
+  note: FDA decision due Feb 2, 2027.
+  stage: Filed
+  url: https://patientworthy.com/2026/06/18/fda-reviews-gileads-once-weekly-oral-lenacapavir-for-hiv-prevention/
+- name: Islatravir/lenacapavir once-weekly oral treatment
+  note: Both ISLEND trials met non-inferiority at week 48; filing planned.
+  stage: Phase 3
+  url: https://www.gilead.com/news/news-details/2026/gilead-and-merck-announce-positive-topline-results-from-two-phase-3-studies-evaluating-islatravirlenacapavir-an-oral-once-weekly-hiv-treatment
+- name: Dual broadly neutralizing antibodies (RIO study)
+  note: A second bNAb course halved viral rebound off ART; aims at drug-free remission.
+  stage: Phase 2
+  url: https://i-base.info/htb/53678
+- name: Twice-yearly lenacapavir PrEP
+  note: FDA approved in 2025; Global Fund and US target 3M people by 2028.
+  stage: Approved 2025-26
+  url: https://unaids.org/en/resources/presscentre/pressreleaseandstatementarchive/2026/april/20260415_lenacapavir_expanded_rollout
+recent:
+- date: 2026-06
+  text: Gilead and Merck reported once-weekly oral islatravir/lenacapavir matched daily regimens in two
+    Phase 3 trials.
+  url: https://www.gilead.com/news/news-details/2026/gilead-and-merck-announce-positive-topline-results-from-two-phase-3-studies-evaluating-islatravirlenacapavir-an-oral-once-weekly-hiv-treatment
+- date: 2026-03
+  text: At CROI 2026, the RIO trial showed a second course of bNAbs cut rebound off ART to 50% vs 100%
+    after the first stop.
+  url: https://i-base.info/htb/53678
+- date: 2026-04
+  text: Global Fund and the US raised their lenacapavir PrEP target from 2M to 3M people by 2028.
+  url: https://unaids.org/en/resources/presscentre/pressreleaseandstatementarchive/2026/april/20260415_lenacapavir_expanded_rollout
+next_milestone:
+  date: '2027-02-02'
+  url: https://patientworthy.com/2026/06/18/fda-reviews-gileads-once-weekly-oral-lenacapavir-for-hiv-prevention/
+  what: FDA decision on once-weekly oral lenacapavir for PrEP
+ai:
+  impact: low
+  note: 'Unclear: no AI-discovered HIV drug or cure approach is known to be in late-stage trials.'
+markets:
+- url: https://manifold.markets/RyanGuill/will-hivaids-be-considered-a-curabl
+  what: Will HIV/AIDS be considered a curable disease by the end of 2030? About 50%
+  who: Manifold
+- url: https://tech-insider.org/hiv-vaccine-fda-approval-2030-manifold-odds/
+  what: HIV vaccine FDA approval by 2030, about 16% (as reported)
+  who: Manifold

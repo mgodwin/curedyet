@@ -1,0 +1,21 @@
+name: Suggest a disease
+description: Ask for a disease to be tracked, if you can't open a pull request yourself.
+labels: ["new disease"]
+body:
+  - type: input
+    id: disease
+    attributes:
+      label: Disease
+      placeholder: e.g. Celiac disease
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why track it?
+      description: How many people it affects, or why progress on it is interesting.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Good sources
+      description: Links to WHO, CDC, FDA, journal articles or trial registries, if you have them.

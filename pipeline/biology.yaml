@@ -1,0 +1,64 @@
+# A stage of the cure pipeline. Field guide: METHODOLOGY.md.
+id: biology
+order: 1
+name: Biology
+kind: stage
+question: Do we understand what actually causes the disease well enough to pick the right target?
+cleared_when: 'AI or new tools routinely identify validated causal targets for diseases whose mechanism
+  was unknown: AI-derived targets for complex diseases repeatedly confirmed in human trials, and virtual-cell
+  or biology foundation models used routinely in target choice.'
+status: easing
+odds_much_faster:
+  by_2030: 20
+  by_2035: 40
+ai_linked: true
+status_note: 'There is one strong test case: Insilico''s AI-ranked target TNIK (rentosertib, for lung
+  fibrosis) entered a 320-patient Phase 3 in mid-2026, but results aren''t due until about Dec 2029. Virtual-cell
+  models are growing fast (Xaira X-Cell has 4.9B parameters; Arc runs a zero-shot challenge in 2026),
+  yet in Arc''s 2025 challenge no entry beat a naive baseline on mean absolute error. Calibration: P(open
+  | transformative AI) about 45%, P(open | jagged) about 10%, P(open | plateau) about 3%. Weighted 0.30/0.60/0.10
+  that gives about 20%, and human confirmation lags discovery by years.'
+time_today:
+  low: 3
+  high: 10
+  label: 3–10+ yrs
+  note: 'Target biology usually matures slowly: PCSK9 was linked to high cholesterol in 2003 and validated
+    in human genetics by 2006, but the first inhibitor trial came in 2012, and a PLOS ONE study found
+    most 2010-2014 approvals traced to research begun 30 to 40 years earlier.'
+time_best_case:
+  low: 0.25
+  high: 1
+  label: 3–12 mo
+  note: 'When the target is already understood the stage nearly vanishes: the SARS-CoV-2 spike protein
+    was chosen as the vaccine target within days of the genome release in January 2020, and Insilico used
+    its AI target-discovery platform to nominate TNIK for lung fibrosis before designing rentosertib.'
+signals:
+- asOf: 2026-07
+  name: AI-derived novel targets with positive Phase 3 data
+  url: https://www.bio-itworld.com/news/2026/07/08/insilico-medicine-launches-phase-iii-trial-for-ai-developed-drug
+  value: 0 (rentosertib/TNIK Phase 3 began 2026; topline about Dec 2029)
+- asOf: 2026-08
+  name: Virtual-cell models beating naive baselines (Arc Virtual Cell Challenge)
+  url: https://genomeweb.com/informatics/inaugural-virtual-cell-challenge-reveals-shortcomings-current-ai-cellular-prediction
+  value: '2025: no model beat baseline on mean absolute error; 2026 zero-shot round underway'
+- asOf: 2026-03
+  name: Largest virtual-cell model
+  url: https://www.pulse.bot/biotech/news/xairas-first-virtual-cell-model-is-largest-to-date-toward-complex-biology-c7d2e8e1-e54e-4912-8f4f-bbbae3e1b3aa
+  value: Xaira X-Cell, 4.9B parameters, trained on 25.6M cells
+watch: A virtual-cell model clearly beating baselines on unseen cell types, or a positive Phase 3 for
+  an AI-nominated novel target (rentosertib readout about end-2029).
+sources:
+- title: 'ACC: PCSK9, From Discovery and Validation to Therapy'
+  url: https://www.acc.org/Latest-in-Cardiology/Articles/2014/07/18/16/07/PCSK9-From-Discovery-and-Validation-to-Therapy
+- title: 'ScienceDaily: Timelines of translational science (McNamee, Walsh and Ledley, PLOS ONE 2017)'
+  url: https://www.sciencedaily.com/releases/2017/05/170509122015.htm
+- title: 'Springer Nature: AI meets IPF, taking an AI-designed drug from target discovery to Phase IIa'
+  url: https://communities.springernature.com/amp/posts/ai-meets-ipf-taking-an-ai-designed-drug-from-target-discovery-to-phase-iia
+- title: Insilico launches Phase III trial for AI-developed drug (Bio-IT World)
+  url: https://www.bio-itworld.com/news/2026/07/08/insilico-medicine-launches-phase-iii-trial-for-ai-developed-drug
+- title: Inaugural Virtual Cell Challenge reveals shortcomings (GenomeWeb)
+  url: https://genomeweb.com/informatics/inaugural-virtual-cell-challenge-reveals-shortcomings-current-ai-cellular-prediction
+- title: Arc Institute 2026 Virtual Cell Challenge goes zero-shot
+  url: https://runtimewire.com/article/arc-institute-2026-virtual-cell-challenge-zero-shot
+- title: Xaira's first virtual cell model
+  url: https://www.pulse.bot/biotech/news/xairas-first-virtual-cell-model-is-largest-to-date-toward-complex-biology-c7d2e8e1-e54e-4912-8f4f-bbbae3e1b3aa

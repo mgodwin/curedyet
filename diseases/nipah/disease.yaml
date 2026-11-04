@@ -1,0 +1,90 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: nipah
+name: Nipah virus
+category: outbreaks
+tracking: active
+summary: A bat-borne zoonotic virus that causes severe brain inflammation and respiratory illness, with
+  recurring outbreaks in Bangladesh and India.
+toll:
+  text: 'Small, recurring outbreaks: 2026 so far includes 2 cases in West Bengal (Jan), 1 in Kerala (Jun)
+    and at least 1 fatal case in Bangladesh (Feb); case fatality 40-75% per WHO.'
+  url: https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON609
+status:
+  level: 0
+  why: WHO says no licensed drug or vaccine exists, so once infected a patient gets only supportive and
+    intensive care, and 40-75% die.
+  today: Treatment is supportive ICU care for encephalitis and respiratory failure. Ribavirin, remdesivir
+    and the m102.4 antibody have been used under compassionate or research protocols, but none is proven
+    in humans. Prevention relies on avoiding raw date palm sap and sick animals, plus infection control
+    in hospitals; no vaccine is licensed.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Intensive supportive care
+  - Infection control and contact tracing
+  - m102.4 monoclonal antibody (investigational, compassionate use)
+  - Remdesivir (investigational)
+  burden: heavy
+  burden_note: ICU care for encephalitis and respiratory failure, often with mechanical ventilation, no
+    proven antiviral, and survivors may keep lasting neurological damage.
+forecast:
+  bottleneck: trial-limited
+  normal:
+    p2035: 5
+    p2045: 25
+    median: 2052
+    low: 2037
+    high: 2090
+  faster:
+    p2035: 12
+    p2045: 45
+    median: 2046
+    low: 2034
+    high: 2080
+  faster_note: Antibodies like m102.4 and MBP1F5 exist but rare, sporadic outbreaks make efficacy proof
+    hard; open trials and approval gates would give most of the lift, with better design helping late-presenting
+    encephalitis.
+  outlook: A vaccine could be licensed within about five years, which would help prevent outbreaks but
+    would not cure infected patients. Reaching 'cured for most' needs a proven post-exposure antibody
+    or antiviral, and trials are hard because outbreaks are small and sporadic. Rich-country cases are
+    almost nonexistent, so progress depends on CEPI-funded work in South Asia.
+pipeline:
+- name: ChAdOx1 NipahB vaccine (Oxford / Serum Institute, CEPI)
+  note: First Phase 2 Nipah vaccine trial began in Bangladesh in late 2025; up to 100,000 investigational
+    doses being stockpiled for outbreak use.
+  stage: Phase 2
+  url: https://cepi.net/university-oxford-launches-worlds-first-phase-ii-nipah-virus-vaccine-trial
+- name: MBP1F5 monoclonal antibody (ServareGMP / Mapp, CEPI)
+  note: Safety trials planned in India and Bangladesh, aimed at immediate protection for contacts and
+    possibly post-exposure use.
+  stage: Phase 1
+  url: https://cepi.net/new-human-trials-novel-antibody-offer-hope-immediate-protection-against-deadly-nipah
+- name: m102.4 monoclonal antibody
+  note: Completed Phase 1 safety testing and protects monkeys after exposure; used under compassionate
+    protocols in outbreaks.
+  stage: Phase 1
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12062192/
+- name: Remdesivir
+  note: Protected African green monkeys when given after exposure; prioritized for clinical testing by
+    a 2025 systematic review.
+  stage: Preclinical
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12062192/
+recent:
+- date: 2025-12
+  text: Oxford launched the world's first Phase 2 Nipah vaccine trial (ChAdOx1 NipahB) in Bangladesh with
+    icddr,b.
+  url: https://cepi.net/university-oxford-launches-worlds-first-phase-ii-nipah-virus-vaccine-trial
+- date: 2026-06
+  text: India's Kerala outbreak stayed at a single confirmed case with 104 contacts monitored and no secondary
+    spread.
+  url: https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON609
+next_milestone:
+  date: 2027-04
+  url: https://www.gavi.org/vaccineswork/closing-protection-against-deadly-nipah-virus
+  what: Bangladesh Nipah season (Dec-Apr) tests outbreak deployment of investigational vaccine and antibody
+    protocols; no dated trial readout announced.
+ai:
+  impact: low
+  note: Structure-guided antibody and vaccine antigen design helps, but no AI-discovered Nipah drug is
+    in human trials.
+markets: []

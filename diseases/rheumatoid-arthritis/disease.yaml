@@ -1,0 +1,72 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: rheumatoid-arthritis
+name: Rheumatoid arthritis
+category: immune
+tracking: active
+summary: An autoimmune disease where the immune system attacks joint linings, causing pain, swelling and
+  joint destruction.
+toll:
+  text: About 17.6M people had RA worldwide in 2020, projected to reach about 31.7M by 2050 (GBD).
+  url: https://spiral.imperial.ac.uk/handle/10044/1/109351
+status:
+  level: 2
+  why: Methotrexate, biologics and JAK inhibitors bring many patients to remission or low activity, but
+    they need lifelong drugs and a minority stay refractory.
+  today: Early treatment with methotrexate, then TNF, IL-6, CD20, CTLA4-Ig or JAK inhibitors if needed,
+    prevents joint damage in most patients. Drug-free remission is uncommon and stopping drugs usually
+    brings flares. About 1 in 5 patients have difficult-to-treat disease.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Methotrexate
+  - TNF inhibitors
+  - JAK inhibitors (upadacitinib, tofacitinib)
+  - IL-6 inhibitors
+  - Abatacept / rituximab
+  burden: moderate
+  burden_note: Lifelong methotrexate with nausea and liver blood monitoring, often adding biologic injections
+    or JAK pills that raise infection risk, with JAK boxed warnings and high biologic costs.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 5
+    p2045: 22
+    median: 2050
+    low: 2038
+    high: 2085
+  faster:
+    p2035: 11
+    p2045: 45
+    median: 2042
+    low: 2034
+    high: 2070
+  faster_note: Immune-reset therapies (CAR-T, T-cell engagers) already show drug-free remission in a few
+    patients; better off-the-shelf design plus faster trials and cheaper delivery could make that routine,
+    so the lift by 2045 is large.
+  outlook: Immune reset approaches such as CAR-T and T-cell engagers hint at drug-free remission, but
+    data come from a handful of patients. Scaling a cure to most of a common disease needs safer, cheaper
+    off-the-shelf versions and proof of long-lasting remission. That is unlikely before the late 2030s.
+pipeline:
+- name: CD19 CAR-T (mivocabtagene autoleucel), COMPARE trial
+  note: Half of 6 refractory patients reached sustained drug-free remission; Nature Medicine 2026.
+  stage: Phase 1
+  url: https://www.news-medical.net/news/20260827/CAR-T-cell-therapy-successfully-reverses-severe-rheumatoid-arthritis.aspx
+- name: Rosnilimab (PD-1 agonist)
+  note: Phase 2b in RA reported by AnaptysBio.
+  stage: Phase 2
+  url: https://www.pharmanow.live/es/latest-news/anaptysbio-rosnilimab-phase2b-rheumatoid-arthritis
+- name: Peresolimab (PD-1 agonist)
+  note: Reduced disease activity in Phase 2a.
+  stage: Phase 2
+  url: https://www.2minutemedicine.com/peresolimab-reduces-disease-severity-in-adults-with-rheumatoid-arthritis/
+recent:
+- date: 2026-08
+  text: Charité CD19 CAR-T put 3 of 6 refractory RA patients into medication-free remission for up to
+    a year.
+  url: https://www.news-medical.net/news/20260827/CAR-T-cell-therapy-successfully-reverses-severe-rheumatoid-arthritis.aspx
+next_milestone: null
+ai:
+  impact: low
+  note: No AI-discovered RA drug is known to be in late-stage trials; AI use is mostly in imaging and
+    research.
+markets: []

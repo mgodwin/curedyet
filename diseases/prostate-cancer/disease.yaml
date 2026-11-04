@@ -1,0 +1,73 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: prostate-cancer
+name: Prostate cancer
+category: cancer
+tracking: active
+summary: Cancer of the prostate gland, often slow-growing and driven by androgen signaling.
+toll:
+  text: About 1.5M new cases and 420,000 deaths/yr worldwide (2024); ~333,830 US cases and ~36,320 US
+    deaths est. 2026.
+  url: https://pressroom.cancer.org/global-cancer-statistics-2026
+status:
+  level: 4
+  why: Most cases are found while localized and are cured or safely monitored, with US 5-year survival
+    near 98%, though metastatic disease is not curable.
+  today: Localized disease is cured with surgery or radiation, or watched with active surveillance when
+    low risk. Metastatic disease is controlled for years with hormone therapy, androgen receptor inhibitors,
+    PARP inhibitors, PSMA radioligands and now an AKT inhibitor, but it eventually becomes resistant.
+    Black men and those diagnosed late fare worse.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Radical prostatectomy or radiation
+  - Active surveillance for low-risk disease
+  - Androgen deprivation plus enzalutamide, apalutamide or darolutamide
+  - Lutetium-177 PSMA radioligand (Pluvicto)
+  - PARP inhibitors for HRR-mutated disease
+  burden: heavy
+  burden_note: Prostatectomy or radiation for localized disease often causes erectile dysfunction and
+    some incontinence or bowel problems; low-risk men can avoid treatment through active surveillance.
+  cure_tolerable: true
+forecast:
+  bottleneck: access-limited
+  reached: 1995
+  faster_note: Already cured for most; acceleration would mostly help late-diagnosed and underserved men
+    get early detection and move radioligands earlier, a small change at the population level.
+  outlook: Prostate cancer already meets the cured-for-most bar thanks to PSA-driven early detection and
+    effective local treatment. Progress now centers on stretching control of metastatic disease by moving
+    radioligands and targeted drugs earlier. A true cure for metastatic disease still looks far off.
+pipeline:
+- name: Talazoparib plus enzalutamide in mCSPC
+  note: TALAPRO-3 cut progression risk 52% in HRR-mutated disease; priority review with Q4 2026 action
+    date.
+  stage: Filed
+  url: https://www.rttnews.com/3669562/pfizer-secures-fda-priority-review-for-talzenna-plus-xtandi-in-metastatic-prostate-cancer.aspx
+- name: Lutetium-177 PSMA (Pluvicto) in hormone-sensitive disease
+  note: Approved July 31, 2026 with an AR pathway inhibitor for PSMA-positive mHSPC.
+  stage: Approved 2025-26
+  url: https://nuclear.pharmacy.purdue.edu/news-and-updates/fda-approves-lutetium-lu-177-vipivotide-tetraxetan-androgen-receptor-pathway
+- name: Capivasertib (Truqap) plus abiraterone
+  note: First AKT inhibitor for PTEN-deficient mHSPC, approved June 12, 2026 (CAPItello-281).
+  stage: Approved 2025-26
+  url: https://www.aacr.org/patients-caregivers/progress-against-cancer/first-akt-inhibitor-approved-for-prostate-cancer/
+recent:
+- date: 2026-06
+  text: Capivasertib became the first AKT inhibitor approved in prostate cancer, extending median rPFS
+    to 33.2 months vs 25.7.
+  url: https://www.aacr.org/patients-caregivers/progress-against-cancer/first-akt-inhibitor-approved-for-prostate-cancer/
+- date: 2026-07
+  text: Pluvicto radioligand therapy moved into the hormone-sensitive metastatic setting.
+  url: https://nuclear.pharmacy.purdue.edu/news-and-updates/fda-approves-lutetium-lu-177-vipivotide-tetraxetan-androgen-receptor-pathway
+next_milestone:
+  date: 2026-12
+  url: https://www.rttnews.com/3669562/pfizer-secures-fda-priority-review-for-talzenna-plus-xtandi-in-metastatic-prostate-cancer.aspx
+  what: FDA action on talazoparib plus enzalutamide for HRR-mutated metastatic castration-sensitive prostate
+    cancer (Q4 2026 action date).
+ai:
+  impact: some
+  note: FDA-authorized AI pathology tools help pathologists spot cancer on prostate biopsies, and AI biomarkers
+    help pick who needs added hormone therapy.
+markets:
+- url: https://manifold.markets/event/will-fda-approve-any-mrna-vaccine-a-418ceba29e63
+  what: Will FDA approve any mRNA vaccine against prostate adenocarcinoma before 2028? About 21%.
+  who: Manifold

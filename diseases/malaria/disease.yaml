@@ -1,0 +1,74 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: malaria
+name: Malaria
+category: infectious
+tracking: active
+summary: A mosquito-borne parasite infection that causes fever and can kill, mostly young children in
+  Africa.
+toll:
+  text: About 282 million cases and 610,000 deaths in 2024 (WHO World Malaria Report 2025)
+  url: https://www.who.int/teams/global-malaria-programme/reports/world-malaria-report-2025
+status:
+  level: 4
+  why: Artemisinin combination therapies cure most uncomplicated cases in 3 days when given promptly.
+  today: ACTs cure about 94-97% of uncomplicated cases, and IV artesunate treats severe malaria. Two vaccines
+    (RTS,S and R21) are in 25 African countries, and 47 countries are certified malaria-free. Artemisinin
+    partial resistance in at least 8 African countries and funding gaps threaten progress.
+  last_reviewed: null
+treatment:
+  best:
+  - Artemether-lumefantrine (Coartem) and other ACTs
+  - IV artesunate for severe malaria
+  - R21 and RTS,S vaccines
+  - Bed nets and seasonal malaria chemoprevention
+  burden: light
+  burden_note: A 3-day course of cheap, widely available ACT pills with mild side effects such as nausea
+    or dizziness; severe malaria requires hospital IV artesunate.
+  cure_tolerable: true
+forecast:
+  bottleneck: access-limited
+  reached: 1950
+  faster_note: Already curable when treated promptly; acceleration would mostly help through faster trials
+    of resistance-proof drugs, antibodies and vaccines, while delivery and funding remain the main limit.
+  outlook: Malaria is curable for most patients who get prompt care, so the level is 4 even though deaths
+    remain high. Eradication (level 5) depends on vaccines, antibodies, new drugs against resistance and
+    possibly gene drives; that is unlikely before the 2040s. Rising cases in 2026 in Namibia and Mozambique
+    and funding cuts point the wrong way.
+pipeline:
+- name: GanLum (ganaplacide + lumefantrine)
+  note: KALUMA trial cured 97.4% vs 94.0% for Coartem and works on resistant strains; Novartis is seeking
+    approval.
+  stage: Phase 3
+  url: https://www.edctp.org/?p=6894
+- name: Coartem Baby
+  note: Swissmedic approved the first malaria treatment for newborns and small infants in July 2025.
+  stage: Approved 2025-26
+  url: https://www.fortune.com/europe/2025/07/09/switzerland-approves-first-antimalarial-drug-for-infants
+- name: L9LS monoclonal antibody
+  note: Long-acting antibody for prevention being tested in Malian infants and alongside R21.
+  stage: Phase 2
+  url: https://clinicaltrials.gov/study/NCT06461026
+- name: Gene drive mosquitoes (Transmission Zero)
+  note: First African gene drive field trial planned in Tanzania for 2029.
+  stage: Preclinical
+  url: https://www.nation.africa/kenya/health/-gene-drive-mosquitoes-set-for-2029-release-to-fight-malaria-in-east-africa-5160658
+recent:
+- date: 2025-11
+  text: GanLum, the first new non-artemisinin class in decades, beat the Coartem cure rate in Phase 3
+    KALUMA.
+  url: https://healthpolicy-watch.news/new-malaria-drug-candidate-exceeds-cure-rate-for-standard-acts-in-phase-3-trial/
+- date: 2025-12
+  text: WHO reported 282M cases and 610,000 deaths in 2024 and confirmed artemisinin partial resistance
+    in at least 8 African countries.
+  url: https://www.who.int/teams/global-malaria-programme/reports/world-malaria-report-2025
+next_milestone:
+  date: 2026-12
+  url: https://www.who.int/teams/global-malaria-programme/reports/world-malaria-report-2025
+  what: WHO World Malaria Report 2026 with 2025 data (expected, based on the Dec 2025 release)
+ai:
+  impact: low
+  note: 'Unclear: the leading new tools (GanLum, R21, L9LS) came from conventional discovery, not AI.'
+markets:
+- url: https://metaculus.com/questions/1332/will-global-malaria-mortality-rates-be-reduced-by-90-when-compared-with-2015-rates-by-2030
+  what: Will global malaria mortality rates be reduced by 90% vs 2015 by 2030? Community forecast 22%
+  who: Metaculus

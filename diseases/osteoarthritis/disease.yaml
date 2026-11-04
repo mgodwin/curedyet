@@ -1,0 +1,92 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: osteoarthritis
+name: Osteoarthritis
+category: aging
+tracking: active
+summary: A degenerative joint disease where cartilage and underlying bone break down, causing pain and
+  stiffness, most often in knees, hips and hands.
+toll:
+  text: About 595M people worldwide had osteoarthritis in 2020 (7.6% of the population), with knee cases
+    projected to rise about 75% by 2050.
+  url: https://healthdata.org/research-analysis/library/global-regional-and-national-burden-osteoarthritis-1990-2020-and
+status:
+  level: 1
+  why: Treatments ease pain and joint replacement fixes end-stage knees and hips, but no approved drug
+    slows or reverses the disease.
+  today: Most patients get exercise, weight loss, NSAIDs and joint injections, which ease symptoms while
+    the disease keeps advancing. Knee and hip replacement works very well for end-stage joints and lasts
+    15-20+ years, but it is major surgery and does not help other joints. GLP-1 drugs reduce knee pain
+    in people with obesity (STEP 9), largely through weight loss.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Exercise and physical therapy
+  - Weight loss (incl. GLP-1 drugs)
+  - NSAIDs (oral/topical)
+  - Intra-articular steroid injections
+  - Total knee/hip replacement
+  burden: moderate
+  burden_note: Most patients use lifelong exercise, weight loss and NSAIDs, which carry stomach, kidney
+    and heart risks; end-stage joint replacement is heavy surgery with months of rehab.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 3
+    p2045: 11
+    median: 2060
+    low: 2042
+    high: 2100
+  faster:
+    p2035: 6
+    p2045: 25
+    median: 2050
+    low: 2038
+    high: 2090
+  faster_note: Cartilage regeneration needs better biology and molecules than current candidates with
+    small structural effects; acceleration helps discovery but slow structure-and-pain trials keep most
+    of the lift after 2035.
+  outlook: A first modest disease-modifying drug could be approved in the next few years if lorecivivint
+    clears regulators, but slowing joint-space loss is far from curing it. Level 4 would need therapies
+    that regrow cartilage or halt disease in most joints, and current candidates show small structural
+    effects. Replacement surgery will stay the main fix for end-stage joints for at least a decade.
+pipeline:
+- name: Lorecivivint (Biosplice, Wnt pathway modulator)
+  note: US NDA submitted Jan 2026 and UK MHRA accepted its filing Sep 2026; Phase 3 suggested preserved
+    joint space, but approval is uncertain.
+  stage: Filed
+  url: https://longevity.technology/news/biosplice-files-fda-application-for-knee-osteoarthritis-drug/
+- name: PCRX-201 (enekinragene inzadenovec, Pacira) IL-1Ra gene therapy
+  note: Single knee injection; ASCEND Part A (about 45 patients) fully enrolled, data expected near end
+    of 2026.
+  stage: Phase 2
+  url: https://www.itiger.com/news/2581234727
+- name: Semaglutide and other GLP-1s
+  note: Approved for obesity; STEP 9 showed less knee OA pain and better function, structural benefit
+    not proven.
+  stage: Approved 2025-26
+  url: https://www.bariatricnews.net/post/step-9-semaglutide-reduces-knee-osteoarthritis-related-pain-in-people-with-obesity
+- name: Sprifermin (rhFGF-18, cartilage growth)
+  note: Increased cartilage thickness in Phase 2 but pain benefit unclear; licensed to TrialSpark spinout
+    High Line Bio; late-stage status unclear.
+  stage: Phase 2
+  url: https://www.biospace.com/article/releases/trialspark-licenses-sprifermin-an-investigational-first-in-class-disease-modifying-treatment-for-osteoarthritis-from-merck-kgaa-darmstadt-germany-and-announces-formation-of-high-line-bio/
+recent:
+- date: 2026-01
+  text: Biosplice submitted the first US NDA for a potentially disease-modifying knee OA drug, lorecivivint.
+  url: https://longevity.technology/news/biosplice-files-fda-application-for-knee-osteoarthritis-drug/
+- date: 2026-09
+  text: UK MHRA accepted lorecivivint's application and began review.
+  url: https://biosplice.com/news/default.aspx
+- date: 2025-11
+  text: Pacira completed enrollment in Part A of the Phase 2 ASCEND study of its PCRX-201 knee gene therapy.
+  url: https://www.itiger.com/news/2581234727
+next_milestone:
+  date: 2026-12
+  url: https://www.itiger.com/news/2581234727
+  what: Pacira expects Part A data from the Phase 2 ASCEND trial of PCRX-201 knee gene therapy near end
+    of 2026.
+ai:
+  impact: low
+  note: AI is used for automated X-ray and MRI grading of joint damage, but the leading OA drug candidates
+    were not AI-discovered.
+markets: []

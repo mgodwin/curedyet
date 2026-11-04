@@ -1,0 +1,21 @@
+name: Report a correction
+description: Something on the site is wrong, out of date or missing a source.
+labels: ["correction"]
+body:
+  - type: input
+    id: disease
+    attributes:
+      label: Disease or pipeline stage
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What's wrong, and what should it say?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source for the correction
+      placeholder: https://

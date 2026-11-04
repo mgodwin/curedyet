@@ -1,0 +1,82 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: depression
+name: Major depression
+category: mental
+tracking: active
+summary: A mood disorder with persistent low mood or loss of interest that impairs daily life.
+toll:
+  text: About 322 million people worldwide, roughly 4% of the population (WHO, 2023 estimate)
+  url: https://www.who.int/news-room/fact-sheets/detail/depression
+status:
+  level: 2
+  why: Many patients reach remission with therapy and medication, but relapse is common and a sizable
+    minority have treatment-resistant depression.
+  today: Psychotherapy and antidepressants work for mild to severe depression, and many people recover
+    from an episode. About a third do not respond to two or more drugs; esketamine, augmenting drugs,
+    ECT and TMS help some of them. Only about a third of people with depression get treatment even in
+    high-income countries.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Psychotherapy (CBT, behavioral activation)
+  - SSRIs/SNRIs and other antidepressants
+  - Esketamine nasal spray (Spravato)
+  - Electroconvulsive therapy
+  - Transcranial magnetic stimulation
+  burden: moderate
+  burden_note: Weeks of therapy or months to years of antidepressants with sexual dysfunction, weight
+    gain and withdrawal effects; resistant cases may need ECT with memory loss or frequent TMS sessions.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 3
+    p2045: 10
+    median: 2062
+    low: 2042
+    high: 2100
+  faster:
+    p2035: 6
+    p2045: 25
+    median: 2050
+    low: 2038
+    high: 2095
+  faster_note: Biomarkers and causal biology from AI would matter most because depression is diverse and
+    recurrent; the lift is modest since lasting cure needs biology that does not yet exist.
+  outlook: New drugs such as psilocybin and novel add-ons widen the options, especially for treatment-resistant
+    cases. Still, depression is diverse and recurrent, and no therapy offers lasting cure for most patients.
+    A cure for most needs better biology and biomarkers, which look decades away.
+pipeline:
+- name: COMP360 psilocybin (treatment-resistant depression)
+  note: Rolling NDA nearly done as of Nov 2026, with a National Priority Voucher; launch hoped for H1
+    2027 pending FDA and DEA.
+  stage: Filed
+  url: https://www.sec.gov/Archives/edgar/data/0001816590/000181659026000078/q32026pressrelease.htm
+- name: Lumateperone (Caplyta) adjunctive
+  note: FDA approved it in late 2025 as an add-on to antidepressants for MDD.
+  stage: Approved 2025-26
+  url: https://www.indianpharmapost.com/regulatory/johnson-johnson-gets-fda-nod-for-new-depression-treatment-18193
+- name: Azetukalner (Kv7 opener) for MDD
+  note: X-NOVA2 topline data expected Q1 2027.
+  stage: Phase 3
+  url: https://www.neurologylive.com/view/xenon-submits-new-drug-application-azetukalner-treatment-focal-seizures
+- name: NBI-1065845 (osavampator) adjunctive
+  note: Neurocrine is testing this AMPA potentiator as an add-on treatment for MDD.
+  stage: Phase 3
+  url: https://clinicaltrials.gov/study/NCT06963021
+recent:
+- date: 2026-07
+  text: Second COMP360 Phase 3 (COMP006) showed benefit lasting to at least week 26 in treatment-resistant
+    depression.
+  url: https://www.biospace.com/press-releases/compass-pathways-announces-second-quarter-and-first-half-2026-financial-results-and-business-highlights
+- date: 2025-11
+  text: FDA approved lumateperone as adjunctive therapy for MDD based on two Phase 3 trials.
+  url: https://www.indianpharmapost.com/regulatory/johnson-johnson-gets-fda-nod-for-new-depression-treatment-18193
+next_milestone:
+  date: 2026-11
+  url: https://www.sec.gov/Archives/edgar/data/0001816590/000181659026000078/q32026pressrelease.htm
+  what: Compass completes the final COMP360 psilocybin NDA submission for treatment-resistant depression
+ai:
+  impact: low
+  note: No AI-discovered antidepressant is near approval; AI mainly appears in digital therapy and screening
+    tools.
+markets: []

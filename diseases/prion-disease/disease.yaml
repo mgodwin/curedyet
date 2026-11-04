@@ -1,0 +1,84 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: prion-disease
+name: Prion disease (CJD)
+category: outbreaks
+tracking: active
+summary: Fatal brain diseases caused by misfolded prion protein, including sporadic, genetic and acquired
+  Creutzfeldt-Jakob disease.
+toll:
+  text: About 1-2 cases per million people per year worldwide (roughly 85% sporadic, 5-15% genetic, under
+    1% acquired); median survival 4-5 months after symptoms (CDC).
+  url: https://www.cdc.gov/creutzfeldt-jakob/hcp/clinical-overview/
+status:
+  level: 0
+  why: CDC says CJD is always fatal and no therapy slows it; care is supportive only.
+  today: All forms of CJD, sporadic, genetic and acquired (iatrogenic or variant), are fatal, and treatment
+    is comfort care. Acquired cases are prevented by instrument sterilization, blood and tissue safeguards
+    and BSE controls. The main hope is lowering prion protein (PrP) with antisense or siRNA drugs, which
+    extended survival in mice and is now in early human trials in symptomatic patients, with prevention
+    trials planned for genetic carriers.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Supportive and palliative care
+  - Infection control to prevent acquired CJD
+  burden: moderate
+  burden_note: Comfort care only, with drugs for jerking, agitation and seizures, as rapid decline leads
+    to full-time nursing or hospice care within months.
+forecast:
+  bottleneck: trial-limited
+  normal:
+    p2035: 2
+    p2045: 10
+    median: 2062
+    low: 2042
+    high: 2100
+  faster:
+    p2035: 5
+    p2045: 25
+    median: 2050
+    low: 2038
+    high: 2100
+  faster_note: PrP-lowering drugs are in human trials, so biomarker-based approval and faster trials would
+    help most; the lift stays modest because sporadic CJD is diagnosed late after rapid brain damage.
+  outlook: PrP lowering is a strong idea and may prevent genetic prion disease in carriers within 10-15
+    years. Curing patients who already have symptoms is much harder because sporadic CJD destroys the
+    brain within months and is usually diagnosed late. Expect slowing or prevention for a subset well
+    before a cure for most.
+pipeline:
+- name: PrP-lowering divalent siRNA 2439-s4 (Broad Institute / UMass)
+  note: Single-dose trial (NCT07444580) of about 15 symptomatic patients at 50-200 mg began recruiting
+    April 2026.
+  stage: Phase 1
+  url: https://www.cureffi.org/2026/04/22/divalent-sirna-clinical-trial-is-now-recruiting/
+- name: ION717 antisense oligonucleotide (Ionis)
+  note: PrProfile Phase 1/2a reopened March 2026 with an open-label Regimen 3; last patient visit expected
+    around February 2027.
+  stage: Phase 2
+  url: https://www.cureffi.org/2026/03/17/ion717-trial-reopens/
+- name: CHARM compact epigenetic editor (AAV, Broad)
+  note: One-time AAV-delivered editor silenced PRNP across the mouse brain.
+  stage: Preclinical
+  url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11875203/
+- name: Primary prevention in PRNP mutation carriers
+  note: Natural history study of presymptomatic carriers underway to support biomarker-based prevention
+    trials.
+  stage: Preclinical
+  url: https://www.bioxconomy.com/modalities/oligo-based-therapies-lead-charge-against-prion-disease
+recent:
+- date: 2026-04
+  text: First-in-human divalent siRNA trial for prion disease opened enrollment after FDA IND clearance.
+  url: https://www.cureffi.org/2026/04/22/divalent-sirna-clinical-trial-is-now-recruiting/
+- date: 2026-03
+  text: Ionis reopened the ION717 PrProfile trial with a third dosing regimen; early safety described
+    as encouraging.
+  url: https://www.cureffi.org/2026/03/17/ion717-trial-reopens/
+next_milestone:
+  date: 2027-02
+  url: https://www.cureffi.org/2026/03/17/ion717-trial-reopens/
+  what: Expected last patient visit in Ionis ION717 PrProfile trial; top-line data possibly later in 2027.
+ai:
+  impact: low
+  note: The leading drugs are rationally designed oligonucleotides, not AI-discovered; AI plays at most
+    a minor role in sequence optimization.
+markets: []

@@ -1,0 +1,83 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: liver-cancer
+name: Liver cancer
+category: cancer
+tracking: active
+summary: Primary cancer of the liver, mostly hepatocellular carcinoma, usually driven by hepatitis B or
+  C, alcohol or fatty liver disease.
+toll:
+  text: About 843,000 new cases and 732,000 deaths worldwide (2024, GLOBOCAN); about 42,340 US cases and
+    30,980 US deaths expected in 2026.
+  url: https://ascopost.com/news/july-2026/american-cancer-society-reports-latest-global-cancer-statistics/
+status:
+  level: 3
+  why: Small tumors found early can be cured by resection, ablation or transplant, but most patients are
+    diagnosed too late for that.
+  today: Overall US 5-year survival is about 22%, ranging from 37% for localized to 3% for distant disease.
+    Early tumors are cured by surgery, ablation or liver transplant. Advanced disease is treated with
+    immunotherapy combinations like atezolizumab plus bevacizumab or durvalumab plus tremelimumab, which
+    extend survival but rarely cure.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Resection, ablation or liver transplant
+  - Atezolizumab plus bevacizumab
+  - Durvalumab plus tremelimumab (STRIDE)
+  - Nivolumab plus ipilimumab
+  - TACE for intermediate stage
+  burden: heavy
+  burden_note: Most are diagnosed late and get ongoing immunotherapy infusions with immune side effects
+    and bleeding risk from bevacizumab; curative options require resection, ablation or a scarce transplant.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 5
+    p2045: 18
+    median: 2058
+    low: 2040
+    high: 2100
+  faster:
+    p2035: 10
+    p2045: 35
+    median: 2048
+    low: 2037
+    high: 2085
+  faster_note: Better systemic drugs plus wider surveillance of at-risk livers would shift diagnoses to
+    curable stages, but that depends on reaching patients, so the lift is moderate and mostly after 2035.
+  outlook: The fastest gains will come from prevention (hepatitis B vaccination, hepatitis C cure, fatty
+    liver treatment) and surveillance that catches tumors while they are curable. Systemic therapy keeps
+    improving by a few months per generation. Curing most patients requires moving most diagnoses to early
+    stage, which is unlikely by 2035.
+pipeline:
+- name: Rivoceranib plus camrelizumab
+  note: OS 23.8 vs 15.2 months vs sorafenib in CARES-310; resubmitted Oct 9, 2026 after a third manufacturing-related
+    CRL.
+  stage: Filed
+  url: https://www.onclive.com/view/elevar-resubmits-nda-for-rivoceranib-plus-camrelizumab-frontline-unresectable-metastatic-hcc
+- name: STRIDE plus lenvatinib plus TACE (EMERALD-3)
+  note: Improved PFS to 13.0 vs 9.8 months vs TACE alone; OS not yet significant.
+  stage: Phase 3
+  url: https://www.astrazeneca.com/media-centre/press-releases/2026/imfinzi-plus-imjudo-combined-with-lenvatinib-and-tace-reduced-the-risk-of-disease-progression-or-death-in-emerald-3-phase-iii-trial.html
+- name: AI-designed CDK20 inhibitor (Insilico/U of Toronto)
+  note: Designed with AlphaFold structures and generative chemistry in about 30 days.
+  stage: Preclinical
+  url: https://acceleration.utoronto.ca/news/new-study-uses-alphafold-and-ai-to-accelerate-design-of-novel-drug-for-liver-cancer
+recent:
+- date: 2026-06
+  text: EMERALD-3 showed adding immunotherapy and lenvatinib to TACE cut progression risk by 30% in intermediate-stage
+    disease.
+  url: https://www.astrazeneca.com/media-centre/press-releases/2026/imfinzi-plus-imjudo-combined-with-lenvatinib-and-tace-reduced-the-risk-of-disease-progression-or-death-in-emerald-3-phase-iii-trial.html
+- date: 2026-07
+  text: FDA rejected rivoceranib plus camrelizumab a third time over a factory inspection, not efficacy;
+    the issue was later closed.
+  url: https://www.cancernetwork.com/view/fda-clears-manufacturing-concern-behind-rivoceranib-camrelizumab-crl-in-hcc
+next_milestone:
+  date: 2027-04
+  url: https://www.onclive.com/view/elevar-resubmits-nda-for-rivoceranib-plus-camrelizumab-frontline-unresectable-metastatic-hcc
+  what: Expected FDA decision on the resubmitted rivoceranib plus camrelizumab NDA (estimate based on
+    a typical 6-month resubmission review; no date published).
+ai:
+  impact: some
+  note: Insilico and University of Toronto used AlphaFold and generative AI to design a CDK20 inhibitor
+    for liver cancer, though it is still preclinical.
+markets: []

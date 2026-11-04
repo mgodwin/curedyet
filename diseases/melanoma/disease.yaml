@@ -1,0 +1,73 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: melanoma
+name: Melanoma
+category: cancer
+tracking: active
+summary: Skin cancer arising from pigment cells, deadly when it spreads but usually curable when caught
+  early.
+toll:
+  text: ~112,000 US cases and ~8,510 US deaths est. 2026; distant-stage 5-year survival has risen to about
+    35%.
+  url: https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2026/2026-cancer-facts-and-figures.pdf
+status:
+  level: 4
+  why: Most melanomas are found early and cured by excision, and immunotherapy now gives durable remissions
+    to many patients with advanced disease.
+  today: Thin localized melanoma is cured by surgery in nearly all patients. For stage III-IV, PD-1 and
+    CTLA-4 or LAG-3 combinations and BRAF/MEK inhibitors produce long-term survival in roughly half of
+    advanced patients. Adjuvant immunotherapy lowers relapse after surgery, and a personalized mRNA vaccine
+    added to pembrolizumab cut recurrence further in a phase 3 trial.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Surgical excision
+  - Nivolumab plus ipilimumab or relatlimab
+  - Adjuvant pembrolizumab or nivolumab
+  - BRAF plus MEK inhibitors
+  - TIL therapy (lifileucel)
+  burden: light
+  burden_note: Most patients have thin melanoma cured by an outpatient excision plus skin checks; advanced
+    disease needs immunotherapy with serious immune side effects and very high cost.
+  cure_tolerable: true
+forecast:
+  bottleneck: access-limited
+  reached: 2000
+  faster_note: Already cured for most; acceleration would mainly help resistant advanced and rare subtypes
+    such as uveal melanoma and spread personalized vaccines, a modest change overall.
+  outlook: Melanoma already meets the cured-for-most bar because most cases are caught early, with US
+    5-year survival above 90%. Immunotherapy has made a large share of advanced cases curable too, and
+    personalized mRNA vaccines could raise adjuvant cure rates further. The remaining gap is primary-resistant
+    advanced disease and rare subtypes like mucosal and uveal melanoma.
+pipeline:
+- name: Intismeran autogene (mRNA-4157/V940) plus pembrolizumab
+  note: INTerpath-001 cut recurrence risk (HR 0.58) in resected high-risk melanoma; NEJM paper due Nov
+    11, 2026.
+  stage: Phase 3
+  url: https://www.onclive.com/view/adjuvant-intismeran-autogene-plus-pembrolizumab-improves-rfs-and-dmfs-in-melanoma
+- name: RP1 (vusolimogene, Tudriqev) plus nivolumab
+  note: Oncolytic virus got accelerated approval Aug 6, 2026 after PD-1 failure, following two rejections.
+  stage: Approved 2025-26
+  url: https://www.thefdalawblog.com/2026/08/the-fda-adcomm-reboot-part-2-lessons-from-the-meeting-on-replimunes-rp1/
+recent:
+- date: 2026-10
+  text: INTerpath-001 at ESMO showed a personalized mRNA vaccine plus pembrolizumab lowered recurrence
+    (HR 0.58) and distant spread (HR 0.62) vs pembrolizumab alone.
+  url: https://www.onclive.com/view/adjuvant-intismeran-autogene-plus-pembrolizumab-improves-rfs-and-dmfs-in-melanoma
+- date: 2026-08
+  text: FDA granted accelerated approval to RP1 plus nivolumab for PD-1-refractory advanced melanoma.
+  url: https://www.thefdalawblog.com/2026/08/the-fda-adcomm-reboot-part-2-lessons-from-the-meeting-on-replimunes-rp1/
+- date: 2026-01
+  text: ACS reported distant-stage melanoma 5-year survival climbed from 16% to 35%.
+  url: https://pressroom.cancer.org/cancer-statistics-report-2026
+next_milestone:
+  date: '2026-11-11'
+  url: https://www.onclive.com/view/adjuvant-intismeran-autogene-plus-pembrolizumab-improves-rfs-and-dmfs-in-melanoma
+  what: Full INTerpath-001 results for intismeran plus pembrolizumab slated for publication in NEJM.
+ai:
+  impact: some
+  note: Personalized mRNA vaccines like intismeran rely on computational neoantigen selection, and AI
+    skin lesion tools assist early detection.
+markets:
+- url: https://manifold.markets/event/will-fda-approve-any-type-of-person
+  what: Will FDA approve any type of personalized cancer mRNA vaccine before 2028? About 53%.
+  who: Manifold

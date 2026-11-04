@@ -1,0 +1,69 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: tuberculosis
+name: Tuberculosis
+category: infectious
+tracking: active
+summary: A bacterial infection, usually of the lungs, spread through the air.
+toll:
+  text: About 1.23 million deaths in 2024; 8.3M people diagnosed, a record (WHO Global TB Report 2025)
+  url: https://www.pbs.org/newshour/health/global-tuberculosis-case-rise-to-a-record-but-deaths-fall-reports-who
+status:
+  level: 4
+  why: Standard multi-drug regimens cure most people with drug-susceptible TB, and 6-month all-oral regimens
+    now cure most drug-resistant TB too.
+  today: A 4-6 month drug course cures most patients with drug-susceptible TB. Drug-resistant TB now has
+    short all-oral regimens (BPaLM, and the BEAT-TB regimen that is safe for children and pregnancy).
+    TB is still the top infectious killer because many cases go undiagnosed, and the only vaccine, BCG,
+    protects adults poorly.
+  last_reviewed: null
+treatment:
+  best:
+  - HRZE standard regimen (isoniazid, rifampicin, pyrazinamide, ethambutol)
+  - BPaLM 6-month regimen for drug-resistant TB
+  - BEAT-TB regimen (bedaquiline, linezolid, delamanid + levofloxacin or clofazimine)
+  - 3HP/1HP preventive therapy
+  - BCG vaccine (infants)
+  burden: moderate
+  burden_note: Four to six months of daily multi-drug pills, often observed, with liver toxicity, nausea
+    and rash risks; drug-resistant regimens add linezolid nerve and blood toxicity, but programs usually
+    provide treatment free.
+  cure_tolerable: true
+forecast:
+  bottleneck: access-limited
+  reached: 1970
+  faster_note: Already curable for most; acceleration would help via AI X-ray screening and faster vaccine
+    and short-regimen trials, but the remaining gap is diagnosis and funding.
+  outlook: Most TB is already curable, so the gap is diagnosis, adherence and resistance. An effective
+    adult vaccine such as M72 would be the big shift toward elimination, with Phase 3 results likely in
+    the next few years. Funding cuts are a real risk.
+pipeline:
+- name: M72/AS01E vaccine
+  note: About 20,000 people enrolled across 5 countries; earlier Phase 2b showed about 50% efficacy.
+  stage: Phase 3
+  url: https://www.gatesmri.org/the-phase-3-clinical-trial-of-the-m72-aso1e-tuberculosis-tb-vaccine-candidate-has-reached-full-enrollment/
+- name: BEAT-TB 6-month regimen for rifampicin-resistant TB
+  note: Published in NEJM June 2026; matched 9-month care at about 86% success and is usable in children
+    and pregnancy.
+  stage: Phase 3
+  url: https://www.ewn.co.za/2026/07/01/important-advance-made-in-tb-treatment
+- name: Long-acting pretomanid and sorfequiline (TBAJ-876)
+  note: Preclinical data shown at CROI 2026; aims to simplify treatment.
+  stage: Preclinical
+  url: https://www.eatg.org/hiv-news/treatment-action-group-croi-2026-tb-research-round-up/
+recent:
+- date: 2026-06
+  text: BEAT-TB showed a 6-month regimen without pretomanid works for rifampicin-resistant TB, including
+    in children and pregnancy.
+  url: https://www.ewn.co.za/2026/07/01/important-advance-made-in-tb-treatment
+- date: 2025-11
+  text: WHO reported TB deaths fell to 1.23M in 2024 while diagnoses hit a record 8.3M.
+  url: https://www.pbs.org/newshour/health/global-tuberculosis-case-rise-to-a-record-but-deaths-fall-reports-who
+next_milestone:
+  date: 2026-11
+  url: https://www.who.int/teams/global-tuberculosis-programme/tb-reports/global-tuberculosis-report-2025
+  what: WHO Global Tuberculosis Report 2026 with 2025 burden data (expected, based on the Nov 2025 release)
+ai:
+  impact: some
+  note: WHO-recommended AI software that reads chest X-rays (computer-aided detection) is widely used
+    to screen for TB.
+markets: []

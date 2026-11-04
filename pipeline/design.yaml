@@ -1,0 +1,72 @@
+# A stage of the cure pipeline. Field guide: METHODOLOGY.md.
+id: design
+order: 2
+name: Design
+kind: stage
+question: Can AI design a drug that works, much faster and with better odds than before?
+cleared_when: AI-designed molecules (small molecules, antibodies, proteins, gene editors) routinely reach
+  the clinic well under the old ~4-6 years from target to first-in-human, AND show clearly better Phase
+  1/2 success than historical rates.
+status: easing
+odds_much_faster:
+  by_2030: 40
+  by_2035: 62
+ai_linked: true
+status_note: 'Speed is largely shown: about 117 AI-enabled assets had entered trials by Dec 2025, Insilico
+  reports 9-18 months to a candidate, and Chai-2 hits about 20% of antibody targets zero-shot. Phase 1
+  success looks high (BCG: 80-90%), but Phase 2 success (about 40%) matches historical rates. No AI-discovered
+  drug is fully approved, Isomorphic slipped its first trial to late 2026, and positive mid-stage readouts
+  remain few (e.g. Recursion REC-4881 with a 47% median polyp reduction). Calibration: P(open | TAI) about
+  70%, P(open | jagged) about 30%, P(open | plateau) about 10%, which gives about 40%.'
+time_today:
+  low: 2.5
+  high: 4
+  label: 2.5–4 yrs
+  note: Conventional hit-to-lead and lead optimization takes about 2.5 to 4 years and 3,000 to 5,000 synthesized
+    molecules per program to reach a preclinical candidate.
+time_best_case:
+  low: 0.1
+  high: 1.5
+  label: 1–18 mo
+  note: Insilico reports 22 AI-designed candidates from 2021 to 2024 took 12 to 18 months each (about
+    60 to 200 molecules), rentosertib took about 18 months from target to candidate, and Moderna had a
+    clinical batch of its COVID vaccine 25 days after sequence selection.
+signals:
+- asOf: 2025-12
+  name: AI-enabled assets that have entered interventional trials
+  url: https://intuitionlabs.ai/articles/ai-discovered-drugs-clinical-trials-2026
+  value: 117 (60 completed Phase 1, 8 completed Phase 2)
+- asOf: 2026-10
+  name: Phase 2 success, AI-discovered vs historical
+  url: https://intuitionlabs.ai/articles/ai-discovered-drugs-clinical-trials-2026
+  value: 'about 40%, no better than historical (Phase 1: 80-90%)'
+- asOf: 2026-10
+  name: FDA-approved AI-discovered drugs
+  url: https://www.bio-itworld.com/news/2026/07/08/insilico-medicine-launches-phase-iii-trial-for-ai-developed-drug
+  value: 0; furthest along is rentosertib in Phase 3 (NDA projected 2030)
+- asOf: 2026-04
+  name: Isomorphic Labs first-in-human
+  url: https://www.chemdiv.com/company/media/pharma-news/2026/isomorphic-labs-launches-human-trials-for-ai-designed-cancer-drugs/
+  value: not yet dosed; guided to late 2026, oncology first
+watch: A peer-reviewed cohort study showing AI-designed drugs beat historical Phase 2 success, or Isomorphic/Chai
+  de novo molecules entering and clearing Phase 1-2.
+sources:
+- title: 'BiopharmaTrend: From concept to clinical trial in two years'
+  url: https://www.biopharmatrend.com/post/446-from-concept-to-clinical-trial-in-two-years
+- title: Insilico initiates Phase III trial for rentosertib
+  url: https://insilico.com/news/xmjsn4l091-insilico-initiates-phase-iii-clinical-tr
+- title: 'Moderna press release: 63 days from sequence selection to Phase 1 dosing'
+  url: https://www.businesswire.com/news/home/20200316005666/en
+- title: 'Nature: AI''s potential to accelerate drug discovery needs a reality check (BCG and Wellcome
+    figures)'
+  url: https://www.nature.com/articles/d41586-023-03172-6
+- title: AI-discovered drugs in clinical trials 2026 (IntuitionLabs)
+  url: https://intuitionlabs.ai/articles/ai-discovered-drugs-clinical-trials-2026
+- title: Isomorphic Labs delays clinical trial timeline (Investing.com)
+  url: https://www.investing.com/news/stock-market-news/googlebacked-ai-drug-discovery-startup-isomorphic-labs-delays-clinical-trial-timeline-4456134
+- title: Recursion Q3 2026 results (SEC 8-K exhibit)
+  url: https://www.sec.gov/Archives/edgar/data/0001601830/000160183026000144/exhibit991-q0326.htm
+- title: Chai Discovery report (Contrary Research)
+  url: https://research.contrary.com/report/chai-discovery
+- title: Generate Biomedicines Q1 2026 update (GB-0895 Phase 3)
+  url: https://www.biospace.com/press-releases/generate-biomedicines-inc-reports-first-quarter-2026-financial-results-and-provides-business-update

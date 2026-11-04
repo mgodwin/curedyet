@@ -1,0 +1,91 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: coronary-artery-disease
+name: Coronary artery disease
+category: cardio
+tracking: active
+summary: Plaque builds up in the heart's arteries, causing chest pain, heart attacks and sudden death.
+toll:
+  text: Ischaemic heart disease caused about 9.5M deaths worldwide in 2023, the top cause of death (WHO).
+  url: https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death
+status:
+  level: 2
+  why: Statins, PCSK9 drugs, stents and bypass let most patients live long lives, but plaque is not removed
+    and the disease needs lifelong treatment.
+  today: Lowering LDL cholesterol, controlling blood pressure, antiplatelets, stents and bypass surgery
+    sharply cut heart attacks and deaths. GLP-1 drugs like semaglutide now also reduce events in people
+    with obesity. Many patients still have heart attacks despite treatment, and nothing reverses established
+    disease.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Statins + ezetimibe
+  - PCSK9 inhibitors (injectable; oral enlicitide)
+  - Antiplatelet therapy
+  - Stents / bypass surgery
+  - Semaglutide (in obesity)
+  burden: moderate
+  burden_note: Lifelong daily pills with statin muscle aches and antiplatelet bleeding risk, regular lipid
+    checks, and stents or bypass surgery with procedural risks for some patients.
+forecast:
+  bottleneck: trial-limited
+  normal:
+    p2035: 3
+    p2045: 13
+    median: 2060
+    low: 2042
+    high: 2100
+  faster:
+    p2035: 6
+    p2045: 28
+    median: 2048
+    low: 2037
+    high: 2090
+  faster_note: One-shot PCSK9 or LPA editing could prevent disease for life, but proving event reduction
+    needs long outcomes trials; acceleration helps mainly if regulators accept LDL as a surrogate, so
+    most lift comes after 2035.
+  outlook: Control keeps improving, with cheaper and more convenient LDL drugs and possible one-shot gene
+    editing. A true cure would need plaque reversal or lifelong prevention from youth, which is decades
+    away. The Lp(a) failure shows that new targets do not always pay off.
+pipeline:
+- name: Enlicitide (Lipfendra), oral PCSK9 inhibitor
+  note: FDA approved July 2026 after cutting LDL about 56% vs placebo; CORALreef Outcomes trial still
+    running.
+  stage: Approved 2026
+  url: https://www.tctmd.com/news/fda-approves-enlicitide-oral-pcsk9-inhibitor-ldl-lowering
+- name: VERVE-102 (Lilly), one-time PCSK9 base editing
+  note: Single dose cut LDL up to 62% for up to 18 months; Phase 2 planned by end of 2026.
+  stage: Phase 1
+  url: https://www.biospace.com/press-releases/a-single-dose-of-lillys-pcsk9-base-editor-verve-102-reduced-pcsk9-by-up-to-88-and-ldl-c-by-up-to-62-with-durable-effects-supporting-its-potential-as-a-one-time-treatment-for-hypercholesterolemia
+- name: Obicetrapib (CETP inhibitor)
+  note: PREVAIL outcomes trial interim analysis 4Q 2026; EU decisions expected 2H 2026.
+  stage: Phase 3
+  url: https://ir.newamsterdampharma.com/news-releases/news-release-details/newamsterdam-pharma-provides-corporate-update-and-reports-6
+- name: Olpasiran / lepodisiran (Lp(a) siRNA)
+  note: Outcomes trials ongoing; confidence hit after pelacarsen failed.
+  stage: Phase 3
+  url: https://clinicaltrials.gov/study/NCT05581303
+recent:
+- date: 2026-07
+  text: FDA approved enlicitide, the first oral PCSK9 inhibitor, for LDL lowering.
+  url: https://www.tctmd.com/news/fda-approves-enlicitide-oral-pcsk9-inhibitor-ldl-lowering
+- date: 2026-09
+  text: Pelacarsen lowered Lp(a) but did not reduce heart attacks or strokes in the 8,300-patient Lp(a)HORIZON
+    trial.
+  url: https://www.novartis.com/news/media-releases/novartis-announces-lpahorizon-phase-iii-topline-results-pelacarsen-patients-elevated-lpa-and-established-cardiovascular-disease-cvd.md
+- date: 2026-05
+  text: Lilly's VERVE-102 gene editor gave durable LDL cuts after one infusion with no serious treatment-related
+    events.
+  url: https://www.biospace.com/press-releases/a-single-dose-of-lillys-pcsk9-base-editor-verve-102-reduced-pcsk9-by-up-to-88-and-ldl-c-by-up-to-62-with-durable-effects-supporting-its-potential-as-a-one-time-treatment-for-hypercholesterolemia
+next_milestone:
+  date: 2027-03
+  url: https://ir.newamsterdampharma.com/news-releases/news-release-details/newamsterdam-pharma-provides-corporate-update-and-reports-6
+  what: Interim analysis results of obicetrapib PREVAIL cardiovascular outcomes trial (interim 4Q 2026,
+    results expected 1Q 2027)
+ai:
+  impact: some
+  note: AI tools help read ECGs and cardiac imaging, but the leading new drugs and gene editors were not
+    AI-discovered.
+markets:
+- url: https://manifold.markets/RemNi/will-lpareducing-therapy-cost-less
+  what: Will Lp(a)-reducing therapy cost less than $2000 per year before 2031? About 54%.
+  who: Manifold

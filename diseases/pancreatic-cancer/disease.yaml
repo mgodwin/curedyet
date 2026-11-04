@@ -1,0 +1,85 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: pancreatic-cancer
+name: Pancreatic cancer
+category: cancer
+tracking: active
+summary: Cancer of the pancreas, mostly ductal adenocarcinoma driven by KRAS mutations and usually found
+  late.
+toll:
+  text: About 491,000 deaths/yr worldwide (2024); ~67,530 US cases and ~52,740 US deaths est. 2026; 5-year
+    survival about 13%.
+  url: https://pressroom.cancer.org/global-cancer-statistics-2026
+status:
+  level: 1
+  why: Only the minority who can have surgery have a chance at cure, and treatment for advanced disease
+    extends life by months.
+  today: About one in five patients can have surgery, and even then most relapse despite chemotherapy.
+    Advanced disease is treated with FOLFIRINOX or gemcitabine-based chemo, and since August 2026 the
+    RAS inhibitor daraxonrasib roughly doubles survival in pretreated metastatic disease. Five-year survival
+    remains around 13%.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Surgical resection (Whipple) plus adjuvant chemotherapy
+  - FOLFIRINOX or NALIRIFOX
+  - Gemcitabine plus nab-paclitaxel
+  - Daraxonrasib (Rasonque)
+  burden: heavy
+  burden_note: Whipple surgery is major with high complication rates, and FOLFIRINOX causes severe fatigue,
+    nausea, low blood counts and neuropathy; most patients are on chemo until progression.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 2
+    p2045: 10
+    median: 2065
+    low: 2045
+    high: 2100
+  faster:
+    p2035: 5
+    p2045: 30
+    median: 2048
+    low: 2038
+    high: 2085
+  faster_note: Better RAS inhibitor combinations and AI-flagged early detection on CT could make far more
+    tumors curable, but cures need adjuvant trials and screening at scale, so most of the lift appears
+    after 2035.
+  outlook: RAS inhibitors are the first real advance in years, but they extend survival rather than cure,
+    and resistance follows. Cure for most would need early detection at scale plus drugs that work in
+    the adjuvant setting. First-line and perioperative RAS inhibitor trials over the next few years will
+    show how far this class can push.
+pipeline:
+- name: Daraxonrasib (Rasonque), pan-RAS inhibitor
+  note: Approved Aug 26, 2026 for pretreated metastatic disease; median OS 13.2 vs 6.7 months in RASolute
+    302.
+  stage: Approved 2025-26
+  url: https://www.aacr.org/patients-caregivers/progress-against-cancer/fda-approves-daraxonrasib-as-first-ras-inhibitor-for-pancreatic-cancer/
+- name: Daraxonrasib first line (RASolute 303)
+  note: Ongoing first-line trial; readout timing unclear.
+  stage: Phase 3
+  url: https://ir.revmed.com/news-releases/news-release-details/revolution-medicines-begins-treating-patients-rasolute-305-phase/
+- name: Zoldonrasib plus chemo (RASolute 305)
+  note: KRAS G12D-selective inhibitor in first-line metastatic disease; dosing began June 2026.
+  stage: Phase 3
+  url: https://clinicaltrials.gov/study/NCT07621718
+- name: Personalized mRNA neoantigen vaccine (autogene cevumeran)
+  note: Small study showed long survival in vaccine responders; randomized trial ongoing.
+  stage: Phase 2
+  url: https://www.uchealth.org/today/new-pancreatic-cancer-drug-daraxonrasib/
+recent:
+- date: 2026-04
+  text: RASolute 302 met all endpoints with a survival hazard ratio of 0.40 for daraxonrasib vs chemotherapy.
+  url: https://www.biospace.com/press-releases/daraxonrasib-demonstrates-unprecedented-overall-survival-benefit-in-pivotal-phase-3-rasolute-302-clinical-trial-in-patients-with-metastatic-pancreatic-cancer
+- date: 2026-08
+  text: FDA approved daraxonrasib as the first RAS inhibitor for pancreatic cancer, about a month after
+    accepting the filing.
+  url: https://www.aacr.org/patients-caregivers/progress-against-cancer/fda-approves-daraxonrasib-as-first-ras-inhibitor-for-pancreatic-cancer/
+next_milestone: null
+ai:
+  impact: some
+  note: A retrospective study found an AI model flagged 73% of pancreatic cancers on CT scans about 16
+    months before diagnosis.
+markets:
+- url: https://metaculus.com/questions/25655/will-cancer-mortality-by-50-by-2051
+  what: Will US age-adjusted cancer deaths fall 50% or more before 2051? About 45%.
+  who: Metaculus

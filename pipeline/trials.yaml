@@ -1,0 +1,63 @@
+# A stage of the cure pipeline. Field guide: METHODOLOGY.md.
+id: trials
+order: 5
+name: Trials
+kind: stage
+question: Can we prove a drug works in people in half the time?
+cleared_when: Pivotal trials routinely finish in about half the 2024 time, via AI patient matching, decentralized
+  trials, synthetic or external control arms, and adaptive and platform designs.
+status: easing
+odds_much_faster:
+  by_2030: 12
+  by_2035: 30
+ai_linked: false
+status_note: 'The rules are loosening. FDA issued draft Bayesian-methods guidance (Jan 2026) that allows
+  external and nonconcurrent controls, and in Feb 2026 made one pivotal trial plus confirmatory evidence
+  the default. Real-world execution hasn''t sped up: IQVIA puts median clinical development at 10 years
+  (2025), about 80-85% of trials miss enrollment timelines, and about 30% of sites enroll no patients.
+  I found no evidence that cycle times have broadly fallen. This gate depends mostly on operations and
+  policy; AI recruitment helps only at the margin. Calibration: P(open | TAI) about 25%, P(open | jagged)
+  about 9%, P(open | plateau) about 5%, about 13%.'
+time_today:
+  low: 6
+  high: 9
+  label: 6–9 yrs
+  note: BIO/Informa found successful drugs spent 2.3 years in Phase 1, 3.6 in Phase 2 and 3.3 in Phase
+    3 (about 9 years to filing, 2011-2020), and IQVIA put Phase 1 start to approval at 9.3 years in 2024.
+time_best_case:
+  low: 0.6
+  high: 3
+  label: 7 mo–3 yrs
+  note: Pfizer and BioNTech went from first Phase 1 dosing (April 29, 2020) to filing for emergency authorization
+    (November 20, 2020) in under 7 months by overlapping phases and running at huge scale.
+signals:
+- asOf: 2026-05
+  name: Median clinical development duration (first-in-human to approval)
+  url: https://www.iqvia.com/es-es/events/2026/05/accelerating-drug-development-from-first-in-human-to-approval-global-trends-in-r-and-d-2026-webinar
+  value: about 10 years (2025)
+- asOf: 2026-09
+  name: Trials missing initial enrollment timelines
+  url: https://www.appliedclinicaltrialsonline.com/view/ai-patient-recruitment-trial-bottleneck-competitive-edge-2026-perspective
+  value: about 80-85%; about 30% of sites enroll zero
+- asOf: 2026-02
+  name: FDA evidentiary standard
+  url: https://www.biospace.com/fda/its-official-fda-will-now-default-to-one-clinical-trial-for-drug-applications
+  value: single pivotal trial plus confirmatory evidence is the default (Feb 2026); Bayesian draft guidance
+    (Jan 2026)
+watch: IQVIA or Tufts data showing a drop in Phase 3 duration or enrollment time; pivotal approvals built
+  on Bayesian borrowing or external control arms outside rare disease.
+sources:
+- title: 'BIO, Informa and QLS: Clinical Development Success Rates 2011-2020'
+  url: https://www.cphi-online.com/46/resourcefile/11/36/30/2021%20Clinical%20Development%20Success%20Rates%202011-2020%20v17.pdf
+- title: 'IQVIA: Global Trends in R&D 2025'
+  url: https://www.iqvia.com/blogs/2025/06/global-trends-in-r-and-d-2025-signs-of-higher-efficiency-and-productivity
+- title: 'DCAT Value Chain Insights: The path behind Pfizer''s and BioNTech''s COVID-19 vaccine'
+  url: https://www.dcatvci.org/features/the-path-behind-pfizer-and-biontech-s-covid-19-vaccine/
+- title: FDA issues draft guidance on Bayesian methods (Applied Clinical Trials)
+  url: https://appliedclinicaltrialsonline.com/view/fda-issues-draft-guidance-advance-bayesian-methods-clinical-trials
+- title: FDA will now default to one clinical trial (BioSpace)
+  url: https://www.biospace.com/fda/its-official-fda-will-now-default-to-one-clinical-trial-for-drug-applications
+- title: IQVIA Global Trends in R&D 2026 webinar
+  url: https://www.iqvia.com/es-es/events/2026/05/accelerating-drug-development-from-first-in-human-to-approval-global-trends-in-r-and-d-2026-webinar
+- title: 'AI patient recruitment: the trial bottleneck (Applied Clinical Trials)'
+  url: https://www.appliedclinicaltrialsonline.com/view/ai-patient-recruitment-trial-bottleneck-competitive-edge-2026-perspective

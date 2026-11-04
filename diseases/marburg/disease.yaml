@@ -1,0 +1,87 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: marburg
+name: Marburg virus disease
+category: outbreaks
+tracking: active
+summary: A rare, severe hemorrhagic fever caused by Marburg virus, a close relative of Ebola carried by
+  fruit bats.
+toll:
+  text: 'Sporadic outbreaks of tens of cases; about 50% average fatality (24-88%). Recent: Rwanda 2024
+    (66 cases, 15 deaths), Ethiopia 2025-26 (14 cases, 9 deaths), Uganda Jul 2026 (isolated case).'
+  url: https://www.who.int/news-room/fact-sheets/detail/marburg-virus-disease
+status:
+  level: 1
+  why: No approved vaccine or drug exists, but early supportive care plus investigational remdesivir and
+    MBP091 cut Rwanda's 2024 death rate to about 23%.
+  today: WHO lists no approved vaccine or antiviral for Marburg, so care is rehydration and symptom management,
+    which improves survival when started early. In outbreaks, patients have received investigational remdesivir
+    and the MBP091 antibody, and contacts have received Sabin's single-dose cAd3-Marburg vaccine and remdesivir
+    as post-exposure prophylaxis under trial protocols. Rwanda's 2024 outbreak, with these tools and fast
+    intensive care, had a 22.7% fatality rate versus roughly 50% historically.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Early intensive supportive care
+  - Investigational remdesivir
+  - Investigational MBP091 antibody
+  - Investigational cAd3-Marburg vaccine for contacts
+  burden: heavy
+  burden_note: Intensive supportive care in strict isolation with IV fluids and organ support, investigational
+    drugs only under trial protocols, and access limited in outbreak settings.
+forecast:
+  bottleneck: trial-limited
+  normal:
+    p2035: 12
+    p2045: 38
+    median: 2047
+    low: 2033
+    high: 2085
+  faster:
+    p2035: 24
+    p2045: 58
+    median: 2040
+    low: 2031
+    high: 2070
+  faster_note: Candidate antibodies, remdesivir and a vaccine exist, but small outbreaks block efficacy
+    trials; synthetic controls and animal-rule approval would give a big lift, while delivery in outbreak
+    zones limits it.
+  outlook: The tools exist, but outbreaks are too small and short to finish efficacy trials, so approval
+    may depend on animal-rule or immunogenicity pathways. If MBP091 plus remdesivir get licensed and Rwanda-style
+    early care becomes routine, most patients could survive, but that likely takes a decade or more.
+pipeline:
+- name: Sabin cAd3-Marburg vaccine
+  note: All Phase 2 trials fully enrolled (Mar 2026); used in Rwanda and Ethiopia outbreak trials; Phase
+    3 in planning.
+  stage: Phase 2
+  url: https://www.sabin.org/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine/
+- name: MBP091 (Mapp monoclonal antibody)
+  note: Survivor-derived antibody given in Rwanda 2024; US sent 25 courses to Ethiopia in Dec 2025.
+  stage: Phase 2
+  url: https://www.aspr.gov/news-updates/newsroom/2025-12/hhs-provides-doses-investigational-vaccine
+- name: Remdesivir
+  note: Evaluated in WHO's Solidarity PARTNERS platform in Rwanda for treatment and post-exposure prophylaxis.
+  stage: Phase 2
+  url: https://www.cidrap.umn.edu/marburg/marburg-treatment-trials-launch-rwanda
+- name: Oxford ChAdOx1 Marburg vaccine
+  note: UK Phase 1 started in 2024.
+  stage: Phase 1
+  url: https://www.gavi.org/vaccineswork/everything-you-need-know-about-candidate-vaccines-and-treatments-marburg-disease
+recent:
+- date: 2026-03
+  text: Sabin completed enrollment in all Phase 2 trials of cAd3-Marburg; over 2,800 people have received
+    its filovirus vaccines without significant safety concerns.
+  url: https://www.sabin.org/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine/
+- date: 2025-12
+  text: US shipped up to 2,500 cAd3-Marburg doses and 25 MBP091 courses to Ethiopia's first Marburg outbreak,
+    which ended in Jan 2026.
+  url: https://www.aspr.gov/news-updates/newsroom/2025-12/hhs-provides-doses-investigational-vaccine
+next_milestone:
+  date: 2026-12
+  url: https://www.sabin.org/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine/
+  what: Sabin expects initial immunogenicity findings from its African Phase 2 cAd3-Marburg trials during
+    2026
+ai:
+  impact: low
+  note: Marburg countermeasures come from survivor antibodies and adenovirus vectors; no AI-designed Marburg
+    drug is in trials.
+markets: []

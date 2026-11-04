@@ -1,0 +1,73 @@
+# A stage of the cure pipeline. Field guide: METHODOLOGY.md.
+id: access
+order: 7
+name: Access
+kind: stage
+question: Can most eligible patients actually get a curative therapy?
+cleared_when: 'Curative but complex therapies (gene and cell therapies, antibodies) are made and delivered
+  at a cost and scale where most eligible patients in rich countries get them: gene therapy well under
+  ~$500k and broadly reimbursed, with non-viral or in-vivo delivery replacing chemo conditioning.'
+status: blocking
+odds_much_faster:
+  by_2030: 8
+  by_2035: 28
+ai_linked: false
+status_note: 'The gate is still closed today, though cracks are visible. US gene therapy list prices run
+  $2.5M-$4.25M, and Casgevy infused only 64 patients in 2025 against about 100,000 Americans with sickle
+  cell, with busulfan conditioning a major barrier. CMS''s outcomes-based Cell and Gene Therapy Access
+  Model now covers 34 state-level Medicaid programs. The way out is in-vivo delivery, which is showing
+  early human data: Kelonia''s in-vivo CAR-T produced responses in 18/18 myeloma patients with no lymphodepletion,
+  and a single dose of Lilly''s VERVE-102 base editor cut LDL by up to 62%. Prices and the manufacturing
+  shift are driven by money and policy more than AI, and 2030 is close given approval lag.'
+time_today:
+  low: 3
+  high: 10
+  label: 3–10+ yrs
+  note: 'Even curative drugs spread slowly: CDC found only about 1 in 3 diagnosed hepatitis C patients
+    were cured nearly a decade after the new antivirals launched, Casgevy infused just 64 patients in
+    2025 against about 100,000 Americans with sickle cell, and new EU medicines take a median 532 days
+    to reach patients.'
+time_best_case:
+  low: 0.5
+  high: 2
+  label: 6 mo–2 yrs
+  note: COVID vaccines went from first authorization in December 2020 to 70% of EU adults fully vaccinated
+    by August 31, 2021, about 9 months, and Germany makes new EU medicines available in a median 56 days.
+signals:
+- asOf: 2026-01
+  name: Top US gene therapy list prices
+  url: https://xtalks.com/the-most-expensive-drugs-on-the-market-in-2026-and-why-they-cost-so-much-4682/
+  value: $2.5M-$4.25M (Lenmeldy $4.25M, Hemgenix $3.5M, Lyfgenia $3.1M)
+- asOf: 2026-02
+  name: Casgevy patients infused (annual)
+  url: https://www.biospace.com/drug-development/sickle-cell-gene-therapies-casgevy-and-lyfgenia-still-lacking-traction-2-years-in
+  value: 64 in 2025 (147 first cell collections)
+- asOf: 2026-10
+  name: CMS Cell and Gene Therapy Access Model participants
+  url: https://cms.gov/priorities/innovation/innovation-models/cgt
+  value: 34 (32 states plus DC and Puerto Rico); manufacturers Vertex and Genetix
+- asOf: 2026-06
+  name: In-vivo therapies without conditioning in the clinic
+  url: https://www.precisionmedicineonline.com/precision-oncology/all-patients-respond-kelonias-vivo-car-t-multiple-myeloma-trial-early-data-asco
+  value: 'Kelonia in-vivo CAR-T: 18/18 responses, no lymphodepletion; VERVE-102 Phase 2 to start by end-2026'
+watch: First approval of an in-vivo CAR-T or in-vivo HSC editor that needs no conditioning; a gene therapy
+  launched under $500k; Casgevy plus Lyfgenia infusions topping about 1,000 a year.
+sources:
+- title: 'CDC: New report on hepatitis C cure levels'
+  url: https://cdc.gov/nchhstp/director-letters/report-hepatitis-c-cure-levels.html
+- title: 'BioSpace: Sickle cell gene therapies Casgevy and Lyfgenia still lacking traction 2 years in'
+  url: https://www.biospace.com/drug-development/sickle-cell-gene-therapies-casgevy-and-lyfgenia-still-lacking-traction-2-years-in
+- title: 'EFPIA: Patients in Europe waiting longer for new medicines (WAIT Indicator)'
+  url: https://efpia.eu/news-events/the-efpia-view/statements-press-releases/patients-in-europe-waiting-longer-for-new-medicines-as-inequality-grows-between-member-states/
+- title: 'EUobserver: 70% of EU adults now fully vaccinated against Covid'
+  url: https://euobserver.com/1568/70-of-eu-adults-now-fully-vaccinated-against-covid/
+- title: Sickle cell gene therapies still lacking traction 2 years in (BioSpace)
+  url: https://www.biospace.com/drug-development/sickle-cell-gene-therapies-casgevy-and-lyfgenia-still-lacking-traction-2-years-in
+- title: CMS Cell and Gene Therapy Access Model
+  url: https://cms.gov/priorities/innovation/innovation-models/cgt
+- title: Most expensive drugs on the market in 2026 (Xtalks)
+  url: https://xtalks.com/the-most-expensive-drugs-on-the-market-in-2026-and-why-they-cost-so-much-4682/
+- title: Kelonia in-vivo CAR-T early data at ASCO (Precision Medicine Online)
+  url: https://www.precisionmedicineonline.com/precision-oncology/all-patients-respond-kelonias-vivo-car-t-multiple-myeloma-trial-early-data-asco
+- title: VERVE-102 single dose reduces LDL-C up to 62% (Lilly via BioSpace)
+  url: https://www.biospace.com/press-releases/a-single-dose-of-lillys-pcsk9-base-editor-verve-102-reduced-pcsk9-by-up-to-88-and-ldl-c-by-up-to-62-with-durable-effects-supporting-its-potential-as-a-one-time-treatment-for-hypercholesterolemia

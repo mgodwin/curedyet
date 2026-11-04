@@ -1,0 +1,80 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: hemophilia
+name: Hemophilia
+category: genetic
+tracking: active
+summary: An inherited bleeding disorder caused by missing clotting factor VIII (A) or IX (B), mostly in
+  males.
+toll:
+  text: About 1 in 5,000 male births for hemophilia A and 1 in 40,000 for B; ~18,000 people in the US.
+  url: https://en.wikipedia.org/wiki/Haemophilia
+status:
+  level: 3
+  why: Routine prophylaxis gives near-normal lives, and one-time gene therapy (Hemgenix) frees many hemophilia
+    B patients from regular infusions, but uptake is small.
+  today: Factor replacement and emicizumab prophylaxis prevent most bleeds, and newer rebalancing drugs
+    (fitusiran, concizumab, marstacimab) allow rarer dosing. Gene therapy for hemophilia B (Hemgenix)
+    gives years of factor IX production, but the hemophilia A gene therapy Roctavian was withdrawn in
+    2026 for commercial reasons. Access is poor in low-income countries, where most patients are undiagnosed.
+  last_reviewed: null
+treatment:
+  best:
+  - Emicizumab (Hemlibra)
+  - Extended half-life factor VIII/IX
+  - Hemgenix (gene therapy, B)
+  - Fitusiran (Qfitlia)
+  - Concizumab/marstacimab
+  burden: moderate
+  burden_note: Most patients use lifelong prophylaxis by weekly to monthly injections or frequent infusions
+    costing hundreds of thousands a year; gene therapy is one-time but costs millions and needs liver
+    monitoring.
+forecast:
+  bottleneck: access-limited
+  normal:
+    p2035: 10
+    p2045: 40
+    median: 2047
+    low: 2036
+    high: 2080
+  faster:
+    p2035: 22
+    p2045: 65
+    median: 2040
+    low: 2032
+    high: 2060
+  faster_note: Cheaper, safer and durable gene therapy or editing for hemophilia A is what is missing;
+    open design and access gates would lift odds a lot, but excellent existing control keeps demand and
+    uptake slow.
+  outlook: Control is already excellent, which lowers demand for risky, costly gene therapy; commercial
+    setbacks in 2025-26 show that. A cure for most likely needs durable, safe gene editing for hemophilia
+    A, which is still early. Expect better control near term and cure for most in the 2040s.
+pipeline:
+- name: Denecimig (Mim8, Frehemgo)
+  note: Bispecific for hemophilia A; approved in Saudi Arabia and positive CHMP opinion in Sept 2026.
+  stage: Approved 2025-26
+  url: https://en.wikipedia.org/wiki/Denecimig
+- name: Fitusiran (Qfitlia)
+  note: Antithrombin-lowering siRNA dosed as rarely as every two months, US approval March 2025.
+  stage: Approved 2025-26
+  url: https://en.wikipedia.org/wiki/Haemophilia
+- name: Hemgenix (etranacogene dezaparvovec)
+  note: One-time AAV gene therapy for hemophilia B, approved 2022, $3.5M list price.
+  stage: Approved 2025-26
+  url: https://en.wikipedia.org/wiki/Etranacogene_dezaparvovec
+recent:
+- date: 2026-09
+  text: EMA's CHMP recommended approval of denecimig, a once-weekly-or-less bispecific for hemophilia
+    A.
+  url: https://en.wikipedia.org/wiki/Denecimig
+- date: 2026-02
+  text: BioMarin pulled the hemophilia A gene therapy Roctavian from the market after finding no buyer.
+  url: https://en.wikipedia.org/wiki/Haemophilia
+next_milestone:
+  date: 2026-11
+  url: https://en.wikipedia.org/wiki/Denecimig
+  what: European Commission decision on denecimig (Frehemgo) after the Sept 2026 positive CHMP opinion
+ai:
+  impact: low
+  note: Leading new therapies are antibodies, siRNAs and AAV vectors from conventional development; AI
+    is not a visible driver.
+markets: []

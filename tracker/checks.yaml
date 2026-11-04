@@ -1,0 +1,155 @@
+# Short-range yes/no forecasts that resolve within months. They score the tracker's accuracy.
+- id: chk-alzheimers
+  disease: alzheimers
+  label: AriBio reports AR1001 POLARIS-AD Phase 3 met its primary endpoint by 2026-12-31
+  resolves_by: '2026-12-31'
+  prob: 15
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://clinicaltrials.gov/study/NCT05531526
+- id: chk-breast-cancer
+  disease: breast-cancer
+  label: FDA approves giredestrant for early ER-positive breast cancer by 2026-12-31
+  resolves_by: '2026-12-31'
+  prob: 85
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://www.curetoday.com/view/breast-cancer-treatments-awaiting-fda-decisions-4-to-watch
+- id: chk-epilepsy
+  disease: epilepsy
+  label: FDA accepts the azetukalner NDA for review by 2026-12-31
+  resolves_by: '2026-12-31'
+  prob: 88
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://www.neurologylive.com/view/xenon-submits-new-drug-application-azetukalner-treatment-focal-seizures
+- id: chk-h5n1
+  disease: h5n1
+  label: WHO declares a new pandemic (H5N1 or other) by 2026-12-31
+  resolves_by: '2026-12-31'
+  prob: 1
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://www.lines.com/prediction-markets/science/new-pandemic-in-2026
+- id: chk-hepatitis-b
+  disease: hepatitis-b
+  label: Japan approves bepirovirsen for chronic hepatitis B by 2026-12-31
+  resolves_by: '2026-12-31'
+  prob: 60
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://www.sec.gov/Archives/edgar/data/0001131399/000119312526384439/d331501d6k.htm
+- id: chk-lung-cancer
+  disease: lung-cancer
+  label: FDA approves ivonescimab for EGFR-mutated NSCLC by 2026-12-31
+  resolves_by: '2026-12-31'
+  prob: 50
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://www.clinicaltrialsarena.com/news/summit-debuts-longer-term-ivonescimab-data-as-it-awaits-fda-nsclc-decision/
+- id: chk-prostate-cancer
+  disease: prostate-cancer
+  label: FDA approves talazoparib plus enzalutamide for HRR-mutated mCSPC by 2026-12-31
+  resolves_by: '2026-12-31'
+  prob: 80
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://www.rttnews.com/3669562/pfizer-secures-fda-priority-review-for-talzenna-plus-xtandi-in-metastatic-prostate-cancer.aspx
+- id: chk-schizophrenia
+  disease: schizophrenia
+  label: FDA approves Teva's TEV-749 olanzapine LAI by 2026-12-31
+  resolves_by: '2026-12-31'
+  prob: 80
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://www.rttnews.com/3692387/teva-presents-positive-post-hoc-data-for-tev-749-for-schizophrenia-fda-decision-in-q4-26.aspx
+- id: chk-tuberculosis
+  disease: tuberculosis
+  label: WHO's 2026 TB report estimates fewer TB deaths in 2025 than the 1.23M in 2024, published by 2026-12-31
+  resolves_by: '2026-12-31'
+  prob: 55
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://www.who.int/teams/global-tuberculosis-programme/tb-reports/global-tuberculosis-report-2025
+- id: chk-marburg
+  disease: marburg
+  label: Sabin publicly reports cAd3-Marburg Phase 2 immunogenicity results by 2027-03-31
+  resolves_by: '2027-03-31'
+  prob: 50
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://www.sabin.org/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine/
+- id: chk-osteoarthritis
+  disease: osteoarthritis
+  label: Pacira reports Part A results from the PCRX-201 ASCEND Phase 2 trial by 2027-03-31
+  resolves_by: '2027-03-31'
+  prob: 70
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://www.itiger.com/news/2581234727
+- id: chk-nipah
+  disease: nipah
+  label: WHO publishes a new Nipah Disease Outbreak News report by 2027-05-31
+  resolves_by: '2027-05-31'
+  prob: 65
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://www.who.int/emergencies/disease-outbreak-news
+- id: chk-ebola
+  disease: ebola
+  label: PARTNERS trial publicly reports efficacy results for MBP134 or remdesivir in Bundibugyo disease
+    by 2027-06-30
+  resolves_by: '2027-06-30'
+  prob: 40
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://www.itg.be/en/health-stories/press-releases/partners-trial
+- id: chk-hair-loss
+  disease: hair-loss
+  label: Cosmo submits a US NDA for clascoterone 5% for androgenetic alopecia by 2027-06-30
+  resolves_by: '2027-06-30'
+  prob: 65
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://www.newsfilecorp.com/release/292660/
+- id: chk-prion-disease
+  disease: prion-disease
+  label: Ionis reports top-line ION717 PrProfile efficacy or PrP-lowering data by 2027-06-30
+  resolves_by: '2027-06-30'
+  prob: 10
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://clinicaltrials.gov/study/NCT06153966
+- id: chk-aging
+  disease: aging
+  label: NewLimit announces first human dosed with its reprogramming medicine by 2027-07-31
+  resolves_by: '2027-07-31'
+  prob: 20
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://blog.newlimit.com/p/2026-may-june-progress-update
+- id: chk-aging-dogs
+  disease: aging
+  label: Loyal applies for FDA conditional approval of LOY-002 (dog lifespan drug) by 2027-12-31
+  resolves_by: '2027-12-31'
+  prob: 55
+  resolved: null
+  last_forecast: null
+  note: Loyal has said it expects to apply in 2027; company timelines often slip.
+  url: null

@@ -1,0 +1,87 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: parkinsons
+name: Parkinson's disease
+category: neuro
+tracking: active
+summary: A progressive brain disorder in which dopamine neurons die, causing tremor, stiffness, slowness
+  and later cognitive problems.
+toll:
+  text: More than 10 million people worldwide and about 1.1 million in the US; nearly 90,000 US diagnoses
+    per year (Parkinson's Foundation).
+  url: https://www.parkinson.org/understanding-parkinsons/statistics
+status:
+  level: 1
+  why: Levodopa and related drugs ease symptoms well for years, but nothing has been proven to slow the
+    underlying neuron loss.
+  today: Levodopa, dopamine agonists, MAO-B inhibitors and deep brain stimulation control motor symptoms,
+    often for many years. Tavapadon (Juvmo), a new D1/D5 agonist, was approved in September 2026. No therapy
+    slows progression, and the LRRK2 inhibitor BIIB122 failed its phase 2b in 2026.
+  last_reviewed: null
+treatment:
+  best:
+  - Levodopa/carbidopa
+  - Dopamine agonists incl. tavapadon (Juvmo)
+  - MAO-B inhibitors
+  - Deep brain stimulation
+  - Continuous subcutaneous levodopa
+  burden: moderate
+  burden_note: Lifelong daily levodopa and related pills cause nausea, wearing-off and dyskinesias over
+    years, and agonists can trigger impulse-control problems; deep brain stimulation requires brain surgery.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 2
+    p2045: 10
+    median: 2062
+    low: 2042
+    high: 2100
+  faster:
+    p2035: 5
+    p2045: 30
+    median: 2048
+    low: 2038
+    high: 2085
+  faster_note: Better understanding of what drives neuron loss and faster trials of cell replacement and
+    alpha-synuclein drugs would help most, but every disease-modifying bet so far has failed, so the lift
+    is mostly after 2035.
+  outlook: Symptom control keeps improving, but every disease-modifying approach so far has failed or
+    shown only hints. Cell replacement and alpha-synuclein antibodies are the main bets, with key readouts
+    around 2028-2029. A cure for most patients by 2035 is very unlikely.
+pipeline:
+- name: Tavapadon (Juvmo)
+  note: FDA approved Sept 2026; once-daily D1/D5 partial agonist for symptoms.
+  stage: Approved 2025-26
+  url: https://www.neurologylive.com/view/fda-approves-tavapadon-for-the-treatment-of-parkinson-disease
+- name: Prasinezumab (Roche, anti-alpha-synuclein)
+  note: PADOVA showed exploratory slowing signals; 900-person PARAISO phase 3 completes around 2029.
+  stage: Phase 3
+  url: https://www.businesswire.com/news/home/20260806855960/en/Prothena-Reports-Second-Quarter-2026-Financial-Results-and-Business-Highlights
+- name: Bemdaneprocel (BlueRock/Bayer, stem-cell dopamine neurons)
+  note: Registrational exPDite-2 trial of transplanted dopamine cells.
+  stage: Phase 3
+  url: https://clinicaltrials.gov/study/NCT06944522
+- name: Ambroxol (ASPro-PD)
+  note: Repurposed cough drug targeting GBA/glucocerebrosidase; UK phase 3.
+  stage: Phase 3
+  url: https://www.isrctn.com/ISRCTN93097821
+- name: BIIB122/DNL151 (LRRK2 inhibitor) in LRRK2 carriers (BEACON)
+  note: Failed in idiopathic PD; BEACON in LRRK2 carriers reads out in 1H 2027.
+  stage: Phase 2
+  url: https://www.neurologylive.com/view/lrrk2-inhibitor-biib122-fails-slow-early-stage-parkinson-disease
+recent:
+- date: 2026-05
+  text: Phase 2b LUMA of LRRK2 inhibitor BIIB122 missed all endpoints in early Parkinson's (HR 1.04).
+  url: https://www.neurologylive.com/view/lrrk2-inhibitor-biib122-fails-slow-early-stage-parkinson-disease
+- date: 2026-09
+  text: FDA approved tavapadon, the first D1/D5 partial agonist for Parkinson's.
+  url: https://www.neurologylive.com/view/fda-approves-tavapadon-for-the-treatment-of-parkinson-disease
+next_milestone:
+  date: 2027-06
+  url: https://www.neurologylive.com/view/lrrk2-inhibitor-biib122-fails-slow-early-stage-parkinson-disease
+  what: Denali BEACON phase 2a data for BIIB122 in LRRK2-mutation Parkinson's (expected first half of
+    2027).
+ai:
+  impact: some
+  note: AI is used to analyze speech, gait and wearable data for earlier diagnosis and trial endpoints,
+    but no AI-discovered Parkinson's drug has shown clinical benefit.
+markets: []

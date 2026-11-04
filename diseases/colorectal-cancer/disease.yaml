@@ -1,0 +1,91 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: colorectal-cancer
+name: Colorectal cancer
+category: cancer
+tracking: active
+summary: Cancer of the colon or rectum, usually arising from polyps over many years.
+toll:
+  text: More than 2.0M new cases and 918,000 deaths/yr worldwide (2024); ~158,850 US cases and ~55,230
+    US deaths est. 2026.
+  url: https://pressroom.cancer.org/global-cancer-statistics-2026
+status:
+  level: 3
+  why: Localized and many regional cancers are cured with surgery, and dMMR rectal cancer can now be cleared
+    with immunotherapy alone, but metastatic disease is rarely curable and overall 5-year survival is
+    about 65%.
+  today: Screening finds and removes polyps, and stage I-III disease is often cured with surgery plus
+    chemotherapy or chemoradiation. The small dMMR/MSI-high subset responds dramatically to PD-1 blockade,
+    with many rectal patients avoiding surgery. Most metastatic microsatellite-stable disease is treated
+    with chemotherapy and targeted drugs that extend life but do not cure it.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Screening colonoscopy and polyp removal
+  - Surgery with adjuvant FOLFOX or CAPOX
+  - Dostarlimab or other PD-1 blockade for dMMR tumors
+  - Encorafenib plus cetuximab for BRAF V600E
+  - Liver resection for limited metastases
+  burden: heavy
+  burden_note: Most receive bowel surgery, sometimes with a stoma, plus months of FOLFOX or CAPOX chemo
+    that can cause lasting nerve damage; metastatic disease means indefinite chemo.
+forecast:
+  bottleneck: access-limited
+  normal:
+    p2035: 30
+    p2045: 60
+    median: 2041
+    low: 2030
+    high: 2065
+  faster:
+    p2035: 40
+    p2045: 75
+    median: 2037
+    low: 2029
+    high: 2052
+  faster_note: 'Already near the line, so the lift is modest: broader blood-test and colonoscopy screening
+    matter most, with better drugs for microsatellite-stable metastatic disease as the upside.'
+  outlook: Colorectal cancer sits close to the cured-for-most line because most cases are caught before
+    distant spread. Better screening uptake, including blood tests, could tip it over, but rising early-onset
+    cases and the lack of strong drugs for microsatellite-stable metastatic disease hold it back. Pan-RAS
+    inhibitors and ctDNA-guided adjuvant care are the main upside risks.
+pipeline:
+- name: Dostarlimab (Jemperli) for dMMR rectal cancer
+  note: Accelerated approval Oct 2026; 47% sustained complete response in AZUR-1 without surgery.
+  stage: Approved 2025-26
+  url: https://www.targetedonc.com/view/dostarlimab-fda-approval-locally-advanced-rectal-cancer
+- name: Zanzalintinib plus atezolizumab
+  note: STELLAR-303 improved OS vs regorafenib (HR 0.80); FDA decision moved to Mar 3, 2027.
+  stage: Filed
+  url: https://www.onclive.com/view/fda-extends-review-period-for-zanzalintinib-plus-atezolizumab-nda-in-pretreated-mcrc
+- name: Encorafenib plus cetuximab plus FOLFOX
+  note: Converted to full approval Feb 2026 for first-line BRAF V600E metastatic disease.
+  stage: Approved 2025-26
+  url: https://www.mdlinx.com/article/the-biggest-fda-decision-drops-in-2026-so-far-oncology-approvals/4WRnWWH8XhXAO0mgWJJvfm
+- name: SimpleScreen CRC blood test
+  note: FDA-approved July 2026 blood screening test; about 79-81% cancer sensitivity but weak for precancers.
+  stage: Approved 2025-26
+  url: https://www.cancernetwork.com/view/fda-approves-blood-based-test-for-colorectal-cancer-screening
+recent:
+- date: 2026-10
+  text: FDA approved dostarlimab as the first immunotherapy for locally advanced dMMR rectal cancer, letting
+    many patients skip surgery.
+  url: https://www.targetedonc.com/view/dostarlimab-fda-approval-locally-advanced-rectal-cancer
+- date: 2026-07
+  text: A second blood-based colorectal screening test won FDA approval, widening non-invasive screening
+    options.
+  url: https://www.cancernetwork.com/view/fda-approves-blood-based-test-for-colorectal-cancer-screening
+- date: 2026-02
+  text: Encorafenib combination got full approval in BRAF V600E metastatic disease.
+  url: https://www.mdlinx.com/article/the-biggest-fda-decision-drops-in-2026-so-far-oncology-approvals/4WRnWWH8XhXAO0mgWJJvfm
+next_milestone:
+  date: '2027-03-03'
+  url: https://www.onclive.com/view/fda-extends-review-period-for-zanzalintinib-plus-atezolizumab-nda-in-pretreated-mcrc
+  what: FDA decision on zanzalintinib plus atezolizumab for previously treated metastatic colorectal cancer.
+ai:
+  impact: some
+  note: AI-assisted polyp detection during colonoscopy is FDA-cleared and in clinical use, raising adenoma
+    detection rates.
+markets:
+- url: https://manifold.markets/event/will-fda-approve-any-mrna-vaccine-a-8e884d3619e0
+  what: Will FDA approve any mRNA vaccine against colorectal adenocarcinoma before 2028? About 31%.
+  who: Manifold

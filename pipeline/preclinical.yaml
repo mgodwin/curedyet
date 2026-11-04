@@ -1,0 +1,79 @@
+# A stage of the cure pipeline. Field guide: METHODOLOGY.md.
+id: preclinical
+order: 4
+name: Lab testing
+kind: stage
+question: Can lab models replace animal studies and predict human results?
+cleared_when: Cleared when organoids, organ-on-chips and other human-cell lab models are accepted by FDA/EMA
+  in place of most animal studies and measurably cut late-stage failures. (Computational prediction belongs
+  to the simulation gate.)
+status: easing
+odds_much_faster:
+  by_2030: 20
+  by_2035: 50
+ai_linked: false
+status_note: 'Policy has moved fast. FDA says it met its first-year milestones on the animal-testing roadmap
+  (Apr 2026), issued draft NAM validation guidance (Mar 2026) and a direct final rule recasting ''animal
+  studies'' as ''nonclinical studies'' (Sep 2026), and cleared an oncology IND on human vascularized organoid
+  efficacy data (Qureator, Oct 2025). Formal acceptance still lags: FDA had qualified no organ-chip drug
+  development tool as of Jan 2026, and Emulate only submitted the first full Liver-Chip qualification
+  package in Sep 2026. FDA Modernization Act 3.0 passed the Senate in Dec 2025 but has had no House vote,
+  and no data yet show lower late-stage failure rates.'
+time_today:
+  low: 1
+  high: 3
+  label: 1–3 yrs
+  note: The HHS ASPE cost model uses an average of 31.2 months of nonclinical work from compound synthesis
+    to first human dosing, including IND clearance.
+time_best_case:
+  low: 0.2
+  high: 1
+  label: 2–12 mo
+  note: Moderna dosed its first COVID vaccine trial participant 63 days after sequence selection by running
+    safety work in parallel, and FDA's April 2025 roadmap starts replacing animal tests for antibodies
+    with AI toxicity models and organoids.
+signals:
+- asOf: 2026-09
+  name: Organ-chip / MPS drug development tools fully qualified by FDA
+  url: https://www.pharmaceuticalonline.com/doc/emulate-enters-final-stage-of-fda-istand-program-for-human-liver-chip-with-submission-of-qualification-package-covering-both-zo-and-ava-organ-chip-platforms-0001
+  value: 0 qualified; Emulate Liver-Chip full qualification package submitted Sep 2026
+- asOf: 2025-12
+  name: FDA Modernization Act 3.0 (S.355 / H.R.2821)
+  url: https://www.acsh.org/news/2025/12/23/holiday-gift-animals-49882
+  value: Passed Senate by unanimous consent Dec 2025; awaiting House vote
+- asOf: 2026-09
+  name: FDA NAM guidance pipeline
+  url: https://www.pharmtech.com/view/the-fda-finalizes-rule-recognizing-non-animal-testing-methods-building-on-year-long-reduction-push
+  value: NAM validation guidance in draft (Mar 2026); direct final rule on nonclinical terminology (Sep
+    2026)
+- asOf: 2025-09
+  name: NIH Standardized Organoid Modeling Center
+  url: https://www.fiercebiotech.com/biotech/nih-earmarks-87m-new-organoid-center-pivot-away-animal-testing-continues
+  value: $87M over 3 years; liver, lung, heart, intestine first
+watch: FDA decision on Emulate's Liver-Chip qualification package, a House vote on FDA Modernization Act
+  3.0, and NAM validation guidance moving from draft to final.
+sources:
+- title: 'HHS ASPE / NCBI Bookshelf: Costs of drug development (phase durations)'
+  url: https://www.ncbi.nlm.nih.gov/books/NBK611884/
+- title: 'Moderna press release: 63 days from sequence selection to Phase 1 dosing'
+  url: https://www.businesswire.com/news/home/20200316005666/en
+- title: 'BioPharm International: FDA intends to phase out mAb animal testing requirement'
+  url: https://www.biopharminternational.com/view/fda-intends-phase-out-mab-animal-testing-requirement
+- title: 'RAPS: FDA plan to reduce animal testing seeing success at 1 year, challenges remain'
+  url: https://www.raps.org/resource/experts-say-fda-s-plan-to-reduce-animal-testing-is-already-seeing-success-at-1-year-but-challenges-remain.html
+- title: NAVS Crossroads 2029 FDA progress report Q2 2026
+  url: https://navs.org/wp-content/uploads/2026/07/crossroads2029_progress-report_fda-2026-q2.pdf
+- title: 'PharmTech: FDA finalizes rule recognizing non-animal testing methods'
+  url: https://www.pharmtech.com/view/the-fda-finalizes-rule-recognizing-non-animal-testing-methods-building-on-year-long-reduction-push
+- title: Emulate enters final stage of FDA ISTAND program for Human Liver-Chip
+  url: https://www.pharmaceuticalonline.com/doc/emulate-enters-final-stage-of-fda-istand-program-for-human-liver-chip-with-submission-of-qualification-package-covering-both-zo-and-ava-organ-chip-platforms-0001
+- title: 'IntuitionLabs: Organ-on-a-chip FDA qualification'
+  url: https://intuitionlabs.ai/articles/organ-on-a-chip-fda-qualification
+- title: 'PCRM: FDA approves new cancer drug clinical trials based on non-animal data only'
+  url: https://www.pcrm.org/news/innovative-science/fda-approves-new-cancer-drug-clinical-trials-based-nonanimal-data-only
+- title: 'ACSH: Senate passes FDA Modernization Act 3.0'
+  url: https://www.acsh.org/news/2025/12/23/holiday-gift-animals-49882
+- title: 'Fierce Biotech: NIH earmarks $87M for new organoid center'
+  url: https://www.fiercebiotech.com/biotech/nih-earmarks-87m-new-organoid-center-pivot-away-animal-testing-continues
+- title: 'RAPS: EMA launches data-sharing pilot to gain confidence in NAMs'
+  url: https://www.raps.org/resource/ema-launches-data-sharing-pilot-to-gain-confidence-in-nams-reduce-animal-testing.html

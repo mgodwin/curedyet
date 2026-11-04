@@ -1,0 +1,94 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: breast-cancer
+name: Breast cancer
+category: cancer
+tracking: active
+summary: Cancer that starts in breast tissue, split into HR-positive, HER2-positive and triple-negative
+  subtypes.
+toll:
+  text: About 2.4M new cases and 694,000 deaths/yr worldwide (2024); ~324,580 US cases and ~42,670 US
+    deaths est. 2026.
+  url: https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2026/2026-cancer-facts-and-figures.pdf
+status:
+  level: 4
+  why: Most patients are diagnosed at an early stage and are cured with surgery, radiation and systemic
+    therapy, though metastatic disease remains incurable.
+  today: Early-stage disease is usually cured with surgery plus endocrine therapy, HER2 drugs or chemo-immunotherapy
+    depending on subtype. Metastatic breast cancer is treated as a chronic disease with CDK4/6 inhibitors,
+    oral SERDs and antibody-drug conjugates, but it is rarely cured. Triple-negative and late-relapsing
+    HR-positive disease drive most deaths.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Surgery plus radiation
+  - Endocrine therapy with CDK4/6 inhibitors
+  - Trastuzumab deruxtecan (Enhertu)
+  - Pembrolizumab with chemotherapy for TNBC
+  - Sacituzumab govitecan (Trodelvy)
+  burden: heavy
+  burden_note: Most patients get surgery and often radiation, then 5-10 years of endocrine pills with
+    joint pain and bone loss; many also need chemo or HER2 drugs with hair loss and fatigue.
+  cure_tolerable: true
+forecast:
+  bottleneck: access-limited
+  reached: 2000
+  faster_note: Already cured for most; acceleration mainly helps by moving ADCs and oral SERDs into earlier
+    settings and designing drugs that cure metastatic disease, which matters for the remaining patients
+    but not the level.
+  outlook: Breast cancer already meets the cured-for-most bar because most cases are found early and 5-year
+    survival is around 90% in rich countries. The remaining work is metastatic disease, where new ADCs
+    and oral SERDs extend life but do not cure. Moving early ADCs and SERDs into the adjuvant setting
+    should keep shrinking relapse rates.
+pipeline:
+- name: Giredestrant (oral SERD), adjuvant
+  note: lidERA trial in early ER-positive disease; FDA decision expected Nov 30, 2026.
+  stage: Filed
+  url: https://www.curetoday.com/view/breast-cancer-treatments-awaiting-fda-decisions-4-to-watch
+- name: Giredestrant plus everolimus
+  note: evERA trial in ESR1-mutated metastatic disease; decision expected Dec 18, 2026.
+  stage: Filed
+  url: https://www.curetoday.com/view/breast-cancer-treatments-awaiting-fda-decisions-4-to-watch
+- name: Camizestrant (Etcamah)
+  note: Accelerated approval Sept 2026 for switching at emerging ESR1 mutation (SERENA-6).
+  stage: Approved 2025-26
+  url: https://www.pharmacytimes.com/view/5-breast-cancer-advances-in-2026-and-the-questions-they-leave-unanswered
+- name: Trastuzumab deruxtecan in early HER2+ disease
+  note: May 2026 approval for neoadjuvant and post-neoadjuvant use; cut invasive disease risk by about
+    half vs T-DM1.
+  stage: Approved 2025-26
+  url: https://www.pharmacytimes.com/view/5-breast-cancer-advances-in-2026-and-the-questions-they-leave-unanswered
+- name: Vepdegestrant (Veppanu)
+  note: PROTAC estrogen receptor degrader approved Q2 2026 for ESR1-mutated advanced disease.
+  stage: Approved 2025-26
+  url: https://www.aacr.org/blog/2026/07/02/fda-approvals-in-oncology-april-june-2026/
+- name: Tucatinib maintenance (HER2CLIMB-05)
+  note: First-line maintenance for HER2+ metastatic disease; Pfizer expects a 2026 decision.
+  stage: Filed
+  url: https://www.curetoday.com/view/breast-cancer-treatments-awaiting-fda-decisions-4-to-watch
+recent:
+- date: 2026-05
+  text: FDA approved Enhertu for early HER2+ disease after DESTINY-Breast05 showed 3-year IDFS of 92.4%
+    vs 83.7%.
+  url: https://www.pharmacytimes.com/view/5-breast-cancer-advances-in-2026-and-the-questions-they-leave-unanswered
+- date: 2026-06
+  text: Sacituzumab govitecan approved first line in metastatic TNBC, alone or with pembrolizumab.
+  url: https://www.pharmacytimes.com/view/5-breast-cancer-advances-in-2026-and-the-questions-they-leave-unanswered
+- date: 2026-09
+  text: Camizestrant got accelerated approval as the first drug used to switch therapy when an ESR1 mutation
+    shows up in blood tests.
+  url: https://www.pharmacytimes.com/view/5-breast-cancer-advances-in-2026-and-the-questions-they-leave-unanswered
+next_milestone:
+  date: '2026-11-30'
+  url: https://www.curetoday.com/view/breast-cancer-treatments-awaiting-fda-decisions-4-to-watch
+  what: FDA decision on giredestrant as adjuvant therapy for early ER-positive breast cancer (lidERA).
+ai:
+  impact: some
+  note: AI-supported mammography reading is in routine use in parts of Europe and helps catch more early
+    cancers, while drug discovery gains are less direct.
+markets:
+- url: https://manifold.markets/event/will-fda-approve-any-mrna-vaccine-a-e33e8ad4019d
+  what: Will FDA approve any mRNA vaccine against any type of breast cancer before 2028? About 31%.
+  who: Manifold
+- url: https://metaculus.com/questions/25655/will-cancer-mortality-by-50-by-2051
+  what: Will US age-adjusted cancer deaths fall 50% or more before 2051? About 45%.
+  who: Metaculus

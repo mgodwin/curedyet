@@ -1,0 +1,55 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: hepatitis-c
+name: Hepatitis C
+category: infectious
+tracking: active
+summary: A blood-borne viral liver infection that can cause cirrhosis and liver cancer.
+toll:
+  text: About 47 million living with chronic HCV, 0.9M new infections/yr and about 239,000 deaths in 2024
+    (WHO)
+  url: https://www.who.int/news-room/fact-sheets/detail/hepatitis-c
+status:
+  level: 4
+  why: Direct-acting antivirals cure more than 95% of people treated, usually in 8-12 weeks.
+  today: 'Pangenotypic pill regimens such as sofosbuvir/velpatasvir and glecaprevir/pibrentasvir cure
+    nearly everyone who takes them. The problem is reach: most infected people are undiagnosed or untreated,
+    and there is no vaccine. Egypt shows elimination is possible with mass test-and-treat.'
+  last_reviewed: null
+treatment:
+  best:
+  - Sofosbuvir/velpatasvir
+  - Glecaprevir/pibrentasvir
+  - Sofosbuvir/velpatasvir/voxilaprevir (retreatment)
+  burden: light
+  burden_note: Daily pills for 8-12 weeks with mild headache or fatigue cure nearly everyone; generics
+    are cheap in many countries, though diagnosis and access gaps leave many untreated.
+  cure_tolerable: true
+forecast:
+  bottleneck: access-limited
+  reached: 2014
+  faster_note: Already curable; acceleration would help only through cheaper testing and delivery and
+    a vaccine, since the remaining problem is diagnosis and reach rather than science.
+  outlook: Hepatitis C is already curable for most who get treated. The remaining work is diagnosis, access
+    and price, plus a vaccine to stop reinfection. Global elimination by 2030 looks off track outside
+    a few countries.
+pipeline:
+- name: Point-of-care test-and-treat models
+  note: Trials test single-visit diagnosis and treatment, including an AI-assisted model; phase label
+    is approximate.
+  stage: Phase 2
+  url: https://clinicaltrials.gov/study/NCT07793643
+- name: HCV vaccine candidates
+  note: No effective vaccine exists; candidates remain early.
+  stage: Preclinical
+  url: https://www.who.int/news-room/fact-sheets/detail/hepatitis-c
+recent:
+- date: 2026-05
+  text: Egypt said a 2026 WHO report reaffirmed its gold-tier status on the path to eliminating hepatitis
+    C.
+  url: https://epinews.emphnet.net/en/news/health-minister-who-2026-report-cements-egypts-global-leadership-in-eliminating-hepatitis-c
+next_milestone: null
+ai:
+  impact: low
+  note: Cures already exist; AI shows up only at the edges, such as an AI-assisted single-visit test-and-treat
+    trial.
+markets: []

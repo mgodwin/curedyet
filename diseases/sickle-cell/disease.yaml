@@ -1,0 +1,90 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: sickle-cell
+name: Sickle cell disease
+category: genetic
+tracking: active
+summary: An inherited blood disorder in which misshapen red blood cells block blood flow, causing pain
+  crises, organ damage and early death.
+toll:
+  text: About 7.7M people living with SCD and ~515,000 affected births/yr; 34,000 deaths as underlying
+    cause, ~376,000 with SCD contributing (2021).
+  url: https://healthdata.org/research-article/global-regional-and-national-prevalence-and-mortality-burden-sickle-cell-disease
+status:
+  level: 3
+  why: Stem cell transplant and approved gene therapies (Casgevy, Lyfgenia) end crises in over 90% of
+    treated patients, but few patients receive them.
+  today: Most patients rely on hydroxyurea, transfusions, L-glutamine and pain care, which reduce but
+    do not stop disease. Matched donor transplant and the gene therapies Casgevy and Lyfgenia are curative-intent,
+    but they need harsh chemotherapy conditioning, cost $2-3M, and treated only about 160 US patients
+    in 2025. Casgevy was extended to children 2 and older in the US in July 2026.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Casgevy (exa-cel)
+  - Lyfgenia (lovo-cel)
+  - Allogeneic stem cell transplant
+  - Hydroxyurea
+  - Crizanlizumab
+  burden: heavy
+  burden_note: Curative gene therapy or transplant needs myeloablative chemo conditioning with infertility
+    risk, months of hospital care and $2-3M cost; most patients instead take daily hydroxyurea and transfusions.
+forecast:
+  bottleneck: access-limited
+  normal:
+    p2035: 15
+    p2045: 50
+    median: 2045
+    low: 2034
+    high: 2065
+  faster:
+    p2035: 30
+    p2045: 75
+    median: 2038
+    low: 2031
+    high: 2052
+  faster_note: 'The cure already exists, so the big lift comes from the access gate: antibody conditioning
+    and in vivo editing would remove chemo, cost and transplant-center limits and let most patients be
+    treated.'
+  outlook: The cure exists but is hard to deliver because of chemotherapy conditioning, cost and specialized
+    centers. Gentler antibody conditioning and later in vivo editing could make cure routine, but those
+    are early. Reaching most patients in rich countries likely takes until around 2040.
+pipeline:
+- name: Mitapivat (oral PK activator)
+  note: Met hemoglobin endpoint in RISE UP but missed pain-crisis endpoint; PDUFA moved to 2027-02-01.
+  stage: Filed
+  url: https://www.stocktitan.net/news/AGIO/agios-announces-new-pdufa-goal-date-of-february-1-2027-for-mitapivat-b8gxlfed3y4l.html
+- name: Risto-cel (BEAM-101 base editing)
+  note: Phase 1/2 data in NEJM; BLA planned as early as year-end 2026.
+  stage: Phase 2
+  url: https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-reports-first-quarter-2026-financial-results/
+- name: Etavopivat (Novo Nordisk)
+  note: HIBISCUS cut pain crises and raised hemoglobin.
+  stage: Phase 3
+  url: https://www.hcplive.com/view/phase-3-hibiscus-etavopivat-cuts-voc-events-improves-hemoglobin-in-scd
+- name: BEAM-103 (antibody conditioning, ESCAPE)
+  note: Aims to replace chemotherapy conditioning, the main barrier to gene therapy.
+  stage: Phase 1
+  url: https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-reports-first-quarter-2026-financial-results/
+- name: Casgevy ages 2+
+  note: FDA approval for children 2 and older in July 2026.
+  stage: Approved 2025-26
+  url: https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results
+recent:
+- date: 2026-07
+  text: FDA approved Casgevy for children aged 2 and older with SCD.
+  url: https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results
+- date: 2026-04
+  text: Beam's base-edited risto-cel Phase 1/2 results were published in NEJM.
+  url: https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-reports-first-quarter-2026-financial-results/
+- date: 2026-04
+  text: Etavopivat reduced pain crises and raised hemoglobin in the Phase 3 HIBISCUS trial.
+  url: https://www.hcplive.com/view/phase-3-hibiscus-etavopivat-cuts-voc-events-improves-hemoglobin-in-scd
+next_milestone:
+  date: '2027-02-01'
+  url: https://www.stocktitan.net/news/AGIO/agios-announces-new-pdufa-goal-date-of-february-1-2027-for-mitapivat-b8gxlfed3y4l.html
+  what: FDA PDUFA date for mitapivat in sickle cell disease
+ai:
+  impact: some
+  note: Computational tools help design guide RNAs and base editors used in therapies like risto-cel,
+    but delivery and access are the main bottlenecks.
+markets: []

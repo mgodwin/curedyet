@@ -1,0 +1,94 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: lung-cancer
+name: Lung cancer
+category: cancer
+tracking: active
+summary: Cancer of the lungs, mostly non-small cell (NSCLC) with a smaller share of aggressive small cell
+  lung cancer.
+toll:
+  text: About 2.6M new cases and 1.9M deaths/yr worldwide (2024); ~229,410 US cases and ~124,990 US deaths
+    est. 2026.
+  url: https://pressroom.cancer.org/global-cancer-statistics-2026
+status:
+  level: 3
+  why: Early-stage and some oncogene-driven or immunotherapy-responsive patients are cured or in long
+    remission, but most are diagnosed late and 5-year survival is about 28%.
+  today: Stage I-II NSCLC is often cured with surgery or radiation, and perioperative immunotherapy raises
+    cure rates in stage II-III. Metastatic disease is treated with targeted drugs (EGFR, ALK, ROS1, HER2
+    and others) or immunotherapy, which give years of control for some but rarely cure. Small cell lung
+    cancer remains highly lethal.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Surgery or stereotactic radiation for early disease
+  - Perioperative immunotherapy with chemotherapy
+  - Osimertinib and other targeted TKIs
+  - Pembrolizumab-based immunotherapy
+  - Antibody-drug conjugates
+  burden: heavy
+  burden_note: Most patients are diagnosed late and get chemo-immunotherapy or ongoing targeted drugs
+    with fatigue, rash and immune side effects; early cases need lung surgery or radiation.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 8
+    p2045: 35
+    median: 2050
+    low: 2037
+    high: 2085
+  faster:
+    p2035: 18
+    p2045: 60
+    median: 2042
+    low: 2034
+    high: 2065
+  faster_note: Faster design and trials of ADCs, bispecifics and targeted drugs for metastatic disease
+    plus wider AI-read CT screening could cure far more patients, but most are still found late, so the
+    2035 lift is moderate and the big gain lands by 2045.
+  outlook: Survival is rising fast, but most patients are still found at stage III-IV where cure is uncommon.
+    Reaching cured-for-most likely needs both wide CT screening uptake and durable cures in metastatic
+    disease, which is a decade-plus project. Smoking decline helps incidence but not the cure rate.
+pipeline:
+- name: Ivonescimab (PD-1/VEGF bispecific)
+  note: BLA in EGFR-mutated NSCLC after TKI based on HARMONi; PDUFA Nov 14, 2026.
+  stage: Filed
+  url: https://www.clinicaltrialsarena.com/news/summit-debuts-longer-term-ivonescimab-data-as-it-awaits-fda-nsclc-decision/
+- name: Zidesamtinib (Jideytro)
+  note: ROS1 inhibitor approved July 2026 for previously treated ROS1-positive NSCLC.
+  stage: Approved 2025-26
+  url: https://www.bioworld.com/articles/732912-gsks-newly-acquired-jideytro-wins-fda-nod-in-nsclc
+- name: Zongertinib
+  note: Accelerated approval Feb 2026 for HER2-mutant nonsquamous NSCLC.
+  stage: Approved 2025-26
+  url: https://www.mdlinx.com/article/the-biggest-fda-decision-drops-in-2026-so-far-oncology-approvals/4WRnWWH8XhXAO0mgWJJvfm
+- name: Sacituzumab tirumotecan (sac-TMT)
+  note: TROP2 ADC with overall survival gains in pretreated EGFR-mutant NSCLC in OptiTROP-Lung trials.
+  stage: Phase 3
+  url: https://egfrchannel.onclive.com/sac-tmt-extends-os-in-pretreated-egfr-mutated-nsclc
+recent:
+- date: 2026-02
+  text: Zongertinib became an approved oral option for HER2-mutant lung cancer.
+  url: https://www.mdlinx.com/article/the-biggest-fda-decision-drops-in-2026-so-far-oncology-approvals/4WRnWWH8XhXAO0mgWJJvfm
+- date: 2026-09
+  text: Updated HARMONi data at WCLC 2026 showed a survival hazard ratio of 0.76 in Western patients on
+    ivonescimab plus chemo.
+  url: https://secure.businesswire.com/news/home/20260915307340/en/Updated-HARMONi-Data-Presented-at-WCLC-2026-Demonstrate-Consistent-Overall-Survival-Results-with-Ivonescimab-Plus-Chemotherapy-in-Western-and-Asian-Patients
+- date: 2026-01
+  text: ACS reported lung cancer 5-year survival rose from 15% to 28%, and distant-stage survival from
+    2% to 10%.
+  url: https://pressroom.cancer.org/cancer-statistics-report-2026
+next_milestone:
+  date: '2026-11-14'
+  url: https://www.clinicaltrialsarena.com/news/summit-debuts-longer-term-ivonescimab-data-as-it-awaits-fda-nsclc-decision/
+  what: FDA decision on ivonescimab plus chemotherapy in EGFR-mutated NSCLC after TKI.
+ai:
+  impact: some
+  note: AI reading of low-dose CT scans for nodule risk is spreading in screening programs, while AI-designed
+    drugs for lung cancer are still early.
+markets:
+- url: https://manifold.markets/event/will-fda-approve-any-mrna-vaccine-a-9ca8fb9ce759
+  what: Will FDA approve any mRNA vaccine against non-small-cell lung carcinoma before 2028? About 13%.
+  who: Manifold
+- url: https://metaculus.com/questions/25655/will-cancer-mortality-by-50-by-2051
+  what: Will US age-adjusted cancer deaths fall 50% or more before 2051? About 45%.
+  who: Metaculus

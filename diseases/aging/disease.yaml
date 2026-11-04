@@ -1,0 +1,132 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: aging
+name: Aging
+category: aging
+tracking: active
+summary: 'Biological aging: the gradual, body-wide loss of cell and tissue function that drives most chronic
+  disease and death in adults.'
+toll:
+  text: Underlies most of the roughly 60M+ deaths per year worldwide; age is the top risk factor for cancer,
+    heart disease and dementia (rough figure, no single source).
+  url: https://www.who.int/news-room/fact-sheets/detail/ageing-and-health
+status:
+  level: 1
+  why: Exercise and calorie restriction modestly slow age-related decline and aging biomarkers in trials,
+    but no drug has been proven to slow human aging.
+  today: No drug is approved or proven to slow aging in people. Lifestyle tools (exercise, not smoking,
+    healthy weight, the CALERIE calorie restriction trial) modestly improve healthspan and pace-of-aging
+    biomarkers. Rapamycin, metformin, senolytics and GLP-1s have suggestive but small or mixed human data;
+    the small PEARL rapamycin trial missed its primary endpoint and showed no epigenetic age effect.
+  last_reviewed: null
+treatment:
+  best:
+  - Regular exercise
+  - Calorie control / healthy weight
+  - Not smoking
+  - Treating BP, lipids and glucose
+  burden: moderate
+  burden_note: The proven tools are lifelong lifestyle habits like regular exercise and calorie control;
+    they are cheap and safe but hard to sustain, and effects are modest.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 1
+    p2045: 2
+    median: 2100
+    low: 2060
+    high: 2100
+  faster:
+    p2035: 2
+    p2045: 8
+    median: 2080
+    low: 2048
+    high: 2100
+  faster_note: Halting aging needs both new biology (reprogramming across tissues) and regulators accepting
+    aging biomarkers as endpoints; even with all gates open the lift is small because whole-body safety
+    and proof take many years.
+  outlook: Halting or reversing aging for most people would need therapies that work across many tissues,
+    plus proof of benefit that takes years to measure. Reprogramming is only now entering first-in-human
+    safety trials in a single tissue, and the best drug candidates show small or mixed effects. A modest
+    healthspan drug (level 2) by the 2030s is plausible; level 4 is very unlikely before mid-century.
+  milestones:
+  - label: A drug is proven to slow aging in people
+    note: A well-run human trial shows slower decline on a validated aging measure, or fewer age-related
+      diseases at once. PEARL (rapamycin) missed its main goal and TAME (metformin) has struggled for
+      funding, so nothing is close yet.
+    p2035: 10
+    p2045: 30
+  - label: Regulators accept an aging biomarker as proof
+    note: 'FDA or EMA accepts an aging clock or similar measure as a trial endpoint. This is the key unlock:
+      without it, every candidate must be tested one disease at a time over many years.'
+    p2035: 15
+    p2045: 40
+  - label: A drug is approved to extend dogs' lives
+    note: Loyal's LOY-002 has FDA sign-off on its efficacy and safety sections and plans to apply for
+      conditional approval in 2027. A first proof that lifespan itself can be a drug target, though in
+      dogs.
+    p2035: 70
+    p2045: 80
+pipeline:
+- name: ER-100 partial epigenetic reprogramming (Life Biosciences)
+  note: First human OSK reprogramming trial; first patient dosed mid-2026 in optic neuropathies (glaucoma,
+    NAION), not aging itself.
+  stage: Phase 1
+  url: https://longevity.technology/news/life-bio-reaches-first-clinical-milestone-for-osk-therapy/
+- name: NewLimit epigenetic reprogramming medicine
+  note: Lead candidate in final preclinical stages after a $435M Series C; company says clinic entry in
+    2027.
+  stage: Preclinical
+  url: https://blog.newlimit.com/p/2026-may-june-progress-update
+- name: LOY-002 (Loyal) dog lifespan drug
+  note: FDA accepted efficacy (RXE, 2025) and safety (TAS, Jan 2026) sections; conditional approval application
+    expected 2027. Dogs only; 1,300-dog STAY lifespan trial still running.
+  stage: Filed
+  url: https://loyal.com/posts/loy-002-tas-announcement
+- name: Metformin (TAME trial)
+  note: Long-planned aging-outcome trial; funding and enrollment status remain unclear, no efficacy results.
+  stage: Phase 3
+  url: https://www.stackingyears.com/blog/tame-trial-metformin-2026-status-update
+- name: Rapamycin / mTOR inhibitors
+  note: PEARL (114 people, 48 weeks) was safe but missed its primary endpoint; some benefits in women
+    only.
+  stage: Phase 2
+  url: https://lifespan.io/results-of-a-crowdfunded-one-year-human-rapamycin-trial/
+- name: Senolytics (dasatinib + quercetin, others)
+  note: Small trials show mixed results, e.g. bone benefit only in a subset of older women.
+  stage: Phase 2
+  url: https://fightaging.org/archives/2024/07/results-from-a-phase-2-trial-of-senolytic-therapy-dasatinib-and-quercetin-for-osteoporosis
+recent:
+- date: 2026-06
+  text: Life Biosciences dosed the first human with a partial epigenetic reprogramming therapy (ER-100,
+    eye disease).
+  url: https://longevity.technology/news/life-bio-reaches-first-clinical-milestone-for-osk-therapy/
+- date: 2026-01
+  text: FDA accepted the safety package for Loyal's LOY-002, the first drug pursuing a dog lifespan extension
+    claim.
+  url: https://loyal.com/posts/loy-002-tas-announcement
+- date: 2026-08
+  text: XPRIZE Healthspan named 20 finalists who will run trials through 2029 aiming to restore 10+ years
+    of function.
+  url: https://trial.medpath.com/news/xprize-names-20-finalist-teams-in-101m-healthspan-competition-to-reverse-biological-aging
+- date: 2025-04
+  text: 'PEARL rapamycin trial results: safe at low doses but no effect on its primary endpoint or epigenetic
+    age.'
+  url: https://lifespan.io/results-of-a-crowdfunded-one-year-human-rapamycin-trial/
+next_milestone:
+  date: '2027'
+  url: https://loyal.com/posts/loy-002-tas-announcement
+  what: Loyal plans to complete its final FDA technical section and apply for expanded conditional approval
+    of LOY-002 for senior dogs.
+ai:
+  impact: some
+  note: Reprogramming startups such as NewLimit use large-scale screens and machine learning to pick transcription
+    factor sets, but no AI-designed aging drug has shown human benefit.
+markets:
+- url: https://www.metaculus.com/questions/6592/date-life-expectancy-hits-escape-velocity
+  what: When will a country reach longevity escape velocity (life expectancy rising at least 1 year per
+    year)? Community median about May 2054.
+  who: Metaculus
+- url: https://www.metaculus.com/questions/6592/date-life-expectancy-hits-escape-velocity
+  what: When will biological lifespans increase faster than 0.75 years per year? Community median about
+    June 2062.
+  who: Metaculus

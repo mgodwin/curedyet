@@ -1,0 +1,184 @@
+# Dated events that could move forecasts.
+- date: 2026-11
+  disease: depression
+  event: 'Major depression: Compass completes the final COMP360 psilocybin NDA submission for treatment-resistant
+    depression'
+  url: https://www.sec.gov/Archives/edgar/data/0001816590/000181659026000078/q32026pressrelease.htm
+- date: 2026-11
+  disease: epilepsy
+  event: 'Epilepsy: FDA decision on whether to accept the azetukalner NDA for review (about 60 days after
+    the Sept 2026 submission)'
+  url: https://www.neurologylive.com/view/xenon-submits-new-drug-application-azetukalner-treatment-focal-seizures
+- date: 2026-11
+  disease: hemophilia
+  event: 'Hemophilia: European Commission decision on denecimig (Frehemgo) after the Sept 2026 positive
+    CHMP opinion'
+  url: https://en.wikipedia.org/wiki/Denecimig
+- date: 2026-11
+  disease: tuberculosis
+  event: 'Tuberculosis: WHO Global Tuberculosis Report 2026 with 2025 burden data (expected, based on
+    the Nov 2025 release)'
+  url: https://www.who.int/teams/global-tuberculosis-programme/tb-reports/global-tuberculosis-report-2025
+- date: '2026-11-11'
+  disease: melanoma
+  event: 'Melanoma: Full INTerpath-001 results for intismeran plus pembrolizumab slated for publication
+    in NEJM.'
+  url: https://www.onclive.com/view/adjuvant-intismeran-autogene-plus-pembrolizumab-improves-rfs-and-dmfs-in-melanoma
+- date: '2026-11-12'
+  disease: glioblastoma
+  event: 'Glioblastoma: Society for Neuro-Oncology 2026 Annual Meeting in Philadelphia (Nov 12-15), main
+    venue for new CAR-T and trial data.'
+  url: https://www.soc-neuro-onc.org/meetings-education/31st-society-for-neuro-oncology-annual-meeting-education-day
+- date: '2026-11-14'
+  disease: lung-cancer
+  event: 'Lung cancer: FDA decision on ivonescimab plus chemotherapy in EGFR-mutated NSCLC after TKI.'
+  url: https://www.clinicaltrialsarena.com/news/summit-debuts-longer-term-ivonescimab-data-as-it-awaits-fda-nsclc-decision/
+- date: '2026-11-16'
+  disease: alzheimers
+  event: 'Alzheimer''s disease: AR1001 Phase 3 POLARIS-AD results presented at CTAD 2026 in Boston.'
+  url: https://www.alzint.org/news-events/events/clinical-trials-on-alzheimers-disease-ctad-2026/
+- date: '2026-11-30'
+  disease: breast-cancer
+  event: 'Breast cancer: FDA decision on giredestrant as adjuvant therapy for early ER-positive breast
+    cancer (lidERA).'
+  url: https://www.curetoday.com/view/breast-cancer-treatments-awaiting-fda-decisions-4-to-watch
+- date: 2026-12
+  disease: hepatitis-b
+  event: 'Hepatitis B: Japan regulatory decision on bepirovirsen (GSK guided H2 2026)'
+  url: https://www.sec.gov/Archives/edgar/data/0001131399/000119312526384439/d331501d6k.htm
+- date: 2026-12
+  disease: ibd
+  event: 'Crohn''s & ulcerative colitis: Abivax plans to submit obefazimod NDA for ulcerative colitis
+    by end of 2026'
+  url: https://www.pharmanow.live/latest-news/abivax-fda-nda-strategy-obefazimod
+- date: 2026-12
+  disease: lupus
+  event: 'Lupus: FDA decision on obinutuzumab (Gazyva) for systemic lupus erythematosus'
+  url: https://www.pharmanow.live/de/latest-news/fda-accepts-roche-sbla-obinutuzumab-sle-december-2026
+- date: 2026-12
+  disease: macular-degeneration
+  event: 'Macular degeneration: Topline data from REGENXBIO/AbbVie ATMOSPHERE and ASCENT Phase 3 trials
+    of sura-vec gene therapy in wet AMD (Q4 2026)'
+  url: https://eyewire.news/news/regenxbio-completes-enrollment-in-atmosphere-and-ascent-trials-of-sura-vec-gene-therapy-for-wet-amd
+- date: 2026-12
+  disease: malaria
+  event: 'Malaria: WHO World Malaria Report 2026 with 2025 data (expected, based on the Dec 2025 release)'
+  url: https://www.who.int/teams/global-malaria-programme/reports/world-malaria-report-2025
+- date: 2026-12
+  disease: marburg
+  event: 'Marburg virus disease: Sabin expects initial immunogenicity findings from its African Phase
+    2 cAd3-Marburg trials during 2026'
+  url: https://www.sabin.org/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine/
+- date: 2026-12
+  disease: obesity
+  event: 'Obesity: FDA decision on Novo Nordisk''s CagriSema for obesity (Q4 2026 window)'
+  url: https://therxindex.com/guides/cagrisema-fda-approval-status/
+- date: 2026-12
+  disease: osteoarthritis
+  event: 'Osteoarthritis: Pacira expects Part A data from the Phase 2 ASCEND trial of PCRX-201 knee gene
+    therapy near end of 2026.'
+  url: https://www.itiger.com/news/2581234727
+- date: 2026-12
+  disease: prostate-cancer
+  event: 'Prostate cancer: FDA action on talazoparib plus enzalutamide for HRR-mutated metastatic castration-sensitive
+    prostate cancer (Q4 2026 action date).'
+  url: https://www.rttnews.com/3669562/pfizer-secures-fda-priority-review-for-talzenna-plus-xtandi-in-metastatic-prostate-cancer.aspx
+- date: 2026-12
+  disease: schizophrenia
+  event: 'Schizophrenia: FDA decision on TEV-749 once-monthly olanzapine LAI (PDUFA in Q4 2026)'
+  url: https://www.rttnews.com/3692387/teva-presents-positive-post-hoc-data-for-tev-749-for-schizophrenia-fda-decision-in-q4-26.aspx
+- date: 2026-12
+  disease: stroke
+  event: 'Stroke: FDA decision on asundexian for secondary stroke prevention (priority review accepted
+    May 2026; exact action date not disclosed, timing is an estimate)'
+  url: https://www.businesswire.com/news/home/20260518787299/en/bayer-granted-priority-review-by-u.s.-fda-for-asundexian-in-patients-after-a-non-cardioembolic-ischemic-stroke-or-transient-ischemic-attack/
+- date: 2026-12
+  disease: type-1-diabetes
+  event: 'Type 1 diabetes: Sana targets IND filing and Phase 1/2 start for SC451 hypoimmune islets (as
+    early as 2026)'
+  url: https://ir.sana.com/news-releases/news-release-details/sana-biotechnology-reports-second-quarter-2026-financial-results
+- date: '2026-12-12'
+  disease: leukemia
+  event: 'Leukemias: ASH 2026 Annual Meeting (Dec 12-15, New Orleans) with major AML, ALL and CLL trial
+    data.'
+  url: https://www.hematology.org/meetings/annual-meeting
+- date: '2026-12-12'
+  disease: lymphoma
+  event: 'Lymphomas: ASH 2026 Annual Meeting with first-line bispecific and CAR-T lymphoma data.'
+  url: https://www.hematology.org/meetings/annual-meeting
+- date: '2026-12-31'
+  disease: h5n1
+  event: 'H5N1 bird flu: Polymarket ''New Pandemic in 2026'' resolves; H5N1 is the main candidate (trading
+    near 2%).'
+  url: https://www.lines.com/prediction-markets/science/new-pandemic-in-2026
+- date: '2027'
+  disease: aging
+  event: 'Aging: Loyal plans to complete its final FDA technical section and apply for expanded conditional
+    approval of LOY-002 for senior dogs.'
+  url: https://loyal.com/posts/loy-002-tas-announcement
+- date: 2027-01
+  disease: ebola
+  event: 'Ebola: PARTNERS trial (MBP134, remdesivir) reaches its planned six-month mark; first efficacy
+    data on Bundibugyo treatments possible'
+  url: https://www.itg.be/en/health-stories/press-releases/partners-trial
+- date: '2027-01-21'
+  disease: duchenne
+  event: 'Duchenne muscular dystrophy: FDA PDUFA date for Dyne''s z-rostudirsen in exon 51 DMD'
+  url: https://www.taiwannews.com.tw/en/news/6404439
+- date: 2027-02
+  disease: prion-disease
+  event: 'Prion disease (CJD): Expected last patient visit in Ionis ION717 PrProfile trial; top-line data
+    possibly later in 2027.'
+  url: https://www.cureffi.org/2026/03/17/ion717-trial-reopens/
+- date: '2027-02-01'
+  disease: sickle-cell
+  event: 'Sickle cell disease: FDA PDUFA date for mitapivat in sickle cell disease'
+  url: https://www.stocktitan.net/news/AGIO/agios-announces-new-pdufa-goal-date-of-february-1-2027-for-mitapivat-b8gxlfed3y4l.html
+- date: '2027-02-02'
+  disease: hiv
+  event: 'HIV/AIDS: FDA decision on once-weekly oral lenacapavir for PrEP'
+  url: https://patientworthy.com/2026/06/18/fda-reviews-gileads-once-weekly-oral-lenacapavir-for-hiv-prevention/
+- date: 2027-03
+  disease: coronary-artery-disease
+  event: 'Coronary artery disease: Interim analysis results of obicetrapib PREVAIL cardiovascular outcomes
+    trial (interim 4Q 2026, results expected 1Q 2027)'
+  url: https://ir.newamsterdampharma.com/news-releases/news-release-details/newamsterdam-pharma-provides-corporate-update-and-reports-6
+- date: 2027-03
+  disease: hair-loss
+  event: 'Hair loss (pattern baldness): Cosmo plans to file a US NDA for clascoterone 5% solution for
+    male androgenetic alopecia in early 2027.'
+  url: https://www.newsfilecorp.com/release/292660/
+- date: 2027-03
+  disease: type-2-diabetes
+  event: 'Type 2 diabetes: Lilly plans to file retatrutide with the FDA in early 2027'
+  url: https://www.epocrates.com/online/article/retatrutide-heads-toward-fda-filing-after-positive-phase-3-obesity-trial-results
+- date: '2027-03-03'
+  disease: colorectal-cancer
+  event: 'Colorectal cancer: FDA decision on zanzalintinib plus atezolizumab for previously treated metastatic
+    colorectal cancer.'
+  url: https://www.onclive.com/view/fda-extends-review-period-for-zanzalintinib-plus-atezolizumab-nda-in-pretreated-mcrc
+- date: 2027-04
+  disease: liver-cancer
+  event: 'Liver cancer: Expected FDA decision on the resubmitted rivoceranib plus camrelizumab NDA (estimate
+    based on a typical 6-month resubmission review; no date published).'
+  url: https://www.onclive.com/view/elevar-resubmits-nda-for-rivoceranib-plus-camrelizumab-frontline-unresectable-metastatic-hcc
+- date: 2027-04
+  disease: multiple-sclerosis
+  event: 'Multiple sclerosis: Expected FDA decision on fenebrutinib for relapsing and primary progressive
+    MS (estimate from priority review timing; no date published).'
+  url: https://www.gene.com/media/press-releases/15130/2026-09-29/genentechs-fenebrutinib-is-the-first-btk
+- date: 2027-04
+  disease: nipah
+  event: 'Nipah virus: Bangladesh Nipah season (Dec-Apr) tests outbreak deployment of investigational
+    vaccine and antibody protocols; no dated trial readout announced.'
+  url: https://www.gavi.org/vaccineswork/closing-protection-against-deadly-nipah-virus
+- date: '2027-05-01'
+  disease: huntingtons
+  event: 'Huntington''s disease: FDA target decision date for AMT-130 (ifezuntirgene inilparvovec) accelerated
+    approval.'
+  url: https://en.hdbuzz.net/669-fda-sets-may-2027-decision-date-on-amt-130-gene-therapy-for-hd/
+- date: 2027-06
+  disease: parkinsons
+  event: 'Parkinson''s disease: Denali BEACON phase 2a data for BIIB122 in LRRK2-mutation Parkinson''s
+    (expected first half of 2027).'
+  url: https://www.neurologylive.com/view/lrrk2-inhibitor-biib122-fails-slow-early-stage-parkinson-disease

@@ -1,0 +1,88 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: alzheimers
+name: Alzheimer's disease
+category: neuro
+tracking: active
+summary: The most common cause of dementia, in which amyloid plaques and tau tangles destroy memory and
+  thinking.
+toll:
+  text: About 7.4 million Americans aged 65+ living with Alzheimer's in 2026 (Alzheimer's Association).
+  url: https://www.alz.org/facts-and-figures
+status:
+  level: 1
+  why: Anti-amyloid antibodies slow decline by roughly a quarter to a third in early disease, but the
+    disease still progresses.
+  today: Lecanemab (Leqembi) and donanemab (Kisunla) clear amyloid and modestly slow decline in early-stage
+    patients, with brain swelling and bleeding (ARIA) risks and MRI monitoring. Subcutaneous lecanemab
+    is now approved for starting and maintaining treatment at home. Moderate and late-stage patients have
+    only symptomatic drugs, and many 2026 trials (semaglutide, AL002, XPro1595) failed.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Lecanemab (Leqembi, IV or Iqlik subcutaneous)
+  - Donanemab (Kisunla)
+  - Cholinesterase inhibitors
+  - Memantine
+  burden: heavy
+  burden_note: Anti-amyloid antibodies need IV infusions or injections for 18 months or more, carry ARIA
+    brain swelling and bleeding risk requiring repeated MRIs, and are costly with limited access.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 3
+    p2045: 14
+    median: 2058
+    low: 2040
+    high: 2100
+  faster:
+    p2035: 8
+    p2045: 38
+    median: 2045
+    low: 2036
+    high: 2075
+  faster_note: Biomarker-based approval and faster prevention trials would matter most because candidates
+    like trontinemab already exist; the lift is big by 2045 but small by 2035 since proof of stopping
+    dementia takes years.
+  outlook: Treatment is shifting toward blood-test diagnosis and treating people before symptoms, which
+    is the most realistic path to large benefit. Prevention trials like TRAILBLAZER-ALZ 3 and AHEAD will
+    show whether early amyloid removal can stop dementia. Even good results would likely mean delay rather
+    than cure, so level 4 by 2035 is unlikely.
+pipeline:
+- name: Lecanemab subcutaneous initiation (Leqembi Iqlik)
+  note: FDA approved subcutaneous starting dose in July 2026, enabling fully at-home treatment.
+  stage: Approved 2025-26
+  url: https://www.healio.com/news/neurology/20260717/subcutaneous-leqembi-approved-for-initiation-longterm-stability-with-treatment-indicated
+- name: Trontinemab (Roche, brain shuttle anti-amyloid)
+  note: Cleared amyloid below threshold in 91% at 28 weeks with low ARIA; TRONTIER 1 and 2 enrolling about
+    1,600.
+  stage: Phase 3
+  url: https://www.neurologylive.com/view/examining-trontinemab-early-ad-phase-3-trontier-1-2-trials
+- name: Donanemab in preclinical AD (TRAILBLAZER-ALZ 3)
+  note: Prevention trial in people with amyloid but no symptoms; readout expected 2026 or 2027.
+  stage: Phase 3
+  url: https://clinicaltrials.gov/study/NCT05026866
+- name: AR1001 (AriBio, PDE5 inhibitor)
+  note: 1,535-person POLARIS-AD results due at CTAD on Nov 16, 2026.
+  stage: Phase 3
+  url: https://clinicaltrials.gov/study/NCT05531526
+- name: Remternetug (Lilly)
+  note: Next-generation amyloid antibody in TRAILRUNNER-ALZ trials.
+  stage: Phase 3
+  url: https://clinicaltrials.gov/study/NCT05463731
+recent:
+- date: 2026-07
+  text: FDA approved subcutaneous lecanemab for starting treatment, removing the need for IV infusions.
+  url: https://www.healio.com/news/neurology/20260717/subcutaneous-leqembi-approved-for-initiation-longterm-stability-with-treatment-indicated
+- date: 2026-07
+  text: Roche showed one-year trontinemab extension data with continued amyloid clearance and launched
+    the PREVENTRON prevention trial.
+  url: https://www.neurologylive.com/view/roche-unveils-preventron-phase-3-prevention-trial-trontinemab-cognitively-unimpaired-individuals-high-risk-alzheimers
+next_milestone:
+  date: '2026-11-16'
+  url: https://www.alzint.org/news-events/events/clinical-trials-on-alzheimers-disease-ctad-2026/
+  what: AR1001 Phase 3 POLARIS-AD results presented at CTAD 2026 in Boston.
+ai:
+  impact: some
+  note: AI is used to read amyloid PET and MRI scans and to flag ARIA, and to screen targets, but no AI-discovered
+    Alzheimer's drug has reached phase 3.
+markets: []

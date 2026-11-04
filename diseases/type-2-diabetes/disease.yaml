@@ -1,0 +1,87 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: type-2-diabetes
+name: Type 2 diabetes
+category: metabolic
+tracking: active
+summary: A chronic disease in which the body resists insulin and cannot make enough of it, raising blood
+  sugar.
+toll:
+  text: About 589M adults with diabetes (over 90% type 2) and 3.4M+ deaths/yr worldwide (IDF 2025).
+  url: https://idf.org/news-and-resources/news/idf-diabetes-atlas-11th-edition/
+status:
+  level: 2
+  why: Modern drugs keep most patients controlled long term, and remission happens for some after major
+    weight loss, but it usually returns without ongoing treatment.
+  today: Metformin, GLP-1 and GIP/GLP-1 drugs, and SGLT2 inhibitors control blood sugar and cut heart
+    and kidney risk. Large weight loss from bariatric surgery, intensive diet programs or tirzepatide
+    can put the disease into remission for a subset, but relapse is common. Control in practice is uneven,
+    and many patients worldwide are undiagnosed.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Tirzepatide
+  - Semaglutide
+  - SGLT2 inhibitors
+  - Metformin
+  - Bariatric surgery
+  burden: moderate
+  burden_note: Lifelong daily pills or weekly injections; GLP-1 drugs bring nausea and GI effects and
+    high cost, SGLT2 inhibitors genital infections, while metformin is cheap and mild.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 5
+    p2045: 20
+    median: 2052
+    low: 2038
+    high: 2095
+  faster:
+    p2035: 9
+    p2045: 38
+    median: 2043
+    low: 2034
+    high: 2075
+  faster_note: Acceleration mainly helps by finding and proving durable fixes (beta-cell restoration,
+    set-point resetting, one-time procedures like Revita); the lift is moderate because today's drugs
+    work only while taken and durability needs multi-year follow-up.
+  outlook: Drugs keep getting stronger and remission is becoming more common, but they work only while
+    taken. A cure for most would need durable remission without lifelong drugs, such as one-time procedures
+    or beta-cell restoration, which remain early. Most patients will likely be well controlled rather
+    than cured for decades.
+pipeline:
+- name: Orforglipron (oral GLP-1)
+  note: Approved for T2D in the UK in Aug 2026; a separate US diabetes filing was planned for 2026.
+  stage: Filed
+  url: https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes
+- name: Retatrutide (GIP/GLP-1/glucagon)
+  note: Up to 20.8% weight loss and 1.6-point A1c drop in people with T2D in TRIUMPH-2; US filing planned
+    early 2027.
+  stage: Phase 3
+  url: https://www.epocrates.com/online/article/retatrutide-heads-toward-fda-filing-after-positive-phase-3-obesity-trial-results
+- name: CagriSema (cagrilintide + semaglutide)
+  note: FDA decision expected Q4 2026 for obesity; studied in T2D too.
+  stage: Filed
+  url: https://therxindex.com/guides/cagrisema-fda-approval-status/
+- name: Duodenal mucosal resurfacing (Fractyl Revita)
+  note: Endoscopic procedure aiming for durable metabolic effect after stopping GLP-1 drugs.
+  stage: Phase 3
+  url: https://www.sciencedaily.com/releases/2026/04/260423022002.htm
+recent:
+- date: 2026-07
+  text: Retatrutide hit its Phase 3 goals in obesity with T2D, with up to 20.8% weight loss at 80 weeks.
+  url: https://www.epocrates.com/online/article/retatrutide-heads-toward-fda-filing-after-positive-phase-3-obesity-trial-results
+- date: 2026-08
+  text: The UK became the first in Europe to authorise oral orforglipron for both T2D and weight management.
+  url: https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes
+next_milestone:
+  date: 2027-03
+  url: https://www.epocrates.com/online/article/retatrutide-heads-toward-fda-filing-after-positive-phase-3-obesity-trial-results
+  what: Lilly plans to file retatrutide with the FDA in early 2027
+ai:
+  impact: some
+  note: AI is used in diabetes screening (for example retinal image analysis) and dosing tools, while
+    the leading new drugs come from conventional peptide chemistry.
+markets:
+- url: https://manifold.markets/event/will-there-be-an-fda-approved-cure-af66277b1144
+  what: Will there be an FDA approved cure for Type 2 Diabetes by EOY 2032? About 12% (play money)
+  who: Manifold

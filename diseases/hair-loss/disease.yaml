@@ -1,0 +1,92 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: hair-loss
+name: Hair loss (pattern baldness)
+category: aging
+tracking: active
+summary: 'Androgenetic alopecia: inherited, hormone-driven shrinking of scalp hair follicles that causes
+  male and female pattern hair loss.'
+toll:
+  text: Affects an estimated 80M Americans (about 50M men and 30M women), per the American Academy of
+    Dermatology.
+  url: https://www.aad.org/media/stats-numbers
+status:
+  level: 2
+  why: Finasteride plus minoxidil stops loss in most men and regrows some hair, and transplants restore
+    it for good candidates, but full regrowth is not routine and stopping drugs means loss resumes.
+  today: Daily finasteride or dutasteride with topical or low-dose oral minoxidil halts progression in
+    most men and gives modest regrowth, but benefits fade when treatment stops. Hair transplants give
+    durable results for people with enough donor hair, at high out-of-pocket cost. Women have fewer options
+    (minoxidil, spironolactone off-label); JAK inhibitors are approved for alopecia areata, a different
+    autoimmune disease.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Finasteride / dutasteride
+  - Topical or low-dose oral minoxidil
+  - Hair transplant (FUE/FUT)
+  - Spironolactone (women, off-label)
+  burden: moderate
+  burden_note: Lifelong daily pills or topicals; finasteride carries uncommon sexual side effects and
+    a contested persistent-symptom debate, oral minoxidil can cause body hair and swelling, and transplants
+    cost thousands.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 10
+    p2045: 38
+    median: 2048
+    low: 2033
+    high: 2080
+  faster:
+    p2035: 18
+    p2045: 58
+    median: 2042
+    low: 2031
+    high: 2065
+  faster_note: Follicle regeneration drugs like PP405 are already in the clinic and cosmetic trials are
+    short, so better design and faster trials could lift odds noticeably even by 2035.
+  outlook: Near-term pipeline drugs are mostly topical anti-androgens that hold or modestly add hair with
+    fewer systemic side effects, which improves control rather than restoration. Real restoration for
+    most people needs follicle regeneration, where PP405 is the most advanced but early. Expect better
+    maintenance options by 2028-2030 and a reasonable chance of true regrowth drugs by the 2040s.
+pipeline:
+- name: Clascoterone 5% solution (Cosmo, Breezula)
+  note: Two Phase 3 trials in 1,465 men met goals with vehicle-like safety; US NDA filing planned early
+    2027.
+  stage: Phase 3
+  url: https://www.newsfilecorp.com/release/292660/
+- name: Pyrilutamide (KX-826, Kintor) topical AR antagonist
+  note: China pivotal Phase 3 met its primary endpoint in March 2026; NMPA filing planned.
+  stage: Phase 3
+  url: https://www.bioworld.com/keywords/51634-kx-826
+- name: PP405 (Pelage) follicle stem cell activator
+  note: Topical; Phase 2a showed new terminal hairs from dormant follicles after 4 weeks; late-stage AWAKEN
+    study reported started in 2026.
+  stage: Phase 2
+  url: https://www.businesswire.com/news/home/20260317204870/en
+- name: GT20029 (Kintor) topical AR degrader (PROTAC)
+  note: China Phase 2 met its primary endpoint in 2024; later-stage plans unclear.
+  stage: Phase 2
+  url: https://www.biospace.com/gt20029-china-phase-ii-trial-for-aga-reached-primary-endpoint
+recent:
+- date: 2026-04
+  text: Cosmo reported 12-month Phase 3 data showing clascoterone 5% kept gains while switching to vehicle
+    lost them.
+  url: https://www.newsfilecorp.com/release/292660/
+- date: 2026-03
+  text: Kintor's pyrilutamide met its primary endpoint in a pivotal China Phase 3 in men.
+  url: https://www.bioworld.com/keywords/51634-kx-826
+- date: 2026-03
+  text: Pelage presented PP405 Phase 2a data at AAD 2026 showing regrowth from inactive follicles and
+    planned late-stage trials.
+  url: https://www.businesswire.com/news/home/20260317204870/en
+next_milestone:
+  date: 2027-03
+  url: https://www.newsfilecorp.com/release/292660/
+  what: Cosmo plans to file a US NDA for clascoterone 5% solution for male androgenetic alopecia in early
+    2027.
+ai:
+  impact: low
+  note: No leading hair loss candidate is AI-discovered; AI is mostly used for scalp imaging and hair
+    counting.
+markets: []

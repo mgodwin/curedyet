@@ -1,0 +1,23 @@
+# Disease categories, in display order. Add one here before using it in a disease.yaml.
+- id: cancer
+  name: Cancers
+- id: neuro
+  name: Brain & nerves
+- id: mental
+  name: Mental health
+- id: infectious
+  name: Infections
+- id: metabolic
+  name: Metabolic
+- id: genetic
+  name: Genetic
+- id: cardio
+  name: Heart & stroke
+- id: immune
+  name: Autoimmune
+- id: other
+  name: Eyes, kidneys & lungs
+- id: outbreaks
+  name: Deadly outbreaks & rare killers
+- id: aging
+  name: Aging & everyday conditions

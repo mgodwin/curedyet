@@ -1,0 +1,89 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: h5n1
+name: H5N1 bird flu
+category: outbreaks
+tracking: active
+summary: Highly pathogenic avian influenza that occasionally jumps from birds and dairy cattle to people,
+  with pandemic potential if it learns to spread between humans.
+toll:
+  text: 'WHO: 1,003 human cases and 479 deaths worldwide 2003 to 6 Sep 2026; 30 cases/12 deaths in 2025
+    and about 10 cases so far in 2026 (mostly Cambodia, Bangladesh, India); US: 72 cases since 2024 (CDC,
+    Oct 2026).'
+  url: https://cdn.who.int/media/docs/default-source/wpro---documents/emergency/surveillance/avian-influenza/ai_20261002.pdf
+status:
+  level: 1
+  why: Oseltamivir and other flu antivirals help if given early, and most recent US cases were mild, but
+    severe cases still die about half the time globally; licensed H5 vaccines exist for preparedness but
+    are not in routine use.
+  today: 'Patients get neuraminidase inhibitors such as oseltamivir (CDC has an emergency use protocol)
+    plus supportive or ICU care; baloxavir is an option. Outcomes split sharply: most of the 72 US cases
+    (clade 2.3.4.4b, farm workers) had conjunctivitis or mild illness, while cases in Cambodia and elsewhere
+    often progress to fatal pneumonia. Licensed pandemic H5 vaccines (Audenz in the US, Incellipan and
+    others in the EU) sit in stockpiles, and no sustained human-to-human spread has been seen.'
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Oseltamivir (early)
+  - Baloxavir marboxil
+  - Supportive / ICU care
+  - Licensed H5 pandemic vaccines (Audenz, Incellipan) for prevention
+  burden: light
+  burden_note: Five-day oseltamivir course with mild nausea for most US cases; severe pneumonia cases
+    elsewhere need ICU care and ventilation and often die.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 15
+    p2045: 42
+    median: 2047
+    low: 2032
+    high: 2080
+  faster:
+    p2035: 26
+    p2045: 60
+    median: 2040
+    low: 2030
+    high: 2068
+  faster_note: Severe H5N1 pneumonia needs better antivirals or antibody combos, which AI design could
+    deliver fast; the lift is moderate because proving them needs enough severe cases, and a pandemic
+    would change both pace and need.
+  outlook: 'Prevention is the stronger lever: licensed H5 vaccines exist and mRNA versions could be made
+    fast if a pandemic starts. Treatment of severe H5N1 pneumonia is still poor, and better antivirals
+    or antibody combinations would be needed to cure most patients. Odds depend heavily on whether a pandemic
+    forces large investment and trials.'
+pipeline:
+- name: mRNA-1018 H5 pandemic vaccine (Moderna, CEPI-funded)
+  note: About 4,000-adult Phase 3 began April 2026 in the US and UK after HHS dropped its funding.
+  stage: Phase 3
+  url: https://www.emjreviews.com/emj-gold/news/moderna-initiates-phase-3-bird-flu-vaccine-trial/
+- name: ARCT-2304 self-amplifying mRNA H5N1 vaccine (Arcturus)
+  note: BARDA-funded placebo-controlled Phase 1 began January 2025.
+  stage: Phase 1
+  url: https://www.clinicaltrialsarena.com/analyst-comment/avian-influenza-mrna-vaccines/
+recent:
+- date: 2026-04
+  text: Moderna dosed the first participants in a Phase 3 trial of its mRNA H5 pandemic vaccine, funded
+    by CEPI.
+  url: https://www.emjreviews.com/emj-gold/news/moderna-initiates-phase-3-bird-flu-vaccine-trial/
+- date: 2026-06
+  text: CDC counted 12 human H5N1 cases outside the US from Aug 2025 to Jun 2026 (3 deaths), all linked
+    to poultry, with no person-to-person spread.
+  url: https://cdc.gov/bird-flu/spotlights/global-summary-06262026.html
+next_milestone:
+  date: '2026-12-31'
+  url: https://www.lines.com/prediction-markets/science/new-pandemic-in-2026
+  what: Polymarket 'New Pandemic in 2026' resolves; H5N1 is the main candidate (trading near 2%).
+ai:
+  impact: some
+  note: AI models that predict mammalian-adaptation mutations and antigen drift help guide surveillance
+    and vaccine strain choice, but no AI-designed H5 drug is in late trials.
+markets:
+- url: https://www.lines.com/prediction-markets/science/new-pandemic-in-2026
+  what: 'New Pandemic in 2026 (WHO declaration by 2026-12-31): about 2% yes'
+  who: Polymarket
+- url: https://www.lines.com/prediction-markets/science/new-pandemic-in-2026
+  what: 'New pandemic before 2028: about 13% yes'
+  who: Polymarket
+- url: https://metaculus.com/questions/?topic=h5n1
+  what: H5N1 question series on human-to-human transmission (values not checked)
+  who: Metaculus

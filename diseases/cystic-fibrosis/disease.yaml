@@ -1,0 +1,79 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: cystic-fibrosis
+name: Cystic fibrosis
+category: genetic
+tracking: active
+summary: An inherited disease where a faulty CFTR protein makes thick mucus that damages the lungs, pancreas
+  and other organs.
+toll:
+  text: About 40,000 people in the US and ~100,000+ worldwide (estimate); median predicted survival 65+
+    for US births 2020-2024.
+  url: https://www.cff.org/medical-professionals/2024-patient-registry-highlights
+status:
+  level: 2
+  why: CFTR modulators give most eligible patients near-normal lung function and lifespan, but treatment
+    is lifelong and does not fix the gene.
+  today: Triple CFTR modulators (Trikafta, Alyftrek) transform the disease for the roughly 90% of patients
+    with eligible mutations, especially if started young. About 7% are ineligible by age or genotype and
+    still face progressive lung disease. No gene therapy or mRNA therapy is approved.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Alyftrek (vanzacaftor triple)
+  - Trikafta (elexacaftor/tezacaftor/ivacaftor)
+  - Airway clearance and inhaled therapies
+  - Lung transplant
+  burden: moderate
+  burden_note: Daily CFTR modulator pills for life with liver enzyme monitoring and occasional rash or
+    mood effects, plus airway clearance; list price is several hundred thousand dollars a year.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 4
+    p2045: 20
+    median: 2052
+    low: 2038
+    high: 2090
+  faster:
+    p2035: 8
+    p2045: 38
+    median: 2043
+    low: 2034
+    high: 2070
+  faster_note: Better-designed lung delivery vehicles and editors for airway stem cells are the key need;
+    the lift is moderate because modulators already control most patients, so a cure must prove lasting
+    correction in long trials.
+  outlook: Modulators make CF a controlled disease for most, but a cure needs lasting gene correction
+    in lung stem cells, which no approach has shown. The mRNA setback shows lung delivery is hard. A cure
+    for most likely needs in vivo gene editing of airway cells, which is decades out.
+pipeline:
+- name: Alyftrek ages 2-5
+  note: Vertex began global submissions for young children in 2026.
+  stage: Filed
+  url: https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results
+- name: VX-828 triple (next-gen corrector)
+  note: Lowered sweat chloride beyond Trikafta in F/MF patients.
+  stage: Phase 1
+  url: https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results
+- name: 4D-710 (inhaled AAV CFTR gene therapy)
+  note: For patients who cannot use modulators; pivotal dose selected, CF Foundation backing.
+  stage: Phase 2
+  url: https://4dmt.gcs-web.com/news-releases/news-release-details/4dmt-advances-4d-710-phase-2-additional-funding-and-support
+- name: SP-101 (Spirovant inhaled gene therapy)
+  note: Aerosol gene therapy for modulator-ineligible patients.
+  stage: Phase 1
+  url: https://clinicaltrials.gov/study/NCT06526923
+recent:
+- date: 2026-05
+  text: Vertex stopped its inhaled CFTR mRNA therapy VX-522 due to lung inflammation from the delivery
+    system.
+  url: https://www.packgene.com/frontier/050426-vertex/
+- date: 2026-11
+  text: Vertex reported early VX-828 triple data with further sweat chloride drops versus Trikafta.
+  url: https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results
+next_milestone: null
+ai:
+  impact: low
+  note: Progress comes from medicinal chemistry and gene delivery; no AI-discovered CF drug is known to
+    be in late trials.
+markets: []

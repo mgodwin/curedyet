@@ -1,0 +1,77 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: macular-degeneration
+name: Macular degeneration
+category: other
+tracking: active
+summary: Age-related damage to the central retina that blurs and destroys central vision.
+toll:
+  text: AMD causes vision impairment or blindness in about 8M people worldwide (WHO).
+  url: https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment
+status:
+  level: 1
+  why: Wet AMD is well controlled by repeated eye injections, but the more common dry form only has drugs
+    that modestly slow geographic atrophy.
+  today: Anti-VEGF injections (aflibercept, ranibizumab, faricimab) preserve vision for most wet AMD patients
+    but need injections every 1-4 months for life. For geographic atrophy, pegcetacoplan and avacincaptad
+    slow lesion growth about 20% without clear vision benefit. Nothing restores lost vision.
+  last_reviewed: null
+treatment:
+  best:
+  - Aflibercept (incl. high dose)
+  - Faricimab
+  - Ranibizumab
+  - Pegcetacoplan (GA)
+  - Avacincaptad pegol (GA)
+  burden: moderate
+  burden_note: Anti-VEGF injections into the eye every 1-4 months for life, with rare infection or inflammation
+    risk, frequent clinic visits and meaningful drug costs.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 4
+    p2045: 14
+    median: 2056
+    low: 2040
+    high: 2095
+  faster:
+    p2035: 8
+    p2045: 30
+    median: 2046
+    low: 2036
+    high: 2080
+  faster_note: Wet AMD gene therapies are near approval, but dry AMD is most cases and needs better biology
+    or cell replacement; acceleration helps there, but slow vision-endpoint trials limit the lift by 2035.
+  outlook: One-time gene therapies may make wet AMD a single-procedure condition by about 2028-2030, but
+    dry AMD is most cases and lacks a strong treatment. Cure for most would need stopping or reversing
+    geographic atrophy, possibly with cell therapy. That remains far off.
+pipeline:
+- name: Sura-vec / ABBV-RGX-314 (REGENXBIO/AbbVie), one-time gene therapy
+  note: ATMOSPHERE and ASCENT enrolled over 1,200 wet AMD patients; topline expected Q4 2026.
+  stage: Phase 3
+  url: https://eyewire.news/news/regenxbio-completes-enrollment-in-atmosphere-and-ascent-trials-of-sura-vec-gene-therapy-for-wet-amd
+- name: 4D-150 (4DMT), intravitreal gene therapy
+  note: Phase 2b cut injections 78% over 2 years; 4FRONT-1 topline Q2 2027.
+  stage: Phase 3
+  url: https://finviz.com/news/382051/4dmt-reports-second-quarter-2026-financial-results-operational-highlights-and-expected-upcoming-milestones
+- name: Vonaprument (Annexon), anti-C1q for GA
+  note: ARCHER II tests prevention of 15-letter vision loss; topline expected 2H 2026.
+  stage: Phase 3
+  url: https://www.clinicaltrialvanguard.com/news/vonaprument-shows-promising-results-in-phase-3-trial-for-dry-amd/
+- name: Ixo-vec (Adverum) gene therapy
+  note: ARTEMIS readout expected Q1 2027.
+  stage: Phase 3
+  url: https://www.modernretina.com/view/pipeline-update-catch-up-on-recent-updates-in-the-retina-pipeline
+recent:
+- date: 2026-07
+  text: 4D-150 two-year Phase 2b data showed vision maintained with 78% fewer injections.
+  url: https://finviz.com/news/382051/4dmt-reports-second-quarter-2026-financial-results-operational-highlights-and-expected-upcoming-milestones
+next_milestone:
+  date: 2026-12
+  url: https://eyewire.news/news/regenxbio-completes-enrollment-in-atmosphere-and-ascent-trials-of-sura-vec-gene-therapy-for-wet-amd
+  what: Topline data from REGENXBIO/AbbVie ATMOSPHERE and ASCENT Phase 3 trials of sura-vec gene therapy
+    in wet AMD (Q4 2026)
+ai:
+  impact: some
+  note: AI reading of retinal OCT scans can detect and grade AMD and track geographic atrophy growth in
+    trials.
+markets: []

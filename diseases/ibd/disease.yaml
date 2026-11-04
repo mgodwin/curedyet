@@ -1,0 +1,75 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: ibd
+name: Crohn's & ulcerative colitis
+category: immune
+tracking: active
+summary: Inflammatory bowel diseases where the immune system inflames the gut, causing pain, diarrhea,
+  bleeding and complications.
+toll:
+  text: About 6.8M people had IBD worldwide in 2017 (GBD 2017).
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7026709/
+status:
+  level: 2
+  why: Biologics and small molecules keep many patients in long remission, but most need lifelong treatment
+    and Crohn's has no cure.
+  today: Anti-TNF, anti-integrin, IL-12/23 and IL-23 antibodies, and JAK or S1P drugs put many patients
+    in remission. Typical one-year remission rates on any single drug are still often under half. Removing
+    the colon cures ulcerative colitis but not Crohn's.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Anti-TNF (infliximab, adalimumab)
+  - IL-23 inhibitors (risankizumab, guselkumab)
+  - Vedolizumab
+  - JAK inhibitors (upadacitinib)
+  - Colectomy (UC)
+  burden: moderate
+  burden_note: Lifelong biologic infusions or injections or JAK pills raising infection risk, with regular
+    colonoscopy and blood monitoring and high drug costs; many still need steroids or surgery.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 3
+    p2045: 13
+    median: 2057
+    low: 2040
+    high: 2095
+  faster:
+    p2035: 6
+    p2045: 28
+    median: 2047
+    low: 2036
+    high: 2080
+  faster_note: A cure needs understanding of the microbiome-immune loop or a lasting immune reset, neither
+    with a clinical signal yet; acceleration helps biology first, so most of the lift comes after 2035.
+  outlook: New drug classes like TL1A antibodies and obefazimod will push remission rates higher and may
+    allow combination therapy. A cure needs a lasting immune reset or fixing the microbiome-immune link,
+    which has no strong clinical signal yet. Expect better control, not cure, through the 2030s.
+pipeline:
+- name: Obefazimod (Abivax), oral miR-124 enhancer
+  note: 'ABTECT maintenance: about 51% remission vs 10% placebo at week 44; NDA planned by end of 2026.'
+  stage: Phase 3
+  url: https://sofinnovapartners.com/news/abivax-announces-landmark-phase-3-abtect-maintenance-trial-results-evaluating-obefazimod-in-moderately-to-severely-active-ulcerative-colitis
+- name: Tulisokibart (Merck), anti-TL1A
+  note: First anti-TL1A to meet a Phase 3 UC endpoint (ATLAS-UC, June 2026).
+  stage: Phase 3
+  url: https://www.hcplive.com/view/tulisokibart-phase-3-endpoints-ulcerative-colitis-anti-tl1a
+- name: Duvakitug (Sanofi/Teva), anti-TL1A
+  note: Phase 2b maintenance showed durable remission in UC and Crohn's.
+  stage: Phase 3
+  url: https://www.patientcareonline.com/view/duvakitug-phase-2b-maintenance-data-show-durable-remission-in-uc-and-crohn-disease
+recent:
+- date: 2026-06
+  text: Obefazimod met all endpoints in the ABTECT maintenance trial in UC.
+  url: https://sofinnovapartners.com/news/abivax-announces-landmark-phase-3-abtect-maintenance-trial-results-evaluating-obefazimod-in-moderately-to-severely-active-ulcerative-colitis
+- date: 2026-06
+  text: Tulisokibart met primary and key secondary endpoints in the ATLAS-UC induction study.
+  url: https://www.hcplive.com/view/tulisokibart-phase-3-endpoints-ulcerative-colitis-anti-tl1a
+next_milestone:
+  date: 2026-12
+  url: https://www.pharmanow.live/latest-news/abivax-fda-nda-strategy-obefazimod
+  what: Abivax plans to submit obefazimod NDA for ulcerative colitis by end of 2026
+ai:
+  impact: some
+  note: AI scoring of endoscopy and histology is being used in trials to grade inflammation more consistently.
+markets: []

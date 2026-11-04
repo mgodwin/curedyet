@@ -1,0 +1,81 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: lymphoma
+name: Lymphomas
+category: cancer
+tracking: active
+summary: Cancers of lymphocytes, split into Hodgkin lymphoma and many non-Hodgkin types such as DLBCL
+  and follicular lymphoma.
+toll:
+  text: ~88,240 US cases (8,920 Hodgkin, 79,320 non-Hodgkin) and ~21,070 US deaths est. 2026.
+  url: https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2026/2026-cancer-facts-and-figures.pdf
+status:
+  level: 3
+  why: Hodgkin lymphoma and most DLBCL are cured with first-line therapy, but indolent lymphomas like
+    follicular and mantle cell are controlled rather than cured.
+  today: Most Hodgkin patients are cured with chemotherapy, now often with nivolumab, and about 60-70%
+    of DLBCL patients are cured with R-CHOP or Pola-R-CHP. Relapsed aggressive disease can still be cured
+    in a share of patients with CAR-T or bispecific antibodies. Follicular and other indolent lymphomas
+    usually relapse over years and are managed as chronic disease.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - R-CHOP or Pola-R-CHP for DLBCL
+  - Nivolumab plus AVD for Hodgkin lymphoma
+  - CAR-T therapy (axi-cel, liso-cel)
+  - CD20xCD3 bispecifics (glofitamab, epcoritamab, mosunetuzumab)
+  - BTK inhibitors for mantle cell and marginal zone
+  burden: heavy
+  burden_note: Most get about six cycles of chemo-immunotherapy over 4-6 months with hair loss, infections
+    and neuropathy; relapsed patients face CAR-T with cytokine release syndrome and neurotoxicity.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 40
+    p2045: 72
+    median: 2037
+    low: 2030
+    high: 2055
+  faster:
+    p2035: 52
+    p2045: 85
+    median: 2034
+    low: 2029
+    high: 2045
+  faster_note: Moving bispecifics and CAR-T into first-line care faster and designing a cure for follicular
+    lymphoma would tip it over; the lift is moderate because aggressive lymphomas are already mostly cured.
+  outlook: Aggressive lymphomas are already cured in most patients, so lymphoma overall is near the line.
+    Moving bispecifics and CAR-T into first-line DLBCL and finding a cure for follicular lymphoma would
+    push it over. The main drag is the large group of indolent lymphomas that still relapse.
+pipeline:
+- name: Mosunetuzumab (subcutaneous) plus polatuzumab
+  note: sBLA for relapsed LBCL after one prior line; FDA decision expected by Feb 9, 2027.
+  stage: Filed
+  url: https://www.thepharmaletter.com/biotech-news/fda-accepts-roche-s-sbla-for-lunsumio-and-polivy-combo
+- name: Nivolumab plus AVD
+  note: Approved Mar 2026 for untreated stage III-IV Hodgkin lymphoma, age 12 and up.
+  stage: Approved 2025-26
+  url: https://www.mdlinx.com/article/the-biggest-fda-decision-drops-in-2026-so-far-oncology-approvals/4WRnWWH8XhXAO0mgWJJvfm
+- name: Tafasitamab plus lenalidomide plus R-CHOP (frontMIND)
+  note: Showed a progression-free survival benefit in high-risk newly diagnosed DLBCL.
+  stage: Phase 3
+  url: https://www.onclive.com/shorts/the-significance-of-the-phase-3-frontmind-data-in-high-risk-dlbcl
+- name: Epcoritamab plus R2
+  note: Approved Nov 2025 for second-line relapsed follicular lymphoma; EU approval July 2026.
+  stage: Approved 2025-26
+  url: https://www.cancernetwork.com/view/epcoritamab-r2-earns-european-approval-for-r-r-follicular-lymphoma
+recent:
+- date: 2026-03
+  text: Nivolumab plus AVD became a new standard for advanced Hodgkin lymphoma.
+  url: https://www.mdlinx.com/article/the-biggest-fda-decision-drops-in-2026-so-far-oncology-approvals/4WRnWWH8XhXAO0mgWJJvfm
+- date: 2026-06
+  text: FDA accepted a filing for a chemo-free bispecific plus ADC combination in second-line LBCL.
+  url: https://www.thepharmaletter.com/biotech-news/fda-accepts-roche-s-sbla-for-lunsumio-and-polivy-combo
+next_milestone:
+  date: '2026-12-12'
+  url: https://www.hematology.org/meetings/annual-meeting
+  what: ASH 2026 Annual Meeting with first-line bispecific and CAR-T lymphoma data.
+ai:
+  impact: low
+  note: AI is used in research on PET scan response and pathology subtyping, but it is not yet changing
+    lymphoma treatment.
+markets: []

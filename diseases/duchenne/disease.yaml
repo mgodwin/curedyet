@@ -1,0 +1,83 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: duchenne
+name: Duchenne muscular dystrophy
+category: genetic
+tracking: active
+summary: An X-linked genetic disease in which missing dystrophin causes progressive muscle loss, mostly
+  in boys.
+toll:
+  text: Roughly 1 in 3,500-5,000 male births worldwide; most patients die in their 20s-30s from heart
+    or breathing failure (unclear current global totals).
+  url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5405509/
+status:
+  level: 1
+  why: Steroids, exon-skipping drugs and gene therapy slow decline for some, but the disease still progresses
+    in all patients.
+  today: Corticosteroids (including vamorolone) and givinostat slow muscle loss, and exon-skipping drugs
+    help certain mutations modestly. Sarepta's Elevidys gene therapy is now limited to ambulatory boys
+    4 and older with a boxed liver warning after deaths. New muscle-targeted oligonucleotides and a second
+    gene therapy are nearing FDA decisions.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Corticosteroids (deflazacort, vamorolone)
+  - Givinostat
+  - Elevidys (ambulatory only)
+  - Exon-skipping PMOs
+  - Cardiac and respiratory care
+  burden: heavy
+  burden_note: Most boys take lifelong corticosteroids causing weight gain, bone loss, fractures and stunted
+    growth; Elevidys gene therapy carries serious liver risk and multimillion-dollar cost and only slows
+    decline.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 3
+    p2045: 13
+    median: 2058
+    low: 2042
+    high: 2100
+  faster:
+    p2035: 6
+    p2045: 28
+    median: 2047
+    low: 2037
+    high: 2085
+  faster_note: AI-designed muscle-tropic capsids and full-gene editors could address the delivery and
+    safety problems that limit current microdystrophin therapies; the lift is mostly by 2045 since new
+    constructs still need human testing.
+  outlook: Current gene therapies deliver a shortened dystrophin and slow, not stop, decline, with real
+    safety risks. A cure for most would need full gene repair delivered safely to all muscles, including
+    heart, which is far off. Expect better slowing in the 2030s and cure much later.
+pipeline:
+- name: Z-rostudirsen (DYNE-251, exon 51)
+  note: Priority review with PDUFA 2027-01-21; raised dystrophin with functional gains.
+  stage: Filed
+  url: https://www.taiwannews.com.tw/en/news/6404439
+- name: Del-zota (Avidity/Novartis, exon 44)
+  note: BLA accepted with priority review under accelerated approval in Sept 2026.
+  stage: Filed
+  url: https://www.parentprojectmd.org/wp-content/uploads/2026/09/FA-11774961_AOC-1044_Avidity-BLA-Acceptance-PAG-Community-Letter_2026.pdf
+- name: RGX-202 (Regenxbio gene therapy)
+  note: Met microdystrophin endpoint; BLA planned early 1H 2027 if FDA does not demand an RCT.
+  stage: Phase 3
+  url: https://www.neurologylive.com/view/rgx-202-meets-primary-end-point-phase-3-duchenne-trial
+recent:
+- date: 2026-10
+  text: RGX-202 gene therapy met its pivotal microdystrophin endpoint with 93% of boys above 10% of normal.
+  url: https://www.neurologylive.com/view/rgx-202-meets-primary-end-point-phase-3-duchenne-trial
+- date: 2026-07
+  text: FDA accepted Dyne's z-rostudirsen for priority review in exon 51 DMD.
+  url: https://www.taiwannews.com.tw/en/news/6404439
+- date: 2025-12
+  text: FDA added a boxed liver warning and limited Elevidys to ambulatory patients.
+  url: https://www.healio.com/news/hepatology/20251230/fda-plans-boxed-warning-revised-indication-for-elevidys-in-children-with-duchenne
+next_milestone:
+  date: '2027-01-21'
+  url: https://www.taiwannews.com.tw/en/news/6404439
+  what: FDA PDUFA date for Dyne's z-rostudirsen in exon 51 DMD
+ai:
+  impact: low
+  note: AI may help capsid and oligonucleotide design, but the field's key bottlenecks are delivery and
+    safety in muscle.
+markets: []

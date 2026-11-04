@@ -1,0 +1,82 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: lupus
+name: Lupus
+category: immune
+tracking: active
+summary: Systemic lupus erythematosus is an autoimmune disease that can attack skin, joints, kidneys,
+  blood and brain.
+toll:
+  text: About 3.4M people live with SLE worldwide (2023 estimate), mostly women.
+  url: https://ard.bmj.com/content/82/3/351
+status:
+  level: 1
+  why: Treatments reduce flares and improve survival, but organ damage still builds over time and few
+    patients reach lasting remission.
+  today: Hydroxychloroquine, steroids and immunosuppressants are the base, with belimumab, anifrolumab
+    and voclosporin for harder cases or lupus nephritis. Obinutuzumab is approved for lupus nephritis
+    and is under FDA review for broader SLE. CD19 CAR-T has produced drug-free remissions in small studies
+    but is still experimental.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Hydroxychloroquine
+  - Belimumab
+  - Anifrolumab (now subcutaneous)
+  - Mycophenolate / voclosporin
+  - Obinutuzumab (lupus nephritis)
+  burden: moderate
+  burden_note: Lifelong hydroxychloroquine needing eye screening plus intermittent steroids with weight,
+    bone and infection effects; lupus nephritis patients face heavier immunosuppression and costly biologic
+    infusions.
+forecast:
+  bottleneck: trial-limited
+  normal:
+    p2035: 4
+    p2045: 20
+    median: 2052
+    low: 2038
+    high: 2085
+  faster:
+    p2035: 10
+    p2045: 42
+    median: 2043
+    low: 2034
+    high: 2070
+  faster_note: CD19 CAR-T resets already give drug-free remissions, so the gap is randomized proof, long
+    follow-up and cheaper delivery; open trials and access gates would lift odds substantially, mostly
+    by 2045.
+  outlook: Lupus has the strongest early cure signal of any autoimmune disease, from CD19 CAR-T resets.
+    Turning that into routine care for most patients needs randomized proof, longer follow-up and cheaper
+    delivery. Better B-cell drugs will raise control levels sooner.
+pipeline:
+- name: Obinutuzumab for SLE
+  note: 'ALLEGORY: SRI-4 response 77% vs 54%; FDA decision targeted December 2026.'
+  stage: Filed
+  url: https://www.pharmanow.live/de/latest-news/fda-accepts-roche-sbla-obinutuzumab-sle-december-2026
+- name: Subcutaneous anifrolumab (Saphnelo)
+  note: FDA approved weekly self-injection in April 2026.
+  stage: Approved 2025-26
+  url: https://www.hcplive.com/view/anifrolumab-saphnelo-wins-fda-approval-for-subcutaneous-self-administration-in-sle
+- name: CD19 CAR-T (e.g. KYV-101)
+  note: Drug-free remissions in refractory SLE and lupus nephritis in small trials.
+  stage: Phase 2
+  url: https://www.cgtlive.com/view/kyverna-progress-kyv-101-lupus-nephritis-us-germany-trials
+- name: Afimetoran (TLR7/8 inhibitor)
+  note: Met SRI-4 endpoint at week 48 in September 2026.
+  stage: Phase 2
+  url: https://www.rheum-live.com/view/what-we-re-looking-forward-rheumatology-h2-2026
+recent:
+- date: 2026-03
+  text: 'ALLEGORY Phase 3 in NEJM: obinutuzumab doubled DORIS remission (34% vs 14%).'
+  url: https://www.pharmanow.live/de/latest-news/fda-accepts-roche-sbla-obinutuzumab-sle-december-2026
+- date: 2026-04
+  text: FDA approved subcutaneous anifrolumab for self-injection.
+  url: https://www.hcplive.com/view/anifrolumab-saphnelo-wins-fda-approval-for-subcutaneous-self-administration-in-sle
+next_milestone:
+  date: 2026-12
+  url: https://www.pharmanow.live/de/latest-news/fda-accepts-roche-sbla-obinutuzumab-sle-december-2026
+  what: FDA decision on obinutuzumab (Gazyva) for systemic lupus erythematosus
+ai:
+  impact: low
+  note: No AI-discovered lupus drug is known to be in late-stage trials.
+markets: []

@@ -1,0 +1,72 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: copd
+name: COPD
+category: other
+tracking: active
+summary: Chronic obstructive pulmonary disease is long-term airway and lung damage, mostly from smoking
+  and air pollution, that makes breathing hard.
+toll:
+  text: About 3.4M deaths worldwide in 2023, the third leading cause of death (WHO); about 213M people
+    affected (2021).
+  url: https://www.who.int/news-room/fact-sheets/detail/chronic-obstructive-pulmonary-disease-(copd)
+status:
+  level: 1
+  why: Inhalers and biologics ease symptoms and cut flare-ups, but lung damage is permanent and the disease
+    keeps advancing.
+  today: Quitting smoking slows decline the most. Long-acting bronchodilator inhalers, inhaled steroids,
+    pulmonary rehab and oxygen ease symptoms and flare-ups. Dupilumab (2024) and mepolizumab (2025) cut
+    exacerbations in patients with high eosinophils, and ensifentrine (2024) adds a new inhaled option;
+    lung transplant helps very few.
+  last_reviewed: null
+treatment:
+  best:
+  - Smoking cessation
+  - LAMA/LABA inhalers (± inhaled steroid)
+  - Dupilumab / mepolizumab (eosinophilic)
+  - Ensifentrine
+  - Pulmonary rehabilitation
+  burden: moderate
+  burden_note: Daily inhalers for life, with thrush and pneumonia risk from inhaled steroids, pulmonary
+    rehab, and costly biologic injections or home oxygen for some patients.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 1
+    p2045: 5
+    median: 2075
+    low: 2050
+    high: 2100
+  faster:
+    p2035: 2
+    p2045: 13
+    median: 2060
+    low: 2043
+    high: 2100
+  faster_note: Lost lung tissue does not regrow and regeneration is preclinical; acceleration could find
+    regeneration routes but the lift is small because human proof would take many years.
+  outlook: Biologics will reduce flare-ups for more patient types, but none rebuild lost lung tissue.
+    Big gains will come from less smoking and cleaner air, which prevent cases rather than cure them.
+    Lung regeneration remains preclinical.
+pipeline:
+- name: Tozorakimab (AstraZeneca), anti-IL-33
+  note: OBERON, TITANIA and MIRANDA met primary endpoints in 2026, including fewer exacerbations.
+  stage: Phase 3
+  url: https://www.drugs.com/history/tozorakimab.html
+- name: Mepolizumab (Nucala)
+  note: FDA approved for eosinophilic COPD in May 2025.
+  stage: Approved 2025-26
+  url: https://www.drugs.com/history/nucala.html
+- name: Dupilumab (Dupixent)
+  note: First biologic for COPD, FDA approved September 2024.
+  stage: Approved 2025-26
+  url: https://www.drugs.com/history/dupixent.html
+recent:
+- date: 2026-09
+  text: Tozorakimab significantly reduced COPD exacerbations in the OBERON and TITANIA Phase 3 trials.
+  url: https://www.drugs.com/history/tozorakimab.html
+next_milestone: null
+ai:
+  impact: low
+  note: AI is used to spot emphysema on CT scans, but no AI-discovered COPD drug is known to be in late
+    trials.
+markets: []

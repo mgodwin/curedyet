@@ -1,0 +1,73 @@
+# A stage of the cure pipeline. Field guide: METHODOLOGY.md.
+id: approval
+order: 6
+name: Approval
+kind: stage
+question: Will regulators approve fast, and on biomarkers for slow diseases?
+cleared_when: Regulators routinely approve on validated biomarkers or surrogate endpoints for slow diseases
+  (aging, neurodegeneration, prevention) and review major new therapies in about 6 months or less, including
+  AI-assisted review.
+status: easing
+odds_much_faster:
+  by_2030: 15
+  by_2035: 32
+ai_linked: false
+status_note: 'Fast review now works in a narrow lane. The National Priority Voucher pilot (about 18 vouchers)
+  delivered approvals in 44-55 days for the cases with reported times, and CDER approved 26 novel drugs
+  in H1 2026, up from 19 in H1 2025. FDA also issued the plausible-mechanism draft guidance for ultra-rare
+  therapies, and Elsa 4.0 is in agency-wide use, though FDA hasn''t reported any measured effect on review
+  time. Against that: standard review is still about 10 months, there is no surrogate pathway for aging
+  or neurodegeneration, and leadership is unstable (Makary resigned May 2026, Prasad left CBER in April).
+  This depends on policy more than AI.'
+time_today:
+  low: 0.7
+  high: 1.3
+  label: 8–16 mo
+  note: FDA aims to act within 6 months (priority) or 10 months (standard) after a 60-day filing period,
+    and the median novel approval in 2024 took 11.7 months from submission.
+time_best_case:
+  low: 0.1
+  high: 0.3
+  label: 3 wks–4 mo
+  note: Under the Commissioner's National Priority Voucher pilot, Hernexeos was approved 44 days after
+    filing in 2026 and seven voucher approvals averaged about 95 days from voucher to decision, while
+    the Pfizer COVID vaccine got emergency authorization 21 days after its request.
+signals:
+- asOf: 2026-03
+  name: National Priority Voucher review time
+  url: https://coda.io/@prv-watch/beta/cnpv-dashboard-30
+  value: 44 and 55 days for the 2 approvals with reported times; about 18 vouchers issued
+- asOf: 2026-07
+  name: CDER novel approvals, H1 2026
+  url: https://www.biospace.com/fda/cancer-rare-disease-dominate-fda-approvals-in-h1-2026-as-astrazeneca-j-j-clean-up
+  value: 26 (vs 19 in H1 2025)
+- asOf: 2026-05
+  name: FDA AI review tool
+  url: https://www.pulse.bot/ai/news/fda-deploys-elsa-40-and-halo-platform-to-accelerate-regulatory-workflows-7ebf77d1-777e-46e5-a066-d69ced7debf5/
+  value: Elsa 4.0 with agentic features; generative AI use reported above 80% of staff; no published review-time
+    impact
+- asOf: 2026-05
+  name: FDA leadership
+  url: https://www.clinicaltrialsarena.com/news/makary-resigns-with-diamantas-named-as-acting-fda-commissioner/
+  value: acting commissioner (Diamantas) after Makary resigned in May 2026
+watch: Voucher-style 1-2 month reviews extended beyond a pilot or codified in PDUFA VIII; FDA accepting
+  a biomarker surrogate for Alzheimer's prevention or aging; a confirmed permanent commissioner.
+sources:
+- title: 'FDA: Priority Review'
+  url: https://www.fda.gov/patients/fast-track-breakthrough-therapy-accelerated-approval-and-priority-review/priority-review
+- title: 'Pink Sheet: US FDA''s median review time remains less than one year'
+  url: https://insights.citeline.com/pink-sheet/pink-sheet-perspectives/us-fdas-median-review-time-remains-less-than-one-year-despite-swell-of-missed-goal-dates-VIEE6AVOQRGMZNKB53B52GPQG4
+- title: 'BioSpace: Boehringer wins speedy lung cancer approval under Commissioner''s priority program'
+  url: https://www.biospace.com/fda/boehringer-wins-speedy-lung-cancer-approval-under-commissioners-priority-program
+- title: 'Drug Discovery and Development: CNPV, a gamechanger or more chaos?'
+  url: https://www.drugdiscoverytrends.com/cnpv-a-gamechanger-for-the-pharma-industry-or-simply-more-chaos/
+- title: 9 months in, FDA's priority voucher program still uncertain (BioSpace)
+  url: https://www.biospace.com/fda/9-months-in-fdas-new-priority-voucher-program-still-clouded-with-uncertainty
+- title: CNPV dashboard (PRV Watch)
+  url: https://coda.io/@prv-watch/beta/cnpv-dashboard-30
+- title: Decoding FDA's plausible mechanism framework (Parexel)
+  url: https://www.parexel.com/insights/blog/decoding-fdas-new-plausible-mechanism-framework-guidance-what-drug-developers-need-to-know
+- title: Makary resigns, Diamantas acting commissioner (Clinical Trials Arena)
+  url: https://www.clinicaltrialsarena.com/news/makary-resigns-with-diamantas-named-as-acting-fda-commissioner/
+- title: FDA deploys Elsa 4.0 and HALO
+  url: https://www.pulse.bot/ai/news/fda-deploys-elsa-40-and-halo-platform-to-accelerate-regulatory-workflows-7ebf77d1-777e-46e5-a066-d69ced7debf5/

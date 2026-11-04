@@ -1,0 +1,33 @@
+# Cure Watch disease record. Copy this folder to diseases/<id>/ and fill it in.
+# Field guide: CONTRIBUTING.md. Sources go in research.md, not here.
+id: example-disease             # same as the folder name: lowercase-with-dashes
+name: Example disease
+category: other                 # an id from categories.yaml
+tracking: proposed              # leave as proposed; the weekly review sets it to active
+summary: One sentence on what the disease is.
+toll:
+  text: About N deaths a year worldwide (source, year).
+  url: https://example.org/source
+status:
+  level: 1                      # 0-5, see METHODOLOGY.md
+  why: One plain sentence explaining the level. It shows on the disease's card.
+  today: Two or three sentences on what treatment can do now, and for whom.
+  last_reviewed: null           # YYYY-MM-DD of the last full review
+treatment:
+  best:
+  - Best current treatment
+  burden: moderate              # light, moderate or heavy
+  burden_note: One sentence on side effects, how long treatment lasts, and cost or access.
+forecast:                       # optional for new diseases; see CONTRIBUTING.md
+  bottleneck: null              # design-limited, biology-limited, trial-limited or access-limited
+pipeline:                       # the most promising therapies in development
+- name: Therapy name
+  stage: Phase 2                # Preclinical, Phase 1, Phase 2, Phase 3, Filed, Approved
+  note: One line on what it is and its latest result.
+  url: https://example.org/trial
+recent: []                      # notable recent results: {date: YYYY-MM, text, url}
+next_milestone: null            # {date: YYYY-MM-DD, what, url}
+ai:
+  impact: low                   # high, some or low
+  note: One sentence on whether AI is speeding progress, with an example.
+markets: []                     # forecasting-market questions: {who, what, url}

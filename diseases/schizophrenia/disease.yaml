@@ -1,0 +1,76 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: schizophrenia
+name: Schizophrenia
+category: mental
+tracking: active
+summary: A severe mental disorder with psychosis, disordered thinking and loss of motivation.
+toll:
+  text: About 27 million people worldwide, 1 in 300 (WHO, GBD 2023 data)
+  url: https://www.who.int/news-room/fact-sheets/detail/schizophrenia
+status:
+  level: 1
+  why: Antipsychotics ease hallucinations and delusions, but negative and cognitive symptoms usually persist
+    and most patients do not live near-normal lives.
+  today: Antipsychotics, including long-acting injections, reduce psychosis and relapse, and clozapine
+    helps many treatment-resistant patients. WHO says at least a third of people fully recover, but the
+    rest have lasting or recurring symptoms. Only 29% of people with psychosis get specialist care worldwide.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Second-generation antipsychotics
+  - Long-acting injectable antipsychotics (e.g. Uzedy)
+  - Clozapine for treatment-resistant cases
+  - Xanomeline-trospium (Cobenfy)
+  - CBT for psychosis and family interventions
+  burden: moderate
+  burden_note: Lifelong daily antipsychotics or monthly injections cause weight gain, metabolic problems,
+    sedation and movement disorders; clozapine requires regular blood tests for agranulocytosis.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 1
+    p2045: 5
+    median: 2075
+    low: 2048
+    high: 2100
+  faster:
+    p2035: 3
+    p2045: 18
+    median: 2058
+    low: 2042
+    high: 2100
+  faster_note: The disease's developmental roots are poorly understood, so only AI-found causal biology
+    would change much, and even then cures would need years of testing; the lift is small.
+  outlook: New mechanisms like muscarinic drugs and better long-acting injections improve control and
+    adherence, not cure. Negative and cognitive symptoms remain largely untreated. A cure for most would
+    need a deep understanding of the disease's brain development roots, which is far off.
+pipeline:
+- name: TEV-749 (once-monthly olanzapine LAI)
+  note: Teva NDA accepted Feb 2026; FDA decision set for Q4 2026; no post-injection sedation events seen
+    in SOLARIS.
+  stage: Filed
+  url: https://www.rttnews.com/3692387/teva-presents-positive-post-hoc-data-for-tev-749-for-schizophrenia-fda-decision-in-q4-26.aspx
+- name: LB-102 (benzamide D2/D3/5-HT7 antagonist)
+  note: NOVA-2 topline moved up to H1 2027.
+  stage: Phase 3
+  url: https://www.biospace.com/press-releases/lb-pharmaceuticals-announces-accelerated-timing-of-topline-results-from-the-phase-3-nova-2-trial-of-lb-102-in-schizophrenia
+- name: Cobenfy (xanomeline-trospium)
+  note: First muscarinic antipsychotic (approved 2024); failed as an add-on to other antipsychotics in
+    2025.
+  stage: Approved 2025-26
+  url: https://www.drugtopics.com/view/cobenfy-did-not-meet-primary-outcome-as-add-on-treatment-for-schizophrenia
+recent:
+- date: 2026-02
+  text: FDA accepted Teva's NDA for a once-monthly subcutaneous olanzapine injection.
+  url: https://www.psychiatrictimes.com/view/nda-accepted-olanzapine-extended-release-injectable-suspension-for-treatment-of-schizophrenia
+- date: 2025-04
+  text: Cobenfy missed its primary goal as an add-on to atypical antipsychotics in a 400-person trial.
+  url: https://www.drugtopics.com/view/cobenfy-did-not-meet-primary-outcome-as-add-on-treatment-for-schizophrenia
+next_milestone:
+  date: 2026-12
+  url: https://www.rttnews.com/3692387/teva-presents-positive-post-hoc-data-for-tev-749-for-schizophrenia-fda-decision-in-q4-26.aspx
+  what: FDA decision on TEV-749 once-monthly olanzapine LAI (PDUFA in Q4 2026)
+ai:
+  impact: low
+  note: 'Unclear: no AI-discovered antipsychotic is known to be in late-stage trials.'
+markets: []

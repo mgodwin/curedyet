@@ -1,0 +1,85 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: huntingtons
+name: Huntington's disease
+category: neuro
+tracking: active
+summary: An inherited brain disease caused by a CAG repeat expansion in the HTT gene, causing movement,
+  mood and thinking decline.
+toll:
+  text: About 5-10 per 100,000 people worldwide, higher (about 7 per 100,000) in people of Western European
+    descent (published estimates).
+  url: https://en.wikipedia.org/wiki/Huntington%27s_disease
+status:
+  level: 1
+  why: VMAT2 inhibitors ease chorea, but no approved treatment slows the disease itself.
+  today: Tetrabenazine, deutetrabenazine and valbenazine reduce involuntary movements, and psychiatric
+    symptoms are treated separately. Nothing approved changes the course of the disease. The AAV gene
+    therapy AMT-130 is now under FDA priority review after small trials suggested slower progression.
+  last_reviewed: null
+treatment:
+  best:
+  - Valbenazine (Ingrezza)
+  - Deutetrabenazine (Austedo)
+  - Tetrabenazine
+  - Supportive and psychiatric care
+  burden: moderate
+  burden_note: Lifelong daily VMAT2 inhibitors can cause sedation, parkinsonism and worsened depression
+    with suicidality warnings, and the newer brand drugs are expensive.
+forecast:
+  bottleneck: trial-limited
+  normal:
+    p2035: 3
+    p2045: 18
+    median: 2052
+    low: 2038
+    high: 2095
+  faster:
+    p2035: 8
+    p2045: 45
+    median: 2045
+    low: 2034
+    high: 2070
+  faster_note: The cause is known and huntingtin-lowering drugs exist, so biomarker-based approval and
+    fast presymptomatic trials would give a big lift by 2045, but proving prevention still takes years.
+  outlook: Huntington's has a single known genetic cause, so lowering huntingtin early is a clear path
+    to slowing or preventing it. AMT-130 could become the first disease-modifying approval in 2027, but
+    its evidence is small and uncontrolled. Reaching 'cured for most' likely requires treating gene carriers
+    before symptoms, which needs years of further trials.
+pipeline:
+- name: AMT-130 / ifezuntirgene inilparvovec (uniQure)
+  note: FDA accepted BLA with priority review; decision target May 1, 2027, based on small trial vs external
+    controls.
+  stage: Filed
+  url: https://en.hdbuzz.net/669-fda-sets-may-2027-decision-date-on-amt-130-gene-therapy-for-hd/
+- name: Brezosiran (Alnylam, RNAi)
+  note: Single dose cut mutant huntingtin in spinal fluid about 60%; pivotal trial planned for 2027.
+  stage: Phase 1
+  url: https://en.hdbuzz.net/656-turning-down-huntingtin-alnylams-brezosiran-shows-promising-early-result/
+- name: Votoplam (PTC518, Novartis/PTC)
+  note: Oral huntingtin-lowering splicing modifier in INVEST-HD.
+  stage: Phase 3
+  url: https://en.hdbuzz.net/
+- name: SKY-0515 (Skyhawk)
+  note: Oral huntingtin-lowering drug in phase 2/3 FALCON-HD.
+  stage: Phase 2
+  url: https://en.hdbuzz.net/
+recent:
+- date: 2026-09
+  text: Four-year AMT-130 data showed 61% slowing on functional capacity in 12 high-dose patients, though
+    results depend on the control dataset.
+  url: https://en.hdbuzz.net/582-amt-130-at-four-years-hopeful-signs-complex-controls/
+- date: 2026-11
+  text: FDA accepted the first Huntington's gene therapy BLA for priority review.
+  url: https://en.hdbuzz.net/669-fda-sets-may-2027-decision-date-on-amt-130-gene-therapy-for-hd/
+- date: 2026-10
+  text: Alnylam's brezosiran lowered mutant huntingtin by about 60% after one injection.
+  url: https://en.hdbuzz.net/656-turning-down-huntingtin-alnylams-brezosiran-shows-promising-early-result/
+next_milestone:
+  date: '2027-05-01'
+  url: https://en.hdbuzz.net/669-fda-sets-may-2027-decision-date-on-amt-130-gene-therapy-for-hd/
+  what: FDA target decision date for AMT-130 (ifezuntirgene inilparvovec) accelerated approval.
+ai:
+  impact: low
+  note: Leading Huntington's therapies are gene-lowering approaches designed by conventional methods;
+    AI plays at most a supporting role, such as speech-based symptom monitoring.
+markets: []

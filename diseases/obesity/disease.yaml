@@ -1,0 +1,82 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: obesity
+name: Obesity
+category: metabolic
+tracking: active
+summary: A chronic disease of excess body fat that raises the risk of diabetes, heart disease, some cancers
+  and early death.
+toll:
+  text: Over 1 billion people worldwide live with obesity (WHO/World Obesity, 2025 reports).
+  url: https://data.worldobesity.org/publications/world-obesity-atlas-2025-v7.pdf
+status:
+  level: 2
+  why: GLP-1-based drugs and surgery now give large, lasting weight loss for many, but weight usually
+    returns when drugs stop.
+  today: Tirzepatide and semaglutide produce about 15-20% average weight loss and cut heart risk, and
+    oral options (Wegovy pill, orforglipron) launched in 2025-26. Bariatric surgery gives the most durable
+    results. Access and cost limit use, and most patients must stay on drugs to keep the weight off.
+  last_reviewed: '2026-11-03'
+treatment:
+  best:
+  - Tirzepatide
+  - Semaglutide (injection and pill)
+  - Orforglipron (Foundayo)
+  - Bariatric surgery
+  burden: moderate
+  burden_note: GLP-1 drugs cause nausea and GI effects and some muscle loss, must be taken indefinitely
+    as weight returns on stopping, and cost limits access; surgery is a heavier one-time option.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 4
+    p2045: 18
+    median: 2055
+    low: 2038
+    high: 2100
+  faster:
+    p2035: 8
+    p2045: 35
+    median: 2044
+    low: 2034
+    high: 2080
+  faster_note: Faster biology could reveal how to reset the body's weight set point so loss lasts off-drug;
+    the lift is moderate because no durable approach exists yet and proving lasting effect takes years.
+  outlook: Weight-loss drugs will keep improving and getting cheaper, so control should become routine.
+    A cure for most would require weight loss that lasts after treatment stops, and no approach has shown
+    that at scale. Expect strong control by 2035 but cure much later, if ever.
+pipeline:
+- name: Orforglipron (Foundayo)
+  note: First small-molecule oral GLP-1, FDA approved April 2026, about 12% weight loss at top dose.
+  stage: Approved 2025-26
+  url: https://www.healio.com/news/endocrinology/20260401/fda-approves-orforglipron-an-oral-glp1-for-adults-with-obesity
+- name: Retatrutide
+  note: Triple agonist with 22.6% weight loss at 80 weeks in TRIUMPH-3; filing planned early 2027.
+  stage: Phase 3
+  url: https://www.epocrates.com/online/article/retatrutide-heads-toward-fda-filing-after-positive-phase-3-obesity-trial-results
+- name: CagriSema
+  note: FDA decision expected Q4 2026; missed non-inferiority versus tirzepatide in a head-to-head trial.
+  stage: Filed
+  url: https://therxindex.com/guides/cagrisema-fda-approval-status/
+- name: Duodenal mucosal resurfacing (Revita)
+  note: Midpoint data showed less weight regain after stopping tirzepatide versus sham.
+  stage: Phase 3
+  url: https://www.sciencedaily.com/releases/2026/04/260423022002.htm
+recent:
+- date: 2026-04
+  text: FDA approved orforglipron, the first oral GLP-1 without food or water rules, in about 50 days.
+  url: https://www.healio.com/news/endocrinology/20260401/fda-approves-orforglipron-an-oral-glp1-for-adults-with-obesity
+- date: 2026-07
+  text: Retatrutide gave up to 22.6% weight loss in Phase 3 in severe obesity with heart disease.
+  url: https://www.epocrates.com/online/article/retatrutide-heads-toward-fda-filing-after-positive-phase-3-obesity-trial-results
+- date: 2026-02
+  text: CagriSema did not prove non-inferior to tirzepatide in a head-to-head trial.
+  url: https://www.drugtopics.com/view/cagrisema-did-not-meet-primary-end-point-of-noninferiority-to-tirzepatide
+next_milestone:
+  date: 2026-12
+  url: https://therxindex.com/guides/cagrisema-fda-approval-status/
+  what: FDA decision on Novo Nordisk's CagriSema for obesity (Q4 2026 window)
+ai:
+  impact: some
+  note: AI tools help optimize peptide and small-molecule design across the incretin field, but the leading
+    approved drugs came from conventional discovery.
+markets: []
