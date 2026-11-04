@@ -1,0 +1,28 @@
+# Cure Watch variant record: one stage or type of Colorectal cancer. Field guide: CONTRIBUTING.md.
+id: stage-i
+name: Stage I
+order: 1
+what: The cancer has grown into the inner layers of the bowel wall but not through it, and has not reached
+  lymph nodes.
+level: 4
+burden: heavy
+survival: ~90% alive at 5 years (net survival, England 2016-2020)
+treatment: Surgery to remove the affected section of bowel (small early tumors can sometimes be cut out
+  through a scope) usually cures it, with no chemotherapy needed. The toll is recovery from bowel surgery.
+caveat: Around 90% survive 5 years, and since most bowel cancer relapses happen within 5 years that is
+  close to the cure rate, above 85%.
+url: https://www.cancerresearchuk.org/about-cancer/bowel-cancer/survival
+easy:
+  median: 2048
+  low: 2034
+  high: 2100
+  p2035: 8
+  p2045: 40
+  note: Most stage I bowel cancers still need major bowel surgery. A mild cure for most would need endoscopic
+    removal (cutting it out through a scope) to become safe for most tumors, not just small low-risk T1
+    tumors, as screening finds more of them earlier.
+reached:
+  year: 1950
+  basis: 'Approximate: by mid-century bowel resection for cancers confined to the wall (Dukes A) was standard
+    and cured the large majority.'
+  url: https://www.cancerresearchuk.org/about-cancer/bowel-cancer/survival

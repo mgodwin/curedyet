@@ -16,54 +16,6 @@ status:
     and kidney risk. Large weight loss from bariatric surgery, intensive diet programs or tirzepatide
     can put the disease into remission for a subset, but relapse is common. Control in practice is uneven,
     and many patients worldwide are undiagnosed.
-  groups:
-  - name: Early type 2 diabetes
-    what: Type 2 diabetes diagnosed within about the last six years, in people with excess weight, when
-      large weight loss can still bring blood sugar back to normal.
-    level: 3
-    burden: moderate
-    survival: ~46% in remission at 1 year, 36% at 2 years and ~10% at 5 years (DiRECT diet programme)
-    note: Most people take lifelong pills or weekly GLP-1 or GIP/GLP-1 injections, which control blood sugar
-      but must be continued. A structured very-low-calorie diet programme, or bariatric surgery, can bring
-      remission (normal HbA1c off all diabetes drugs) for a sizeable share, but it often returns if weight
-      comes back.
-    caveat: 'Remission uses the ADA 2021 consensus definition: HbA1c under 6.5% at least 3 months after
-      stopping glucose-lowering drugs (https://pmc.ncbi.nlm.nih.gov/articles/PMC8929179/); DiRECT used 2
-      months. DiRECT enrolled people diagnosed within 6 years with BMI 27-45 (Lancet 2018, https://pubmed.ncbi.nlm.nih.gov/29221645/).
-      Remission is described as a pause, not a cure, and most people do not stay in remission long term.
-      People on GLP-1 drugs who reach normal sugar are not in remission because they are still on the drug.'
-    url: https://diabetes.org.uk/about-us/news-and-views/weight-loss-can-put-type-2-diabetes-remission-least-five-years-reveal-latest-findings
-    forecast:
-      median: 2046
-      low: 2035
-      high: 2085
-      p2035: 9
-      p2045: 30
-      note: Needs a one-time or finite treatment that keeps blood sugar normal for years without drugs,
-        for example durable weight-loss remission or a procedure like Fractyl's Revita (Phase 3). Today's
-        GLP-1 drugs and diet programmes bring remission for many, but it usually returns.
-  - name: Long-standing type 2 diabetes
-    what: Type 2 diabetes that has been present for many years, when the insulin-making cells have declined
-      further and remission is much less likely.
-    level: 2
-    burden: moderate
-    note: Patients take lifelong combinations of metformin, GLP-1 or GIP/GLP-1 injections, SGLT2 inhibitors
-      and often insulin, with regular checks; GLP-1 drugs cause nausea and are costly. These control blood
-      sugar and cut heart and kidney risk, but they do not cure, and bariatric surgery can help some but
-      sugar often rises again over time.
-    caveat: No solid remission figure is given for this group; the consensus report says near-normal glucose
-      is most likely early in the disease and that high blood sugar frequently returns. 'Near-normal life'
-      holds for those with good control; real-world control is uneven.
-    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8929179/
-    forecast:
-      median: 2054
-      low: 2039
-      high: 2095
-      p2035: 4
-      p2045: 21
-      note: Needs restoration of lost insulin-making beta cells, for example through regeneration or cell
-        therapy, on top of resetting weight and metabolism. Nothing aimed at this is in late trials for
-        type 2 diabetes.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -98,22 +50,48 @@ forecast:
     than cured for decades. Most people have long-standing type 2 diabetes, where remission is rare, so this forecast follows that group's.
 pipeline:
 - name: Orforglipron (oral GLP-1)
-  note: Approved for T2D in the UK in Aug 2026; a separate US diabetes filing was planned for 2026.
   stage: Filed
+  note: Approved for T2D in the UK in Aug 2026; a separate US diabetes filing was planned for 2026.
   url: https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes
+  variants:
+  - early
+  - long-standing
+  effect: small
+  effect_note: If approved for diabetes in the US, a GLP-1 pill improves blood sugar and weight but is
+    ongoing treatment.
 - name: Retatrutide (GIP/GLP-1/glucagon)
+  stage: Phase 3
   note: Up to 20.8% weight loss and 1.6-point A1c drop in people with T2D in TRIUMPH-2; US filing planned
     early 2027.
-  stage: Phase 3
   url: https://www.epocrates.com/online/article/retatrutide-heads-toward-fda-filing-after-positive-phase-3-obesity-trial-results
+  variants:
+  - early
+  - long-standing
+  expected: '2027'
+  effect: some
+  effect_note: If filed and approved, very large weight loss could put more people with early type 2 diabetes
+    into remission, though staying there likely needs ongoing treatment.
 - name: CagriSema (cagrilintide + semaglutide)
-  note: FDA decision expected Q4 2026 for obesity; studied in T2D too.
   stage: Filed
+  note: FDA decision expected Q4 2026 for obesity; studied in T2D too.
   url: https://therxindex.com/guides/cagrisema-fda-approval-status/
+  variants:
+  - early
+  - long-standing
+  expected: '2026'
+  effect: small
+  effect_note: If approved for obesity, it adds another strong weight-loss option that may help diabetes
+    control; diabetes-specific approval would come later.
 - name: Duodenal mucosal resurfacing (Fractyl Revita)
-  note: Endoscopic procedure aiming for durable metabolic effect after stopping GLP-1 drugs.
   stage: Phase 3
+  note: Endoscopic procedure aiming for durable metabolic effect after stopping GLP-1 drugs.
   url: https://www.sciencedaily.com/releases/2026/04/260423022002.htm
+  variants:
+  - early
+  expected: '2027'
+  effect: small
+  effect_note: The 6-month pivotal results (Oct 2026) were mixed; one-year data due in Q1 2027 will show
+    whether a one-time procedure can hold weight and blood sugar after stopping GLP-1 drugs.
 recent:
 - date: 2026-07
   text: Retatrutide hit its Phase 3 goals in obesity with T2D, with up to 20.8% weight loss at 80 weeks.

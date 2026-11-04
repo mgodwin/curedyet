@@ -15,33 +15,6 @@ status:
     short all-oral regimens (BPaLM, and the BEAT-TB regimen that is safe for children and pregnancy).
     TB is still the top infectious killer because many cases go undiagnosed, and the only vaccine, BCG,
     protects adults poorly.
-  groups:
-  - name: Drug-susceptible TB
-    what: TB caused by bacteria that the standard first-line antibiotics can still kill.
-    level: 4
-    burden: moderate
-    survival: ~88% treatment success worldwide
-    note: A 4 to 6 month course of daily antibiotic pills (usually isoniazid, rifampicin, pyrazinamide and
-      ethambutol) cures most patients. Side effects such as nausea, rash and liver irritation need monitoring,
-      but treatment is usually free.
-    caveat: The 88% is a global figure for patients who started treatment; failures are mostly deaths and
-      people lost to follow-up, so success in rich countries with good support is likely similar or higher.
-    url: https://cdn.who.int/media/docs/default-source/global-tuberculosis-report-2025/global-tb-report-2025_factsheet.pdf
-  - name: Drug-resistant TB
-    what: TB that no longer responds to rifampicin, the most important standard TB drug, and often also
-      to isoniazid (MDR/RR-TB).
-    level: 4
-    burden: moderate
-    survival: ~71% treatment success worldwide
-    note: Six-month all-oral regimens such as BPaLM (bedaquiline, pretomanid, linezolid, moxifloxacin) replaced
-      up to two years of injections, and cure most patients. Linezolid can damage nerves and lower blood
-      counts, so regular blood tests and heart checks are needed; pre-XDR TB (also resistant to fluoroquinolones)
-      can often be treated with BPaL, while XDR-TB needs longer tailored regimens with lower success.
-    caveat: The 71% is a global figure that still includes older, longer regimens and weak health systems;
-      trials of the 6-month regimens report higher success. Burden is a judgment call between moderate and
-      heavy because of linezolid toxicity, and is heavy for XDR-TB. Only about 2 in 5 people with drug-resistant
-      TB worldwide get treatment.
-    url: https://cdn.who.int/media/docs/default-source/global-tuberculosis-report-2025/global-tb-report-2025_factsheet.pdf
   last_reviewed: null
 treatment:
   best:
@@ -65,18 +38,36 @@ forecast:
     the next few years. Funding cuts are a real risk.
 pipeline:
 - name: M72/AS01E vaccine
-  note: About 20,000 people enrolled across 5 countries; earlier Phase 2b showed about 50% efficacy.
   stage: Phase 3
+  note: About 20,000 people enrolled across 5 countries; earlier Phase 2b showed about 50% efficacy.
   url: https://www.gatesmri.org/the-phase-3-clinical-trial-of-the-m72-aso1e-tuberculosis-tb-vaccine-candidate-has-reached-full-enrollment/
+  variants:
+  - drug-susceptible
+  - drug-resistant
+  expected: '2028'
+  effect: small
+  effect_note: If the Phase 3 confirms about 50% efficacy, a vaccine would prevent many cases but would
+    not change how well treatment cures those who get sick.
 - name: BEAT-TB 6-month regimen for rifampicin-resistant TB
+  stage: Phase 3
   note: Published in NEJM June 2026; matched 9-month care at about 86% success and is usable in children
     and pregnancy.
-  stage: Phase 3
   url: https://www.ewn.co.za/2026/07/01/important-advance-made-in-tb-treatment
+  variants:
+  - drug-resistant
+  effect: some
+  effect_note: Already published; a 6-month all-oral regimen usable in children and pregnancy makes drug-resistant
+    TB treatment shorter and easier.
 - name: Long-acting pretomanid and sorfequiline (TBAJ-876)
-  note: Preclinical data shown at CROI 2026; aims to simplify treatment.
   stage: Preclinical
+  note: Preclinical data shown at CROI 2026; aims to simplify treatment.
   url: https://www.eatg.org/hiv-news/treatment-action-group-croi-2026-tb-research-round-up/
+  variants:
+  - drug-susceptible
+  - drug-resistant
+  effect: some
+  effect_note: Preclinical; if long-acting injections work, they could shrink months of daily pills to
+    a few doses, a step toward an easy cure.
 recent:
 - date: 2026-06
   text: BEAT-TB showed a 6-month regimen without pretomanid works for rifampicin-resistant TB, including

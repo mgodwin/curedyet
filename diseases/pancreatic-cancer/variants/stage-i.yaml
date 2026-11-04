@@ -1,0 +1,25 @@
+# Cure Watch variant record: one stage or type of Pancreatic cancer. Field guide: CONTRIBUTING.md.
+id: stage-i
+name: Stage I
+order: 1
+what: A small tumor still inside the pancreas that surgeons can usually remove (resectable).
+level: 3
+burden: heavy
+survival: ~44% alive at 5 years (SEER 'localized' stage, 5-year relative survival, 2015-2021)
+share: ~6% of cases (SEER 2004-2012, AJCC 7th edition)
+treatment: Standard care is major surgery such as a Whipple operation followed by about six months of
+  chemotherapy like FOLFIRINOX. Surgery offers the only real chance of cure, but most patients still relapse.
+caveat: SEER reports localized/regional/distant, not AJCC stages; 'localized' is the closest match to
+  stage I. Share is from Swords et al., Surgery 2017 (https://pmc.ncbi.nlm.nih.gov/articles/PMC6402557/),
+  older data.
+url: https://www.cancer.org/cancer/types/pancreatic-cancer/detection-diagnosis-staging/survival-rates.html
+forecast:
+  median: 2046
+  low: 2032
+  high: 2085
+  p2035: 18
+  p2045: 45
+  note: Surgery plus chemotherapy cures some, but most still relapse, so this needs a treatment after
+    surgery that stops the cancer from returning. RAS inhibitors such as daraxonrasib, which extended
+    survival in spread disease in 2026, are the nearest candidates if perioperative trials succeed, with
+    results unlikely before about 2030.

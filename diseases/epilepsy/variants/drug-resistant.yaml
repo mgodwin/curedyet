@@ -1,0 +1,23 @@
+# Cure Watch variant record: one stage or type of Epilepsy. Field guide: CONTRIBUTING.md.
+id: drug-resistant
+name: Drug-resistant epilepsy
+order: 2
+what: Epilepsy in which seizures keep happening despite trying at least two suitable medicines.
+level: 1
+burden: moderate
+share: About one-third of patients
+treatment: Care is usually several medicines at once, sometimes plus a ketogenic diet or an implanted
+  stimulator (vagus nerve or responsive neurostimulation), which reduce but rarely stop seizures. Seizures,
+  injuries and a higher risk of sudden death persist for most.
+caveat: 'Burden is a judgment call: polytherapy side effects are moderate, but device implants add surgery.
+  People whose seizures start in one removable brain area may be surgery candidates (see the next group).'
+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5885858
+forecast:
+  median: 2060
+  low: 2042
+  high: 2100
+  p2035: 3
+  p2045: 14
+  note: Epilepsy with many causes would need cures tailored to each; one-time cell and gene therapies
+    such as NRTX-1001 and antisense drugs for Dravet syndrome are the nearest candidates but cover only
+    some subtypes.

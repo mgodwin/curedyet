@@ -1,0 +1,25 @@
+# Cure Watch variant record: one stage or type of Cystic fibrosis. Field guide: CONTRIBUTING.md.
+id: not-modulator-eligible
+name: Not modulator-eligible CF
+order: 2
+what: Cystic fibrosis in people whose gene variants or young age mean current modulator pills cannot be
+  used.
+level: 1
+burden: heavy
+share: ~7% of people in the US CF registry (2024)
+treatment: Care is daily airway clearance, inhaled medicines and antibiotics, digestive enzymes and frequent
+  hospital courses of IV antibiotics, taking hours a day; lung damage still progresses and some need a
+  lung transplant. The CF Foundation says median survival is lower, possibly by more than a decade, than
+  for eligible patients.
+caveat: The ~7% includes young children who will become eligible with age (Alyftrek for ages 2-5 is filed);
+  the registry infographic counts about 5% ineligible on a different basis. Inhaled gene therapies for
+  this group are in early trials.
+url: https://www.cff.org/medical-professionals/2024-patient-registry-highlights
+forecast:
+  median: 2053
+  low: 2038
+  high: 2092
+  p2035: 4
+  p2045: 20
+  note: Inhaled gene therapies such as 4D-710 and SP-101, now in early to mid trials, would first need
+    to work and then become lasting; repeat-dose gene addition would still be control rather than cure.

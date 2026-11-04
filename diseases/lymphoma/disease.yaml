@@ -16,75 +16,6 @@ status:
     of DLBCL patients are cured with R-CHOP or Pola-R-CHP. Relapsed aggressive disease can still be cured
     in a share of patients with CAR-T or bispecific antibodies. Follicular and other indolent lymphomas
     usually relapse over years and are managed as chronic disease.
-  groups:
-  - name: Hodgkin
-    what: A lymph-node cancer with distinctive large cells, most common in young adults and older people.
-    level: 4
-    burden: heavy
-    survival: ~89% alive at 5 years (SEER 5-year relative survival, 2016-2022); ~93-95% for stage I-II,
-      ~83% for stage IV
-    share: ~10% of lymphomas (8,920 of 88,240 US cases est. 2026, ACS)
-    note: Treatment is a few months of chemotherapy, now often with the immune drug nivolumab for advanced
-      stages, sometimes plus radiation, with risks of infertility and later heart, lung or second-cancer
-      effects. Most patients are cured, including many with advanced stage.
-    url: https://seer.cancer.gov/statfacts/html/hodg.html
-  - name: DLBCL
-    what: Diffuse large B-cell lymphoma, the most common fast-growing non-Hodgkin lymphoma.
-    level: 4
-    burden: heavy
-    survival: ~65% alive at 5 years (SEER 5-year relative survival, 2016-2022); ~80% stage I vs ~56% stage
-      IV
-    share: About 1 in 3 lymphomas (ACS)
-    note: Standard care is about six cycles of chemo-immunotherapy (R-CHOP or Pola-R-CHP) over four to five
-      months, causing hair loss, infections and nerve damage; older patients can get reduced doses. Most
-      are cured, and CAR-T or bispecific antibodies can still cure some after relapse.
-    caveat: 'Share is from ACS B-cell lymphoma page (https://www.cancer.org/cancer/types/non-hodgkin-lymphoma/about/b-cell-lymphoma.html).
-      Level 4 is a close call: cure rates are about 60-70% and lower in older or high-risk patients.'
-    url: https://seer.cancer.gov/statfacts/html/dlbcl.html
-  - name: Follicular
-    what: A slow-growing B-cell lymphoma that often causes few symptoms for years.
-    level: 2
-    burden: moderate
-    survival: ~89% alive at 5 years (SEER 5-year relative survival, 2016-2022); ~97% stage I
-    share: About 1 in 5 lymphomas (ACS)
-    note: Many patients are watched without treatment, and others get rituximab with or without chemotherapy,
-      repeated over the years as it relapses. People often live a long, near-normal life, but advanced disease
-      is not cured; early stage I disease can sometimes be cured with radiation.
-    caveat: Share is from the ACS B-cell lymphoma page. Burden varies widely, from watchful waiting to repeated
-      chemo-immunotherapy, bispecifics or CAR-T.
-    url: https://seer.cancer.gov/statfacts/html/follicular.html
-    forecast:
-      median: 2043
-      low: 2033
-      high: 2075
-      p2035: 17
-      p2045: 52
-      note: A treatment course that leaves most patients disease-free for good would be needed; bispecifics
-        like epcoritamab or mosunetuzumab and CAR-T moving into earlier lines are the nearest candidates,
-        but proving cure in a slow lymphoma takes a decade of follow-up.
-  - name: Mantle cell
-    what: An uncommon B-cell lymphoma, usually found in older men at an advanced stage, that tends to keep
-      coming back.
-    level: 2
-    burden: heavy
-    survival: ~60% alive at 5 years (SEER 2000-2021, Kaplan-Meier overall survival, 11,450 patients)
-    share: About 5% of lymphomas (ACS)
-    note: Younger patients get intensive chemo-immunotherapy, sometimes with a stem cell transplant, and
-      most then get maintenance rituximab or BTK inhibitor pills; older patients get gentler combinations.
-      Remissions can last years but the disease almost always returns, so it is controlled rather than cured.
-    caveat: No official SEER Stat Facts page for mantle cell; the abstract reports ~60% by subgroup (White
-      60.3%, Black 61.3%, Asian/Pacific Islander 60.3%) rather than one overall figure, and the 2000-2021
-      span predates many newer drugs. Level 2 vs 1 is a judgment call, since survival is well below normal.
-    url: https://ash.confex.com/ash/2024/webprogram/Paper212410.html
-    forecast:
-      median: 2047
-      low: 2035
-      high: 2085
-      p2035: 10
-      p2045: 44
-      note: Most patients, who are mostly older, would need lasting cure rather than long remissions; BTK
-        inhibitor combinations, CAR-T and bispecifics are the nearest candidates, but none has shown cure
-        for most yet.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -117,21 +48,52 @@ forecast:
     push it over. The main drag is the large group of indolent lymphomas that still relapse. Hodgkin and DLBCL are under half of lymphomas, so cured for most also needs follicular or another common indolent type to be curable, which pulls this forecast back to follicular's.
 pipeline:
 - name: Mosunetuzumab (subcutaneous) plus polatuzumab
-  note: sBLA for relapsed LBCL after one prior line; FDA decision expected by Feb 9, 2027.
   stage: Filed
+  note: sBLA for relapsed LBCL after one prior line; FDA decision expected by Feb 9, 2027.
   url: https://www.thepharmaletter.com/biotech-news/fda-accepts-roche-s-sbla-for-lunsumio-and-polivy-combo
+  variants:
+  - dlbcl
+  expected: '2027-02-09'
+  effect: small
+  effect_note: If approved, it adds an off-the-shelf second-line option; some relapsed patients may stay
+    in remission, but the effect on overall cure rates is modest.
 - name: Nivolumab plus AVD
+  stage: Approved 2025-26
   note: Approved Mar 2026 for untreated stage III-IV Hodgkin lymphoma, age 12 and up.
-  stage: Approved 2025-26
   url: https://www.mdlinx.com/article/the-biggest-fda-decision-drops-in-2026-so-far-oncology-approvals/4WRnWWH8XhXAO0mgWJJvfm
+  variants:
+  - hodgkin
+  effect: small
+  effect_note: Already approved; it raises progression-free survival in advanced Hodgkin with less radiation
+    and chemo, a small step toward an easier cure.
 - name: Tafasitamab plus lenalidomide plus R-CHOP (frontMIND)
-  note: Showed a progression-free survival benefit in high-risk newly diagnosed DLBCL.
   stage: Phase 3
+  note: Showed a progression-free survival benefit in high-risk newly diagnosed DLBCL.
   url: https://www.onclive.com/shorts/the-significance-of-the-phase-3-frontmind-data-in-high-risk-dlbcl
+  variants:
+  - dlbcl
+  effect: some
+  effect_note: If filed and approved, adding two drugs to first treatment could cure more high-risk DLBCL
+    patients (PFS HR 0.75).
 - name: Epcoritamab plus R2
-  note: Approved Nov 2025 for second-line relapsed follicular lymphoma; EU approval July 2026.
   stage: Approved 2025-26
+  note: Approved Nov 2025 for second-line relapsed follicular lymphoma; EU approval July 2026.
   url: https://www.cancernetwork.com/view/epcoritamab-r2-earns-european-approval-for-r-r-follicular-lymphoma
+  variants:
+  - follicular
+  effect: small
+  effect_note: Already approved; it extends remissions in relapsed follicular lymphoma, which remains
+    controlled rather than cured.
+- name: Epcoritamab plus R-CHOP, first line (EPCORE DLBCL-2)
+  stage: Phase 3
+  note: Cut progression or death risk by 51% vs R-CHOP in newly diagnosed DLBCL at the first interim analysis
+    (Oct 2026); AbbVie and Genmab plan to engage regulators, no filing date announced.
+  url: https://news.abbvie.com/2026-10-05-AbbVie-and-Genmab-Announce-Epcoritamab-in-Combination-with-R-CHOP-Demonstrates-Significant-Improvement-in-Progression-Free-Survival-versus-R-CHOP-in-Patients-with-Newly-Diagnosed-Diffuse-Large-B-Cell-Lymphoma
+  variants:
+  - dlbcl
+  effect: some
+  effect_note: If survival gains hold and it is approved, adding a bispecific to first treatment could
+    cure noticeably more DLBCL patients, especially higher-risk ones.
 recent:
 - date: 2026-03
   text: Nivolumab plus AVD became a new standard for advanced Hodgkin lymphoma.

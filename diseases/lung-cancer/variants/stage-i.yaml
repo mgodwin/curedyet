@@ -1,0 +1,34 @@
+# Cure Watch variant record: one stage or type of Lung cancer. Field guide: CONTRIBUTING.md.
+id: stage-i
+name: Stage I
+order: 1
+what: A small non-small cell tumor confined to the lung, with no spread to lymph nodes.
+level: 3
+burden: heavy
+survival: ~65% alive at 5 years (net survival, all lung cancer types, England 2016-2020)
+treatment: Surgery to remove part of the lung cures most people; those who cannot have surgery get a short
+  course of targeted radiation (SBRT), which is much easier. Some EGFR-positive patients add years of
+  targeted pills.
+caveat: The figure covers all lung cancer by stage, not NSCLC alone, though NSCLC is most cases; US SEER
+  gives 67% 5-year relative survival for localized NSCLC (ACS). Many patients are older with other lung
+  or heart disease, which lowers overall survival. Even after surgery roughly 1 in 4 stage I patients
+  die within 5 years (about 92% survive for the smallest tumors, about 68% for IB), so it falls below
+  the 85% cure bar.
+url: https://www.cancerresearchuk.org/about-cancer/lung-cancer/survival
+forecast:
+  median: 2040
+  low: 2031
+  high: 2065
+  p2035: 25
+  p2045: 58
+  note: About 70-80% of resected stage I patients are alive at 5 years, below the bar. This needs screening
+    to catch more tiny tumors, plus blood-test (ctDNA) guided extra treatment after surgery or SBRT, such
+    as osimertinib for EGFR tumors and immunotherapy, to push long-term cure above 85%.
+easy:
+  median: 2052
+  low: 2036
+  high: 2090
+  p2035: 5
+  p2045: 30
+  note: Short targeted radiation (SBRT) is already a mild option; level 5 needs it, or minimal surgery,
+    to cure at least 85% of patients, which depends on finding tumors smaller through screening.

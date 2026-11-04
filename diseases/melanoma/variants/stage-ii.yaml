@@ -1,0 +1,33 @@
+# Cure Watch variant record: one stage or type of Melanoma. Field guide: CONTRIBUTING.md.
+id: stage-ii
+name: Stage II
+order: 3
+what: A thicker melanoma (over 1 to 4+ mm, sometimes with a broken surface) that has not spread to lymph
+  nodes.
+level: 4
+burden: moderate
+survival: ~90% melanoma-specific survival at 5 years, 84% at 10 years (AJCC 8th edition; 82% at 5 years
+  for stage IIC)
+treatment: Wide excision with sentinel lymph node biopsy; for higher-risk IIB and IIC, a year of adjuvant
+  immunotherapy is offered, with a risk of lasting immune side effects such as thyroid damage. Most are
+  cured.
+caveat: 'Burden is light-to-moderate for stage IIA (surgery only) and heavy for IIB/IIC patients who take
+  adjuvant immunotherapy. Borderline: about 84% survive melanoma at 10 years in data mostly from before
+  adjuvant immunotherapy, and late relapse after 10 years is uncommon, so it sits at the 85% bar and adjuvant
+  immunotherapy for IIB and IIC should push it slightly above.'
+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5978683/
+easy:
+  median: 2042
+  low: 2031
+  high: 2085
+  p2035: 20
+  p2045: 55
+  note: Stage IIA is already cured by surgery alone, but thicker IIB and IIC tumors get sentinel node
+    biopsy and a year of immunotherapy with lasting side-effect risks. Gene-expression tests that safely
+    skip node biopsy and milder add-on treatments, such as the mRNA vaccine intismeran (which cut relapse
+    in a 2026 Phase 3, though given with pembrolizumab), would be needed.
+reached:
+  year: 2000
+  basis: 'Approximate: patients diagnosed from 1998 on, staged with sentinel node biopsy, reached 84%
+    melanoma survival at 10 years and 90% at 5 (AJCC 8th edition).'
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5978683/

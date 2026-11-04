@@ -1,0 +1,35 @@
+# Cure Watch variant record: one stage or type of Prostate cancer. Field guide: CONTRIBUTING.md.
+id: stage-iii
+name: Stage III
+order: 3
+what: Cancer that has grown through the outer edge of the prostate or into nearby tissue, or has a very
+  high PSA (20+) or the most aggressive grade, but has not spread to lymph nodes or bones.
+level: 3
+burden: heavy
+survival: Around 95% survive at least 5 years (5-year net survival, England, diagnosed 2013-2017)
+treatment: Radiation plus 1.5 to 3 years of hormone therapy (hot flashes, fatigue, weight gain, bone and
+  muscle loss, low libido), or surgery often followed by radiation. Most are cured, but PSA comes back
+  in a sizable minority.
+caveat: 'Prostate cancer grows slowly, so 5-year survival overstates cure for high-risk disease; long-term
+  cure is lower than 95%, though still a majority. Few die of it, but long-term cure falls short of 85%:
+  15-year metastasis-free survival was about 83% even with 2 years of hormone therapy (RTOG 9202), and
+  6-year was 82% with abiraterone added, with PSA relapse more common still.'
+url: https://www.cancerresearchuk.org/about-cancer/prostate-cancer/survival
+forecast:
+  median: 2037
+  low: 2030
+  high: 2060
+  p2035: 40
+  p2045: 68
+  note: Adding abiraterone to radiation and hormone therapy raised 6-year metastasis-free survival from
+    69% to 82% (STAMPEDE), close to the bar; this needs that or newer drugs plus PSMA-PET staging to keep
+    at least 85% free of cancer long term. Trials such as ATLAS and PROTEUS of apalutamide are the nearest
+    candidates.
+easy:
+  median: 2065
+  low: 2042
+  high: 2100
+  p2035: 2
+  p2045: 12
+  note: A cure without years of hormone therapy or heavy radiation would be needed; nothing in late-stage
+    trials does that yet.

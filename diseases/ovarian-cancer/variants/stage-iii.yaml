@@ -1,0 +1,22 @@
+# Cure Watch variant record: one stage or type of Ovarian cancer. Field guide: CONTRIBUTING.md.
+id: stage-iii
+name: Stage III
+order: 3
+what: The cancer has spread through the lining of the abdomen or to lymph nodes at the back of the abdomen.
+level: 3
+burden: heavy
+survival: More than 30% alive at 5 years (net survival, England 2016-2020)
+treatment: Extensive debulking surgery and six cycles of chemotherapy, then up to years of PARP inhibitor
+  or bevacizumab maintenance. Most women relapse, but some, especially with BRCA or HRD tumors, stay in
+  long remission.
+url: https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/survival
+forecast:
+  median: 2053
+  low: 2039
+  high: 2098
+  p2035: 8
+  p2045: 27
+  note: Most women relapse after surgery and chemotherapy, so this needs first-line treatment that keeps
+    most in permanent remission, or a screening test that finds cancer before it spreads. Antibody-drug
+    conjugates moving into first-line care and PARP-inhibitor combinations are the nearest candidates,
+    and no screening test has yet been shown to save lives.

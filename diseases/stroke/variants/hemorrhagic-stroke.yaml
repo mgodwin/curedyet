@@ -1,0 +1,25 @@
+# Cure Watch variant record: one stage or type of Stroke. Field guide: CONTRIBUTING.md.
+id: hemorrhagic-stroke
+name: Hemorrhagic stroke
+order: 2
+what: A blood vessel in or around the brain bursts and bleeds, damaging brain tissue.
+level: 1
+burden: heavy
+survival: ~20% functionally independent 6 months after a bleed inside the brain
+share: ~13% of strokes
+treatment: 'Care is intensive and aims to limit damage: rapid blood pressure lowering, reversing blood
+  thinners, sometimes surgery to remove blood or relieve pressure, then long rehab. No treatment undoes
+  the bleed, about a third die within a month, and most survivors stay dependent.'
+caveat: The outcome figure is for bleeding inside the brain (intracerebral hemorrhage), the most common
+  type; bleeding around the brain (subarachnoid hemorrhage from a burst aneurysm) has different, often
+  better outcomes when treated. Share is the remainder after CDC's 87% ischemic figure.
+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8921779
+forecast:
+  median: 2075
+  low: 2050
+  high: 2100
+  p2035: 1
+  p2045: 5
+  note: Needs a way to stop a brain bleed early and repair the damaged tissue, which has no clinical candidate
+    close to approval. Progress is likely to come from better acute care and prevention rather than cure
+    in the next two decades.

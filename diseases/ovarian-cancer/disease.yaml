@@ -17,62 +17,6 @@ status:
     (especially for BRCA or HRD tumors) gives some advanced patients long remissions. Platinum-resistant
     relapse remains hard to treat, though new options like mirvetuximab, relacorilant and pembrolizumab
     arrived recently.
-  groups:
-  - name: Stage I
-    what: The cancer is found only in one or both ovaries or fallopian tubes.
-    level: 4
-    burden: heavy
-    survival: ~95% alive at 5 years (net survival, England 2016-2020)
-    note: Surgery to remove the ovaries, tubes and womb and check for spread usually cures it; higher-risk
-      tumors also get several cycles of chemotherapy.
-    url: https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/survival
-  - name: Stage II
-    what: The cancer has spread beyond the ovaries to other organs in the pelvis, such as the womb or bladder.
-    level: 4
-    burden: heavy
-    survival: More than 70% alive at 5 years (net survival, England 2016-2020)
-    note: Surgery followed by about six cycles of carboplatin and paclitaxel, with hair loss and nerve damage.
-      Most women are alive at five years, though some relapse later.
-    caveat: Late relapses happen, so 5-year survival somewhat overstates the cure rate; level 4 is a judgement
-      call.
-    url: https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/survival
-  - name: Stage III
-    what: The cancer has spread through the lining of the abdomen or to lymph nodes at the back of the abdomen.
-    level: 3
-    burden: heavy
-    survival: More than 30% alive at 5 years (net survival, England 2016-2020)
-    note: Extensive debulking surgery and six cycles of chemotherapy, then up to years of PARP inhibitor
-      or bevacizumab maintenance. Most women relapse, but some, especially with BRCA or HRD tumors, stay
-      in long remission.
-    url: https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/survival
-    forecast:
-      median: 2053
-      low: 2039
-      high: 2098
-      p2035: 8
-      p2045: 27
-      note: Most women relapse after surgery and chemotherapy, so this needs first-line treatment that keeps
-        most in permanent remission, or a screening test that finds cancer before it spreads. Antibody-drug
-        conjugates moving into first-line care and PARP-inhibitor combinations are the nearest candidates,
-        and no screening test has yet been shown to save lives.
-  - name: Stage IV
-    what: The cancer has spread to distant organs such as the liver, lungs or the fluid around the lungs.
-    level: 1
-    burden: heavy
-    survival: ~15% alive at 5 years (net survival, England 2016-2020)
-    note: Chemotherapy and surgery where possible, then maintenance drugs; it usually returns and is treated
-      again with more chemotherapy or newer drugs. It extends life but rarely cures.
-    url: https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/survival
-    forecast:
-      median: 2070
-      low: 2045
-      high: 2100
-      p2035: 2
-      p2045: 9
-      note: Cure is rare today, so this would need drugs that eradicate widely spread disease, well beyond
-        what current maintenance therapy does. The nearest candidates are antibody-drug conjugates such
-        as those targeting folate receptor alpha, which extend life in relapsed disease but have not shown
-        cures.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -106,26 +50,55 @@ forecast:
     within a decade is unlikely.
 pipeline:
 - name: Relacorilant (Lifyorli) plus nab-paclitaxel
+  stage: Approved 2025-26
   note: FDA approved March 25, 2026 for platinum-resistant disease; OS 16.0 vs 11.9 months in ROSELLA.
-  stage: Approved 2025-26
   url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-relacorilant-nab-paclitaxel-platinum-resistant-epithelial-ovarian-fallopian-tube-or
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: small
+  effect_note: Already approved; it extends survival by a few months in platinum-resistant relapse but
+    does not cure.
 - name: Pembrolizumab plus paclitaxel
-  note: FDA approved in Q1 2026 for PD-L1-positive platinum-resistant disease.
   stage: Approved 2025-26
+  note: FDA approved in Q1 2026 for PD-L1-positive platinum-resistant disease.
   url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-paclitaxel-platinum-resistant-epithelial-ovarian-fallopian-tube-or
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: small
+  effect_note: Already approved; a modest survival gain for PD-L1-positive platinum-resistant disease.
 - name: Rinatabart sesutecan (Rina-S, FRa ADC)
-  note: 45.9% response rate in 109 platinum-resistant patients; phase 3 RAINFOL-02 ongoing.
   stage: Phase 3
+  note: 45.9% response rate in 109 platinum-resistant patients; phase 3 RAINFOL-02 ongoing.
   url: https://www.targetedonc.com/view/rinatabart-sesutecan-shows-durable-responses-in-platinum-resistant-ovarian-cancer
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: small
+  effect_note: RAINFOL-02 reported positive progression-free and overall survival results in Oct 2026;
+    approval would extend life in platinum-resistant disease, not cure it.
 - name: Raludotatug deruxtecan (R-DXd, CDH6 ADC)
+  stage: Phase 3
   note: FDA breakthrough designation; about 50% response in platinum-resistant disease; first-line maintenance
     trials started.
-  stage: Phase 3
   url: https://www.merck.com/news/raludotatug-deruxtecan-granted-breakthrough-therapy-designation-by-u-s-fda-for-patients-with-cdh6-expressing-platinum-resistant-ovarian-primary-peritoneal-or-fallopian-tube-cancers-previously-treat/
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: small
+  effect_note: If Phase 3 and first-line maintenance trials work, it could lengthen remissions, but cure
+    would remain uncommon.
 - name: Torvutatug samrotecan (AZD5335, FRa ADC)
-  note: 56.6% response in expansion cohorts at ESMO 2026; phase 3 TREVI-OC-01 recruiting.
   stage: Phase 3
+  note: 56.6% response in expansion cohorts at ESMO 2026; phase 3 TREVI-OC-01 recruiting.
   url: https://www.targetedonc.com/view/esmo-2026-gynecologic-cancer-adcs-ovarian-cervical
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: small
+  effect_note: If TREVI-OC-01 succeeds, it adds another antibody-drug conjugate for relapsed disease that
+    extends life.
 recent:
 - date: 2026-03
   text: FDA approved relacorilant, a first-in-class glucocorticoid receptor blocker, which extended survival

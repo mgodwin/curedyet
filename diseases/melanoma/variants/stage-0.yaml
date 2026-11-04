@@ -1,0 +1,24 @@
+# Cure Watch variant record: one stage or type of Melanoma. Field guide: CONTRIBUTING.md.
+id: stage-0
+name: Stage 0
+order: 1
+what: 'Melanoma in situ: cancer cells only in the top layer of the skin, not growing deeper.'
+level: 5
+burden: light
+survival: Essentially all cured by excision; no stage-specific survival figure verified
+treatment: A minor outpatient excision with a small margin under local anesthetic, then regular skin checks.
+  Cures almost everyone.
+caveat: SEER and AJCC figures cover invasive melanoma only; the source shows 100% 5-year relative survival
+  for localized invasive melanoma, which in situ disease would not be worse than, but no in situ figure
+  was verified. Essentially all are cured by a minor excision, which meets both the 85% bar and the mild-treatment
+  bar.
+reached:
+  year: 1970
+  basis: 'Approximate: by around 1970, when melanoma depth was shown to predict outcome, simple excision
+    of in situ melanoma was standard and cured nearly all.'
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC1397358
+reached_easy:
+  year: 1970
+  basis: 'Approximate: the cure has always been a minor outpatient excision under local anesthetic, so
+    it was easy as soon as it was standard.'
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC1397358

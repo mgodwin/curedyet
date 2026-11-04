@@ -9,7 +9,7 @@ toll:
     (WHO)
   url: https://www.who.int/news-room/fact-sheets/detail/hepatitis-c
 status:
-  level: 4
+  level: 5
   why: Direct-acting antivirals cure more than 95% of people treated, usually in 8-12 weeks.
   today: 'Pangenotypic pill regimens such as sofosbuvir/velpatasvir and glecaprevir/pibrentasvir cure
     nearly everyone who takes them. The problem is reach: most infected people are undiagnosed or untreated,
@@ -27,6 +27,7 @@ treatment:
 forecast:
   bottleneck: access-limited
   reached: 2014
+  reached_easy: 2017
   faster_note: Already curable; acceleration would help only through cheaper testing and delivery and
     a vaccine, since the remaining problem is diagnosis and reach rather than science.
   outlook: Hepatitis C is already curable for most who get treated. The remaining work is diagnosis, access

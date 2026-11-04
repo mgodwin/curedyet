@@ -1,0 +1,22 @@
+# Cure Watch variant record: one stage or type of Liver cancer. Field guide: CONTRIBUTING.md.
+id: stage-iv
+name: Stage IV
+order: 4
+what: The cancer has spread to lymph nodes or distant organs such as the lungs or bones.
+level: 1
+burden: heavy
+survival: ~5% alive at 4 years (net survival, all primary liver cancer, England); US SEER distant stage
+  3% at 5 years
+treatment: Ongoing immunotherapy combinations or targeted pills extend survival by months to a few years,
+  with immune side effects and, for bevacizumab, bleeding risk. Cure is very rare.
+caveat: 4-year figures for all primary liver cancer, not hepatocellular carcinoma alone.
+url: https://www.cancerresearchuk.org/about-cancer/liver-cancer/survival
+forecast:
+  median: 2072
+  low: 2046
+  high: 2100
+  p2035: 1
+  p2045: 7
+  note: Cure is very rare today, so this would need entirely new drugs that eradicate spread liver cancer
+    in patients who often also have cirrhosis. Current immunotherapy combinations extend life by months
+    to a few years.

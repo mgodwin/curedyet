@@ -1,0 +1,24 @@
+# Cure Watch variant record: one stage or type of Lymphomas. Field guide: CONTRIBUTING.md.
+id: follicular
+name: Follicular
+order: 3
+what: A slow-growing B-cell lymphoma that often causes few symptoms for years.
+level: 2
+burden: moderate
+survival: ~89% alive at 5 years (SEER 5-year relative survival, 2016-2022); ~97% stage I
+share: About 1 in 5 lymphomas (ACS)
+treatment: Many patients are watched without treatment, and others get rituximab with or without chemotherapy,
+  repeated over the years as it relapses. People often live a long, near-normal life, but advanced disease
+  is not cured; early stage I disease can sometimes be cured with radiation.
+caveat: Share is from the ACS B-cell lymphoma page. Burden varies widely, from watchful waiting to repeated
+  chemo-immunotherapy, bispecifics or CAR-T.
+url: https://seer.cancer.gov/statfacts/html/follicular.html
+forecast:
+  median: 2043
+  low: 2033
+  high: 2075
+  p2035: 17
+  p2045: 52
+  note: A treatment course that leaves most patients disease-free for good would be needed; bispecifics
+    like epcoritamab or mosunetuzumab and CAR-T moving into earlier lines are the nearest candidates,
+    but proving cure in a slow lymphoma takes a decade of follow-up.

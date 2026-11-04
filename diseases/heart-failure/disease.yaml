@@ -16,50 +16,6 @@ status:
     devices extend life a lot. Preserved ejection fraction now has SGLT2 inhibitors, finerenone (FDA approved
     2025) and GLP-1 drugs in obese patients. Heart transplant or LVAD helps a small number with end-stage
     disease.
-  groups:
-  - name: Reduced ejection fraction (HFrEF)
-    what: The heart muscle is weakened and squeezes too little blood out with each beat.
-    level: 1
-    burden: moderate
-    survival: ~46% alive 5 years after a first heart failure hospitalization
-    note: Four lifelong drug classes (ARNI, beta blocker, MRA, SGLT2 inhibitor), plus implanted defibrillators
-      or pacing devices for some, extend life a lot and can partly restore heart function. They need frequent
-      blood tests for kidney and potassium problems, and most patients still slowly worsen; transplant or
-      a heart pump helps only a few.
-    caveat: The survival figure comes from French patients first hospitalized in 2000, before ARNI and SGLT2
-      drugs, so survival today is likely better. Some patients' heart function recovers on treatment, but
-      they usually still need the drugs.
-    url: https://esc365.escardio.org/journal/35798
-    forecast:
-      median: 2058
-      low: 2042
-      high: 2100
-      p2035: 3
-      p2045: 13
-      note: Needs a one-time therapy that makes weakened heart muscle work normally again, such as cardiac
-        gene therapy or regeneration. AskBio's AB-1002 gene therapy is the most advanced, in a randomized
-        Phase 2, so approval for most patients is many years away.
-  - name: Preserved ejection fraction (HFpEF)
-    what: The heart pumps out a normal share of blood but is stiff and cannot fill properly, so pressure
-      backs up into the lungs and body.
-    level: 1
-    burden: moderate
-    survival: ~43% alive 5 years after a first heart failure hospitalization
-    note: Water pills ease fluid buildup, and SGLT2 inhibitors, finerenone and, in obese patients, GLP-1
-      drugs reduce hospital stays and symptoms, alongside treating blood pressure, diabetes and weight.
-      None has clearly been shown to extend life, and the disease usually advances.
-    caveat: The survival figure is from a 2000 French cohort and predates the newer drugs. Patients are
-      typically older with several other illnesses, which drives much of the death rate.
-    url: https://esc365.escardio.org/journal/35798
-    forecast:
-      median: 2066
-      low: 2046
-      high: 2100
-      p2035: 2
-      p2045: 9
-      note: Needs a treatment that undoes heart stiffening in mostly older patients with several other illnesses,
-        a biology that is still poorly understood. Current candidates such as relaxin agonists (AZD5462)
-        and finerenone aim to ease symptoms, not cure.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -95,21 +51,54 @@ forecast:
     is the likelier near-term win. About half of patients or more have preserved ejection fraction, which has fewer options, so this forecast follows that type's.
 pipeline:
 - name: AZD5462 (AstraZeneca), oral relaxin receptor agonist
+  stage: Phase 2
   note: LUMINARA Phase 2b in about 260 chronic HF patients presented at ESC 2026.
-  stage: Phase 2
   url: https://www.consultantlive.com/view/european-society-of-cardiology-2026-preview-6-trials-to-know
+  variants:
+  - hfref
+  - hfpef
+  effect: small
+  effect_note: If later trials work, a relaxin pill would add another drug that may ease symptoms and
+    hospital stays, not reverse heart failure.
 - name: AB-1002 (AskBio), cardiac gene therapy
-  note: Phase 1 showed no drug-related adverse events and clinical gains; randomized GenePHIT trial enrolling.
   stage: Phase 2
+  note: Phase 1 showed no drug-related adverse events and clinical gains; randomized GenePHIT trial enrolling.
   url: https://www.indianpharmapost.com/biotech/lite/askbios-gene-therapy-shows-promising-12-month-results-for-heart-failure-18088
+  variants:
+  - hfref
+  expected: '2027'
+  effect: some
+  effect_note: If GenePHIT works, a one-time gene therapy could improve heart pumping in reduced-ejection
+    heart failure, a first step toward disease repair.
 - name: Finerenone for HFmrEF/HFpEF
-  note: FDA approved for HF with LVEF 40% or more in 2025.
   stage: Approved 2025-26
+  note: FDA approved for HF with LVEF 40% or more in 2025.
   url: https://cardiovascularbusiness.com/topics/clinical/heart-failure/fda-approves-bayers-finerenone-treat-wide-range-heart-failure-patients
+  variants:
+  - hfpef
+  effect: small
+  effect_note: Already approved; it lowers worsening events in HF with preserved or mildly reduced ejection
+    but does not cure it.
 - name: Aficamten (cardiac myosin inhibitor)
-  note: ACACIA-HCM improved symptoms and exercise in nonobstructive HCM, a cause of HF.
   stage: Phase 3
+  note: ACACIA-HCM improved symptoms and exercise in nonobstructive HCM, a cause of HF.
   url: https://www.consultantlive.com/view/european-society-of-cardiology-2026-preview-6-trials-to-know
+  variants:
+  - hfpef
+  effect: small
+  effect_note: If approved for nonobstructive HCM, it would ease symptoms in one cause of heart failure,
+    a small share of patients.
+- name: Ziltivekimab (Novo Nordisk, anti-IL-6) HERMES
+  stage: Phase 3
+  note: Outcome trial in HFpEF/HFmrEF with systemic inflammation; results expected in the first half of
+    2027, after the related ZEUS trial failed.
+  url: https://european-biotechnology.com/?p=21368
+  variants:
+  - hfpef
+  expected: '2027'
+  effect: small
+  effect_note: If positive, an anti-inflammatory shot would cut heart failure events in inflamed HFpEF
+    patients, but it would control rather than cure the disease.
 recent:
 - date: 2026-05
   text: Aficamten met endpoints in nonobstructive hypertrophic cardiomyopathy in the ACACIA-HCM trial.

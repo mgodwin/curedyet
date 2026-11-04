@@ -16,52 +16,6 @@ status:
   today: Triple CFTR modulators (Trikafta, Alyftrek) transform the disease for the roughly 90% of patients
     with eligible mutations, especially if started young. About 7% are ineligible by age or genotype and
     still face progressive lung disease. No gene therapy or mRNA therapy is approved.
-  groups:
-  - name: Modulator-eligible CF
-    what: Cystic fibrosis caused by gene variants that daily CFTR modulator pills can partly repair at the
-      protein level.
-    level: 2
-    burden: moderate
-    survival: Median predicted survival ~65 years for US births 2020-2024 (all people with CF)
-    share: ~93% of people in the US CF registry (2024)
-    note: Patients take triple modulator pills (Trikafta or Alyftrek) every day for life, with liver tests
-      and occasional rash or mood effects, plus some ongoing airway therapy. Lung function and survival
-      improve sharply, especially when started young, but the gene is not fixed.
-    caveat: The survival figure covers everyone with CF, so modulator users likely do somewhat better; long-term
-      data on modulator users is still short. Figures confirmed via search; the CFF page blocked a direct
-      fetch. List price is several hundred thousand dollars a year, limiting access outside rich countries.
-    url: https://www.cff.org/medical-professionals/2024-patient-registry-highlights
-    forecast:
-      median: 2050
-      low: 2037
-      high: 2088
-      p2035: 5
-      p2045: 24
-      note: A lasting correction of the CFTR gene in airway stem cells would be needed so pills can stop;
-        in vivo gene editing for the lung is still preclinical, and current modulators control rather than
-        cure.
-  - name: Not modulator-eligible CF
-    what: Cystic fibrosis in people whose gene variants or young age mean current modulator pills cannot
-      be used.
-    level: 1
-    burden: heavy
-    share: ~7% of people in the US CF registry (2024)
-    note: Care is daily airway clearance, inhaled medicines and antibiotics, digestive enzymes and frequent
-      hospital courses of IV antibiotics, taking hours a day; lung damage still progresses and some need
-      a lung transplant. The CF Foundation says median survival is lower, possibly by more than a decade,
-      than for eligible patients.
-    caveat: The ~7% includes young children who will become eligible with age (Alyftrek for ages 2-5 is
-      filed); the registry infographic counts about 5% ineligible on a different basis. Inhaled gene therapies
-      for this group are in early trials.
-    url: https://www.cff.org/medical-professionals/2024-patient-registry-highlights
-    forecast:
-      median: 2053
-      low: 2038
-      high: 2092
-      p2035: 4
-      p2045: 20
-      note: Inhaled gene therapies such as 4D-710 and SP-101, now in early to mid trials, would first need
-        to work and then become lasting; repeat-dose gene addition would still be control rather than cure.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -94,21 +48,43 @@ forecast:
     for most likely needs in vivo gene editing of airway cells, which is decades out.
 pipeline:
 - name: Alyftrek ages 2-5
-  note: Vertex began global submissions for young children in 2026.
   stage: Filed
+  note: Vertex began global submissions for young children in 2026.
   url: https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results
+  variants:
+  - modulator-eligible
+  expected: '2027'
+  effect: small
+  effect_note: If approved, children aged 2-5 could start the newest modulator earlier, which may protect
+    their lungs longer but is still lifelong daily treatment.
 - name: VX-828 triple (next-gen corrector)
+  stage: Phase 1
   note: Lowered sweat chloride beyond Trikafta in F/MF patients.
-  stage: Phase 1
   url: https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results
+  variants:
+  - modulator-eligible
+  effect: some
+  effect_note: If it works in later trials, a stronger modulator could bring CFTR function closer to normal
+    for more people, though still as lifelong pills.
 - name: 4D-710 (inhaled AAV CFTR gene therapy)
-  note: For patients who cannot use modulators; pivotal dose selected, CF Foundation backing.
   stage: Phase 2
+  note: For patients who cannot use modulators; pivotal dose selected, CF Foundation backing.
   url: https://4dmt.gcs-web.com/news-releases/news-release-details/4dmt-advances-4d-710-phase-2-additional-funding-and-support
+  variants:
+  - not-modulator-eligible
+  expected: '2027'
+  effect: some
+  effect_note: If it works, an inhaled gene therapy would give people who cannot use modulators their
+    first treatment that fixes the underlying defect in the lungs.
 - name: SP-101 (Spirovant inhaled gene therapy)
-  note: Aerosol gene therapy for modulator-ineligible patients.
   stage: Phase 1
+  note: Aerosol gene therapy for modulator-ineligible patients.
   url: https://clinicaltrials.gov/study/NCT06526923
+  variants:
+  - not-modulator-eligible
+  effect: some
+  effect_note: If it works, it would offer an inhaled gene fix for people without a modulator option,
+    but it is at an early stage.
 recent:
 - date: 2026-05
   text: Vertex stopped its inhaled CFTR mRNA therapy VX-522 due to lung inflammation from the delivery

@@ -1,0 +1,25 @@
+# Cure Watch variant record: one stage or type of Ebola. Field guide: CONTRIBUTING.md.
+id: sudan-virus
+name: Sudan virus
+order: 2
+what: A different Ebola virus species, found mainly in Uganda and South Sudan, that causes the same kind
+  of severe illness.
+level: 1
+burden: heavy
+survival: Past outbreaks killed 41-70% of cases (WHO); ~39% of confirmed cases in Uganda 2022
+treatment: There is no approved treatment, so care is intensive supportive care in isolation (fluids,
+  oxygen, managing organ failure), which improves survival but does not target the virus. There is no
+  licensed vaccine; candidate vaccines, remdesivir and an antibody have been tested in outbreak trials
+  in Uganda.
+caveat: Level 1 reflects that supportive care helps but nothing specific exists; outbreaks are small,
+  so fatality figures are noisy. Zaire-specific antibodies do not work against Sudan virus.
+url: https://www.who.int/emergencies/disease-outbreak-news/item/2025-DON558
+forecast:
+  median: 2044
+  low: 2030
+  high: 2080
+  p2035: 28
+  p2045: 52
+  note: A treatment that raises survival to Zaire-like levels would be needed; the pan-species antibody
+    MBP134 and remdesivir could cover Sudan virus if they work against Bundibugyo, but Sudan outbreaks
+    are small, so proof may rely on animal data and future outbreak trials.

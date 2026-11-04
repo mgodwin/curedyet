@@ -15,53 +15,6 @@ status:
   today: Anti-TNF, anti-integrin, IL-12/23 and IL-23 antibodies, and JAK or S1P drugs put many patients
     in remission. Typical one-year remission rates on any single drug are still often under half. Removing
     the colon cures ulcerative colitis but not Crohn's.
-  groups:
-  - name: Ulcerative colitis
-    what: The immune system inflames the inner lining of the large bowel (colon and rectum), causing bloody
-      diarrhea and urgency.
-    level: 3
-    burden: moderate
-    survival: ~10% have the colon removed within 10 years of diagnosis
-    note: Most patients are managed with lifelong anti-inflammatory pills, biologic injections or infusions,
-      or JAK pills, which control it but do not cure it. Removing the colon and rectum ends the disease,
-      but it is major surgery that leaves a pouch or stoma, so it is mainly used when medicines fail.
-    caveat: 'Judgment call: surgery is a real cure, but it is heavy and most patients would not choose it
-      while medicines work, so per METHODOLOGY it stays at level 3 (cured for some) rather than 4. The typical
-      patient lives on ongoing medication, which is level 2 territory; burden reflects that medication,
-      not surgery. The 10-year figure (9.6%) is from cohorts diagnosed after 2000.'
-    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8934200
-    forecast:
-      median: 2051
-      low: 2037
-      high: 2090
-      p2035: 6
-      p2045: 21
-      note: Needs a drug or procedure that ends the disease without removing the colon, such as a lasting
-        immune reset or a fix for the gut microbiome-immune loop. Obefazimod and TL1A antibodies like tulisokibart
-        should raise remission rates, but they are ongoing treatments, not cures.
-  - name: Crohn's disease
-    what: The immune system inflames any part of the gut, often deep into the bowel wall, causing pain,
-      diarrhea, narrowing and abnormal channels (fistulas).
-    level: 2
-    burden: moderate
-    survival: ~26% need major bowel surgery within 10 years of diagnosis
-    note: Lifelong biologics or other immune-calming drugs put many patients into long remission, with regular
-      scopes and blood tests and some infection risk. Surgery removes damaged bowel but does not cure Crohn's,
-      which often returns near the join.
-    caveat: Level 2 assumes near-normal life on treatment, but a sizable minority keep flaring or develop
-      bowel damage despite treatment, so for them it behaves more like level 1. The surgery figure (26.2%)
-      is from cohorts diagnosed after 2000; about 1 in 4 to 1 in 3 who have surgery need another within
-      10 years.
-    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8934200
-    forecast:
-      median: 2056
-      low: 2040
-      high: 2095
-      p2035: 4
-      p2045: 16
-      note: Needs a lasting immune reset or microbiome fix that stops inflammation anywhere in the gut for
-        good; surgery does not cure Crohn's. Nearest candidates are TL1A antibodies such as duvakitug, which
-        improve control but must be continued.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -94,17 +47,47 @@ forecast:
     which has no strong clinical signal yet. Expect better control, not cure, through the 2030s.
 pipeline:
 - name: Obefazimod (Abivax), oral miR-124 enhancer
+  stage: Phase 3
   note: 'ABTECT maintenance: about 51% remission vs 10% placebo at week 44; NDA planned by end of 2026.'
-  stage: Phase 3
   url: https://sofinnovapartners.com/news/abivax-announces-landmark-phase-3-abtect-maintenance-trial-results-evaluating-obefazimod-in-moderately-to-severely-active-ulcerative-colitis
+  variants:
+  - ulcerative-colitis
+  expected: 2026-12
+  effect: small
+  effect_note: If approved, a daily pill would add a new way to keep ulcerative colitis in remission,
+    but it is ongoing treatment, not a cure.
 - name: Tulisokibart (Merck), anti-TL1A
+  stage: Phase 3
   note: First anti-TL1A to meet a Phase 3 UC endpoint (ATLAS-UC, June 2026).
-  stage: Phase 3
   url: https://www.hcplive.com/view/tulisokibart-phase-3-endpoints-ulcerative-colitis-anti-tl1a
+  variants:
+  - ulcerative-colitis
+  - crohns-disease
+  effect: small
+  effect_note: If approved after the remaining ATLAS-UC data, a new class of injection would help more
+    people reach remission, still as long-term treatment.
 - name: Duvakitug (Sanofi/Teva), anti-TL1A
-  note: Phase 2b maintenance showed durable remission in UC and Crohn's.
   stage: Phase 3
+  note: Phase 2b maintenance showed durable remission in UC and Crohn's.
   url: https://www.patientcareonline.com/view/duvakitug-phase-2b-maintenance-data-show-durable-remission-in-uc-and-crohn-disease
+  variants:
+  - ulcerative-colitis
+  - crohns-disease
+  expected: '2028'
+  effect: small
+  effect_note: If Phase 3 succeeds (first readouts guided for 2028), it adds another anti-TL1A option
+    for remission, not a cure.
+- name: Obefazimod in Crohn's disease (ENHANCE-CD)
+  stage: Phase 2
+  note: Dose-ranging Phase 2b induction trial in moderate to severe Crohn's disease; Abivax expects topline
+    results in mid-2027.
+  url: https://www.streetinsider.com/Globe+Newswire/Abivax+Provides+Operational+and+Key+Program+Update/23464599.html
+  variants:
+  - crohns-disease
+  expected: '2027'
+  effect: small
+  effect_note: If positive, a daily pill shown to work in ulcerative colitis could extend to Crohn's,
+    adding control rather than a cure.
 recent:
 - date: 2026-06
   text: Obefazimod met all endpoints in the ABTECT maintenance trial in UC.

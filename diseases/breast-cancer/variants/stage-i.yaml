@@ -1,0 +1,33 @@
+# Cure Watch variant record: one stage or type of Breast cancer. Field guide: CONTRIBUTING.md.
+id: stage-i
+name: Stage I
+order: 2
+what: A small invasive tumor (up to 2 cm) with no spread to lymph nodes, or only tiny clusters of cells
+  in them.
+level: 4
+burden: heavy
+survival: Almost 100% survive at least 5 years (5-year net survival, England, diagnosed 2018-2022)
+share: Most of the ~64% of US cases found while still localized (SEER, invasive only)
+treatment: Surgery, usually with radiation; most tumors are hormone-positive and need 5-10 years of endocrine
+  pills with joint pain, hot flashes or bone loss, and HER2-positive or triple-negative tumors often add
+  chemotherapy. Most are cured.
+caveat: SEER reports share by localized/regional/distant, not by TNM stage; localized also includes some
+  stage II tumors. About 95% survive breast cancer at 10 years, comfortably above 85% even counting late
+  relapses, though treatment is usually heavy.
+url: https://www.cancerresearchuk.org/about-cancer/breast-cancer/survival
+easy:
+  median: 2050
+  low: 2036
+  high: 2100
+  p2035: 7
+  p2045: 38
+  note: Most stage I tumors are hormone-positive and need 5 to 10 years of hormone pills after surgery
+    and often radiation, so a mild cure would need much shorter or no drug courses for most. Gene tests
+    that spare low-risk women from treatment and trials dropping radiation (PRIME II, LUMINA, EUROPA)
+    are steps, but they cover a minority.
+reached:
+  year: 1990
+  basis: 'Approximate: around 1990 adjuvant tamoxifen and chemotherapy became standard for node-negative
+    disease on top of surgery; 10-year breast cancer-specific survival for stage I was 95% for women diagnosed
+    in 2002.'
+  url: https://www.cmajopen.ca/content/1/4/E134

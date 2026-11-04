@@ -1,0 +1,26 @@
+# Cure Watch variant record: one stage or type of Melanoma. Field guide: CONTRIBUTING.md.
+id: stage-iv
+name: Stage IV
+order: 5
+what: Melanoma that has spread to distant skin, lymph nodes or organs such as the lungs, liver or brain.
+level: 3
+burden: heavy
+survival: ~34% alive at 5 years (5-year relative survival, SEER distant stage, 2016-2022)
+share: ~5% of new US cases (SEER distant)
+treatment: Combination immunotherapy (nivolumab with ipilimumab or relatlimab) or BRAF/MEK pills, with
+  TIL cell therapy as a later option; severe immune side effects are common with combinations. A meaningful
+  share get long remissions that look like cures, but most do not.
+caveat: SEER distant figures lag current immunotherapy; in the CheckMate 067 trial roughly half of combination-treated
+  patients were alive at 6.5 years (reported by Cancer Research UK), but trial patients are fitter than
+  average.
+url: https://seer.cancer.gov/statfacts/html/melan.html
+forecast:
+  median: 2043
+  low: 2032
+  high: 2080
+  p2035: 15
+  p2045: 52
+  note: Already about 4 in 10 on combination immunotherapy in trials live 10 years, so this needs a first-line
+    treatment that cures over half and that most patients can tolerate. Candidates include LAG-3 combinations,
+    TIL cell therapy and personalized mRNA vaccines such as intismeran, which cut relapse in a 2026 Phase
+    3 after surgery but has not been tested as first treatment for spread disease.

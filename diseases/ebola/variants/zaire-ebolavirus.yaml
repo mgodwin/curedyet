@@ -1,0 +1,38 @@
+# Cure Watch variant record: one stage or type of Ebola. Field guide: CONTRIBUTING.md.
+id: zaire-ebolavirus
+name: Zaire ebolavirus
+order: 1
+what: The Ebola virus species behind most past outbreaks, including West Africa 2014-16, which causes
+  severe fever, bleeding and organ failure.
+level: 3
+burden: heavy
+survival: ~66% alive at 28 days with REGN-EB3 (Inmazeb) vs ~49% on the older comparator, in the DRC PALM
+  trial
+treatment: Patients get a single infusion of an approved antibody (Inmazeb or Ebanga) plus intensive supportive
+  care in isolation; survival is much higher when treated early, and survivors clear the infection. A
+  licensed vaccine (Ervebo) is used in ring vaccination of contacts and health workers.
+caveat: 'The trial ran in outbreak conditions in DRC; patients with low viral load at admission did much
+  better (about 19% died across all arms vs 76% with high viral load). In rich-country hospitals 22 of
+  27 patients (81%) survived in 2014-15 even before these antibodies (Uyeki et al., NEJM 2016). Some survivors
+  have lasting post-Ebola symptoms and the virus can persist in the eye or semen. Rated 3: about 66% survived
+  with Inmazeb in the PALM trial and about 81% in rich-country hospitals before antibodies, both below
+  the 85% cured bar.'
+url: https://scienceportal.msf.org/assets/randomized-controlled-trial-ebola-virus-disease-therapeutics
+forecast:
+  median: 2038
+  low: 2028
+  high: 2075
+  p2035: 35
+  p2045: 58
+  note: Approved antibodies plus good intensive care save about two thirds to four fifths of patients,
+    so this needs proof that at least 85% survive, for example antibodies combined with an antiviral like
+    remdesivir or obeldesivir, or the pan-species MBP134, tested in future outbreaks.
+easy:
+  median: 2065
+  low: 2042
+  high: 2100
+  p2035: 3
+  p2045: 12
+  note: Ebola is a sudden, severe illness that needs isolation and hospital care, so a mild cure would
+    require a treatment given very early, such as oral pills after exposure or at first symptoms, that
+    stops the disease before it becomes severe.

@@ -16,119 +16,6 @@ status:
     all-oral fixed-duration regimen. AML remains the hardest, with cure mostly limited to younger fit
     patients who get intensive chemo or a transplant, though menin and other targeted inhibitors are adding
     options.
-  groups:
-  - name: Childhood ALL
-    what: A fast-growing cancer of immature white blood cells (lymphocytes), the most common cancer in children.
-    level: 4
-    burden: heavy
-    survival: ~90% of children alive at 5 years (ACS)
-    share: About half of ALL cases are in people under 20 (SEER 2019-2023)
-    note: Treatment is about two to three years of multi-drug chemotherapy, intense in the first months,
-      with infection risk and possible long-term effects. Most children are cured; CAR-T or transplant is
-      used for relapse.
-    caveat: Age share is from SEER ALL Cancer Stat Facts (https://seer.cancer.gov/statfacts/html/alyl.html).
-    url: https://www.cancer.org/cancer/types/leukemia-in-children/detection-diagnosis-staging/survival-rates.html
-  - name: Adult ALL
-    what: The same fast-growing cancer of immature lymphocytes, but in adults, where it is harder to cure.
-    level: 3
-    burden: heavy
-    survival: ~40% long-term disease-free survival with intensive chemotherapy (NCI PDQ); 60-80% reach remission
-    note: Adults get intensive multi-drug chemotherapy for two to three years, often a stem cell transplant,
-      and newer antibody drugs or CAR-T, with serious infection and organ risks. A meaningful minority are
-      cured, more so in younger adults and with targeted drugs for Philadelphia-positive disease.
-    caveat: No current SEER or ACS 5-year survival figure for adults only was found; outcomes fall steeply
-      with age, and the PDQ figure may understate gains from blinatumomab, inotuzumab and pediatric-style
-      regimens.
-    url: https://www.cancer.gov/types/leukemia/hp/adult-all-treatment-pdq
-    forecast:
-      median: 2037
-      low: 2030
-      high: 2058
-      p2035: 42
-      p2045: 70
-      note: Adding blinatumomab, inotuzumab and earlier CAR-T to first-line care is already raising long-term
-        survival; level 4 needs these to push cure rates above half across most adult ages, with older adults
-        the hardest part.
-  - name: APL
-    what: Acute promyelocytic leukemia, a rare type of acute myeloid leukemia driven by one specific gene
-      fusion that targeted drugs can switch off.
-    level: 4
-    burden: moderate
-    survival: ~99% alive and ~97% event-free at about 4 years with ATRA plus arsenic trioxide (APL0406 trial,
-      low/intermediate-risk patients)
-    note: Standard care is a vitamin A-derived drug (ATRA) plus arsenic trioxide for about eight months,
-      usually with no traditional chemotherapy, and it cures nearly everyone who gets through the first
-      weeks. The early weeks carry a real risk of fatal bleeding and a serious reaction called differentiation
-      syndrome, so it needs urgent hospital care.
-    caveat: 'Trial figures exclude high-risk patients and early deaths before treatment; population studies
-      show more early deaths, so real-world cure rates are lower than the trial''s. Burden is a judgment
-      call: chemo-free but intensive and hospital-based at the start.'
-    url: https://ascopost.com/issues/february-10-2017/retinoic-acid-and-arsenic-trioxide-vs-retinoic-acid-and-chemotherapy-in-apl/
-  - name: AML (other)
-    what: Acute myeloid leukemia, a fast-growing cancer of immature blood-forming cells in the bone marrow,
-      mostly in older adults.
-    level: 3
-    burden: heavy
-    survival: ~33% alive at 5 years (SEER 5-year relative survival, all AML, 2016-2022)
-    share: ~22,720 US cases est. 2026 (SEER), median age 70
-    note: Fit patients get intensive chemotherapy and often a stem cell transplant, with high risks of infection
-      and death from treatment; older or frail patients usually get gentler venetoclax-based treatment that
-      controls it for a time. Cure is mainly reached in younger, fitter patients and in favorable genetic
-      subtypes.
-    caveat: The SEER figure includes APL, so non-APL AML survival is somewhat lower.
-    url: https://seer.cancer.gov/statfacts/html/amyl.html
-    forecast:
-      median: 2048
-      low: 2036
-      high: 2085
-      p2035: 12
-      p2045: 42
-      note: Older and frail patients would need a cure that does not depend on intensive chemo or transplant,
-        for example menin, FLT3 or IDH inhibitor combinations that clear disease for good; current gentler
-        regimens mostly control it for a time.
-  - name: CML
-    what: Chronic myeloid leukemia, a slow-growing marrow cancer caused by one gene fusion (BCR-ABL) that
-      daily pills can block.
-    level: 2
-    burden: moderate
-    survival: ~71% alive at 5 years (SEER 5-year relative survival, 2016-2022)
-    share: ~9,650 US cases est. 2026 (SEER), median age 67
-    note: Patients take a daily tyrosine kinase inhibitor pill with regular blood tests, usually for life,
-      with manageable side effects like fatigue and cramps. Most live near-normal lives, and some in deep
-      remission can stop treatment, but it is controlled rather than cured.
-    caveat: Population figure is lower than trial results for chronic-phase patients on TKIs, likely reflecting
-      older patients, advanced-phase cases and access gaps.
-    url: https://seer.cancer.gov/statfacts/html/cmyl.html
-    forecast:
-      median: 2043
-      low: 2033
-      high: 2075
-      p2035: 18
-      p2045: 52
-      note: Most patients would need to reach deep enough remission to stop pills for good; earlier use
-        of asciminib and newer combinations could raise treatment-free remission from a minority to a majority,
-        but that takes years of follow-up to prove.
-  - name: CLL
-    what: Chronic lymphocytic leukemia, a slow-growing cancer of mature lymphocytes, the most common leukemia
-      in adults.
-    level: 2
-    burden: moderate
-    survival: ~90% alive at 5 years (SEER 5-year relative survival, 2016-2022)
-    share: ~22,760 US cases est. 2026 (SEER), median age 71
-    note: Many people are just watched for years; when treatment is needed it is usually ongoing BTK inhibitor
-      pills or a fixed course of venetoclax-based pills or infusions, with side effects like bleeding, heart
-      rhythm problems or infections. It is well controlled for years but almost always comes back, so it
-      is not cured.
-    url: https://seer.cancer.gov/statfacts/html/clyl.html
-    forecast:
-      median: 2046
-      low: 2035
-      high: 2085
-      p2035: 13
-      p2045: 46
-      note: Fixed-duration pill combinations give long remissions but the disease nearly always returns;
-        level 4 would need regimens that clear it for good in most older patients, such as deeper MRD-guided
-        combinations, bispecifics or simpler cell therapies.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -163,22 +50,44 @@ forecast:
     a further lever. AML and CLL are each about a third of cases, so cured for most waits on at least one of them, which sets this forecast.'
 pipeline:
 - name: Ziftomenib with 7+3 in new AML (KOMET-007)
+  stage: Phase 3
   note: Menin inhibitor approved Nov 2025 for relapsed NPM1 AML; frontline combo showed 96% CRc in NPM1-mutant
     patients.
-  stage: Phase 3
   url: https://www.delveinsight.com/eha-conference/eha-2026/phase-iii-komet-007-trial
+  variants:
+  - aml-other
+  expected: '2028'
+  effect: some
+  effect_note: If KOMET-017 succeeds, adding a menin inhibitor to first treatment could raise cure rates
+    in NPM1-mutant AML, about a third of cases, but AML overall would remain far from cured for most.
 - name: Acalabrutinib plus venetoclax
+  stage: Approved 2025-26
   note: Approved Feb 19, 2026 as fixed-duration all-oral first-line CLL therapy (AMPLIFY).
-  stage: Approved 2025-26
   url: https://www.fda.gov//drugs/resources-information-approved-drugs/fda-approves-acalabrutinib-venetoclax-chronic-lymphocytic-leukemia-or-small-lymphocytic-lymphoma
+  variants:
+  - cll
+  effect: small
+  effect_note: Already approved; a fixed-length all-oral course gives treatment breaks, but CLL is still
+    controlled rather than cured.
 - name: Oral decitabine-cedazuridine plus venetoclax
-  note: Approved May 13, 2026 as an all-oral option for unfit newly diagnosed AML.
   stage: Approved 2025-26
+  note: Approved May 13, 2026 as an all-oral option for unfit newly diagnosed AML.
   url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-oral-combination-decitabine-and-cedazuridine-tablets-venetoclax-newly-diagnosed-acute
+  variants:
+  - aml-other
+  effect: small
+  effect_note: Already approved; an all-oral regimen eases treatment for older unfit patients but rarely
+    cures them.
 - name: Enzomenib
-  note: Menin inhibitor given breakthrough designation Oct 2026 for relapsed KMT2A-rearranged acute leukemia.
   stage: Phase 2
+  note: Menin inhibitor given breakthrough designation Oct 2026 for relapsed KMT2A-rearranged acute leukemia.
   url: https://www.onclive.com/view/fda-flashback-hematologic-cancer-decisions-and-news-from-september-2026
+  variants:
+  - aml-other
+  - adult-all
+  effect: small
+  effect_note: If later trials work, another menin inhibitor would help relapsed KMT2A-rearranged leukemia,
+    a small subset, mostly as a bridge to transplant.
 recent:
 - date: 2026-02
   text: FDA approved the first all-oral fixed-duration BTK plus BCL2 regimen for untreated CLL.

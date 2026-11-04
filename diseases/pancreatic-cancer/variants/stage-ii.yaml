@@ -1,0 +1,26 @@
+# Cure Watch variant record: one stage or type of Pancreatic cancer. Field guide: CONTRIBUTING.md.
+id: stage-ii
+name: Stage II
+order: 2
+what: A larger tumor or one that has reached nearby lymph nodes, still removable or borderline-removable
+  by surgery.
+level: 3
+burden: heavy
+survival: ~17% alive at 5 years (SEER 'regional' stage, 5-year relative survival, 2015-2021)
+share: ~28% of cases (SEER 2004-2012, AJCC 7th edition)
+treatment: Patients get chemotherapy and major surgery, sometimes with chemo first to shrink a borderline
+  tumor. In the PRODIGE 24 trial about 43% of fit patients given FOLFIRINOX after surgery were alive at
+  5 years, but most relapse and only a minority are cured.
+caveat: SEER 'regional' mixes stage II and some stage III and is only an approximation. Trial figure verified
+  at https://ascopost.com/news/september-2022/5-year-outcomes-with-adjuvant-mfolfirinox-vs-gemcitabine-in-pancreatic-cancer/
+  (selected fit patients after successful surgery).
+url: https://www.cancer.org/cancer/types/pancreatic-cancer/detection-diagnosis-staging/survival-rates.html
+forecast:
+  median: 2054
+  low: 2037
+  high: 2098
+  p2035: 7
+  p2045: 28
+  note: Even fit patients who get surgery and FOLFIRINOX mostly relapse, so this needs much stronger treatment
+    around surgery. RAS inhibitors and personalized mRNA vaccines in early trials after surgery are the
+    nearest candidates.

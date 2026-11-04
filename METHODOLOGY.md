@@ -2,20 +2,23 @@
 
 ## The cure ladder
 
-Each disease gets one level for the typical patient in rich countries.
+Each disease, and each stage or type of a disease, gets one level for the typical patient in rich countries.
 
 | Level | Name | Meaning |
 |---|---|---|
 | 0 | No treatment | Nothing changes the course of the disease. |
 | 1 | Slows it | Treatments slow it or ease symptoms, but it still advances. |
 | 2 | Controlled | Near-normal life on ongoing treatment, but not cured. |
-| 3 | Cured for some | A real cure or durable remission exists for a meaningful subset: some stages or subtypes, or an approved curative therapy that only some patients can get. |
-| 4 | Cured for most | Most patients who get standard care can be cured, and most could realistically tolerate and get that cure. A cure too toxic, risky or costly for most patients stays at level 3. |
-| 5 | Gone | Eradicated or reliably prevented at population scale. |
+| 3 | Cured for some | A real cure or durable remission exists for a meaningful subset, or an approved curative therapy that only some patients can get, but fewer than about 85% of patients are cured. |
+| 4 | Cured for most | At least about 85% of patients who get standard care are cured, and most could realistically tolerate and get that cure, but the cure is moderate or difficult treatment. |
+| 5 | Cured easily | Cured for most, and the standard cure is mild treatment: a short or easy course with few side effects, broadly affordable. This is the goal. |
+| 6 | Gone | Eradicated or reliably prevented at population scale. |
 
-On the site, levels 0 to 2 read "Not yet", level 3 "For some", and levels 4 and 5 "Yes". A level 4 or 5 disease whose standard cure is heavy (see [treatment burden](#treatment-burden)) reads "Yes, but tough" in yellow, not green: most patients are cured, but the road there is hard.
+**The 85% line.** "Cured" means cured, not alive at five years. Where relapse after five years is common (hormone-positive breast cancer, ovarian cancer, high-risk prostate cancer), use long-term or cure-fraction data; five-year survival is a stand-in only where late relapse is rare. A cure too toxic, risky or costly for most patients to get stays at level 3, however well it works.
 
-**Stages and subtypes.** A single level hides how different one cancer can be at different stages. So cancers also rate each stage (or, for blood cancers, each subtype) on the same ladder in `status.groups`, each with its own treatment burden and survival figure. There is still one ladder: a stage is rated exactly as a disease would be, for the typical patient at that stage. The disease's overall level stays the level for the typical patient across all stages, and it drives the home page. When the overall level is 4 but a later stage is not, the site reads "Yes, if caught early" and names the cured stages, so a patient with metastatic disease is never told their cancer is cured. The validator requires stage ratings for every level 4 cancer.
+On the site, levels 0 to 2 read "Not yet", level 3 "For some", level 4 "Yes, but tough" in yellow, and levels 5 and 6 "Yes" in green. Level 4 is a waypoint: most patients are cured, but the road there is hard, so level 4 records also forecast when the cure gets easy (`easy`).
+
+**Stages and types.** A single level hides how different one disease can be across stages or types. Stage IV colorectal cancer is closer to a different disease than to stage I. So diseases with distinct stages or types keep each one as its own variant in `diseases/<id>/variants/`, rated on the same ladder with its own burden, prognosis, forecast, catalysts and estimate log, and each gets its own page. The disease page becomes a hub that lists them. The disease's overall level is kept for the typical patient across all variants, to anchor the pooled forecast and the history, but it is never shown as a verdict on a disease with variants, so nobody with metastatic disease is told their cancer is cured. The validator requires variants for every cancer at level 4 or above.
 
 **Outbreak diseases** (Ebola, rabies and others) are rated by how well a patient can be treated once disease has started. Vaccines and post-exposure prevention are described in the text.
 

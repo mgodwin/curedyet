@@ -1,0 +1,30 @@
+# Cure Watch variant record: one stage or type of Colorectal cancer. Field guide: CONTRIBUTING.md.
+id: stage-iii
+name: Stage III
+order: 3
+what: The cancer has spread to nearby lymph nodes but not to distant organs.
+level: 3
+burden: heavy
+survival: ~65% alive at 5 years (net survival, England 2016-2020)
+treatment: Surgery followed by 3 to 6 months of chemotherapy (which can cause nerve damage, fatigue and
+  gut upset) cures roughly two in three; rectal cancers usually also need chemoradiation. A small mismatch-repair-deficient
+  subset now responds to immunotherapy.
+caveat: 'Rated 3: about 65% survive 5 years (England), well below 85%.'
+url: https://www.cancerresearchuk.org/about-cancer/bowel-cancer/survival
+forecast:
+  median: 2052
+  low: 2038
+  high: 2095
+  p2035: 5
+  p2045: 27
+  note: About 65% survive 5 years, so a big gain is needed. Candidates include immunotherapy for the mismatch-repair-deficient
+    minority (the ATOMIC trial), blood tests that guide who needs more chemotherapy, and structured exercise
+    after treatment, which improved survival in the CHALLENGE trial; none is enough alone.
+easy:
+  median: 2075
+  low: 2048
+  high: 2100
+  p2035: 1
+  p2045: 5
+  note: Surgery plus months of chemotherapy is the cure today; a mild cure for most stage III would need
+    drugs that replace both, which is far off.

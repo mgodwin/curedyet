@@ -15,53 +15,6 @@ status:
     Bepirovirsen (Hibsago), added to antivirals, now offers a finite-course functional cure for some adults
     with low HBsAg and no cirrhosis. A vaccine prevents infection with near 100% protection, but coverage
     gaps remain, especially in Africa.
-  groups:
-  - name: Chronic HBV, low HBsAg
-    what: Adults with long-term hepatitis B who already keep the virus suppressed with antiviral pills,
-      have no cirrhosis, and have a low level of a virus protein (HBsAg) in the blood.
-    level: 3
-    burden: moderate
-    survival: ~19% functional cure 6 months after stopping all treatment (B-Well, HBsAg up to 3,000 IU/mL);
-      ~26% if HBsAg up to 1,000
-    note: They can add six months of bepirovirsen (Hibsago) injections to their daily antiviral pills, with
-      common side effects like injection-site redness and pain and a temporary rise in a liver enzyme. About
-      one in five clear the virus protein and can stop all treatment; the rest continue lifelong pills.
-    caveat: FDA label (Oct 2026) requires adults without cirrhosis, at least 6 months on nucleos(t)ide antivirals,
-      suppressed HBV DNA and HBsAg 3,000 IU/mL or less by an FDA-authorised test. GSK states it is approved
-      in the US and Japan; EU and other decisions are pending. Functional cure was measured 24 weeks off
-      treatment, so longer durability is still being followed. GSK says people with HBsAg up to 1,000 are
-      about 45% of diagnosed cases globally, a company figure, so no share is given.
-    url: https://www.gsk.com/media/alvmln3q/final-2-_bepi_us_approval_sea_201026.pdf
-    forecast:
-      median: 2040
-      low: 2032
-      high: 2065
-      p2035: 25
-      p2045: 62
-      note: Needs finite-course combinations that functionally cure more than half of this group, up from
-        about 1 in 5 with bepirovirsen alone. Candidates pair bepirovirsen with siRNAs or immune boosters;
-        Vir's tobevibart plus elebsiran showed only modest cure rates and lacks a partner for Phase 3.
-  - name: Chronic HBV, other
-    what: People with long-term hepatitis B who do not qualify for the new cure drug, for example because
-      they have cirrhosis or higher levels of the virus protein.
-    level: 2
-    burden: moderate
-    survival: Under 1% functional cure after a year of standard antiviral pills (per GSK)
-    note: Those who need treatment take a daily tenofovir or entecavir pill, usually for life, which is
-      cheap as a generic and well tolerated but needs regular blood tests. It keeps the virus suppressed
-      and lowers the risk of cirrhosis and liver cancer, but almost never clears the infection.
-    caveat: The under-1% figure is GSK's summary of the literature. Many people with chronic HBV are not
-      on treatment at all because their infection is inactive and they are monitored instead.
-    url: https://www.gsk.com/media/alvmln3q/final-2-_bepi_us_approval_sea_201026.pdf
-    forecast:
-      median: 2050
-      low: 2036
-      high: 2080
-      p2035: 8
-      p2045: 42
-      note: Needs treatments that work despite high viral protein levels or cirrhosis, likely by silencing
-        or removing the hidden viral DNA (cccDNA) in liver cells. Gene-silencing and editing approaches
-        are early, so this group trails the low-HBsAg group by about a decade.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -93,13 +46,25 @@ forecast:
     plausible within 15-20 years, but the hidden viral cccDNA makes it hard. Most people with chronic HBV are outside the low-HBsAg group that bepirovirsen helps, so this forecast follows theirs.
 pipeline:
 - name: Bepirovirsen (Hibsago, antisense)
-  note: FDA approved Oct 2026; Japan decision expected H2 2026, EU and China H1 2027.
   stage: Approved 2025-26
+  note: FDA approved Oct 2026; Japan decision expected H2 2026, EU and China H1 2027.
   url: https://www.healio.com/news/gastroenterology/20261021/hibsago-scores-fda-approval-as-first-antisense-therapy-for-chronic-hepatitis-b
+  variants:
+  - low-hbsag
+  expected: '2026'
+  effect: small
+  effect_note: Already FDA-approved; a Japan decision widens access but does not change the roughly 1-in-5
+    functional cure rate seen in low-HBsAg patients.
 - name: Tobevibart + elebsiran (antibody + siRNA)
-  note: Vir's MARCH study tests finite combinations aiming for functional cure.
   stage: Phase 2
+  note: Vir's MARCH study tests finite combinations aiming for functional cure.
   url: https://investors.vir.bio/news/news-details/2025/Vir-Biotechnology-Announces-Preliminary-24-Week-Post-End-of-Treatment-Data-for-Tobevibart-and-Elebsiran-Combinations-in-Chronic-Hepatitis-B-From-the-MARCH-Study/default.aspx
+  variants:
+  - low-hbsag
+  - other
+  effect: some
+  effect_note: If a partner takes it into Phase 3 and finite combinations work, more people could stop
+    treatment for good, but Vir has paused Phase 3 for hepatitis B without a partner.
 recent:
 - date: 2026-10
   text: FDA approved bepirovirsen as the first antisense therapy for chronic hepatitis B.

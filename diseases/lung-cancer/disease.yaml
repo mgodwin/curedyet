@@ -17,103 +17,6 @@ status:
     cure rates in stage II-III. Metastatic disease is treated with targeted drugs (EGFR, ALK, ROS1, HER2
     and others) or immunotherapy, which give years of control for some but rarely cure. Small cell lung
     cancer remains highly lethal.
-  groups:
-  - name: Stage I
-    what: A small non-small cell tumor confined to the lung, with no spread to lymph nodes.
-    level: 4
-    burden: heavy
-    survival: ~65% alive at 5 years (net survival, all lung cancer types, England 2016-2020)
-    note: Surgery to remove part of the lung cures most people; those who cannot have surgery get a short
-      course of targeted radiation (SBRT), which is much easier. Some EGFR-positive patients add years of
-      targeted pills.
-    caveat: The figure covers all lung cancer by stage, not NSCLC alone, though NSCLC is most cases; US
-      SEER gives 67% 5-year relative survival for localized NSCLC (ACS). Many patients are older with other
-      lung or heart disease, which lowers overall survival.
-    url: https://www.cancerresearchuk.org/about-cancer/lung-cancer/survival
-  - name: Stage II
-    what: A larger non-small cell tumor, or one that has spread to lymph nodes inside the lung, but still
-      within one side of the chest.
-    level: 3
-    burden: heavy
-    survival: ~40% alive at 5 years (net survival, all lung cancer types, England 2016-2020)
-    note: Lung surgery plus chemotherapy, now often combined with immunotherapy before and after surgery
-      or targeted pills afterward. It cures a substantial share, but many relapse.
-    caveat: Covers all lung cancer types; these England figures largely predate routine perioperative immunotherapy,
-      so current outcomes are likely somewhat better.
-    url: https://www.cancerresearchuk.org/about-cancer/lung-cancer/survival
-    forecast:
-      median: 2036
-      low: 2029
-      high: 2055
-      p2035: 45
-      p2045: 75
-      note: Trials of immunotherapy before and after surgery, and targeted pills after surgery for EGFR
-        or ALK tumors, already keep over half of patients alive long term. This needs those regimens to
-        reach most patients in routine care, including older and frailer ones, with long-term data confirming
-        cures.
-  - name: Stage III
-    what: The non-small cell cancer has spread to lymph nodes in the middle of the chest or has grown into
-      nearby structures, but not to distant organs.
-    level: 3
-    burden: heavy
-    survival: ~15% alive at 5 years (net survival, all lung cancer types, England 2016-2020)
-    note: Usually chemoradiation followed by a year of immunotherapy (durvalumab), or surgery with chemo-immunotherapy
-      for some. It cures a meaningful minority at a heavy toll.
-    caveat: Covers all lung cancer types including small cell, and many England patients did not get full-intensity
-      treatment; trial patients on chemoradiation plus durvalumab do substantially better.
-    url: https://www.cancerresearchuk.org/about-cancer/lung-cancer/survival
-    forecast:
-      median: 2050
-      low: 2036
-      high: 2090
-      p2035: 7
-      p2045: 32
-      note: About 4 in 10 are alive at 5 years after chemoradiation and durvalumab in trials, so most would
-        need to be cured by better consolidation or perioperative regimens. Candidates are antibody-drug
-        conjugates and bispecific antibodies moved into these regimens, with Phase 3 trials running but
-        no cure-level results yet.
-  - name: Stage IV
-    what: The non-small cell cancer has spread to the other lung, the lining around the lung or heart, or
-      distant organs.
-    level: 1
-    burden: heavy
-    survival: ~5% alive at 5 years (net survival, all lung cancer types, England 2016-2020)
-    note: Ongoing immunotherapy, chemotherapy or targeted pills (for EGFR, ALK and other mutations) extend
-      life, sometimes by years, but rarely cure. A small group on immunotherapy has very long remissions.
-    caveat: Covers all lung cancer types; US SEER gives 12% 5-year relative survival for distant NSCLC (ACS,
-      diagnosed 2015-2021).
-    url: https://www.cancerresearchuk.org/about-cancer/lung-cancer/survival
-    forecast:
-      median: 2066
-      low: 2043
-      high: 2100
-      p2035: 2
-      p2045: 12
-      note: Most patients with spread lung cancer would need treatments that clear the disease for good,
-        while today only a small group on immunotherapy has very long remissions. The nearest candidates
-        are next-generation targeted drugs, antibody-drug conjugates and bispecifics, which so far extend
-        life rather than cure.
-  - name: Small cell
-    what: A fast-growing type of lung cancer, strongly linked to smoking, that has usually spread by the
-      time it is found.
-    level: 1
-    burden: heavy
-    survival: ~9% alive at 5 years (5-year relative survival, all SEER stages, US diagnosed 2012-2018; 34%
-      localized, 4% distant)
-    note: Limited-stage disease gets chemoradiation, now followed by immunotherapy, and some are cured.
-      Most have extensive-stage disease, where chemotherapy plus immunotherapy shrinks it at first but it
-      nearly always returns within months.
-    caveat: SEER data for 2012-2018 predate immunotherapy as standard care for small cell lung cancer.
-    url: https://www.cancer.org/cancer/types/lung-cancer/detection-diagnosis-staging/survival-rates.html
-    forecast:
-      median: 2072
-      low: 2046
-      high: 2100
-      p2035: 1
-      p2045: 7
-      note: Most patients have extensive-stage disease that nearly always returns within months, so this
-        needs a treatment that prevents relapse after first response. Tarlatamab and DLL3- or B7-H3-targeted
-        drugs are the nearest candidates, and they have extended survival but not shown cures.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -147,21 +50,51 @@ forecast:
     disease, which is a decade-plus project. Smoking decline helps incidence but not the cure rate. Stage IV is close to half of patients, so cured for most needs stage III to become curable as well, which sets this forecast.
 pipeline:
 - name: Ivonescimab (PD-1/VEGF bispecific)
-  note: BLA in EGFR-mutated NSCLC after TKI based on HARMONi; PDUFA Nov 14, 2026.
   stage: Filed
+  note: BLA in EGFR-mutated NSCLC after TKI based on HARMONi; PDUFA Nov 14, 2026.
   url: https://www.clinicaltrialsarena.com/news/summit-debuts-longer-term-ivonescimab-data-as-it-awaits-fda-nsclc-decision/
+  variants:
+  - stage-iv
+  expected: '2026-11-14'
+  effect: small
+  effect_note: If approved, it adds a post-TKI option for EGFR-mutated spread disease that delays progression;
+    overall survival benefit is unproven.
 - name: Zidesamtinib (Jideytro)
+  stage: Approved 2025-26
   note: ROS1 inhibitor approved July 2026 for previously treated ROS1-positive NSCLC.
-  stage: Approved 2025-26
   url: https://www.bioworld.com/articles/732912-gsks-newly-acquired-jideytro-wins-fda-nod-in-nsclc
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Already approved; it extends control for the small ROS1-positive group but does not cure
+    spread disease.
 - name: Zongertinib
-  note: Accelerated approval Feb 2026 for HER2-mutant nonsquamous NSCLC.
   stage: Approved 2025-26
+  note: Accelerated approval Feb 2026 for HER2-mutant nonsquamous NSCLC.
   url: https://www.mdlinx.com/article/the-biggest-fda-decision-drops-in-2026-so-far-oncology-approvals/4WRnWWH8XhXAO0mgWJJvfm
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Already approved; a targeted pill for HER2-mutant disease extends control in a small subset.
 - name: Sacituzumab tirumotecan (sac-TMT)
-  note: TROP2 ADC with overall survival gains in pretreated EGFR-mutant NSCLC in OptiTROP-Lung trials.
   stage: Phase 3
+  note: TROP2 ADC with overall survival gains in pretreated EGFR-mutant NSCLC in OptiTROP-Lung trials.
   url: https://egfrchannel.onclive.com/sac-tmt-extends-os-in-pretreated-egfr-mutated-nsclc
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: If Western Phase 3 trials confirm survival gains, it adds a later-line drug for EGFR-mutant
+    disease, not a cure.
+- name: Tarlatamab plus durvalumab, first-line maintenance (DeLLphi-305)
+  stage: Phase 3
+  note: Cut risk of death by 58% vs durvalumab alone as first-line maintenance in extensive-stage small
+    cell lung cancer (ESMO 2026, NEJM); Amgen plans to discuss with regulators, no decision date set.
+  url: https://www.targetedonc.com/view/tarlatamab-durvalumab-first-line-survival-es-sclc-dellphi-305
+  variants:
+  - small-cell
+  effect: small
+  effect_note: If approved for first-line use, it would meaningfully lengthen survival in extensive small
+    cell lung cancer, but few patients would be cured.
 recent:
 - date: 2026-02
   text: Zongertinib became an approved oral option for HER2-mutant lung cancer.

@@ -1,0 +1,27 @@
+# Cure Watch variant record: one stage or type of Hemophilia. Field guide: CONTRIBUTING.md.
+id: hemophilia-a
+name: Hemophilia A
+order: 1
+what: The more common form of hemophilia, where the blood lacks clotting factor VIII, so bleeds last longer
+  and can damage joints.
+level: 2
+burden: moderate
+survival: ~96-97% fewer treated bleeds than no prophylaxis on emicizumab; 56-60% had none (HAVEN 3)
+treatment: Most patients take lifelong preventive treatment, usually emicizumab injections under the skin
+  every one to four weeks or factor VIII infusions, which cost hundreds of thousands a year but prevent
+  most bleeds. It is controlled, not cured, now that the only approved gene therapy (Roctavian) was pulled
+  from the market in 2026.
+caveat: BioMarin announced Roctavian's voluntary withdrawal in Feb 2026 for commercial, not safety, reasons,
+  with US supply through about May 2026 (https://bleeding.org/news/biomarin-pulls-roctavian-hemophilia-a-gene-therapy-from-us-market).
+  Trial figure is for patients 12 and older without inhibitors; patients with inhibitors fare worse.
+url: https://pubmed.ncbi.nlm.nih.gov/30157389/
+forecast:
+  median: 2048
+  low: 2036
+  high: 2080
+  p2035: 9
+  p2045: 38
+  note: Needs a safe, durable and affordable one-time gene therapy or gene edit that most patients would
+    choose over excellent prophylaxis; Roctavian's withdrawal shows demand and durability are the hurdles.
+    Nearest candidates are early in vivo gene-editing programs (for example Metagenomi's MGX-001, planned
+    first dosing 2027) and remaining AAV programs.

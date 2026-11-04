@@ -1,0 +1,28 @@
+# Cure Watch variant record: one stage or type of Hepatitis B. Field guide: CONTRIBUTING.md.
+id: low-hbsag
+name: Chronic HBV, low HBsAg
+order: 1
+what: Adults with long-term hepatitis B who already keep the virus suppressed with antiviral pills, have
+  no cirrhosis, and have a low level of a virus protein (HBsAg) in the blood.
+level: 3
+burden: moderate
+survival: ~19% functional cure 6 months after stopping all treatment (B-Well, HBsAg up to 3,000 IU/mL);
+  ~26% if HBsAg up to 1,000
+treatment: They can add six months of bepirovirsen (Hibsago) injections to their daily antiviral pills,
+  with common side effects like injection-site redness and pain and a temporary rise in a liver enzyme.
+  About one in five clear the virus protein and can stop all treatment; the rest continue lifelong pills.
+caveat: FDA label (Oct 2026) requires adults without cirrhosis, at least 6 months on nucleos(t)ide antivirals,
+  suppressed HBV DNA and HBsAg 3,000 IU/mL or less by an FDA-authorised test. GSK states it is approved
+  in the US and Japan; EU and other decisions are pending. Functional cure was measured 24 weeks off treatment,
+  so longer durability is still being followed. GSK says people with HBsAg up to 1,000 are about 45% of
+  diagnosed cases globally, a company figure, so no share is given.
+url: https://www.gsk.com/media/alvmln3q/final-2-_bepi_us_approval_sea_201026.pdf
+forecast:
+  median: 2040
+  low: 2032
+  high: 2065
+  p2035: 25
+  p2045: 62
+  note: Needs finite-course combinations that functionally cure more than half of this group, up from
+    about 1 in 5 with bepirovirsen alone. Candidates pair bepirovirsen with siRNAs or immune boosters;
+    Vir's tobevibart plus elebsiran showed only modest cure rates and lacks a partner for Phase 3.

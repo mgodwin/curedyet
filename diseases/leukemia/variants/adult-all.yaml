@@ -1,0 +1,24 @@
+# Cure Watch variant record: one stage or type of Leukemias. Field guide: CONTRIBUTING.md.
+id: adult-all
+name: Adult ALL
+order: 2
+what: The same fast-growing cancer of immature lymphocytes, but in adults, where it is harder to cure.
+level: 3
+burden: heavy
+survival: ~40% long-term disease-free survival with intensive chemotherapy (NCI PDQ); 60-80% reach remission
+treatment: Adults get intensive multi-drug chemotherapy for two to three years, often a stem cell transplant,
+  and newer antibody drugs or CAR-T, with serious infection and organ risks. A meaningful minority are
+  cured, more so in younger adults and with targeted drugs for Philadelphia-positive disease.
+caveat: No current SEER or ACS 5-year survival figure for adults only was found; outcomes fall steeply
+  with age, and the PDQ figure may understate gains from blinatumomab, inotuzumab and pediatric-style
+  regimens.
+url: https://www.cancer.gov/types/leukemia/hp/adult-all-treatment-pdq
+forecast:
+  median: 2037
+  low: 2030
+  high: 2058
+  p2035: 42
+  p2045: 70
+  note: Adding blinatumomab, inotuzumab and earlier CAR-T to first-line care is already raising long-term
+    survival; level 4 needs these to push cure rates above half across most adult ages, with older adults
+    the hardest part.

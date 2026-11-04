@@ -1,0 +1,26 @@
+# Cure Watch variant record: one stage or type of Breast cancer. Field guide: CONTRIBUTING.md.
+id: stage-iv
+name: Stage IV
+order: 5
+what: Cancer that has spread beyond the breast and nearby nodes to distant organs such as bones, liver,
+  lungs or brain.
+level: 2
+burden: heavy
+survival: ~34% alive at 5 years (5-year relative survival, SEER distant stage, 2016-2022)
+share: ~6% of new US cases (SEER distant), plus earlier cancers that later return
+treatment: 'Ongoing treatment for life: endocrine pills with CDK4/6 inhibitors, HER2 drugs, antibody-drug
+  conjugates or chemotherapy, given in sequence as each stops working. Many live years with good quality
+  of life, especially with hormone-positive or HER2-positive disease, but it is rarely cured.'
+caveat: Level 2 fits hormone-positive and HER2-positive disease best; metastatic triple-negative disease
+  is closer to level 1. SEER distant counts only cancers metastatic at diagnosis.
+url: https://seer.cancer.gov/statfacts/html/breast.html
+forecast:
+  median: 2062
+  low: 2040
+  high: 2100
+  p2035: 2
+  p2045: 12
+  note: Most women with spread breast cancer would need treatment that clears it for good rather than
+    holding it back, and today only a small HER2-positive subset stays in remission for many years. The
+    nearest candidates are antibody-drug conjugates and oral SERDs used earlier, plus combinations aimed
+    at lasting remission, but none has shown cure in most patients.

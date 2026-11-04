@@ -1,0 +1,24 @@
+# Cure Watch variant record: one stage or type of Liver cancer. Field guide: CONTRIBUTING.md.
+id: stage-ii
+name: Stage II
+order: 2
+what: A single tumor that has grown into blood vessels, or several small tumors, all within the liver.
+level: 3
+burden: heavy
+survival: ~35% alive at 4 years (net survival, all primary liver cancer, England)
+treatment: Some can be cured by surgery or a transplant if they meet transplant size and number limits;
+  others get repeated treatment that blocks the tumor's blood supply (TACE), which controls but does not
+  usually cure.
+caveat: 4-year figures for all primary liver cancer, not hepatocellular carcinoma alone. AJCC stage maps
+  loosely onto the BCLC system doctors use to decide treatment.
+url: https://www.cancerresearchuk.org/about-cancer/liver-cancer/survival
+forecast:
+  median: 2052
+  low: 2036
+  high: 2095
+  p2035: 10
+  p2045: 30
+  note: Many tumors at this stage fall outside surgery and transplant limits and get TACE, which controls
+    but rarely cures, so this needs systemic drugs strong enough to shrink tumors into curable range for
+    most. Combinations of TACE with immunotherapy are the nearest candidates and have improved control
+    in Phase 3 trials, without showing cures.

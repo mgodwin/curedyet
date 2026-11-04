@@ -16,57 +16,6 @@ status:
     (fitusiran, concizumab, marstacimab) allow rarer dosing. Gene therapy for hemophilia B (Hemgenix)
     gives years of factor IX production, but the hemophilia A gene therapy Roctavian was withdrawn in
     2026 for commercial reasons. Access is poor in low-income countries, where most patients are undiagnosed.
-  groups:
-  - name: Hemophilia A
-    what: The more common form of hemophilia, where the blood lacks clotting factor VIII, so bleeds last
-      longer and can damage joints.
-    level: 2
-    burden: moderate
-    survival: ~96-97% fewer treated bleeds than no prophylaxis on emicizumab; 56-60% had none (HAVEN 3)
-    note: Most patients take lifelong preventive treatment, usually emicizumab injections under the skin
-      every one to four weeks or factor VIII infusions, which cost hundreds of thousands a year but prevent
-      most bleeds. It is controlled, not cured, now that the only approved gene therapy (Roctavian) was
-      pulled from the market in 2026.
-    caveat: BioMarin announced Roctavian's voluntary withdrawal in Feb 2026 for commercial, not safety,
-      reasons, with US supply through about May 2026 (https://bleeding.org/news/biomarin-pulls-roctavian-hemophilia-a-gene-therapy-from-us-market).
-      Trial figure is for patients 12 and older without inhibitors; patients with inhibitors fare worse.
-    url: https://pubmed.ncbi.nlm.nih.gov/30157389/
-    forecast:
-      median: 2048
-      low: 2036
-      high: 2080
-      p2035: 9
-      p2045: 38
-      note: Needs a safe, durable and affordable one-time gene therapy or gene edit that most patients would
-        choose over excellent prophylaxis; Roctavian's withdrawal shows demand and durability are the hurdles.
-        Nearest candidates are early in vivo gene-editing programs (for example Metagenomi's MGX-001, planned
-        first dosing 2027) and remaining AAV programs.
-  - name: Hemophilia B
-    what: A rarer form of hemophilia, where the blood lacks clotting factor IX, causing the same long-lasting
-      bleeds.
-    level: 3
-    burden: moderate
-    survival: 94% still off regular preventive treatment 4 years after one-time Hemgenix (HOPE-B, 54 men)
-    note: Most patients still use lifelong preventive factor IX infusions or newer injections, which control
-      bleeding well. A one-time gene therapy (Hemgenix) lets most adults who get it stop regular treatment
-      for years, but it costs about $3.5 million, needs liver monitoring, and few have had it.
-    caveat: Level 3 follows the rule that an approved curative therapy only some can get stays at 3; uptake
-      of Hemgenix is small, and the other approved B gene therapy, Pfizer's Beqvez, was discontinued worldwide
-      in Feb 2025 over weak demand (https://www.bleeding.org/news/pfizer-discontinues-beqvez-hemophilia-b-gene-therapy).
-      Gene therapy raises factor IX to roughly mild-hemophilia levels (~37% mean), not always normal; durability
-      beyond about 4-5 years is unknown. Burden rates the usual prophylaxis; the gene therapy route itself
-      is heavy (cost, liver monitoring). Figure is from a company-reported conference update, not a peer-reviewed
-      paper.
-    url: https://pmlive.com/pharma_news/csl-behring-announces-four-year-results-for-haemophilia-b-gene-therapy-hemgenix/
-    forecast:
-      median: 2042
-      low: 2033
-      high: 2075
-      p2035: 22
-      p2045: 55
-      note: Hemgenix already works for most adults who get it, so level 4 needs it or a successor to become
-        cheaper, approved for more patients including children, and actually taken up by most. Low demand
-        while prophylaxis works well, plus unknown durability past 5 years, keep uptake slow.
   last_reviewed: null
 treatment:
   best:
@@ -101,17 +50,34 @@ forecast:
     A, which is still early. Expect better control near term and cure for most in the 2040s. About 80% of patients have hemophilia A, which has no cure available, so this forecast follows hemophilia A's.
 pipeline:
 - name: Denecimig (Mim8, Frehemgo)
+  stage: Approved 2025-26
   note: Bispecific for hemophilia A; approved in Saudi Arabia and positive CHMP opinion in Sept 2026.
-  stage: Approved 2025-26
   url: https://en.wikipedia.org/wiki/Denecimig
+  variants:
+  - hemophilia-a
+  expected: 2026-11
+  effect: small
+  effect_note: If the EU approves it, a once-monthly pen adds a convenient preventive option, but it is
+    lifelong prevention, not a cure.
 - name: Fitusiran (Qfitlia)
+  stage: Approved 2025-26
   note: Antithrombin-lowering siRNA dosed as rarely as every two months, US approval March 2025.
-  stage: Approved 2025-26
   url: https://en.wikipedia.org/wiki/Haemophilia
+  variants:
+  - hemophilia-a
+  - hemophilia-b
+  effect: small
+  effect_note: Already approved; very infrequent injections ease the burden of prevention without curing
+    the disease.
 - name: Hemgenix (etranacogene dezaparvovec)
-  note: One-time AAV gene therapy for hemophilia B, approved 2022, $3.5M list price.
   stage: Approved 2025-26
+  note: One-time AAV gene therapy for hemophilia B, approved 2022, $3.5M list price.
   url: https://en.wikipedia.org/wiki/Etranacogene_dezaparvovec
+  variants:
+  - hemophilia-b
+  effect: small
+  effect_note: Already approved; one-time gene therapy already keeps most treated people off regular prevention,
+    so wider access, not new data, is the bottleneck.
 recent:
 - date: 2026-09
   text: EMA's CHMP recommended approval of denecimig, a once-weekly-or-less bispecific for hemophilia

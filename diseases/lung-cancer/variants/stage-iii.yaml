@@ -1,0 +1,24 @@
+# Cure Watch variant record: one stage or type of Lung cancer. Field guide: CONTRIBUTING.md.
+id: stage-iii
+name: Stage III
+order: 3
+what: The non-small cell cancer has spread to lymph nodes in the middle of the chest or has grown into
+  nearby structures, but not to distant organs.
+level: 3
+burden: heavy
+survival: ~15% alive at 5 years (net survival, all lung cancer types, England 2016-2020)
+treatment: Usually chemoradiation followed by a year of immunotherapy (durvalumab), or surgery with chemo-immunotherapy
+  for some. It cures a meaningful minority at a heavy toll.
+caveat: Covers all lung cancer types including small cell, and many England patients did not get full-intensity
+  treatment; trial patients on chemoradiation plus durvalumab do substantially better.
+url: https://www.cancerresearchuk.org/about-cancer/lung-cancer/survival
+forecast:
+  median: 2050
+  low: 2036
+  high: 2090
+  p2035: 7
+  p2045: 32
+  note: About 4 in 10 are alive at 5 years after chemoradiation and durvalumab in trials, so most would
+    need to be cured by better consolidation or perioperative regimens. Candidates are antibody-drug conjugates
+    and bispecific antibodies moved into these regimens, with Phase 3 trials running but no cure-level
+    results yet.

@@ -1,0 +1,36 @@
+# Cure Watch variant record: one stage or type of Melanoma. Field guide: CONTRIBUTING.md.
+id: stage-iii
+name: Stage III
+order: 4
+what: Melanoma that has spread to nearby lymph nodes or to skin close to the original tumor, but not to
+  distant organs.
+level: 3
+burden: heavy
+survival: ~77% melanoma-specific survival at 5 years, 69% at 10 years (AJCC 8th edition; ranges from 93%
+  for IIIA to 32% for IIID)
+share: ~10% of new US cases (SEER regional)
+treatment: Surgery plus about a year of immunotherapy (increasingly started before surgery), or BRAF/MEK
+  pills for BRAF-mutant disease; immune side effects can be serious or permanent. Most are cured, though
+  IIID often relapses.
+caveat: 'AJCC survival comes from patients diagnosed from 1998, mostly before modern adjuvant immunotherapy,
+  so current outcomes are likely somewhat better. Rated 3: about 69% survived melanoma at 10 years (AJCC
+  8th edition, 32% for IIID), below 85%, though modern treatment is likely better.'
+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5978683/
+forecast:
+  median: 2037
+  low: 2030
+  high: 2060
+  p2035: 38
+  p2045: 68
+  note: Ten-year melanoma survival was 69% before modern drugs, but immunotherapy before surgery (NADINA,
+    SWOG S1801) and the mRNA vaccine intismeran with pembrolizumab (a 42% cut in relapse in the 2026 INTerpath-001
+    Phase 3) could lift long-term cure past 85%; it needs several more years of follow-up and overall
+    survival data.
+easy:
+  median: 2060
+  low: 2040
+  high: 2100
+  p2035: 3
+  p2045: 16
+  note: Even if cure rates rise, the treatment is surgery plus immunotherapy with common serious side
+    effects; a mild cure would need far gentler drugs or short courses.

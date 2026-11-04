@@ -16,72 +16,6 @@ status:
     can stop seizures for some people with drug-resistant focal epilepsy, and devices such as responsive
     neurostimulation reduce seizures for others. In low-income countries about three quarters of patients
     do not get the treatment they need.
-  groups:
-  - name: Drug-responsive epilepsy
-    what: Epilepsy in which daily antiseizure medicines stop the seizures.
-    level: 2
-    burden: moderate
-    survival: ~64% seizure-free for at least a year on medicines (30-year Glasgow cohort of newly treated
-      patients)
-    share: About two-thirds of newly treated patients
-    note: Most people become seizure-free on one or two daily antiseizure medicines, usually taken for years
-      or for life, with side effects such as tiredness, dizziness or mood changes and pregnancy concerns
-      with some drugs. Seizures are controlled, not cured, though some can later stop medicines.
-    caveat: The 64% is the share seizure-free at last follow-up in one specialist center; it barely changed
-      across three decades despite newer drugs.
-    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5885858
-    forecast:
-      median: 2056
-      low: 2039
-      high: 2100
-      p2035: 5
-      p2045: 20
-      note: A treatment that removes the cause so most people can stop medicines without seizures returning
-        would be needed; nothing in late trials does this, though gene therapies for specific genetic epilepsies
-        are a start.
-  - name: Drug-resistant epilepsy
-    what: Epilepsy in which seizures keep happening despite trying at least two suitable medicines.
-    level: 1
-    burden: moderate
-    share: About one-third of patients
-    note: Care is usually several medicines at once, sometimes plus a ketogenic diet or an implanted stimulator
-      (vagus nerve or responsive neurostimulation), which reduce but rarely stop seizures. Seizures, injuries
-      and a higher risk of sudden death persist for most.
-    caveat: 'Burden is a judgment call: polytherapy side effects are moderate, but device implants add surgery.
-      People whose seizures start in one removable brain area may be surgery candidates (see the next group).'
-    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5885858
-    forecast:
-      median: 2060
-      low: 2042
-      high: 2100
-      p2035: 3
-      p2045: 14
-      note: Epilepsy with many causes would need cures tailored to each; one-time cell and gene therapies
-        such as NRTX-1001 and antisense drugs for Dravet syndrome are the nearest candidates but cover only
-        some subtypes.
-  - name: Drug-resistant focal epilepsy (surgery candidates)
-    what: Drug-resistant epilepsy where seizures start in one brain area that surgeons can safely remove
-      or destroy.
-    level: 3
-    burden: heavy
-    survival: ~52% seizure-free 5 years and ~47% 10 years after epilepsy surgery (adult cohort, simple partial
-      seizures allowed)
-    note: After detailed testing, part of the brain is removed or laser-ablated; this is brain surgery with
-      risks such as memory, mood or visual field problems. About half stay seizure-free long term (better
-      for temporal lobe surgery), many still on medicines, so it cures a meaningful share but not most.
-    caveat: Figures confirmed from the abstract via search; PubMed blocked a direct fetch. A randomized
-      trial found 58% vs 8% free of disabling seizures one year after temporal lobe surgery vs medicines
-      (Wiebe et al., NEJM 2001). Only a minority of drug-resistant patients are suitable surgical candidates,
-      and surgery is underused.
-    url: https://pubmed.ncbi.nlm.nih.gov/22000136/
-    forecast:
-      median: 2046
-      low: 2032
-      high: 2085
-      p2035: 20
-      p2045: 46
-      note: A less invasive one-time treatment that keeps most patients seizure-free long term would be
-        needed; the NRTX-1001 cell therapy, now in Phase 3 for temporal lobe epilepsy, is the nearest candidate.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -114,28 +48,68 @@ forecast:
     most of a disease with many causes will take much longer.
 pipeline:
 - name: Azetukalner (Kv7 opener)
-  note: Xenon submitted the NDA for focal seizures in Sept 2026 after the positive Phase 3 X-TOLE2.
   stage: Filed
+  note: Xenon submitted the NDA for focal seizures in Sept 2026 after the positive Phase 3 X-TOLE2.
   url: https://www.neurologylive.com/view/xenon-submits-new-drug-application-azetukalner-treatment-focal-seizures
+  variants:
+  - drug-resistant
+  expected: '2027'
+  effect: small
+  effect_note: If approved, it adds another add-on pill for focal seizures; new seizure drugs rarely make
+    many drug-resistant patients seizure-free.
 - name: NRTX-1001 (inhibitory interneuron cell therapy)
+  stage: Phase 3
   note: One-time implant for drug-resistant mesial temporal lobe epilepsy; Phase 1/2 showed median 92%
     seizure reduction in the low-dose group.
-  stage: Phase 3
   url: https://www.neurologylive.com/view/phase-3-epic-trial-evaluate-nrtx-1001-cell-therapy-drug-resistant-mesial-temporal-lobe-epilepsy
+  variants:
+  - drug-resistant
+  - surgery-candidates
+  effect: some
+  effect_note: If the Phase 3 confirms early results, a one-time cell implant could make many people with
+    temporal lobe epilepsy seizure-free without removing brain tissue.
 - name: Zorevunersen (SCN1A antisense, Dravet syndrome)
-  note: EMPEROR fully enrolled in June 2026; readout expected Q3 2027 and possible US launch early 2028.
   stage: Phase 3
+  note: EMPEROR fully enrolled in June 2026; readout expected Q3 2027 and possible US launch early 2028.
   url: https://www.biospace.com/press-releases/stoke-therapeutics-announces-second-quarter-2026-financial-results-and-provides-business-updates
+  variants:
+  - drug-resistant
+  expected: '2027'
+  effect: some
+  effect_note: If EMPEROR succeeds, it would be the first treatment aimed at the cause of Dravet syndrome,
+    a small share of drug-resistant epilepsy.
 - name: ETX101 (AAV gene therapy, Dravet syndrome)
+  stage: Phase 2
   note: Early-stage trials; Breakthrough Therapy designation in Jan 2026 after sustained seizure reductions
     from one dose. Exact phase unclear.
-  stage: Phase 2
   url: https://xtalks.com/international-epilepsy-day-2026-advances-across-therapies-devices-and-monitoring-4606
+  variants:
+  - drug-resistant
+  expected: '2027'
+  effect: some
+  effect_note: If the pivotal study works, a one-dose gene therapy could durably cut seizures in young
+    children with Dravet syndrome.
 - name: NeuroPace RNS for generalized epilepsy
+  stage: Filed
   note: PMA supplement for idiopathic generalized epilepsy is under FDA review, based on the NAUTILUS
     study.
-  stage: Filed
   url: https://xtalks.com/international-epilepsy-day-2026-advances-across-therapies-devices-and-monitoring-4606
+  variants:
+  - drug-resistant
+  effect: small
+  effect_note: FDA said in July 2026 the application was not approvable as filed; if later approved, it
+    would reduce seizures in generalized epilepsy without curing it.
+- name: Opakalim (BHV-7000, Kv7 opener) RISE3
+  stage: Phase 3
+  note: Fully enrolled pivotal Phase 2/3 add-on trial in refractory focal epilepsy; Biohaven guides topline
+    results in 2H 2026.
+  url: https://www.americanpharmaceuticalreview.com/1315-News/626483-Opakalim-Study-in-Focal-Epilepsy-Reaches-Full-Enrollment/
+  variants:
+  - drug-resistant
+  expected: '2026'
+  effect: small
+  effect_note: If positive, it adds another add-on pill that reduces seizures, but it is unlikely to make
+    most drug-resistant patients seizure-free.
 recent:
 - date: 2026-03
   text: Azetukalner cut focal seizures by a median 53% at 25 mg vs 10% on placebo in Phase 3 X-TOLE2.

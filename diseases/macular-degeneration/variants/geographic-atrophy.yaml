@@ -1,0 +1,21 @@
+# Cure Watch variant record: one stage or type of Macular degeneration. Field guide: CONTRIBUTING.md.
+id: geographic-atrophy
+name: Dry AMD (geographic atrophy)
+order: 2
+what: The late form of dry macular degeneration, where patches of retinal cells in the center of vision
+  slowly die off.
+level: 1
+burden: moderate
+treatment: Pegcetacoplan or avacincaptad pegol eye injections every one to two months slowed lesion growth
+  by roughly 16-22% over two years, without a clear benefit on vision, and raised the risk of developing
+  wet AMD. Lost vision is not restored and the disease keeps advancing.
+caveat: Figures were confirmed from the published abstract via search; PubMed blocked a direct fetch.
+url: https://pubmed.ncbi.nlm.nih.gov/37865470/
+forecast:
+  median: 2059
+  low: 2041
+  high: 2100
+  p2035: 3
+  p2045: 12
+  note: Something would need to stop atrophy completely and ideally restore lost cells; current complement
+    drugs only slow lesion growth by about a fifth, and retinal cell replacement is in early trials.

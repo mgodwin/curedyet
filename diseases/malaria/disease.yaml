@@ -9,7 +9,7 @@ toll:
   text: About 282 million cases and 610,000 deaths in 2024 (WHO World Malaria Report 2025)
   url: https://www.who.int/teams/global-malaria-programme/reports/world-malaria-report-2025
 status:
-  level: 4
+  level: 5
   why: Artemisinin combination therapies cure most uncomplicated cases in 3 days when given promptly.
   today: ACTs cure about 94-97% of uncomplicated cases, and IV artesunate treats severe malaria. Two vaccines
     (RTS,S and R21) are in 25 African countries, and 47 countries are certified malaria-free. Artemisinin
@@ -28,6 +28,7 @@ treatment:
 forecast:
   bottleneck: access-limited
   reached: 1950
+  reached_easy: 2000
   faster_note: Already curable when treated promptly; acceleration would mostly help through faster trials
     of resistance-proof drugs, antibodies and vaccines, while delivery and funding remain the main limit.
   outlook: Malaria is curable for most patients who get prompt care, so the level is 4 even though deaths

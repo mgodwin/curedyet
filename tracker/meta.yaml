@@ -3,13 +3,15 @@ repo: mgodwin/curedyet
 week: 1
 updated: '2026-11-03'
 next_update: '2026-11-05'
-headline: Only 3 of 50 major diseases are cured for most patients outright, three cancers only when caught
-  early, and none of the rest is better than a coin flip to get there by 2035.
+headline: Only hepatitis C and malaria are cured easily for most patients, melanoma too when caught early,
+  and none of the rest is better than a coin flip to get a cure for most by 2035.
 this_week:
-- This is the baseline. Of 50 diseases and conditions, 3 are cured for most patients outright (hepatitis C,
-  TB and malaria), breast, prostate and melanoma cancers are cured for most when caught before they spread, and 11 have a real cure for some patients. 20 still
-  sit at level 0 or 1, including Alzheimer's, Parkinson's, ALS, pancreatic cancer, rabies, osteoarthritis
-  and aging itself.
+- This is the baseline, now on a 7-rung ladder where "cured for most" needs at least about 85% of
+  patients cured and "cured easily" also needs mild treatment. Hepatitis C and malaria are cured easily,
+  and so is melanoma caught at stages 0 or I. Drug-susceptible TB and the early stages of breast, prostate,
+  colorectal and ovarian cancer are cured for most, but the treatment is hard. 20 still sit at level 0
+  or 1, including Alzheimer's, Parkinson's, ALS, pancreatic cancer, rabies, osteoarthritis and aging
+  itself.
 - A new cure takes about 27 years today from discovery to most patients, and trials alone take 6 to 9.
   Records already set somewhere, like COVID vaccine trials in about 7 months, show it could take about
   5. Each forecast blends today's pace with a faster pipeline, weighted by the acceleration index, now
