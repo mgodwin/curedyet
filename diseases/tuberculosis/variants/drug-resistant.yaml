@@ -1,0 +1,41 @@
+# Cure Watch variant record: one stage or type of Tuberculosis. Field guide: CONTRIBUTING.md.
+id: drug-resistant
+name: Drug-resistant TB
+order: 2
+what: TB that no longer responds to rifampicin, the most important standard TB drug, and often also to
+  isoniazid (MDR/RR-TB).
+level: 3
+burden: moderate
+burden_why: Six months of several drugs, including one that can damage nerves and blood counts, with regular
+  blood tests and heart checks.
+survival: ~71% treatment success worldwide
+share: About 3 in 100 people newly diagnosed with TB worldwide have drug-resistant TB, and about 1 in
+  6 of those previously treated
+share_url: https://www.who.int/teams/global-programme-on-tuberculosis-and-lung-health/tb-reports/global-tuberculosis-report-2025/tb-disease-burden/1-3-drug-resistant-tb
+treatment: Six-month all-oral regimens such as BPaLM (bedaquiline, pretomanid, linezolid, moxifloxacin)
+  replaced up to two years of injections, and cure most patients. Linezolid can damage nerves and lower
+  blood counts, so regular blood tests and heart checks are needed; pre-XDR TB (also resistant to fluoroquinolones)
+  can often be treated with BPaL, while XDR-TB needs longer tailored regimens with lower success.
+caveat: The 71% is a global figure that still includes older, longer regimens and weak health systems;
+  trials of the 6-month regimens report higher success. Only about 2 in 5 people with drug-resistant TB
+  worldwide get treatment. Trials of 6-month regimens report roughly 86 to 90% success, but programme-wide
+  outcomes are about 71% worldwide, XDR-TB does worse and long-term relapse data are limited, so the 85%
+  cured bar is not yet clearly met.
+url: https://cdn.who.int/media/docs/default-source/global-tuberculosis-report-2025/global-tb-report-2025_factsheet.pdf
+forecast:
+  median: 2030
+  low: 2027
+  high: 2042
+  p2035: 68
+  p2045: 85
+  note: Six-month all-oral regimens (BPaLM, BEAT-TB) already reach about 86 to 90% success in trials and
+    some cohorts, so the step needed is solid real-world and long-term relapse data showing at least 85%
+    cured, plus better options for XDR-TB.
+easy:
+  median: 2041
+  low: 2032
+  high: 2070
+  p2035: 18
+  p2045: 55
+  note: Needs a short regimen without linezolid's nerve and blood toxicity that works regardless of resistance;
+    candidates include sorfequiline, quabodepistat and other new-class drugs now in Phase 2.

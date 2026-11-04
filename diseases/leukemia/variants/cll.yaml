@@ -1,0 +1,27 @@
+# Cure Watch variant record: one stage or type of Leukemias. Field guide: CONTRIBUTING.md.
+id: cll
+name: CLL
+order: 6
+what: Chronic lymphocytic leukemia, a slow-growing cancer of mature lymphocytes, the most common leukemia
+  in adults.
+level: 2
+burden: moderate
+burden_why: Many are just watched; when needed, treatment is pills or a fixed course with side effects
+  like bleeding or heart rhythm problems.
+survival: ~90% alive at 5 years (SEER 5-year relative survival, 2016-2022)
+share: Roughly 1 in 3 new leukemias in the US are CLL
+share_url: https://seer.cancer.gov/statfacts/html/clyl.html
+treatment: Many people are just watched for years; when treatment is needed it is usually ongoing BTK
+  inhibitor pills or a fixed course of venetoclax-based pills or infusions, with side effects like bleeding,
+  heart rhythm problems or infections. It is well controlled for years but almost always comes back, so
+  it is not cured.
+url: https://seer.cancer.gov/statfacts/html/clyl.html
+forecast:
+  median: 2046
+  low: 2035
+  high: 2085
+  p2035: 13
+  p2045: 46
+  note: Fixed-duration pill combinations give long remissions but the disease nearly always returns; level
+    4 would need regimens that clear it for good in most older patients, such as deeper MRD-guided combinations,
+    bispecifics or simpler cell therapies.

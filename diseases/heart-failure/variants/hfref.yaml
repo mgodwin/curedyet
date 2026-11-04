@@ -1,0 +1,27 @@
+# Cure Watch variant record: one stage or type of Heart failure. Field guide: CONTRIBUTING.md.
+id: hfref
+name: Reduced ejection fraction (HFrEF)
+order: 1
+what: The heart muscle is weakened and squeezes too little blood out with each beat.
+level: 1
+burden: moderate
+burden_why: Four lifelong drug types with frequent blood tests, and some need an implanted defibrillator
+  or pacing device.
+survival: ~46% alive 5 years after a first heart failure hospitalization
+treatment: Four lifelong drug classes (ARNI, beta blocker, MRA, SGLT2 inhibitor), plus implanted defibrillators
+  or pacing devices for some, extend life a lot and can partly restore heart function. They need frequent
+  blood tests for kidney and potassium problems, and most patients still slowly worsen; transplant or
+  a heart pump helps only a few.
+caveat: The survival figure comes from French patients first hospitalized in 2000, before ARNI and SGLT2
+  drugs, so survival today is likely better. Some patients' heart function recovers on treatment, but
+  they usually still need the drugs.
+url: https://esc365.escardio.org/journal/35798
+forecast:
+  median: 2058
+  low: 2042
+  high: 2100
+  p2035: 3
+  p2045: 13
+  note: Needs a one-time therapy that makes weakened heart muscle work normally again, such as cardiac
+    gene therapy or regeneration. AskBio's AB-1002 gene therapy is the most advanced, in a randomized
+    Phase 2, so approval for most patients is many years away.

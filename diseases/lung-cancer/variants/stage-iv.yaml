@@ -1,0 +1,27 @@
+# Cure Watch variant record: one stage or type of Lung cancer. Field guide: CONTRIBUTING.md.
+id: stage-iv
+name: Stage IV
+order: 4
+what: The non-small cell cancer has spread to the other lung, the lining around the lung or heart, or
+  distant organs.
+level: 1
+burden: heavy
+burden_why: 'Treatment doesn''t stop: immunotherapy, chemotherapy or targeted pills continue indefinitely
+  and rarely cure.'
+survival: ~5% alive at 5 years (net survival, all lung cancer types, England 2016-2020)
+share: About half of US lung cancers have spread to distant organs at diagnosis (SEER 'distant', 51%)
+share_url: https://seer.cancer.gov/statfacts/html/lungb.html
+treatment: Ongoing immunotherapy, chemotherapy or targeted pills (for EGFR, ALK and other mutations) extend
+  life, sometimes by years, but rarely cure. A small group on immunotherapy has very long remissions.
+caveat: Covers all lung cancer types; US SEER gives 12% 5-year relative survival for distant NSCLC (ACS,
+  diagnosed 2015-2021).
+url: https://www.cancerresearchuk.org/about-cancer/lung-cancer/survival
+forecast:
+  median: 2066
+  low: 2043
+  high: 2100
+  p2035: 2
+  p2045: 12
+  note: Most patients with spread lung cancer would need treatments that clear the disease for good, while
+    today only a small group on immunotherapy has very long remissions. The nearest candidates are next-generation
+    targeted drugs, antibody-drug conjugates and bispecifics, which so far extend life rather than cure.

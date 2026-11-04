@@ -9,8 +9,12 @@ toll:
   text: ~112,000 US cases and ~8,510 US deaths est. 2026; distant-stage 5-year survival has risen to about
     35%.
   url: https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2026/2026-cancer-facts-and-figures.pdf
+  ratio: "1 in 45"
+  ratio_caption: "Americans will be diagnosed with melanoma in their lifetime"
+  ratio_url: https://seer.cancer.gov/statfacts/html/melan.html
+  ratio_basis: "NCI SEER Cancer Stat Facts: about 2.2% of men and women diagnosed with melanoma of the skin in their lifetime (2021-2023 data). ACS gives 1 in 33 for White people, 1 in 1,000 for Black people."
 status:
-  level: 4
+  level: 5
   why: Most melanomas are found early and cured by excision, and immunotherapy now gives durable remissions
     to many patients with advanced disease.
   today: Thin localized melanoma is cured by surgery in nearly all patients. For stage III-IV, PD-1 and
@@ -31,7 +35,8 @@ treatment:
   cure_tolerable: true
 forecast:
   bottleneck: access-limited
-  reached: 2000
+  reached: 1990
+  reached_easy: 1990
   faster_note: Already cured for most; acceleration would mainly help resistant advanced and rare subtypes
     such as uveal melanoma and spread personalized vaccines, a modest change overall.
   outlook: Melanoma already meets the cured-for-most bar because most cases are caught early, with US
@@ -40,14 +45,26 @@ forecast:
     advanced disease and rare subtypes like mucosal and uveal melanoma.
 pipeline:
 - name: Intismeran autogene (mRNA-4157/V940) plus pembrolizumab
+  stage: Phase 3
   note: INTerpath-001 cut recurrence risk (HR 0.58) in resected high-risk melanoma; NEJM paper due Nov
     11, 2026.
-  stage: Phase 3
   url: https://www.onclive.com/view/adjuvant-intismeran-autogene-plus-pembrolizumab-improves-rfs-and-dmfs-in-melanoma
+  variants:
+  - stage-ii
+  - stage-iii
+  expected: '2026-11-11'
+  effect: small
+  effect_note: Full results should confirm fewer relapses after surgery (HR 0.58); that firms up cure
+    rates for high-risk resected melanoma but adds a year of injections rather than making cure easier.
 - name: RP1 (vusolimogene, Tudriqev) plus nivolumab
-  note: Oncolytic virus got accelerated approval Aug 6, 2026 after PD-1 failure, following two rejections.
   stage: Approved 2025-26
+  note: Oncolytic virus got accelerated approval Aug 6, 2026 after PD-1 failure, following two rejections.
   url: https://www.thefdalawblog.com/2026/08/the-fda-adcomm-reboot-part-2-lessons-from-the-meeting-on-replimunes-rp1/
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Already approved; it helps some patients after PD-1 drugs fail, but durable cures in that
+    setting remain uncommon.
 recent:
 - date: 2026-10
   text: INTerpath-001 at ESMO showed a personalized mRNA vaccine plus pembrolizumab lowered recurrence

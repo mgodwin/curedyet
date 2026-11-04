@@ -1,0 +1,27 @@
+# Cure Watch variant record: one stage or type of Lung cancer. Field guide: CONTRIBUTING.md.
+id: small-cell
+name: Small cell
+order: 5
+what: A fast-growing type of lung cancer, strongly linked to smoking, that has usually spread by the time
+  it is found.
+level: 1
+burden: heavy
+burden_why: Chemotherapy, radiation and immunotherapy, and for most it returns within months.
+survival: ~9% alive at 5 years (5-year relative survival, all SEER stages, US diagnosed 2012-2018; 34%
+  localized, 4% distant)
+share: About 1 in 8 lung cancers are small cell (10-15%)
+share_url: https://www.cancer.org/cancer/types/lung-cancer/about/what-is.html
+treatment: Limited-stage disease gets chemoradiation, now followed by immunotherapy, and some are cured.
+  Most have extensive-stage disease, where chemotherapy plus immunotherapy shrinks it at first but it
+  nearly always returns within months.
+caveat: SEER data for 2012-2018 predate immunotherapy as standard care for small cell lung cancer.
+url: https://www.cancer.org/cancer/types/lung-cancer/detection-diagnosis-staging/survival-rates.html
+forecast:
+  median: 2072
+  low: 2046
+  high: 2100
+  p2035: 1
+  p2045: 7
+  note: Most patients have extensive-stage disease that nearly always returns within months, so this needs
+    a treatment that prevents relapse after first response. Tarlatamab and DLL3- or B7-H3-targeted drugs
+    are the nearest candidates, and they have extended survival but not shown cures.

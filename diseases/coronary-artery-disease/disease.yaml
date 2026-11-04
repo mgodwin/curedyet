@@ -7,6 +7,10 @@ summary: Plaque builds up in the heart's arteries, causing chest pain, heart att
 toll:
   text: Ischaemic heart disease caused about 9.5M deaths worldwide in 2023, the top cause of death (WHO).
   url: https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death
+  ratio: "1 in 20"
+  ratio_caption: "US adults aged 20 and older has coronary artery disease"
+  ratio_url: https://www.cdc.gov/heart-disease/data-research/facts-stats/index.html
+  ratio_basis: "CDC heart disease facts: about 1 in 20 adults age 20+ have CAD (about 5%), citing AHA 2023 statistics."
 status:
   level: 2
   why: Statins, PCSK9 drugs, stents and bypass let most patients live long lives, but plaque is not removed

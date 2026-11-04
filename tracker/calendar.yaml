@@ -43,10 +43,6 @@
     cancer (lidERA).'
   url: https://www.curetoday.com/view/breast-cancer-treatments-awaiting-fda-decisions-4-to-watch
 - date: 2026-12
-  disease: hepatitis-b
-  event: 'Hepatitis B: Japan regulatory decision on bepirovirsen (GSK guided H2 2026)'
-  url: https://www.sec.gov/Archives/edgar/data/0001131399/000119312526384439/d331501d6k.htm
-- date: 2026-12
   disease: ibd
   event: 'Crohn''s & ulcerative colitis: Abivax plans to submit obefazimod NDA for ulcerative colitis
     by end of 2026'
@@ -78,11 +74,6 @@
   event: 'Osteoarthritis: Pacira expects Part A data from the Phase 2 ASCEND trial of PCRX-201 knee gene
     therapy near end of 2026.'
   url: https://www.itiger.com/news/2581234727
-- date: 2026-12
-  disease: prostate-cancer
-  event: 'Prostate cancer: FDA action on talazoparib plus enzalutamide for HRR-mutated metastatic castration-sensitive
-    prostate cancer (Q4 2026 action date).'
-  url: https://www.rttnews.com/3669562/pfizer-secures-fda-priority-review-for-talzenna-plus-xtandi-in-metastatic-prostate-cancer.aspx
 - date: 2026-12
   disease: schizophrenia
   event: 'Schizophrenia: FDA decision on TEV-749 once-monthly olanzapine LAI (PDUFA in Q4 2026)'

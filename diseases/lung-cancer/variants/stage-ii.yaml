@@ -1,0 +1,28 @@
+# Cure Watch variant record: one stage or type of Lung cancer. Field guide: CONTRIBUTING.md.
+id: stage-ii
+name: Stage II
+order: 2
+what: A larger non-small cell tumor, or one that has spread to lymph nodes inside the lung, but still
+  within one side of the chest.
+level: 3
+burden: heavy
+burden_why: Lung surgery plus chemotherapy, often with immunotherapy before and after or targeted pills
+  afterward.
+survival: ~40% alive at 5 years (net survival, all lung cancer types, England 2016-2020)
+share: Part of the roughly 1 in 5 US lung cancers that have spread to nearby lymph nodes or tissue (SEER
+  'regional', 21%)
+share_url: https://seer.cancer.gov/statfacts/html/lungb.html
+treatment: Lung surgery plus chemotherapy, now often combined with immunotherapy before and after surgery
+  or targeted pills afterward. It cures a substantial share, but many relapse.
+caveat: Covers all lung cancer types; these England figures largely predate routine perioperative immunotherapy,
+  so current outcomes are likely somewhat better.
+url: https://www.cancerresearchuk.org/about-cancer/lung-cancer/survival
+forecast:
+  median: 2036
+  low: 2029
+  high: 2055
+  p2035: 45
+  p2045: 75
+  note: Trials of immunotherapy before and after surgery, and targeted pills after surgery for EGFR or
+    ALK tumors, already keep over half of patients alive long term. This needs those regimens to reach
+    most patients in routine care, including older and frailer ones, with long-term data confirming cures.

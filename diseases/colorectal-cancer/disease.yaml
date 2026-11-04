@@ -8,6 +8,10 @@ toll:
   text: More than 2.0M new cases and 918,000 deaths/yr worldwide (2024); ~158,850 US cases and ~55,230
     US deaths est. 2026.
   url: https://pressroom.cancer.org/global-cancer-statistics-2026
+  ratio: "1 in 26"
+  ratio_caption: "Americans will be diagnosed with colorectal cancer in their lifetime"
+  ratio_url: https://seer.cancer.gov/statfacts/html/colorect.html
+  ratio_basis: "NCI SEER Cancer Stat Facts: about 3.9% of men and women diagnosed in their lifetime (2021-2023 data); 3.9% is about 1 in 26."
 status:
   level: 3
   why: Localized and many regional cancers are cured with surgery, and dMMR rectal cancer can now be cleared
@@ -50,21 +54,44 @@ forecast:
     inhibitors and ctDNA-guided adjuvant care are the main upside risks.
 pipeline:
 - name: Dostarlimab (Jemperli) for dMMR rectal cancer
+  stage: Approved 2025-26
   note: Accelerated approval Oct 2026; 47% sustained complete response in AZUR-1 without surgery.
-  stage: Approved 2025-26
   url: https://www.targetedonc.com/view/dostarlimab-fda-approval-locally-advanced-rectal-cancer
+  variants:
+  - stage-ii
+  - stage-iii
+  effect: some
+  effect_note: Already approved; for the small dMMR share of rectal cancers it can clear the tumor without
+    surgery or radiation, a much milder cure, but it does not move most patients.
 - name: Zanzalintinib plus atezolizumab
-  note: STELLAR-303 improved OS vs regorafenib (HR 0.80); FDA decision moved to Mar 3, 2027.
   stage: Filed
+  note: STELLAR-303 improved OS vs regorafenib (HR 0.80); FDA decision moved to Mar 3, 2027.
   url: https://www.onclive.com/view/fda-extends-review-period-for-zanzalintinib-plus-atezolizumab-nda-in-pretreated-mcrc
+  variants:
+  - stage-iv
+  expected: '2027-03-03'
+  effect: small
+  effect_note: If approved, it adds a later-line option with a modest survival gain (HR 0.80) and does
+    not change the outlook for cure.
 - name: Encorafenib plus cetuximab plus FOLFOX
+  stage: Approved 2025-26
   note: Converted to full approval Feb 2026 for first-line BRAF V600E metastatic disease.
-  stage: Approved 2025-26
   url: https://www.mdlinx.com/article/the-biggest-fda-decision-drops-in-2026-so-far-oncology-approvals/4WRnWWH8XhXAO0mgWJJvfm
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Already approved; it improves survival for the BRAF V600E subset but rarely cures spread
+    disease.
 - name: SimpleScreen CRC blood test
-  note: FDA-approved July 2026 blood screening test; about 79-81% cancer sensitivity but weak for precancers.
   stage: Approved 2025-26
+  note: FDA-approved July 2026 blood screening test; about 79-81% cancer sensitivity but weak for precancers.
   url: https://www.cancernetwork.com/view/fda-approves-blood-based-test-for-colorectal-cancer-screening
+  variants:
+  - stage-i
+  - stage-ii
+  effect: small
+  effect_note: Already approved; a blood test could get more people screened and caught early, but it
+    misses most precancers, so the shift toward early stages is likely modest.
 recent:
 - date: 2026-10
   text: FDA approved dostarlimab as the first immunotherapy for locally advanced dMMR rectal cancer, letting

@@ -1,0 +1,29 @@
+# Cure Watch variant record: one stage or type of Spinal muscular atrophy. Field guide: CONTRIBUTING.md.
+id: treated-before-symptoms
+name: SMA treated before symptoms
+order: 1
+what: Babies found to have spinal muscular atrophy, usually by newborn screening, and treated before any
+  muscle weakness appears.
+level: 3
+burden: heavy
+burden_why: A one-time gene therapy costing over $2 million with steroids and liver monitoring, or lifelong
+  spinal injections or daily drugs.
+survival: All 29 babies alive without permanent ventilation; all sat, and 14 of 15 with three SMN2 copies
+  walked (SPR1NT, one-time Zolgensma)
+treatment: Treatment is usually a one-time gene therapy infusion (Zolgensma), costing over $2 million,
+  with steroids and liver monitoring for possible liver injury, or lifelong spinal injections or daily
+  oral drugs instead. Most babies treated this early reach sitting and walking, many on time, so it can
+  look close to a cure, but they still need follow-up.
+caveat: Results are excellent but come from small trials (14 babies with two SMN2 copies, PubMed 35715566;
+  15 with three) with only a few years of follow-up, and babies with two copies more often have some motor
+  delay, so 'cured for most' is not yet proven. Combined figure merges the two SPR1NT papers.
+url: https://pubmed.ncbi.nlm.nih.gov/35715567/
+forecast:
+  median: 2032
+  low: 2027
+  high: 2045
+  p2035: 65
+  p2045: 85
+  note: Mostly needs longer follow-up showing that babies treated before symptoms keep near-normal motor
+    function into later childhood, plus near-universal newborn screening. Zolgensma, nusinersen and risdiplam
+    are already approved, so this is about proof and reach, not new drugs.

@@ -9,6 +9,10 @@ toll:
   text: About 491,000 deaths/yr worldwide (2024); ~67,530 US cases and ~52,740 US deaths est. 2026; 5-year
     survival about 13%.
   url: https://pressroom.cancer.org/global-cancer-statistics-2026
+  ratio: "1 in 56"
+  ratio_caption: "US men (and 1 in 60 women) will get pancreatic cancer in their lifetime"
+  ratio_url: https://www.cancer.org/cancer/types/pancreatic-cancer/about/key-statistics.html
+  ratio_basis: "American Cancer Society key statistics: average lifetime risk about 1 in 56 in men and 1 in 60 in women."
 status:
   level: 1
   why: Only the minority who can have surgery have a chance at cure, and treatment for advanced disease
@@ -30,42 +34,75 @@ treatment:
 forecast:
   bottleneck: design-limited
   normal:
-    p2035: 2
-    p2045: 10
-    median: 2065
-    low: 2045
+    p2035: 1
+    p2045: 5
+    median: 2072
+    low: 2049
     high: 2100
   faster:
-    p2035: 5
-    p2045: 30
-    median: 2048
-    low: 2038
-    high: 2085
+    p2035: 4
+    p2045: 25
+    median: 2055
+    low: 2042
+    high: 2088
   faster_note: Better RAS inhibitor combinations and AI-flagged early detection on CT could make far more
     tumors curable, but cures need adjuvant trials and screening at scale, so most of the lift appears
     after 2035.
   outlook: RAS inhibitors are the first real advance in years, but they extend survival rather than cure,
     and resistance follows. Cure for most would need early detection at scale plus drugs that work in
     the adjuvant setting. First-line and perioperative RAS inhibitor trials over the next few years will
-    show how far this class can push.
+    show how far this class can push. About half of patients are found at stage IV, so without proven screening this forecast follows stage IV's.
 pipeline:
 - name: Daraxonrasib (Rasonque), pan-RAS inhibitor
+  stage: Approved 2025-26
   note: Approved Aug 26, 2026 for pretreated metastatic disease; median OS 13.2 vs 6.7 months in RASolute
     302.
-  stage: Approved 2025-26
   url: https://www.aacr.org/patients-caregivers/progress-against-cancer/fda-approves-daraxonrasib-as-first-ras-inhibitor-for-pancreatic-cancer/
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Already approved; roughly doubles median survival in pretreated spread disease, but long-term
+    survival stays rare.
 - name: Daraxonrasib first line (RASolute 303)
+  stage: Phase 3
   note: Ongoing first-line trial; readout timing unclear.
-  stage: Phase 3
   url: https://ir.revmed.com/news-releases/news-release-details/revolution-medicines-begins-treating-patients-rasolute-305-phase/
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: If RASolute 303 succeeds, a RAS pill in first-line treatment would extend survival for
+    most patients with spread disease, but would rarely cure it.
 - name: Zoldonrasib plus chemo (RASolute 305)
-  note: KRAS G12D-selective inhibitor in first-line metastatic disease; dosing began June 2026.
   stage: Phase 3
+  note: KRAS G12D-selective inhibitor in first-line metastatic disease; dosing began June 2026.
   url: https://clinicaltrials.gov/study/NCT07621718
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: If it works, a KRAS G12D-targeted pill plus chemo would extend survival for about a third
+    of patients with spread disease.
 - name: Personalized mRNA neoantigen vaccine (autogene cevumeran)
-  note: Small study showed long survival in vaccine responders; randomized trial ongoing.
   stage: Phase 2
+  note: Small study showed long survival in vaccine responders; randomized trial ongoing.
   url: https://www.uchealth.org/today/new-pancreatic-cancer-drug-daraxonrasib/
+  variants:
+  - stage-i
+  - stage-ii
+  expected: '2029'
+  effect: some
+  effect_note: If the randomized IMCODE003 trial confirms long remissions in vaccine responders, a personalized
+    vaccine after surgery could raise the share cured; registry primary completion is estimated Dec 2029.
+- name: Daraxonrasib after surgery (RASolute 304)
+  stage: Phase 3
+  note: Randomized trial of about 500 people with resected RAS-mutant pancreatic cancer comparing daraxonrasib
+    with observation after chemotherapy; first patient randomized Dec 2025, no readout date given.
+  url: https://clinicaltrials.ucsf.edu/trial/NCT07252232
+  variants:
+  - stage-i
+  - stage-ii
+  effect: some
+  effect_note: If it prevents relapse after surgery, a RAS pill could raise the share of operable patients
+    who are cured, the main route to better outcomes here.
 recent:
 - date: 2026-04
   text: RASolute 302 met all endpoints with a survival hazard ratio of 0.40 for daraxonrasib vs chemotherapy.

@@ -1,0 +1,30 @@
+# Cure Watch variant record: one stage or type of Liver cancer. Field guide: CONTRIBUTING.md.
+id: stage-i
+name: Stage I
+order: 1
+what: A single tumor in the liver that has not grown into blood vessels or spread.
+level: 3
+burden: heavy
+burden_why: Cure needs surgery, needle ablation or a liver transplant, and the cancer often returns in
+  a damaged liver.
+survival: ~50% alive at 4 years (net survival, all primary liver cancer, England)
+share: Part of the nearly half of US liver cancers found while still confined to the liver (SEER 'localized',
+  45%)
+share_url: https://seer.cancer.gov/statfacts/html/livibd.html
+treatment: Small tumors can be removed by surgery, destroyed by ablation through a needle, or cured by
+  a liver transplant. Whether cure is possible depends mostly on how well the rest of the liver works
+  (BCLC very early or early stage, and transplant criteria), and the cancer often returns in a cirrhotic
+  liver.
+caveat: Only 4-year figures are published by stage, and they cover all primary liver cancer, not hepatocellular
+  carcinoma alone. ACS reports 60-70% 5-year survival after transplant for early disease.
+url: https://www.cancerresearchuk.org/about-cancer/liver-cancer/survival
+forecast:
+  median: 2045
+  low: 2031
+  high: 2085
+  p2035: 22
+  p2045: 50
+  note: Surgery, ablation or transplant can remove small tumors, but the cancer often returns in a damaged
+    liver, so this needs a treatment that prevents new tumors after surgery plus wider transplant access.
+    Adjuvant immunotherapy trials are the nearest candidates, but the first one (atezolizumab plus bevacizumab)
+    lost its early benefit on longer follow-up.

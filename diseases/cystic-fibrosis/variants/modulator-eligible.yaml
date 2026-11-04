@@ -1,0 +1,29 @@
+# Cure Watch variant record: one stage or type of Cystic fibrosis. Field guide: CONTRIBUTING.md.
+id: modulator-eligible
+name: Modulator-eligible CF
+order: 1
+what: Cystic fibrosis caused by gene variants that daily CFTR modulator pills can partly repair at the
+  protein level.
+level: 2
+burden: moderate
+burden_why: Pills are taken every day for life with liver tests, and some airway therapy continues, but
+  daily life is far lighter than before.
+survival: Median predicted survival ~65 years for US births 2020-2024 (all people with CF)
+share: About 93% of people in the US CF registry have gene variants that modulator pills can treat
+share_url: https://www.cff.org/medical-professionals/2024-patient-registry-highlights
+treatment: Patients take triple modulator pills (Trikafta or Alyftrek) every day for life, with liver
+  tests and occasional rash or mood effects, plus some ongoing airway therapy. Lung function and survival
+  improve sharply, especially when started young, but the gene is not fixed.
+caveat: The survival figure covers everyone with CF, so modulator users likely do somewhat better; long-term
+  data on modulator users is still short. Figures confirmed via search; the CFF page blocked a direct
+  fetch. List price is several hundred thousand dollars a year, limiting access outside rich countries.
+url: https://www.cff.org/medical-professionals/2024-patient-registry-highlights
+forecast:
+  median: 2050
+  low: 2037
+  high: 2088
+  p2035: 5
+  p2045: 24
+  note: A lasting correction of the CFTR gene in airway stem cells would be needed so pills can stop;
+    in vivo gene editing for the lung is still preclinical, and current modulators control rather than
+    cure.

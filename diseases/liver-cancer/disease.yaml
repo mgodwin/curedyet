@@ -9,6 +9,10 @@ toll:
   text: About 843,000 new cases and 732,000 deaths worldwide (2024, GLOBOCAN); about 42,340 US cases and
     30,980 US deaths expected in 2026.
   url: https://ascopost.com/news/july-2026/american-cancer-society-reports-latest-global-cancer-statistics/
+  ratio: "1 in 91"
+  ratio_caption: "Americans will be diagnosed with liver or bile duct cancer in their lifetime"
+  ratio_url: https://seer.cancer.gov/statfacts/html/livibd.html
+  ratio_basis: "NCI SEER Cancer Stat Facts: about 1.1% of men and women diagnosed with liver and intrahepatic bile duct cancer in their lifetime (2021-2023 data); 1.1% is about 1 in 91."
 status:
   level: 3
   why: Small tumors found early can be cured by resection, ablation or transplant, but most patients are
@@ -50,18 +54,37 @@ forecast:
     stage, which is unlikely by 2035.
 pipeline:
 - name: Rivoceranib plus camrelizumab
+  stage: Filed
   note: OS 23.8 vs 15.2 months vs sorafenib in CARES-310; resubmitted Oct 9, 2026 after a third manufacturing-related
     CRL.
-  stage: Filed
   url: https://www.onclive.com/view/elevar-resubmits-nda-for-rivoceranib-plus-camrelizumab-frontline-unresectable-metastatic-hcc
+  variants:
+  - stage-iii
+  - stage-iv
+  expected: '2027'
+  effect: small
+  effect_note: If approved, it adds a first-line option that extends median survival by several months,
+    not a cure.
 - name: STRIDE plus lenvatinib plus TACE (EMERALD-3)
-  note: Improved PFS to 13.0 vs 9.8 months vs TACE alone; OS not yet significant.
   stage: Phase 3
+  note: Improved PFS to 13.0 vs 9.8 months vs TACE alone; OS not yet significant.
   url: https://www.astrazeneca.com/media-centre/press-releases/2026/imfinzi-plus-imjudo-combined-with-lenvatinib-and-tace-reduced-the-risk-of-disease-progression-or-death-in-emerald-3-phase-iii-trial.html
+  variants:
+  - stage-ii
+  - stage-iii
+  effect: small
+  effect_note: If overall survival also improves, it would lengthen disease control for intermediate-stage
+    patients treated with TACE, without making them curable.
 - name: AI-designed CDK20 inhibitor (Insilico/U of Toronto)
-  note: Designed with AlphaFold structures and generative chemistry in about 30 days.
   stage: Preclinical
+  note: Designed with AlphaFold structures and generative chemistry in about 30 days.
   url: https://acceleration.utoronto.ca/news/new-study-uses-alphafold-and-ai-to-accelerate-design-of-novel-drug-for-liver-cancer
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: small
+  effect_note: Preclinical; even if it reaches patients, it is years away and would most likely extend
+    life rather than cure.
 recent:
 - date: 2026-06
   text: EMERALD-3 showed adding immunotherapy and lenvatinib to TACE cut progression risk by 30% in intermediate-stage

@@ -1,0 +1,28 @@
+# Cure Watch variant record: one stage or type of Multiple sclerosis. Field guide: CONTRIBUTING.md.
+id: progressive
+name: Progressive MS
+order: 2
+what: Forms of MS where disability slowly worsens over time with few or no flare-ups, either from the
+  start or after years of relapsing disease.
+level: 1
+burden: moderate
+burden_why: Ongoing infusions or pills with infection risk, while disability usually still advances.
+share: About 10-15% of people with MS have primary progressive MS from the start, and many with relapsing
+  MS later become progressive
+share_url: https://www.msaustralia.org.au/types-of-ms/
+treatment: Ocrelizumab is approved for primary progressive MS but only modestly slows it (about 30% vs
+  34% had lasting worsening in its main trial), and tolebrutinib was approved in the EU in 2026 for non-active
+  secondary progressive MS. Treatment is ongoing with infection risk, and disability still advances for
+  most.
+caveat: Covers primary progressive and non-active secondary progressive MS. The published ORATORIO paper
+  reports 32.9% vs 39.3% with 12-week confirmed progression (hazard ratio 0.76); the EMA overview rounds
+  differently. Share is from MS Australia (https://www.msaustralia.org.au/types-of-ms/).
+url: https://www.ema.europa.eu/en/medicines/human/EPAR/ocrevus
+forecast:
+  median: 2063
+  low: 2042
+  high: 2100
+  p2035: 2
+  p2045: 11
+  note: Treatments would need to stop nerve damage that is already under way and ideally repair it; BTK
+    inhibitors only slow it somewhat, and remyelination or neuroprotection drugs are still early.

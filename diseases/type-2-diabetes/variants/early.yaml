@@ -1,0 +1,30 @@
+# Cure Watch variant record: one stage or type of Type 2 diabetes. Field guide: CONTRIBUTING.md.
+id: early
+name: Early type 2 diabetes
+order: 1
+what: Type 2 diabetes diagnosed within about the last six years, in people with excess weight, when large
+  weight loss can still bring blood sugar back to normal.
+level: 3
+burden: moderate
+burden_why: Lifelong pills or weekly injections; reaching remission takes a demanding very-low-calorie
+  diet or bariatric surgery.
+survival: ~46% in remission at 1 year, 36% at 2 years and ~10% at 5 years (DiRECT diet programme)
+treatment: Most people take lifelong pills or weekly GLP-1 or GIP/GLP-1 injections, which control blood
+  sugar but must be continued. A structured very-low-calorie diet programme, or bariatric surgery, can
+  bring remission (normal HbA1c off all diabetes drugs) for a sizeable share, but it often returns if
+  weight comes back.
+caveat: 'Remission uses the ADA 2021 consensus definition: HbA1c under 6.5% at least 3 months after stopping
+  glucose-lowering drugs (https://pmc.ncbi.nlm.nih.gov/articles/PMC8929179/); DiRECT used 2 months. DiRECT
+  enrolled people diagnosed within 6 years with BMI 27-45 (Lancet 2018, https://pubmed.ncbi.nlm.nih.gov/29221645/).
+  Remission is described as a pause, not a cure, and most people do not stay in remission long term. People
+  on GLP-1 drugs who reach normal sugar are not in remission because they are still on the drug.'
+url: https://diabetes.org.uk/about-us/news-and-views/weight-loss-can-put-type-2-diabetes-remission-least-five-years-reveal-latest-findings
+forecast:
+  median: 2046
+  low: 2035
+  high: 2085
+  p2035: 9
+  p2045: 30
+  note: Needs a one-time or finite treatment that keeps blood sugar normal for years without drugs, for
+    example durable weight-loss remission or a procedure like Fractyl's Revita (Phase 3). Today's GLP-1
+    drugs and diet programmes bring remission for many, but it usually returns.

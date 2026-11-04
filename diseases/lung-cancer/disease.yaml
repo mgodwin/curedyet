@@ -9,6 +9,10 @@ toll:
   text: About 2.6M new cases and 1.9M deaths/yr worldwide (2024); ~229,410 US cases and ~124,990 US deaths
     est. 2026.
   url: https://pressroom.cancer.org/global-cancer-statistics-2026
+  ratio: "1 in 19"
+  ratio_caption: "Americans will develop lung cancer in their lifetime"
+  ratio_url: https://www.cancer.org/cancer/types/lung-cancer/about/key-statistics.html
+  ratio_basis: "American Cancer Society key statistics: 'the chance that a person will develop lung cancer in their lifetime is about 1 in 19.'"
 status:
   level: 3
   why: Early-stage and some oncogene-driven or immunotherapy-responsive patients are cured or in long
@@ -31,40 +35,70 @@ treatment:
 forecast:
   bottleneck: design-limited
   normal:
-    p2035: 8
-    p2045: 35
-    median: 2050
-    low: 2037
-    high: 2085
+    p2035: 5
+    p2045: 23
+    median: 2053
+    low: 2039
+    high: 2094
   faster:
-    p2035: 18
-    p2045: 60
-    median: 2042
-    low: 2034
-    high: 2065
+    p2035: 15
+    p2045: 48
+    median: 2045
+    low: 2036
+    high: 2074
   faster_note: Faster design and trials of ADCs, bispecifics and targeted drugs for metastatic disease
     plus wider AI-read CT screening could cure far more patients, but most are still found late, so the
     2035 lift is moderate and the big gain lands by 2045.
   outlook: Survival is rising fast, but most patients are still found at stage III-IV where cure is uncommon.
     Reaching cured-for-most likely needs both wide CT screening uptake and durable cures in metastatic
-    disease, which is a decade-plus project. Smoking decline helps incidence but not the cure rate.
+    disease, which is a decade-plus project. Smoking decline helps incidence but not the cure rate. Stage IV is close to half of patients, so cured for most needs stage III to become curable as well, which sets this forecast.
 pipeline:
 - name: Ivonescimab (PD-1/VEGF bispecific)
-  note: BLA in EGFR-mutated NSCLC after TKI based on HARMONi; PDUFA Nov 14, 2026.
   stage: Filed
+  note: BLA in EGFR-mutated NSCLC after TKI based on HARMONi; PDUFA Nov 14, 2026.
   url: https://www.clinicaltrialsarena.com/news/summit-debuts-longer-term-ivonescimab-data-as-it-awaits-fda-nsclc-decision/
+  variants:
+  - stage-iv
+  expected: '2026-11-14'
+  effect: small
+  effect_note: If approved, it adds a post-TKI option for EGFR-mutated spread disease that delays progression;
+    overall survival benefit is unproven.
 - name: Zidesamtinib (Jideytro)
+  stage: Approved 2025-26
   note: ROS1 inhibitor approved July 2026 for previously treated ROS1-positive NSCLC.
-  stage: Approved 2025-26
   url: https://www.bioworld.com/articles/732912-gsks-newly-acquired-jideytro-wins-fda-nod-in-nsclc
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Already approved; it extends control for the small ROS1-positive group but does not cure
+    spread disease.
 - name: Zongertinib
-  note: Accelerated approval Feb 2026 for HER2-mutant nonsquamous NSCLC.
   stage: Approved 2025-26
+  note: Accelerated approval Feb 2026 for HER2-mutant nonsquamous NSCLC.
   url: https://www.mdlinx.com/article/the-biggest-fda-decision-drops-in-2026-so-far-oncology-approvals/4WRnWWH8XhXAO0mgWJJvfm
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Already approved; a targeted pill for HER2-mutant disease extends control in a small subset.
 - name: Sacituzumab tirumotecan (sac-TMT)
-  note: TROP2 ADC with overall survival gains in pretreated EGFR-mutant NSCLC in OptiTROP-Lung trials.
   stage: Phase 3
+  note: TROP2 ADC with overall survival gains in pretreated EGFR-mutant NSCLC in OptiTROP-Lung trials.
   url: https://egfrchannel.onclive.com/sac-tmt-extends-os-in-pretreated-egfr-mutated-nsclc
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: If Western Phase 3 trials confirm survival gains, it adds a later-line drug for EGFR-mutant
+    disease, not a cure.
+- name: Tarlatamab plus durvalumab, first-line maintenance (DeLLphi-305)
+  stage: Phase 3
+  note: Cut risk of death by 58% vs durvalumab alone as first-line maintenance in extensive-stage small
+    cell lung cancer (ESMO 2026, NEJM); Amgen plans to discuss with regulators, no decision date set.
+  url: https://www.targetedonc.com/view/tarlatamab-durvalumab-first-line-survival-es-sclc-dellphi-305
+  variants:
+  - small-cell
+  effect: small
+  effect_note: If approved for first-line use, it would meaningfully lengthen survival in extensive small
+    cell lung cancer, but few patients would be cured.
 recent:
 - date: 2026-02
   text: Zongertinib became an approved oral option for HER2-mutant lung cancer.

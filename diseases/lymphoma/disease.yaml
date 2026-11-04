@@ -8,6 +8,10 @@ summary: Cancers of lymphocytes, split into Hodgkin lymphoma and many non-Hodgki
 toll:
   text: ~88,240 US cases (8,920 Hodgkin, 79,320 non-Hodgkin) and ~21,070 US deaths est. 2026.
   url: https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2026/2026-cancer-facts-and-figures.pdf
+  ratio: "1 in 50"
+  ratio_caption: "Americans will be diagnosed with non-Hodgkin lymphoma in their lifetime"
+  ratio_url: https://seer.cancer.gov/statfacts/html/nhl.html
+  ratio_basis: "NCI SEER Cancer Stat Facts: about 2.0% of men and women diagnosed with non-Hodgkin lymphoma in their lifetime (2021-2023 data). Excludes Hodgkin lymphoma, which is much rarer."
 status:
   level: 3
   why: Hodgkin lymphoma and most DLBCL are cured with first-line therapy, but indolent lymphomas like
@@ -30,39 +34,70 @@ treatment:
 forecast:
   bottleneck: design-limited
   normal:
-    p2035: 40
-    p2045: 72
-    median: 2037
-    low: 2030
-    high: 2055
+    p2035: 12
+    p2045: 47
+    median: 2045
+    low: 2034
+    high: 2077
   faster:
-    p2035: 52
-    p2045: 85
-    median: 2034
-    low: 2029
-    high: 2045
+    p2035: 24
+    p2045: 60
+    median: 2042
+    low: 2033
+    high: 2067
   faster_note: Moving bispecifics and CAR-T into first-line care faster and designing a cure for follicular
     lymphoma would tip it over; the lift is moderate because aggressive lymphomas are already mostly cured.
   outlook: Aggressive lymphomas are already cured in most patients, so lymphoma overall is near the line.
     Moving bispecifics and CAR-T into first-line DLBCL and finding a cure for follicular lymphoma would
-    push it over. The main drag is the large group of indolent lymphomas that still relapse.
+    push it over. The main drag is the large group of indolent lymphomas that still relapse. Hodgkin and DLBCL are under half of lymphomas, so cured for most also needs follicular or another common indolent type to be curable, which pulls this forecast back to follicular's.
 pipeline:
 - name: Mosunetuzumab (subcutaneous) plus polatuzumab
-  note: sBLA for relapsed LBCL after one prior line; FDA decision expected by Feb 9, 2027.
   stage: Filed
+  note: sBLA for relapsed LBCL after one prior line; FDA decision expected by Feb 9, 2027.
   url: https://www.thepharmaletter.com/biotech-news/fda-accepts-roche-s-sbla-for-lunsumio-and-polivy-combo
+  variants:
+  - dlbcl
+  expected: '2027-02-09'
+  effect: small
+  effect_note: If approved, it adds an off-the-shelf second-line option; some relapsed patients may stay
+    in remission, but the effect on overall cure rates is modest.
 - name: Nivolumab plus AVD
+  stage: Approved 2025-26
   note: Approved Mar 2026 for untreated stage III-IV Hodgkin lymphoma, age 12 and up.
-  stage: Approved 2025-26
   url: https://www.mdlinx.com/article/the-biggest-fda-decision-drops-in-2026-so-far-oncology-approvals/4WRnWWH8XhXAO0mgWJJvfm
+  variants:
+  - hodgkin
+  effect: small
+  effect_note: Already approved; it raises progression-free survival in advanced Hodgkin with less radiation
+    and chemo, a small step toward an easier cure.
 - name: Tafasitamab plus lenalidomide plus R-CHOP (frontMIND)
-  note: Showed a progression-free survival benefit in high-risk newly diagnosed DLBCL.
   stage: Phase 3
+  note: Showed a progression-free survival benefit in high-risk newly diagnosed DLBCL.
   url: https://www.onclive.com/shorts/the-significance-of-the-phase-3-frontmind-data-in-high-risk-dlbcl
+  variants:
+  - dlbcl
+  effect: some
+  effect_note: If filed and approved, adding two drugs to first treatment could cure more high-risk DLBCL
+    patients (PFS HR 0.75).
 - name: Epcoritamab plus R2
-  note: Approved Nov 2025 for second-line relapsed follicular lymphoma; EU approval July 2026.
   stage: Approved 2025-26
+  note: Approved Nov 2025 for second-line relapsed follicular lymphoma; EU approval July 2026.
   url: https://www.cancernetwork.com/view/epcoritamab-r2-earns-european-approval-for-r-r-follicular-lymphoma
+  variants:
+  - follicular
+  effect: small
+  effect_note: Already approved; it extends remissions in relapsed follicular lymphoma, which remains
+    controlled rather than cured.
+- name: Epcoritamab plus R-CHOP, first line (EPCORE DLBCL-2)
+  stage: Phase 3
+  note: Cut progression or death risk by 51% vs R-CHOP in newly diagnosed DLBCL at the first interim analysis
+    (Oct 2026); AbbVie and Genmab plan to engage regulators, no filing date announced.
+  url: https://news.abbvie.com/2026-10-05-AbbVie-and-Genmab-Announce-Epcoritamab-in-Combination-with-R-CHOP-Demonstrates-Significant-Improvement-in-Progression-Free-Survival-versus-R-CHOP-in-Patients-with-Newly-Diagnosed-Diffuse-Large-B-Cell-Lymphoma
+  variants:
+  - dlbcl
+  effect: some
+  effect_note: If survival gains hold and it is approved, adding a bispecific to first treatment could
+    cure noticeably more DLBCL patients, especially higher-risk ones.
 recent:
 - date: 2026-03
   text: Nivolumab plus AVD became a new standard for advanced Hodgkin lymphoma.

@@ -7,10 +7,14 @@ summary: A blocked or burst brain artery kills brain tissue, often causing death
 toll:
   text: About 11.9M new strokes and 7.3M deaths worldwide in 2021 (GBD 2021); 6.8M deaths in 2023 (WHO).
   url: https://touchneurology.com/insight/study-uncovers-growing-stroke-burden-worldwide
+  ratio: "1 in 4"
+  ratio_caption: "adults over 25 worldwide will have a stroke in their lifetime"
+  ratio_url: https://www.world-stroke.org/world-stroke-day-campaign/about-stroke/impact-of-stroke
+  ratio_basis: "World Stroke Organization: 'Globally, 1 in 4 adults over the age of 25 will have a stroke in their lifetime.'"
 status:
-  level: 1
-  why: Clot-busters and thrombectomy restore independence for some, but many survivors keep permanent
-    deficits and no drug repairs brain damage.
+  level: 3
+  why: Fast clot treatment can undo many ischemic strokes, which are most strokes, but only a minority
+    of patients reach it in time, and hemorrhagic stroke and lasting brain damage have no cure.
   today: Fast clot-busting drugs and mechanical thrombectomy can fully reverse some ischemic strokes if
     given within hours. Blood pressure control, statins, antiplatelets and anticoagulants prevent many
     first and repeat strokes. Most patients worldwide do not reach these treatments in time, and no neuroprotective
@@ -48,18 +52,34 @@ forecast:
     brain tissue, and neither is close. Access to thrombectomy remains the main bottleneck.
 pipeline:
 - name: Asundexian (Bayer), factor XIa inhibitor
+  stage: Filed
   note: Cut recurrent ischemic stroke 26% with no rise in major bleeding; FDA priority review granted
     May 2026.
-  stage: Filed
   url: https://www.hcplive.com/view/fda-priority-review-asundexian-secondary-prevention-after-ischemic-stroke
+  variants:
+  - ischemic-stroke
+  expected: '2026'
+  effect: small
+  effect_note: If approved, a pill would prevent some repeat strokes without more bleeding, but it does
+    not improve recovery from the first stroke.
 - name: Intra-arterial cooling during thrombectomy
+  stage: Phase 3
   note: CHILL-ART improved 90-day independence, but FOCUS did not, so evidence conflicts.
-  stage: Phase 3
   url: https://touchneurology.com/insight/esoc-2026-highlights-personalized-thrombectomy-strategies-and-neuroprotection-reshape-stroke-care/
+  variants:
+  - ischemic-stroke
+  effect: small
+  effect_note: If a confirmatory trial resolves the mixed results, cooling the brain during clot removal
+    could help a few more patients recover independence.
 - name: Reperfusion-guided blood pressure targets after thrombectomy
-  note: HOPE trial raised functional independence to 60% vs 47%.
   stage: Phase 3
+  note: HOPE trial raised functional independence to 60% vs 47%.
   url: https://touchneurology.com/insight/esoc-2026-highlights-personalized-thrombectomy-strategies-and-neuroprotection-reshape-stroke-care/
+  variants:
+  - ischemic-stroke
+  effect: small
+  effect_note: If adopted, tailored blood pressure targets after clot removal could raise the share who
+    recover independence, a modest step.
 recent:
 - date: 2026-02
   text: 'OCEANIC-STROKE: asundexian lowered recurrent stroke (6.2% vs 8.4%) without extra major bleeding

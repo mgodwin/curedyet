@@ -14,7 +14,8 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-LEVELS = ["No treatment", "Slows it", "Controlled", "Cured for some", "Cured for most", "Gone"]
+LEVELS = ["No treatment", "Slows it", "Controlled", "Cured for some", "Cured for most", "Cured easily", "Gone"]
+MAX_LEVEL = len(LEVELS) - 1
 BURDENS = {"light", "moderate", "heavy"}
 BOTTLENECKS = {"design-limited", "biology-limited", "trial-limited", "access-limited"}
 TRACKING = {"active", "proposed"}
@@ -57,7 +58,9 @@ def load_all() -> dict:
             continue
         rec = read_yaml(folder / "disease.yaml") if (folder / "disease.yaml").exists() else None
         research = parse_research(folder / "research.md") if (folder / "research.md").exists() else None
-        diseases.append({"folder": folder.name, "record": rec, "research": research})
+        variants = [dict(read_yaml(p) or {}, _file=p.stem) for p in sorted((folder / "variants").glob("*.yaml"))]
+        variants.sort(key=lambda v: (v.get("order") if _is_int(v.get("order")) else 999, v["_file"]))
+        diseases.append({"folder": folder.name, "record": rec, "research": research, "variants": variants})
     stages = [read_yaml(p) for p in sorted((ROOT / "pipeline").glob("*.yaml"))]
     tr = ROOT / "tracker"
     meta = read_yaml(tr / "meta.yaml") or {}
@@ -90,6 +93,57 @@ def validate_track(name, t, errs, where):
         errs.append(f"{where}: forecast.{name} years must satisfy low <= median <= high")
 
 
+EFFECTS = {"big", "some", "small"}
+
+
+def validate_forecast(f, errs, where, name):
+    if not isinstance(f, dict) or not all(_is_int(f.get(k)) for k in ("median", "low", "high", "p2035", "p2045")):
+        errs.append(f"{where}: {name} needs integer median, low, high, p2035 and p2045"); return
+    if not (f["low"] <= f["median"] <= f["high"] <= 2100 and 0 <= f["p2035"] <= f["p2045"] <= 100):
+        errs.append(f"{where}: {name} needs low <= median <= high <= 2100 and 0 <= p2035 <= p2045 <= 100")
+
+
+def validate_reached(r, errs, where, name):
+    if not isinstance(r, dict) or not _is_int(r.get("year"), 1800, 2100) or not str(r.get("basis") or "").strip():
+        errs.append(f"{where}: {name} needs a year and a one-line basis")
+    elif r.get("url") and not URL_RE.match(str(r["url"])):
+        errs.append(f"{where}: {name}.url must be an http(s) link")
+
+
+def validate_variant(v, errs, where):
+    if v.get("id") != v["_file"] or not ID_RE.match(str(v.get("id"))):
+        errs.append(f"{where}: id must match the file name, lowercase-with-dashes")
+    for k in ("name", "treatment"):
+        if not isinstance(v.get(k), str) or not v[k].strip():
+            errs.append(f"{where}: '{k}' is required")
+    if not _is_int(v.get("order"), 1):
+        errs.append(f"{where}: order must be a whole number from 1")
+    level = v.get("level")
+    if not _is_int(level, 0, MAX_LEVEL):
+        errs.append(f"{where}: level must be 0-{MAX_LEVEL}"); level = 0
+    if v.get("burden") not in BURDENS:
+        errs.append(f"{where}: burden must be light, moderate or heavy")
+    for k in ("url", "share_url"):
+        if v.get(k) and not URL_RE.match(str(v[k])):
+            errs.append(f"{where}: {k} must be an http(s) link")
+    if level == 5 and v.get("burden") != "light":
+        errs.append(f"{where}: level 5 (cured easily) needs a light burden")
+    if v.get("forecast") is not None:
+        if level >= 4:
+            errs.append(f"{where}: forecast is for reaching level 4; this variant is already there")
+        else:
+            validate_forecast(v["forecast"], errs, where, "forecast")
+    if v.get("easy") is not None:
+        if level >= 5:
+            errs.append(f"{where}: easy is for reaching level 5; this variant is already there")
+        else:
+            validate_forecast(v["easy"], errs, where, "easy")
+    if level >= 4:
+        validate_reached(v.get("reached"), errs, where, "reached")
+    if level >= 5:
+        validate_reached(v.get("reached_easy"), errs, where, "reached_easy")
+
+
 def validate(data: dict) -> list[str]:
     errs: list[str] = []
     cat_ids = {c.get("id") for c in data["categories"]}
@@ -117,16 +171,36 @@ def validate(data: dict) -> list[str]:
         if tracking not in TRACKING:
             errs.append(f"{where}: tracking must be 'active' or 'proposed'")
         st = rec.get("status") or {}
-        if not _is_int(st.get("level"), 0, 5):
-            errs.append(f"{where}: status.level must be 0-5 (see METHODOLOGY.md)")
+        if not _is_int(st.get("level"), 0, MAX_LEVEL):
+            errs.append(f"{where}: status.level must be 0-{MAX_LEVEL} (see METHODOLOGY.md)")
         if not isinstance(st.get("why"), str) or not st["why"].strip():
             errs.append(f"{where}: status.why is required (one plain sentence)")
+        if st.get("groups") is not None:
+            errs.append(f"{where}: status.groups moved to diseases/{d['folder']}/variants/ (see CONTRIBUTING.md)")
+        variants = d.get("variants") or []
+        vids = set()
+        for v in variants:
+            validate_variant(v, errs, f"{where}/variants/{v['_file']}.yaml")
+            if v.get("id") in vids:
+                errs.append(f"{where}: duplicate variant id '{v.get('id')}'")
+            vids.add(v.get("id"))
+        if rec.get("category") == "cancer" and _is_int(st.get("level"), 4) and not variants:
+            errs.append(f"{where}: a cancer at level 4 or above needs variants rating each stage (see METHODOLOGY.md)")
+        for item in rec.get("pipeline") or []:
+            for vid in item.get("variants") or []:
+                if vid not in vids:
+                    errs.append(f"{where}: pipeline item '{item.get('name')}' names unknown variant '{vid}'")
+            if item.get("effect") is not None and item["effect"] not in EFFECTS:
+                errs.append(f"{where}: pipeline item '{item.get('name')}' effect must be big, some or small")
         tx = rec.get("treatment") or {}
         if tx.get("burden") is not None and tx["burden"] not in BURDENS:
             errs.append(f"{where}: treatment.burden must be light, moderate or heavy")
         toll = rec.get("toll") or {}
-        if toll.get("url") and not URL_RE.match(str(toll["url"])):
-            errs.append(f"{where}: toll.url must be an http(s) link")
+        for k in ("url", "ratio_url"):
+            if toll.get(k) and not URL_RE.match(str(toll[k])):
+                errs.append(f"{where}: toll.{k} must be an http(s) link")
+        if toll.get("ratio") and not str(toll.get("ratio_caption") or "").strip():
+            errs.append(f"{where}: toll.ratio needs a ratio_caption")
         fc = rec.get("forecast") or {}
         if fc.get("bottleneck") is not None and fc["bottleneck"] not in BOTTLENECKS:
             errs.append(f"{where}: forecast.bottleneck must be one of {sorted(BOTTLENECKS)}")
@@ -135,6 +209,8 @@ def validate(data: dict) -> list[str]:
             if level >= 4:
                 if not _is_int(fc.get("reached"), 1800, 2100):
                     errs.append(f"{where}: a level 4+ disease needs forecast.reached (the year it got there)")
+                if level >= 5 and not _is_int(fc.get("reached_easy"), 1800, 2100):
+                    errs.append(f"{where}: a level 5+ disease needs forecast.reached_easy (the year the cure became mild)")
             else:
                 validate_track("normal", fc.get("normal"), errs, where)
                 validate_track("faster", fc.get("faster"), errs, where)
@@ -179,6 +255,8 @@ def validate(data: dict) -> list[str]:
             errs.append(f"tracker/checks.yaml: check '{c.get('id')}' points at unknown disease '{c.get('disease')}'")
         if not _is_int(c.get("prob"), 0, 100):
             errs.append(f"tracker/checks.yaml: check '{c.get('id')}' prob must be 0-100")
+        if c.get("resolved") not in (None, "yes", "no", "void"):
+            errs.append(f"tracker/checks.yaml: check '{c.get('id')}' resolved must be yes, no or void (void = not scored)")
     return errs
 
 
@@ -191,6 +269,24 @@ def accel_index(stages) -> int | None:
 
 def blend(n, f, idx):
     return round(n + (f - n) * idx / 100)
+
+
+VARIANT_KEYS = ("id", "name", "what", "level", "burden", "burden_why", "survival", "share", "share_url", "caveat", "url", "forecast", "easy", "reached", "reached_easy")
+
+
+def compile_variants(d: dict, data: dict) -> list[dict]:
+    """Variants for the page: their own fields plus the catalysts and log entries tagged with their id."""
+    rec = d["record"]
+    out = []
+    for v in d.get("variants") or []:
+        x = {k: v[k] for k in VARIANT_KEYS if v.get(k) is not None}
+        x["note"] = v.get("treatment")
+        x["catalysts"] = [p for p in rec.get("pipeline") or [] if v.get("id") in (p.get("variants") or [])]
+        x["events"] = [{"date": str(u["date"]), "text": f"{c['target']}: {c['from']} → {c['to']}. {c['why']}", "url": c.get("url")}
+                       for u in data["updates"] for c in u.get("changes") or []
+                       if c.get("disease") == rec.get("id") and c.get("variant") == v.get("id")]
+        out.append(x)
+    return out
 
 
 def compile_site(data: dict) -> dict:
@@ -211,7 +307,8 @@ def compile_site(data: dict) -> dict:
         x = {
             "id": r["id"], "order": i + 1, "name": r["name"], "category": r["category"], "tracking": r.get("tracking", "proposed"),
             "short": r.get("summary"), "burden": (r.get("toll") or {}).get("text"), "burdenUrl": (r.get("toll") or {}).get("url"),
-            "level": level, "levelWhy": st.get("why"), "status": st.get("today"), "lastDeep": str(st["last_reviewed"]) if st.get("last_reviewed") else None,
+            "level": level, "levelWhy": st.get("why"), "groups": compile_variants(d, data), "reachedEasy": fc.get("reached_easy"),
+            "ratio": {k: (r.get("toll") or {}).get(k) for k in ("ratio", "ratio_caption", "ratio_url")} if (r.get("toll") or {}).get("ratio") else None, "status": st.get("today"), "lastDeep": str(st["last_reviewed"]) if st.get("last_reviewed") else None,
             "bestTherapies": tx.get("best") or [], "txBurden": tx.get("burden"), "txBurdenNote": tx.get("burden_note"),
             "bottleneck": fc.get("bottleneck"), "accelNote": fc.get("faster_note"), "outlook": fc.get("outlook"), "interim": fc.get("milestones") or [],
             "pipeline": r.get("pipeline") or [], "breakthroughs": r.get("recent") or [], "nextMilestone": r.get("next_milestone"),
@@ -228,6 +325,23 @@ def compile_site(data: dict) -> dict:
                      timeline={k: blend(n[k], f[k], idx) for k in ("median", "low", "high")})
         p = prev_d.get(r["id"]) or {}
         x.update(prevP2035=p.get("p2035"), prevP2045=p.get("p2045"), prevMedian=p.get("median"), prevLevel=p.get("level"))
+        # Estimate history for the chart: one point per weekly snapshot, plus today's if it isn't snapshotted yet.
+        trend = [{"date": str(h["date"]), **{k: h["diseases"][r["id"]].get(k) for k in ("median", "low", "high", "level")}}
+                 for h in reversed(hist) if r["id"] in (h.get("diseases") or {})]
+        tl = x.get("timeline") or {}
+        if level < 4 and tl.get("median") is not None and updated and all(t["date"] != updated for t in trend):
+            trend.append({"date": updated, "median": tl["median"], "low": tl.get("low"), "high": tl.get("high"), "level": level})
+        x["trend"] = trend if level < 4 else []
+        # News that moved this disease: update changes and news items tagged with its id.
+        events = []
+        for u in data["updates"]:
+            for c in u.get("changes") or []:
+                if c.get("disease") == r["id"]:
+                    events.append({"date": str(u["date"]), "text": f"{c['target']}: {c['from']} → {c['to']}. {c['why']}", "url": c.get("url")})
+            for nw in u.get("news") or []:
+                if isinstance(nw, dict) and nw.get("disease") == r["id"]:
+                    events.append({"date": str(nw.get("date") or u["date"]), "text": nw.get("text"), "url": nw.get("url")})
+        x["events"] = events
         out_dz.append(x)
     out_st = []
     for s in stages:

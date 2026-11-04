@@ -1,0 +1,32 @@
+# Cure Watch variant record: one stage or type of Macular degeneration. Field guide: CONTRIBUTING.md.
+id: wet-amd
+name: Wet AMD
+order: 1
+what: A late form of macular degeneration where leaky blood vessels grow under the retina and can quickly
+  blur central vision.
+level: 2
+burden: moderate
+burden_why: Eye injections every one to four months, indefinitely, with frequent clinic visits and a small
+  infection risk.
+survival: ~27% of treated eyes still had good vision (about 20/40 or better) after 10 years of injections
+  (real-world meta-analysis)
+share: Part of the roughly 1 in 13 Americans with AMD who have a late form (wet AMD or geographic atrophy)
+share_url: https://healthdata.org/research-article/prevalence-age-related-macular-degeneration-us-2019
+treatment: Standard care is anti-VEGF injections into the eye every one to four months, indefinitely,
+  with frequent clinic visits and a small risk of infection or inflammation. It usually stops the rapid
+  vision loss and often improves vision at first, but it controls rather than cures, and vision tends
+  to drift down over many years.
+caveat: 'Borderline between levels 1 and 2: on average vision returns to or falls below its starting point
+  after several years (mean about 8 letters lost at 10 years, 41% of eyes lost 10+ letters), though untreated
+  wet AMD is far worse. Only 17% of eyes in the meta-analysis were followed for the full 10 years, and
+  more regular injections were linked to better results.'
+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12516669/
+forecast:
+  median: 2049
+  low: 2032
+  high: 2090
+  p2035: 14
+  p2045: 38
+  note: One-time gene therapies such as ABBV-RGX-314 and 4D-150 in Phase 3 could end repeated injections,
+    but they keep making an anti-VEGF drug rather than fixing the disease, so level 4 likely needs proof
+    of lasting disease stopping and preserved vision in most eyes.

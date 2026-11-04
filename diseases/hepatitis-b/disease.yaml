@@ -7,6 +7,10 @@ summary: A viral liver infection that can become chronic and cause cirrhosis and
 toll:
   text: 240 million living with chronic HBV and 1.1 million deaths in 2024; 0.9M new infections/yr (WHO)
   url: https://www.who.int/news-room/fact-sheets/detail/hepatitis-b
+  ratio: "About 1 in 34"
+  ratio_caption: "people worldwide is living with chronic hepatitis B"
+  ratio_url: https://www.who.int/news-room/fact-sheets/detail/hepatitis-b
+  ratio_basis: "Derived: WHO's 240 million living with chronic HBV in 2024 divided by UN world population of 8.2 billion in 2024 (https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/)."
 status:
   level: 3
   why: Antivirals control most patients for life, and in Oct 2026 the FDA approved bepirovirsen, which
@@ -28,31 +32,43 @@ treatment:
 forecast:
   bottleneck: design-limited
   normal:
-    p2035: 12
-    p2045: 48
+    p2035: 5
+    p2045: 35
+    median: 2052
+    low: 2036
+    high: 2083
+  faster:
+    p2035: 15
+    p2045: 57
     median: 2046
     low: 2034
-    high: 2070
-  faster:
-    p2035: 22
-    p2045: 70
-    median: 2040
-    low: 2032
-    high: 2058
+    high: 2071
   faster_note: Faster design and testing of siRNA, antibody and antisense combinations could push functional
     cure rates past half, a sizeable lift because the first cure drug is already approved.
   outlook: The first functional cure drug is now approved, but it works for only a fraction of a subgroup.
     Combining siRNAs, antibodies, antisense and immune boosters could push cure rates past 50%. That is
-    plausible within 15-20 years, but the hidden viral cccDNA makes it hard.
+    plausible within 15-20 years, but the hidden viral cccDNA makes it hard. Most people with chronic HBV are outside the low-HBsAg group that bepirovirsen helps, so this forecast follows theirs.
 pipeline:
 - name: Bepirovirsen (Hibsago, antisense)
-  note: FDA approved Oct 2026; Japan decision expected H2 2026, EU and China H1 2027.
   stage: Approved 2025-26
+  note: Approved in Japan Aug 2026 (first approval anywhere) and by the FDA Oct 2026; EU and China decisions expected in 2027.
   url: https://www.healio.com/news/gastroenterology/20261021/hibsago-scores-fda-approval-as-first-antisense-therapy-for-chronic-hepatitis-b
+  variants:
+  - low-hbsag
+  expected: '2026'
+  effect: small
+  effect_note: Already FDA-approved; a Japan decision widens access but does not change the roughly 1-in-5
+    functional cure rate seen in low-HBsAg patients.
 - name: Tobevibart + elebsiran (antibody + siRNA)
-  note: Vir's MARCH study tests finite combinations aiming for functional cure.
   stage: Phase 2
+  note: Vir's MARCH study tests finite combinations aiming for functional cure.
   url: https://investors.vir.bio/news/news-details/2025/Vir-Biotechnology-Announces-Preliminary-24-Week-Post-End-of-Treatment-Data-for-Tobevibart-and-Elebsiran-Combinations-in-Chronic-Hepatitis-B-From-the-MARCH-Study/default.aspx
+  variants:
+  - low-hbsag
+  - other
+  effect: some
+  effect_note: If a partner takes it into Phase 3 and finite combinations work, more people could stop
+    treatment for good, but Vir has paused Phase 3 for hepatitis B without a partner.
 recent:
 - date: 2026-10
   text: FDA approved bepirovirsen as the first antisense therapy for chronic hepatitis B.
@@ -61,9 +77,9 @@ recent:
   text: B-Well 1 and 2 Phase 3 trials met their functional cure endpoint; 19% cured vs none on placebo.
   url: https://www.businesswire.com/news/home/20260106121974/en/Ionis-partner-GSK-announces-positive-topline-results-from-B-Well-1-and-B-Well-2-Phase-3-studies-for-bepirovirsen-a-potential-first-in-class-medicine-for-chronic-hepatitis-B
 next_milestone:
-  date: 2026-12
-  url: https://www.sec.gov/Archives/edgar/data/0001131399/000119312526384439/d331501d6k.htm
-  what: Japan regulatory decision on bepirovirsen (GSK guided H2 2026)
+  date: '2027'
+  url: https://www.gsk.com/media/yd3hdtnz/bepirovirsen-japan-approval-sea.pdf
+  what: EU regulatory decision on bepirovirsen (review under way after the Japan and US approvals).
 ai:
   impact: low
   note: 'Unclear: the leading cure candidates are antisense and siRNA drugs, with no clear AI-discovery

@@ -8,6 +8,10 @@ summary: Inflammatory bowel diseases where the immune system inflames the gut, c
 toll:
   text: About 6.8M people had IBD worldwide in 2017 (GBD 2017).
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7026709/
+  ratio: "About 1 in 140"
+  ratio_caption: "Americans has been diagnosed with Crohn's disease or ulcerative colitis"
+  ratio_url: https://stacks.cdc.gov/view/cdc/134534
+  ratio_basis: "Lewis et al., Gastroenterology 2023 (CDC-funded claims study): standardized IBD prevalence 721 per 100,000, about 2.39 million Americans; 721 per 100,000 is about 1 in 140."
 status:
   level: 2
   why: Biologics and small molecules keep many patients in long remission, but most need lifelong treatment
@@ -47,17 +51,47 @@ forecast:
     which has no strong clinical signal yet. Expect better control, not cure, through the 2030s.
 pipeline:
 - name: Obefazimod (Abivax), oral miR-124 enhancer
+  stage: Phase 3
   note: 'ABTECT maintenance: about 51% remission vs 10% placebo at week 44; NDA planned by end of 2026.'
-  stage: Phase 3
   url: https://sofinnovapartners.com/news/abivax-announces-landmark-phase-3-abtect-maintenance-trial-results-evaluating-obefazimod-in-moderately-to-severely-active-ulcerative-colitis
+  variants:
+  - ulcerative-colitis
+  expected: 2026-12
+  effect: small
+  effect_note: If approved, a daily pill would add a new way to keep ulcerative colitis in remission,
+    but it is ongoing treatment, not a cure.
 - name: Tulisokibart (Merck), anti-TL1A
+  stage: Phase 3
   note: First anti-TL1A to meet a Phase 3 UC endpoint (ATLAS-UC, June 2026).
-  stage: Phase 3
   url: https://www.hcplive.com/view/tulisokibart-phase-3-endpoints-ulcerative-colitis-anti-tl1a
+  variants:
+  - ulcerative-colitis
+  - crohns-disease
+  effect: small
+  effect_note: If approved after the remaining ATLAS-UC data, a new class of injection would help more
+    people reach remission, still as long-term treatment.
 - name: Duvakitug (Sanofi/Teva), anti-TL1A
-  note: Phase 2b maintenance showed durable remission in UC and Crohn's.
   stage: Phase 3
+  note: Phase 2b maintenance showed durable remission in UC and Crohn's.
   url: https://www.patientcareonline.com/view/duvakitug-phase-2b-maintenance-data-show-durable-remission-in-uc-and-crohn-disease
+  variants:
+  - ulcerative-colitis
+  - crohns-disease
+  expected: '2028'
+  effect: small
+  effect_note: If Phase 3 succeeds (first readouts guided for 2028), it adds another anti-TL1A option
+    for remission, not a cure.
+- name: Obefazimod in Crohn's disease (ENHANCE-CD)
+  stage: Phase 2
+  note: Dose-ranging Phase 2b induction trial in moderate to severe Crohn's disease; Abivax expects topline
+    results in mid-2027.
+  url: https://www.streetinsider.com/Globe+Newswire/Abivax+Provides+Operational+and+Key+Program+Update/23464599.html
+  variants:
+  - crohns-disease
+  expected: '2027'
+  effect: small
+  effect_note: If positive, a daily pill shown to work in ulcerative colitis could extend to Crohn's,
+    adding control rather than a cure.
 recent:
 - date: 2026-06
   text: Obefazimod met all endpoints in the ABTECT maintenance trial in UC.

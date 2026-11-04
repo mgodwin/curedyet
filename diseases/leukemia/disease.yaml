@@ -7,6 +7,10 @@ summary: Blood cancers of the bone marrow, including AML, ALL, CLL and CML.
 toll:
   text: ~67,790 US cases and ~23,910 US deaths est. 2026; global figures not given in ACS 2026 summary.
   url: https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2026/2026-cancer-facts-and-figures.pdf
+  ratio: "1 in 63"
+  ratio_caption: "Americans will be diagnosed with leukemia in their lifetime"
+  ratio_url: https://seer.cancer.gov/statfacts/html/leuks.html
+  ratio_basis: "NCI SEER Cancer Stat Facts: about 1.6% of men and women diagnosed in their lifetime (2021-2023 data); 1.6% is about 1 in 63."
 status:
   level: 3
   why: Childhood ALL and APL are cured in most patients and CML is well controlled, but AML in older adults
@@ -30,42 +34,64 @@ treatment:
 forecast:
   bottleneck: design-limited
   normal:
-    p2035: 18
-    p2045: 50
-    median: 2045
-    low: 2034
-    high: 2070
+    p2035: 10
+    p2045: 40
+    median: 2048
+    low: 2036
+    high: 2078
   faster:
-    p2035: 30
-    p2045: 72
-    median: 2039
-    low: 2032
-    high: 2055
+    p2035: 22
+    p2045: 62
+    median: 2042
+    low: 2034
+    high: 2063
   faster_note: Faster design and testing of menin inhibitors, fixed-duration CLL regimens and cheaper
     CAR-T could raise cure rates in older AML patients, the main holdout, giving a solid lift since many
     candidates already exist.
   outlook: 'Leukemia is a mix: some types are already cured for most and others are controlled, so the
     bar hinges on AML and CLL. Menin inhibitors and fixed-duration CLL regimens could raise cure or deep-remission
     rates, but older AML patients remain the bottleneck. Wider CAR-T and bispecific use in adult ALL is
-    a further lever.'
+    a further lever. AML and CLL are each about a third of cases, so cured for most waits on at least one of them, which sets this forecast.'
 pipeline:
 - name: Ziftomenib with 7+3 in new AML (KOMET-007)
+  stage: Phase 3
   note: Menin inhibitor approved Nov 2025 for relapsed NPM1 AML; frontline combo showed 96% CRc in NPM1-mutant
     patients.
-  stage: Phase 3
   url: https://www.delveinsight.com/eha-conference/eha-2026/phase-iii-komet-007-trial
+  variants:
+  - aml-other
+  expected: '2028'
+  effect: some
+  effect_note: If KOMET-017 succeeds, adding a menin inhibitor to first treatment could raise cure rates
+    in NPM1-mutant AML, about a third of cases, but AML overall would remain far from cured for most.
 - name: Acalabrutinib plus venetoclax
+  stage: Approved 2025-26
   note: Approved Feb 19, 2026 as fixed-duration all-oral first-line CLL therapy (AMPLIFY).
-  stage: Approved 2025-26
   url: https://www.fda.gov//drugs/resources-information-approved-drugs/fda-approves-acalabrutinib-venetoclax-chronic-lymphocytic-leukemia-or-small-lymphocytic-lymphoma
+  variants:
+  - cll
+  effect: small
+  effect_note: Already approved; a fixed-length all-oral course gives treatment breaks, but CLL is still
+    controlled rather than cured.
 - name: Oral decitabine-cedazuridine plus venetoclax
-  note: Approved May 13, 2026 as an all-oral option for unfit newly diagnosed AML.
   stage: Approved 2025-26
+  note: Approved May 13, 2026 as an all-oral option for unfit newly diagnosed AML.
   url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-oral-combination-decitabine-and-cedazuridine-tablets-venetoclax-newly-diagnosed-acute
+  variants:
+  - aml-other
+  effect: small
+  effect_note: Already approved; an all-oral regimen eases treatment for older unfit patients but rarely
+    cures them.
 - name: Enzomenib
-  note: Menin inhibitor given breakthrough designation Oct 2026 for relapsed KMT2A-rearranged acute leukemia.
   stage: Phase 2
+  note: Menin inhibitor given breakthrough designation Oct 2026 for relapsed KMT2A-rearranged acute leukemia.
   url: https://www.onclive.com/view/fda-flashback-hematologic-cancer-decisions-and-news-from-september-2026
+  variants:
+  - aml-other
+  - adult-all
+  effect: small
+  effect_note: If later trials work, another menin inhibitor would help relapsed KMT2A-rearranged leukemia,
+    a small subset, mostly as a bridge to transplant.
 recent:
 - date: 2026-02
   text: FDA approved the first all-oral fixed-duration BTK plus BCL2 regimen for untreated CLL.

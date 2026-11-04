@@ -8,6 +8,10 @@ summary: An autoimmune disease in which the immune system attacks myelin in the 
 toll:
   text: About 3.1 million people living with MS worldwide (2024).
   url: https://en.wikipedia.org/wiki/Multiple_sclerosis
+  ratio: "About 1 in 320"
+  ratio_caption: "US adults is living with multiple sclerosis"
+  ratio_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6442006/
+  ratio_basis: "Wallin et al., Neurology 2019: 2010 US adult MS prevalence of 309.2 per 100,000 (727,344 adults, cumulated over 10 years); about 1 in 320. Later NMSS estimates put the total near 1 million."
 status:
   level: 2
   why: High-efficacy therapies now suppress relapses and new lesions for most relapsing patients, but
@@ -50,18 +54,36 @@ forecast:
     will keep improving.
 pipeline:
 - name: Fenebrutinib (Roche/Genentech, BTK inhibitor)
+  stage: Filed
   note: FDA accepted NDA with priority review Sept 29, 2026; non-inferior to Ocrevus in PPMS, halved relapses
     vs teriflunomide.
-  stage: Filed
   url: https://www.gene.com/media/press-releases/15130/2026-09-29/genentechs-fenebrutinib-is-the-first-btk
+  variants:
+  - relapsing
+  - progressive
+  expected: '2027'
+  effect: small
+  effect_note: If approved, a daily pill could match Ocrevus in primary progressive MS and cut relapses,
+    controlling MS without curing it.
 - name: Tolebrutinib (Cenrifki, Sanofi)
-  note: EU approved June 2026 for non-relapsing secondary progressive MS; FDA did not approve.
   stage: Approved 2025-26
+  note: EU approved June 2026 for non-relapsing secondary progressive MS; FDA did not approve.
   url: https://www.sanofi.com/en/media-room/press-releases
+  variants:
+  - progressive
+  effect: small
+  effect_note: EU-approved but not FDA-approved; it slows disability in non-relapsing secondary progressive
+    MS without stopping it.
 - name: CD19 CAR-T for MS
-  note: Early trials aim to reset the immune system in refractory MS; no efficacy data yet.
   stage: Phase 1
+  note: Early trials aim to reset the immune system in refractory MS; no efficacy data yet.
   url: https://en.wikipedia.org/wiki/Multiple_sclerosis
+  variants:
+  - relapsing
+  - progressive
+  effect: some
+  effect_note: If early trials show lasting drug-free remission, a one-time immune reset could become
+    the first curative-style approach, but no efficacy data exist yet.
 recent:
 - date: 2026-06
   text: Tolebrutinib became the first BTK inhibitor approved for MS, in the EU for non-relapsing secondary

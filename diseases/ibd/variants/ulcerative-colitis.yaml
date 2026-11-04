@@ -1,0 +1,30 @@
+# Cure Watch variant record: one stage or type of Crohn's & ulcerative colitis. Field guide: CONTRIBUTING.md.
+id: ulcerative-colitis
+name: Ulcerative colitis
+order: 1
+what: The immune system inflames the inner lining of the large bowel (colon and rectum), causing bloody
+  diarrhea and urgency.
+level: 3
+burden: moderate
+burden_why: Lifelong pills, injections or infusions keep it controlled; surgery that ends it is major
+  and leaves a pouch or stoma.
+survival: ~10% have the colon removed within 10 years of diagnosis
+share: More than half of Americans with IBD have ulcerative colitis
+share_url: https://stacks.cdc.gov/view/cdc/134534
+treatment: Most patients are managed with lifelong anti-inflammatory pills, biologic injections or infusions,
+  or JAK pills, which control it but do not cure it. Removing the colon and rectum ends the disease, but
+  it is major surgery that leaves a pouch or stoma, so it is mainly used when medicines fail.
+caveat: 'Judgment call: surgery is a real cure, but it is heavy and most patients would not choose it
+  while medicines work, so per METHODOLOGY it stays at level 3 (cured for some) rather than 4. The typical
+  patient lives on ongoing medication, which is level 2 territory; burden reflects that medication, not
+  surgery. The 10-year figure (9.6%) is from cohorts diagnosed after 2000.'
+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8934200
+forecast:
+  median: 2051
+  low: 2037
+  high: 2090
+  p2035: 6
+  p2045: 21
+  note: Needs a drug or procedure that ends the disease without removing the colon, such as a lasting
+    immune reset or a fix for the gut microbiome-immune loop. Obefazimod and TL1A antibodies like tulisokibart
+    should raise remission rates, but they are ongoing treatments, not cures.

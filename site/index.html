@@ -9,8 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: one readable column (cards go two-up on wide screens). Hash routes: home, d-<id>, pipeline, record. */
+/* Layout: wide pages; disease pages are a main column plus a side rail. Hash routes: home, d-<id> (disease or hub), d-<id>/<variant>, pipeline, record. */
 :root{
+  --tough:#806800; --tough-soft:#f3ecc8;
   --ground:#f4f6f3; --card:#ffffff; --sunk:#f4f6f3; --ink:#121815; --muted:#4e5862; --rule:#e1e6e2; --soft:#c9d2cb;
   --yes:#1e7f4f; --yes-soft:#e3ece6; --some:#a85400; --some-soft:#f6e7d7; --no:#4e5862;
   --heavy:#9c2f1f; --heavy-soft:#f8e1da; --mod:#8a5a00; --mod-soft:#f6ecd6; --light-c:#1e6b46; --light-soft:#e3ece6;
@@ -21,6 +22,7 @@
   --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --tough:#e3cb55; --tough-soft:#332c0c;
   --ground:#0f1412; --card:#18201c; --sunk:#111815; --ink:#e9eee9; --muted:#a3aea7; --rule:#27312c; --soft:#3a4640;
   --yes:#5fd39a; --yes-soft:#173327; --some:#f0a254; --some-soft:#3a2914; --no:#a3aea7;
   --heavy:#f29a87; --heavy-soft:#3b1d17; --mod:#e8c06a; --mod-soft:#33290f; --light-c:#7fd8a8; --light-soft:#173327;
@@ -28,6 +30,7 @@
   --dark:#e9eee9; --on-dark:#0f1412; --on-dark-muted:#3a4640; --on-dark-accent:#1e6b46;
   --st1:#7f978c; --st2:#9ab4a8; --st3:#b7cec3; --st4:#e9eee9; --st5:#5f7a6e; --st6:#f0a254; color-scheme:dark;}}
 :root[data-theme="dark"]{
+  --tough:#e3cb55; --tough-soft:#332c0c;
   --ground:#0f1412; --card:#18201c; --sunk:#111815; --ink:#e9eee9; --muted:#a3aea7; --rule:#27312c; --soft:#3a4640;
   --yes:#5fd39a; --yes-soft:#173327; --some:#f0a254; --some-soft:#3a2914; --no:#a3aea7;
   --heavy:#f29a87; --heavy-soft:#3b1d17; --mod:#e8c06a; --mod-soft:#33290f; --light-c:#7fd8a8; --light-soft:#173327;
@@ -37,7 +40,7 @@
 
 *{box-sizing:border-box}
 body{background:var(--ground);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
-.wrap{max-width:760px;margin:0 auto;padding-block:20px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:20px}
+.wrap{max-width:1240px;margin:0 auto;padding-block:20px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:20px}
 a{color:var(--light-c)}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--some);outline-offset:2px;border-radius:6px}
 h1,h2,h3{margin:0;text-wrap:balance}
@@ -52,7 +55,8 @@ h1,h2,h3{margin:0;text-wrap:balance}
 .hero h1{font-size:clamp(40px,10vw,56px);line-height:1}
 .search{display:flex;gap:8px}
 .search input{flex:1;min-width:0;height:48px;border:1.5px solid var(--ink);border-radius:12px;padding:0 14px;font:inherit;background:var(--card);color:var(--ink)}
-.counts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.counts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (min-width:560px){.counts{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .count{background:var(--card);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:2px;border:0;font:inherit;color:inherit;text-align:left;cursor:pointer}
 .count[aria-pressed="true"]{outline:2px solid var(--ink)}
 .count b{font-family:var(--f-display);font-size:30px;line-height:1.1}
@@ -65,11 +69,28 @@ h1,h2,h3{margin:0;text-wrap:balance}
 select{font:600 13px var(--f-body);min-height:36px;border:1px solid var(--soft);border-radius:10px;background:var(--card);color:var(--ink);padding:0 8px}
 .cards{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
 @media (min-width:720px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1100px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .dcard{text-decoration:none;color:inherit;background:var(--card);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0;border:1px solid transparent}
 .dcard:hover{border-color:var(--soft)}
 .dcard h2{font-size:17px;font-weight:600}
 .verdict{font-family:var(--f-display);font-weight:700;font-size:36px;line-height:1}
-.v-yes{color:var(--yes)} .v-some{color:var(--some)} .v-no{color:var(--no)}
+.v-yes{color:var(--yes)} .v-tough{color:var(--tough)} .v-some{color:var(--some)} .v-no{color:var(--no)}
+.vlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.vlist li{border-top:1px solid var(--rule);font-size:14px}
+.vlist li a{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:7px 0;min-height:32px;color:inherit;text-decoration:none}
+.vlist li a:hover .vname{text-decoration:underline}
+.dcard-title{color:inherit;text-decoration:none}.dcard-title:hover{text-decoration:underline}
+a.more{text-decoration:none}
+.vlist .vname{min-width:0}
+.vstat{flex:none;font-size:13px;font-weight:600;text-align:right;display:inline-flex;align-items:center;gap:6px}
+.vstat i{display:inline-block;width:8px;height:8px;border-radius:50%}
+.stage-tag{font-size:13px;font-weight:600;color:var(--ink);background:var(--sunk);border-radius:6px;padding:4px 8px;width:fit-content}
+.groups{display:flex;flex-direction:column;border-top:1px solid var(--rule);margin-top:4px}
+.grow{display:flex;flex-direction:column;gap:6px;padding:12px 0 4px;border-bottom:1px solid var(--rule)}
+.grow:last-child{border-bottom:0;padding-bottom:0}
+.grow-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.grow-top b{font-size:15px}
+.grow-v{font-size:13px;font-weight:700}
 .stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;background:var(--sunk);border-radius:10px;padding:10px 12px}
 .stats span{display:block;font-size:11px;color:var(--muted)}
 .stats b{font-family:var(--f-display);font-size:24px}
@@ -84,13 +105,47 @@ select{font:600 13px var(--f-body);min-height:36px;border:1px solid var(--soft);
 .empty{padding:24px;text-align:center;color:var(--muted);background:var(--card);border-radius:16px}
 
 /* Detail */
-.ladder-strip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:3px}
+.ladder-strip{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
 .ladder-strip i{height:10px;border-radius:3px;background:var(--rule)}
-.ladder-labels{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:3px;font-size:10px;line-height:1.2;color:var(--muted)}
+.ladder-labels{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;font-size:10px;line-height:1.2;color:var(--muted)}
 .range{position:relative;height:18px}
 .range .base{position:absolute;left:0;right:0;top:8px;height:2px;background:var(--rule)}
 .range .band{position:absolute;top:5px;height:8px;border-radius:4px;background:var(--some-soft)}
 .range .dot{position:absolute;top:1px;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:var(--some)}
+.range .dot{box-shadow:0 0 0 2px var(--card)}
+.range .mk{position:absolute;top:3px;width:12px;height:12px;margin-left:-6px;border-radius:50%}
+.range .mk.bound{background:var(--card);border:2px solid var(--some)}
+.range .mk.now{background:var(--yes);box-shadow:0 0 0 2px var(--card)}
+.rlabels{position:relative;height:30px;font-size:12px;line-height:1.25;color:var(--muted)}
+.rlabels.top{height:16px}
+.rlabels span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.rlabels b{display:block;color:var(--ink);font-weight:600}
+.method{border-top:1px solid var(--rule);margin-top:4px}
+.gacc{border-top:1px solid var(--rule)}
+.gacc summary{cursor:pointer;font-weight:600;font-size:13px;min-height:40px;display:flex;align-items:center;gap:8px;color:var(--light-c)}
+.gacc summary,.method summary{list-style:none}
+.gacc summary::-webkit-details-marker,.method summary::-webkit-details-marker{display:none}
+.gacc summary::before,.method summary::before{content:"";flex:none;width:6px;height:6px;margin:0 4px 0 2px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);transition:transform .15s}
+.gacc[open]>summary::before,.method[open]>summary::before{transform:rotate(45deg)}
+.grow-name{font-size:15px}
+.prog{font-size:13px;color:var(--muted)}
+.prog b{color:var(--ink);font-weight:600}
+.gacc-body{display:flex;flex-direction:column;gap:8px;padding-bottom:8px}
+.gacc .big-year{font-size:32px}
+.method summary{cursor:pointer;font-weight:600;font-size:14px;min-height:44px;display:flex;align-items:center;gap:8px;color:var(--light-c)}
+.method-body{display:flex;flex-direction:column;gap:10px;padding-bottom:4px}
+.trend-wrap{position:relative}
+.trend{display:block;width:100%;outline-offset:2px}
+.trend:focus-visible{outline:2px solid var(--some);border-radius:6px}
+.ttip{position:absolute;top:0;pointer-events:none;background:var(--card);border:1px solid var(--soft);border-radius:8px;padding:6px 8px;font-size:12px;line-height:1.35;max-width:220px;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.ttip b{display:block;font-size:14px}
+.events{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13px}
+.events li{display:grid;grid-template-columns:84px minmax(0,1fr);gap:8px}
+.events li>span:first-child{white-space:nowrap}
+.tkey{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--muted)}
+.tkey i{display:inline-block;width:14px;height:2px;vertical-align:middle;margin-right:6px;border-radius:1px}
+.ttable{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+.ttable th,.ttable td{text-align:left;padding:4px 6px;border-top:1px solid var(--rule)}
 .axis{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}
 .big-year{font-family:var(--f-display);font-size:44px;font-weight:700;line-height:1}
 .grid-tracks{display:grid;grid-template-columns:minmax(0,1fr) 52px 52px 60px;gap:6px 8px;font-size:13px;align-items:baseline}
@@ -131,11 +186,53 @@ select{font:600 13px var(--f-body);min-height:36px;border:1px solid var(--soft);
 .check:first-child{border-top:0}
 .prob{font-family:var(--f-display);font-weight:700;font-size:22px;text-align:right}
 .res{font-size:11px;font-weight:700;text-transform:uppercase;padding:1px 6px;border-radius:4px}
-.res.yes{background:var(--yes-soft);color:var(--yes)} .res.no{background:var(--heavy-soft);color:var(--heavy)}
+.res.void{background:var(--sunk);color:var(--muted)} .res.yes{background:var(--yes-soft);color:var(--yes)} .res.no{background:var(--heavy-soft);color:var(--heavy)}
 .cal{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
 .cal li{display:grid;grid-template-columns:84px minmax(0,1fr);gap:10px;padding:9px 0;border-top:1px solid var(--rule);font-size:14px}
 .cal li:first-child{border-top:0}
 .changes{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:14px}
+
+/* Long text stays readable on wide screens */
+.card p,.key{max-width:80ch}
+/* Disease pages */
+.dlayout{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start}
+.dmain{flex:999 1 560px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.drail{flex:1 1 280px;max-width:380px;display:flex;flex-direction:column;gap:12px}
+.dmain>.card,.drail>.card{padding:20px;gap:12px}
+.ch{margin:0;font-family:var(--f-display);font-size:18px}
+.dtitle{margin:0;font-size:clamp(40px,5vw,56px);line-height:1.02}
+.lede{margin:0;font-size:17px;max-width:72ch;text-wrap:pretty}
+.chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:8px;font-size:14px}
+.chips span{background:var(--sunk);border-radius:10px;padding:10px 12px}
+.why{background:var(--heavy-soft);border-radius:12px;padding:12px 14px;font-size:13px}
+.cat{display:flex;flex-direction:column;gap:6px;padding-top:12px;border-top:1px solid var(--rule);font-size:14px}
+.cat-top{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.cat-when{font-size:12px;margin-left:auto}
+.eff{flex:none;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:4px;padding:2px 6px;background:var(--sunk);color:var(--muted)}
+.eff.big{background:var(--yes-soft);color:var(--light-c)}.eff.some{background:var(--tough-soft);color:var(--tough)}
+.log{display:flex;flex-direction:column}
+.log-row{display:grid;grid-template-columns:84px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:10px 0;border-top:1px solid var(--rule);font-size:14px}
+.srcs ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:13px}
+.srcs h2{margin:0 0 8px}
+.dfoot{border-top:1px solid var(--soft);padding-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;align-items:baseline;font-size:14px}
+.pill-link{font-weight:600;text-decoration:none;border:1px solid var(--ink);color:var(--ink);border-radius:999px;padding:10px 16px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center}
+.vlist-nav{background:var(--card);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.vrow{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr) 24px;gap:12px 20px;align-items:center;padding:18px 20px;text-decoration:none;color:var(--ink);border-top:1px solid var(--rule)}
+.vrow:first-child{border-top:0}.vrow:hover{background:var(--sunk)}
+.vgo{font-size:18px;color:var(--light-c)}.ok{color:var(--light-c)}
+@media (max-width:640px){.vrow{grid-template-columns:minmax(0,1fr) auto}.vhide{display:none}}
+@media (max-width:640px){.ladder-labels span:not([style*="font-weight"]){visibility:hidden}}
+.crumb{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+.crumb-path{display:flex;gap:8px;align-items:center;font-size:14px;font-weight:600;min-height:44px}
+.crumb-path a{text-decoration:none}.crumb-path span{color:var(--muted)}
+.sibs{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.sib{font-size:13px;font-weight:600;text-decoration:none;border:1px solid var(--soft);border-radius:999px;padding:6px 12px;background:var(--card);color:var(--ink);min-height:32px;display:inline-flex;align-items:center}
+.sib.on{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.tip{position:relative;display:inline-flex}
+.tip>button{font:inherit;cursor:help;border:0;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-radius:4px;padding:2px 6px}
+.tip .pop{display:none;position:absolute;top:calc(100% + 8px);left:0;z-index:5;width:300px;max-width:80vw;flex-direction:column;gap:6px;background:var(--dark);color:var(--on-dark);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.45;box-shadow:0 6px 20px rgba(0,0,0,.18)}
+.tip:hover .pop,.tip:focus-within .pop{display:flex}
+.placeholder{height:120px;border-radius:12px;background:var(--sunk);display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;font-size:13px;color:var(--muted)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
@@ -149,7 +246,7 @@ select{font:600 13px var(--f-body);min-height:36px;border:1px solid var(--soft);
 
 <script>
 (function(){
-const LEVELS=["No treatment","Slows it","Controlled","Cured for some","Cured for most","Gone"];
+const LEVELS=["No treatment","Slows it","Controlled","Cured for some","Cured for most","Cured easily","Gone"];
 const S={meta:null,cats:[],dz:[],checks:[],cal:[],updates:[],gates:[],ready:false,err:null};
 let q="", verdictF="all", catF="all", sort="closest";
 try{sort=localStorage.getItem("cw2-sort")||sort}catch(e){}
@@ -160,10 +257,36 @@ const link=(u,t)=>safe(u)?`<a href="${esc(u)}" target="_blank" rel="noopener">${
 const MO=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const fd=d=>{const m=String(d||"").match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/);if(!m)return esc(d);if(!m[2])return m[1];return m[3]?`${MO[+m[2]-1]} ${+m[3]}, ${m[1]}`:`${MO[+m[2]-1]} ${m[1]}`};
 const yr=y=>y==null?"—":(y>=2100?"2100+":"~"+y);
-const lv=d=>Math.max(0,Math.min(5,d.level|0));
-const verdict=d=>lv(d)>=4?"yes":lv(d)===3?"some":"no";
-const VWORD={yes:"Yes.",some:"For some.",no:"Not yet."};
-const VLONG={yes:"Cured for most.",some:"Cured for some.",no:"Not yet."};
+const lv=d=>Math.max(0,Math.min(LEVELS.length-1,d.level|0));
+/* Cured easily (5) and gone (6) are a green yes; cured for most (4) is a "tough" yes: yellow, the cure is hard. */
+const toV=(level,burden)=>level>=5?"yes":level===4?"tough":level===3?"some":"no";
+const verdict=d=>toV(lv(d),d.txBurden);
+const VCOL={yes:"--yes",tough:"--tough",some:"--some",no:"--no"};
+/* Burden keys stay light/moderate/heavy in the data; readers see mild/moderate/difficult. */
+const BURDEN_WORD={light:"mild",moderate:"moderate",heavy:"difficult"};
+const bword=b=>BURDEN_WORD[b]||b;
+/* Statuses a disease reaches: each stage or type's, or the overall one when it has none. */
+const bestLv=d=>(d.groups||[]).length?Math.max(...d.groups.map(g=>g.level|0)):lv(d);
+const vset=d=>new Set((d.groups||[]).length?d.groups.map(g=>toV(g.level,g.burden)):[verdict(d)]);
+/* d.groups: stages or subtypes, each on its own ladder rung. */
+const isStages=d=>(d.groups||[]).some(g=>/^Stage /.test(g.name));
+function groupSpan(L){const n=L.filter(g=>/^Stage /.test(g.name)).map(g=>g.name.replace(/^Stage /,""));
+  const parts=n.length?[n.length>1?`stages ${n[0]}–${n[n.length-1]}`:`stage ${n[0]}`]:[];
+  return parts.concat(L.filter(g=>!/^Stage /.test(g.name)).map(g=>n.length?g.name.toLowerCase():g.name)).join(" or ")}
+const curedGroups=d=>(d.groups||[]).filter(g=>g.level>=4);
+const earlyOnly=d=>lv(d)>=4&&(d.groups||[]).some(g=>g.level<4);
+/* Card tag: when stages or types sit on different rungs, name the best ones. */
+function stageTag(d){const G=d.groups||[];if(!G.length)return"";
+  const c=curedGroups(d),r=G.filter(g=>g.level<4);
+  if(c.length&&r.length&&c.every(g=>/^Stage /.test(g.name)))return `Cured for most at ${groupSpan(c)}, not ${groupSpan(r)}`;
+  const top=Math.max(...G.map(g=>g.level|0)),best=G.filter(g=>(g.level|0)===top);
+  if(best.length===G.length||top<1)return"";
+  return best.every(g=>/^Stage /.test(g.name))?`${LEVELS[top]} at ${groupSpan(best)}`:`${LEVELS[top]}: ${best.map(g=>g.name).join(", ")}`}
+const VWORD={yes:"Yes.",tough:"Yes, but tough.",some:"For some.",no:"Not yet."};
+const VLONG={yes:"Cured for most.",tough:"Cured for most, but a tough road.",some:"Cured for some.",no:"Not yet."};
+const vword=d=>earlyOnly(d)?(verdict(d)==="tough"?"Yes if early, but tough.":"Yes, if caught early."):VWORD[verdict(d)];
+const vlong=d=>earlyOnly(d)?(verdict(d)==="tough"?"Cured for most if caught early, but a tough road.":"Cured for most, if caught early."):VLONG[verdict(d)];
+const STAGING="Cancer stages run from 0 to IV. Stage 0 is abnormal cells that have not invaded. Stages I to III mean a bigger tumor or spread to nearby tissue or lymph nodes. Stage IV, also called metastatic, means it has spread to distant organs.";
 function delta(cur,prev){if(prev==null||cur==null||cur===prev)return"";const d=cur-prev;return`<span class="delta ${d>0?"up":"down"}">${d>0?"▲":"▼"}${Math.abs(d)}</span>`}
 function catName(id){const c=S.cats.find(c=>c.id===id);return c?c.name:""}
 
@@ -171,24 +294,34 @@ function catName(id){const c=S.cats.find(c=>c.id===id);return c?c.name:""}
 function filtered(){
   let L=S.dz.slice();
   if(q){const t=q.toLowerCase();L=L.filter(d=>(d.name||"").toLowerCase().includes(t)||(d.short||"").toLowerCase().includes(t)||catName(d.category).toLowerCase().includes(t))}
-  if(verdictF!=="all")L=L.filter(d=>verdict(d)===verdictF);
+  if(verdictF!=="all")L=L.filter(d=>vset(d).has(verdictF));
   if(catF!=="all")L=L.filter(d=>d.category===catF);
   const y=d=>lv(d)>=4?0:(d.timeline?.median??9999);
-  if(sort==="closest")L.sort((a,b)=>(lv(b)>=4)-(lv(a)>=4)||(b.p2035??0)-(a.p2035??0)||y(a)-y(b));
+  if(sort==="closest")L.sort((a,b)=>(bestLv(b)>=4)-(bestLv(a)>=4)||bestLv(b)-bestLv(a)||(b.p2035??0)-(a.p2035??0)||y(a)-y(b));
   else if(sort==="soonest")L.sort((a,b)=>y(a)-y(b));
   else if(sort==="az")L.sort((a,b)=>String(a.name).localeCompare(String(b.name)));
   else L.sort((a,b)=>(a.order||0)-(b.order||0));
   return L;
 }
+/* Diseases split into stages or types list each one's status instead of an overall verdict. */
+function groupCardHTML(d){return `<article class="dcard">
+    <h2><a class="dcard-title" href="#d-${esc(d.id)}">${esc(d.name)}</a></h2>
+    <span class="muted" style="font-size:14px">${esc(d.short)}</span>
+    <ul class="vlist" aria-label="${isStages(d)?"By stage":"By type"}">${d.groups.map(g=>{const gv=toV(g.level,g.burden),gl=Math.max(0,Math.min(LEVELS.length-1,g.level|0));
+      return `<li><a href="#d-${esc(d.id)}/${esc(g.id)}"><span class="vname">${esc(g.name)}</span><span class="vstat v-${gv}"><i style="background:var(${VCOL[gv]})"></i>${esc(LEVELS[gl])}</span></a></li>`}).join("")}</ul>
+    <div class="meta-row"><span>${esc(catName(d.category))}</span></div>
+    <a class="more" href="#d-${esc(d.id)}">See all ${isStages(d)?"stages":"types"} →</a></article>`}
 function cardHTML(d){
+  if((d.groups||[]).length)return groupCardHTML(d);
   const v=verdict(d),done=lv(d)>=4;
   const stats=done?"":(d.p2035==null?`<div class="stats"><div><span>Forecast</span><b style="font-size:16px">Coming after review</b></div></div>`:`<div class="stats"><div><span>${d.id==="aging"?"Best guess, halt or reverse":"Best guess, cured for most"}</span><b class="num">${yr(d.timeline?.median)}</b></div><div><span>Chance by 2035</span><b class="num">${d.p2035??"—"}%</b>${delta(d.p2035,d.prevP2035)}</div></div>`);
   return `<a class="dcard" href="#d-${esc(d.id)}">
     <h2>${esc(d.name)}</h2>
-    <span class="verdict v-${v}">${VWORD[v]}</span>
+    <span class="verdict v-${v}">${vword(d)}</span>
+    ${stageTag(d)?`<span class="stage-tag">${esc(stageTag(d))}</span>`:""}
     <span style="font-size:14px">${esc(d.levelWhy||d.short)}</span>
     ${stats}
-    <div class="meta-row">${d.txBurden?`<span class="tb ${esc(d.txBurden)}">${esc(d.txBurden)} treatment</span>`:""}<span>${esc(catName(d.category))}</span>${done&&d.timeline?.median?`<span>Cured since ${yr(d.timeline.median)}</span>`:""}</div>
+    <div class="meta-row">${d.txBurden?`<span class="tb ${esc(d.txBurden)}">${esc(bword(d.txBurden))} treatment</span>`:""}<span>${esc(catName(d.category))}</span>${done&&d.timeline?.median?`<span>Cured since ${yr(d.timeline.median)}</span>`:""}</div>
     <span class="more">See details →</span></a>`;
 }
 function renderCards(){const el=$("cards");if(!el)return;const L=filtered();
@@ -196,7 +329,7 @@ function renderCards(){const el=$("cards");if(!el)return;const L=filtered();
   const n=$("shown");if(n)n.textContent=`${L.length} of ${S.dz.length}`;
 }
 function home(){
-  const m=S.meta||{};const c={yes:0,some:0,no:0};S.dz.forEach(d=>c[verdict(d)]++);
+  const m=S.meta||{};const c={yes:0,tough:0,some:0,no:0};S.dz.forEach(d=>vset(d).forEach(v=>c[v]++));
   const cats=S.cats.slice().sort((a,b)=>(a.order||0)-(b.order||0));
   const T=pipeTotals();
   return `
@@ -207,11 +340,12 @@ function home(){
     <div class="search"><input id="q" type="search" autocomplete="off" placeholder="Try Alzheimer's, HIV, aging…" value="${esc(q)}"></div>
   </header>
   <div class="counts" role="group" aria-label="Filter by answer">
-    <button class="count" type="button" data-v="yes" aria-pressed="${verdictF==="yes"}"><b class="num v-yes">${c.yes}</b><span>Yes, for most</span></button>
+    <button class="count" type="button" data-v="yes" aria-pressed="${verdictF==="yes"}"><b class="num v-yes">${c.yes}</b><span>Cured easily</span></button>
+    <button class="count" type="button" data-v="tough" aria-pressed="${verdictF==="tough"}"><b class="num v-tough">${c.tough}</b><span>Cured for most, hard treatment</span></button>
     <button class="count" type="button" data-v="some" aria-pressed="${verdictF==="some"}"><b class="num v-some">${c.some}</b><span>For some</span></button>
     <button class="count" type="button" data-v="no" aria-pressed="${verdictF==="no"}"><b class="num v-no">${c.no}</b><span>Not yet</span></button>
   </div>
-  <p class="key">"Cured" means most patients who get standard care can be cured. <b>Best guess</b> is the year we expect that to happen. <b>Chance by 2035</b> is how likely it happens within about 10 years.</p>
+  <p class="key"><b>Cured easily</b> means most patients are cured with mild treatment. <b>Cured for most</b> means at least about 85% are cured, but the treatment is hard. <b>Best guess</b> is the year we expect a cure for most. Diseases split into stages or types count under every status their variants reach.</p>
   ${m.headline?`<a class="week" href="#record"><span class="eyebrow">This week${m.week?` · week ${esc(m.week)}`:""}</span><span style="font-weight:600">${esc(m.headline)}</span><span class="more">This week and our track record →</span></a>`:""}
   <div class="filters">
     <button class="chip" type="button" data-c="all" aria-pressed="${catF==="all"}">All</button>
@@ -228,60 +362,188 @@ function home(){
   <p class="muted" style="font-size:12px;margin:0">Forecasts are updated weekly and scored against what actually happens. A research tracker, not medical advice.${S.meta?.repo?` Open data: <a href="https://github.com/${esc(S.meta.repo)}" target="_blank" rel="noopener">add a disease or fix a fact on GitHub</a>.`:""}</p>`;
 }
 
-/* ---------- Detail ---------- */
-function detail(id){
-  const d=S.dz.find(x=>x.id===id);
-  if(!d)return `<a class="back" href="#">← All diseases</a><div class="empty">${S.ready?"That disease isn't in the tracker.":"Loading…"}</div>`;
-  const v=verdict(d),L=lv(d),done=L>=4,t=d.timeline||{};
-  const MIN=2025,MAX=2080,x=y=>((Math.max(MIN,Math.min(MAX,y))-MIN)/(MAX-MIN))*100;
-  const vcol=v==="yes"?"--yes":v==="some"?"--some":"--no";
-  const ladder=`<div class="card"><h2 style="font-size:15px">Where it sits on the cure ladder</h2>
-    <div class="ladder-strip">${[0,1,2,3,4,5].map(i=>`<i style="${i<=L?`background:var(${vcol})`:""}"></i>`).join("")}</div>
-    <div class="ladder-labels">${LEVELS.map((l,i)=>`<span style="${i===L?"color:var(--ink);font-weight:600":""}">${l}</span>`).join("")}</div>
-    ${d.levelWhy?`<p style="margin:0;font-size:14px">${esc(d.levelWhy)}</p>`:""}</div>`;
-  const yd=(d.prevMedian!=null&&t.median!=null&&d.prevMedian!==t.median)?`<span class="delta ${t.median<d.prevMedian?"up":"down"}">${t.median<d.prevMedian?"◀ ":"▶ "}${Math.abs(t.median-d.prevMedian)} yr</span>`:"";
-  const est=done?`<div class="card"><h2 style="font-size:15px">Cured for most since</h2><span class="big-year num">${yr(t.median)}</span>${d.accelNote?`<p style="margin:0;font-size:14px" class="muted">${esc(d.accelNote)}</p>`:""}</div>`:
-  `<div class="card"><h2 style="font-size:15px">${d.id==="aging"?"When could most people halt or reverse aging?":"When will most patients be curable?"}</h2>
-    <div style="display:flex;align-items:baseline;gap:10px"><span class="big-year num">${yr(t.median)}</span><span class="muted" style="font-size:13px">best guess</span>${yd}</div>
-    ${t.low!=null?`<div class="range"><span class="base"></span><span class="band" style="left:${x(t.low)}%;width:${Math.max(1,x(t.high)-x(t.low))}%"></span><span class="dot" style="left:${x(t.median)}%"></span></div>
-    <div class="axis"><span>2025</span><span>2045</span><span>2065</span><span>2080+</span></div>
-    <span class="muted" style="font-size:13px">80% likely to land between ${t.low} and ${t.high>=2100?"after 2100":t.high}.</span>`:""}
-    <div class="stats"><div><span>Chance by 2035</span><b class="num">${d.p2035??"—"}%</b>${delta(d.p2035,d.prevP2035)}</div><div><span>Chance by 2045</span><b class="num">${d.p2045??"—"}%</b>${delta(d.p2045,d.prevP2045)}</div></div></div>`;
-  const interim=(d.interim||[]).length?`<div class="card"><h2 style="font-size:15px">Milestones on the way</h2>
-    <div class="grid-tracks" style="grid-template-columns:minmax(0,1fr) 52px 52px"><span></span><span class="h">2035</span><span class="h">2045</span>
-    ${d.interim.map(m=>`<span>${esc(m.label)}</span><span class="num">${esc(m.p2035)}%</span><span class="num">${esc(m.p2045)}%</span>`).join("")}</div>
-    <ul class="muted">${d.interim.map(m=>`<li>${esc(m.note)}</li>`).join("")}</ul></div>`:"";
-  const how=(!done&&d.pNormal2035!=null)?`<div class="card"><h2 style="font-size:15px">How we got these numbers</h2>
-    <p style="margin:0;font-size:14px">We forecast two futures, then blend them by the ${esc(S.meta?.accelIndex??"—")}% chance the drug pipeline gets much faster by 2030.</p>
-    <div class="grid-tracks"><span></span><span class="h">2035</span><span class="h">2045</span><span class="h">Year</span>
-      <span>Today's pace</span><span class="num">${d.pNormal2035}%</span><span class="num">${d.pNormal2045}%</span><span class="num">${yr(d.medianNormal)}</span>
-      <span>Faster pipeline</span><span class="num">${d.pAccel2035}%</span><span class="num">${d.pAccel2045}%</span><span class="num">${yr(d.medianAccel)}</span>
-      <span style="font-weight:600">Blended</span><span class="num" style="font-weight:600">${d.p2035}%</span><span class="num" style="font-weight:600">${d.p2045}%</span><span class="num" style="font-weight:600">${yr(t.median)}</span></div>
-    ${d.accelNote?`<p class="muted" style="margin:0;font-size:13px">${esc(d.accelNote)}</p>`:""}
-    ${d.outlook?`<p style="margin:0;font-size:14px">${esc(d.outlook)}</p>`:""}
-    <a href="#pipeline" style="font-size:13px;font-weight:600">How the pipeline could speed up →</a></div>`:"";
-  const tx=`<div class="card"><h2 style="font-size:15px">Treatment today</h2>
-    ${(d.bestTherapies||[]).length?`<ul>${d.bestTherapies.map(b=>`<li>${esc(b)}</li>`).join("")}</ul>`:""}
-    ${d.txBurden?`<div class="burden-box"><span class="tb ${esc(d.txBurden)}">${esc(d.txBurden)}</span><span>${esc(d.txBurdenNote)}</span></div>`:""}</div>`;
-  const pipe=(d.pipeline||[]).length||d.nextMilestone?`<div class="card"><h2 style="font-size:15px">What could change it</h2>
-    ${(d.pipeline||[]).map(p=>`<div class="pl"><span class="stage">${esc(p.stage)}</span><span>${link(p.url,p.name)}. ${esc(p.note)}</span></div>`).join("")}
-    ${d.nextMilestone?`<div style="border-top:1px solid var(--rule);padding-top:10px;font-size:13px"><b>Next to watch:</b> ${fd(d.nextMilestone.date)}. ${link(d.nextMilestone.url,d.nextMilestone.what)}</div>`:""}</div>`:"";
-  const recent=(d.breakthroughs||[]).length?`<div class="card"><h2 style="font-size:15px">Recent results</h2><ul>${d.breakthroughs.map(b=>`<li><span class="muted num">${fd(b.date)}</span> ${esc(b.text)} ${safe(b.url)?link(b.url,"Source"):""}</li>`).join("")}</ul></div>`:"";
-  const extra=`<div class="card"><h2 style="font-size:15px">How many people</h2><p style="margin:0;font-size:14px">${safe(d.burdenUrl)?link(d.burdenUrl,d.burden):esc(d.burden)}</p>
-    ${d.aiNote?`<h2 style="font-size:15px;margin-top:6px">Is AI helping?</h2><p style="margin:0;font-size:14px">${d.aiImpact?`<b>${esc(d.aiImpact[0].toUpperCase()+d.aiImpact.slice(1))}.</b> `:""}${esc(d.aiNote)}</p>`:""}
-    ${(d.markets||[]).length?`<h2 style="font-size:15px;margin-top:6px">What forecasters say</h2><ul>${d.markets.map(m=>`<li>${link(m.url,m.who)}: ${esc(m.what)}</li>`).join("")}</ul>`:""}</div>`;
-  const src=(d.sources||[]).length?`<section style="display:flex;flex-direction:column;gap:8px"><h2 style="font-size:15px">Sources</h2><ol style="margin:0;padding-left:20px;font-size:13px;display:flex;flex-direction:column;gap:6px">${d.sources.map(s=>`<li>${link(s.url,s.title)}</li>`).join("")}</ol></section>`:"";
-  return `<a class="back" href="#">← All diseases</a>
-  <header style="display:flex;flex-direction:column;gap:6px">
-    <span class="eyebrow">${esc(catName(d.category))}${d.lastDeep?` · checked ${fd(d.lastDeep)}`:S.meta?.updatedAt?` · updated ${fd(S.meta.updatedAt)}`:""}</span>
-    <h1 class="display" style="font-size:40px;line-height:1.05">${esc(d.name)}</h1>
-    <span class="verdict v-${v}" style="font-size:32px">${VLONG[v]}</span>
-    <p style="margin:4px 0 0">${esc(d.status)}</p></header>
-  ${d.tracking==="proposed"?`<div class="card" style="background:var(--some-soft)"><b>New to the tracker.</b><span style="font-size:14px">This disease was added by a contributor. Forecasts arrive after its first weekly review.</span></div>`:""}
-  ${ladder}${est}${interim}${how}${tx}${pipe}${recent}${extra}${src}
-  ${S.meta?.repo?`<div class="card"><h2 style="font-size:15px">Spot something wrong or out of date?</h2><p style="margin:0;font-size:14px">Every disease is a folder of plain files on GitHub. Suggest a fix or add a source with a pull request.</p><a href="https://github.com/${esc(S.meta.repo)}/tree/main/${esc(d.folder)}" target="_blank" rel="noopener" style="font-weight:600;font-size:14px">Edit ${esc(d.name)} on GitHub →</a></div>`:""}
-  <p class="muted" style="font-size:12px;margin:0">Forecasts are Claude's weekly judgment from trial results, approvals and forecasting markets, anchored to historical base rates. A research tracker, not medical advice.</p>`;
+
+/* ---------- Estimate timeline and history ---------- */
+const NOW=new Date().getFullYear();
+const hiLabel=h=>h>=2100?"after 2100":yr(h);
+function lpos(p){return p<12?`left:${p}%;transform:none`:p>88?`left:${p}%;transform:translateX(-100%)`:`left:${p}%`}
+const XR=y=>((Math.max(2025,Math.min(2080,y))-2025)/55)*100;
+/* Forecast for one stage or type: when most patients with it could be curable. */
+function groupEstHTML(f){return `<div style="display:flex;align-items:baseline;gap:10px"><span class="big-year num">${yr(f.median)}</span><span class="muted" style="font-size:13px">best guess</span></div>
+  ${f.low!=null?`${rangeHTML(f,XR)}<div class="axis"><span>2025</span><span>2045</span><span>2065</span><span>2080+</span></div>`:""}
+  <div class="stats"><div><span>Chance by 2035</span><b class="num">${f.p2035??"—"}%</b></div><div><span>Chance by 2045</span><b class="num">${f.p2045??"—"}%</b></div></div>
+  ${f.note?`<span style="font-size:14px">${esc(f.note)}</span>`:""}`}
+function rangeHTML(t,x){const lo=x(t.low),hi=x(t.high),md=x(t.median),nw=x(NOW);
+  const bottom=hi-lo<26?`<span style="${lpos((lo+hi)/2)}"><b class="num">${yr(t.low)} to ${hiLabel(t.high)}</b>optimistic to pessimistic</span>`
+    :`<span style="${lpos(lo)}"><b class="num">${yr(t.low)}</b>optimistic</span><span style="${lpos(hi)}"><b class="num">${hiLabel(t.high)}</b>pessimistic</span>`;
+  return `<div class="rlabels top"><span style="${lpos(nw)}">Today · ${NOW}</span></div>
+    <div class="range"><span class="base"></span><span class="band" style="left:${lo}%;width:${Math.max(1,hi-lo)}%"></span>
+      <span class="mk now" style="left:${nw}%" title="Today"></span><span class="mk bound" style="left:${lo}%" title="Optimistic"></span><span class="mk bound" style="left:${hi}%" title="Pessimistic"></span><span class="dot" style="left:${md}%" title="Best guess"></span></div>
+    <div class="rlabels">${bottom}</div>`}
+const evText=e=>`${e.text}`;
+/* Years from a date until a forecast year; the 2100 cap reads as "2100+". */
+const decYear=t=>1970+t/(365.25*864e5);
+const yrsAway=(y,date)=>Math.max(0,Math.round(Math.min(2100,y)-decYear(Date.parse(date))));
+function eventsHTML(E){return E.length?`<ul class="events">${E.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).map(e=>`<li><span class="muted num">${fd(e.date)}</span><span>${esc(e.text)} ${safe(e.url)?link(e.url,"Source"):""}</span></li>`).join("")}</ul>`:""}
+function trendHTML(d){const T=(d.trend||[]).filter(p=>p.median!=null),E=d.events||[];
+  const head=`<h3 style="font-size:14px;margin-top:6px">Years until most patients are curable</h3>`;
+  if(T.length<2)return `${head}<p class="muted" style="margin:0;font-size:13px">Tracking started ${fd(T[0]?.date||S.meta?.updatedAt)}, ${T[0]?`about ${yrsAway(T[0].median,T[0].date)} years away`:""}. Each weekly update adds a point here, marked with the news that moved it. A line falling faster than time passes means a cure is getting closer.</p>${eventsHTML(E)}`;
+  const rows=T.map(p=>`<tr><td class="num">${fd(p.date)}</td><td class="num">${yrsAway(p.median,p.date)} yrs (${yr(p.median)})</td><td class="num">${p.low!=null?`${yr(p.low)} to ${hiLabel(p.high)}`:"—"}</td></tr>`).join("");
+  return `${head}<div class="trend-wrap"><div class="trend" data-id="${esc(d.id)}" tabindex="0" role="img" aria-label="Years until most patients are curable, at each weekly update. Use arrow keys to step through."></div><div class="ttip" hidden></div></div>
+    <div class="tkey"><span><i style="background:var(--some)"></i>Best guess, with optimistic to pessimistic band</span><span><i style="background:var(--muted);opacity:.6"></i>Same forecast: falls one year per year if nothing changes</span>${E.length?`<span>◆ News that moved it</span>`:""}</div>
+    ${eventsHTML(E)}
+    <details style="font-size:13px"><summary class="muted" style="cursor:pointer">Show as table</summary><table class="ttable"><thead><tr><th>Update</th><th>Best guess</th><th>Optimistic to pessimistic year</th></tr></thead><tbody>${rows}</tbody></table></details>`}
+function drawTrend(){const el=document.querySelector(".trend");if(!el)return;const d=S.dz.find(x=>x.id===el.dataset.id);if(!d)return;
+  const T=(d.trend||[]).filter(p=>p.median!=null).map(p=>{const t=Date.parse(p.date),a=y=>y==null?null:Math.min(2100,y)-decYear(t);return{...p,t,m:a(p.median),lo:a(p.low),hi:a(p.high)}}).sort((a,b)=>a.t-b.t);
+  const E=(d.events||[]).map(e=>({...e,t:Date.parse(e.date)})).filter(e=>!isNaN(e.t));
+  if(T.length<2)return;
+  const NS="http://www.w3.org/2000/svg",W=Math.max(260,el.clientWidth),H=170,L=50,R=10,TP=10,B=22;
+  const t0=T[0].t,t1=T[T.length-1].t,band=T.every(p=>p.low!=null&&p.high!=null);
+  const ref=v=>T[0].m-(decYear(v)-decYear(t0));
+  const vals=T.flatMap(p=>band?[p.lo,p.hi,p.m]:[p.m]).concat([ref(t1)]);
+  let y0=Math.min(...vals),y1=Math.max(...vals);const pad=Math.max(1,(y1-y0)*.05);
+  const step=[1,2,5,10,20,25,50].find(s=>(y1-y0+2*pad)/s<=4)||50;y0=Math.floor((y0-pad)/step)*step;y1=Math.ceil((y1+pad)/step)*step;
+  y0=Math.max(0,y0);
+  const X=t=>L+(t-t0)/(t1-t0||1)*(W-L-R),Y=v=>TP+(1-(v-y0)/(y1-y0))*(H-TP-B);
+  const mk=(n,a)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);return e};
+  const svg=mk("svg",{width:W,height:H,viewBox:`0 0 ${W} ${H}`});
+  for(let v=y0;v<=y1;v+=step){svg.append(mk("line",{x1:L,x2:W-R,y1:Y(v),y2:Y(v),stroke:"var(--rule)","stroke-width":1}));
+    const tx=mk("text",{x:L-6,y:Y(v)+4,"text-anchor":"end","font-size":11,fill:"var(--muted)"});tx.textContent=`${v} yrs`;svg.append(tx)}
+  [[T[0],"start"],[T[T.length-1],"end"]].forEach(([p,a])=>{const tx=mk("text",{x:X(p.t),y:H-6,"text-anchor":a,"font-size":11,fill:"var(--muted)"});tx.textContent=fd(p.date);svg.append(tx)});
+  if(band)svg.append(mk("path",{d:"M"+T.map(p=>`${X(p.t)},${Y(p.hi)}`).join("L")+"L"+T.slice().reverse().map(p=>`${X(p.t)},${Y(p.lo)}`).join("L")+"Z",fill:"var(--some)","fill-opacity":.12}));
+  svg.append(mk("line",{x1:X(t0),y1:Y(ref(t0)),x2:X(t1),y2:Y(ref(t1)),stroke:"var(--muted)","stroke-width":1,"stroke-opacity":.6}));
+  E.filter(e=>e.t>=t0&&e.t<=t1).forEach(e=>{svg.append(mk("line",{x1:X(e.t),x2:X(e.t),y1:TP,y2:H-B,stroke:"var(--soft)","stroke-width":1}));
+    svg.append(mk("rect",{x:X(e.t)-4,y:TP-4,width:8,height:8,transform:`rotate(45 ${X(e.t)} ${TP})`,fill:"var(--ink)",stroke:"var(--card)","stroke-width":2}))});
+  svg.append(mk("path",{d:"M"+T.map(p=>`${X(p.t)},${Y(p.m)}`).join("L"),fill:"none",stroke:"var(--some)","stroke-width":2,"stroke-linejoin":"round","stroke-linecap":"round"}));
+  T.forEach(p=>svg.append(mk("circle",{cx:X(p.t),cy:Y(p.m),r:4,fill:"var(--some)",stroke:"var(--card)","stroke-width":2})));
+  const cross=mk("line",{y1:TP,y2:H-B,stroke:"var(--muted)","stroke-width":1,visibility:"hidden"}),hit=mk("rect",{x:L,y:0,width:W-L-R,height:H,fill:"transparent"});
+  svg.append(cross,hit);el.replaceChildren(svg);
+  const tip=el.parentElement.querySelector(".ttip");let cur=-1;
+  const show=i=>{cur=i;const p=T[i],cx=X(p.t);cross.setAttribute("x1",cx);cross.setAttribute("x2",cx);cross.setAttribute("visibility","visible");
+    const day=String(p.date).slice(0,10),evs=E.filter(e=>String(e.date).slice(0,10)<=day&&(i===0||String(e.date).slice(0,10)>String(T[i-1].date).slice(0,10)));
+    const b=document.createElement("b");b.className="num";b.textContent=`About ${yrsAway(p.median,p.date)} years away`;
+    const rows=[document.createTextNode(`${fd(p.date)} · best guess ${yr(p.median)}`)];if(p.low!=null){const s=document.createElement("div");s.className="muted";s.textContent=`Optimistic ${yrsAway(p.low,p.date)} yrs (${yr(p.low)}), pessimistic ${p.high>=2100?`${yrsAway(2100,p.date)}+ yrs (after 2100)`:`${yrsAway(p.high,p.date)} yrs (${yr(p.high)})`}`;rows.push(s)}
+    evs.forEach(e=>{const s=document.createElement("div");s.style.marginTop="4px";s.textContent=evText(e);rows.push(s)});
+    tip.replaceChildren(b,...rows);tip.hidden=false;const w=tip.offsetWidth;tip.style.left=Math.max(0,Math.min(W-w,cx+10>W-w?cx-w-10:cx+10))+"px"};
+  const hide=()=>{cross.setAttribute("visibility","hidden");tip.hidden=true;cur=-1};
+  const near=cx=>T.reduce((bi,p,i)=>Math.abs(X(p.t)-cx)<Math.abs(X(T[bi].t)-cx)?i:bi,0);
+  hit.addEventListener("pointermove",e=>{const r=svg.getBoundingClientRect();show(near(e.clientX-r.left))});
+  hit.addEventListener("pointerleave",hide);el.addEventListener("blur",hide);
+  el.addEventListener("focus",()=>show(T.length-1));
+  el.addEventListener("keydown",e=>{if(e.key==="ArrowLeft"||e.key==="ArrowRight"){e.preventDefault();show(Math.max(0,Math.min(T.length-1,(cur<0?T.length-1:cur)+(e.key==="ArrowLeft"?-1:1))))}else if(e.key==="Escape")hide()});
 }
+let rsz;window.addEventListener("resize",()=>{clearTimeout(rsz);rsz=setTimeout(drawTrend,150)});
+
+/* ---------- Disease pages: single disease, hub (has variants) and variant ---------- */
+const vcolor=(level,burden)=>`var(${VCOL[toV(level,burden)]})`;
+function ladderHTML(level,col){const L=Math.max(0,Math.min(LEVELS.length-1,level|0));
+  return `<div class="ladder-strip">${LEVELS.map((_,i)=>`<i style="${i<=L&&L>0?`background:${col}`:""}"></i>`).join("")}</div>
+    <div class="ladder-labels">${LEVELS.map((l,i)=>`<span style="${i===L?"color:var(--ink);font-weight:600":""}">${l}</span>`).join("")}</div>`}
+function burdenTip(b,id){if(!b)return"";return `<span class="tip"><button type="button" class="tb ${esc(b)}" aria-describedby="bk-${id}">${esc(bword(b))}</button><span class="pop" id="bk-${id}" role="tooltip">
+  <span><b>Mild:</b> a short or easy course with few side effects</span><span><b>Moderate:</b> ongoing treatment, or real but manageable side effects</span><span><b>Difficult:</b> serious risks, intensive procedures, heavy monitoring or very high cost</span></span></span>`}
+const EFFECT={big:"Big effect",some:"Some effect",small:"Small effect"};
+const upcoming=p=>p.expected?String(p.expected)>=new Date().toISOString().slice(0,String(p.expected).length):!/^approved/i.test(p.stage||"");
+function catalystsHTML(items,scope){const L=(items||[]).filter(upcoming);
+  return `<section class="card"><h2 class="ch">What could change it</h2>
+    <span class="muted" style="font-size:13px">Upcoming results and decisions${scope?` for ${esc(scope)}`:""}, and what each could do to the estimate. Once one happens, it moves to the estimate log.</span>
+    ${L.length?L.map(p=>`<div class="cat"><div class="cat-top"><span class="stage">${esc(p.stage)}</span><b>${link(p.url,p.name)}</b>${p.effect?`<span class="eff ${esc(p.effect)}">${EFFECT[p.effect]||esc(p.effect)}</span>`:""}${p.expected?`<span class="muted cat-when">Expected ${fd(p.expected)}</span>`:""}</div>
+      <span>${esc(p.note)}</span>${p.effect_note?`<details class="gacc"><summary>Why it matters</summary><div class="gacc-body"><span><b>If it works:</b> ${esc(p.effect_note)}</span></div></details>`:""}</div>`).join("")
+    :`<p class="muted" style="margin:0">No dated results or decisions on the calendar${scope?` for ${esc(scope)}`:""} yet.</p>`}</section>`}
+function logHTML(rows){const R=rows.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date)));
+  return `<section class="card"><h2 class="ch">Estimate log</h2>
+    <span class="muted" style="font-size:13px">What actually happened, and what it did to the estimate. Only results that change a rung, move a forecast or settle something from "What could change it" are logged.</span>
+    <div class="log">${R.map(r=>`<div class="log-row"><span class="muted num">${fd(r.date)}</span><span>${esc(r.text)} ${safe(r.url)?link(r.url,"Source"):""}</span><span class="eff ${r.kind==="earlier"?"big":"small"}">${esc(r.tag)}</span></div>`).join("")}</div></section>`}
+function railHTML(d,extra,variant){const t=d.timeline||{};
+  const ai=d.aiNote?`<section class="card"><h2 class="ch">Is AI helping?</h2><span>${d.aiImpact?`<b>${esc(d.aiImpact[0].toUpperCase()+d.aiImpact.slice(1))}.</b> `:""}${esc(d.aiNote)}</span>
+    ${!variant&&d.medianNormal!=null&&d.medianAccel!=null&&d.medianNormal>d.medianAccel?`<div style="border-top:1px solid var(--rule);padding-top:10px;display:flex;flex-direction:column;gap:2px"><span class="eyebrow">How much faster it could get</span><b class="display" style="font-size:22px">~${d.medianNormal-d.medianAccel} years sooner</b><span class="muted" style="font-size:13px">If AI and faster rules make the drug pipeline much faster, the best guess moves from ~${d.medianNormal} to ~${d.medianAccel}.</span></div>`:""}
+    <a href="#pipeline" style="font-size:13px;font-weight:600">How the pipeline could speed up →</a></section>`:"";
+  return `<aside class="drail">${extra||""}<section class="card"><span class="eyebrow">How many people</span>${d.ratio?`<b class="display num" style="font-size:40px;line-height:1">${esc(d.ratio.ratio)}</b><span style="font-weight:600">${safe(d.ratio.ratio_url)?link(d.ratio.ratio_url,d.ratio.ratio_caption):esc(d.ratio.ratio_caption)}</span><span class="muted" style="font-size:13px">${safe(d.burdenUrl)?link(d.burdenUrl,d.burden):esc(d.burden)}</span>`:`<span>${safe(d.burdenUrl)?link(d.burdenUrl,d.burden):esc(d.burden)}</span>`}
+    ${d.nextMilestone?`<div style="border-top:1px solid var(--rule);padding-top:10px;display:flex;flex-direction:column;gap:2px"><span class="eyebrow">Next to watch · ${fd(d.nextMilestone.date)}</span>${link(d.nextMilestone.url,d.nextMilestone.what)}</div>`:""}</section>${ai}</aside>`}
+function sourcesHTML(list){return list&&list.length?`<section class="srcs"><h2 style="font-size:15px">Sources</h2><ol>${list.map(s=>`<li>${link(s.url,s.title)}</li>`).join("")}</ol></section>`:""}
+function footerHTML(){const repo=S.meta?.repo;
+  return `<footer class="dfoot"><div style="display:flex;flex-direction:column;gap:4px;max-width:640px"><b style="font-size:16px">See a problem? Help fix it.</b><span class="muted">Every number on this page lives in an open repo. If something is wrong, out of date or missing a source, open a pull request or an issue on GitHub.</span></div>
+    ${repo?`<a class="pill-link" href="https://github.com/${esc(repo)}" target="_blank" rel="noopener">Contribute on GitHub →</a>`:""}
+    <span class="muted" style="flex-basis:100%;font-size:12px">Forecasts are Claude's weekly judgment from trial results, approvals and forecasting markets, anchored to historical base rates. A research tracker, not medical advice.</span></footer>`}
+const YRS=(y,base)=>Math.max(0,Math.min(2100,y)-(base||NOW));
+const yearsBig=f=>`<div style="display:flex;flex-direction:column;gap:2px"><div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><span class="big-year num">~${YRS(f.median)} years</span><span class="muted" style="font-size:15px">best guess · ${f.median>=2100?"after 2100":f.median}</span></div>
+  ${f.low!=null?`<span class="muted" style="font-size:13px">Optimistic ~${YRS(f.low)} years (${f.low}) · pessimistic ${f.high>=2100?"after 2100":`~${YRS(f.high)} years (${f.high})`}</span>`:""}</div>`;
+/* Forecast panel. o: {head, level, f:{median,low,high}, note, reached, reachedEasy, easy, trend, method} */
+function forecastHTML(o){const L=o.level|0;let body;
+  if(L>=5)body=`<span class="big-year">Cured easily</span><span class="muted">${o.reachedEasy?`Since ~${o.reachedEasy}. `:""}Most patients are cured with mild treatment.</span>`;
+  else if(L===4)body=`<div style="display:flex;flex-direction:column;gap:2px"><span class="big-year" style="font-size:34px">Cured for most${o.reached?` since ~${o.reached}`:""}</span><span class="muted" style="font-size:13px">The cure works, but the treatment is hard. The next goal is a cure with mild treatment.</span></div>
+    ${o.easy?`<h3 style="font-size:15px;margin-top:6px">When will the cure get easy?</h3>${yearsBig(o.easy)}${o.easy.low!=null?rangeHTML(o.easy,XR)+`<div class="axis"><span>2025</span><span>2045</span><span>2065</span><span>2080+</span></div>`:""}${o.easy.note?`<p style="margin:0;font-size:14px">${esc(o.easy.note)}</p>`:""}`:`<span class="muted" style="font-size:13px">No forecast yet for when the cure gets easy.</span>`}`;
+  else if(o.f&&o.f.median!=null)body=`${yearsBig(o.f)}${o.f.low!=null?rangeHTML(o.f,XR)+`<div class="axis"><span>2025</span><span>2045</span><span>2065</span><span>2080+</span></div>`:""}
+    ${o.trend||""}${o.note?`<p style="margin:0;font-size:14px">${esc(o.note)}</p>`:""}${o.method||""}`;
+  else body=`<span class="muted">Forecast coming after the next review.</span>`;
+  return `<section class="card" id="forecast"><div style="display:flex;flex-direction:column;gap:4px"><span class="eyebrow">Forecast</span><h2 class="ch" style="font-size:22px">${esc(L>=5?"When it became easy to cure":L===4?"When it became curable":o.head)}</h2></div>${body}</section>`}
+function methodHTML(d){const t=d.timeline||{};return d.pNormal2035==null?"":`<details class="method"><summary>How we got these numbers</summary><div class="method-body">
+  <p style="margin:0;font-size:14px">We forecast two futures, then blend them by the ${esc(S.meta?.accelIndex??"—")}% chance the drug pipeline gets much faster by 2030.</p>
+  <div class="grid-tracks"><span></span><span class="h">2035</span><span class="h">2045</span><span class="h">Year</span>
+    <span>Today's pace</span><span class="num">${d.pNormal2035}%</span><span class="num">${d.pNormal2045}%</span><span class="num">${yr(d.medianNormal)}</span>
+    <span>Faster pipeline</span><span class="num">${d.pAccel2035}%</span><span class="num">${d.pAccel2045}%</span><span class="num">${yr(d.medianAccel)}</span>
+    <span style="font-weight:600">Blended</span><span class="num" style="font-weight:600">${d.p2035}%</span><span class="num" style="font-weight:600">${d.p2045}%</span><span class="num" style="font-weight:600">${yr(t.median)}</span></div>
+  ${d.accelNote?`<p class="muted" style="margin:0;font-size:13px">${esc(d.accelNote)}</p>`:""}</div></details>`}
+function headerHTML(d,title,desc,crumb){return `${crumb||`<a class="back" href="#">← All diseases</a>`}
+  <header style="display:flex;flex-direction:column;gap:8px;max-width:820px"><span class="eyebrow">${esc(catName(d.category))}${d.lastDeep?` · checked ${fd(d.lastDeep)}`:""}</span>
+  <h1 class="display dtitle">${esc(title)}</h1>${desc?`<p class="lede">${esc(desc)}</p>`:""}</header>`}
+const kindWord=d=>isStages(d)?"stage":"type";
+/* Baseline log row: the first snapshot as recorded then. Variants have no snapshot yet, so they get a plain row. */
+const baseRow=(d,useSnap)=>{const T=(d.trend||[])[0];if(!T)return[];const m=useSnap&&T.level<4?T.median:null;
+  return [{date:T.date,text:m?`Tracking began at ~${YRS(m,+String(T.date).slice(0,4))} years (${m>=2100?"after 2100":m}).`:"Tracking began.",tag:"Baseline"}]};
+
+function singlePage(d){const t=d.timeline||{},L=lv(d),col=vcolor(L,d.txBurden);
+  const logRows=baseRow(d,true).concat((d.events||[]).map(e=>({date:e.date,text:e.text,url:e.url,tag:"Changed"})),(d.breakthroughs||[]).map(b=>({date:b.date,text:b.text,url:b.url,tag:"Counted in baseline"})));
+  return `${headerHTML(d,d.name,d.short)}
+  <div class="dlayout"><main class="dmain">
+    <section class="card"><span class="eyebrow">Where it stands</span><span class="display" style="font-size:30px;line-height:1">${esc(LEVELS[L])}</span>${ladderHTML(L,col)}${d.levelWhy?`<span style="font-size:14px">${esc(d.levelWhy)}</span>`:""}</section>
+    <section class="card"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><h2 class="ch" style="font-size:22px">Treatment today</h2>${burdenTip(d.txBurden,d.id)}</div>
+      ${d.status?`<p style="margin:0">${esc(d.status)}</p>`:""}${(d.bestTherapies||[]).length?`<div class="chips">${d.bestTherapies.map(b=>`<span>${esc(b)}</span>`).join("")}</div>`:""}
+      ${d.txBurdenNote?`<div class="why"><b>Why it's rated ${esc(bword(d.txBurden))}:</b> ${esc(d.txBurdenNote)}</div>`:""}</section>
+    ${forecastHTML({head:d.id==="aging"?"When could most people halt or reverse aging?":"When will most patients be curable?",level:L,f:t,note:d.outlook,reached:L>=4?t.median:null,reachedEasy:d.reachedEasy,easy:d.easy,trend:trendHTML(d),method:methodHTML(d)})}
+    ${catalystsHTML(d.pipeline)}${logHTML(logRows)}${sourcesHTML(d.sources)}
+  </main>${railHTML(d)}</div>${footerHTML()}`}
+
+function hubPage(d){const t=d.timeline||{},G=d.groups,w=kindWord(d);
+  const rows=G.map(g=>{const f=g.forecast,gl=g.level|0;
+    const when=gl>=5?`<b class="ok">Cured easily</b>`:gl===4?`<b class="ok">Cured for most</b><div class="muted" style="font-size:12px">next: a mild cure${g.easy?` ~${YRS(g.easy.median)} yrs`:""}</div>`:f?`<b class="display num" style="font-size:22px">~${YRS(f.median)} yrs</b><div class="muted" style="font-size:12px">until most curable · ${f.median>=2100?"after 2100":f.median}</div>`:`<span class="muted">Forecast coming</span>`;
+    return `<a class="vrow" href="#d-${esc(d.id)}/${esc(g.id)}"><div style="display:flex;flex-direction:column;gap:6px;min-width:0"><b style="font-size:17px">${esc(g.name)}</b>${g.what?`<span class="muted" style="font-size:13px">${esc(g.what)}</span>`:""}<div class="ladder-strip">${LEVELS.map((_,i)=>`<i style="${i<=gl&&gl>0?`background:${vcolor(gl,g.burden)}`:""}"></i>`).join("")}</div><span style="font-size:13px;font-weight:600">${esc(LEVELS[gl])}</span></div>
+      <div class="vhide">${g.survival?`<span style="font-size:14px">${esc(g.survival)}</span>`:""}${g.burden?`<div style="margin-top:4px"><span class="tb ${esc(g.burden)}">${esc(bword(g.burden))} treatment</span></div>`:""}</div>
+      <div class="vhide">${when}</div><span aria-hidden="true" class="vgo">→</span></a>`}).join("");
+  return `${headerHTML(d,d.name,`${d.short||""} How it's treated and how likely a cure is depend on the ${w}, so each ${w} has its own page.`)}
+  <div class="dlayout"><main class="dmain">
+    <section style="display:flex;flex-direction:column;gap:10px"><h2 class="ch" style="font-size:24px">Choose a ${w}</h2>
+      ${isStages(d)?`<span class="muted" style="font-size:13px">${STAGING}</span>`:""}
+      <nav class="vlist-nav" aria-label="${w==="stage"?"Stages":"Types"}">${rows}</nav></section>
+    ${lv(d)>=4?`<section class="card"><span class="eyebrow">Across all ${w}s</span><span class="display" style="font-size:28px;line-height:1.1">${lv(d)>=5?"Cured easily":"Cured for most"} for the typical patient${t.median?` since ~${t.median}`:""}</span>
+      <span class="muted" style="font-size:13px">Pooled across everyone diagnosed. Some ${w}s are still far from a cure; each has its own page.</span></section>`:""}
+    ${lv(d)<4&&t.median!=null?`<section class="card"><span class="eyebrow">Across all ${w}s</span>
+      <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><span class="display num" style="font-size:32px;line-height:1">~${YRS(t.median)} years</span><span class="muted">until most people with ${esc(d.name.toLowerCase())} are curable (best guess ${t.median>=2100?"after 2100":t.median})</span></div>
+      <span class="muted" style="font-size:13px">Pooled across everyone diagnosed, whatever their ${w}. Each ${w} has its own forecast on its page.</span>
+      <details class="gacc"><summary>How it's changed over time</summary><div class="gacc-body">${trendHTML(d)}${methodHTML(d)}</div></details></section>`:""}
+    ${sourcesHTML(d.sources)}
+  </main>${railHTML(d)}</div>${footerHTML()}`}
+
+function variantPage(d,g){const gl=g.level|0,col=vcolor(gl,g.burden),f=g.forecast||{},w=kindWord(d);
+  const crumb=`<nav class="crumb" aria-label="Breadcrumb"><div class="crumb-path"><a href="#">All diseases</a><span>/</span><a href="#d-${esc(d.id)}">${esc(d.name)}</a><span>/</span><span>${esc(g.name)}</span></div>
+    <div class="sibs"><span class="muted" style="font-size:12px">Other ${w}s</span>${d.groups.map(s=>s.id===g.id?`<span class="sib on" aria-current="page">${esc(s.name.replace(/^Stage /,""))}</span>`:`<a class="sib" href="#d-${esc(d.id)}/${esc(s.id)}">${esc(s.name.replace(/^Stage /,""))}</a>`).join("")}</div></nav>`;
+  const title=w==="stage"?`${g.name} ${d.name.toLowerCase()}`:g.name;
+  const logRows=baseRow(d,false).concat((g.events||[]).map(e=>({date:e.date,text:e.text,url:e.url,tag:"Changed"})));
+  return `${headerHTML(d,title,g.what,crumb)}
+  <div class="dlayout"><main class="dmain">
+    <section class="card"><span class="eyebrow">Where it stands</span><span class="display" style="font-size:30px;line-height:1">${esc(LEVELS[gl])}</span>${ladderHTML(gl,col)}
+      ${g.survival?`<span style="font-size:14px"><b>Prognosis:</b> ${esc(g.survival)}</span>`:""}</section>
+    <section class="card"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><h2 class="ch" style="font-size:22px">Treatment today</h2>${burdenTip(g.burden,g.id)}</div>
+      <p style="margin:0">${esc(g.note)}</p>${g.burden_why?`<div class="why"><b>Why it's rated ${esc(bword(g.burden))}:</b> ${esc(g.burden_why)}</div>`:""}${g.caveat?`<span class="muted" style="font-size:12px">${esc(g.caveat)}</span>`:""}</section>
+    ${forecastHTML({head:`When will most people with ${g.name.replace(/^Stage /,"stage ")} be curable?`,level:gl,f,note:f.note,reached:g.reached?.year,reachedEasy:g.reached_easy?.year,easy:g.easy,
+      trend:`<div class="placeholder">Years-until-cure history for ${esc(g.name)} starts with the next weekly update.</div>`})}
+    ${catalystsHTML(g.catalysts,g.name)}${logHTML(logRows)}
+    ${sourcesHTML([g.url?{url:g.url,title:"Survival figure"}:null,g.reached?.url?{url:g.reached.url,title:`Cured for most since ~${g.reached.year}`}:null].filter(Boolean))}
+  </main>${railHTML(d,`${g.share?`<section class="card"><span class="eyebrow">How common</span><span style="font-weight:600">${safe(g.share_url)?link(g.share_url,g.share):esc(g.share)}</span></section>`:""}<section class="card"><span class="eyebrow">Part of ${esc(d.name)}</span><a href="#d-${esc(d.id)}" style="font-weight:600">See every ${w}, the overall forecast and how many people are affected →</a></section>`,true)}</div>${footerHTML()}`}
+
+function detail(id,vid){const d=S.dz.find(x=>x.id===id);
+  if(!d)return `<a class="back" href="#">← All diseases</a><div class="empty">${S.ready?"That disease isn't in the tracker.":"Loading…"}</div>`;
+  if((d.groups||[]).length){if(vid){const g=d.groups.find(x=>x.id===vid);if(g)return variantPage(d,g)}return hubPage(d)}
+  return singlePage(d)}
 
 /* ---------- Pipeline ---------- */
 const STAGE_COLORS={biology:"--st1",design:"--st2",preclinical:"--st3",trials:"--st4",approval:"--st5",access:"--st6"};
@@ -342,7 +604,7 @@ function record(){
   <div class="card"><h2 style="font-size:15px">What moved</h2>${u&&(u.changes||[]).length?`<ul class="changes">${u.changes.map(c=>`<li><b>${esc(c.target)}</b> <span class="num">${esc(c.from)} → ${esc(c.to)}</span>. ${esc(c.why)} ${safe(c.url)?link(c.url,"Source"):""}</li>`).join("")}</ul>`:`<p class="muted" style="margin:0">No forecast moved this week.</p>`}</div>
   <div class="card"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap"><h2 style="font-size:15px">Short-range forecasts</h2><span class="muted" style="font-size:12px">${sc.length?`Brier score ${(sc.reduce((a,b)=>a+(+b.brier||0),0)/sc.length).toFixed(3)} · ${sc.length} resolved`:"None resolved yet"}</span></div>
     <p class="muted" style="margin:0;font-size:13px">Dated yes-or-no calls that resolve within months. They are how this tracker checks its own accuracy. Lower Brier is better; always guessing 50% scores 0.25.</p>
-    <div>${checks.map(c=>`<div class="check"><div>${link(c.url,c.label)}<div class="muted" style="font-size:12px;margin-top:2px">${c.resolved?`<span class="res ${esc(c.resolved)}">${esc(c.resolved)}</span> last forecast ${esc(c.lastForecast??c.prevProb)}%`:`Resolves by ${fd(c.resolvesBy)}`}</div></div><div class="prob num">${c.resolved?"":esc(c.prob)+"%"}</div></div>`).join("")}</div></div>
+    <div>${checks.map(c=>`<div class="check"><div>${link(c.url,c.label)}<div class="muted" style="font-size:12px;margin-top:2px">${c.resolved==="void"?`<span class="res void">void</span> ${esc(c.note||"not scored")}`:c.resolved?`<span class="res ${esc(c.resolved)}">${esc(c.resolved)}</span> last forecast ${esc(c.lastForecast??c.prevProb)}%`:`Resolves by ${fd(c.resolvesBy)}`}</div></div><div class="prob num">${c.resolved?"":esc(c.prob)+"%"}</div></div>`).join("")}</div></div>
   <div class="card"><h2 style="font-size:15px">Coming up</h2><ul class="cal">${cal.map(c=>`<li><span class="muted num">${fd(c.date)}</span><span>${link(c.url,c.event)}</span></li>`).join("")||`<li class="muted">Nothing scheduled yet.</li>`}</ul></div>
   <div class="card"><h2 style="font-size:15px">How this works</h2>
     <p style="margin:0;font-size:14px">Each disease sits on a 0 to 5 ladder, from no treatment to gone. The best-guess year is when we expect most patients to be curable with tolerable care. Each forecast blends a today's-pace track and a faster-pipeline track, weighted by the acceleration index. Forecasts start from shared base rates: about 1 in 10 drugs that enter human trials get approved, and past cures took decades.</p>
@@ -351,16 +613,17 @@ function record(){
 
 /* ---------- Router ---------- */
 function route(){const h=(location.hash||"").replace(/^#/,"");
-  if(h.startsWith("d-"))return{v:"detail",id:h.slice(2)};
+  if(h.startsWith("d-")){const [id,vid]=h.slice(2).split("/");return{v:"detail",id,vid}}
   if(h==="pipeline")return{v:"pipeline"};
   if(h==="record")return{v:"record"};
   return{v:"home"};}
 let lastView="";
-function render(){const app=$("app"),r=route(),key=r.v+(r.id||"");
+function render(){const app=$("app"),r=route(),key=r.v+(r.id||"")+"/"+(r.vid||"");
   if(!S.ready&&!S.dz.length){app.innerHTML=`<div class="empty">${esc(S.err||"Loading the tracker…")}</div>`;return}
   const focusQ=document.activeElement&&document.activeElement.id==="q",selStart=focusQ?document.activeElement.selectionStart:0;
-  app.innerHTML=r.v==="detail"?detail(r.id):r.v==="pipeline"?pipeline():r.v==="record"?record():home();
+  app.innerHTML=r.v==="detail"?detail(r.id,r.vid):r.v==="pipeline"?pipeline():r.v==="record"?record():home();
   if(r.v==="home"){const s=$("sort");if(s)s.value=sort;renderCards();if(focusQ){const i=$("q");if(i){i.focus();try{i.setSelectionRange(selStart,selStart)}catch(e){}}}}
+  if(r.v==="detail")drawTrend();
   if(key!==lastView){if(lastView)window.scrollTo(0,0);lastView=key}
   document.title=r.v==="detail"?`${(S.dz.find(d=>d.id===r.id)||{}).name||"Disease"} · Cure Watch`:"Cure Watch";
 }

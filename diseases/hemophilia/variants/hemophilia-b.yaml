@@ -1,0 +1,33 @@
+# Cure Watch variant record: one stage or type of Hemophilia. Field guide: CONTRIBUTING.md.
+id: hemophilia-b
+name: Hemophilia B
+order: 2
+what: A rarer form of hemophilia, where the blood lacks clotting factor IX, causing the same long-lasting
+  bleeds.
+level: 3
+burden: moderate
+burden_why: Most use lifelong preventive infusions or injections that control bleeding well; the one-time
+  gene therapy is costly and needs liver monitoring.
+survival: 94% still off regular preventive treatment 4 years after one-time Hemgenix (HOPE-B, 54 men)
+share: About 1 in 5 to 1 in 4 people with hemophilia have type B
+share_url: https://www.cdc.gov/hemophilia/about/index.html
+treatment: Most patients still use lifelong preventive factor IX infusions or newer injections, which
+  control bleeding well. A one-time gene therapy (Hemgenix) lets most adults who get it stop regular treatment
+  for years, but it costs about $3.5 million, needs liver monitoring, and few have had it.
+caveat: Level 3 follows the rule that an approved curative therapy only some can get stays at 3; uptake
+  of Hemgenix is small, and the other approved B gene therapy, Pfizer's Beqvez, was discontinued worldwide
+  in Feb 2025 over weak demand (https://www.bleeding.org/news/pfizer-discontinues-beqvez-hemophilia-b-gene-therapy).
+  Gene therapy raises factor IX to roughly mild-hemophilia levels (~37% mean), not always normal; durability
+  beyond about 4-5 years is unknown. Burden rates the usual prophylaxis; the gene therapy route itself
+  is heavy (cost, liver monitoring). Figure is from a company-reported conference update, not a peer-reviewed
+  paper.
+url: https://pmlive.com/pharma_news/csl-behring-announces-four-year-results-for-haemophilia-b-gene-therapy-hemgenix/
+forecast:
+  median: 2042
+  low: 2033
+  high: 2075
+  p2035: 22
+  p2045: 55
+  note: Hemgenix already works for most adults who get it, so level 4 needs it or a successor to become
+    cheaper, approved for more patients including children, and actually taken up by most. Low demand
+    while prophylaxis works well, plus unknown durability past 5 years, keep uptake slow.

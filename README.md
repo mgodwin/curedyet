@@ -1,6 +1,6 @@
 # Is it cured yet?
 
-An open tracker of how close major diseases are to being cured. Each disease gets a place on a 0 to 5 cure ladder, a best-guess year for when most patients could be cured, the odds of that by 2035 and 2045, the burden of today's treatment, and the sources behind every claim.
+An open tracker of how close major diseases are to being cured. Each disease, and each stage or type of one, gets a place on a 0 to 6 cure ladder, a best-guess year for when most patients could be cured, the odds of that by 2035 and 2045, the burden of today's treatment, and the sources behind every claim.
 
 It also tracks the **cure pipeline**: the six stages every cure moves through, how long each takes today, and how short each could get with AI and faster rules.
 
@@ -15,6 +15,7 @@ diseases/
   lymphoma/
     disease.yaml     the structured record: level, treatment, forecasts, pipeline
     research.md      sources, research log and open questions
+    variants/        one file per stage or type, each with its own page
   _template/         copy this to add a disease
 pipeline/            one file per pipeline stage, with sourced durations
 tracker/             weekly summary, short-range forecasts, calendar, history

@@ -1,0 +1,27 @@
+# Cure Watch variant record: one stage or type of Type 2 diabetes. Field guide: CONTRIBUTING.md.
+id: long-standing
+name: Long-standing type 2 diabetes
+order: 2
+what: Type 2 diabetes that has been present for many years, when the insulin-making cells have declined
+  further and remission is much less likely.
+level: 2
+burden: moderate
+burden_why: Lifelong combinations of pills, injections and often insulin, with regular checks, nausea
+  and high cost.
+treatment: Patients take lifelong combinations of metformin, GLP-1 or GIP/GLP-1 injections, SGLT2 inhibitors
+  and often insulin, with regular checks; GLP-1 drugs cause nausea and are costly. These control blood
+  sugar and cut heart and kidney risk, but they do not cure, and bariatric surgery can help some but sugar
+  often rises again over time.
+caveat: No solid remission figure is given for this group; the consensus report says near-normal glucose
+  is most likely early in the disease and that high blood sugar frequently returns. 'Near-normal life'
+  holds for those with good control; real-world control is uneven.
+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8929179/
+forecast:
+  median: 2054
+  low: 2039
+  high: 2095
+  p2035: 4
+  p2045: 21
+  note: Needs restoration of lost insulin-making beta cells, for example through regeneration or cell
+    therapy, on top of resetting weight and metabolism. Nothing aimed at this is in late trials for type
+    2 diabetes.

@@ -1,0 +1,29 @@
+# Cure Watch variant record: one stage or type of Pancreatic cancer. Field guide: CONTRIBUTING.md.
+id: stage-iii
+name: Stage III
+order: 3
+what: A tumor wrapped around major blood vessels near the pancreas, so it usually can't be removed (locally
+  advanced), but it hasn't spread to distant organs.
+level: 1
+burden: heavy
+burden_why: Months of intensive chemotherapy, sometimes radiation, and surgery only for the few who respond
+  well.
+survival: Median overall survival ~24 months with FOLFIRINOX (patient-level meta-analysis of 315 patients,
+  Suker et al., Lancet Oncology 2016)
+share: About 1 in 10 pancreatic cancers are found at stage III
+share_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6402557/
+treatment: Treatment is months of intensive chemotherapy, sometimes followed by radiation. A minority
+  respond well enough to have surgery and may then have a chance at cure, but for most it slows the cancer
+  rather than curing it.
+caveat: Meta-analysis of mostly small, selected studies; the authors called for randomized confirmation.
+  In SEER 2004-2012 data, 5-year cause-specific survival for AJCC stage III was about 3% (Swords et al.).
+url: https://ascopost.com/issues/june-10-2016/folfirinox-in-locally-advanced-pancreatic-cancer/
+forecast:
+  median: 2063
+  low: 2041
+  high: 2100
+  p2035: 3
+  p2045: 14
+  note: This needs treatment strong enough to shrink most tumors so they can be removed and then cured.
+    RAS inhibitor combinations before surgery are the nearest candidate, still in early testing for this
+    use.

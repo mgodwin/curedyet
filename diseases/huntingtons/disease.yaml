@@ -9,6 +9,10 @@ toll:
   text: About 5-10 per 100,000 people worldwide, higher (about 7 per 100,000) in people of Western European
     descent (published estimates).
   url: https://en.wikipedia.org/wiki/Huntington%27s_disease
+  ratio: "About 1 in 8,000"
+  ratio_caption: "Americans has symptoms of Huntington's disease"
+  ratio_url: https://hdsa.org/what-is-hd/overview-of-huntingtons-disease/
+  ratio_basis: "Derived: HDSA's ~41,000 symptomatic Americans (plus 200,000+ at risk) divided by the Census Vintage 2025 US population of 341.8 million (https://www.census.gov/newsroom/press-releases/2026/population-growth-slows.html). MedlinePlus gives 3-7 per 100,000 in people of European ancestry."
 status:
   level: 1
   why: VMAT2 inhibitors ease chorea, but no approved treatment slows the disease itself.

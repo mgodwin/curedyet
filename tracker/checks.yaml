@@ -40,9 +40,9 @@
   label: Japan approves bepirovirsen for chronic hepatitis B by 2026-12-31
   resolves_by: '2026-12-31'
   prob: 60
-  resolved: null
-  last_forecast: null
-  note: ''
+  resolved: void
+  last_forecast: 60
+  note: "Void: Japan had already approved bepirovirsen on Aug 24, 2026, before this forecast was made, so it isn't scored."
   url: https://www.sec.gov/Archives/edgar/data/0001131399/000119312526384439/d331501d6k.htm
 - id: chk-lung-cancer
   disease: lung-cancer
@@ -58,9 +58,9 @@
   label: FDA approves talazoparib plus enzalutamide for HRR-mutated mCSPC by 2026-12-31
   resolves_by: '2026-12-31'
   prob: 80
-  resolved: null
-  last_forecast: null
-  note: ''
+  resolved: void
+  last_forecast: 80
+  note: "Void: the FDA had already approved it on Oct 26, 2026, before this forecast was made, so it isn't scored."
   url: https://www.rttnews.com/3669562/pfizer-secures-fda-priority-review-for-talzenna-plus-xtandi-in-metastatic-prostate-cancer.aspx
 - id: chk-schizophrenia
   disease: schizophrenia

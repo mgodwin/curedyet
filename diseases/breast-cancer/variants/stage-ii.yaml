@@ -1,0 +1,37 @@
+# Cure Watch variant record: one stage or type of Breast cancer. Field guide: CONTRIBUTING.md.
+id: stage-ii
+name: Stage II
+order: 3
+what: A tumor 2 to 5 cm, or a smaller tumor that has spread to a few (1 to 3) nearby armpit lymph nodes,
+  or a larger tumor with no node spread.
+level: 3
+burden: heavy
+burden_why: Surgery and radiation are usually joined by chemotherapy, HER2 drugs or years of hormone therapy.
+survival: About 90% survive at least 5 years (5-year net survival, England, diagnosed 2018-2022)
+treatment: Surgery and usually radiation, with chemotherapy common, HER2 drugs for HER2-positive disease,
+  and years of endocrine therapy for hormone-positive disease. Most are cured, but late relapses can occur
+  for hormone-positive tumors.
+caveat: 'Rated 3: 5-year survival is about 90%, but late relapses bring 10-year breast cancer-specific
+  survival to about 81% (British Columbia, 2002 diagnoses; Spanish registries similar), below the 85%
+  bar.'
+url: https://www.cancerresearchuk.org/about-cancer/breast-cancer/survival
+forecast:
+  median: 2034
+  low: 2028
+  high: 2055
+  p2035: 52
+  p2045: 80
+  note: Ten-year breast cancer survival was about 81% for women diagnosed in 2002, so newer standards
+    would need to show 85% or more over the long term. Drugs added since then (HER2 drugs, pembrolizumab
+    for triple-negative disease, CDK4/6 inhibitors, and oral SERDs such as giredestrant, which cut invasive
+    relapse by about 30% in the lidERA trial) may already be closing the gap; 10-year registry data for
+    women diagnosed after 2015 would settle it.
+easy:
+  median: 2062
+  low: 2042
+  high: 2100
+  p2035: 2
+  p2045: 14
+  note: Today's cure combines surgery, often chemotherapy, radiation and years of hormone or HER2 drugs.
+    A mild cure would need short, low-toxicity drug courses to replace most of that, and nothing near
+    that is in late trials.

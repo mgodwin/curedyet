@@ -1,0 +1,36 @@
+# Cure Watch variant record: one stage or type of Breast cancer. Field guide: CONTRIBUTING.md.
+id: stage-0
+name: Stage 0
+order: 1
+what: Abnormal cells (DCIS) inside the milk ducts that have not grown into surrounding breast tissue.
+level: 4
+burden: moderate
+burden_why: Surgery, usually with weeks of radiation and sometimes years of hormone pills, is lighter
+  than invasive-cancer treatment but far from a quick fix.
+survival: Nearly all cured (ACS); no stage-specific 5-year figure on the source page
+share: About 1 in 6 new breast cancers in the US are DCIS (stage 0)
+share_url: https://www.cancer.org/cancer/types/breast-cancer/about/how-common-is-breast-cancer.html
+treatment: Lumpectomy usually followed by a few weeks of radiation, or mastectomy, sometimes with 5 years
+  of tamoxifen or an aromatase inhibitor for hormone-positive DCIS. It is cured in nearly all women, though
+  many may be treated for cells that would never have spread.
+caveat: No numeric survival figure verified; burden rated moderate because breast-conserving surgery plus
+  radiation is less intensive than invasive-cancer treatment, but mastectomy or years of endocrine pills
+  would push it toward heavy. Over 99% survive breast cancer 10 years after diagnosis (British Columbia,
+  2002), well above 85%, but the standard cure of surgery, usually radiation and often hormone pills is
+  not mild.
+url: https://www.cancer.org/cancer/types/breast-cancer/about/types-of-breast-cancer/dcis.html
+easy:
+  median: 2042
+  low: 2032
+  high: 2080
+  p2035: 22
+  p2045: 52
+  note: Lumpectomy with radiation, or mastectomy, and often years of hormone pills is not a mild cure,
+    so most DCIS would need a much lighter path. The COMET trial found active monitoring of low-risk DCIS
+    safe at 2 years, and the LORIS and LORD trials are testing the same idea; longer follow-up and dropping
+    radiation and pills for more women would be needed.
+reached:
+  year: 1985
+  basis: 'Approximate: by the mid-1980s screening found DCIS and mastectomy or lumpectomy with radiation
+    was standard; in NSABP B-17 (enrolled 1985-1990) only about 3-5% died of breast cancer by 15 years.'
+  url: https://www.oncolink.org/oncolink-library/journal-scans/breast-cancer/lumpectomy-and-radiation-therapy-for-the-treatment-of-intraductal-breast-cancer-findings-from-national-surgical-adjuvant-breast-and-bowel-project-b-17

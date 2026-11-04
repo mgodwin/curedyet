@@ -1,0 +1,28 @@
+# Cure Watch variant record: one stage or type of Heart failure. Field guide: CONTRIBUTING.md.
+id: hfpef
+name: Preserved ejection fraction (HFpEF)
+order: 2
+what: The heart pumps out a normal share of blood but is stiff and cannot fill properly, so pressure backs
+  up into the lungs and body.
+level: 1
+burden: moderate
+burden_why: Lifelong water pills and other daily drugs plus managing other illnesses, without serious
+  procedures for most.
+survival: ~43% alive 5 years after a first heart failure hospitalization
+share: About half of people with heart failure have this type
+share_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9002335
+treatment: Water pills ease fluid buildup, and SGLT2 inhibitors, finerenone and, in obese patients, GLP-1
+  drugs reduce hospital stays and symptoms, alongside treating blood pressure, diabetes and weight. None
+  has clearly been shown to extend life, and the disease usually advances.
+caveat: The survival figure is from a 2000 French cohort and predates the newer drugs. Patients are typically
+  older with several other illnesses, which drives much of the death rate.
+url: https://esc365.escardio.org/journal/35798
+forecast:
+  median: 2066
+  low: 2046
+  high: 2100
+  p2035: 2
+  p2045: 9
+  note: Needs a treatment that undoes heart stiffening in mostly older patients with several other illnesses,
+    a biology that is still poorly understood. Current candidates such as relaxin agonists (AZD5462) and
+    finerenone aim to ease symptoms, not cure.

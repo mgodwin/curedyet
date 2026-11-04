@@ -8,6 +8,10 @@ summary: The heart cannot pump or fill well enough to meet the body's needs, cau
 toll:
   text: Roughly 64M people live with heart failure worldwide (GBD 2017 estimate cited in reviews).
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10398425/
+  ratio: "1 in 4"
+  ratio_caption: "people will develop heart failure in their lifetime"
+  ratio_url: https://hfsa.org/hf-stats-2025-heart-failure-epidemiology-and-outcomes-statistics
+  ratio_basis: "Heart Failure Society of America, HF Stats 2025: lifetime risk of HF has increased to 24%, about 1 in 4."
 status:
   level: 1
   why: Modern drug combinations slow decline and cut deaths, but most patients still worsen and about
@@ -32,15 +36,15 @@ forecast:
   bottleneck: biology-limited
   normal:
     p2035: 2
-    p2045: 8
-    median: 2065
-    low: 2045
+    p2045: 6
+    median: 2069
+    low: 2047
     high: 2100
   faster:
     p2035: 4
-    p2045: 20
-    median: 2052
-    low: 2040
+    p2045: 18
+    median: 2056
+    low: 2042
     high: 2100
   faster_note: Curing heart failure needs heart muscle regeneration or repair, which is still mostly biology;
     acceleration could find regeneration targets but they then need years of trials, so the lift is small
@@ -48,24 +52,57 @@ forecast:
   outlook: Drugs keep shaving risk, but heart failure is the end point of many diseases and damaged heart
     muscle does not regrow. A cure for most would need working cardiac gene therapy or regeneration, which
     is still in early trials. Prevention through better control of blood pressure, diabetes and obesity
-    is the likelier near-term win.
+    is the likelier near-term win. About half of patients or more have preserved ejection fraction, which has fewer options, so this forecast follows that type's.
 pipeline:
 - name: AZD5462 (AstraZeneca), oral relaxin receptor agonist
+  stage: Phase 2
   note: LUMINARA Phase 2b in about 260 chronic HF patients presented at ESC 2026.
-  stage: Phase 2
   url: https://www.consultantlive.com/view/european-society-of-cardiology-2026-preview-6-trials-to-know
+  variants:
+  - hfref
+  - hfpef
+  effect: small
+  effect_note: If later trials work, a relaxin pill would add another drug that may ease symptoms and
+    hospital stays, not reverse heart failure.
 - name: AB-1002 (AskBio), cardiac gene therapy
-  note: Phase 1 showed no drug-related adverse events and clinical gains; randomized GenePHIT trial enrolling.
   stage: Phase 2
+  note: Phase 1 showed no drug-related adverse events and clinical gains; randomized GenePHIT trial enrolling.
   url: https://www.indianpharmapost.com/biotech/lite/askbios-gene-therapy-shows-promising-12-month-results-for-heart-failure-18088
+  variants:
+  - hfref
+  expected: '2027'
+  effect: some
+  effect_note: If GenePHIT works, a one-time gene therapy could improve heart pumping in reduced-ejection
+    heart failure, a first step toward disease repair.
 - name: Finerenone for HFmrEF/HFpEF
-  note: FDA approved for HF with LVEF 40% or more in 2025.
   stage: Approved 2025-26
+  note: FDA approved for HF with LVEF 40% or more in 2025.
   url: https://cardiovascularbusiness.com/topics/clinical/heart-failure/fda-approves-bayers-finerenone-treat-wide-range-heart-failure-patients
+  variants:
+  - hfpef
+  effect: small
+  effect_note: Already approved; it lowers worsening events in HF with preserved or mildly reduced ejection
+    but does not cure it.
 - name: Aficamten (cardiac myosin inhibitor)
-  note: ACACIA-HCM improved symptoms and exercise in nonobstructive HCM, a cause of HF.
   stage: Phase 3
+  note: ACACIA-HCM improved symptoms and exercise in nonobstructive HCM, a cause of HF.
   url: https://www.consultantlive.com/view/european-society-of-cardiology-2026-preview-6-trials-to-know
+  variants:
+  - hfpef
+  effect: small
+  effect_note: If approved for nonobstructive HCM, it would ease symptoms in one cause of heart failure,
+    a small share of patients.
+- name: Ziltivekimab (Novo Nordisk, anti-IL-6) HERMES
+  stage: Phase 3
+  note: Outcome trial in HFpEF/HFmrEF with systemic inflammation; results expected in the first half of
+    2027, after the related ZEUS trial failed.
+  url: https://european-biotechnology.com/?p=21368
+  variants:
+  - hfpef
+  expected: '2027'
+  effect: small
+  effect_note: If positive, an anti-inflammatory shot would cut heart failure events in inflamed HFpEF
+    patients, but it would control rather than cure the disease.
 recent:
 - date: 2026-05
   text: Aficamten met endpoints in nonobstructive hypertrophic cardiomyopathy in the ACACIA-HCM trial.

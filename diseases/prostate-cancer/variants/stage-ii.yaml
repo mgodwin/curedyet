@@ -1,0 +1,33 @@
+# Cure Watch variant record: one stage or type of Prostate cancer. Field guide: CONTRIBUTING.md.
+id: stage-ii
+name: Stage II
+order: 2
+what: Cancer still inside the prostate, but with a higher PSA (10 to 20) or a more aggressive grade.
+level: 4
+burden: heavy
+burden_why: Surgery or weeks of radiation, often with hormone therapy, commonly leaving erectile, urinary
+  or bowel problems.
+survival: Almost 100% survive at least 5 years (5-year net survival, England, diagnosed 2013-2017)
+share: Part of the roughly 7 in 10 US prostate cancers found while still inside the prostate (SEER 'localized',
+  69%)
+share_url: https://seer.cancer.gov/statfacts/html/prost.html
+treatment: Surgery to remove the prostate or several weeks of radiation, often with a few months of hormone
+  therapy; erectile problems and some urinary leakage or bowel problems are common and can be lasting.
+  Some favorable cases can still be watched. Most are cured.
+caveat: Long-term cure after surgery or radiation is well above 85% for most stage II men, but the treatment
+  is heavy.
+url: https://www.cancerresearchuk.org/about-cancer/prostate-cancer/survival
+easy:
+  median: 2045
+  low: 2033
+  high: 2080
+  p2035: 18
+  p2045: 52
+  note: Cure would need to come without lasting erection, bladder or bowel problems; five-session targeted
+    radiation (SBRT) and focal therapies that treat only the tumor are the nearest candidates, but their
+    side effects and long-term cure rates must be proven.
+reached:
+  year: 1990
+  basis: 'Approximate: radical prostatectomy (nerve-sparing from 1982) and modern radiation became established
+    curative standards for organ-confined disease by around 1990.'
+  url: https://www.cancerresearchuk.org/about-cancer/prostate-cancer/survival

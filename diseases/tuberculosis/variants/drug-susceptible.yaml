@@ -1,0 +1,36 @@
+# Cure Watch variant record: one stage or type of Tuberculosis. Field guide: CONTRIBUTING.md.
+id: drug-susceptible
+name: Drug-susceptible TB
+order: 1
+what: TB caused by bacteria that the standard first-line antibiotics can still kill.
+level: 4
+burden: moderate
+burden_why: Four to six months of daily antibiotic pills with nausea, rash or liver irritation that need
+  monitoring.
+survival: ~88% treatment success worldwide
+share: About 97% of people newly diagnosed with TB worldwide have TB that standard drugs can treat
+share_url: https://www.who.int/teams/global-programme-on-tuberculosis-and-lung-health/tb-reports/global-tuberculosis-report-2025/tb-disease-burden/1-3-drug-resistant-tb
+treatment: A 4 to 6 month course of daily antibiotic pills (usually isoniazid, rifampicin, pyrazinamide
+  and ethambutol) cures most patients. Side effects such as nausea, rash and liver irritation need monitoring,
+  but treatment is usually free.
+caveat: The 88% is a global figure for patients who started treatment; failures are mostly deaths and
+  people lost to follow-up, so success in rich countries with good support is likely similar or higher.
+  In rich countries with supported treatment, the great majority of people with drug-susceptible TB are
+  cured and relapse is uncommon, but 4 to 6 months of several drugs with liver and stomach side effects
+  is moderate, not mild.
+url: https://cdn.who.int/media/docs/default-source/global-tuberculosis-report-2025/global-tb-report-2025_factsheet.pdf
+easy:
+  median: 2038
+  low: 2031
+  high: 2065
+  p2035: 25
+  p2045: 58
+  note: Needs a much shorter pill course (about two months or less) with few side effects to replace 4
+    to 6 months of four drugs. The nearest candidates are sorfequiline-based regimens, with a Phase 3
+    trial planned from 2026, and quabodepistat or ganfeborole combinations in UNITE4TB.
+reached:
+  year: 1960
+  basis: 'Approximate: the Edinburgh triple-drug method (streptomycin, isoniazid, PAS), shown in the 1950s
+    to cure nearly all new patients, became the gold standard by about 1960; rifampicin regimens in the
+    1970s then made the cure shorter and easier.'
+  url: https://www.jameslindlibrary.org/articles/john-crofton-1912-2009/

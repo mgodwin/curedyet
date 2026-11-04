@@ -1,0 +1,29 @@
+# Cure Watch variant record: one stage or type of Multiple sclerosis. Field guide: CONTRIBUTING.md.
+id: relapsing
+name: Relapsing MS
+order: 1
+what: The most common form of MS, where the immune system attacks nerves in flare-ups (relapses) that
+  then partly or fully ease.
+level: 2
+burden: moderate
+burden_why: Infusions or injections taken indefinitely, with infection risk and lab monitoring.
+share: About 85% of people with MS have the relapsing form at diagnosis
+share_url: https://www.msaustralia.org.au/types-of-ms/
+treatment: Standard care is a high-efficacy disease-modifying drug such as anti-CD20 infusions every six
+  months or monthly injections, taken indefinitely with infection risk and lab monitoring; in trials ocrelizumab
+  roughly halved relapses versus an older interferon drug. Many people stay relapse-free and live near-normal
+  lives, but treatment controls rather than cures it.
+caveat: Includes active secondary progressive MS (still having relapses or new lesions), which responds
+  less well. Share figure is from MS Australia (https://www.msaustralia.org.au/types-of-ms/); the National
+  MS Society and MSIF cite the same ~85%. Autologous stem cell transplant gives long remissions for some
+  highly active cases but is not standard for most.
+url: https://www.ema.europa.eu/en/medicines/human/EPAR/ocrevus
+forecast:
+  median: 2052
+  low: 2037
+  high: 2090
+  p2035: 5
+  p2045: 24
+  note: A one-time immune reset that is safe enough for most patients would be needed; stem cell transplant
+    works for some but is too risky for most, and CD19 CAR-T and EBV-targeted therapies are still in early
+    trials.

@@ -8,6 +8,10 @@ summary: A chronic disease in which the body resists insulin and cannot make eno
 toll:
   text: About 589M adults with diabetes (over 90% type 2) and 3.4M+ deaths/yr worldwide (IDF 2025).
   url: https://idf.org/news-and-resources/news/idf-diabetes-atlas-11th-edition/
+  ratio: "1 in 9"
+  ratio_caption: "adults worldwide lives with diabetes, over 90% of it type 2"
+  ratio_url: https://idf.org/news-and-resources/news/idf-diabetes-atlas-11th-edition/
+  ratio_basis: "IDF Diabetes Atlas 11th edition (2025): 'nearly one in nine adults (589 million) are now living with diabetes'; type 2 accounts for over 90%. Covers all diabetes, not type 2 alone."
 status:
   level: 2
   why: Modern drugs keep most patients controlled long term, and remission happens for some after major
@@ -30,42 +34,68 @@ treatment:
 forecast:
   bottleneck: biology-limited
   normal:
-    p2035: 5
-    p2045: 20
-    median: 2052
-    low: 2038
-    high: 2095
+    p2035: 3
+    p2045: 17
+    median: 2056
+    low: 2040
+    high: 2099
   faster:
-    p2035: 9
-    p2045: 38
-    median: 2043
-    low: 2034
-    high: 2075
+    p2035: 7
+    p2045: 35
+    median: 2047
+    low: 2036
+    high: 2079
   faster_note: Acceleration mainly helps by finding and proving durable fixes (beta-cell restoration,
     set-point resetting, one-time procedures like Revita); the lift is moderate because today's drugs
     work only while taken and durability needs multi-year follow-up.
   outlook: Drugs keep getting stronger and remission is becoming more common, but they work only while
     taken. A cure for most would need durable remission without lifelong drugs, such as one-time procedures
     or beta-cell restoration, which remain early. Most patients will likely be well controlled rather
-    than cured for decades.
+    than cured for decades. Most people have long-standing type 2 diabetes, where remission is rare, so this forecast follows that group's.
 pipeline:
 - name: Orforglipron (oral GLP-1)
-  note: Approved for T2D in the UK in Aug 2026; a separate US diabetes filing was planned for 2026.
   stage: Filed
+  note: Approved for T2D in the UK in Aug 2026; a separate US diabetes filing was planned for 2026.
   url: https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes
+  variants:
+  - early
+  - long-standing
+  effect: small
+  effect_note: If approved for diabetes in the US, a GLP-1 pill improves blood sugar and weight but is
+    ongoing treatment.
 - name: Retatrutide (GIP/GLP-1/glucagon)
+  stage: Phase 3
   note: Up to 20.8% weight loss and 1.6-point A1c drop in people with T2D in TRIUMPH-2; US filing planned
     early 2027.
-  stage: Phase 3
   url: https://www.epocrates.com/online/article/retatrutide-heads-toward-fda-filing-after-positive-phase-3-obesity-trial-results
+  variants:
+  - early
+  - long-standing
+  expected: '2027'
+  effect: some
+  effect_note: If filed and approved, very large weight loss could put more people with early type 2 diabetes
+    into remission, though staying there likely needs ongoing treatment.
 - name: CagriSema (cagrilintide + semaglutide)
-  note: FDA decision expected Q4 2026 for obesity; studied in T2D too.
   stage: Filed
+  note: FDA decision expected Q4 2026 for obesity; studied in T2D too.
   url: https://therxindex.com/guides/cagrisema-fda-approval-status/
+  variants:
+  - early
+  - long-standing
+  expected: '2026'
+  effect: small
+  effect_note: If approved for obesity, it adds another strong weight-loss option that may help diabetes
+    control; diabetes-specific approval would come later.
 - name: Duodenal mucosal resurfacing (Fractyl Revita)
-  note: Endoscopic procedure aiming for durable metabolic effect after stopping GLP-1 drugs.
   stage: Phase 3
+  note: Endoscopic procedure aiming for durable metabolic effect after stopping GLP-1 drugs.
   url: https://www.sciencedaily.com/releases/2026/04/260423022002.htm
+  variants:
+  - early
+  expected: '2027'
+  effect: small
+  effect_note: The 6-month pivotal results (Oct 2026) were mixed; one-year data due in Q1 2027 will show
+    whether a one-time procedure can hold weight and blood sugar after stopping GLP-1 drugs.
 recent:
 - date: 2026-07
   text: Retatrutide hit its Phase 3 goals in obesity with T2D, with up to 20.8% weight loss at 80 weeks.

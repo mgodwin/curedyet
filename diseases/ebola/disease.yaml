@@ -56,27 +56,56 @@ forecast:
 pipeline:
 - name: TUMAINI ring-vaccination platform trial (Ervebo first; Moderna and Oxford/Serum Institute Bundibugyo
     vaccines to join)
+  stage: Phase 3
   note: Phase 2/3 adaptive trial in high-risk contacts; first participant vaccinated in Bunia on 23 Oct
     2026.
-  stage: Phase 3
   url: https://africa.com/featuresopinion/first-participant-vaccinated-in-pivotal-phase-2-3-bundibugyo-ebola-vaccine-trial-in-drc
+  variants:
+  - bundibugyo-virus
+  - zaire-ebolavirus
+  effect: small
+  effect_note: If a vaccine works against Bundibugyo, it would mainly prevent infections and severe illness
+    rather than change survival once sick.
 - name: MBP134 (Mapp pan-ebolavirus antibody cocktail)
+  stage: Phase 2
   note: Tested alone and with remdesivir versus standard care in the PARTNERS randomized trial in Bunia;
     28-day mortality endpoint, 700-1,000 patients planned.
-  stage: Phase 2
   url: https://www.itg.be/en/health-stories/press-releases/partners-trial
+  variants:
+  - bundibugyo-virus
+  - sudan-virus
+  expected: '2027'
+  effect: big
+  effect_note: If it cuts deaths, it would be the first proven treatment for Bundibugyo (and possibly
+    Sudan) virus, as antibodies did for Zaire Ebola.
 - name: Remdesivir (Gilead)
+  stage: Phase 2
   note: Repurposed antiviral in the PARTNERS trial arms for Bundibugyo patients, started 2 Jul 2026.
-  stage: Phase 2
   url: https://www.itg.be/en/health-stories/press-releases/partners-trial
+  variants:
+  - bundibugyo-virus
+  expected: '2027'
+  effect: some
+  effect_note: If it lowers 28-day deaths in the trial, a widely available antiviral would give Bundibugyo
+    patients a real treatment.
 - name: Obeldesivir (oral, Gilead) post-exposure prophylaxis
+  stage: Phase 2
   note: Twice-daily pill for close contacts to prevent infection; trial slated to start in July 2026.
-  stage: Phase 2
   url: https://www.wunc.org/2026-07-07/theres-no-treatment-designed-for-the-ebola-strain-ravaging-drc-but-now-theres-hope
+  variants:
+  - bundibugyo-virus
+  effect: small
+  effect_note: If it works, a pill for close contacts would prevent infections rather than cure people
+    who are already sick.
 - name: Sabin cAd3-Sudan ebolavirus vaccine
-  note: Enrollment complete in all Phase 2 trials as of March 2026; Phase 3 in planning.
   stage: Phase 2
+  note: Enrollment complete in all Phase 2 trials as of March 2026; Phase 3 in planning.
   url: https://www.sabin.org/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine/
+  variants:
+  - sudan-virus
+  effect: small
+  effect_note: If later trials succeed, a vaccine would help prevent Sudan virus outbreaks but would not
+    improve survival for people already infected.
 recent:
 - date: 2026-10
   text: TUMAINI, the first pivotal Phase 2/3 vaccine trial against Bundibugyo virus, vaccinated its first

@@ -1,0 +1,27 @@
+# Cure Watch variant record: one stage or type of Colorectal cancer. Field guide: CONTRIBUTING.md.
+id: stage-iv
+name: Stage IV
+order: 4
+what: The cancer has spread to distant organs, most often the liver or lungs.
+level: 1
+burden: heavy
+burden_why: Most people stay on chemotherapy and targeted drugs indefinitely, and the few who can be cured
+  need surgery on the liver or lungs.
+survival: ~10% alive at 5 years (net survival, England 2016-2020)
+share: About 1 in 4 US colorectal cancers have spread to distant organs at diagnosis (SEER 'distant',
+  23%)
+share_url: https://seer.cancer.gov/statfacts/html/colorect.html
+treatment: Most people get ongoing chemotherapy with targeted drugs, which extends life but rarely cures.
+  A minority with a few removable liver or lung spots can be cured by surgery, and mismatch-repair-deficient
+  tumors can respond for years to immunotherapy.
+url: https://www.cancerresearchuk.org/about-cancer/bowel-cancer/survival
+forecast:
+  median: 2068
+  low: 2045
+  high: 2100
+  p2035: 1
+  p2045: 9
+  note: Most metastatic colorectal cancers are microsatellite-stable and do not respond to today's immunotherapy,
+    so a cure for most would need new drugs that clear widespread disease, not just the few removable
+    spots that surgery can cure now. Pan-RAS inhibitors and new immunotherapy combinations are the nearest
+    candidates, and they are still being tested for longer survival rather than cure.

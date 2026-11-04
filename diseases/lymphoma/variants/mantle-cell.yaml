@@ -1,0 +1,29 @@
+# Cure Watch variant record: one stage or type of Lymphomas. Field guide: CONTRIBUTING.md.
+id: mantle-cell
+name: Mantle cell
+order: 4
+what: An uncommon B-cell lymphoma, usually found in older men at an advanced stage, that tends to keep
+  coming back.
+level: 2
+burden: heavy
+burden_why: Intensive chemo-immunotherapy, sometimes a stem cell transplant, then ongoing maintenance
+  drugs, and it almost always returns.
+survival: ~60% alive at 5 years (SEER 2000-2021, Kaplan-Meier overall survival, 11,450 patients)
+share: About 1 in 20 lymphomas are mantle cell
+share_url: https://www.cancer.org/cancer/types/non-hodgkin-lymphoma/about/b-cell-lymphoma.html
+treatment: Younger patients get intensive chemo-immunotherapy, sometimes with a stem cell transplant,
+  and most then get maintenance rituximab or BTK inhibitor pills; older patients get gentler combinations.
+  Remissions can last years but the disease almost always returns, so it is controlled rather than cured.
+caveat: No official SEER Stat Facts page for mantle cell; the abstract reports ~60% by subgroup (White
+  60.3%, Black 61.3%, Asian/Pacific Islander 60.3%) rather than one overall figure, and the 2000-2021
+  span predates many newer drugs. Level 2 vs 1 is a judgment call, since survival is well below normal.
+url: https://ash.confex.com/ash/2024/webprogram/Paper212410.html
+forecast:
+  median: 2047
+  low: 2035
+  high: 2085
+  p2035: 10
+  p2045: 44
+  note: Most patients, who are mostly older, would need lasting cure rather than long remissions; BTK
+    inhibitor combinations, CAR-T and bispecifics are the nearest candidates, but none has shown cure
+    for most yet.

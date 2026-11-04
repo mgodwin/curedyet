@@ -1,0 +1,27 @@
+# Cure Watch variant record: one stage or type of Melanoma. Field guide: CONTRIBUTING.md.
+id: stage-i
+name: Stage I
+order: 2
+what: A thin melanoma (up to 2 mm, or up to 1 mm if the surface is broken) with no spread to lymph nodes.
+level: 5
+burden: light
+burden_why: Usually an outpatient excision, sometimes with a lymph node biopsy.
+survival: ~98% melanoma-specific survival at 5 years, 95% at 10 years (AJCC 8th edition)
+share: Most of the roughly 3 in 4 US melanomas found before spreading beyond the skin (SEER 'localized',
+  77%, stages I-II)
+share_url: https://seer.cancer.gov/statfacts/html/melan.html
+treatment: Wide excision, usually outpatient; thicker stage IB tumors often add a sentinel lymph node
+  biopsy. Nearly all are cured.
+caveat: SEER share is for localized disease (stage I and II together), not stage I alone. About 95% survive
+  melanoma at 10 years (AJCC 8th edition) after a usually outpatient excision, so it is cured easily.
+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5978683/
+reached:
+  year: 1970
+  basis: 'Approximate: after Breslow (1970) showed thin melanomas rarely spread, wide excision became
+    the standard cure for thin melanoma.'
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC1397358
+reached_easy:
+  year: 1970
+  basis: 'Approximate: wide excision of a thin melanoma is a short outpatient procedure; later sentinel
+    node biopsy for thicker IB tumors adds only modest burden.'
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC1397358

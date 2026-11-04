@@ -1,0 +1,27 @@
+# Cure Watch variant record: one stage or type of Epilepsy. Field guide: CONTRIBUTING.md.
+id: surgery-candidates
+name: Drug-resistant focal epilepsy (surgery candidates)
+order: 3
+what: Drug-resistant epilepsy where seizures start in one brain area that surgeons can safely remove or
+  destroy.
+level: 3
+burden: heavy
+burden_why: It is brain surgery after extensive testing, with risks to memory, mood or vision.
+survival: ~52% seizure-free 5 years and ~47% 10 years after epilepsy surgery (adult cohort, simple partial
+  seizures allowed)
+treatment: After detailed testing, part of the brain is removed or laser-ablated; this is brain surgery
+  with risks such as memory, mood or visual field problems. About half stay seizure-free long term (better
+  for temporal lobe surgery), many still on medicines, so it cures a meaningful share but not most.
+caveat: Figures confirmed from the abstract via search; PubMed blocked a direct fetch. A randomized trial
+  found 58% vs 8% free of disabling seizures one year after temporal lobe surgery vs medicines (Wiebe
+  et al., NEJM 2001). Only a minority of drug-resistant patients are suitable surgical candidates, and
+  surgery is underused.
+url: https://pubmed.ncbi.nlm.nih.gov/22000136/
+forecast:
+  median: 2046
+  low: 2032
+  high: 2085
+  p2035: 20
+  p2045: 46
+  note: A less invasive one-time treatment that keeps most patients seizure-free long term would be needed;
+    the NRTX-1001 cell therapy, now in Phase 3 for temporal lobe epilepsy, is the nearest candidate.

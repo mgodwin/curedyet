@@ -9,6 +9,10 @@ toll:
   text: Kidney diseases rose to the 9th leading cause of death worldwide in 2023, up 86% since 2000 (WHO);
     hundreds of millions affected.
   url: https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death
+  ratio: "1 in 7"
+  ratio_caption: "US adults is estimated to have chronic kidney disease"
+  ratio_url: https://www.cdc.gov/kidney-disease/php/data-research/index.html
+  ratio_basis: "CDC: an estimated 14% of US adults (37 million) have CKD; 14% is about 1 in 7."
 status:
   level: 1
   why: New drugs slow loss of kidney function, but damage is not reversed and many patients still progress

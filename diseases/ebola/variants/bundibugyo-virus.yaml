@@ -1,0 +1,27 @@
+# Cure Watch variant record: one stage or type of Ebola. Field guide: CONTRIBUTING.md.
+id: bundibugyo-virus
+name: Bundibugyo virus
+order: 3
+what: A rarer Ebola virus species, driving the large 2026 epidemic in the Democratic Republic of the Congo.
+level: 1
+burden: heavy
+burden_why: There is no specific drug or vaccine, so care is isolation and intensive supportive care for
+  a life-threatening illness.
+survival: ~49% of confirmed cases in the 2026 DRC epidemic have died (ECDC counts); past outbreaks ~30%
+  and ~50% (WHO)
+treatment: No vaccine or specific treatment is approved, so care is isolation with fluids and symptom
+  support. The MBP134 antibody and remdesivir are in a randomized trial (PARTNERS), and candidate vaccines
+  are being tested by ring vaccination (TUMAINI).
+caveat: The 49% figure is a crude deaths-to-confirmed-cases ratio from ECDC (5,126 deaths, 10,532 confirmed
+  cases as of 2 Nov 2026, https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026), not
+  a stated case fatality rate; it reflects outbreak-zone care, not rich-country care.
+url: https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON607
+forecast:
+  median: 2040
+  low: 2029
+  high: 2075
+  p2035: 36
+  p2045: 60
+  note: The PARTNERS trial of MBP134 and remdesivir, enrolling since July 2026 in the large DRC epidemic,
+    would need to show a clear survival benefit, likely in 2027, followed by approval; if it fails, the
+    next candidates are years behind.

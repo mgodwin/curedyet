@@ -8,6 +8,10 @@ toll:
   text: About 50 million people worldwide; premature death risk up to 3x higher (WHO fact sheet, accessed
     2026)
   url: https://www.who.int/news-room/fact-sheets/detail/epilepsy
+  ratio: "1 in 26"
+  ratio_caption: "people will develop epilepsy during their lifetime"
+  ratio_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3032191/
+  ratio_basis: "Hesdorffer et al., Neurology 2011 (Rochester, Minnesota population study): 'One in 26 people will develop epilepsy during their lifetime.' Data are from 1960-1979."
 status:
   level: 2
   why: Up to 70% of patients can become seizure free on antiseizure medicines, but most need lifelong
@@ -48,28 +52,68 @@ forecast:
     most of a disease with many causes will take much longer.
 pipeline:
 - name: Azetukalner (Kv7 opener)
-  note: Xenon submitted the NDA for focal seizures in Sept 2026 after the positive Phase 3 X-TOLE2.
   stage: Filed
+  note: Xenon submitted the NDA for focal seizures in Sept 2026 after the positive Phase 3 X-TOLE2.
   url: https://www.neurologylive.com/view/xenon-submits-new-drug-application-azetukalner-treatment-focal-seizures
+  variants:
+  - drug-resistant
+  expected: '2027'
+  effect: small
+  effect_note: If approved, it adds another add-on pill for focal seizures; new seizure drugs rarely make
+    many drug-resistant patients seizure-free.
 - name: NRTX-1001 (inhibitory interneuron cell therapy)
+  stage: Phase 3
   note: One-time implant for drug-resistant mesial temporal lobe epilepsy; Phase 1/2 showed median 92%
     seizure reduction in the low-dose group.
-  stage: Phase 3
   url: https://www.neurologylive.com/view/phase-3-epic-trial-evaluate-nrtx-1001-cell-therapy-drug-resistant-mesial-temporal-lobe-epilepsy
+  variants:
+  - drug-resistant
+  - surgery-candidates
+  effect: some
+  effect_note: If the Phase 3 confirms early results, a one-time cell implant could make many people with
+    temporal lobe epilepsy seizure-free without removing brain tissue.
 - name: Zorevunersen (SCN1A antisense, Dravet syndrome)
-  note: EMPEROR fully enrolled in June 2026; readout expected Q3 2027 and possible US launch early 2028.
   stage: Phase 3
+  note: EMPEROR fully enrolled in June 2026; readout expected Q3 2027 and possible US launch early 2028.
   url: https://www.biospace.com/press-releases/stoke-therapeutics-announces-second-quarter-2026-financial-results-and-provides-business-updates
+  variants:
+  - drug-resistant
+  expected: '2027'
+  effect: some
+  effect_note: If EMPEROR succeeds, it would be the first treatment aimed at the cause of Dravet syndrome,
+    a small share of drug-resistant epilepsy.
 - name: ETX101 (AAV gene therapy, Dravet syndrome)
+  stage: Phase 2
   note: Early-stage trials; Breakthrough Therapy designation in Jan 2026 after sustained seizure reductions
     from one dose. Exact phase unclear.
-  stage: Phase 2
   url: https://xtalks.com/international-epilepsy-day-2026-advances-across-therapies-devices-and-monitoring-4606
+  variants:
+  - drug-resistant
+  expected: '2027'
+  effect: some
+  effect_note: If the pivotal study works, a one-dose gene therapy could durably cut seizures in young
+    children with Dravet syndrome.
 - name: NeuroPace RNS for generalized epilepsy
+  stage: Filed
   note: PMA supplement for idiopathic generalized epilepsy is under FDA review, based on the NAUTILUS
     study.
-  stage: Filed
   url: https://xtalks.com/international-epilepsy-day-2026-advances-across-therapies-devices-and-monitoring-4606
+  variants:
+  - drug-resistant
+  effect: small
+  effect_note: FDA said in July 2026 the application was not approvable as filed; if later approved, it
+    would reduce seizures in generalized epilepsy without curing it.
+- name: Opakalim (BHV-7000, Kv7 opener) RISE3
+  stage: Phase 3
+  note: Fully enrolled pivotal Phase 2/3 add-on trial in refractory focal epilepsy; Biohaven guides topline
+    results in 2H 2026.
+  url: https://www.americanpharmaceuticalreview.com/1315-News/626483-Opakalim-Study-in-Focal-Epilepsy-Reaches-Full-Enrollment/
+  variants:
+  - drug-resistant
+  expected: '2026'
+  effect: small
+  effect_note: If positive, it adds another add-on pill that reduces seizures, but it is unlikely to make
+    most drug-resistant patients seizure-free.
 recent:
 - date: 2026-03
   text: Azetukalner cut focal seizures by a median 53% at 25 mg vs 10% on placebo in Phase 3 X-TOLE2.

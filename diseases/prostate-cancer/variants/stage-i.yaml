@@ -1,0 +1,34 @@
+# Cure Watch variant record: one stage or type of Prostate cancer. Field guide: CONTRIBUTING.md.
+id: stage-i
+name: Stage I
+order: 1
+what: A small, slow-growing, lowest-grade cancer still inside the prostate, with a PSA under 10.
+level: 4
+burden: moderate
+burden_why: Most are watched with regular PSA tests, MRI scans and repeat biopsies rather than treated.
+survival: Almost 100% survive at least 5 years (5-year net survival, England, diagnosed 2013-2017)
+share: Part of the roughly 7 in 10 US prostate cancers found while still inside the prostate (SEER 'localized',
+  69%)
+share_url: https://seer.cancer.gov/statfacts/html/prost.html
+treatment: 'Most men are offered active surveillance: regular PSA tests, MRI scans and repeat biopsies,
+  with surgery or radiation only if it grows. Very few die of it; men who choose treatment face the side
+  effects listed for stage II.'
+caveat: Rated moderate for surveillance (ongoing monitoring and biopsies); immediate surgery or radiation
+  would be heavy. Share by TNM stage not verified; SEER reports 69% of US cases as localized, which spans
+  stages I-III. Well over 85% never die of it or need further treatment, but standard care is years of
+  monitoring and biopsies, so it is cured for most, not easily.
+url: https://www.cancerresearchuk.org/about-cancer/prostate-cancer/survival
+easy:
+  median: 2038
+  low: 2030
+  high: 2060
+  p2035: 30
+  p2045: 62
+  note: Active surveillance already avoids treatment for most; it would count as mild once MRI scans and
+    blood or urine tests replace routine repeat biopsies. Trials of MRI-led surveillance with fewer biopsies
+    are the nearest step.
+reached:
+  year: 1990
+  basis: 'Approximate: by the early PSA era, surgery or radiation (and later surveillance) left almost
+    all men with small low-grade prostate cancer free of disease or dying of other causes.'
+  url: https://www.cancerresearchuk.org/about-cancer/prostate-cancer/survival

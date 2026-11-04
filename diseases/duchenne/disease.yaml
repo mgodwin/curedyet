@@ -9,6 +9,10 @@ toll:
   text: Roughly 1 in 3,500-5,000 male births worldwide; most patients die in their 20s-30s from heart
     or breathing failure (unclear current global totals).
   url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5405509/
+  ratio: "1 in 3,500 to 5,000"
+  ratio_caption: "baby boys is born with Duchenne or Becker muscular dystrophy"
+  ratio_url: https://medlineplus.gov/genetics/condition/duchenne-and-becker-muscular-dystrophy/
+  ratio_basis: "NIH MedlinePlus Genetics: Duchenne and Becker together 'affect 1 in 3,500 to 5,000 newborn males worldwide' (combined figure, not Duchenne alone)."
 status:
   level: 1
   why: Steroids, exon-skipping drugs and gene therapy slow decline for some, but the disease still progresses

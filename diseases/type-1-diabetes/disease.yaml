@@ -9,6 +9,10 @@ toll:
   text: About 9.5M people living with diagnosed T1D and ~174,000 deaths worldwide (2025 estimates); ~1.5M
     in the US.
   url: https://www.ajmc.com/view/projected-burden-demands-investment-and-equity-in-type-1-diabetes-care
+  ratio: "About 1 in 160"
+  ratio_caption: "Americans has diagnosed type 1 diabetes"
+  ratio_url: https://www.cdc.gov/diabetes/php/data-research/index.html
+  ratio_basis: "Derived: CDC National Diabetes Statistics Report's 2.1 million Americans with diagnosed type 1 diabetes (1.8M adults, 314,000 under 20) divided by the Census Vintage 2025 US population of 341.8 million (https://www.census.gov/newsroom/press-releases/2026/population-growth-slows.html)."
 status:
   level: 2
   why: Insulin with CGMs and automated insulin pumps gives near-normal lives in rich countries, but nothing

@@ -7,6 +7,10 @@ summary: A severe mental disorder with psychosis, disordered thinking and loss o
 toll:
   text: About 27 million people worldwide, 1 in 300 (WHO, GBD 2023 data)
   url: https://www.who.int/news-room/fact-sheets/detail/schizophrenia
+  ratio: "1 in 300"
+  ratio_caption: "people worldwide lives with schizophrenia"
+  ratio_url: https://www.who.int/news-room/fact-sheets/detail/schizophrenia
+  ratio_basis: "WHO schizophrenia fact sheet: 'Globally, 1 in 300 (or 27 million) people live with schizophrenia' (1 in 206 among adults 20+)."
 status:
   level: 1
   why: Antipsychotics ease hallucinations and delusions, but negative and cognitive symptoms usually persist

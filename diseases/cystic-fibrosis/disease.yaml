@@ -9,6 +9,10 @@ toll:
   text: About 40,000 people in the US and ~100,000+ worldwide (estimate); median predicted survival 65+
     for US births 2020-2024.
   url: https://www.cff.org/medical-professionals/2024-patient-registry-highlights
+  ratio: "1 in 2,500 to 3,500"
+  ratio_caption: "white newborns in the US is born with cystic fibrosis; it is rarer in other groups"
+  ratio_url: https://medlineplus.gov/genetics/condition/cystic-fibrosis/
+  ratio_basis: "NIH MedlinePlus Genetics: CF 'occurs in 1 in 2,500 to 3,500 white newborns'; about 1 in 17,000 African Americans and 1 in 31,000 Asian Americans."
 status:
   level: 2
   why: CFTR modulators give most eligible patients near-normal lung function and lifespan, but treatment
@@ -48,21 +52,43 @@ forecast:
     for most likely needs in vivo gene editing of airway cells, which is decades out.
 pipeline:
 - name: Alyftrek ages 2-5
-  note: Vertex began global submissions for young children in 2026.
   stage: Filed
+  note: Vertex began global submissions for young children in 2026.
   url: https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results
+  variants:
+  - modulator-eligible
+  expected: '2027'
+  effect: small
+  effect_note: If approved, children aged 2-5 could start the newest modulator earlier, which may protect
+    their lungs longer but is still lifelong daily treatment.
 - name: VX-828 triple (next-gen corrector)
+  stage: Phase 1
   note: Lowered sweat chloride beyond Trikafta in F/MF patients.
-  stage: Phase 1
   url: https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results
+  variants:
+  - modulator-eligible
+  effect: some
+  effect_note: If it works in later trials, a stronger modulator could bring CFTR function closer to normal
+    for more people, though still as lifelong pills.
 - name: 4D-710 (inhaled AAV CFTR gene therapy)
-  note: For patients who cannot use modulators; pivotal dose selected, CF Foundation backing.
   stage: Phase 2
+  note: For patients who cannot use modulators; pivotal dose selected, CF Foundation backing.
   url: https://4dmt.gcs-web.com/news-releases/news-release-details/4dmt-advances-4d-710-phase-2-additional-funding-and-support
+  variants:
+  - not-modulator-eligible
+  expected: '2027'
+  effect: some
+  effect_note: If it works, an inhaled gene therapy would give people who cannot use modulators their
+    first treatment that fixes the underlying defect in the lungs.
 - name: SP-101 (Spirovant inhaled gene therapy)
-  note: Aerosol gene therapy for modulator-ineligible patients.
   stage: Phase 1
+  note: Aerosol gene therapy for modulator-ineligible patients.
   url: https://clinicaltrials.gov/study/NCT06526923
+  variants:
+  - not-modulator-eligible
+  effect: some
+  effect_note: If it works, it would offer an inhaled gene fix for people without a modulator option,
+    but it is at an early stage.
 recent:
 - date: 2026-05
   text: Vertex stopped its inhaled CFTR mRNA therapy VX-522 due to lung inflammation from the delivery

@@ -1,0 +1,31 @@
+# Cure Watch variant record: one stage or type of Ovarian cancer. Field guide: CONTRIBUTING.md.
+id: stage-i
+name: Stage I
+order: 1
+what: The cancer is found only in one or both ovaries or fallopian tubes.
+level: 4
+burden: heavy
+burden_why: Major surgery to remove the ovaries, tubes and womb, and higher-risk tumors add chemotherapy.
+survival: ~95% alive at 5 years (net survival, England 2016-2020)
+share: About 1 in 5 US ovarian cancers are found while still confined to the ovary (SEER 'localized',
+  22%)
+share_url: https://seer.cancer.gov/statfacts/html/ovary.html
+treatment: Surgery to remove the ovaries, tubes and womb and check for spread usually cures it; higher-risk
+  tumors also get several cycles of chemotherapy.
+caveat: About 95% survive 5 years in England, and even allowing for some late relapse the long-term cure
+  rate stays above 85%.
+url: https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/survival
+easy:
+  median: 2065
+  low: 2042
+  high: 2100
+  p2035: 2
+  p2045: 11
+  note: The cure is major surgery to remove ovaries, tubes and womb, plus chemotherapy for higher-risk
+    tumors. A mild cure would need much less surgery for most women, and no such approach is close.
+reached:
+  year: 1990
+  basis: 'Approximate: by around 1990 careful surgical staging with chemotherapy for higher-risk tumors
+    was standard; trials then showed about 80% disease-free at 5 years even for higher-risk stage I-II
+    and better for low-risk stage I.'
+  url: https://www.osti.gov/biblio/6809181

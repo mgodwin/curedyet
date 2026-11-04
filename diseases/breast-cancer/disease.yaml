@@ -9,6 +9,10 @@ toll:
   text: About 2.4M new cases and 694,000 deaths/yr worldwide (2024); ~324,580 US cases and ~42,670 US
     deaths est. 2026.
   url: https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2026/2026-cancer-facts-and-figures.pdf
+  ratio: "1 in 8"
+  ratio_caption: "US women will develop breast cancer in their lifetime"
+  ratio_url: https://www.cancer.org/cancer/types/breast-cancer/about/how-common-is-breast-cancer.html
+  ratio_basis: "American Cancer Society: 'about 1 in 8 women will develop breast cancer.'"
 status:
   level: 4
   why: Most patients are diagnosed at an early stage and are cured with surgery, radiation and systemic
@@ -41,30 +45,65 @@ forecast:
     should keep shrinking relapse rates.
 pipeline:
 - name: Giredestrant (oral SERD), adjuvant
+  stage: Filed
   note: lidERA trial in early ER-positive disease; FDA decision expected Nov 30, 2026.
-  stage: Filed
   url: https://www.curetoday.com/view/breast-cancer-treatments-awaiting-fda-decisions-4-to-watch
+  variants:
+  - stage-i
+  - stage-ii
+  - stage-iii
+  expected: '2026-11-30'
+  effect: small
+  effect_note: If approved, an oral pill could replace standard hormone pills after surgery and trim recurrence
+    (about 3 points at 3 years), a modest gain on cure rates that are already high.
 - name: Giredestrant plus everolimus
-  note: evERA trial in ESR1-mutated metastatic disease; decision expected Dec 18, 2026.
   stage: Filed
+  note: evERA trial in ESR1-mutated metastatic disease; decision expected Dec 18, 2026.
   url: https://www.curetoday.com/view/breast-cancer-treatments-awaiting-fda-decisions-4-to-watch
+  variants:
+  - stage-iv
+  expected: '2026-12-18'
+  effect: small
+  effect_note: If approved, it would delay progression for people with an ESR1 mutation after earlier
+    drugs fail, but would not make spread disease curable.
 - name: Camizestrant (Etcamah)
-  note: Accelerated approval Sept 2026 for switching at emerging ESR1 mutation (SERENA-6).
   stage: Approved 2025-26
+  note: Accelerated approval Sept 2026 for switching at emerging ESR1 mutation (SERENA-6).
   url: https://www.pharmacytimes.com/view/5-breast-cancer-advances-in-2026-and-the-questions-they-leave-unanswered
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Already approved; switching drugs when an ESR1 mutation appears delays progression but
+    does not cure spread disease.
 - name: Trastuzumab deruxtecan in early HER2+ disease
+  stage: Approved 2025-26
   note: May 2026 approval for neoadjuvant and post-neoadjuvant use; cut invasive disease risk by about
     half vs T-DM1.
-  stage: Approved 2025-26
   url: https://www.pharmacytimes.com/view/5-breast-cancer-advances-in-2026-and-the-questions-they-leave-unanswered
+  variants:
+  - stage-ii
+  - stage-iii
+  effect: small
+  effect_note: Already approved; halving invasive recurrence in high-risk HER2-positive early cancer raises
+    cure rates somewhat, but the treatment is still demanding.
 - name: Vepdegestrant (Veppanu)
-  note: PROTAC estrogen receptor degrader approved Q2 2026 for ESR1-mutated advanced disease.
   stage: Approved 2025-26
+  note: PROTAC estrogen receptor degrader approved Q2 2026 for ESR1-mutated advanced disease.
   url: https://www.aacr.org/blog/2026/07/02/fda-approvals-in-oncology-april-june-2026/
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Already approved; another pill option for ESR1-mutated spread disease that extends control
+    rather than curing.
 - name: Tucatinib maintenance (HER2CLIMB-05)
+  stage: Approved 2025-26
   note: First-line maintenance for HER2+ metastatic disease; Pfizer expects a 2026 decision.
-  stage: Filed
   url: https://www.curetoday.com/view/breast-cancer-treatments-awaiting-fda-decisions-4-to-watch
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: FDA approved this maintenance use on Oct 7, 2026; it lengthens control of HER2-positive
+    spread disease (about 25 vs 16 months without progression) but is not a cure.
 recent:
 - date: 2026-05
   text: FDA approved Enhertu for early HER2+ disease after DESTINY-Breast05 showed 3-year IDFS of 92.4%

@@ -1,0 +1,30 @@
+# Cure Watch variant record: one stage or type of Crohn's & ulcerative colitis. Field guide: CONTRIBUTING.md.
+id: crohns-disease
+name: Crohn's disease
+order: 2
+what: The immune system inflames any part of the gut, often deep into the bowel wall, causing pain, diarrhea,
+  narrowing and abnormal channels (fistulas).
+level: 2
+burden: moderate
+burden_why: Lifelong biologic or immune-calming drugs with scopes, blood tests and infection risk, and
+  many eventually need bowel surgery.
+survival: ~26% need major bowel surgery within 10 years of diagnosis
+share: Nearly half of Americans with IBD have Crohn's disease
+share_url: https://stacks.cdc.gov/view/cdc/134534
+treatment: Lifelong biologics or other immune-calming drugs put many patients into long remission, with
+  regular scopes and blood tests and some infection risk. Surgery removes damaged bowel but does not cure
+  Crohn's, which often returns near the join.
+caveat: Level 2 assumes near-normal life on treatment, but a sizable minority keep flaring or develop
+  bowel damage despite treatment, so for them it behaves more like level 1. The surgery figure (26.2%)
+  is from cohorts diagnosed after 2000; about 1 in 4 to 1 in 3 who have surgery need another within 10
+  years.
+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8934200
+forecast:
+  median: 2056
+  low: 2040
+  high: 2095
+  p2035: 4
+  p2045: 16
+  note: Needs a lasting immune reset or microbiome fix that stops inflammation anywhere in the gut for
+    good; surgery does not cure Crohn's. Nearest candidates are TL1A antibodies such as duvakitug, which
+    improve control but must be continued.

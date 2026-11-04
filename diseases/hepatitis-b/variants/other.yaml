@@ -1,0 +1,25 @@
+# Cure Watch variant record: one stage or type of Hepatitis B. Field guide: CONTRIBUTING.md.
+id: other
+name: Chronic HBV, other
+order: 2
+what: People with long-term hepatitis B who do not qualify for the new cure drug, for example because
+  they have cirrhosis or higher levels of the virus protein.
+level: 2
+burden: moderate
+burden_why: A cheap, well-tolerated daily pill, usually for life, with regular blood tests.
+survival: Under 1% functional cure after a year of standard antiviral pills (per GSK)
+treatment: Those who need treatment take a daily tenofovir or entecavir pill, usually for life, which
+  is cheap as a generic and well tolerated but needs regular blood tests. It keeps the virus suppressed
+  and lowers the risk of cirrhosis and liver cancer, but almost never clears the infection.
+caveat: The under-1% figure is GSK's summary of the literature. Many people with chronic HBV are not on
+  treatment at all because their infection is inactive and they are monitored instead.
+url: https://www.gsk.com/media/alvmln3q/final-2-_bepi_us_approval_sea_201026.pdf
+forecast:
+  median: 2050
+  low: 2036
+  high: 2080
+  p2035: 8
+  p2045: 42
+  note: Needs treatments that work despite high viral protein levels or cirrhosis, likely by silencing
+    or removing the hidden viral DNA (cccDNA) in liver cells. Gene-silencing and editing approaches are
+    early, so this group trails the low-HBsAg group by about a decade.

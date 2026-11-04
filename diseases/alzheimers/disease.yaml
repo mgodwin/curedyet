@@ -8,6 +8,10 @@ summary: The most common cause of dementia, in which amyloid plaques and tau tan
 toll:
   text: About 7.4 million Americans aged 65+ living with Alzheimer's in 2026 (Alzheimer's Association).
   url: https://www.alz.org/facts-and-figures
+  ratio: "1 in 9"
+  ratio_caption: "Americans aged 65 and older has Alzheimer's"
+  ratio_url: https://www.alz.org/alzheimers-dementia/facts-figures
+  ratio_basis: "Alzheimer's Association Facts and Figures: 'About 1 in 9 people age 65 and older (11%) has Alzheimer's.'"
 status:
   level: 1
   why: Anti-amyloid antibodies slow decline by roughly a quarter to a third in early disease, but the

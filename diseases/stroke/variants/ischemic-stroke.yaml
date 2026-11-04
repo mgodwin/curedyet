@@ -1,0 +1,31 @@
+# Cure Watch variant record: one stage or type of Stroke. Field guide: CONTRIBUTING.md.
+id: ischemic-stroke
+name: Ischemic stroke
+order: 1
+what: A clot blocks an artery to the brain, starving part of it of blood.
+level: 3
+burden: heavy
+burden_why: Emergency clot-busting drugs or catheter procedures, then rehab and lifelong prevention pills,
+  often with lasting deficits.
+survival: ~46% functionally independent at 90 days after thrombectomy (vs ~27% without)
+share: About 87% of strokes are caused by a blocked artery
+share_url: https://www.cdc.gov/stroke/data-research/facts-stats/index.html
+treatment: Clot-busting drugs within about 4.5 hours, or catheter clot removal for large blockages within
+  up to 24 hours in selected patients, can fully reverse some strokes, followed by rehab and lifelong
+  prevention pills. Many patients arrive too late or are far from a thrombectomy center, and survivors
+  often keep lasting deficits because lost brain tissue does not regrow.
+caveat: Rated level 3 because timely reperfusion is a real, approved treatment that undoes the stroke
+  for a meaningful subset; the typical patient does not get it, since only a small minority of US ischemic
+  strokes (thrombectomy roughly 4% in 2019) receive these treatments. The 46% figure is for trial patients
+  with large blockages, not all strokes. Share is from CDC. The Lancet page blocks automated access; the
+  figure was verified from a copy of the full paper.
+url: https://doi.org/10.1016/S0140-6736(16)00163-X
+forecast:
+  median: 2062
+  low: 2043
+  high: 2100
+  p2035: 3
+  p2045: 12
+  note: Needs clot removal to reach almost every patient within hours plus drugs that protect or regrow
+    brain tissue, so lasting damage is rare. Cooling during thrombectomy has a mixed first signal, and
+    factor XI drugs like asundexian improve prevention, not cure.

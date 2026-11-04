@@ -8,6 +8,10 @@ toll:
   text: About 1.5M new cases and 420,000 deaths/yr worldwide (2024); ~333,830 US cases and ~36,320 US
     deaths est. 2026.
   url: https://pressroom.cancer.org/global-cancer-statistics-2026
+  ratio: "1 in 8"
+  ratio_caption: "US men will be diagnosed with prostate cancer in their lifetime"
+  ratio_url: https://www.cancer.org/cancer/types/prostate-cancer/about/key-statistics.html
+  ratio_basis: "American Cancer Society key statistics: 'About 1 in 8 men will be diagnosed with prostate cancer during their lifetime.'"
 status:
   level: 4
   why: Most cases are found while localized and are cured or safely monitored, with US 5-year survival
@@ -38,18 +42,32 @@ forecast:
     radioligands and targeted drugs earlier. A true cure for metastatic disease still looks far off.
 pipeline:
 - name: Talazoparib plus enzalutamide in mCSPC
+  stage: Approved 2025-26
   note: TALAPRO-3 cut progression risk 52% in HRR-mutated disease; priority review with Q4 2026 action
     date.
-  stage: Filed
   url: https://www.rttnews.com/3669562/pfizer-secures-fda-priority-review-for-talzenna-plus-xtandi-in-metastatic-prostate-cancer.aspx
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: FDA approved it on Oct 26, 2026 for HRR-mutated hormone-sensitive spread disease; it delays
+    progression in a subset but does not cure.
 - name: Lutetium-177 PSMA (Pluvicto) in hormone-sensitive disease
+  stage: Approved 2025-26
   note: Approved July 31, 2026 with an AR pathway inhibitor for PSMA-positive mHSPC.
-  stage: Approved 2025-26
   url: https://nuclear.pharmacy.purdue.edu/news-and-updates/fda-approves-lutetium-lu-177-vipivotide-tetraxetan-androgen-receptor-pathway
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Already approved; adding radioligand therapy delays progression in PSMA-positive hormone-sensitive
+    disease, not a cure.
 - name: Capivasertib (Truqap) plus abiraterone
-  note: First AKT inhibitor for PTEN-deficient mHSPC, approved June 12, 2026 (CAPItello-281).
   stage: Approved 2025-26
+  note: First AKT inhibitor for PTEN-deficient mHSPC, approved June 12, 2026 (CAPItello-281).
   url: https://www.aacr.org/patients-caregivers/progress-against-cancer/first-akt-inhibitor-approved-for-prostate-cancer/
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Already approved; an AKT pill delays progression for the PTEN-deficient subset.
 recent:
 - date: 2026-06
   text: Capivasertib became the first AKT inhibitor approved in prostate cancer, extending median rPFS
@@ -58,11 +76,7 @@ recent:
 - date: 2026-07
   text: Pluvicto radioligand therapy moved into the hormone-sensitive metastatic setting.
   url: https://nuclear.pharmacy.purdue.edu/news-and-updates/fda-approves-lutetium-lu-177-vipivotide-tetraxetan-androgen-receptor-pathway
-next_milestone:
-  date: 2026-12
-  url: https://www.rttnews.com/3669562/pfizer-secures-fda-priority-review-for-talzenna-plus-xtandi-in-metastatic-prostate-cancer.aspx
-  what: FDA action on talazoparib plus enzalutamide for HRR-mutated metastatic castration-sensitive prostate
-    cancer (Q4 2026 action date).
+next_milestone: null
 ai:
   impact: some
   note: FDA-authorized AI pathology tools help pathologists spot cancer on prostate biopsies, and AI biomarkers

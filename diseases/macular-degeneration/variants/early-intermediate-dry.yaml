@@ -1,0 +1,25 @@
+# Cure Watch variant record: one stage or type of Macular degeneration. Field guide: CONTRIBUTING.md.
+id: early-intermediate-dry
+name: Early/intermediate dry AMD
+order: 3
+what: The earlier stages of dry macular degeneration, where yellow deposits build up under the retina
+  and vision is often still good.
+level: 1
+burden: light
+burden_why: Treatment is at most daily vitamin supplements and regular eye checks.
+share: About 9 in 10 Americans with AMD have the early or intermediate form
+share_url: https://healthdata.org/research-article/prevalence-age-related-macular-degeneration-us-2019
+treatment: For intermediate AMD, daily AREDS2 vitamin and mineral supplements cut the risk of progressing
+  to advanced AMD by about a quarter; otherwise care is monitoring and not smoking. Nothing reverses it,
+  and many still progress.
+caveat: Supplements are not shown to help early AMD or to prevent AMD from starting. This group is the
+  most common form of AMD, which is why the disease's overall level is 1.
+url: https://nei.nih.gov/research/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2
+forecast:
+  median: 2057
+  low: 2040
+  high: 2100
+  p2035: 3
+  p2045: 14
+  note: A safe treatment that reliably stops progression to late AMD would be needed; candidates such
+    as oral complement or lipid-targeting drugs and photobiomodulation are early or have shown small effects.

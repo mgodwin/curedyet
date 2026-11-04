@@ -9,6 +9,10 @@ toll:
   text: About 1-2 cases per million people per year worldwide (roughly 85% sporadic, 5-15% genetic, under
     1% acquired); median survival 4-5 months after symptoms (CDC).
   url: https://www.cdc.gov/creutzfeldt-jakob/hcp/clinical-overview/
+  ratio: "1 to 2 in a million"
+  ratio_caption: "people a year develop Creutzfeldt-Jakob disease"
+  ratio_url: https://www.cdc.gov/creutzfeldt-jakob/hcp/clinical-overview/
+  ratio_basis: "CDC CJD clinical overview: estimated annual incidence in many countries of about 1 to 2 cases per 1 million people."
 status:
   level: 0
   why: CDC says CJD is always fatal and no therapy slows it; care is supportive only.

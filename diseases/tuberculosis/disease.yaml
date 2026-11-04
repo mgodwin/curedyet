@@ -7,6 +7,10 @@ summary: A bacterial infection, usually of the lungs, spread through the air.
 toll:
   text: About 1.23 million deaths in 2024; 8.3M people diagnosed, a record (WHO Global TB Report 2025)
   url: https://www.pbs.org/newshour/health/global-tuberculosis-case-rise-to-a-record-but-deaths-fall-reports-who
+  ratio: "1 in 4"
+  ratio_caption: "people worldwide is estimated to have been infected with TB bacteria, though most never fall ill"
+  ratio_url: https://www.who.int/news-room/fact-sheets/detail/tuberculosis
+  ratio_basis: "WHO TB fact sheet: 'About a quarter of the global population is estimated to have been infected with TB bacteria.'"
 status:
   level: 4
   why: Standard multi-drug regimens cure most people with drug-susceptible TB, and 6-month all-oral regimens
@@ -38,18 +42,36 @@ forecast:
     the next few years. Funding cuts are a real risk.
 pipeline:
 - name: M72/AS01E vaccine
-  note: About 20,000 people enrolled across 5 countries; earlier Phase 2b showed about 50% efficacy.
   stage: Phase 3
+  note: About 20,000 people enrolled across 5 countries; earlier Phase 2b showed about 50% efficacy.
   url: https://www.gatesmri.org/the-phase-3-clinical-trial-of-the-m72-aso1e-tuberculosis-tb-vaccine-candidate-has-reached-full-enrollment/
+  variants:
+  - drug-susceptible
+  - drug-resistant
+  expected: '2028'
+  effect: small
+  effect_note: If the Phase 3 confirms about 50% efficacy, a vaccine would prevent many cases but would
+    not change how well treatment cures those who get sick.
 - name: BEAT-TB 6-month regimen for rifampicin-resistant TB
+  stage: Phase 3
   note: Published in NEJM June 2026; matched 9-month care at about 86% success and is usable in children
     and pregnancy.
-  stage: Phase 3
   url: https://www.ewn.co.za/2026/07/01/important-advance-made-in-tb-treatment
+  variants:
+  - drug-resistant
+  effect: some
+  effect_note: Already published; a 6-month all-oral regimen usable in children and pregnancy makes drug-resistant
+    TB treatment shorter and easier.
 - name: Long-acting pretomanid and sorfequiline (TBAJ-876)
-  note: Preclinical data shown at CROI 2026; aims to simplify treatment.
   stage: Preclinical
+  note: Preclinical data shown at CROI 2026; aims to simplify treatment.
   url: https://www.eatg.org/hiv-news/treatment-action-group-croi-2026-tb-research-round-up/
+  variants:
+  - drug-susceptible
+  - drug-resistant
+  effect: some
+  effect_note: Preclinical; if long-acting injections work, they could shrink months of daily pills to
+    a few doses, a step toward an easy cure.
 recent:
 - date: 2026-06
   text: BEAT-TB showed a 6-month regimen without pretomanid works for rifampicin-resistant TB, including

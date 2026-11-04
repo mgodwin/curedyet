@@ -1,0 +1,31 @@
+# Cure Watch variant record: one stage or type of Colorectal cancer. Field guide: CONTRIBUTING.md.
+id: stage-ii
+name: Stage II
+order: 2
+what: The cancer has grown through the bowel wall, possibly into nearby tissue, but has not reached lymph
+  nodes.
+level: 4
+burden: heavy
+burden_why: Bowel surgery is needed, and some add months of chemotherapy or, for rectal tumors, radiation
+  beforehand.
+survival: ~85% alive at 5 years (net survival, England 2016-2020)
+treatment: Bowel surgery is the main treatment and cures most people; higher-risk tumors may add a few
+  months of chemotherapy, and rectal tumors often need radiation or chemoradiation first.
+caveat: 'Borderline: about 85% survive 5 years in England, and few bowel cancer relapses happen after
+  5 years, so it just meets the 85% bar; it could slip to 3 if long-term cure data come in lower.'
+url: https://www.cancerresearchuk.org/about-cancer/bowel-cancer/survival
+easy:
+  median: 2062
+  low: 2040
+  high: 2100
+  p2035: 2
+  p2045: 13
+  note: Stage II needs bowel surgery, and higher-risk or rectal tumors add chemotherapy or radiation.
+    A mild cure would need a non-surgical way to clear it, such as the immunotherapy now curing mismatch-repair-deficient
+    tumors without surgery, extended to the common type.
+reached:
+  year: 2005
+  basis: 'Approximate: by the 2000s better lymph node checking, rectal surgery technique (total mesorectal
+    excision) and chemotherapy for high-risk tumors brought stage II to about 85%; US colon stage IIA
+    was 85% for 1991-2000.'
+  url: https://www.cancerresearchuk.org/about-cancer/bowel-cancer/survival

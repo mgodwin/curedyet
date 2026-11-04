@@ -1,0 +1,33 @@
+# Cure Watch variant record: one stage or type of Lymphomas. Field guide: CONTRIBUTING.md.
+id: hodgkin
+name: Hodgkin
+order: 1
+what: A lymph-node cancer with distinctive large cells, most common in young adults and older people.
+level: 4
+burden: heavy
+burden_why: Months of chemotherapy, sometimes radiation, with risks of infertility and later heart, lung
+  or second cancers.
+survival: ~89% alive at 5 years (SEER 5-year relative survival, 2016-2022); ~93-95% for stage I-II, ~83%
+  for stage IV
+share: About 1 in 10 lymphomas are Hodgkin
+share_url: https://www.cancer.org/cancer/types/hodgkin-lymphoma/about/key-statistics.html
+treatment: Treatment is a few months of chemotherapy, now often with the immune drug nivolumab for advanced
+  stages, sometimes plus radiation, with risks of infertility and later heart, lung or second-cancer effects.
+  Most patients are cured, including many with advanced stage.
+caveat: About 89% survive 5 years and late relapse is rare, so most are cured, though adults over 40 fare
+  worse (about 77%), making 85% a close call.
+url: https://seer.cancer.gov/statfacts/html/hodg.html
+easy:
+  median: 2050
+  low: 2036
+  high: 2090
+  p2035: 6
+  p2045: 33
+  note: Cure would need to come without months of chemotherapy and its fertility and late heart risks;
+    PET-guided de-escalation and chemo-light regimens built on nivolumab and brentuximab are the nearest
+    candidates.
+reached:
+  year: 2000
+  basis: 'Approximate: US 5-year relative survival passed about 85% around 2000-2004 as ABVD-based chemotherapy
+    with salvage transplant became standard; Hodgkin rarely relapses late.'
+  url: https://seer.cancer.gov/statfacts/html/hodg.html

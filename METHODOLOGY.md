@@ -2,18 +2,23 @@
 
 ## The cure ladder
 
-Each disease gets one level for the typical patient in rich countries.
+Each disease, and each stage or type of a disease, gets one level for the typical patient in rich countries.
 
 | Level | Name | Meaning |
 |---|---|---|
 | 0 | No treatment | Nothing changes the course of the disease. |
 | 1 | Slows it | Treatments slow it or ease symptoms, but it still advances. |
 | 2 | Controlled | Near-normal life on ongoing treatment, but not cured. |
-| 3 | Cured for some | A real cure or durable remission exists for a meaningful subset: some stages or subtypes, or an approved curative therapy that only some patients can get. |
-| 4 | Cured for most | Most patients who get standard care can be cured, and most could realistically tolerate and get that cure. A cure too toxic, risky or costly for most patients stays at level 3. |
-| 5 | Gone | Eradicated or reliably prevented at population scale. |
+| 3 | Cured for some | A real cure or durable remission exists for a meaningful subset, or an approved curative therapy that only some patients can get, but fewer than about 85% of patients are cured. |
+| 4 | Cured for most | At least about 85% of patients who get standard care are cured, and most could realistically tolerate and get that cure, but the cure is moderate or difficult treatment. |
+| 5 | Cured easily | Cured for most, and the standard cure is mild treatment: a short or easy course with few side effects, broadly affordable. This is the goal. |
+| 6 | Gone | Eradicated or reliably prevented at population scale. |
 
-On the site, levels 0 to 2 read "Not yet", level 3 "For some", and levels 4 and 5 "Yes".
+**The 85% line.** "Cured" means cured, not alive at five years. Where relapse after five years is common (hormone-positive breast cancer, ovarian cancer, high-risk prostate cancer), use long-term or cure-fraction data; five-year survival is a stand-in only where late relapse is rare. A cure too toxic, risky or costly for most patients to get stays at level 3, however well it works.
+
+On the site, levels 0 to 2 read "Not yet", level 3 "For some", level 4 "Yes, but tough" in yellow, and levels 5 and 6 "Yes" in green. Level 4 is a waypoint: most patients are cured, but the road there is hard, so level 4 records also forecast when the cure gets easy (`easy`).
+
+**Stages and types.** A single level hides how different one disease can be across stages or types. Stage IV colorectal cancer is closer to a different disease than to stage I. So diseases with distinct stages or types keep each one as its own variant in `diseases/<id>/variants/`, rated on the same ladder with its own burden, prognosis, forecast, catalysts and estimate log, and each gets its own page. The disease page becomes a hub that lists them. The disease's overall level is kept for the typical patient across all variants, to anchor the pooled forecast and the history, but it is never shown as a verdict on a disease with variants, so nobody with metastatic disease is told their cancer is cured. The validator requires variants for every cancer at level 4 or above.
 
 **Outbreak diseases** (Ebola, rabies and others) are rated by how well a patient can be treated once disease has started. Vaccines and post-exposure prevention are described in the text.
 
@@ -24,6 +29,8 @@ A level only changes on a discrete event: an approved curative therapy reaching 
 ## Treatment burden
 
 Rates the best current standard option for a typical patient.
+
+The data uses `light`, `moderate` and `heavy`; the site shows them as **mild**, **moderate** and **difficult** treatment.
 
 - **Light**: a short course or easy treatment, mild and uncommon side effects, broadly affordable. Example: 8 to 12 weeks of hepatitis C pills.
 - **Moderate**: ongoing or lifelong treatment, or real but manageable side effects, regular monitoring or meaningful cost. Example: GLP-1 obesity drugs.
@@ -95,3 +102,9 @@ For stages driven mostly by AI, the odds of getting much faster by 2030 are tied
 ## Short-range forecasts and scoring
 
 `tracker/checks.yaml` holds dated yes-or-no forecasts that resolve within 1 to 9 months, such as FDA decisions and trial readouts. Each resolved check is scored with the Brier score, `(forecast − outcome)²`. Lower is better; always guessing 50% scores 0.25. These are the tracker's honest accuracy test, since the long-range forecasts can't be scored for years.
+
+## Tracking how estimates move
+
+Each weekly update saves a snapshot in `tracker/history/<date>.json` with every disease's level, best-guess year, optimistic year (`low`, the 10th percentile) and pessimistic year (`high`, the 90th). Each disease page charts these as **years until most patients are curable**, with the optimistic to pessimistic range as a band. Because time passes, the number falls by one each year even if the forecast never changes, so the chart also draws that "same forecast" line. A line falling faster than it means a cure is getting closer; a flat or rising line means it is slipping.
+
+Changes and news in `tracker/updates/<date>.yaml` that carry a `disease: <id>` field appear on that disease's chart and in its list of what moved it.

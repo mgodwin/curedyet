@@ -35,7 +35,8 @@ Prefer, in roughly this order: regulators (FDA, EMA), WHO, CDC and national heal
 | `tracking` | `proposed` for new diseases. The weekly review switches it to `active` once forecasts are in. |
 | `summary` | One sentence: what the disease is. |
 | `toll.text`, `toll.url` | How many people it affects, with year and source. |
-| `status.level` | 0 to 5 on the cure ladder. See [METHODOLOGY.md](METHODOLOGY.md#the-cure-ladder). |
+| `toll.ratio`, `toll.ratio_caption`, `toll.ratio_url` | Optional headline ratio for "How many people", e.g. `1 in 24` + `Americans will get it in their lifetime`, with the page that states it. Prefer lifetime risk, then share living with it now. |
+| `status.level` | 0 to 6 on the cure ladder, for the typical patient. On a disease with variants it anchors the pooled forecast and history but isn't shown as a verdict. See [METHODOLOGY.md](METHODOLOGY.md#the-cure-ladder). |
 | `status.why` | One plain sentence explaining the level. It shows on the disease's card. |
 | `status.today` | Two or three sentences on what treatment can do now, and for whom. |
 | `status.last_reviewed` | Date of the last full review, `YYYY-MM-DD`. |
@@ -43,11 +44,31 @@ Prefer, in roughly this order: regulators (FDA, EMA), WHO, CDC and national heal
 | `treatment.burden` | `light`, `moderate` or `heavy`. See [METHODOLOGY.md](METHODOLOGY.md#treatment-burden). |
 | `treatment.burden_note` | One sentence on side effects, how long treatment lasts, and cost or access. |
 | `forecast` | Optional for new diseases. See below. |
-| `pipeline` | The most promising therapies in development: `name`, `stage`, `note`, `url`. |
+| `pipeline` | The most promising therapies in development: `name`, `stage`, `note`, `url`, plus optional `variants` (ids it applies to), `expected` (date of the next decisive event, `YYYY-MM-DD`, `YYYY-MM` or `YYYY`), `effect` (`big`, `some` or `small`: what a win would do to the estimate) and `effect_note` (one sentence). Items with an upcoming `expected` date show under "What could change it". |
 | `recent` | Notable recent results: `date` (`YYYY-MM`), `text`, `url`. |
 | `next_milestone` | The next dated event to watch: `date`, `what`, `url`. |
 | `ai.impact`, `ai.note` | `high`, `some` or `low`: is AI plausibly speeding progress now? One sentence with an example. |
 | `markets` | Forecasting-market questions about this disease: `who`, `what`, `url`. |
+
+## Variants: stages and types
+
+A disease whose stages or types are really different diseases (cancer stages, MS relapsing vs progressive) keeps each one in `diseases/<id>/variants/<variant-id>.yaml`, and each gets its own page under the disease's hub. Every cancer at level 4 or above needs them.
+
+| Field | What it means |
+|---|---|
+| `id` | Same as the file name, lowercase-with-dashes, without repeating the disease (`stage-iv`, `relapsing`). |
+| `name`, `order` | Display name (`Stage IV`) and position on the hub. |
+| `what` | One plain sentence on what this stage or type is. |
+| `level` | 0 to 6 on the cure ladder, rated as if it were its own disease. Level 4 needs at least ~85% cured; level 5 also needs a light burden. |
+| `burden` | `light`, `moderate` or `heavy` for its standard treatment. |
+| `burden_why` | One sentence on why the treatment gets that rating. |
+| `survival`, `share`, `share_url` | Prognosis figure with its measure, and optionally the share of patients with this variant as a plain sentence, with its source. |
+| `treatment` | One or two sentences on the standard treatment, its toll, and whether it cures. |
+| `caveat` | Optional: limits of the evidence or judgement calls. Shown on the page. |
+| `url` | The page stating the survival figure. |
+| `forecast` | Below level 4: when most patients with it will be curable (`median`, `low`, `high`, `p2035`, `p2045`, `note`, blended like the disease forecast). |
+| `easy` | Below level 5: when the cure will get easy (same shape). |
+| `reached`, `reached_easy` | At level 4+ / 5+: `year`, a one-line `basis` and a `url` for when it got there. |
 
 ### Forecasts
 
@@ -72,7 +93,7 @@ forecast:
   outlook: Two or three sentences of reasoning.
 ```
 
-Don't write the headline odds directly; the build blends the two tracks. A disease already at level 4 or 5 uses `forecast.reached: <year>` instead of the tracks.
+Don't write the headline odds directly; the build blends the two tracks. A disease already at level 4 or above uses `forecast.reached: <year>` instead of the tracks, and at level 5 or above also `forecast.reached_easy: <year>`.
 
 Proposed numbers are a starting point. The weekly review checks them against the base rates in METHODOLOGY.md and may change them.
 
@@ -86,4 +107,4 @@ Proposed numbers are a starting point. The weekly review checks them against the
 
 ## Review
 
-A maintainer reviews every pull request. The weekly update may also revise facts as new evidence arrives, and logs what changed in `tracker/updates/`.
+A maintainer reviews every pull request. The weekly update may also revise facts as new evidence arrives, and logs what changed in `tracker/updates/`. Tag each change or news item with `disease: <id>` so it shows on that disease's estimate chart.

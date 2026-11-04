@@ -1,0 +1,28 @@
+# Cure Watch variant record: one stage or type of Epilepsy. Field guide: CONTRIBUTING.md.
+id: drug-responsive
+name: Drug-responsive epilepsy
+order: 1
+what: Epilepsy in which daily antiseizure medicines stop the seizures.
+level: 2
+burden: moderate
+burden_why: Daily pills for years or life, with side effects like tiredness, dizziness or mood changes,
+  but seizures are controlled.
+survival: ~64% seizure-free for at least a year on medicines (30-year Glasgow cohort of newly treated
+  patients)
+share: About 2 in 3 people newly treated for epilepsy become seizure-free on medicines
+share_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5885858
+treatment: Most people become seizure-free on one or two daily antiseizure medicines, usually taken for
+  years or for life, with side effects such as tiredness, dizziness or mood changes and pregnancy concerns
+  with some drugs. Seizures are controlled, not cured, though some can later stop medicines.
+caveat: The 64% is the share seizure-free at last follow-up in one specialist center; it barely changed
+  across three decades despite newer drugs.
+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5885858
+forecast:
+  median: 2056
+  low: 2039
+  high: 2100
+  p2035: 5
+  p2045: 20
+  note: A treatment that removes the cause so most people can stop medicines without seizures returning
+    would be needed; nothing in late trials does this, though gene therapies for specific genetic epilepsies
+    are a start.

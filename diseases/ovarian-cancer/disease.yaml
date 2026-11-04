@@ -8,6 +8,10 @@ summary: Cancer of the ovaries, fallopian tubes or peritoneum, usually found lat
 toll:
   text: About 21,010 new US cases and 12,450 US deaths expected in 2026 (ACS); 5-year survival 52% overall.
   url: https://www.cancer.org/cancer/types/ovarian-cancer/about/key-statistics.html
+  ratio: "1 in 91"
+  ratio_caption: "US women will get ovarian cancer in their lifetime"
+  ratio_url: https://www.cancer.org/cancer/types/ovarian-cancer/about/key-statistics.html
+  ratio_basis: "American Cancer Society key statistics: 'A woman's risk of getting ovarian cancer during her lifetime is about 1 in 91.'"
 status:
   level: 3
   why: Early-stage disease is usually cured by surgery, but over half of cases are found at a distant
@@ -50,26 +54,55 @@ forecast:
     within a decade is unlikely.
 pipeline:
 - name: Relacorilant (Lifyorli) plus nab-paclitaxel
+  stage: Approved 2025-26
   note: FDA approved March 25, 2026 for platinum-resistant disease; OS 16.0 vs 11.9 months in ROSELLA.
-  stage: Approved 2025-26
   url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-relacorilant-nab-paclitaxel-platinum-resistant-epithelial-ovarian-fallopian-tube-or
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: small
+  effect_note: Already approved; it extends survival by a few months in platinum-resistant relapse but
+    does not cure.
 - name: Pembrolizumab plus paclitaxel
-  note: FDA approved in Q1 2026 for PD-L1-positive platinum-resistant disease.
   stage: Approved 2025-26
+  note: FDA approved in Q1 2026 for PD-L1-positive platinum-resistant disease.
   url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-paclitaxel-platinum-resistant-epithelial-ovarian-fallopian-tube-or
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: small
+  effect_note: Already approved; a modest survival gain for PD-L1-positive platinum-resistant disease.
 - name: Rinatabart sesutecan (Rina-S, FRa ADC)
-  note: 45.9% response rate in 109 platinum-resistant patients; phase 3 RAINFOL-02 ongoing.
   stage: Phase 3
+  note: 45.9% response rate in 109 platinum-resistant patients; phase 3 RAINFOL-02 ongoing.
   url: https://www.targetedonc.com/view/rinatabart-sesutecan-shows-durable-responses-in-platinum-resistant-ovarian-cancer
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: small
+  effect_note: RAINFOL-02 reported positive progression-free and overall survival results in Oct 2026;
+    approval would extend life in platinum-resistant disease, not cure it.
 - name: Raludotatug deruxtecan (R-DXd, CDH6 ADC)
+  stage: Phase 3
   note: FDA breakthrough designation; about 50% response in platinum-resistant disease; first-line maintenance
     trials started.
-  stage: Phase 3
   url: https://www.merck.com/news/raludotatug-deruxtecan-granted-breakthrough-therapy-designation-by-u-s-fda-for-patients-with-cdh6-expressing-platinum-resistant-ovarian-primary-peritoneal-or-fallopian-tube-cancers-previously-treat/
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: small
+  effect_note: If Phase 3 and first-line maintenance trials work, it could lengthen remissions, but cure
+    would remain uncommon.
 - name: Torvutatug samrotecan (AZD5335, FRa ADC)
-  note: 56.6% response in expansion cohorts at ESMO 2026; phase 3 TREVI-OC-01 recruiting.
   stage: Phase 3
+  note: 56.6% response in expansion cohorts at ESMO 2026; phase 3 TREVI-OC-01 recruiting.
   url: https://www.targetedonc.com/view/esmo-2026-gynecologic-cancer-adcs-ovarian-cervical
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: small
+  effect_note: If TREVI-OC-01 succeeds, it adds another antibody-drug conjugate for relapsed disease that
+    extends life.
 recent:
 - date: 2026-03
   text: FDA approved relacorilant, a first-in-class glucocorticoid receptor blocker, which extended survival

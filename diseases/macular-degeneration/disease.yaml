@@ -7,6 +7,10 @@ summary: Age-related damage to the central retina that blurs and destroys centra
 toll:
   text: AMD causes vision impairment or blindness in about 8M people worldwide (WHO).
   url: https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment
+  ratio: "1 in 8"
+  ratio_caption: "Americans aged 40 and older is living with age-related macular degeneration"
+  ratio_url: https://www.cdc.gov/vision-health-data/prevalence-estimates/amd-prevalence.html
+  ratio_basis: "CDC Vision and Eye Health Surveillance System: 19.8 million (12.6%) Americans aged 40+ had AMD in 2019, mostly early-stage; 12.6% is about 1 in 8."
 status:
   level: 1
   why: Wet AMD is well controlled by repeated eye injections, but the more common dry form only has drugs
@@ -28,39 +32,63 @@ treatment:
 forecast:
   bottleneck: biology-limited
   normal:
-    p2035: 4
-    p2045: 14
-    median: 2056
-    low: 2040
-    high: 2095
+    p2035: 2
+    p2045: 11
+    median: 2059
+    low: 2042
+    high: 2098
   faster:
-    p2035: 8
-    p2045: 30
-    median: 2046
-    low: 2036
-    high: 2080
+    p2035: 6
+    p2045: 27
+    median: 2049
+    low: 2038
+    high: 2083
   faster_note: Wet AMD gene therapies are near approval, but dry AMD is most cases and needs better biology
     or cell replacement; acceleration helps there, but slow vision-endpoint trials limit the lift by 2035.
   outlook: One-time gene therapies may make wet AMD a single-procedure condition by about 2028-2030, but
     dry AMD is most cases and lacks a strong treatment. Cure for most would need stopping or reversing
-    geographic atrophy, possibly with cell therapy. That remains far off.
+    geographic atrophy, possibly with cell therapy. That remains far off. Early and intermediate dry AMD is the most common form, so this forecast follows its.
 pipeline:
 - name: Sura-vec / ABBV-RGX-314 (REGENXBIO/AbbVie), one-time gene therapy
+  stage: Phase 3
   note: ATMOSPHERE and ASCENT enrolled over 1,200 wet AMD patients; topline expected Q4 2026.
-  stage: Phase 3
   url: https://eyewire.news/news/regenxbio-completes-enrollment-in-atmosphere-and-ascent-trials-of-sura-vec-gene-therapy-for-wet-amd
+  variants:
+  - wet-amd
+  expected: '2026'
+  effect: some
+  effect_note: If ATMOSPHERE and ASCENT show vision matching regular injections, a one-time gene therapy
+    could free many patients from repeated eye injections.
 - name: 4D-150 (4DMT), intravitreal gene therapy
+  stage: Phase 3
   note: Phase 2b cut injections 78% over 2 years; 4FRONT-1 topline Q2 2027.
-  stage: Phase 3
   url: https://finviz.com/news/382051/4dmt-reports-second-quarter-2026-financial-results-operational-highlights-and-expected-upcoming-milestones
+  variants:
+  - wet-amd
+  expected: '2027'
+  effect: some
+  effect_note: If 4FRONT-1 confirms Phase 2, one in-office injection could replace most ongoing anti-VEGF
+    shots, easing control rather than curing.
 - name: Vonaprument (Annexon), anti-C1q for GA
+  stage: Phase 3
   note: ARCHER II tests prevention of 15-letter vision loss; topline expected 2H 2026.
-  stage: Phase 3
   url: https://www.clinicaltrialvanguard.com/news/vonaprument-shows-promising-results-in-phase-3-trial-for-dry-amd/
+  variants:
+  - geographic-atrophy
+  expected: '2026'
+  effect: some
+  effect_note: If ARCHER II confirms Phase 2, it would be the first treatment shown to protect vision
+    itself in geographic atrophy, though it slows rather than reverses damage.
 - name: Ixo-vec (Adverum) gene therapy
-  note: ARTEMIS readout expected Q1 2027.
   stage: Phase 3
+  note: ARTEMIS readout expected Q1 2027.
   url: https://www.modernretina.com/view/pipeline-update-catch-up-on-recent-updates-in-the-retina-pipeline
+  variants:
+  - wet-amd
+  expected: '2027'
+  effect: some
+  effect_note: If ARTEMIS works, another one-time gene therapy would cut the injection burden for wet
+    AMD.
 recent:
 - date: 2026-07
   text: 4D-150 two-year Phase 2b data showed vision maintained with 78% fewer injections.
