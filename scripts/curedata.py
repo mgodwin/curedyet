@@ -251,6 +251,8 @@ def validate(data: dict) -> list[str]:
             errs.append(f"tracker/checks.yaml: check '{c.get('id')}' points at unknown disease '{c.get('disease')}'")
         if not _is_int(c.get("prob"), 0, 100):
             errs.append(f"tracker/checks.yaml: check '{c.get('id')}' prob must be 0-100")
+        if c.get("resolved") not in (None, "yes", "no", "void"):
+            errs.append(f"tracker/checks.yaml: check '{c.get('id')}' resolved must be yes, no or void (void = not scored)")
     return errs
 
 

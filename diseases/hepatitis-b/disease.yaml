@@ -47,7 +47,7 @@ forecast:
 pipeline:
 - name: Bepirovirsen (Hibsago, antisense)
   stage: Approved 2025-26
-  note: FDA approved Oct 2026; Japan decision expected H2 2026, EU and China H1 2027.
+  note: Approved in Japan Aug 2026 (first approval anywhere) and by the FDA Oct 2026; EU and China decisions expected in 2027.
   url: https://www.healio.com/news/gastroenterology/20261021/hibsago-scores-fda-approval-as-first-antisense-therapy-for-chronic-hepatitis-b
   variants:
   - low-hbsag
@@ -73,9 +73,9 @@ recent:
   text: B-Well 1 and 2 Phase 3 trials met their functional cure endpoint; 19% cured vs none on placebo.
   url: https://www.businesswire.com/news/home/20260106121974/en/Ionis-partner-GSK-announces-positive-topline-results-from-B-Well-1-and-B-Well-2-Phase-3-studies-for-bepirovirsen-a-potential-first-in-class-medicine-for-chronic-hepatitis-B
 next_milestone:
-  date: 2026-12
-  url: https://www.sec.gov/Archives/edgar/data/0001131399/000119312526384439/d331501d6k.htm
-  what: Japan regulatory decision on bepirovirsen (GSK guided H2 2026)
+  date: '2027'
+  url: https://www.gsk.com/media/yd3hdtnz/bepirovirsen-japan-approval-sea.pdf
+  what: EU regulatory decision on bepirovirsen (review under way after the Japan and US approvals).
 ai:
   impact: low
   note: 'Unclear: the leading cure candidates are antisense and siRNA drugs, with no clear AI-discovery

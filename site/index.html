@@ -76,7 +76,11 @@ select{font:600 13px var(--f-body);min-height:36px;border:1px solid var(--soft);
 .verdict{font-family:var(--f-display);font-weight:700;font-size:36px;line-height:1}
 .v-yes{color:var(--yes)} .v-tough{color:var(--tough)} .v-some{color:var(--some)} .v-no{color:var(--no)}
 .vlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
-.vlist li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:7px 0;border-top:1px solid var(--rule);font-size:14px}
+.vlist li{border-top:1px solid var(--rule);font-size:14px}
+.vlist li a{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:7px 0;min-height:32px;color:inherit;text-decoration:none}
+.vlist li a:hover .vname{text-decoration:underline}
+.dcard-title{color:inherit;text-decoration:none}.dcard-title:hover{text-decoration:underline}
+a.more{text-decoration:none}
 .vlist .vname{min-width:0}
 .vstat{flex:none;font-size:13px;font-weight:600;text-align:right;display:inline-flex;align-items:center;gap:6px}
 .vstat i{display:inline-block;width:8px;height:8px;border-radius:50%}
@@ -182,12 +186,14 @@ select{font:600 13px var(--f-body);min-height:36px;border:1px solid var(--soft);
 .check:first-child{border-top:0}
 .prob{font-family:var(--f-display);font-weight:700;font-size:22px;text-align:right}
 .res{font-size:11px;font-weight:700;text-transform:uppercase;padding:1px 6px;border-radius:4px}
-.res.yes{background:var(--yes-soft);color:var(--yes)} .res.no{background:var(--heavy-soft);color:var(--heavy)}
+.res.void{background:var(--sunk);color:var(--muted)} .res.yes{background:var(--yes-soft);color:var(--yes)} .res.no{background:var(--heavy-soft);color:var(--heavy)}
 .cal{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
 .cal li{display:grid;grid-template-columns:84px minmax(0,1fr);gap:10px;padding:9px 0;border-top:1px solid var(--rule);font-size:14px}
 .cal li:first-child{border-top:0}
 .changes{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:14px}
 
+/* Long text stays readable on wide screens */
+.card p,.key{max-width:80ch}
 /* Disease pages */
 .dlayout{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start}
 .dmain{flex:999 1 560px;min-width:0;display:flex;flex-direction:column;gap:20px}
@@ -298,13 +304,13 @@ function filtered(){
   return L;
 }
 /* Diseases split into stages or types list each one's status instead of an overall verdict. */
-function groupCardHTML(d){return `<a class="dcard" href="#d-${esc(d.id)}">
-    <h2>${esc(d.name)}</h2>
+function groupCardHTML(d){return `<article class="dcard">
+    <h2><a class="dcard-title" href="#d-${esc(d.id)}">${esc(d.name)}</a></h2>
     <span class="muted" style="font-size:14px">${esc(d.short)}</span>
     <ul class="vlist" aria-label="${isStages(d)?"By stage":"By type"}">${d.groups.map(g=>{const gv=toV(g.level,g.burden),gl=Math.max(0,Math.min(LEVELS.length-1,g.level|0));
-      return `<li><span class="vname">${esc(g.name)}</span><span class="vstat v-${gv}"><i style="background:var(${VCOL[gv]})"></i>${esc(LEVELS[gl])}</span></li>`}).join("")}</ul>
+      return `<li><a href="#d-${esc(d.id)}/${esc(g.id)}"><span class="vname">${esc(g.name)}</span><span class="vstat v-${gv}"><i style="background:var(${VCOL[gv]})"></i>${esc(LEVELS[gl])}</span></a></li>`}).join("")}</ul>
     <div class="meta-row"><span>${esc(catName(d.category))}</span></div>
-    <span class="more">See details →</span></a>`}
+    <a class="more" href="#d-${esc(d.id)}">See all ${isStages(d)?"stages":"types"} →</a></article>`}
 function cardHTML(d){
   if((d.groups||[]).length)return groupCardHTML(d);
   const v=verdict(d),done=lv(d)>=4;
@@ -598,7 +604,7 @@ function record(){
   <div class="card"><h2 style="font-size:15px">What moved</h2>${u&&(u.changes||[]).length?`<ul class="changes">${u.changes.map(c=>`<li><b>${esc(c.target)}</b> <span class="num">${esc(c.from)} → ${esc(c.to)}</span>. ${esc(c.why)} ${safe(c.url)?link(c.url,"Source"):""}</li>`).join("")}</ul>`:`<p class="muted" style="margin:0">No forecast moved this week.</p>`}</div>
   <div class="card"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap"><h2 style="font-size:15px">Short-range forecasts</h2><span class="muted" style="font-size:12px">${sc.length?`Brier score ${(sc.reduce((a,b)=>a+(+b.brier||0),0)/sc.length).toFixed(3)} · ${sc.length} resolved`:"None resolved yet"}</span></div>
     <p class="muted" style="margin:0;font-size:13px">Dated yes-or-no calls that resolve within months. They are how this tracker checks its own accuracy. Lower Brier is better; always guessing 50% scores 0.25.</p>
-    <div>${checks.map(c=>`<div class="check"><div>${link(c.url,c.label)}<div class="muted" style="font-size:12px;margin-top:2px">${c.resolved?`<span class="res ${esc(c.resolved)}">${esc(c.resolved)}</span> last forecast ${esc(c.lastForecast??c.prevProb)}%`:`Resolves by ${fd(c.resolvesBy)}`}</div></div><div class="prob num">${c.resolved?"":esc(c.prob)+"%"}</div></div>`).join("")}</div></div>
+    <div>${checks.map(c=>`<div class="check"><div>${link(c.url,c.label)}<div class="muted" style="font-size:12px;margin-top:2px">${c.resolved==="void"?`<span class="res void">void</span> ${esc(c.note||"not scored")}`:c.resolved?`<span class="res ${esc(c.resolved)}">${esc(c.resolved)}</span> last forecast ${esc(c.lastForecast??c.prevProb)}%`:`Resolves by ${fd(c.resolvesBy)}`}</div></div><div class="prob num">${c.resolved?"":esc(c.prob)+"%"}</div></div>`).join("")}</div></div>
   <div class="card"><h2 style="font-size:15px">Coming up</h2><ul class="cal">${cal.map(c=>`<li><span class="muted num">${fd(c.date)}</span><span>${link(c.url,c.event)}</span></li>`).join("")||`<li class="muted">Nothing scheduled yet.</li>`}</ul></div>
   <div class="card"><h2 style="font-size:15px">How this works</h2>
     <p style="margin:0;font-size:14px">Each disease sits on a 0 to 5 ladder, from no treatment to gone. The best-guess year is when we expect most patients to be curable with tolerable care. Each forecast blends a today's-pace track and a faster-pipeline track, weighted by the acceleration index. Forecasts start from shared base rates: about 1 in 10 drugs that enter human trials get approved, and past cures took decades.</p>

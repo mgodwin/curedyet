@@ -72,11 +72,7 @@ recent:
 - date: 2026-07
   text: Pluvicto radioligand therapy moved into the hormone-sensitive metastatic setting.
   url: https://nuclear.pharmacy.purdue.edu/news-and-updates/fda-approves-lutetium-lu-177-vipivotide-tetraxetan-androgen-receptor-pathway
-next_milestone:
-  date: 2026-12
-  url: https://www.rttnews.com/3669562/pfizer-secures-fda-priority-review-for-talzenna-plus-xtandi-in-metastatic-prostate-cancer.aspx
-  what: FDA action on talazoparib plus enzalutamide for HRR-mutated metastatic castration-sensitive prostate
-    cancer (Q4 2026 action date).
+next_milestone: null
 ai:
   impact: some
   note: FDA-authorized AI pathology tools help pathologists spot cancer on prostate biopsies, and AI biomarkers
