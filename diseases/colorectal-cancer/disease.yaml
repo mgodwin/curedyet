@@ -17,6 +17,54 @@ status:
     chemotherapy or chemoradiation. The small dMMR/MSI-high subset responds dramatically to PD-1 blockade,
     with many rectal patients avoiding surgery. Most metastatic microsatellite-stable disease is treated
     with chemotherapy and targeted drugs that extend life but do not cure it.
+  groups:
+  - name: Stage I
+    what: The cancer has grown into the inner layers of the bowel wall but not through it, and has not reached
+      lymph nodes.
+    level: 4
+    burden: heavy
+    survival: ~90% alive at 5 years (net survival, England 2016-2020)
+    note: Surgery to remove the affected section of bowel (small early tumors can sometimes be cut out through
+      a scope) usually cures it, with no chemotherapy needed. The toll is recovery from bowel surgery.
+    url: https://www.cancerresearchuk.org/about-cancer/bowel-cancer/survival
+  - name: Stage II
+    what: The cancer has grown through the bowel wall, possibly into nearby tissue, but has not reached
+      lymph nodes.
+    level: 4
+    burden: heavy
+    survival: ~85% alive at 5 years (net survival, England 2016-2020)
+    note: Bowel surgery is the main treatment and cures most people; higher-risk tumors may add a few months
+      of chemotherapy, and rectal tumors often need radiation or chemoradiation first.
+    url: https://www.cancerresearchuk.org/about-cancer/bowel-cancer/survival
+  - name: Stage III
+    what: The cancer has spread to nearby lymph nodes but not to distant organs.
+    level: 4
+    burden: heavy
+    survival: ~65% alive at 5 years (net survival, England 2016-2020)
+    note: Surgery followed by 3 to 6 months of chemotherapy (which can cause nerve damage, fatigue and gut
+      upset) cures roughly two in three; rectal cancers usually also need chemoradiation. A small mismatch-repair-deficient
+      subset now responds to immunotherapy.
+    caveat: 'Level 4 is a judgement call: about two-thirds survive five years, a modest majority.'
+    url: https://www.cancerresearchuk.org/about-cancer/bowel-cancer/survival
+  - name: Stage IV
+    what: The cancer has spread to distant organs, most often the liver or lungs.
+    level: 1
+    burden: heavy
+    survival: ~10% alive at 5 years (net survival, England 2016-2020)
+    note: Most people get ongoing chemotherapy with targeted drugs, which extends life but rarely cures.
+      A minority with a few removable liver or lung spots can be cured by surgery, and mismatch-repair-deficient
+      tumors can respond for years to immunotherapy.
+    url: https://www.cancerresearchuk.org/about-cancer/bowel-cancer/survival
+    forecast:
+      median: 2068
+      low: 2045
+      high: 2100
+      p2035: 1
+      p2045: 9
+      note: Most metastatic colorectal cancers are microsatellite-stable and do not respond to today's immunotherapy,
+        so a cure for most would need new drugs that clear widespread disease, not just the few removable
+        spots that surgery can cure now. Pan-RAS inhibitors and new immunotherapy combinations are the nearest
+        candidates, and they are still being tested for longer survival rather than cure.
   last_reviewed: '2026-11-03'
 treatment:
   best:

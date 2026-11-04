@@ -16,6 +16,50 @@ status:
     devices extend life a lot. Preserved ejection fraction now has SGLT2 inhibitors, finerenone (FDA approved
     2025) and GLP-1 drugs in obese patients. Heart transplant or LVAD helps a small number with end-stage
     disease.
+  groups:
+  - name: Reduced ejection fraction (HFrEF)
+    what: The heart muscle is weakened and squeezes too little blood out with each beat.
+    level: 1
+    burden: moderate
+    survival: ~46% alive 5 years after a first heart failure hospitalization
+    note: Four lifelong drug classes (ARNI, beta blocker, MRA, SGLT2 inhibitor), plus implanted defibrillators
+      or pacing devices for some, extend life a lot and can partly restore heart function. They need frequent
+      blood tests for kidney and potassium problems, and most patients still slowly worsen; transplant or
+      a heart pump helps only a few.
+    caveat: The survival figure comes from French patients first hospitalized in 2000, before ARNI and SGLT2
+      drugs, so survival today is likely better. Some patients' heart function recovers on treatment, but
+      they usually still need the drugs.
+    url: https://esc365.escardio.org/journal/35798
+    forecast:
+      median: 2058
+      low: 2042
+      high: 2100
+      p2035: 3
+      p2045: 13
+      note: Needs a one-time therapy that makes weakened heart muscle work normally again, such as cardiac
+        gene therapy or regeneration. AskBio's AB-1002 gene therapy is the most advanced, in a randomized
+        Phase 2, so approval for most patients is many years away.
+  - name: Preserved ejection fraction (HFpEF)
+    what: The heart pumps out a normal share of blood but is stiff and cannot fill properly, so pressure
+      backs up into the lungs and body.
+    level: 1
+    burden: moderate
+    survival: ~43% alive 5 years after a first heart failure hospitalization
+    note: Water pills ease fluid buildup, and SGLT2 inhibitors, finerenone and, in obese patients, GLP-1
+      drugs reduce hospital stays and symptoms, alongside treating blood pressure, diabetes and weight.
+      None has clearly been shown to extend life, and the disease usually advances.
+    caveat: The survival figure is from a 2000 French cohort and predates the newer drugs. Patients are
+      typically older with several other illnesses, which drives much of the death rate.
+    url: https://esc365.escardio.org/journal/35798
+    forecast:
+      median: 2066
+      low: 2046
+      high: 2100
+      p2035: 2
+      p2045: 9
+      note: Needs a treatment that undoes heart stiffening in mostly older patients with several other illnesses,
+        a biology that is still poorly understood. Current candidates such as relaxin agonists (AZD5462)
+        and finerenone aim to ease symptoms, not cure.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -32,15 +76,15 @@ forecast:
   bottleneck: biology-limited
   normal:
     p2035: 2
-    p2045: 8
-    median: 2065
-    low: 2045
+    p2045: 6
+    median: 2069
+    low: 2047
     high: 2100
   faster:
     p2035: 4
-    p2045: 20
-    median: 2052
-    low: 2040
+    p2045: 18
+    median: 2056
+    low: 2042
     high: 2100
   faster_note: Curing heart failure needs heart muscle regeneration or repair, which is still mostly biology;
     acceleration could find regeneration targets but they then need years of trials, so the lift is small
@@ -48,7 +92,7 @@ forecast:
   outlook: Drugs keep shaving risk, but heart failure is the end point of many diseases and damaged heart
     muscle does not regrow. A cure for most would need working cardiac gene therapy or regeneration, which
     is still in early trials. Prevention through better control of blood pressure, diabetes and obesity
-    is the likelier near-term win.
+    is the likelier near-term win. About half of patients or more have preserved ejection fraction, which has fewer options, so this forecast follows that type's.
 pipeline:
 - name: AZD5462 (AstraZeneca), oral relaxin receptor agonist
   note: LUMINARA Phase 2b in about 260 chronic HF patients presented at ESC 2026.

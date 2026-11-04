@@ -9,13 +9,64 @@ toll:
   text: About 1 in 5,000 male births for hemophilia A and 1 in 40,000 for B; ~18,000 people in the US.
   url: https://en.wikipedia.org/wiki/Haemophilia
 status:
-  level: 3
-  why: Routine prophylaxis gives near-normal lives, and one-time gene therapy (Hemgenix) frees many hemophilia
-    B patients from regular infusions, but uptake is small.
+  level: 2
+  why: Lifelong prophylaxis gives most patients near-normal lives, but no cure is in reach for most; the
+    only gene therapy left, Hemgenix for hemophilia B, has reached few patients since Roctavian was withdrawn.
   today: Factor replacement and emicizumab prophylaxis prevent most bleeds, and newer rebalancing drugs
     (fitusiran, concizumab, marstacimab) allow rarer dosing. Gene therapy for hemophilia B (Hemgenix)
     gives years of factor IX production, but the hemophilia A gene therapy Roctavian was withdrawn in
     2026 for commercial reasons. Access is poor in low-income countries, where most patients are undiagnosed.
+  groups:
+  - name: Hemophilia A
+    what: The more common form of hemophilia, where the blood lacks clotting factor VIII, so bleeds last
+      longer and can damage joints.
+    level: 2
+    burden: moderate
+    survival: ~96-97% fewer treated bleeds than no prophylaxis on emicizumab; 56-60% had none (HAVEN 3)
+    note: Most patients take lifelong preventive treatment, usually emicizumab injections under the skin
+      every one to four weeks or factor VIII infusions, which cost hundreds of thousands a year but prevent
+      most bleeds. It is controlled, not cured, now that the only approved gene therapy (Roctavian) was
+      pulled from the market in 2026.
+    caveat: BioMarin announced Roctavian's voluntary withdrawal in Feb 2026 for commercial, not safety,
+      reasons, with US supply through about May 2026 (https://bleeding.org/news/biomarin-pulls-roctavian-hemophilia-a-gene-therapy-from-us-market).
+      Trial figure is for patients 12 and older without inhibitors; patients with inhibitors fare worse.
+    url: https://pubmed.ncbi.nlm.nih.gov/30157389/
+    forecast:
+      median: 2048
+      low: 2036
+      high: 2080
+      p2035: 9
+      p2045: 38
+      note: Needs a safe, durable and affordable one-time gene therapy or gene edit that most patients would
+        choose over excellent prophylaxis; Roctavian's withdrawal shows demand and durability are the hurdles.
+        Nearest candidates are early in vivo gene-editing programs (for example Metagenomi's MGX-001, planned
+        first dosing 2027) and remaining AAV programs.
+  - name: Hemophilia B
+    what: A rarer form of hemophilia, where the blood lacks clotting factor IX, causing the same long-lasting
+      bleeds.
+    level: 3
+    burden: moderate
+    survival: 94% still off regular preventive treatment 4 years after one-time Hemgenix (HOPE-B, 54 men)
+    note: Most patients still use lifelong preventive factor IX infusions or newer injections, which control
+      bleeding well. A one-time gene therapy (Hemgenix) lets most adults who get it stop regular treatment
+      for years, but it costs about $3.5 million, needs liver monitoring, and few have had it.
+    caveat: Level 3 follows the rule that an approved curative therapy only some can get stays at 3; uptake
+      of Hemgenix is small, and the other approved B gene therapy, Pfizer's Beqvez, was discontinued worldwide
+      in Feb 2025 over weak demand (https://www.bleeding.org/news/pfizer-discontinues-beqvez-hemophilia-b-gene-therapy).
+      Gene therapy raises factor IX to roughly mild-hemophilia levels (~37% mean), not always normal; durability
+      beyond about 4-5 years is unknown. Burden rates the usual prophylaxis; the gene therapy route itself
+      is heavy (cost, liver monitoring). Figure is from a company-reported conference update, not a peer-reviewed
+      paper.
+    url: https://pmlive.com/pharma_news/csl-behring-announces-four-year-results-for-haemophilia-b-gene-therapy-hemgenix/
+    forecast:
+      median: 2042
+      low: 2033
+      high: 2075
+      p2035: 22
+      p2045: 55
+      note: Hemgenix already works for most adults who get it, so level 4 needs it or a successor to become
+        cheaper, approved for more patients including children, and actually taken up by most. Low demand
+        while prophylaxis works well, plus unknown durability past 5 years, keep uptake slow.
   last_reviewed: null
 treatment:
   best:
@@ -31,23 +82,23 @@ treatment:
 forecast:
   bottleneck: access-limited
   normal:
-    p2035: 10
-    p2045: 40
-    median: 2047
-    low: 2036
-    high: 2080
+    p2035: 5
+    p2045: 31
+    median: 2050
+    low: 2038
+    high: 2089
   faster:
-    p2035: 22
-    p2045: 65
-    median: 2040
-    low: 2032
-    high: 2060
+    p2035: 17
+    p2045: 56
+    median: 2043
+    low: 2034
+    high: 2069
   faster_note: Cheaper, safer and durable gene therapy or editing for hemophilia A is what is missing;
     open design and access gates would lift odds a lot, but excellent existing control keeps demand and
     uptake slow.
   outlook: Control is already excellent, which lowers demand for risky, costly gene therapy; commercial
     setbacks in 2025-26 show that. A cure for most likely needs durable, safe gene editing for hemophilia
-    A, which is still early. Expect better control near term and cure for most in the 2040s.
+    A, which is still early. Expect better control near term and cure for most in the 2040s. About 80% of patients have hemophilia A, which has no cure available, so this forecast follows hemophilia A's.
 pipeline:
 - name: Denecimig (Mim8, Frehemgo)
   note: Bispecific for hemophilia A; approved in Saudi Arabia and positive CHMP opinion in Sept 2026.

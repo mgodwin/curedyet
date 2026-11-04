@@ -121,6 +121,35 @@ def validate(data: dict) -> list[str]:
             errs.append(f"{where}: status.level must be 0-5 (see METHODOLOGY.md)")
         if not isinstance(st.get("why"), str) or not st["why"].strip():
             errs.append(f"{where}: status.why is required (one plain sentence)")
+        groups = st.get("groups")
+        if groups is not None:
+            if not isinstance(groups, list) or not groups:
+                errs.append(f"{where}: status.groups must be a list of stages or subtypes")
+                groups = []
+            for j, g in enumerate(groups):
+                gw = f"{where}: status.groups[{j}]"
+                if not isinstance(g, dict):
+                    errs.append(f"{gw} must be a mapping")
+                    continue
+                for k in ("name", "note"):
+                    if not isinstance(g.get(k), str) or not g[k].strip():
+                        errs.append(f"{gw}: '{k}' is required")
+                if not _is_int(g.get("level"), 0, 5):
+                    errs.append(f"{gw}: level must be 0-5")
+                if g.get("burden") not in BURDENS:
+                    errs.append(f"{gw}: burden must be light, moderate or heavy")
+                if g.get("url") and not URL_RE.match(str(g["url"])):
+                    errs.append(f"{gw}: url must be an http(s) link")
+                gf = g.get("forecast")
+                if gf is not None:
+                    if not isinstance(gf, dict) or not all(_is_int(gf.get(k)) for k in ("median", "low", "high", "p2035", "p2045")):
+                        errs.append(f"{gw}: forecast needs integer median, low, high, p2035 and p2045")
+                    elif not (gf["low"] <= gf["median"] <= gf["high"] and 0 <= gf["p2035"] <= gf["p2045"] <= 100):
+                        errs.append(f"{gw}: forecast needs low <= median <= high and 0 <= p2035 <= p2045 <= 100")
+                    elif _is_int(g.get("level")) and g["level"] >= 4:
+                        errs.append(f"{gw}: a group already at level 4 or 5 doesn't take a forecast")
+        if rec.get("category") == "cancer" and _is_int(st.get("level"), 4) and not groups:
+            errs.append(f"{where}: a level 4 cancer needs status.groups rating each stage (see METHODOLOGY.md)")
         tx = rec.get("treatment") or {}
         if tx.get("burden") is not None and tx["burden"] not in BURDENS:
             errs.append(f"{where}: treatment.burden must be light, moderate or heavy")
@@ -211,7 +240,7 @@ def compile_site(data: dict) -> dict:
         x = {
             "id": r["id"], "order": i + 1, "name": r["name"], "category": r["category"], "tracking": r.get("tracking", "proposed"),
             "short": r.get("summary"), "burden": (r.get("toll") or {}).get("text"), "burdenUrl": (r.get("toll") or {}).get("url"),
-            "level": level, "levelWhy": st.get("why"), "status": st.get("today"), "lastDeep": str(st["last_reviewed"]) if st.get("last_reviewed") else None,
+            "level": level, "levelWhy": st.get("why"), "groups": st.get("groups") or [], "status": st.get("today"), "lastDeep": str(st["last_reviewed"]) if st.get("last_reviewed") else None,
             "bestTherapies": tx.get("best") or [], "txBurden": tx.get("burden"), "txBurdenNote": tx.get("burden_note"),
             "bottleneck": fc.get("bottleneck"), "accelNote": fc.get("faster_note"), "outlook": fc.get("outlook"), "interim": fc.get("milestones") or [],
             "pipeline": r.get("pipeline") or [], "breakthroughs": r.get("recent") or [], "nextMilestone": r.get("next_milestone"),
@@ -228,6 +257,23 @@ def compile_site(data: dict) -> dict:
                      timeline={k: blend(n[k], f[k], idx) for k in ("median", "low", "high")})
         p = prev_d.get(r["id"]) or {}
         x.update(prevP2035=p.get("p2035"), prevP2045=p.get("p2045"), prevMedian=p.get("median"), prevLevel=p.get("level"))
+        # Estimate history for the chart: one point per weekly snapshot, plus today's if it isn't snapshotted yet.
+        trend = [{"date": str(h["date"]), **{k: h["diseases"][r["id"]].get(k) for k in ("median", "low", "high", "level")}}
+                 for h in reversed(hist) if r["id"] in (h.get("diseases") or {})]
+        tl = x.get("timeline") or {}
+        if level < 4 and tl.get("median") is not None and updated and all(t["date"] != updated for t in trend):
+            trend.append({"date": updated, "median": tl["median"], "low": tl.get("low"), "high": tl.get("high"), "level": level})
+        x["trend"] = trend if level < 4 else []
+        # News that moved this disease: update changes and news items tagged with its id.
+        events = []
+        for u in data["updates"]:
+            for c in u.get("changes") or []:
+                if c.get("disease") == r["id"]:
+                    events.append({"date": str(u["date"]), "text": f"{c['target']}: {c['from']} → {c['to']}. {c['why']}", "url": c.get("url")})
+            for nw in u.get("news") or []:
+                if isinstance(nw, dict) and nw.get("disease") == r["id"]:
+                    events.append({"date": str(nw.get("date") or u["date"]), "text": nw.get("text"), "url": nw.get("url")})
+        x["events"] = events
         out_dz.append(x)
     out_st = []
     for s in stages:

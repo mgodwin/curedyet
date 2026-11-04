@@ -8,13 +8,61 @@ toll:
   text: About 11.9M new strokes and 7.3M deaths worldwide in 2021 (GBD 2021); 6.8M deaths in 2023 (WHO).
   url: https://touchneurology.com/insight/study-uncovers-growing-stroke-burden-worldwide
 status:
-  level: 1
-  why: Clot-busters and thrombectomy restore independence for some, but many survivors keep permanent
-    deficits and no drug repairs brain damage.
+  level: 3
+  why: Fast clot treatment can undo many ischemic strokes, which are most strokes, but only a minority
+    of patients reach it in time, and hemorrhagic stroke and lasting brain damage have no cure.
   today: Fast clot-busting drugs and mechanical thrombectomy can fully reverse some ischemic strokes if
     given within hours. Blood pressure control, statins, antiplatelets and anticoagulants prevent many
     first and repeat strokes. Most patients worldwide do not reach these treatments in time, and no neuroprotective
     drug is approved.
+  groups:
+  - name: Ischemic stroke
+    what: A clot blocks an artery to the brain, starving part of it of blood.
+    level: 3
+    burden: heavy
+    survival: ~46% functionally independent at 90 days after thrombectomy (vs ~27% without)
+    share: ~87% of strokes
+    note: Clot-busting drugs within about 4.5 hours, or catheter clot removal for large blockages within
+      up to 24 hours in selected patients, can fully reverse some strokes, followed by rehab and lifelong
+      prevention pills. Many patients arrive too late or are far from a thrombectomy center, and survivors
+      often keep lasting deficits because lost brain tissue does not regrow.
+    caveat: Rated level 3 because timely reperfusion is a real, approved treatment that undoes the stroke
+      for a meaningful subset; the typical patient does not get it, since only a small minority of US ischemic
+      strokes (thrombectomy roughly 4% in 2019) receive these treatments. The 46% figure is for trial patients
+      with large blockages, not all strokes. Share is from CDC. The Lancet page blocks automated access;
+      the figure was verified from a copy of the full paper.
+    url: https://doi.org/10.1016/S0140-6736(16)00163-X
+    forecast:
+      median: 2062
+      low: 2043
+      high: 2100
+      p2035: 3
+      p2045: 12
+      note: Needs clot removal to reach almost every patient within hours plus drugs that protect or regrow
+        brain tissue, so lasting damage is rare. Cooling during thrombectomy has a mixed first signal, and
+        factor XI drugs like asundexian improve prevention, not cure.
+  - name: Hemorrhagic stroke
+    what: A blood vessel in or around the brain bursts and bleeds, damaging brain tissue.
+    level: 1
+    burden: heavy
+    survival: ~20% functionally independent 6 months after a bleed inside the brain
+    share: ~13% of strokes
+    note: 'Care is intensive and aims to limit damage: rapid blood pressure lowering, reversing blood thinners,
+      sometimes surgery to remove blood or relieve pressure, then long rehab. No treatment undoes the bleed,
+      about a third die within a month, and most survivors stay dependent.'
+    caveat: The outcome figure is for bleeding inside the brain (intracerebral hemorrhage), the most common
+      type; bleeding around the brain (subarachnoid hemorrhage from a burst aneurysm) has different, often
+      better outcomes when treated. Share is the remainder after CDC's 87% ischemic figure.
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8921779
+    forecast:
+      median: 2075
+      low: 2050
+      high: 2100
+      p2035: 1
+      p2045: 5
+      note: Needs a way to stop a brain bleed early and repair the damaged tissue, which has no clinical
+        candidate close to approval. Progress is likely to come from better acute care and prevention rather
+        than cure in the next two decades.
   last_reviewed: '2026-11-03'
 treatment:
   best:

@@ -17,6 +17,62 @@ status:
     (especially for BRCA or HRD tumors) gives some advanced patients long remissions. Platinum-resistant
     relapse remains hard to treat, though new options like mirvetuximab, relacorilant and pembrolizumab
     arrived recently.
+  groups:
+  - name: Stage I
+    what: The cancer is found only in one or both ovaries or fallopian tubes.
+    level: 4
+    burden: heavy
+    survival: ~95% alive at 5 years (net survival, England 2016-2020)
+    note: Surgery to remove the ovaries, tubes and womb and check for spread usually cures it; higher-risk
+      tumors also get several cycles of chemotherapy.
+    url: https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/survival
+  - name: Stage II
+    what: The cancer has spread beyond the ovaries to other organs in the pelvis, such as the womb or bladder.
+    level: 4
+    burden: heavy
+    survival: More than 70% alive at 5 years (net survival, England 2016-2020)
+    note: Surgery followed by about six cycles of carboplatin and paclitaxel, with hair loss and nerve damage.
+      Most women are alive at five years, though some relapse later.
+    caveat: Late relapses happen, so 5-year survival somewhat overstates the cure rate; level 4 is a judgement
+      call.
+    url: https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/survival
+  - name: Stage III
+    what: The cancer has spread through the lining of the abdomen or to lymph nodes at the back of the abdomen.
+    level: 3
+    burden: heavy
+    survival: More than 30% alive at 5 years (net survival, England 2016-2020)
+    note: Extensive debulking surgery and six cycles of chemotherapy, then up to years of PARP inhibitor
+      or bevacizumab maintenance. Most women relapse, but some, especially with BRCA or HRD tumors, stay
+      in long remission.
+    url: https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/survival
+    forecast:
+      median: 2053
+      low: 2039
+      high: 2098
+      p2035: 8
+      p2045: 27
+      note: Most women relapse after surgery and chemotherapy, so this needs first-line treatment that keeps
+        most in permanent remission, or a screening test that finds cancer before it spreads. Antibody-drug
+        conjugates moving into first-line care and PARP-inhibitor combinations are the nearest candidates,
+        and no screening test has yet been shown to save lives.
+  - name: Stage IV
+    what: The cancer has spread to distant organs such as the liver, lungs or the fluid around the lungs.
+    level: 1
+    burden: heavy
+    survival: ~15% alive at 5 years (net survival, England 2016-2020)
+    note: Chemotherapy and surgery where possible, then maintenance drugs; it usually returns and is treated
+      again with more chemotherapy or newer drugs. It extends life but rarely cures.
+    url: https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/survival
+    forecast:
+      median: 2070
+      low: 2045
+      high: 2100
+      p2035: 2
+      p2045: 9
+      note: Cure is rare today, so this would need drugs that eradicate widely spread disease, well beyond
+        what current maintenance therapy does. The nearest candidates are antibody-drug conjugates such
+        as those targeting folate receptor alpha, which extend life in relapsed disease but have not shown
+        cures.
   last_reviewed: '2026-11-03'
 treatment:
   best:

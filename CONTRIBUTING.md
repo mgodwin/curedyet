@@ -38,6 +38,7 @@ Prefer, in roughly this order: regulators (FDA, EMA), WHO, CDC and national heal
 | `status.level` | 0 to 5 on the cure ladder. See [METHODOLOGY.md](METHODOLOGY.md#the-cure-ladder). |
 | `status.why` | One plain sentence explaining the level. It shows on the disease's card. |
 | `status.today` | Two or three sentences on what treatment can do now, and for whom. |
+| `status.groups` | Cancers: one entry per stage (`Stage 0` to `Stage IV`) or, for blood cancers, per subtype. Each has `name`, `what` (one plain sentence), `level` (0 to 5), `burden`, `survival`, optional `share` of new cases, `note`, optional `caveat` (limits of the evidence, shown on the page), `url` (the page stating the survival figure) and, for groups below level 4, `forecast` (`median`, `low`, `high`, `p2035`, `p2045` and a `note`, blended like the disease forecast). Required for level 4 cancers. See [METHODOLOGY.md](METHODOLOGY.md#the-cure-ladder). |
 | `status.last_reviewed` | Date of the last full review, `YYYY-MM-DD`. |
 | `treatment.best` | The best current treatments, short names. |
 | `treatment.burden` | `light`, `moderate` or `heavy`. See [METHODOLOGY.md](METHODOLOGY.md#treatment-burden). |
@@ -86,4 +87,4 @@ Proposed numbers are a starting point. The weekly review checks them against the
 
 ## Review
 
-A maintainer reviews every pull request. The weekly update may also revise facts as new evidence arrives, and logs what changed in `tracker/updates/`.
+A maintainer reviews every pull request. The weekly update may also revise facts as new evidence arrives, and logs what changed in `tracker/updates/`. Tag each change or news item with `disease: <id>` so it shows on that disease's estimate chart.

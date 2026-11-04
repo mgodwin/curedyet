@@ -16,6 +16,54 @@ status:
     natalizumab and others, and many live near-normal lives. Progressive forms respond poorly, though
     ocrelizumab helps primary progressive MS modestly. BTK inhibitors are arriving: tolebrutinib was approved
     in the EU in June 2026, and fenebrutinib is under FDA priority review.'
+  groups:
+  - name: Relapsing MS
+    what: The most common form of MS, where the immune system attacks nerves in flare-ups (relapses) that
+      then partly or fully ease.
+    level: 2
+    burden: moderate
+    share: ~85% of people at diagnosis
+    note: Standard care is a high-efficacy disease-modifying drug such as anti-CD20 infusions every six
+      months or monthly injections, taken indefinitely with infection risk and lab monitoring; in trials
+      ocrelizumab roughly halved relapses versus an older interferon drug. Many people stay relapse-free
+      and live near-normal lives, but treatment controls rather than cures it.
+    caveat: Includes active secondary progressive MS (still having relapses or new lesions), which responds
+      less well. Share figure is from MS Australia (https://www.msaustralia.org.au/types-of-ms/); the National
+      MS Society and MSIF cite the same ~85%. Autologous stem cell transplant gives long remissions for
+      some highly active cases but is not standard for most.
+    url: https://www.ema.europa.eu/en/medicines/human/EPAR/ocrevus
+    forecast:
+      median: 2052
+      low: 2037
+      high: 2090
+      p2035: 5
+      p2045: 24
+      note: A one-time immune reset that is safe enough for most patients would be needed; stem cell transplant
+        works for some but is too risky for most, and CD19 CAR-T and EBV-targeted therapies are still in
+        early trials.
+  - name: Progressive MS
+    what: Forms of MS where disability slowly worsens over time with few or no flare-ups, either from the
+      start or after years of relapsing disease.
+    level: 1
+    burden: moderate
+    share: ~10-15% of people have primary progressive MS at diagnosis; many with relapsing MS later become
+      progressive
+    note: Ocrelizumab is approved for primary progressive MS but only modestly slows it (about 30% vs 34%
+      had lasting worsening in its main trial), and tolebrutinib was approved in the EU in 2026 for non-active
+      secondary progressive MS. Treatment is ongoing with infection risk, and disability still advances
+      for most.
+    caveat: Covers primary progressive and non-active secondary progressive MS. The published ORATORIO paper
+      reports 32.9% vs 39.3% with 12-week confirmed progression (hazard ratio 0.76); the EMA overview rounds
+      differently. Share is from MS Australia (https://www.msaustralia.org.au/types-of-ms/).
+    url: https://www.ema.europa.eu/en/medicines/human/EPAR/ocrevus
+    forecast:
+      median: 2063
+      low: 2042
+      high: 2100
+      p2035: 2
+      p2045: 11
+      note: Treatments would need to stop nerve damage that is already under way and ideally repair it;
+        BTK inhibitors only slow it somewhat, and remyelination or neuroprotection drugs are still early.
   last_reviewed: null
 treatment:
   best:

@@ -17,6 +17,97 @@ status:
     Advanced disease is treated with FOLFIRINOX or gemcitabine-based chemo, and since August 2026 the
     RAS inhibitor daraxonrasib roughly doubles survival in pretreated metastatic disease. Five-year survival
     remains around 13%.
+  groups:
+  - name: Stage I
+    what: A small tumor still inside the pancreas that surgeons can usually remove (resectable).
+    level: 3
+    burden: heavy
+    survival: ~44% alive at 5 years (SEER 'localized' stage, 5-year relative survival, 2015-2021)
+    share: ~6% of cases (SEER 2004-2012, AJCC 7th edition)
+    note: Standard care is major surgery such as a Whipple operation followed by about six months of chemotherapy
+      like FOLFIRINOX. Surgery offers the only real chance of cure, but most patients still relapse.
+    caveat: SEER reports localized/regional/distant, not AJCC stages; 'localized' is the closest match to
+      stage I. Share is from Swords et al., Surgery 2017 (https://pmc.ncbi.nlm.nih.gov/articles/PMC6402557/),
+      older data.
+    url: https://www.cancer.org/cancer/types/pancreatic-cancer/detection-diagnosis-staging/survival-rates.html
+    forecast:
+      median: 2046
+      low: 2032
+      high: 2085
+      p2035: 18
+      p2045: 45
+      note: Surgery plus chemotherapy cures some, but most still relapse, so this needs a treatment after
+        surgery that stops the cancer from returning. RAS inhibitors such as daraxonrasib, which extended
+        survival in spread disease in 2026, are the nearest candidates if perioperative trials succeed,
+        with results unlikely before about 2030.
+  - name: Stage II
+    what: A larger tumor or one that has reached nearby lymph nodes, still removable or borderline-removable
+      by surgery.
+    level: 3
+    burden: heavy
+    survival: ~17% alive at 5 years (SEER 'regional' stage, 5-year relative survival, 2015-2021)
+    share: ~28% of cases (SEER 2004-2012, AJCC 7th edition)
+    note: Patients get chemotherapy and major surgery, sometimes with chemo first to shrink a borderline
+      tumor. In the PRODIGE 24 trial about 43% of fit patients given FOLFIRINOX after surgery were alive
+      at 5 years, but most relapse and only a minority are cured.
+    caveat: SEER 'regional' mixes stage II and some stage III and is only an approximation. Trial figure
+      verified at https://ascopost.com/news/september-2022/5-year-outcomes-with-adjuvant-mfolfirinox-vs-gemcitabine-in-pancreatic-cancer/
+      (selected fit patients after successful surgery).
+    url: https://www.cancer.org/cancer/types/pancreatic-cancer/detection-diagnosis-staging/survival-rates.html
+    forecast:
+      median: 2054
+      low: 2037
+      high: 2098
+      p2035: 7
+      p2045: 28
+      note: Even fit patients who get surgery and FOLFIRINOX mostly relapse, so this needs much stronger
+        treatment around surgery. RAS inhibitors and personalized mRNA vaccines in early trials after surgery
+        are the nearest candidates.
+  - name: Stage III
+    what: A tumor wrapped around major blood vessels near the pancreas, so it usually can't be removed (locally
+      advanced), but it hasn't spread to distant organs.
+    level: 1
+    burden: heavy
+    survival: Median overall survival ~24 months with FOLFIRINOX (patient-level meta-analysis of 315 patients,
+      Suker et al., Lancet Oncology 2016)
+    share: ~10% of cases (SEER 2004-2012, AJCC 7th edition)
+    note: Treatment is months of intensive chemotherapy, sometimes followed by radiation. A minority respond
+      well enough to have surgery and may then have a chance at cure, but for most it slows the cancer rather
+      than curing it.
+    caveat: Meta-analysis of mostly small, selected studies; the authors called for randomized confirmation.
+      In SEER 2004-2012 data, 5-year cause-specific survival for AJCC stage III was about 3% (Swords et
+      al.).
+    url: https://ascopost.com/issues/june-10-2016/folfirinox-in-locally-advanced-pancreatic-cancer/
+    forecast:
+      median: 2063
+      low: 2041
+      high: 2100
+      p2035: 3
+      p2045: 14
+      note: This needs treatment strong enough to shrink most tumors so they can be removed and then cured.
+        RAS inhibitor combinations before surgery are the nearest candidate, still in early testing for
+        this use.
+  - name: Stage IV
+    what: Cancer that has spread to distant organs such as the liver or lungs (metastatic).
+    level: 1
+    burden: heavy
+    survival: ~3% alive at 5 years (SEER 'distant' stage, 5-year relative survival, 2015-2021)
+    share: ~51% of cases (SEER 'distant', 2016-2022)
+    note: Patients get chemotherapy such as FOLFIRINOX or gemcitabine-based regimens until it stops working,
+      and since 2026 the RAS inhibitor daraxonrasib after first-line chemo. These extend life by months
+      and ease symptoms but do not cure.
+    caveat: Share is from SEER Cancer Stat Facts (https://seer.cancer.gov/statfacts/html/pancreas.html);
+      AJCC-based SEER 2004-2012 data put stage IV at ~55%.
+    url: https://www.cancer.org/cancer/types/pancreatic-cancer/detection-diagnosis-staging/survival-rates.html
+    forecast:
+      median: 2070
+      low: 2046
+      high: 2100
+      p2035: 1
+      p2045: 9
+      note: About 3 in 100 are alive at 5 years, so this needs drugs that eradicate spread disease, far
+        beyond the months of extra life RAS inhibitors now give. Combinations of RAS inhibitors with other
+        targeted drugs or immunotherapy are the nearest candidates.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -30,24 +121,24 @@ treatment:
 forecast:
   bottleneck: design-limited
   normal:
-    p2035: 2
-    p2045: 10
-    median: 2065
-    low: 2045
+    p2035: 1
+    p2045: 5
+    median: 2072
+    low: 2049
     high: 2100
   faster:
-    p2035: 5
-    p2045: 30
-    median: 2048
-    low: 2038
-    high: 2085
+    p2035: 4
+    p2045: 25
+    median: 2055
+    low: 2042
+    high: 2088
   faster_note: Better RAS inhibitor combinations and AI-flagged early detection on CT could make far more
     tumors curable, but cures need adjuvant trials and screening at scale, so most of the lift appears
     after 2035.
   outlook: RAS inhibitors are the first real advance in years, but they extend survival rather than cure,
     and resistance follows. Cure for most would need early detection at scale plus drugs that work in
     the adjuvant setting. First-line and perioperative RAS inhibitor trials over the next few years will
-    show how far this class can push.
+    show how far this class can push. About half of patients are found at stage IV, so without proven screening this forecast follows stage IV's.
 pipeline:
 - name: Daraxonrasib (Rasonque), pan-RAS inhibitor
   note: Approved Aug 26, 2026 for pretreated metastatic disease; median OS 13.2 vs 6.7 months in RASolute

@@ -17,6 +17,78 @@ status:
     depending on subtype. Metastatic breast cancer is treated as a chronic disease with CDK4/6 inhibitors,
     oral SERDs and antibody-drug conjugates, but it is rarely cured. Triple-negative and late-relapsing
     HR-positive disease drive most deaths.
+  groups:
+  - name: Stage 0
+    what: Abnormal cells (DCIS) inside the milk ducts that have not grown into surrounding breast tissue.
+    level: 4
+    burden: moderate
+    survival: Nearly all cured (ACS); no stage-specific 5-year figure on the source page
+    share: ~1 in 5 new breast cancers (ACS)
+    note: Lumpectomy usually followed by a few weeks of radiation, or mastectomy, sometimes with 5 years
+      of tamoxifen or an aromatase inhibitor for hormone-positive DCIS. It is cured in nearly all women,
+      though many may be treated for cells that would never have spread.
+    caveat: No numeric survival figure verified; burden rated moderate because breast-conserving surgery
+      plus radiation is less intensive than invasive-cancer treatment, but mastectomy or years of endocrine
+      pills would push it toward heavy.
+    url: https://www.cancer.org/cancer/types/breast-cancer/about/types-of-breast-cancer/dcis.html
+  - name: Stage I
+    what: A small invasive tumor (up to 2 cm) with no spread to lymph nodes, or only tiny clusters of cells
+      in them.
+    level: 4
+    burden: heavy
+    survival: Almost 100% survive at least 5 years (5-year net survival, England, diagnosed 2018-2022)
+    share: Most of the ~64% of US cases found while still localized (SEER, invasive only)
+    note: Surgery, usually with radiation; most tumors are hormone-positive and need 5-10 years of endocrine
+      pills with joint pain, hot flashes or bone loss, and HER2-positive or triple-negative tumors often
+      add chemotherapy. Most are cured.
+    caveat: SEER reports share by localized/regional/distant, not by TNM stage; localized also includes
+      some stage II tumors.
+    url: https://www.cancerresearchuk.org/about-cancer/breast-cancer/survival
+  - name: Stage II
+    what: A tumor 2 to 5 cm, or a smaller tumor that has spread to a few (1 to 3) nearby armpit lymph nodes,
+      or a larger tumor with no node spread.
+    level: 4
+    burden: heavy
+    survival: About 90% survive at least 5 years (5-year net survival, England, diagnosed 2018-2022)
+    note: Surgery and usually radiation, with chemotherapy common, HER2 drugs for HER2-positive disease,
+      and years of endocrine therapy for hormone-positive disease. Most are cured, but late relapses can
+      occur for hormone-positive tumors.
+    url: https://www.cancerresearchuk.org/about-cancer/breast-cancer/survival
+  - name: Stage III
+    what: 'Locally advanced cancer: a large tumor, spread to many nearby lymph nodes, or growth into the
+      skin or chest wall, but not to distant organs.'
+    level: 4
+    burden: heavy
+    survival: Around 75% survive at least 5 years (5-year net survival, England, diagnosed 2018-2022)
+    share: Part of the ~27% of US cases with regional spread (SEER)
+    note: Chemotherapy or targeted drugs often given before surgery, then surgery, radiation and years of
+      endocrine or HER2 therapy. Many are cured, but relapse is common, especially in stage IIIC.
+    caveat: 'Borderline between level 3 and 4: 5-year survival overstates cure because hormone-positive
+      disease can relapse after 5 years. SEER regional stage also includes some stage II cases.'
+    url: https://www.cancerresearchuk.org/about-cancer/breast-cancer/survival
+  - name: Stage IV
+    what: Cancer that has spread beyond the breast and nearby nodes to distant organs such as bones, liver,
+      lungs or brain.
+    level: 2
+    burden: heavy
+    survival: ~34% alive at 5 years (5-year relative survival, SEER distant stage, 2016-2022)
+    share: ~6% of new US cases (SEER distant), plus earlier cancers that later return
+    note: 'Ongoing treatment for life: endocrine pills with CDK4/6 inhibitors, HER2 drugs, antibody-drug
+      conjugates or chemotherapy, given in sequence as each stops working. Many live years with good quality
+      of life, especially with hormone-positive or HER2-positive disease, but it is rarely cured.'
+    caveat: Level 2 fits hormone-positive and HER2-positive disease best; metastatic triple-negative disease
+      is closer to level 1. SEER distant counts only cancers metastatic at diagnosis.
+    url: https://seer.cancer.gov/statfacts/html/breast.html
+    forecast:
+      median: 2062
+      low: 2040
+      high: 2100
+      p2035: 2
+      p2045: 12
+      note: Most women with spread breast cancer would need treatment that clears it for good rather than
+        holding it back, and today only a small HER2-positive subset stays in remission for many years.
+        The nearest candidates are antibody-drug conjugates and oral SERDs used earlier, plus combinations
+        aimed at lasting remission, but none has shown cure in most patients.
   last_reviewed: '2026-11-03'
 treatment:
   best:

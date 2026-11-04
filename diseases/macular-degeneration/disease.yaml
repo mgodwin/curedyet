@@ -14,6 +14,70 @@ status:
   today: Anti-VEGF injections (aflibercept, ranibizumab, faricimab) preserve vision for most wet AMD patients
     but need injections every 1-4 months for life. For geographic atrophy, pegcetacoplan and avacincaptad
     slow lesion growth about 20% without clear vision benefit. Nothing restores lost vision.
+  groups:
+  - name: Wet AMD
+    what: A late form of macular degeneration where leaky blood vessels grow under the retina and can quickly
+      blur central vision.
+    level: 2
+    burden: moderate
+    survival: ~27% of treated eyes still had good vision (about 20/40 or better) after 10 years of injections
+      (real-world meta-analysis)
+    note: Standard care is anti-VEGF injections into the eye every one to four months, indefinitely, with
+      frequent clinic visits and a small risk of infection or inflammation. It usually stops the rapid vision
+      loss and often improves vision at first, but it controls rather than cures, and vision tends to drift
+      down over many years.
+    caveat: 'Borderline between levels 1 and 2: on average vision returns to or falls below its starting
+      point after several years (mean about 8 letters lost at 10 years, 41% of eyes lost 10+ letters), though
+      untreated wet AMD is far worse. Only 17% of eyes in the meta-analysis were followed for the full 10
+      years, and more regular injections were linked to better results.'
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12516669/
+    forecast:
+      median: 2049
+      low: 2032
+      high: 2090
+      p2035: 14
+      p2045: 38
+      note: One-time gene therapies such as ABBV-RGX-314 and 4D-150 in Phase 3 could end repeated injections,
+        but they keep making an anti-VEGF drug rather than fixing the disease, so level 4 likely needs proof
+        of lasting disease stopping and preserved vision in most eyes.
+  - name: Dry AMD (geographic atrophy)
+    what: The late form of dry macular degeneration, where patches of retinal cells in the center of vision
+      slowly die off.
+    level: 1
+    burden: moderate
+    note: Pegcetacoplan or avacincaptad pegol eye injections every one to two months slowed lesion growth
+      by roughly 16-22% over two years, without a clear benefit on vision, and raised the risk of developing
+      wet AMD. Lost vision is not restored and the disease keeps advancing.
+    caveat: Figures were confirmed from the published abstract via search; PubMed blocked a direct fetch.
+    url: https://pubmed.ncbi.nlm.nih.gov/37865470/
+    forecast:
+      median: 2059
+      low: 2041
+      high: 2100
+      p2035: 3
+      p2045: 12
+      note: Something would need to stop atrophy completely and ideally restore lost cells; current complement
+        drugs only slow lesion growth by about a fifth, and retinal cell replacement is in early trials.
+  - name: Early/intermediate dry AMD
+    what: The earlier stages of dry macular degeneration, where yellow deposits build up under the retina
+      and vision is often still good.
+    level: 1
+    burden: light
+    note: For intermediate AMD, daily AREDS2 vitamin and mineral supplements cut the risk of progressing
+      to advanced AMD by about a quarter; otherwise care is monitoring and not smoking. Nothing reverses
+      it, and many still progress.
+    caveat: Supplements are not shown to help early AMD or to prevent AMD from starting. This group is the
+      most common form of AMD, which is why the disease's overall level is 1.
+    url: https://nei.nih.gov/research/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2
+    forecast:
+      median: 2057
+      low: 2040
+      high: 2100
+      p2035: 3
+      p2045: 14
+      note: A safe treatment that reliably stops progression to late AMD would be needed; candidates such
+        as oral complement or lipid-targeting drugs and photobiomodulation are early or have shown small
+        effects.
   last_reviewed: null
 treatment:
   best:
@@ -28,22 +92,22 @@ treatment:
 forecast:
   bottleneck: biology-limited
   normal:
-    p2035: 4
-    p2045: 14
-    median: 2056
-    low: 2040
-    high: 2095
+    p2035: 2
+    p2045: 11
+    median: 2059
+    low: 2042
+    high: 2098
   faster:
-    p2035: 8
-    p2045: 30
-    median: 2046
-    low: 2036
-    high: 2080
+    p2035: 6
+    p2045: 27
+    median: 2049
+    low: 2038
+    high: 2083
   faster_note: Wet AMD gene therapies are near approval, but dry AMD is most cases and needs better biology
     or cell replacement; acceleration helps there, but slow vision-endpoint trials limit the lift by 2035.
   outlook: One-time gene therapies may make wet AMD a single-procedure condition by about 2028-2030, but
     dry AMD is most cases and lacks a strong treatment. Cure for most would need stopping or reversing
-    geographic atrophy, possibly with cell therapy. That remains far off.
+    geographic atrophy, possibly with cell therapy. That remains far off. Early and intermediate dry AMD is the most common form, so this forecast follows its.
 pipeline:
 - name: Sura-vec / ABBV-RGX-314 (REGENXBIO/AbbVie), one-time gene therapy
   note: ATMOSPHERE and ASCENT enrolled over 1,200 wet AMD patients; topline expected Q4 2026.

@@ -10,9 +10,12 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Phase 3 EPIC trial of NRTX-1001 (NeurologyLive)](https://www.neurologylive.com/view/phase-3-epic-trial-evaluate-nrtx-1001-cell-therapy-drug-resistant-mesial-temporal-lobe-epilepsy)
 - [Stoke Q2 2026 results (EMPEROR timing)](https://www.biospace.com/press-releases/stoke-therapeutics-announces-second-quarter-2026-financial-results-and-provides-business-updates)
 - [International Epilepsy Day 2026 advances (Xtalks)](https://xtalks.com/international-epilepsy-day-2026-advances-across-therapies-devices-and-monitoring-4606)
+- [Chen et al., Treatment Outcomes in Patients With Newly Diagnosed Epilepsy, JAMA Neurology 2018](https://pmc.ncbi.nlm.nih.gov/articles/PMC5885858) - survival by subtype
+- [de Tisi et al., The long-term outcome of adult epilepsy surgery, The Lancet 2011](https://pubmed.ncbi.nlm.nih.gov/22000136/) - survival by subtype
 
 ## Research log
 
+- 2026-11-04: Added status.groups rating each subtype on the cure ladder with its own burden and survival.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 
 ## Open questions

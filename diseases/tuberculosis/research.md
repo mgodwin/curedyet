@@ -10,9 +10,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [EWN: BEAT-TB regimen](https://www.ewn.co.za/2026/07/01/important-advance-made-in-tb-treatment)
 - [TAG CROI 2026 TB round-up](https://www.eatg.org/hiv-news/treatment-action-group-croi-2026-tb-research-round-up/)
 - [M72/AS01E Phase 3 on ClinicalTrials.gov](https://clinicaltrials.gov/study/NCT06062238)
+- [WHO Global Tuberculosis Report 2025: factsheet](https://cdn.who.int/media/docs/default-source/global-tuberculosis-report-2025/global-tb-report-2025_factsheet.pdf) - survival by subtype
 
 ## Research log
 
+- 2026-11-04: Added status.groups rating each subtype on the cure ladder with its own burden and survival.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 
 ## Open questions

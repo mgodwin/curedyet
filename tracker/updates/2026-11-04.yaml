@@ -1,0 +1,78 @@
+date: '2026-11-04'
+week: 1
+headline: Mid-week correction after splitting diseases into stages and variants.
+summary: Rating each stage and variant on its own rung showed two overall levels, and ten overall forecasts, were out of line with the variants that hold most patients.
+changes:
+- target: Stroke level
+  disease: stroke
+  from: 1
+  to: 3
+  why: Ischemic stroke is about 87% of strokes, and timely clot-busting or thrombectomy undoes it for a meaningful subset.
+  url: https://doi.org/10.1016/S0140-6736(16)00163-X
+- target: Hemophilia level
+  disease: hemophilia
+  from: 3
+  to: 2
+  why: Most patients have hemophilia A, which has no available cure since Roctavian was withdrawn; the hemophilia B gene therapy reaches few.
+  url: https://bleeding.org/news/biomarin-pulls-roctavian-hemophilia-a-gene-therapy-from-us-market
+- target: Lymphomas best guess
+  disease: lymphoma
+  from: 2036
+  to: 2044
+  why: Hodgkin and DLBCL are under half of lymphomas, so cured for most also needs follicular or another common indolent type to be curable, which pulls this forecast back to follicular's.
+  url: null
+- target: Leukemias best guess
+  disease: leukemia
+  from: 2044
+  to: 2047
+  why: AML and CLL are each about a third of cases, so cured for most waits on at least one of them, which sets this forecast.
+  url: null
+- target: Pancreatic cancer best guess
+  disease: pancreatic-cancer
+  from: 2061
+  to: 2068
+  why: About half of patients are found at stage IV, so without proven screening this forecast follows stage IV's.
+  url: null
+- target: Lung cancer best guess
+  disease: lung-cancer
+  from: 2048
+  to: 2051
+  why: Stage IV is close to half of patients, so cured for most needs stage III to become curable as well, which sets this forecast.
+  url: null
+- target: Hemophilia best guess
+  disease: hemophilia
+  from: 2046
+  to: 2049
+  why: About 80% of patients have hemophilia A, which has no cure available, so this forecast follows hemophilia A's.
+  url: null
+- target: Hepatitis B best guess
+  disease: hepatitis-b
+  from: 2045
+  to: 2051
+  why: Most people with chronic HBV are outside the low-HBsAg group that bepirovirsen helps, so this forecast follows theirs.
+  url: null
+- target: SMA best guess
+  disease: sma
+  from: 2038
+  to: 2058
+  why: Most people living with SMA today were treated after symptoms, a group unlikely to be cured soon; this forecast assumes people screened and treated before symptoms become most of those living with SMA over the coming decades.
+  url: null
+- target: Heart failure best guess
+  disease: heart-failure
+  from: 2062
+  to: 2066
+  why: About half of patients or more have preserved ejection fraction, which has fewer options, so this forecast follows that type's.
+  url: null
+- target: Type 2 diabetes best guess
+  disease: type-2-diabetes
+  from: 2050
+  to: 2054
+  why: Most people have long-standing type 2 diabetes, where remission is rare, so this forecast follows that group's.
+  url: null
+- target: Macular degeneration best guess
+  disease: macular-degeneration
+  from: 2054
+  to: 2057
+  why: Early and intermediate dry AMD is the most common form, so this forecast follows its.
+  url: null
+news: []

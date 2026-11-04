@@ -9,9 +9,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Tulisokibart ATLAS-UC](https://www.hcplive.com/view/tulisokibart-phase-3-endpoints-ulcerative-colitis-anti-tl1a)
 - [Abivax NDA strategy](https://www.pharmanow.live/latest-news/abivax-fda-nda-strategy-obefazimod)
 - [Duvakitug Phase 2b maintenance](https://www.patientcareonline.com/view/duvakitug-phase-2b-maintenance-data-show-durable-remission-in-uc-and-crohn-disease)
+- [Contemporary Risk of Surgery in Patients with Ulcerative Colitis and Crohn's Disease: A Meta-Analysis of Population-based Cohorts (Clin Gastroenterol Hepatol)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8934200) - survival by subtype
 
 ## Research log
 
+- 2026-11-04: Added status.groups rating each subtype on the cure ladder with its own burden and survival.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 
 ## Open questions

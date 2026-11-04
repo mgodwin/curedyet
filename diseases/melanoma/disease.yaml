@@ -17,6 +17,77 @@ status:
     CTLA-4 or LAG-3 combinations and BRAF/MEK inhibitors produce long-term survival in roughly half of
     advanced patients. Adjuvant immunotherapy lowers relapse after surgery, and a personalized mRNA vaccine
     added to pembrolizumab cut recurrence further in a phase 3 trial.
+  groups:
+  - name: Stage 0
+    what: 'Melanoma in situ: cancer cells only in the top layer of the skin, not growing deeper.'
+    level: 4
+    burden: light
+    survival: Essentially all cured by excision; no stage-specific survival figure verified
+    note: A minor outpatient excision with a small margin under local anesthetic, then regular skin checks.
+      Cures almost everyone.
+    caveat: SEER and AJCC figures cover invasive melanoma only; the source shows 100% 5-year relative survival
+      for localized invasive melanoma, which in situ disease would not be worse than, but no in situ figure
+      was verified.
+  - name: Stage I
+    what: A thin melanoma (up to 2 mm, or up to 1 mm if the surface is broken) with no spread to lymph nodes.
+    level: 4
+    burden: light
+    survival: ~98% melanoma-specific survival at 5 years, 95% at 10 years (AJCC 8th edition)
+    share: Most of the ~77% of US cases found while localized (SEER, stages I-II combined)
+    note: Wide excision, usually outpatient; thicker stage IB tumors often add a sentinel lymph node biopsy.
+      Nearly all are cured.
+    caveat: SEER share is for localized disease (stage I and II together), not stage I alone.
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5978683/
+  - name: Stage II
+    what: A thicker melanoma (over 1 to 4+ mm, sometimes with a broken surface) that has not spread to lymph
+      nodes.
+    level: 4
+    burden: moderate
+    survival: ~90% melanoma-specific survival at 5 years, 84% at 10 years (AJCC 8th edition; 82% at 5 years
+      for stage IIC)
+    note: Wide excision with sentinel lymph node biopsy; for higher-risk IIB and IIC, a year of adjuvant
+      immunotherapy is offered, with a risk of lasting immune side effects such as thyroid damage. Most
+      are cured.
+    caveat: Burden is light-to-moderate for stage IIA (surgery only) and heavy for IIB/IIC patients who
+      take adjuvant immunotherapy.
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5978683/
+  - name: Stage III
+    what: Melanoma that has spread to nearby lymph nodes or to skin close to the original tumor, but not
+      to distant organs.
+    level: 4
+    burden: heavy
+    survival: ~77% melanoma-specific survival at 5 years, 69% at 10 years (AJCC 8th edition; ranges from
+      93% for IIIA to 32% for IIID)
+    share: ~10% of new US cases (SEER regional)
+    note: Surgery plus about a year of immunotherapy (increasingly started before surgery), or BRAF/MEK
+      pills for BRAF-mutant disease; immune side effects can be serious or permanent. Most are cured, though
+      IIID often relapses.
+    caveat: AJCC survival comes from patients diagnosed from 1998, mostly before modern adjuvant immunotherapy,
+      so current outcomes are likely somewhat better. Level 4 is weaker for IIIC-IIID.
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5978683/
+  - name: Stage IV
+    what: Melanoma that has spread to distant skin, lymph nodes or organs such as the lungs, liver or brain.
+    level: 3
+    burden: heavy
+    survival: ~34% alive at 5 years (5-year relative survival, SEER distant stage, 2016-2022)
+    share: ~5% of new US cases (SEER distant)
+    note: Combination immunotherapy (nivolumab with ipilimumab or relatlimab) or BRAF/MEK pills, with TIL
+      cell therapy as a later option; severe immune side effects are common with combinations. A meaningful
+      share get long remissions that look like cures, but most do not.
+    caveat: SEER distant figures lag current immunotherapy; in the CheckMate 067 trial roughly half of combination-treated
+      patients were alive at 6.5 years (reported by Cancer Research UK), but trial patients are fitter than
+      average.
+    url: https://seer.cancer.gov/statfacts/html/melan.html
+    forecast:
+      median: 2043
+      low: 2032
+      high: 2080
+      p2035: 15
+      p2045: 52
+      note: Already about 4 in 10 on combination immunotherapy in trials live 10 years, so this needs a
+        first-line treatment that cures over half and that most patients can tolerate. Candidates include
+        LAG-3 combinations, TIL cell therapy and personalized mRNA vaccines such as intismeran, which cut
+        relapse in a 2026 Phase 3 after surgery but has not been tested as first treatment for spread disease.
   last_reviewed: '2026-11-03'
 treatment:
   best:

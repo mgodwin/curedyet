@@ -17,6 +17,56 @@ status:
     to treatable, and timing matters most. Newborn screening lets many babies be treated before symptoms.
     Older patients improve or stabilize but stay disabled, and in 2025-26 an intrathecal gene therapy
     for ages 2+ (Itvisma) and a muscle-targeted add-on (apitegromab) were approved.
+  groups:
+  - name: SMA treated before symptoms
+    what: Babies found to have spinal muscular atrophy, usually by newborn screening, and treated before
+      any muscle weakness appears.
+    level: 3
+    burden: heavy
+    survival: All 29 babies alive without permanent ventilation; all sat, and 14 of 15 with three SMN2 copies
+      walked (SPR1NT, one-time Zolgensma)
+    note: Treatment is usually a one-time gene therapy infusion (Zolgensma), costing over $2 million, with
+      steroids and liver monitoring for possible liver injury, or lifelong spinal injections or daily oral
+      drugs instead. Most babies treated this early reach sitting and walking, many on time, so it can look
+      close to a cure, but they still need follow-up.
+    caveat: 'Judgment call between 3 and 4: results are excellent but come from small trials (14 babies
+      with two SMN2 copies, PubMed 35715566; 15 with three) with only a few years of follow-up, and babies
+      with two copies more often have some motor delay, so ''cured for most'' is not yet proven. Combined
+      figure merges the two SPR1NT papers.'
+    url: https://pubmed.ncbi.nlm.nih.gov/35715567/
+    forecast:
+      median: 2032
+      low: 2027
+      high: 2045
+      p2035: 65
+      p2045: 85
+      note: Mostly needs longer follow-up showing that babies treated before symptoms keep near-normal motor
+        function into later childhood, plus near-universal newborn screening. Zolgensma, nusinersen and
+        risdiplam are already approved, so this is about proof and reach, not new drugs.
+  - name: SMA treated after symptoms
+    what: People whose spinal muscular atrophy was treated only after muscle weakness had started, including
+      most children and adults diagnosed before newborn screening.
+    level: 1
+    burden: heavy
+    survival: 91% of infants with type 1 survived without permanent ventilation at 14 months and 59% sat
+      alone by 18 months, versus 26% and 0% untreated (STR1VE)
+    note: Patients get one-time gene therapy (Zolgensma, or Itvisma for ages 2 and up), repeated spinal
+      injections (nusinersen) or daily risdiplam, all very costly. These usually stop or slow the decline
+      and can bring some gains, but nerve cells already lost do not come back, so most live with lasting
+      disability.
+    caveat: 'Level sits between 1 and 2: treatment often halts decline, but life is not near-normal, which
+      level 2 requires. Survival figure is for symptomatic infants with type 1 SMA; older patients with
+      types 2-3 mostly stabilize rather than improve.'
+    url: https://pubmed.ncbi.nlm.nih.gov/33743238/
+    forecast:
+      median: 2075
+      low: 2048
+      high: 2100
+      p2035: 1
+      p2045: 5
+      note: Needs a way to restore lost motor nerve cells or their function, not just stop decline. Muscle-targeted
+        add-ons like apitegromab and Itvisma for older patients help, but no regenerative candidate is in
+        late trials.
   last_reviewed: null
 treatment:
   best:
@@ -31,23 +81,23 @@ treatment:
 forecast:
   bottleneck: access-limited
   normal:
-    p2035: 35
-    p2045: 65
-    median: 2039
-    low: 2031
-    high: 2060
+    p2035: 2
+    p2045: 19
+    median: 2059
+    low: 2042
+    high: 2087
   faster:
-    p2035: 50
-    p2045: 80
-    median: 2035
-    low: 2030
-    high: 2050
+    p2035: 17
+    p2045: 34
+    median: 2055
+    low: 2041
+    high: 2077
   faster_note: Level 4 depends mostly on universal newborn screening and one-time gene therapy reaching
     every new case; acceleration helps with cheaper delivery and fixes for older patients, so the lift
     is real but modest.
   outlook: With universal newborn screening and one-time gene therapy, most new cases in rich countries
     may soon get near-normal lives, which is close to a cure for most. The gap is older patients already
-    damaged and gaps in screening. Level 4 could arrive in the 2030s as screened cohorts grow up.
+    damaged and gaps in screening. Level 4 could arrive in the 2030s as screened cohorts grow up. Most people living with SMA today were treated after symptoms, a group unlikely to be cured soon; this forecast assumes people screened and treated before symptoms become most of those living with SMA over the coming decades.
 pipeline:
 - name: Apitegromab (Isembyld)
   note: Anti-myostatin add-on approved in the US in Sept 2026; EU application withdrawn over manufacturing.

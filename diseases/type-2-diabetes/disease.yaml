@@ -16,6 +16,54 @@ status:
     and kidney risk. Large weight loss from bariatric surgery, intensive diet programs or tirzepatide
     can put the disease into remission for a subset, but relapse is common. Control in practice is uneven,
     and many patients worldwide are undiagnosed.
+  groups:
+  - name: Early type 2 diabetes
+    what: Type 2 diabetes diagnosed within about the last six years, in people with excess weight, when
+      large weight loss can still bring blood sugar back to normal.
+    level: 3
+    burden: moderate
+    survival: ~46% in remission at 1 year, 36% at 2 years and ~10% at 5 years (DiRECT diet programme)
+    note: Most people take lifelong pills or weekly GLP-1 or GIP/GLP-1 injections, which control blood sugar
+      but must be continued. A structured very-low-calorie diet programme, or bariatric surgery, can bring
+      remission (normal HbA1c off all diabetes drugs) for a sizeable share, but it often returns if weight
+      comes back.
+    caveat: 'Remission uses the ADA 2021 consensus definition: HbA1c under 6.5% at least 3 months after
+      stopping glucose-lowering drugs (https://pmc.ncbi.nlm.nih.gov/articles/PMC8929179/); DiRECT used 2
+      months. DiRECT enrolled people diagnosed within 6 years with BMI 27-45 (Lancet 2018, https://pubmed.ncbi.nlm.nih.gov/29221645/).
+      Remission is described as a pause, not a cure, and most people do not stay in remission long term.
+      People on GLP-1 drugs who reach normal sugar are not in remission because they are still on the drug.'
+    url: https://diabetes.org.uk/about-us/news-and-views/weight-loss-can-put-type-2-diabetes-remission-least-five-years-reveal-latest-findings
+    forecast:
+      median: 2046
+      low: 2035
+      high: 2085
+      p2035: 9
+      p2045: 30
+      note: Needs a one-time or finite treatment that keeps blood sugar normal for years without drugs,
+        for example durable weight-loss remission or a procedure like Fractyl's Revita (Phase 3). Today's
+        GLP-1 drugs and diet programmes bring remission for many, but it usually returns.
+  - name: Long-standing type 2 diabetes
+    what: Type 2 diabetes that has been present for many years, when the insulin-making cells have declined
+      further and remission is much less likely.
+    level: 2
+    burden: moderate
+    note: Patients take lifelong combinations of metformin, GLP-1 or GIP/GLP-1 injections, SGLT2 inhibitors
+      and often insulin, with regular checks; GLP-1 drugs cause nausea and are costly. These control blood
+      sugar and cut heart and kidney risk, but they do not cure, and bariatric surgery can help some but
+      sugar often rises again over time.
+    caveat: No solid remission figure is given for this group; the consensus report says near-normal glucose
+      is most likely early in the disease and that high blood sugar frequently returns. 'Near-normal life'
+      holds for those with good control; real-world control is uneven.
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8929179/
+    forecast:
+      median: 2054
+      low: 2039
+      high: 2095
+      p2035: 4
+      p2045: 21
+      note: Needs restoration of lost insulin-making beta cells, for example through regeneration or cell
+        therapy, on top of resetting weight and metabolism. Nothing aimed at this is in late trials for
+        type 2 diabetes.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -30,24 +78,24 @@ treatment:
 forecast:
   bottleneck: biology-limited
   normal:
-    p2035: 5
-    p2045: 20
-    median: 2052
-    low: 2038
-    high: 2095
+    p2035: 3
+    p2045: 17
+    median: 2056
+    low: 2040
+    high: 2099
   faster:
-    p2035: 9
-    p2045: 38
-    median: 2043
-    low: 2034
-    high: 2075
+    p2035: 7
+    p2045: 35
+    median: 2047
+    low: 2036
+    high: 2079
   faster_note: Acceleration mainly helps by finding and proving durable fixes (beta-cell restoration,
     set-point resetting, one-time procedures like Revita); the lift is moderate because today's drugs
     work only while taken and durability needs multi-year follow-up.
   outlook: Drugs keep getting stronger and remission is becoming more common, but they work only while
     taken. A cure for most would need durable remission without lifelong drugs, such as one-time procedures
     or beta-cell restoration, which remain early. Most patients will likely be well controlled rather
-    than cured for decades.
+    than cured for decades. Most people have long-standing type 2 diabetes, where remission is rare, so this forecast follows that group's.
 pipeline:
 - name: Orforglipron (oral GLP-1)
   note: Approved for T2D in the UK in Aug 2026; a separate US diabetes filing was planned for 2026.

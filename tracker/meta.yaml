@@ -3,11 +3,11 @@ repo: mgodwin/curedyet
 week: 1
 updated: '2026-11-03'
 next_update: '2026-11-05'
-headline: Only 6 of 50 major diseases can be cured for most patients today, and none of the rest is better
-  than a coin flip to get there by 2035.
+headline: Only 3 of 50 major diseases are cured for most patients outright, three cancers only when caught
+  early, and none of the rest is better than a coin flip to get there by 2035.
 this_week:
-- This is the baseline. Of 50 diseases and conditions, 6 are cured for most patients today (breast, prostate
-  and melanoma cancers, hepatitis C, TB and malaria) and 11 have a real cure for some patients. 21 still
+- This is the baseline. Of 50 diseases and conditions, 3 are cured for most patients outright (hepatitis C,
+  TB and malaria), breast, prostate and melanoma cancers are cured for most when caught before they spread, and 11 have a real cure for some patients. 20 still
   sit at level 0 or 1, including Alzheimer's, Parkinson's, ALS, pancreatic cancer, rabies, osteoarthritis
   and aging itself.
 - A new cure takes about 27 years today from discovery to most patients, and trials alone take 6 to 9.
@@ -15,9 +15,9 @@ this_week:
   5. Each forecast blends today's pace with a faster pipeline, weighted by the acceleration index, now
   21%. Six of the seven pipeline stages are easing; getting cures to patients is still blocking.
 - A faster pipeline mostly moves the 2045 odds, not 2035, because human testing still takes years. The
-  nearest new cures are lymphoma (43% by 2035), SMA (38%), Ebola (33%) and colorectal cancer (32%).
-- Getting cured often means a heavy treatment. 18 of the 50 have a heavy best option, mostly cancers,
-  gene therapies and outbreak intensive care. Only hepatitis C, malaria, melanoma and H5N1 rate as light.
+  nearest new cures are Ebola (33% by 2035), colorectal cancer (32%), sickle cell disease (18%) and H5N1 (17%).
+- Getting cured often means a difficult treatment. 18 of the 50 have a difficult best option, mostly cancers,
+  gene therapies and outbreak intensive care. Only hepatitis C, malaria, melanoma and H5N1 rate as mild.
 - 'Watch next: the FDA decision on ivonescimab for lung cancer (Nov 14), Alzheimer''s data at CTAD (Nov
   16), Arc''s Virtual Cell Challenge winners (mid-to-late November), the Bundibugyo Ebola outbreak in
   the DRC, and ASH blood-cancer results in mid-December.'

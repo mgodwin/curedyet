@@ -10,9 +10,12 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [ClinicalTrials.gov RASolute 305](https://clinicaltrials.gov/study/NCT07621718)
 - [UCHealth: New pancreatic cancer drug](https://www.uchealth.org/today/new-pancreatic-cancer-drug-daraxonrasib/)
 - [ACS global cancer statistics 2026](https://pressroom.cancer.org/global-cancer-statistics-2026)
+- [American Cancer Society: Pancreatic Cancer Survival Rates](https://www.cancer.org/cancer/types/pancreatic-cancer/detection-diagnosis-staging/survival-rates.html) - survival by stage
+- [ASCO Post: FOLFIRINOX in Locally Advanced Pancreatic Cancer](https://ascopost.com/issues/june-10-2016/folfirinox-in-locally-advanced-pancreatic-cancer/) - survival by stage
 
 ## Research log
 
+- 2026-11-04: Added status.groups rating each stage on the cure ladder with its own burden and survival.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 
 ## Open questions
