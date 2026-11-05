@@ -1,0 +1,34 @@
+# Cure Watch variant record: one stage or type of Menopause symptoms. Field guide: CONTRIBUTING.md.
+id: vasomotor
+name: Hot flashes and night sweats
+order: 1
+what: Sudden waves of heat, sweating and flushing, often at night, caused by changes in the brain's temperature
+  control as estrogen falls; they often disrupt sleep.
+level: 2
+burden: moderate
+burden_why: Daily pills, patches or gels taken for as long as symptoms last, with small age-related risks
+  for hormone therapy and liver monitoring for the newer non-hormonal drugs.
+survival: ~75% fewer hot flushes on oral hormone therapy than on placebo (Cochrane review, 24 trials)
+share: Up to 80% of women have hot flashes or night sweats during the menopause transition; about 1 in
+  3 US women aged 40-65 after menopause rate them moderate or severe
+share_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8746897/
+treatment: Hormone therapy is the most effective option, and for healthy women under 60 or within 10 years
+  of menopause its benefits are judged to outweigh small risks of clots, stroke and breast cancer. Non-hormonal
+  options include fezolinetant (boxed liver warning, regular liver tests) and elinzanetant (NK blockers
+  that act on the brain's temperature centre), low-dose paroxetine and other SSRIs/SNRIs, gabapentin
+  and CBT. All relieve symptoms while used; none changes how long they would last.
+caveat: 'Hot flashes usually ease over time, but in the large US SWAN study frequent symptoms lasted a
+  median 7.4 years, and more than 11.8 years for women whose symptoms began early in the transition.
+  Because symptoms often fade on their own, "cured" here means lasting relief without ongoing treatment,
+  which nothing yet offers. The Women''s Health Initiative trial behind the early-2000s warnings enrolled women averaging 63, older
+  than most who start treatment today.'
+url: https://pubmed.ncbi.nlm.nih.gov/15495039/
+forecast:
+  median: 2058
+  low: 2040
+  high: 2100
+  p2035: 3
+  p2045: 13
+  note: Lasting relief without daily treatment would need a way to keep the brain's temperature control
+    stable after menopause, or to delay ovarian aging; ovarian-aging drugs such as rapamycin are only
+    in pilot trials.

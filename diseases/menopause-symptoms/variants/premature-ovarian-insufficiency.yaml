@@ -1,0 +1,30 @@
+# Cure Watch variant record: one stage or type of Menopause symptoms. Field guide: CONTRIBUTING.md.
+id: premature-ovarian-insufficiency
+name: Menopause before 40 (premature ovarian insufficiency)
+order: 3
+what: The ovaries stop working regularly before age 40, sometimes from genetic, autoimmune or medical
+  causes but often for no known reason; its formal name, premature ovarian insufficiency, describes the
+  ovaries' hormone output, not the person.
+level: 2
+burden: moderate
+burden_why: Hormone therapy taken daily for years, usually until about 51, plus monitoring of bone health;
+  having a baby usually means egg donation, which is costly and not always available.
+share: About 1% of women by the long-standing estimate; the 2024 international guideline cites newer
+  data putting it at 3.5%
+share_url: https://pubmed.ncbi.nlm.nih.gov/39647506/
+treatment: Hormone therapy is the cornerstone of care, relieving symptoms and protecting bone and heart
+  health, and is recommended at least until the average age of natural menopause; before that age it
+  hasn't been found to raise breast cancer risk. A small chance of natural pregnancy remains, and egg
+  donation is the established fertility option.
+caveat: Covers spontaneous and treatment-related menopause before 40. Hormone therapy replaces hormones
+  the body would normally still be making, so the risk picture differs from treatment after a usual-age
+  menopause. Restoring the ovaries' own function is not yet possible for most.
+url: https://www.eshre.eu/-/media/sitecore-files/Guidelines/POI/ESHRE-guideline_POI-2015_summary_01122015.pdf
+forecast:
+  median: 2068
+  low: 2045
+  high: 2100
+  p2035: 1
+  p2045: 7
+  note: A cure would need to restore the ovaries' own hormone and egg production; ovarian-aging drugs
+    are in pilot trials in women with normal ovaries, and nothing yet reliably restores lost function.

@@ -1,0 +1,30 @@
+# Cure Watch variant record: one stage or type of Menopause symptoms. Field guide: CONTRIBUTING.md.
+id: genitourinary
+name: Genitourinary syndrome of menopause
+order: 2
+what: Thinning and drying of the tissues of the vagina, vulva and bladder outlet as estrogen falls, causing
+  dryness, pain with sex, urgency and repeated urinary infections.
+level: 2
+burden: light
+burden_why: Low-dose vaginal estrogen inserted a few times a week, or a nightly DHEA insert, with little
+  effect on the rest of the body, few side effects and generic options, though it is ongoing.
+share: Affects an estimated 27-84% of postmenopausal women, and is likely underdiagnosed and undertreated
+share_url: https://pubmed.ncbi.nlm.nih.gov/32852449/
+treatment: Over-the-counter moisturisers and lubricants are enough for most mild symptoms. For moderate
+  to severe symptoms, low-dose vaginal estrogen, vaginal DHEA (prasterone) or oral ospemifene are effective,
+  and low-dose vaginal estrogen doesn't need an added progestogen. Unlike hot flashes, symptoms tend to
+  persist or worsen without treatment, and come back if it stops.
+caveat: The wide prevalence range reflects different definitions and surveys. Endometrial safety of vaginal
+  estrogen, DHEA and ospemifene hasn't been studied in trials beyond a year, and safety for women with
+  breast cancer is less certain, so care is planned with their oncologist. There is too little trial
+  evidence to judge vaginal laser treatments.
+url: https://pubmed.ncbi.nlm.nih.gov/32852449/
+forecast:
+  median: 2062
+  low: 2042
+  high: 2100
+  p2035: 2
+  p2045: 10
+  note: Lasting relief without ongoing treatment would need a way to keep these tissues estrogen-responsive
+    or delay ovarian aging; no such approach is in late trials, and energy-based treatments like laser
+    remain unproven.
