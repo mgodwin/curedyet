@@ -10,13 +10,14 @@ Each disease, and each stage or type of a disease, gets one level for the typica
 | 1 | Slows it | Treatments slow it or ease symptoms, but it still advances. |
 | 2 | Controlled | Near-normal life on ongoing treatment, but not cured. |
 | 3 | Cured for some | A real cure or durable remission exists for a meaningful subset, or an approved curative therapy that only some patients can get, but fewer than about 85% of patients are cured. |
-| 4 | Cured for most | At least about 85% of patients who get standard care are cured, and most could realistically tolerate and get that cure, but the cure is moderate or difficult treatment. |
-| 5 | Cured easily | Cured for most, and the standard cure is mild treatment: a short or easy course with few side effects, broadly affordable. This is the goal. |
-| 6 | Gone | Eradicated or reliably prevented at population scale. |
+| 4 | Cured for most | At least about 85% of patients who get standard care are cured, and most could realistically tolerate and get that cure. |
+| 5 | Cured for all | About 98% or more of patients are cured, or the disease is eradicated or reliably prevented at population scale. |
+
+How hard the cure is gets rated separately, as the treatment burden below: mild, moderate or difficult. The goal is cured for most (or all) with mild treatment.
 
 **The 85% line.** "Cured" means cured, not alive at five years. Where relapse after five years is common (hormone-positive breast cancer, ovarian cancer, high-risk prostate cancer), use long-term or cure-fraction data; five-year survival is a stand-in only where late relapse is rare. A cure too toxic, risky or costly for most patients to get stays at level 3, however well it works.
 
-On the site, levels 0 to 2 read "Not yet", level 3 "For some", level 4 "Yes, but tough" in yellow, and levels 5 and 6 "Yes" in green. Level 4 is a waypoint: most patients are cured, but the road there is hard, so level 4 records also forecast when the cure gets easy (`easy`).
+On the site the colour combines the rung and the burden. Cured for most or all is green with mild treatment, yellow with moderate treatment and orange with difficult treatment. Cured for some is orange whatever the treatment, since it doesn't cure most patients anyway. Levels 0 to 2 are grey. A cure for most that isn't mild yet is a waypoint, so those records also forecast when the treatment gets mild (`easy`), and records that are already mild give the year it got there (`reached_easy`).
 
 **Stages and types.** A single level hides how different one disease can be across stages or types. Stage IV colorectal cancer is closer to a different disease than to stage I. So diseases with distinct stages or types keep each one as its own variant in `diseases/<id>/variants/`, rated on the same ladder with its own burden, prognosis, forecast, catalysts and estimate log, and each gets its own page. The disease page becomes a hub that lists them. The disease's overall level is kept for the typical patient across all variants, to anchor the pooled forecast and the history, but it is never shown as a verdict on a disease with variants, so nobody with metastatic disease is told their cancer is cured. The validator requires variants for every cancer at level 4 or above.
 

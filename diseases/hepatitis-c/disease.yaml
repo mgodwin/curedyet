@@ -13,7 +13,7 @@ toll:
   ratio_url: https://www.who.int/news-room/fact-sheets/detail/hepatitis-c
   ratio_basis: "Derived: WHO's 47 million with chronic HCV divided by UN world population of 8.2 billion in 2024 (https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/). WHO does not state the data year for the 47M."
 status:
-  level: 5
+  level: 4
   why: Direct-acting antivirals cure more than 95% of people treated, usually in 8-12 weeks.
   today: 'Pangenotypic pill regimens such as sofosbuvir/velpatasvir and glecaprevir/pibrentasvir cure
     nearly everyone who takes them. The problem is reach: most infected people are undiagnosed or untreated,

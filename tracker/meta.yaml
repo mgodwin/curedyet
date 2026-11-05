@@ -3,12 +3,12 @@ repo: mgodwin/curedyet
 week: 1
 updated: '2026-11-03'
 next_update: '2026-11-05'
-headline: Only hepatitis C and malaria are cured easily for most patients, melanoma too when caught early,
+headline: Only hepatitis C and malaria are cured for most patients with mild treatment, melanoma too when caught early,
   and none of the rest is better than a coin flip to get a cure for most by 2035.
 this_week:
-- This is the baseline, now on a 7-rung ladder where "cured for most" needs at least about 85% of
-  patients cured and "cured easily" also needs mild treatment. Hepatitis C and malaria are cured easily,
-  and so is melanoma caught at stages 0 or I. Drug-susceptible TB and the early stages of breast, prostate,
+- This is the baseline, on a 6-rung ladder where "cured for most" needs at least about 85% of
+  patients cured, with how hard the treatment is rated on its own. Hepatitis C and malaria are cured for most
+  with mild treatment, and so is melanoma caught at stages 0 or I. Drug-susceptible TB and the early stages of breast, prostate,
   colorectal and ovarian cancer are cured for most, but the treatment is hard. 20 still sit at level 0
   or 1, including Alzheimer's, Parkinson's, ALS, pancreatic cancer, rabies, osteoarthritis and aging
   itself.

@@ -1,6 +1,6 @@
 # Is it cured yet?
 
-An open tracker of how close major diseases are to being cured. Each disease, and each stage or type of one, gets a place on a 0 to 6 cure ladder, a best-guess year for when most patients could be cured, the odds of that by 2035 and 2045, the burden of today's treatment, and the sources behind every claim.
+An open tracker of how close major diseases are to being cured. Each disease, and each stage or type of one, gets a place on a 0 to 5 cure ladder (with how hard treatment is rated separately), a best-guess year for when most patients could be cured, the odds of that by 2035 and 2045, the burden of today's treatment, and the sources behind every claim.
 
 It also tracks the **cure pipeline**: the six stages every cure moves through, how long each takes today, and how short each could get with AI and faster rules.
 

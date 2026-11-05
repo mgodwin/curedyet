@@ -13,7 +13,7 @@ toll:
   ratio_url: https://www.who.int/news-room/fact-sheets/detail/malaria
   ratio_basis: "Derived: WHO's 282 million malaria cases in 2024 divided by UN world population of 8.2 billion (https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/). Cases, not people. Alternative: WHO says children under 5 are about 3 in 4 malaria deaths in Africa."
 status:
-  level: 5
+  level: 4
   why: Artemisinin combination therapies cure most uncomplicated cases in 3 days when given promptly.
   today: ACTs cure about 94-97% of uncomplicated cases, and IV artesunate treats severe malaria. Two vaccines
     (RTS,S and R21) are in 25 African countries, and 47 countries are certified malaria-free. Artemisinin

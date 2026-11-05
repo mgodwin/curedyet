@@ -3,7 +3,7 @@ id: stage-i
 name: Stage I
 order: 2
 what: A thin melanoma (up to 2 mm, or up to 1 mm if the surface is broken) with no spread to lymph nodes.
-level: 5
+level: 4
 burden: light
 burden_why: Usually an outpatient excision, sometimes with a lymph node biopsy.
 survival: ~98% melanoma-specific survival at 5 years, 95% at 10 years (AJCC 8th edition)

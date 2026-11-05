@@ -14,7 +14,7 @@ toll:
   ratio_url: https://seer.cancer.gov/statfacts/html/melan.html
   ratio_basis: "NCI SEER Cancer Stat Facts: about 2.2% of men and women diagnosed with melanoma of the skin in their lifetime (2021-2023 data). ACS gives 1 in 33 for White people, 1 in 1,000 for Black people."
 status:
-  level: 5
+  level: 4
   why: Most melanomas are found early and cured by excision, and immunotherapy now gives durable remissions
     to many patients with advanced disease.
   today: Thin localized melanoma is cured by surgery in nearly all patients. For stage III-IV, PD-1 and
