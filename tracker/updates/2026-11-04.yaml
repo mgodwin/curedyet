@@ -1,7 +1,7 @@
 date: '2026-11-04'
 week: 1
 headline: Mid-week correction after splitting diseases into stages and variants.
-summary: Moved to a 7-rung ladder with an 85% cured line, and rating each stage and variant on its own rung showed two overall levels, and ten overall forecasts, were out of line with the variants that hold most patients.
+summary: Moved to a 6-rung ladder with an 85% cured line and treatment difficulty rated on its own, and rating each stage and variant on its own rung showed two overall levels, and ten overall forecasts, were out of line with the variants that hold most patients.
 changes:
 - target: Stroke level
   disease: stroke
@@ -103,12 +103,6 @@ changes:
   to: Cured for some
   why: Re-rated under the new 85% cured line.
   url: null
-- target: Hepatitis C level
-  disease: hepatitis-c
-  from: Cured for most
-  to: Cured easily
-  why: 'Re-rated under the 7-rung ladder: cured for most with mild treatment is now its own rung, cured
-    easily.'
 - target: Lung cancer, Stage I
   disease: lung-cancer
   variant: stage-i
@@ -122,28 +116,6 @@ changes:
   from: Cured for most
   to: Cured for some
   why: Re-rated under the new 85% cured line.
-  url: null
-- target: Malaria level
-  disease: malaria
-  from: Cured for most
-  to: Cured easily
-  why: 'Re-rated under the 7-rung ladder: cured for most with mild treatment is now its own rung, cured
-    easily.'
-- target: Melanoma, Stage 0
-  disease: melanoma
-  variant: stage-0
-  from: Cured for most
-  to: Cured easily
-  why: 'Re-rated under the 7-rung ladder: cured for most with mild treatment is now its own rung, cured
-    easily.'
-  url: null
-- target: Melanoma, Stage I
-  disease: melanoma
-  variant: stage-i
-  from: Cured for most
-  to: Cured easily
-  why: 'Re-rated under the 7-rung ladder: cured for most with mild treatment is now its own rung, cured
-    easily.'
   url: null
 - target: Melanoma, Stage III
   disease: melanoma

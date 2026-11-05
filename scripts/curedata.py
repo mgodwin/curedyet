@@ -14,7 +14,8 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-LEVELS = ["No treatment", "Slows it", "Controlled", "Cured for some", "Cured for most", "Cured easily", "Gone"]
+# How hard the treatment is (mild/moderate/difficult) is a separate axis, read from burden, not a rung.
+LEVELS = ["No treatment", "Slows it", "Controlled", "Cured for some", "Cured for most", "Cured for all"]
 MAX_LEVEL = len(LEVELS) - 1
 BURDENS = {"light", "moderate", "heavy"}
 BOTTLENECKS = {"design-limited", "biology-limited", "trial-limited", "access-limited"}
@@ -126,21 +127,20 @@ def validate_variant(v, errs, where):
     for k in ("url", "share_url"):
         if v.get(k) and not URL_RE.match(str(v[k])):
             errs.append(f"{where}: {k} must be an http(s) link")
-    if level == 5 and v.get("burden") != "light":
-        errs.append(f"{where}: level 5 (cured easily) needs a light burden")
     if v.get("forecast") is not None:
         if level >= 4:
             errs.append(f"{where}: forecast is for reaching level 4; this variant is already there")
         else:
             validate_forecast(v["forecast"], errs, where, "forecast")
+    mild = level >= 4 and v.get("burden") == "light"
     if v.get("easy") is not None:
-        if level >= 5:
-            errs.append(f"{where}: easy is for reaching level 5; this variant is already there")
+        if mild:
+            errs.append(f"{where}: easy is for when cured for most gets mild treatment; this variant already has it")
         else:
             validate_forecast(v["easy"], errs, where, "easy")
     if level >= 4:
         validate_reached(v.get("reached"), errs, where, "reached")
-    if level >= 5:
+    if mild:
         validate_reached(v.get("reached_easy"), errs, where, "reached_easy")
 
 
@@ -209,8 +209,8 @@ def validate(data: dict) -> list[str]:
             if level >= 4:
                 if not _is_int(fc.get("reached"), 1800, 2100):
                     errs.append(f"{where}: a level 4+ disease needs forecast.reached (the year it got there)")
-                if level >= 5 and not _is_int(fc.get("reached_easy"), 1800, 2100):
-                    errs.append(f"{where}: a level 5+ disease needs forecast.reached_easy (the year the cure became mild)")
+                if tx.get("burden") == "light" and not _is_int(fc.get("reached_easy"), 1800, 2100):
+                    errs.append(f"{where}: a level 4+ disease with light treatment needs forecast.reached_easy (the year the cure became mild)")
             else:
                 validate_track("normal", fc.get("normal"), errs, where)
                 validate_track("faster", fc.get("faster"), errs, where)
