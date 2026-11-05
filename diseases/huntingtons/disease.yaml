@@ -6,9 +6,9 @@ tracking: active
 summary: An inherited brain disease caused by a CAG repeat expansion in the HTT gene, causing movement,
   mood and thinking decline.
 toll:
-  text: About 5-10 per 100,000 people worldwide, higher (about 7 per 100,000) in people of Western European
-    descent (published estimates).
-  url: https://en.wikipedia.org/wiki/Huntington%27s_disease
+  text: About 5 per 100,000 people worldwide (2022 meta-analysis), higher in Europe and North America than
+    in Asia or Africa.
+  url: https://pubmed.ncbi.nlm.nih.gov/36161673/
   ratio: "About 1 in 8,000"
   ratio_caption: "Americans has symptoms of Huntington's disease"
   ratio_url: https://hdsa.org/what-is-hd/overview-of-huntingtons-disease/

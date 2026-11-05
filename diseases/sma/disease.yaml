@@ -6,9 +6,9 @@ tracking: active
 summary: An inherited disease where loss of the SMN1 gene causes motor nerve cells to die, leading to
   muscle weakness and, in severe forms, death in infancy.
 toll:
-  text: About 1 in 7,000-10,000 births (US/Europe); the leading genetic cause of infant death before modern
+  text: About 1 in 10,000-11,000 births (US/Europe); the leading genetic cause of infant death before modern
     treatment.
-  url: https://en.wikipedia.org/wiki/Spinal_muscular_atrophy
+  url: https://pubmed.ncbi.nlm.nih.gov/29149772/
   ratio: "1 in 8,000 to 10,000"
   ratio_caption: "people worldwide is affected by spinal muscular atrophy"
   ratio_url: https://medlineplus.gov/genetics/condition/spinal-muscular-atrophy/
@@ -59,8 +59,8 @@ forecast:
 pipeline:
 - name: Apitegromab (Isembyld)
   stage: Approved 2025-26
-  note: Anti-myostatin add-on approved in the US in Sept 2026; EU application withdrawn over manufacturing.
-  url: https://en.wikipedia.org/wiki/Apitegromab
+  note: Anti-myostatin add-on approved in the US in Sept 2026; EU application withdrawn over manufacturing in Aug 2026 and resubmitted in Oct 2026.
+  url: https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-therapy-target-muscle-loss-spinal-muscular-atrophy
   variants:
   - treated-after-symptoms
   effect: small
@@ -81,7 +81,7 @@ recent:
   url: https://www.healthday.com/healthpro-news/neurology/fda-approves-itvisma-for-spinal-muscular-atrophy
 - date: 2026-09
   text: FDA approved apitegromab, the first muscle-targeted SMA therapy, as an add-on to SMN drugs.
-  url: https://en.wikipedia.org/wiki/Apitegromab
+  url: https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-therapy-target-muscle-loss-spinal-muscular-atrophy
 next_milestone: null
 ai:
   impact: low

@@ -61,8 +61,8 @@ pipeline:
 - name: Lanifibranor (Inventiva, pan-PPAR agonist)
   stage: Phase 3
   note: NATiV3 (1,009 patients with F2-F3 MASH) finished its last 72-week visit; topline due Q4 2026,
-    with filing for accelerated approval targeted for H1 2027.
-  url: https://www.marketbeat.com/instant-alerts/transcript-inventiva-q2-earnings-call-highlights-2026-09-28/
+    with a regulatory filing targeted for H1 2027 if results are favorable.
+  url: https://www.sec.gov/Archives/edgar/data/0001756594/000110465926111143/iva-ex99d2.htm
   variants:
   - mash
   expected: 2026-12
@@ -159,7 +159,7 @@ recent:
   url: https://www.ajmc.com/view/fda-approves-semaglutide-for-mash-with-fibrosis
 next_milestone:
   date: 2026-12
-  url: https://www.marketbeat.com/instant-alerts/transcript-inventiva-q2-earnings-call-highlights-2026-09-28/
+  url: https://www.sec.gov/Archives/edgar/data/0001756594/000110465926111143/iva-ex99d2.htm
   what: Topline results of Inventiva's Phase 3 NATiV3 trial of lanifibranor in MASH with F2-F3 fibrosis
     (guided to Q4 2026).
 ai:
