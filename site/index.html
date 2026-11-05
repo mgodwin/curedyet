@@ -200,7 +200,8 @@ a.more{text-decoration:none}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .topnav{display:flex;justify-content:space-between;align-items:center;gap:8px 20px;flex-wrap:wrap;min-height:44px}
 .brand{font-size:17px;color:var(--ink);text-decoration:none}
-.navlinks{display:flex;gap:4px 18px;flex-wrap:wrap;font-size:14px;font-weight:600}
+.themebtn{font:600 13px var(--f-body);min-height:32px;padding:0 10px;border-radius:999px;border:1px solid var(--soft);background:var(--card);color:var(--ink);cursor:pointer}
+.navlinks{display:flex;gap:4px 18px;flex-wrap:wrap;align-items:center;font-size:14px;font-weight:600}
 .navlinks a{color:var(--ink);text-decoration:none;min-height:32px;display:inline-flex;align-items:center}.navlinks a:hover{text-decoration:underline}
 .hero{display:flex;flex-direction:column;gap:14px;align-items:flex-start;padding-top:8px}
 .hero .search{width:100%;max-width:720px}.hero .search input{height:56px;font-size:17px}
@@ -229,7 +230,7 @@ a.more{text-decoration:none}
 .lede{margin:0;font-size:17px;max-width:72ch;text-wrap:pretty}
 .chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:8px;font-size:14px}
 .chips span{background:var(--sunk);border-radius:10px;padding:10px 12px}
-.why{background:var(--heavy-soft);border-radius:12px;padding:12px 14px;font-size:13px}
+.why{background:var(--heavy-soft);border-radius:12px;padding:12px 14px;font-size:13px}.why.light{background:var(--light-soft)}.why.moderate{background:var(--mod-soft)}
 .cat{display:flex;flex-direction:column;gap:6px;padding-top:12px;border-top:1px solid var(--rule);font-size:14px}
 .cat-top{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
 .cat-when{font-size:12px;margin-left:auto}
@@ -260,6 +261,7 @@ a.more{text-decoration:none}
 .placeholder{height:120px;border-radius:12px;background:var(--sunk);display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;font-size:13px;color:var(--muted)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
+<script>try{var t=localStorage.getItem("cw-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
 </head>
 <body>
@@ -346,10 +348,18 @@ function renderCards(){const el=$("cards");if(!el)return;const L=filtered();
   L.forEach(d=>{const i=h.indexOf(Math.min(...h));tmp.innerHTML=cardHTML(d);const c=tmp.firstElementChild;cols[i].append(c);h[i]+=c.offsetHeight});
 }
 function navHTML(){const repo=S.meta?.repo;
-  return `<nav class="topnav" aria-label="Site"><a class="brand display" href="#">Cure Watch</a><div class="navlinks"><a href="#record">This week</a><a href="#pipeline">Pipeline</a><a href="#stats">Stats</a>${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate</a>`:""}</div></nav>`}
+  return `<nav class="topnav" aria-label="Site"><a class="brand display" href="#">Cure Watch</a><div class="navlinks"><a href="#record">This week</a><a href="#pipeline">Pipeline</a><a href="#stats">Stats</a>${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate</a>`:""}${themeBtn()}</div></nav>`}
+/* Theme: follows the device unless the reader picks light or dark; the choice is remembered in this browser. */
+const THEMES=["system","light","dark"],TLABEL={system:"◐ Auto",light:"☀ Light",dark:"☾ Dark"};
+const curTheme=()=>document.documentElement.dataset.theme||"system";
+const themeBtn=()=>`<button class="themebtn" type="button" data-theme-cycle aria-label="Colour theme: ${TLABEL[curTheme()].slice(2)}. Click to change.">${TLABEL[curTheme()]}</button>`;
+function cycleTheme(){const t=THEMES[(THEMES.indexOf(curTheme())+1)%THEMES.length];
+  if(t==="system")delete document.documentElement.dataset.theme;else document.documentElement.dataset.theme=t;
+  try{t==="system"?localStorage.removeItem("cw-theme"):localStorage.setItem("cw-theme",t)}catch(e){}
+  document.querySelectorAll("[data-theme-cycle]").forEach(b=>{b.textContent=TLABEL[t];b.setAttribute("aria-label",`Colour theme: ${TLABEL[t].slice(2)}. Click to change.`)})}
 function home(){
   const m=S.meta||{};const cats=S.cats.slice().sort((a,b)=>(a.order||0)-(b.order||0));
-  return `${navHTML()}
+  return `
   <header class="hero">
     <h1 class="display">Is it cured yet?</h1>
     ${m.updatedAt?`<a class="upd" href="#record">Updated ${fd(m.updatedAt)}: what changed this week →</a>`:""}
@@ -373,7 +383,7 @@ function stats(){
   const rows=[["mild","Cured for most, mild treatment","--v-mild"],["mod","Cured for most, moderate treatment","--v-modf"],["hard","Cured for most, difficult treatment","--v-hard"],["some","Cured for some","--v-hard"],["no","Not curable yet","--v-nof"]];
   const byRung=LEVELS.map((n,i)=>[n,G.filter(l=>l.level===i).length]);
   const T=pipeTotals(),m=S.meta||{};
-  return `${navHTML()}
+  return `
   <header style="display:flex;flex-direction:column;gap:8px"><h1 class="display" style="font-size:clamp(36px,5vw,48px);line-height:1.05">Stats</h1>
     <p class="lede">We track ${S.dz.length} diseases. Diseases with distinct stages or types count each one, so there are ${G.length} patient groups. Each counts once.</p></header>
   <section class="card"><h2 class="ch">Where the ${G.length} patient groups stand</h2>
@@ -488,8 +498,12 @@ function railHTML(d,extra,variant){const t=d.timeline||{};
   const ai=d.aiNote?`<section class="card"><h2 class="ch">Is AI helping?</h2><span>${d.aiImpact?`<b>${esc(d.aiImpact[0].toUpperCase()+d.aiImpact.slice(1))}.</b> `:""}${esc(d.aiNote)}</span>
     ${!variant&&d.medianNormal!=null&&d.medianAccel!=null&&d.medianNormal>d.medianAccel?`<div style="border-top:1px solid var(--rule);padding-top:10px;display:flex;flex-direction:column;gap:2px"><span class="eyebrow">How much faster it could get</span><b class="display" style="font-size:22px">~${d.medianNormal-d.medianAccel} years sooner</b><span class="muted" style="font-size:13px">If AI and faster rules make the drug pipeline much faster, the best guess moves from ~${d.medianNormal} to ~${d.medianAccel}.</span></div>`:""}
     <a href="#pipeline" style="font-size:13px;font-weight:600">How the pipeline could speed up →</a></section>`:"";
-  return `<aside class="drail">${extra||""}<section class="card"><span class="eyebrow">How many people</span>${d.ratio?`<b class="display num" style="font-size:40px;line-height:1">${esc(d.ratio.ratio)}</b><span style="font-weight:600">${safe(d.ratio.ratio_url)?link(d.ratio.ratio_url,d.ratio.ratio_caption):esc(d.ratio.ratio_caption)}</span><span class="muted" style="font-size:13px">${safe(d.burdenUrl)?link(d.burdenUrl,d.burden):esc(d.burden)}</span>`:`<span>${safe(d.burdenUrl)?link(d.burdenUrl,d.burden):esc(d.burden)}</span>`}
+  return `<aside class="drail">${extra||""}<section class="card"><span class="eyebrow">How many people</span>${d.ratio?`<b class="display num" style="font-size:40px;line-height:1">${esc(d.ratio.ratio)}</b><span style="font-weight:600">${esc(d.ratio.ratio_caption)}</span><span class="muted" style="font-size:13px">${esc(d.burden)}</span>`:`<span>${esc(d.burden)}</span>`}${srcLinks([d.ratio?.ratio_url,d.burdenUrl])}
     ${d.nextMilestone?`<div style="border-top:1px solid var(--rule);padding-top:10px;display:flex;flex-direction:column;gap:2px"><span class="eyebrow">Next to watch · ${fd(d.nextMilestone.date)}</span>${link(d.nextMilestone.url,d.nextMilestone.what)}</div>`:""}</section>${ai}</aside>`}
+/* Figures read as plain text; their sources sit underneath as short links named by site. */
+const host=u=>{try{return new URL(u).hostname.replace(/^www\./,"")}catch(e){return "source"}};
+function srcLinks(urls){const U=[...new Set((urls||[]).filter(safe))];
+  return U.length?`<span class="muted" style="font-size:12px">Source${U.length>1?"s":""}: ${U.map(u=>link(u,host(u))).join(", ")}</span>`:""}
 function sourcesHTML(list){return list&&list.length?`<section class="srcs"><h2 style="font-size:15px">Sources</h2><ol>${list.map(s=>`<li>${link(s.url,s.title)}</li>`).join("")}</ol></section>`:""}
 function footerHTML(){const repo=S.meta?.repo;
   return `<footer class="dfoot"><div style="display:flex;flex-direction:column;gap:4px;max-width:640px"><b style="font-size:16px">See a problem? Help fix it.</b><span class="muted">Every number on this page lives in an open repo. If something is wrong, out of date or missing a source, open a pull request or an issue on GitHub.</span></div>
@@ -529,7 +543,7 @@ function singlePage(d){const t=d.timeline||{},L=lv(d),col=vcolor(L,d.txBurden);
     <section class="card"><span class="eyebrow">Where it stands</span><span class="display" style="font-size:30px;line-height:1">${esc(LEVELS[L])}</span>${ladderHTML(L,d.txBurden)}${d.levelWhy?`<span style="font-size:14px">${esc(d.levelWhy)}</span>`:""}</section>
     <section class="card"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><h2 class="ch" style="font-size:22px">Treatment today</h2>${burdenTip(d.txBurden,d.id)}</div>
       ${d.status?`<p style="margin:0">${esc(d.status)}</p>`:""}${(d.bestTherapies||[]).length?`<div class="chips">${d.bestTherapies.map(b=>`<span>${esc(b)}</span>`).join("")}</div>`:""}
-      ${d.txBurdenNote?`<div class="why"><b>Why it's rated ${esc(bword(d.txBurden))}:</b> ${esc(d.txBurdenNote)}</div>`:""}</section>
+      ${d.txBurdenNote?`<div class="why ${esc(d.txBurden||"")}"><b>Why it's rated ${esc(bword(d.txBurden))}:</b> ${esc(d.txBurdenNote)}</div>`:""}</section>
     ${forecastHTML({head:d.id==="aging"?"When could most people halt or reverse aging?":"When will most patients be curable?",level:L,burden:d.txBurden,f:t,note:d.outlook,reached:L>=4?t.median:null,reachedEasy:d.reachedEasy,easy:d.easy,trend:trendHTML(d),method:methodHTML(d)})}
     ${catalystsHTML(d.pipeline)}${logHTML(logRows)}${sourcesHTML(d.sources)}
   </main>${railHTML(d)}</div>${footerHTML()}`}
@@ -564,7 +578,7 @@ function variantPage(d,g){const gl=g.level|0,col=vcolor(gl,g.burden),f=g.forecas
     <section class="card"><span class="eyebrow">Where it stands</span><span class="display" style="font-size:30px;line-height:1">${esc(LEVELS[gl])}</span>${ladderHTML(gl,g.burden)}
       ${g.survival?`<span style="font-size:14px"><b>Prognosis:</b> ${esc(g.survival)}</span>`:""}</section>
     <section class="card"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><h2 class="ch" style="font-size:22px">Treatment today</h2>${burdenTip(g.burden,g.id)}</div>
-      <p style="margin:0">${esc(g.note)}</p>${g.burden_why?`<div class="why"><b>Why it's rated ${esc(bword(g.burden))}:</b> ${esc(g.burden_why)}</div>`:""}${g.caveat?`<span class="muted" style="font-size:12px">${esc(g.caveat)}</span>`:""}</section>
+      <p style="margin:0">${esc(g.note)}</p>${g.burden_why?`<div class="why ${esc(g.burden||"")}"><b>Why it's rated ${esc(bword(g.burden))}:</b> ${esc(g.burden_why)}</div>`:""}${g.caveat?`<span class="muted" style="font-size:12px">${esc(g.caveat)}</span>`:""}</section>
     ${forecastHTML({head:`When will most people with ${g.name.replace(/^Stage /,"stage ")} be curable?`,level:gl,burden:g.burden,f,note:f.note,reached:g.reached?.year,reachedEasy:g.reached_easy?.year,easy:g.easy,
       trend:`<div class="placeholder">Years-until-cure history for ${esc(g.name)} starts with the next weekly update.</div>`})}
     ${catalystsHTML(g.catalysts,g.name)}${logHTML(logRows)}
@@ -653,7 +667,7 @@ let lastView="";
 function render(){const app=$("app"),r=route(),key=r.v+(r.id||"")+"/"+(r.vid||"");
   if(!S.ready&&!S.dz.length){app.innerHTML=`<div class="empty">${esc(S.err||"Loading the tracker…")}</div>`;return}
   const focusQ=document.activeElement&&document.activeElement.id==="q",selStart=focusQ?document.activeElement.selectionStart:0;
-  app.innerHTML=r.v==="detail"?detail(r.id,r.vid):r.v==="pipeline"?pipeline():r.v==="record"?record():r.v==="stats"?stats():home();
+  app.innerHTML=navHTML()+(r.v==="detail"?detail(r.id,r.vid):r.v==="pipeline"?pipeline():r.v==="record"?record():r.v==="stats"?stats():home());
   if(r.v==="home"){const s=$("sort");if(s)s.value=sort;renderCards();if(focusQ){const i=$("q");if(i){i.focus();try{i.setSelectionRange(selStart,selStart)}catch(e){}}}}
   if(r.v==="detail")drawTrend();
   if(key!==lastView){if(lastView)window.scrollTo(0,0);lastView=key}
@@ -662,7 +676,7 @@ function render(){const app=$("app"),r=route(),key=r.v+(r.id||"")+"/"+(r.vid||""
 window.addEventListener("hashchange",render);
 document.addEventListener("input",e=>{if(e.target.id==="q"){q=e.target.value;renderCards()}});
 document.addEventListener("change",e=>{if(e.target.id==="sort"){sort=e.target.value;try{localStorage.setItem("cw2-sort",sort)}catch(_){}renderCards()}});
-document.addEventListener("click",e=>{const c=e.target.closest("[data-c]");if(c){catF=c.dataset.c;render()}});
+document.addEventListener("click",e=>{if(e.target.closest("[data-theme-cycle]")){cycleTheme();return}const c=e.target.closest("[data-c]");if(c){catF=c.dataset.c;render()}});
 /* Re-pack the masonry when the column count changes. */
 let rsz2;window.addEventListener("resize",()=>{clearTimeout(rsz2);rsz2=setTimeout(()=>{const el=$("cards");if(el&&ncols(el)!==masonCols)renderCards()},120)});
 
