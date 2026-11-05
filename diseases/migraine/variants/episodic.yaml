@@ -1,0 +1,30 @@
+# Cure Watch variant record: one stage or type of Migraine. Field guide: CONTRIBUTING.md.
+id: episodic
+name: Episodic migraine
+order: 1
+what: Migraine with headache on fewer than 15 days a month, the form most people with migraine have.
+level: 2
+burden: moderate
+burden_why: Attack pills as needed, and for frequent attacks a monthly injection or daily pill indefinitely;
+  CGRP drugs are costly and older preventives often cause side effects.
+survival: ~43-50% had monthly migraine days at least halved on erenumab vs 27% on placebo (STRIVE trial)
+share: Most people with migraine; chronic migraine affects about 1.4-2.2% of people, roughly a tenth to
+  a seventh of those with migraine
+share_url: https://pubmed.ncbi.nlm.nih.gov/19614702/
+treatment: Triptans, gepants or ditans taken at the start of an attack stop many attacks, and people with
+  frequent attacks can add a preventive such as a CGRP antibody, atogepant or an older pill. Most people
+  get fewer and milder attacks, but few become migraine-free, and stopping treatment usually lets attacks
+  return.
+caveat: Rated 2 because many people live near-normal lives with as-needed and preventive treatment, but
+  responses vary widely and some people with frequent episodic migraine are only partly helped. Migraine
+  often eases with age, which is the natural course, not a treatment cure.
+url: https://pubmed.ncbi.nlm.nih.gov/29171821/
+forecast:
+  median: 2065
+  low: 2045
+  high: 2100
+  p2035: 2
+  p2045: 8
+  note: Cure for most would need a treatment that removes the brain's tendency to migraine so people
+    can stop medicines without attacks returning; every current and late-stage drug blocks attacks or
+    their signalling instead.

@@ -1,0 +1,202 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: covid-19
+name: COVID-19
+category: infectious
+tracking: active
+summary: A contagious respiratory infection caused by the SARS-CoV-2 coronavirus that usually clears
+  within days to weeks but can cause pneumonia and death, mostly in older adults and people with weakened
+  immune systems, and in some people leaves symptoms lasting months or years (long COVID).
+toll:
+  text: WHO counts about 7.0 million reported COVID-19 deaths since 2020 but estimates 22.1 million excess
+    deaths from the pandemic in 2020-2023; reporting has since thinned, with 6,914 deaths reported from
+    only 27 countries in the first half of 2026, while CDC estimates 45,000-64,000 US deaths and 390,000-550,000
+    hospital stays in the 2024-25 season alone.
+  url: https://www.who.int/news/item/13-05-2026-global-health-gains-face-threat-of-reversal
+  ratio: "About 1 in 17"
+  ratio_caption: "people who get COVID-19 develop long COVID, according to WHO"
+  ratio_url: https://www.who.int/news-room/fact-sheets/detail/post-covid-19-condition-(long-covid)
+  ratio_basis: "Derived: WHO says about 6 in 100 people with COVID-19 develop post COVID-19 condition; 6% is about 1 in 17. WHO notes the chance may have fallen recently."
+status:
+  level: 1
+  why: Antiviral pills shorten COVID-19 and once prevented most hospital stays in unvaccinated people
+    at high risk, but most people now recover on their own, recent trials in vaccinated adults found no
+    clear drop in hospital stays, and nothing proven treats long COVID.
+  today: For acute COVID-19, five days of nirmatrelvir-ritonavir (Paxlovid), three days of IV remdesivir
+    or, less effectively, molnupiravir are given to people at high risk, and dexamethasone and immune-calming
+    drugs cut deaths in people sick enough to need oxygen. Long COVID, which affects some people for months
+    or years after infection, has no proven treatment; care focuses on symptoms, pacing and rehabilitation
+    while trials test antivirals, immune drugs and other approaches.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Nirmatrelvir-ritonavir (Paxlovid), five days of pills
+  - Remdesivir (Veklury), three days of IV infusions as an outpatient
+  - Molnupiravir (Lagevrio), five days of pills, where others can't be used
+  - Dexamethasone, plus tocilizumab or baricitinib, for severe disease
+  - Symptom care, pacing and rehabilitation for long COVID
+  burden: light
+  burden_note: Most people need only rest and fever relief, and antivirals are a short course, though
+    Paxlovid interacts with many common drugs and remdesivir means three clinic visits; severe disease
+    needs hospital care, and long COVID can mean months of symptom management.
+forecast:
+  bottleneck: trial-limited
+  normal:
+    p2035: 5
+    p2045: 18
+    median: 2052
+    low: 2035
+    high: 2100
+  faster:
+    p2035: 8
+    p2045: 30
+    median: 2045
+    low: 2032
+    high: 2090
+  faster_note: New protease inhibitors and antibodies can already be designed quickly, so a faster pipeline
+    would help mostly through quicker, larger trials in people at high risk and in long COVID, where the
+    biology is still unclear.
+  outlook: Level 4 is read here, as for flu, as an early treatment that prevents most hospital stays and
+    deaths in people at high risk and clears the infection quickly. Paxlovid did this in unvaccinated people
+    in 2021, but with today's widespread immunity the PANORAMIC and CanTreatCOVID trials found faster recovery
+    and no clear drop in hospital stays, so newer drugs such as ibuzatrelvir will struggle to show more.
+    Long COVID, with no proven treatment and several failed trials, holds the disease back further.
+pipeline:
+- name: Ibuzatrelvir (Pfizer, second-generation oral protease inhibitor)
+  stage: Phase 3
+  note: A Paxlovid-like pill that does not need ritonavir, so it avoids many drug interactions; a 2,330-person
+    placebo-controlled trial in people at high risk (primary completion October 2027) and a 300-person
+    trial in severely immunocompromised adults (September 2027) are recruiting.
+  url: https://clinicaltrials.gov/study/NCT06679140
+  variants:
+  - acute
+  expected: '2027-10'
+  effect: small
+  effect_note: A win would give an easier antiviral with fewer interactions, but in mostly immune people
+    it is unlikely to cut hospital stays much more than Paxlovid does.
+- name: Pemivibart (Pemgarda, Invivyd, preventive antibody for immunocompromised people)
+  stage: Authorized (US emergency use)
+  note: An antibody infusion every three months for people 12 and older with moderate to severe immune
+    compromise, authorized in March 2024; in July 2026 FDA gave notice that the emergency authorization
+    will end on 29 June 2027, and Invivyd says it has no FDA guidance yet on a full licence.
+  url: https://www.biospace.com/press-releases/invivyd-announces-receipt-of-twelve-months-advanced-notice-of-emergency-use-authorization-eua-termination-for-pemgarda-and-provides-an-update-on-next-steps-with-the-u-s-fda
+  variants:
+  - acute
+  expected: '2027-06-29'
+  effect: small
+  effect_note: Losing the authorization without a licence would remove the only antibody protection
+    for US people whose immune systems don't respond to vaccines.
+- name: Vaxart oral tablet COVID-19 vaccine (Project NextGen)
+  stage: Phase 2b
+  note: A pill vaccine meant to build immunity in the nose and airways as well as the blood, compared head
+    to head with an mRNA vaccine in about 5,400 people; a 400-person safety cohort showed no serious vaccine-related
+    events, and efficacy results are due in the first half of 2027 (company-reported).
+  url: https://www.sec.gov/Archives/edgar/data/0000072444/000143774926026280/ex_1000406.htm
+  variants:
+  - acute
+  expected: '2027-06'
+  effect: small
+  effect_note: Better protection against infection and spread would lift prevention, but would not change
+    how COVID-19 is treated once someone is ill.
+- name: Ensitrelvir (Xocova, Shionogi) for prevention after exposure
+  stage: Approved 2026 (US, post-exposure)
+  note: Five days of pills started within 72 hours of household exposure cut symptomatic COVID-19 by 67%
+    in the SCORPIO-PEP trial; FDA approved it for prevention in people 12 and older in mid-2026, though
+    not for treatment in the US.
+  url: https://www.contagionlive.com/view/fda-approves-ensitrelvir-as-first-oral-post-exposure-prevention-option-for-covid-19
+  variants:
+  - acute
+  effect: small
+  effect_note: Adds the first pill to prevent COVID-19 after exposure, a prevention gain rather than a
+    better treatment.
+- name: Baricitinib for long COVID (REVERSE-LC, NIH RECOVER-TLC)
+  stage: Phase 3
+  note: Tests whether this anti-inflammatory pill improves brain fog, heart and lung symptoms in 550 adults
+    with long COVID; 279 were enrolled by July 2026 and the registry lists completion in July 2027.
+  url: https://clinicaltrials.gov/study/NCT06631287
+  variants:
+  - long-covid
+  expected: '2027'
+  effect: some
+  effect_note: It would be the first drug shown to treat long COVID in a large trial, though it would
+    likely ease symptoms for a subset rather than cure most people.
+- name: Low-dose naltrexone, semaglutide and stellate ganglion block for long COVID (RECOVER-TLC)
+  stage: Phase 2
+  note: Three more NIH trials (Brave-LC, Tame-LC and Block-LC) finished protocol work in 2026 and were
+    expected to start enrolling late in 2026, so no results are likely before 2028.
+  url: https://recovercovid.org/news/recover-mid-year-2026-progress-and-whats-ahead
+  variants:
+  - long-covid
+  effect: small
+  effect_note: Each targets one proposed cause or symptom cluster, so a win would most likely help some
+    people rather than most.
+recent:
+- date: 2026-08
+  text: FDA approved four updated XFG-strain COVID-19 vaccines for 2026-27, again only for adults 65 and
+    older and younger people with a high-risk condition.
+  url: https://www.aarp.org/health/conditions-treatments/fda-approves-newest-covid-vaccines/
+- date: 2026-08
+  text: The RECOVER-VITAL trial in 959 adults found that 15 or 25 days of Paxlovid did not improve long
+    COVID symptoms.
+  url: https://recovercovid.org/news/recover-vital-clinical-trial-finds-no-benefit-extended-duration-paxlovid-long-covid
+- date: 2026-07
+  text: FDA gave notice that emergency use of the preventive antibody pemivibart for immunocompromised
+    people ends on 29 June 2027.
+  url: https://www.biospace.com/press-releases/invivyd-announces-receipt-of-twelve-months-advanced-notice-of-emergency-use-authorization-eua-termination-for-pemgarda-and-provides-an-update-on-next-steps-with-the-u-s-fda
+- date: 2026-06
+  text: FDA approved ensitrelvir as the first pill to prevent COVID-19 after exposure.
+  url: https://www.contagionlive.com/view/fda-approves-ensitrelvir-as-first-oral-post-exposure-prevention-option-for-covid-19
+- date: 2026-06
+  text: A CDC-funded study found the 2025-26 vaccine cut COVID-19 hospital stays by about 55% in adults
+    in the first weeks after the shot; CDC had declined to publish it in MMWR.
+  url: https://www.pharmacytimes.com/view/updated-2025-2026-covid-19-vaccine-nearly-halved-ed-visits-hospitalizations-in-cdc-funded-study
+- date: 2026-05
+  text: The PANORAMIC and CanTreatCOVID trials in over 4,000 mostly vaccinated adults found Paxlovid sped
+    recovery but did not significantly cut hospital stays or deaths.
+  url: https://www.healio.com/news/infectious-disease/20260622/trials-demonstrate-paxlovids-evolving-role-against-covid19
+- date: 2026-03
+  text: In the RECOVER-AUTONOMIC trial, ivabradine lowered heart rate but did not improve symptoms in 181
+    people with POTS after COVID-19.
+  url: https://www.pharmacytimes.com/view/heart-rate-vs-quality-of-life-new-data-challenge-the-standard-approach-to-long-covid-pots
+next_milestone:
+  date: '2027-06'
+  url: https://www.sec.gov/Archives/edgar/data/0000072444/000143774926026280/ex_1000406.htm
+  what: Efficacy results from Vaxart's roughly 5,000-person Phase 2b comparing its oral tablet vaccine
+    with an mRNA vaccine (company guidance, first half of 2027).
+ai:
+  impact: low
+  note: The leading new drugs are protease inhibitors from structure-based chemistry and antibodies from
+    established platforms, with no clear AI-discovery role in a late-stage COVID-19 or long COVID treatment
+    yet.
+markets: []
+prevention:
+  level: 1
+  burden: moderate
+  why: Updated vaccines cut COVID-19 hospital stays by about 45-55% in the first months after the shot,
+    but protection wanes to about 35% over a season, so the typical year falls short of the 50% line.
+  burden_why: A yearly shot with mostly mild side effects such as a sore arm and tiredness, but protection
+    fades within months, new strains need updated vaccines, and in the US approval is limited to people
+    65 and older or with a high-risk condition, which can make it harder to get.
+  best:
+  - Updated yearly COVID-19 vaccine (mRNA or protein), especially for adults 65 and older
+  - Pemivibart (Pemgarda) antibody every three months for people with moderate to severe immune compromise
+  - Ensitrelvir pills within 72 hours of a household exposure
+  url: https://www.pharmacytimes.com/view/updated-2025-2026-covid-19-vaccine-nearly-halved-ed-visits-hospitalizations-in-cdc-funded-study
+  forecast:
+    median: 2048
+    low: 2031
+    high: 2100
+    p2035: 15
+    p2045: 40
+    note: 'Strong protection is read as about 85% fewer COVID-19 hospital stays across a whole season.
+      The first vaccines came close against the original virus in 2020-21, but variants and waning cut
+      that to about half; vaccines given through the nose or mouth, and broader vaccines across coronavirus
+      strains, are the routes to rung 3, and none has shown it in a large trial yet. Base rate: no vaccine
+      for a fast-changing respiratory virus (flu included) has kept 85% protection year after year.'
+  easy:
+    median: 2055
+    low: 2035
+    high: 2100
+    p2035: 6
+    p2045: 25
+    note: Mild prevention would also need protection that lasts more than a season without yearly shots,
+      and broad, cheap access rather than eligibility limited to older and high-risk people.

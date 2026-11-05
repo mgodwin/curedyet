@@ -1,0 +1,28 @@
+# Cure Watch variant record: one stage or type of Low back pain. Field guide: CONTRIBUTING.md.
+id: chronic
+name: Chronic low back pain
+order: 2
+what: Non-specific low back pain lasting more than about three months.
+level: 1
+burden: moderate
+burden_why: Weeks to months of exercise or psychological therapy that many people cannot easily get,
+  and medicines with stomach, kidney or dependence risks.
+survival: Average pain in persistent back pain falls only from about 51 to 23 out of 100 over a year
+  (pooled cohorts)
+treatment: Exercise therapy and psychological approaches such as cognitive functional therapy give modest
+  to moderate average gains. Opioids did no better than non-opioid medicines over a year in the SPACE
+  trial, and WHO advises against them and many other treatments for routine care; injections and spinal
+  surgery have limited evidence for non-specific pain.
+caveat: Pain reprocessing therapy left 66% pain-free or nearly so in one trial, which would be a real
+  cure for some if it replicates; until then it stays at 1. Surgery can help specific problems such as
+  nerve compression from a slipped disc, which is a different condition.
+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3414626/
+forecast:
+  median: 2062
+  low: 2040
+  high: 2100
+  p2035: 3
+  p2045: 12
+  note: The likeliest route is brain-based therapies (pain reprocessing, cognitive functional therapy)
+    proving durable in larger trials and becoming widely available, rather than a new drug; a non-addictive
+    painkiller that works in chronic back pain has so far eluded drug developers.

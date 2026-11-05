@@ -1,0 +1,123 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: anxiety-disorders
+name: Anxiety disorders
+category: mental
+tracking: active
+summary: A group of conditions, including generalized anxiety, panic disorder, social anxiety and phobias,
+  in which fear or worry is intense and lasting enough to disrupt daily life.
+toll:
+  text: About 470 million people worldwide had an anxiety disorder in 2023, the most common mental disorders
+    (WHO).
+  url: https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders
+  ratio: "Nearly 1 in 3"
+  ratio_caption: "US adults will have an anxiety disorder at some point in their lives"
+  ratio_url: https://www.nimh.nih.gov/health/statistics/any-anxiety-disorder
+  ratio_basis: "NIMH, from the National Comorbidity Survey Replication (2001-2003): lifetime prevalence of any anxiety disorder among US adults is 31.1%, nearly 1 in 3."
+status:
+  level: 2
+  why: About half of people who complete CBT reach remission and many stay well, but the rest improve only
+    partly, symptoms often return, and specific phobia is the main exception that responds very well.
+  today: Cognitive behavioral therapy, including exposure therapy, and SSRI or SNRI antidepressants help
+    most people who get them; about half of CBT patients reach remission, and a single session of exposure
+    often resolves a specific phobia. People who stop antidepressants after responding relapse about twice
+    as often as those who keep taking them. Worldwide only about 1 in 4 people who need treatment get any.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Cognitive behavioral therapy (CBT)
+  - Exposure therapy (including one-session treatment for phobias)
+  - SSRIs and SNRIs (e.g. sertraline, escitalopram, venlafaxine)
+  - Digital CBT programs
+  burden: moderate
+  burden_note: CBT usually means about 12 to 15 weekly sessions for generalized anxiety (7 to 14 hours
+    for panic) and can be hard to find or afford, while
+    antidepressants are taken for months to years with side effects such as nausea, sexual problems and
+    discontinuation symptoms; benzodiazepines work fast but carry dependence risk.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 3
+    p2045: 12
+    median: 2058
+    low: 2040
+    high: 2100
+  faster:
+    p2035: 6
+    p2045: 28
+    median: 2048
+    low: 2036
+    high: 2095
+  faster_note: Better understanding of fear circuits and who responds to which treatment would matter
+    most, along with AI-delivered therapy that could reach far more people; most of the lift lands after
+    2035 because new treatments still need long trials with follow-up.
+  outlook: Single-dose psychedelic treatment (DT120) produced large short-term gains in two Phase 3 trials
+    and could be filed in 2027, but how long its benefit lasts is not yet known. CBT already brings lasting
+    remission for about half of patients, so reaching 85% needs treatments that work for the other half
+    and stay effective, plus far wider access. Cured for most looks decades away for generalized, panic
+    and social anxiety, sooner for specific phobia.
+pipeline:
+- name: DT120 (lysergide ODT, Definium Therapeutics, formerly MindMed MM120)
+  stage: Phase 3
+  note: A single dose beat placebo by about 5 points on the HAM-A anxiety scale at week 12 in both Voyage
+    (Aug 2026) and Panorama (Sep 2026) for generalized anxiety; an NDA is planned for the first half of
+    2027.
+  url: https://ir.definiumtx.com/news-events/press-releases/detail/243/definium-therapeutics-announces-positive-topline-results-from-phase-3-voyage-study-of-dt120-odt-in-generalized-anxiety-disorder
+  variants:
+  - gad-panic-social
+  expected: '2028'
+  effect: some
+  effect_note: Approval (estimated from a 2027 filing; no decision date set) would add a one-session
+    treatment with large short-term effects, and would move the estimate more if extension data show
+    the benefit lasts for months.
+- name: Fasedienol (Vistagen, nasal spray for social anxiety)
+  stage: Phase 3
+  note: Missed its main goal in PALISADE-3 (Dec 2025) and PALISADE-4 (Jun 2026) public-speaking trials;
+    Vistagen is discussing a further multi-dose Phase 3 with the FDA.
+  url: https://www.psychiatrictimes.com/view/fasedienol-for-social-anxiety-disorder-does-not-demonstrate-significant-improvement-in-phase-3-study
+  variants:
+  - gad-panic-social
+  effect: small
+  effect_note: An as-needed spray would ease social anxiety before stressful situations, not cure it, and
+    two failed trials make approval uncertain.
+- name: DaylightRx (Big Health, digital CBT app)
+  stage: Approved
+  note: FDA-cleared in Sept 2024 as the first digital treatment for generalized anxiety, a 90-day prescription
+    CBT program used alongside usual care.
+  url: https://www.bighealth.com/news/us-fda-grants-clearance-for-daylightrx
+  variants:
+  - gad-panic-social
+  effect: small
+  effect_note: Widens access to CBT, the treatment with the most lasting benefit, without changing what
+    CBT can achieve.
+- name: Therabot (Dartmouth, generative AI therapy chatbot)
+  stage: Phase 2
+  note: In a 210-person randomized trial, four weeks of chatbot use cut anxiety symptoms more than a waitlist;
+    larger trials are needed before wider use.
+  url: https://tto.dartmouth.edu/news/2025/03/first-therapy-chatbot-trial-yields-mental-health-benefits
+  variants:
+  - gad-panic-social
+  effect: some
+  effect_note: Safe and effective AI-delivered therapy could reach the roughly three in four people worldwide
+    who now get no treatment.
+recent:
+- date: '2026-09'
+  text: DT120 met its primary endpoint in a second Phase 3 trial (Panorama) in generalized anxiety; Definium
+    plans to file in the first half of 2027.
+  url: https://www.pharmaceutical-technology.com/news/definium-dt120-psychedelic-gad-anxiety-phase-iii/
+- date: '2026-08'
+  text: A single dose of DT120 beat placebo at 12 weeks in the Phase 3 Voyage trial in generalized anxiety
+    (5.4-point HAM-A difference).
+  url: https://ir.definiumtx.com/news-events/press-releases/detail/243/definium-therapeutics-announces-positive-topline-results-from-phase-3-voyage-study-of-dt120-odt-in-generalized-anxiety-disorder
+- date: '2026-06'
+  text: Fasedienol missed its main goal in a second Phase 3 trial for social anxiety (PALISADE-4).
+  url: https://finance.yahoo.com/healthcare/articles/vistagen-announces-topline-post-hoc-120000253.html
+next_milestone:
+  date: '2027-06'
+  what: Definium plans to submit the DT120 NDA for generalized anxiety in the first half of 2027, after
+    a pre-NDA meeting with the FDA in late 2026.
+  url: https://www.pharmaceutical-technology.com/news/definium-dt120-psychedelic-gad-anxiety-phase-iii/
+ai:
+  impact: some
+  note: AI is not behind the leading drug candidates, but a randomized trial of the Therabot chatbot cut
+    anxiety symptoms, hinting that AI-delivered therapy could ease the access gap.
+markets: []

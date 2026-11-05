@@ -1,0 +1,106 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: migraine
+name: Migraine
+category: neuro
+tracking: active
+summary: A brain disorder that causes repeated attacks of moderate to severe headache, often with nausea,
+  sensitivity to light and sound, and sometimes aura.
+toll:
+  text: About 1.2 billion people worldwide had migraine in 2021 (GBD 2021); WHO ranks migraine among
+    the top three causes of disability-adjusted life years worldwide.
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12629824/
+  ratio: "About 1 in 7"
+  ratio_caption: "people worldwide has migraine"
+  ratio_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12629824/
+  ratio_basis: "GBD 2021 Headache Collaborators, Cell Reports Medicine 2025: global age-standardised migraine prevalence of 14,246.6 per 100,000 in 2021 (about 14.2%), which is about 1 in 7."
+status:
+  level: 2
+  why: Attack medicines and preventive treatments give many people big reductions in migraine days and
+    a near-normal life, but few become migraine-free and nothing cures it.
+  today: Triptans, gepants and ditans can stop many attacks, and preventives (CGRP antibodies, gepants,
+    Botox for chronic migraine and older pills such as topiramate and propranolol) halve monthly migraine
+    days for roughly 40 to 50% of people in trials. Most people who respond still have some attacks, and
+    complete freedom from migraine on treatment is uncommon. Many people are never diagnosed, and in many
+    countries even basic drugs such as sumatriptan are unavailable.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Triptans (e.g. sumatriptan)
+  - Gepants (rimegepant, ubrogepant, atogepant)
+  - CGRP antibodies (erenumab, fremanezumab, galcanezumab, eptinezumab)
+  - OnabotulinumtoxinA (Botox) for chronic migraine
+  - Older preventives (topiramate, propranolol, amitriptyline, candesartan)
+  burden: moderate
+  burden_note: Attack medicines are taken as needed, but frequent migraine means indefinite preventive
+    injections or daily pills; older preventives often cause side effects, and CGRP drugs are expensive
+    and often restricted by insurers.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 2
+    p2045: 8
+    median: 2065
+    low: 2045
+    high: 2100
+  faster:
+    p2035: 4
+    p2045: 18
+    median: 2055
+    low: 2040
+    high: 2100
+  faster_note: Faster understanding of why the migraine brain is prone to attacks, and of new targets
+    beyond CGRP such as PACAP, would matter most; better control is likely sooner, a cure mostly after
+    2035.
+  outlook: Migraine is a lifelong tendency of the brain rather than damage that can be repaired, and
+    every current drug treats or prevents attacks without removing that tendency. New mechanisms such
+    as PACAP antibodies may help people who do not respond to CGRP drugs, but a treatment that leaves
+    most people durably migraine-free without ongoing medicine is not in sight. Control will keep
+    improving; cure for most is decades off.
+pipeline:
+- name: Bocunebart (Lu AG09222, Lundbeck, anti-PACAP antibody)
+  stage: Phase 2
+  note: Phase 2b PROCEED met its primary endpoint in people with 1 to 4 prior preventive failures, with
+    the clearest effect in chronic migraine; Lundbeck expects to start Phase 3 by the end of 2026.
+  url: https://www.lundbeck.com/content/dam/lundbeck-com/masters/global-site/global-site/investors/2026/q2/Q2%202026%20Company%20Announcement.pdf
+  variants:
+  - episodic
+  - chronic
+  expected: '2026-12'
+  effect: small
+  effect_note: Starting Phase 3 would put the first new preventive mechanism since CGRP on track for
+    approval around the end of the decade; in Phase 2 the main IV arm cut about 1.4 more migraine days
+    a month than placebo (4.2 vs 2.9), control rather than cure.
+- name: Elismetrep (K-304, TriGemX Bio, formerly Kallyope; TRPM8 blocker)
+  stage: Phase 3
+  note: Oral pill for treating attacks; positive Phase 2b, and Phase 3 trials started in 2026 with first
+    results expected mid-2027.
+  url: https://pulse2.com/trigemx-bio-raises-94-million-to-advance-phase-3-migraine-program/
+  variants:
+  - episodic
+  - chronic
+  expected: '2027-07'
+  effect: small
+  effect_note: If positive, it adds a new type of attack medicine, useful for people who cannot take or
+    do not respond to triptans and gepants, but it does not prevent migraine.
+recent:
+- date: 2026-10
+  text: TriGemX Bio (formerly Kallyope) started Phase 3 trials of elismetrep, a TRPM8 channel blocker for
+    acute migraine.
+  url: https://clinicaltrials.gov/study/NCT07816367
+- date: 2026-06
+  text: Lundbeck presented full Phase 2b PROCEED data for anti-PACAP antibody bocunebart, with the strongest
+    effect in chronic migraine.
+  url: https://www.lundbeck.com/content/dam/lundbeck-com/masters/global-site/global-site/investors/2026/q2/Q2%202026%20Company%20Announcement.pdf
+- date: 2026-02
+  text: Bocunebart met its primary endpoint in the Phase 2b PROCEED migraine prevention trial.
+  url: https://pharmaphorum.com/news/lundbeck-preps-phase-3-migraine-prevention-drug
+next_milestone:
+  date: '2026-12'
+  url: https://www.lundbeck.com/content/dam/lundbeck-com/masters/global-site/global-site/investors/2026/q2/Q2%202026%20Company%20Announcement.pdf
+  what: Lundbeck's guided start of Phase 3 trials of bocunebart, the first anti-PACAP antibody to reach
+    late-stage testing, by the end of 2026.
+ai:
+  impact: low
+  note: AI is used in headache-diary apps and trial analysis, but the leading new migraine drugs were not
+    AI-discovered.
+markets: []

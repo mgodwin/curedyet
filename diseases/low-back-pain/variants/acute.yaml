@@ -1,0 +1,28 @@
+# Cure Watch variant record: one stage or type of Low back pain. Field guide: CONTRIBUTING.md.
+id: acute
+name: Acute low back pain
+order: 1
+what: A new episode of non-specific low back pain lasting less than about six weeks.
+level: 3
+burden: light
+burden_why: Usually advice to stay active, heat and short-term anti-inflammatory pills; opioids gave
+  no clear benefit over placebo in a large trial.
+survival: Average pain falls from about 52 to 23 out of 100 by 6 weeks and to about 6 by a year (pooled
+  cohorts)
+treatment: Most episodes ease a lot within six weeks with simple care such as staying active, heat and
+  anti-inflammatory pills; imaging, bed rest and opioids are not advised for most people. Much of the
+  recovery is the natural course rather than the effect of treatment.
+caveat: Rated 3 rather than 4 because recurrences are common and some people keep low-level pain or go
+  on to chronic pain, so fewer than about 85% are durably free of it. Back pain with warning signs (such
+  as fever, weight loss, cancer history, major trauma or numbness in the groin) can have a specific cause
+  and is not covered.
+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3414626/
+forecast:
+  median: 2050
+  low: 2035
+  high: 2100
+  p2035: 8
+  p2045: 28
+  note: Most episodes already settle, so the gap is recurrence and the slide into chronic pain. Prevention
+    programmes such as WalkBack's walking and education plan and better ways to spot people at risk of
+    chronic pain could close it, but they reach few people today.

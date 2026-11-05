@@ -1,0 +1,32 @@
+# Cure Watch variant record: one stage or type of Thalassemia. Field guide: CONTRIBUTING.md.
+id: transfusion-dependent
+name: Transfusion-dependent thalassemia
+order: 1
+what: Severe thalassemia, mostly beta-thalassemia major, in which the body makes so little working hemoglobin
+  that regular blood transfusions are needed from early childhood to survive.
+level: 3
+burden: heavy
+burden_why: Lifelong transfusions every few weeks with daily iron chelation, or a one-time cure that needs
+  myeloablative chemotherapy and costs millions.
+survival: 91% transfusion independent for 12+ months after Casgevy (32 of 35 evaluable, CLIMB THAL-111);
+  ~84-93% alive at 30 years on transfusions and chelation (Italy)
+treatment: Most people receive red cell transfusions every 3-4 weeks for life with daily chelation drugs
+  to remove the iron they build up, and luspatercept or mitapivat can trim transfusion needs for some.
+  A matched sibling transplant (about 83% thalassemia-free) or gene therapy with Casgevy or Zynteglo
+  ends transfusions for most who get them, but needs busulfan chemotherapy with infertility and organ
+  risks and costs $2.2-2.8M in the US.
+caveat: Level 3 follows the rule that an approved cure only some patients can get stays at 3; few people
+  have had gene therapy, and Zynteglo was withdrawn from Europe in 2021 over pricing. Gene therapy follow-up
+  is mostly under 6 years. The 30-year survival figures are from Italian patients born 1970-1997 (Forni
+  et al. 2023); heart damage from iron overload remains the main cause of death. In much of South Asia
+  and the Middle East, safe blood, chelation and transplant are hard to get.
+url: https://pubmed.ncbi.nlm.nih.gov/38657265/
+forecast:
+  median: 2043
+  low: 2033
+  high: 2068
+  p2035: 15
+  p2045: 55
+  note: The cure exists but is hard to deliver; antibody-based conditioning that avoids busulfan, in vivo
+    editing that needs no cell manufacturing, and lower prices would be needed for most patients to be
+    treated, and those are still early.

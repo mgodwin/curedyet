@@ -1,0 +1,29 @@
+# Cure Watch variant record: one stage or type of Migraine. Field guide: CONTRIBUTING.md.
+id: chronic
+name: Chronic migraine
+order: 2
+what: Headache on 15 or more days a month for over three months, with migraine features on at least
+  8 of them.
+level: 1
+burden: moderate
+burden_why: Indefinite preventive treatment such as Botox injections every 12 weeks or monthly CGRP
+  antibodies, plus attack medicines, with a risk of medication-overuse headache.
+survival: ~38-41% had headache days at least halved on fremanezumab vs 18% on placebo (HALO CM trial)
+share: About 1.4-2.2% of people in most population studies
+share_url: https://pubmed.ncbi.nlm.nih.gov/19614702/
+treatment: Botox, CGRP antibodies and atogepant are the main preventives, often alongside older pills
+  and treatment of medication-overuse headache. Fewer than half get headache days halved in trials, and
+  most of those still have frequent headaches, though some move back to episodic migraine.
+caveat: Rated 1 rather than 2 because most people with chronic migraine still have many headache days
+  on today's preventives; real-world studies of CGRP antibodies report better responses than trials,
+  so this is borderline.
+url: https://pubmed.ncbi.nlm.nih.gov/29171818/
+forecast:
+  median: 2070
+  low: 2048
+  high: 2100
+  p2035: 1
+  p2045: 6
+  note: Getting most people with chronic migraine durably migraine-free would need a disease-modifying
+    treatment; PACAP antibodies such as bocunebart, which looked strongest in chronic migraine, aim to
+    add control for CGRP non-responders, not cure.

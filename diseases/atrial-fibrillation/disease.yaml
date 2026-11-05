@@ -1,0 +1,123 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: atrial-fibrillation
+name: Atrial fibrillation
+category: cardio
+tracking: active
+summary: A common heart rhythm disorder in which the upper chambers quiver irregularly instead of beating,
+  raising the risk of stroke and heart failure.
+toll:
+  text: About 52.5 million people living with atrial fibrillation or flutter worldwide and about 340,000
+    deaths (2021); it causes about 1 in 7 strokes in the US.
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12133759/
+  ratio: "About 1 in 3"
+  ratio_caption: "people aged 55 will develop atrial fibrillation in their remaining lifetime"
+  ratio_url: https://www.bmj.com/content/361/bmj.k1453
+  ratio_basis: "Staerk et al., BMJ 2018 (Framingham Heart Study): lifetime risk of AF from age 55 was 37.0%; about 1 in 5 with an optimal risk-factor profile and more than 1 in 3 with at least one elevated risk factor."
+status:
+  level: 2
+  why: Blood thinners cut AF-related stroke by about two thirds and rate or rhythm control lets most people
+    live near-normal lives, but catheter ablation keeps AF away for years only in some, and it often returns.
+  today: Most people with AF take a lifelong blood thinner (usually a DOAC such as apixaban) if their stroke
+    risk is raised, plus drugs to slow the heart rate or keep a normal rhythm. Catheter ablation, now often
+    with faster pulsed field ablation, keeps many people with paroxysmal AF free of it for years, with lower
+    success in persistent AF. Starting rhythm control early improved outcomes in the EAST-AFNET 4 trial,
+    and left atrial appendage closure is an alternative for some who can't take blood thinners long term.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Direct oral anticoagulants (apixaban, rivaroxaban, edoxaban, dabigatran)
+  - Catheter ablation (pulsed field, radiofrequency or cryo)
+  - Early rhythm control with drugs or ablation
+  - Rate control (beta blockers, calcium channel blockers)
+  - Left atrial appendage closure (Watchman FLX)
+  burden: moderate
+  burden_note: Most people take a daily blood thinner for life with some bleeding risk, often plus rate
+    or rhythm drugs; ablation is a minimally invasive procedure with small but real risks and often needs
+    repeating.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 5
+    p2045: 22
+    median: 2053
+    low: 2038
+    high: 2092
+  faster:
+    p2035: 9
+    p2045: 38
+    median: 2046
+    low: 2035
+    high: 2080
+  faster_note: Faster understanding of the scarred, stretched atrial tissue that keeps AF coming back,
+    and faster trials of ablation and drug strategies against it, would matter most; stroke prevention
+    is already strong.
+  outlook: Ablation already gives years free of AF to many people with paroxysmal AF, and pulsed field
+    ablation has made it quicker and safer. But AF tends to return as the atria age and scar, success is
+    lower in persistent AF, and most people still need blood thinners, so a lasting cure for most needs
+    better ways to stop or reverse that atrial disease. Factor XI blood thinners could make stroke prevention
+    safer within a few years without curing AF.
+pipeline:
+- name: Milvexian (BMS/J&J, factor XIa inhibitor), LIBREXIA-AF
+  stage: Phase 3
+  note: About 20,000 patients, milvexian vs apixaban; enrollment closed, primary completion estimated
+    Dec 2026, results expected 2027.
+  url: https://clinicaltrials.gov/study/NCT05757869
+  variants:
+  - paroxysmal
+  - persistent
+  expected: '2027'
+  effect: small
+  effect_note: A win would give a blood thinner that may bleed less than apixaban, safer stroke prevention
+    for many, but it does not end AF itself.
+- name: Abelacimab (Novartis, factor XI antibody), LILAC-TIMI 76
+  stage: Phase 3
+  note: Monthly injection vs placebo in high-risk patients judged unsuitable for current blood thinners;
+    Phase 2 showed far less bleeding than rivaroxaban; primary completion estimated Dec 2027.
+  url: https://clinicaltrials.gov/study/NCT05712200
+  variants:
+  - paroxysmal
+  - persistent
+  expected: '2028'
+  effect: small
+  effect_note: A win would offer stroke protection to people who now get no blood thinner because of bleeding
+    risk, a large group, without curing AF.
+- name: Pulsed field ablation (Farapulse and others)
+  stage: Approved
+  note: FDA-approved for paroxysmal AF in 2024 and for persistent AF in July 2025; ADVENT showed it matched
+    thermal ablation in paroxysmal AF.
+  url: https://www.appliedclinicaltrialsonline.com/view/fda-expands-farapulse-pfa-approval-persistent-af-trial-results
+  variants:
+  - paroxysmal
+  - persistent
+  effect: some
+  effect_note: Already approved; it makes ablation faster and safer near nearby tissue, which widens use,
+    but it has not been shown to stop AF returning more often than older methods.
+- name: Watchman FLX left atrial appendage closure, CHAMPION-AF
+  stage: Phase 3
+  note: Device was noninferior to DOACs for stroke, cardiovascular death and embolism at 3 years, with
+    less bleeding, but ischemic strokes were numerically higher (3.2% vs 2.0%).
+  url: https://www.hcplive.com/view/champion-af-left-atrial-appendage-closure-noninferior-to-noacs
+  variants:
+  - paroxysmal
+  - persistent
+  effect: small
+  effect_note: Could let more people stop lifelong blood thinners after a one-time procedure, easing
+    treatment, but it does not treat the rhythm problem.
+recent:
+- date: 2026-03
+  text: CHAMPION-AF found Watchman FLX appendage closure noninferior to DOACs at 3 years with less bleeding,
+    though with numerically more ischemic strokes.
+  url: https://www.hcplive.com/view/champion-af-left-atrial-appendage-closure-noninferior-to-noacs
+- date: 2025-07
+  text: FDA expanded Farapulse pulsed field ablation to drug-refractory persistent AF.
+  url: https://www.appliedclinicaltrialsonline.com/view/fda-expands-farapulse-pfa-approval-persistent-af-trial-results
+next_milestone:
+  date: '2027'
+  url: https://clinicaltrials.gov/study/NCT05757869
+  what: Results of LIBREXIA-AF, the first Phase 3 head-to-head test of a factor XIa blood thinner (milvexian)
+    against apixaban in AF (primary completion estimated Dec 2026; no readout date announced).
+ai:
+  impact: some
+  note: AI-read ECGs can spot people likely to have hidden AF from a normal-rhythm tracing (Mayo Clinic,
+    Lancet 2019), helping find AF before a stroke, though new AF drugs have not come from AI.
+markets: []
