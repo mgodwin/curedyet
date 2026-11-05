@@ -306,8 +306,6 @@ const best=d=>Math.max(...lines(d).map(score));
 const STAGING="Cancer stages run from 0 to IV. Stage 0 is abnormal cells that have not invaded. Stages I to III mean a bigger tumor or spread to nearby tissue or lymph nodes. Stage IV, also called metastatic, means it has spread to distant organs.";
 function delta(cur,prev){if(prev==null||cur==null||cur===prev)return"";const d=cur-prev;return`<span class="delta ${d>0?"up":"down"}">${d>0?"▲":"▼"}${Math.abs(d)}</span>`}
 function catName(id){const c=S.cats.find(c=>c.id===id);return c?c.name:""}
-const KEY=[["mild","Cured for most, mild treatment"],["mod","Cured for most, moderate treatment"],["hard","Cured for most with difficult treatment, or cured for some"],["no","Not curable yet"]];
-const keyHTML=()=>`<div class="vkey" aria-label="Colour key">${KEY.map(([k,t])=>`<span><i style="background:var(${VFILL[k]})"></i>${t}</span>`).join("")}</div>`;
 
 /* ---------- Home: search, filters and one card per disease ---------- */
 function filtered(){
@@ -370,7 +368,7 @@ function home(){
     <button class="chip" type="button" data-c="all" aria-pressed="${catF==="all"}">All</button>
     ${cats.map(k=>`<button class="chip" type="button" data-c="${esc(k.id)}" aria-pressed="${catF===k.id}">${esc(k.name)}</button>`).join("")}
   </div>
-  <div class="filters" style="justify-content:space-between">${keyHTML()}
+  <div class="filters" style="justify-content:flex-end">
     <span style="display:flex;gap:12px;align-items:center"><span class="muted num" id="shown" style="font-size:13px"></span><label style="display:flex;gap:8px;align-items:center;font-size:13px">Sort <select id="sort"><option value="closest">Closest to cured</option><option value="az">A to Z</option><option value="cat">By category</option></select></label></span></div>
   <div class="masonry" id="cards"></div>
   <p class="muted" style="font-size:12px;margin:0">Updated weekly and scored against what actually happens. A research tracker, not medical advice.${m.repo?` Open data: <a href="https://github.com/${esc(m.repo)}" target="_blank" rel="noopener">add a disease or fix a fact on GitHub</a>.`:""}</p>`;
