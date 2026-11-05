@@ -17,6 +17,10 @@ ROOT = Path(__file__).resolve().parent.parent
 # How hard the treatment is (mild/moderate/difficult) is a separate axis, read from burden, not a rung.
 LEVELS = ["No treatment", "Slows it", "Controlled", "Cured for some", "Cured for most", "Cured for all"]
 MAX_LEVEL = len(LEVELS) - 1
+# Infections also get a prevention ladder (vaccines and preventive drugs), rated the same way: a rung plus a burden.
+PREVENTION_LEVELS = ["No protection", "Weak protection", "Partial protection", "Strong protection", "Eliminated"]
+MAX_PREVENTION = len(PREVENTION_LEVELS) - 1
+PREVENTION_KEYS = ("level", "burden", "why", "burden_why", "best", "url", "forecast", "easy", "reached", "reached_easy")
 BURDENS = {"light", "moderate", "heavy"}
 BOTTLENECKS = {"design-limited", "biology-limited", "trial-limited", "access-limited"}
 TRACKING = {"active", "proposed"}
@@ -111,6 +115,37 @@ def validate_reached(r, errs, where, name):
         errs.append(f"{where}: {name}.url must be an http(s) link")
 
 
+def validate_prevention(pv, errs, where):
+    """Prevention: rung 0-4 (3 = strong, about 85%+ protection), burden as for treatment, forecasts to rung 3."""
+    where = f"{where}: prevention"
+    if not isinstance(pv, dict):
+        errs.append(f"{where} must be a block"); return
+    level = pv.get("level")
+    if not _is_int(level, 0, MAX_PREVENTION):
+        errs.append(f"{where}.level must be 0-{MAX_PREVENTION}"); level = 0
+    if pv.get("burden") not in BURDENS:
+        errs.append(f"{where}.burden must be light, moderate or heavy")
+    if not isinstance(pv.get("why"), str) or not pv["why"].strip():
+        errs.append(f"{where}.why is required (one plain sentence)")
+    if pv.get("url") and not URL_RE.match(str(pv["url"])):
+        errs.append(f"{where}.url must be an http(s) link")
+    mild = level >= 3 and pv.get("burden") == "light"
+    if pv.get("forecast") is not None:
+        if level >= 3:
+            errs.append(f"{where}.forecast is for reaching strong protection; this is already there")
+        else:
+            validate_forecast(pv["forecast"], errs, where, "forecast")
+    if pv.get("easy") is not None:
+        if mild:
+            errs.append(f"{where}.easy is for strong protection with mild burden; this already has it")
+        else:
+            validate_forecast(pv["easy"], errs, where, "easy")
+    if level >= 3:
+        validate_reached(pv.get("reached"), errs, where, "reached")
+    if mild:
+        validate_reached(pv.get("reached_easy"), errs, where, "reached_easy")
+
+
 def validate_variant(v, errs, where):
     if v.get("id") != v["_file"] or not ID_RE.match(str(v.get("id"))):
         errs.append(f"{where}: id must match the file name, lowercase-with-dashes")
@@ -142,6 +177,8 @@ def validate_variant(v, errs, where):
         validate_reached(v.get("reached"), errs, where, "reached")
     if mild:
         validate_reached(v.get("reached_easy"), errs, where, "reached_easy")
+    if v.get("prevention") is not None:
+        validate_prevention(v["prevention"], errs, where)
 
 
 def validate(data: dict) -> list[str]:
@@ -192,6 +229,8 @@ def validate(data: dict) -> list[str]:
                     errs.append(f"{where}: pipeline item '{item.get('name')}' names unknown variant '{vid}'")
             if item.get("effect") is not None and item["effect"] not in EFFECTS:
                 errs.append(f"{where}: pipeline item '{item.get('name')}' effect must be big, some or small")
+        if rec.get("prevention") is not None:
+            validate_prevention(rec["prevention"], errs, where)
         tx = rec.get("treatment") or {}
         if tx.get("burden") is not None and tx["burden"] not in BURDENS:
             errs.append(f"{where}: treatment.burden must be light, moderate or heavy")
@@ -271,7 +310,7 @@ def blend(n, f, idx):
     return round(n + (f - n) * idx / 100)
 
 
-VARIANT_KEYS = ("id", "name", "what", "level", "burden", "burden_why", "survival", "share", "share_url", "caveat", "url", "forecast", "easy", "reached", "reached_easy")
+VARIANT_KEYS = ("id", "name", "what", "level", "burden", "burden_why", "survival", "share", "share_url", "caveat", "url", "forecast", "easy", "reached", "reached_easy", "prevention")
 
 
 def compile_variants(d: dict, data: dict) -> list[dict]:
@@ -308,6 +347,7 @@ def compile_site(data: dict) -> dict:
             "id": r["id"], "order": i + 1, "name": r["name"], "category": r["category"], "tracking": r.get("tracking", "proposed"),
             "short": r.get("summary"), "burden": (r.get("toll") or {}).get("text"), "burdenUrl": (r.get("toll") or {}).get("url"),
             "level": level, "levelWhy": st.get("why"), "groups": compile_variants(d, data), "reachedEasy": fc.get("reached_easy"),
+            "prevention": {k: r["prevention"][k] for k in PREVENTION_KEYS if r["prevention"].get(k) is not None} if r.get("prevention") else None,
             "ratio": {k: (r.get("toll") or {}).get(k) for k in ("ratio", "ratio_caption", "ratio_url")} if (r.get("toll") or {}).get("ratio") else None, "status": st.get("today"), "lastDeep": str(st["last_reviewed"]) if st.get("last_reviewed") else None,
             "bestTherapies": tx.get("best") or [], "txBurden": tx.get("burden"), "txBurdenNote": tx.get("burden_note"),
             "bottleneck": fc.get("bottleneck"), "accelNote": fc.get("faster_note"), "outlook": fc.get("outlook"), "interim": fc.get("milestones") or [],

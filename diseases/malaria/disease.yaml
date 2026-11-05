@@ -77,3 +77,39 @@ markets:
 - url: https://metaculus.com/questions/1332/will-global-malaria-mortality-rates-be-reduced-by-90-when-compared-with-2015-rates-by-2030
   what: Will global malaria mortality rates be reduced by 90% vs 2015 by 2030? Community forecast 22%
   who: Metaculus
+prevention:
+  level: 2
+  burden: moderate
+  why: The R21 and RTS,S vaccines cut malaria cases in young African children by about 68-75% in the first
+    year (R21 phase 3), and seasonal chemoprevention pills give similar short-term protection, but nothing
+    yet gives strong lasting protection.
+  burden_why: The vaccines need four shots starting at about 5 months and protection fades, seasonal chemoprevention
+    means monthly pills through the rainy season, and rollout is limited by funding (25 African countries,
+    mostly subnational).
+  best:
+  - R21/Matrix-M vaccine
+  - RTS,S/AS01 vaccine
+  - Seasonal malaria chemoprevention (SMC)
+  url: https://pubmed.ncbi.nlm.nih.gov/38310910/
+  forecast:
+    median: 2042
+    low: 2032
+    high: 2070
+    p2035: 15
+    p2045: 55
+    note: 'Rung 3 would need about 85% protection in real use. Leads are the L9LS monoclonal antibody
+      (phase 2: 77% in Malian children aged 6-10 but only 43% in Kenyan infants), next-generation and
+      multi-stage vaccines such as R21 plus the blood-stage RH5 (phase 2), and vaccine-plus-SMC combinations.
+      Base rate: roughly 30% of phase 2 vaccine candidates reach licensure, usually 8-12 years later,
+      and malaria vaccines have historically taken longer.'
+  easy:
+    median: 2055
+    low: 2038
+    high: 2100
+    p2035: 5
+    p2045: 25
+    note: Mild would need one lasting course with about 85% protection, cheap and widely available in
+      Africa; every current or near-term option needs repeat doses or seasonal re-dosing. Long-lasting
+      antibodies or a durable whole-parasite or multi-stage vaccine are the plausible routes, all still
+      in early or mid-stage trials, so this is anchored to phase 1-2 base rates of about 10-30% success
+      over 10-20 years.

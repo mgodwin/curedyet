@@ -135,3 +135,31 @@ markets:
 - url: https://manifold.markets/bens/2026-ebola-epidemic-deaths
   what: 2026 Ebola epidemic deaths (multi-bucket market)
   who: Manifold
+prevention:
+  level: 3
+  burden: heavy
+  why: For Zaire ebolavirus, which caused most past outbreaks, the licensed single-dose Ervebo vaccine
+    gave 100% efficacy in the Guinea ring trial, but no vaccine is proven for the Sudan or Bundibugyo
+    species now driving the 2026 DRC epidemic.
+  burden_why: Vaccine is used mostly in outbreak rings and for some health workers, needs ultra-cold storage,
+    and does not cover the other species.
+  best:
+  - Ervebo (rVSV-ZEBOV) ring vaccination, Zaire only
+  - Zabdeno + Mvabea preventive regimen, Zaire only
+  - Infection control and contact tracing
+  url: https://www.healio.com/news/infectious-disease/20170116/ebola-vaccine-was-100-effective-in-major-trial
+  easy:
+    median: 2042
+    low: 2031
+    high: 2075
+    p2035: 25
+    p2045: 50
+    note: 'Strong protection exists only for Zaire and only as outbreak-response or health-worker vaccination
+      with ultra-cold storage. A mild-burden option across species would need routine preventive use,
+      easier storage and proven vaccines for Bundibugyo and Sudan, where candidates are in Phase 1-2/3
+      (TUMAINI, rVSV-SUDV, cAd3-Sudan, ChAdOx1 BDBV). Base rate: about a third of Phase 2 vaccines reach
+      licensure, then years more to routine use.'
+  reached:
+    year: 2019
+    basis: EMA and FDA licensed Ervebo (Zaire) in Nov-Dec 2019.
+    url: https://www.merck.com/news/merck-announces-fda-approval-for-ervebo-ebola-zaire-vaccine-live/

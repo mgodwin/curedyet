@@ -87,3 +87,36 @@ markets:
 - url: https://metaculus.com/questions/?topic=h5n1
   what: H5N1 question series on human-to-human transmission (values not checked)
   who: Metaculus
+prevention:
+  level: 1
+  burden: heavy
+  why: Licensed H5 vaccines (Audenz in the US; Seqirus zoonotic and Incellipan vaccines in the EU) give
+    strong antibody responses, but their protection against infection or illness has never been measured
+    in people.
+  burden_why: They are two-dose adjuvanted shots held in government stockpiles; only Finland has offered
+    them to farm and lab workers, and CDC does not recommend them for US farm workers.
+  best:
+  - Licensed H5 vaccines (Audenz, Seqirus zoonotic influenza vaccine, Incellipan)
+  - Oseltamivir prophylaxis after exposure
+  - Protective equipment for farm workers
+  url: https://eswi.org/education-hub/inactivated-zoonotic-influenza-ah5n8-vaccine-induces-robust-antibody-responses
+  forecast:
+    median: 2065
+    low: 2035
+    high: 2100
+    p2035: 8
+    p2045: 22
+    note: 'Rung 3 needs proven protection of 85% or more, which flu vaccines rarely show; seasonal flu
+      vaccines usually protect 40-60%. Proof would most likely come only in a pandemic, when effectiveness
+      of a matched vaccine (e.g. Moderna''s mRNA-1018, in a CEPI-funded Phase 3 since 2026, or adjuvanted
+      cell-based H5 vaccines) could be measured, or from a universal flu vaccine, which is still early-stage.
+      Base rate: no flu vaccine in 80 years has consistently shown 85% protection, so odds are low.'
+  easy:
+    median: 2075
+    low: 2040
+    high: 2100
+    p2035: 5
+    p2045: 15
+    note: 'Needs strong proven protection plus routine, cheap, lasting vaccination for people at risk.
+      Current H5 vaccines need two adjuvanted doses and likely boosters as the virus drifts. Base rate
+      as above: no flu vaccine has reached strong and mild.'

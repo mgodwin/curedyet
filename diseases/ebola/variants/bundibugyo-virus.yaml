@@ -25,3 +25,37 @@ forecast:
   note: The PARTNERS trial of MBP134 and remdesivir, enrolling since July 2026 in the large DRC epidemic,
     would need to show a clear survival benefit, likely in 2027, followed by approval; if it fails, the
     next candidates are years behind.
+prevention:
+  level: 0
+  burden: heavy
+  why: No vaccine is licensed for Bundibugyo virus; Ervebo is being tested for cross-protection in the
+    TUMAINI ring trial that began in DRC in October 2026, and Bundibugyo-specific vaccines are only in
+    Phase 1.
+  burden_why: During the 2026 DRC epidemic, vaccines are available only to high-risk contacts enrolled
+    in trial rings, and Ervebo needs ultra-cold storage.
+  best:
+  - Infection control and contact tracing
+  - Ervebo in the TUMAINI ring trial (unproven for Bundibugyo)
+  url: https://clinicaltrials.gov/study/NCT07842107
+  forecast:
+    median: 2034
+    low: 2028
+    high: 2075
+    p2035: 52
+    p2045: 68
+    note: 'The huge 2026 DRC epidemic makes an efficacy trial feasible: TUMAINI (Phase 2/3, from 23 Oct
+      2026) is testing Ervebo first and plans to add Bundibugyo-specific vaccines. Oxford/Serum Institute''s
+      ChAdOx1 BDBV (Phase 1 UK and Uganda, about 620,000 doses stockpiled) and Moderna''s mRNA-1469 (Phase
+      1 Canada) are the specific candidates. Ervebo cross-protection is likely partial at best, and the
+      specific vaccines must clear Phase 1-2; base rate: about 30% of vaccines entering Phase 2/3 reach
+      licensure, but a large outbreak shortens the path (Ervebo went from ring trial to licensure in about
+      4 years).'
+  easy:
+    median: 2048
+    low: 2034
+    high: 2100
+    p2035: 12
+    p2045: 40
+    note: 'Even if a ring vaccine works, it would be outbreak-only with cold-chain needs, which is heavy
+      burden. Mild burden needs routine preventive use in at-risk areas of DRC and Uganda. Base rate:
+      Zaire vaccine still is not routine for the general public 7 years after licensure.'

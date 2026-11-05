@@ -78,3 +78,33 @@ markets:
   what: 'Cure for symptomatic rabies by 2040 (strong evidence a post-symptom treatment improves survival):
     36%'
   who: Manifold
+prevention:
+  level: 3
+  burden: heavy
+  why: Post-exposure prophylaxis (wound washing, a vaccine course and immunoglobulin when needed) prevents
+    nearly all rabies deaths when given promptly and properly.
+  burden_why: PEP is an urgent multi-dose course after a bite, and in rural Africa and Asia, where most
+    deaths occur, vaccine is often unavailable or costly (about US$108 on average) and immunoglobulin
+    is often inaccessible or unaffordable, per WHO.
+  best:
+  - Post-exposure prophylaxis (vaccine + immunoglobulin or monoclonal antibody)
+  - Pre-exposure vaccination for high-risk groups
+  - Mass dog vaccination
+  url: https://epi.utah.gov/wp-content/uploads/Rabies_PEP_fact_sheet.pdf
+  easy:
+    median: 2045
+    low: 2032
+    high: 2100
+    p2035: 25
+    p2045: 52
+    note: 'Strong protection exists; the gap is access. Mild burden for a typical person at risk needs
+      free, nearby PEP with cheap monoclonal antibodies in place of scarce immunoglobulin and short one-week
+      schedules, or mass dog vaccination that removes most bites from rabid dogs. WHO validated Bhutan,
+      Chile and Mexico as having eliminated dog-mediated human rabies, but the Zero by 30 goal is off
+      track across most of Africa and Asia. Base rate: the Americas took about 35 years of PAHO-coordinated
+      dog vaccination from 1983 to cut dog and human rabies by about 95%.'
+  reached:
+    year: 1980
+    basis: The modern human diploid cell rabies vaccine was licensed in the US in 1980, making short,
+      reliable PEP courses standard.
+    url: https://stacks.cdc.gov/view/cdc/41548
