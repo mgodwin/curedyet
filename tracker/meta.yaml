@@ -3,23 +3,26 @@ repo: mgodwin/curedyet
 week: 1
 updated: '2026-11-03'
 next_update: '2026-11-05'
-headline: Only hepatitis C and malaria are cured for most patients with mild treatment, melanoma too when caught early,
-  and none of the rest is better than a coin flip to get a cure for most by 2035.
+headline: Only six patient groups are cured for most with mild treatment (hepatitis C, malaria, early Lyme
+  disease and the earliest stages of melanoma and cervical cancer), and none of the rest is better than a
+  coin flip to get a cure for most by 2035.
 this_week:
-- This is the baseline, on a 6-rung ladder where "cured for most" needs at least about 85% of
-  patients cured, with how hard the treatment is rated on its own. Hepatitis C and malaria are cured for most
-  with mild treatment, and so is melanoma caught at stages 0 or I. Drug-susceptible TB and the early stages of breast, prostate,
-  colorectal and ovarian cancer are cured for most, but the treatment is hard. 20 still sit at level 0
-  or 1, including Alzheimer's, Parkinson's, ALS, pancreatic cancer, rabies, osteoarthritis and aging
-  itself.
+- This is the baseline, now covering 81 diseases split into 177 patient groups by stage or type. "Cured
+  for most" needs at least about 85% of patients cured, and how hard the treatment is gets rated on its
+  own. Drug-susceptible TB, bacterial pneumonia, cataract and the early stages of breast, prostate, colorectal,
+  kidney and uterine cancer are cured for most, but the treatment is moderate or difficult. 21 diseases
+  without stages or types still sit at level 0 or 1, including Alzheimer's, Parkinson's, ALS, rabies,
+  osteoarthritis and aging itself.
 - A new cure takes about 27 years today from discovery to most patients, and trials alone take 6 to 9.
   Records already set somewhere, like COVID vaccine trials in about 7 months, show it could take about
   5. Each forecast blends today's pace with a faster pipeline, weighted by the acceleration index, now
   21%. Six of the seven pipeline stages are easing; getting cures to patients is still blocking.
 - A faster pipeline mostly moves the 2045 odds, not 2035, because human testing still takes years. The
-  nearest new cures are Ebola (33% by 2035), colorectal cancer (32%), sickle cell disease (18%) and H5N1 (17%).
-- Getting cured often means a difficult treatment. 18 of the 50 have a difficult best option, mostly cancers,
-  gene therapies and outbreak intensive care. Only hepatitis C, malaria, melanoma and H5N1 rate as mild.
+  nearest new cures are Ebola (33% by 2035), colorectal cancer (32%), kidney cancer (27%) and uterine cancer
+  (24%).
+- Infections also get a prevention ladder for vaccines and preventive drugs. Hepatitis B, HIV (PrEP),
+  measles, rabies and the HPV vaccine for cervical cancer give strong protection; flu, COVID-19, TB and
+  Lyme disease still only weak protection.
 - 'Watch next: the FDA decision on ivonescimab for lung cancer (Nov 14), Alzheimer''s data at CTAD (Nov
   16), Arc''s Virtual Cell Challenge winners (mid-to-late November), the Bundibugyo Ebola outbreak in
   the DRC, and ASH blood-cancer results in mid-December.'
