@@ -1,0 +1,33 @@
+# Cure Watch variant record: one stage or type of Atrial fibrillation. Field guide: CONTRIBUTING.md.
+id: paroxysmal
+name: Paroxysmal AF
+order: 1
+what: AF that comes and goes, with episodes that stop on their own or with treatment within seven days,
+  often within a day.
+level: 3
+burden: moderate
+burden_why: Ablation is a minimally invasive catheter procedure with small but real risks that is often
+  repeated, and many people still take a daily blood thinner for life.
+survival: ~54% free of AF and other atrial arrhythmias 3+ years after one ablation (older thermal ablation;
+  ~80% across all AF types with repeat procedures)
+share: About 30% of people with AF in a European registry had the paroxysmal type
+share_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3864758
+treatment: Catheter ablation, which isolates the pulmonary veins where most episodes start, keeps many
+  people free of AF for years; pulsed field ablation matched older heat-based ablation at one year in
+  ADVENT and is quicker. Others manage with rhythm or rate drugs, and those at raised stroke risk take
+  a blood thinner, usually for life.
+caveat: Level 3 is a judgement call. Durable freedom after ablation is real for a meaningful share but
+  AF often comes back, sometimes years later, and guidelines base blood thinner use on stroke risk rather
+  than on ablation success. The long-term figures come from a 2013 meta-analysis of older thermal ablation;
+  pulsed field ablation long-term data are still short. Registry shares of AF types vary widely (about
+  26-50% paroxysmal).
+url: https://www.ahajournals.org/doi/10.1161/JAHA.112.004549
+forecast:
+  median: 2045
+  low: 2034
+  high: 2075
+  p2035: 12
+  p2045: 50
+  note: Would need ablation, perhaps combined with weight loss and blood pressure control, to keep about
+    85% of people free of AF for many years after one procedure, and evidence that they can safely stop
+    blood thinners; pulsed field ablation is a step, but long-term recurrence data are still missing.

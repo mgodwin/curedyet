@@ -1,0 +1,27 @@
+# Cure Watch variant record: one stage or type of Thalassemia. Field guide: CONTRIBUTING.md.
+id: non-transfusion-dependent
+name: Non-transfusion-dependent thalassemia
+order: 2
+what: Milder thalassemia, such as beta-thalassemia intermedia, HbE/beta-thalassemia and HbH disease, in
+  which anemia is real but transfusions are needed only occasionally.
+level: 2
+burden: moderate
+burden_why: Ongoing monitoring with occasional transfusions, and newer daily pills or injections that
+  need regular lab checks.
+survival: 42% hemoglobin response with mitapivat vs 2% placebo at 24 weeks (55 of 130 vs 1 of 64, ENERGIZE)
+treatment: Many people need only monitoring and occasional transfusions during infection, pregnancy
+  or surgery, with chelation if iron builds up. Mitapivat (US and EU) and luspatercept (EU) raise hemoglobin
+  for some, but must be taken indefinitely and none cures it.
+caveat: Covers a wide range, from near-symptom-free to frequent complications; some people move to regular
+  transfusions over time. Luspatercept for this group is approved in the EU (2023) but not the US, where
+  BMS withdrew its application in 2022. Mitapivat carries a boxed warning for liver injury. Curative gene
+  therapy and transplant are generally reserved for transfusion-dependent disease.
+url: https://www.hcplive.com/view/fda-approves-mitapivat-aqvesme-for-non-transfusion-dependent-alpha--and-beta-thalassemia
+forecast:
+  median: 2052
+  low: 2037
+  high: 2090
+  p2035: 5
+  p2045: 30
+  note: Would need a one-time cure safe enough to justify for milder disease, such as gene editing without
+    chemotherapy conditioning; today's drugs raise hemoglobin but must be taken indefinitely.

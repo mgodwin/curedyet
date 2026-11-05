@@ -1,0 +1,30 @@
+# Cure Watch variant record: one stage or type of Anxiety disorders. Field guide: CONTRIBUTING.md.
+id: specific-phobia
+name: Specific phobia
+order: 2
+what: Intense, lasting fear of a particular thing or situation, such as heights, animals, flying, needles
+  or blood, that leads people to avoid it.
+level: 3
+burden: light
+burden_why: Exposure therapy can work in a single session of up to about three hours, with no medication
+  and no lasting side effects.
+survival: Large improvements after exposure therapy, maintained at follow-up (meta-analysis of 85 studies)
+share: About 9.1% of US adults have a specific phobia in a given year, and 12.5% at some point in life
+share_url: https://www.nimh.nih.gov/health/statistics/specific-phobia
+treatment: Exposure therapy, facing the feared thing step by step with a therapist, is the standard treatment;
+  one-session treatment works about as well as several sessions. Many people no longer meet the diagnosis
+  afterwards, and gains usually last, while medicines play little role.
+caveat: Effects are large, but trials report the share who become diagnosis-free inconsistently, and
+  in youth trials typical severity fell to around the clinical threshold rather than to zero, so whether
+  85% are cured is unproven. Many people with phobias never seek treatment, and some refuse or drop out
+  of exposure.
+url: https://pubmed.ncbi.nlm.nih.gov/36323055/
+forecast:
+  median: 2048
+  low: 2033
+  high: 2090
+  p2035: 12
+  p2045: 40
+  note: The treatment already works well; reaching cured for most needs better-documented and more consistent
+    results, ways to help people who refuse or drop out of exposure (such as virtual reality), and trials
+    that report long-term diagnosis-free rates.

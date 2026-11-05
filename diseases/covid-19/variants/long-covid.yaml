@@ -1,0 +1,61 @@
+# Cure Watch variant record: one stage or type of COVID-19. Field guide: CONTRIBUTING.md.
+id: long-covid
+name: Long COVID
+order: 2
+what: Symptoms such as fatigue, breathlessness, brain fog, muscle or joint pain and poor sleep that start
+  within three months of COVID-19 and last at least two months, sometimes for years, and can make work
+  and daily life hard.
+level: 1
+burden: moderate
+burden_why: There is no course of treatment to finish, so care means months or years of managing symptoms,
+  pacing activity and rehabilitation, often through specialist clinics that are hard to reach.
+survival: About 6 in 100 people with COVID-19 develop long COVID (WHO); about 400 million people worldwide
+  have had it (Nature Medicine 2024 estimate), and 3.4% of US adults had it at the time they were surveyed
+  in 2022
+treatment: No treatment has been proven to clear long COVID. Doctors treat individual symptoms, such as
+  a racing heart, sleep problems or pain, advise pacing to avoid crashes after exertion, and refer people
+  to rehabilitation. Many people improve over time, but some stay unwell for years. Trials of extended
+  Paxlovid and of ivabradine for heart-rate symptoms found no benefit.
+caveat: Long COVID is likely several conditions with different causes, such as lingering virus, immune
+  changes and nerve or blood vessel damage, which makes one treatment for all unlikely. Prevalence estimates
+  vary widely with how it is defined and asked about.
+url: https://www.who.int/news-room/fact-sheets/detail/post-covid-19-condition-(long-covid)
+forecast:
+  median: 2058
+  low: 2036
+  high: 2100
+  p2035: 4
+  p2045: 15
+  note: 'A cure for most would need treatments matched to each underlying cause. The largest trials so
+    far, of antivirals and of heart-rate and immune drugs, have been negative; the baricitinib Phase 3 (REVERSE-LC)
+    reads out around 2027 and other NIH trials only began enrolling in late 2026. Base rate: similar
+    post-infection conditions such as ME/CFS still have no approved treatment after decades.'
+prevention:
+  level: 1
+  burden: moderate
+  why: Vaccination and avoiding infection lower the chance of long COVID, and in the COVID-OUT trial metformin
+    started early cut it by about 41%, but neither has been shown to prevent most cases.
+  burden_why: Relies on staying up to date with yearly vaccines that are harder to get in the US for people
+    under 65 without a risk condition, and metformin for this use is not in standard guidelines.
+  best:
+  - Updated COVID-19 vaccine
+  - Avoiding infection and reinfection
+  - Metformin within days of infection (tested in one trial, not standard care)
+  url: https://www.who.int/news-room/fact-sheets/detail/post-covid-19-condition-(long-covid)
+  forecast:
+    median: 2050
+    low: 2032
+    high: 2100
+    p2035: 10
+    p2045: 35
+    note: Strong protection would need either vaccines that prevent most infections or an early treatment
+      that reliably stops long COVID developing; Paxlovid has not shown this, and the metformin result
+      has not been confirmed in a second large trial.
+  easy:
+    median: 2056
+    low: 2036
+    high: 2100
+    p2035: 5
+    p2045: 25
+    note: It would also need to be cheap and easy to get for everyone infected, not just people eligible
+      for yearly vaccines or able to see a doctor within days.

@@ -1,0 +1,116 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: thalassemia
+name: Thalassemia
+category: genetic
+tracking: active
+summary: Inherited blood disorders in which the body makes too little working hemoglobin, causing anemia
+  that ranges from mild to life-threatening.
+toll:
+  text: At least about 40,600 babies are born with beta-thalassemia each year, about 25,500 of them needing
+    regular transfusions, mostly in South and Southeast Asia and the Eastern Mediterranean; an estimated
+    22,500 a year die because they never get transfused (2008 minimum estimates).
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2647473/
+  ratio: "About 1 in 67"
+  ratio_caption: "people worldwide carries a beta-thalassemia gene, usually without symptoms"
+  ratio_url: https://informahealthcare.com/doi/full/10.1586/ehm.09.74
+  ratio_basis: "Expert Review of Hematology review (2010): roughly 1.5% of the world's population carries beta-thalassemia trait; 1.5% is about 1 in 67. Carriers are healthy; a child inherits the disease when both parents pass on a gene."
+status:
+  level: 3
+  why: Stem cell transplant and the gene therapies Casgevy and Zynteglo free most treated people with transfusion-dependent
+    thalassemia from transfusions, but few people get them and most still rely on lifelong transfusions.
+  today: People with severe beta-thalassemia need blood transfusions every few weeks for life plus daily
+    iron-removing (chelation) drugs, which in rich countries let most survive into adulthood. A matched-donor
+    transplant or a one-time gene therapy (Casgevy, Zynteglo) can end transfusions, but each needs harsh
+    chemotherapy and costs millions. Milder forms are managed with occasional transfusions and newer drugs
+    such as luspatercept and mitapivat.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Regular transfusions with iron chelation
+  - Casgevy (exa-cel)
+  - Zynteglo (beti-cel, US)
+  - Matched donor stem cell transplant
+  - Luspatercept (Reblozyl)
+  - Mitapivat (Aqvesme/Pyrukynd)
+  burden: heavy
+  burden_note: Severe forms need transfusions every 3-4 weeks and daily chelation for life; the cures need
+    busulfan chemotherapy with infertility and organ risks, months of care and $2.2-2.8M per patient in
+    the US.
+forecast:
+  bottleneck: access-limited
+  normal:
+    p2035: 12
+    p2045: 45
+    median: 2046
+    low: 2034
+    high: 2072
+  faster:
+    p2035: 25
+    p2045: 70
+    median: 2039
+    low: 2031
+    high: 2056
+  faster_note: The cure already exists for transfusion-dependent disease, so gentler antibody conditioning,
+    in vivo gene editing and cheaper manufacturing would let far more people be treated, especially where
+    most patients live.
+  outlook: Gene therapy and transplant already end transfusions for most who get them, but chemotherapy
+    conditioning, cost and specialist centers keep them rare, and the treatment is out of reach in the
+    South Asian, Middle Eastern and Southeast Asian countries where most patients live. Milder forms now
+    have pills and injections that raise hemoglobin but do not cure. Reaching cured-for-most in rich countries
+    likely takes until the 2040s.
+pipeline:
+- name: Casgevy (exa-cel) for children 2 and older
+  stage: Approved 2025-26
+  note: FDA extended Casgevy to ages 2+ in July 2026; in children 5-11, all 8 followed 16+ months were
+    transfusion independent, but one died of busulfan liver toxicity.
+  url: https://pubmed.ncbi.nlm.nih.gov/42274009/
+  variants:
+  - transfusion-dependent
+  effect: some
+  effect_note: Already approved; treating children before iron and organ damage builds up widens who can
+    be cured, but conditioning risks, cost and access still limit uptake.
+- name: Mitapivat (Aqvesme in US, Pyrukynd in EU)
+  stage: Approved 2025-26
+  note: FDA approved Dec 2025 and EU in 2026 for adults with alpha- or beta-thalassemia; liver injury
+    boxed warning with monthly liver tests at first.
+  url: https://www.biospace.com/press-releases/u-s-fda-approves-agios-aqvesme-mitapivat-for-the-treatment-of-anemia-in-adults-with-alpha-or-beta-thalassemia
+  variants:
+  - transfusion-dependent
+  - non-transfusion-dependent
+  effect: small
+  effect_note: Already approved; a daily pill that raises hemoglobin in milder forms and trims transfusions
+    for some with severe disease, but it is ongoing treatment, not a cure.
+- name: Etavopivat (Novo Nordisk), GLADIOLUS
+  stage: Phase 2
+  note: Reported at EHA 2026 to raise hemoglobin in about half of non-transfusion-dependent patients at
+    12 weeks and cut transfusion needs in transfusion-dependent patients.
+  url: https://clinicaltrials.gov/study/NCT04987489
+  variants:
+  - transfusion-dependent
+  - non-transfusion-dependent
+  effect: small
+  effect_note: A second once-daily pill of the same kind as mitapivat; it would add an option to control
+    anemia rather than cure it.
+recent:
+- date: 2026-07
+  text: FDA extended Casgevy to children aged 2 and older with transfusion-dependent beta-thalassemia
+    or sickle cell disease.
+  url: https://www.pharmacytimes.com/view/fda-expands-casgevy-approval-to-children-as-young-as-2-years-with-sickle-cell-disease-or-transfusion-dependent--thalassemia
+- date: 2026-06
+  text: NEJM published Casgevy results in children 5-11, with every child followed 16+ months free of
+    transfusions; one child died of conditioning-related liver disease.
+  url: https://pubmed.ncbi.nlm.nih.gov/42274009/
+- date: 2025-12
+  text: FDA approved mitapivat (Aqvesme) as the first drug for anemia in both transfusion-dependent and
+    non-transfusion-dependent alpha- or beta-thalassemia.
+  url: https://www.biospace.com/press-releases/u-s-fda-approves-agios-aqvesme-mitapivat-for-the-treatment-of-anemia-in-adults-with-alpha-or-beta-thalassemia
+next_milestone:
+  date: '2026-12-12'
+  url: https://www.hematology.org/meetings/annual-meeting
+  what: ASH Annual Meeting (Dec 12-15, 2026), where longer-term gene therapy and new drug data in thalassemia
+    are usually presented; no thalassemia regulatory decision date is announced.
+ai:
+  impact: some
+  note: Computational guide RNA and editor design underpins CRISPR and base-editing therapies like Casgevy,
+    but conditioning, manufacturing and access are the bottlenecks, not discovery.
+markets: []

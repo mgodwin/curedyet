@@ -1,0 +1,67 @@
+# Cure Watch variant record: one stage or type of COVID-19. Field guide: CONTRIBUTING.md.
+id: acute
+name: Acute COVID-19
+order: 1
+what: The infection itself, from the first symptoms through the following weeks, which is mild for most
+  people but can cause pneumonia, especially in older adults and people with weakened immune systems.
+level: 1
+burden: light
+burden_why: Most people need only rest and fever relief, and antivirals are a five-day course of pills
+  or three days of infusions, though Paxlovid interacts with many common drugs and severe illness needs
+  hospital care.
+survival: Most people recover within days to weeks; CDC estimates 390,000-550,000 US hospital stays and
+  45,000-64,000 deaths in the 2024-25 season, and 88% of deaths WHO received in early 2026 were in people
+  65 and older
+treatment: People at high risk can take nirmatrelvir-ritonavir (Paxlovid) for five days or get remdesivir
+  infusions on three days; in trials before vaccines these cut hospital stays or deaths by about 87-89%,
+  but in today's mostly vaccinated adults Paxlovid sped recovery by a few days without clearly cutting
+  hospital stays. Molnupiravir works less well. In hospital, dexamethasone cut deaths by about a third
+  in people on ventilators and a fifth in those on oxygen, and tocilizumab or baricitinib are added for
+  the sickest.
+caveat: Rated 1 as for flu, since most people recover on their own and no drug has been shown to prevent
+  most hospital stays in today's mostly immune population. People who are severely immunocompromised
+  can have long, hard-to-clear infections and gain the most from treatment.
+url: https://www.cdc.gov/mmwr/volumes/75/wr/mm7510a1.htm
+forecast:
+  median: 2051
+  low: 2034
+  high: 2100
+  p2035: 6
+  p2045: 20
+  note: 'Level 4 would mean an early treatment that clears the infection fast and prevents most hospital
+    stays and deaths in people at high risk. Second-generation protease inhibitors such as ibuzatrelvir
+    are in Phase 3 (results from late 2027), but with high population immunity there is little room left
+    to show such a benefit. Base rate as for flu: no antiviral for a common respiratory virus has met this
+    bar in decades of trials.'
+prevention:
+  level: 1
+  burden: moderate
+  why: Updated vaccines cut COVID-19 hospital stays by about 45-55% in the first months after the shot,
+    but protection wanes to about 35% over a season, so the typical year falls short of the 50% line.
+  burden_why: A yearly shot with mostly mild side effects such as a sore arm and tiredness, but protection
+    fades within months, new strains need updated vaccines, and in the US approval is limited to people
+    65 and older or with a high-risk condition, which can make it harder to get.
+  best:
+  - Updated yearly COVID-19 vaccine (mRNA or protein), especially for adults 65 and older
+  - Pemivibart (Pemgarda) antibody every three months for people with moderate to severe immune compromise
+  - Ensitrelvir pills within 72 hours of a household exposure
+  url: https://www.pharmacytimes.com/view/updated-2025-2026-covid-19-vaccine-nearly-halved-ed-visits-hospitalizations-in-cdc-funded-study
+  forecast:
+    median: 2048
+    low: 2031
+    high: 2100
+    p2035: 15
+    p2045: 40
+    note: 'Strong protection is read as about 85% fewer COVID-19 hospital stays across a whole season.
+      The first vaccines came close against the original virus in 2020-21, but variants and waning cut
+      that to about half; vaccines given through the nose or mouth (such as Vaxart''s tablet, with efficacy
+      data due in 2027) and broader vaccines across coronavirus strains are the routes to rung 3. Base
+      rate: no vaccine for a fast-changing respiratory virus has kept 85% protection year after year.'
+  easy:
+    median: 2055
+    low: 2035
+    high: 2100
+    p2035: 6
+    p2045: 25
+    note: Mild prevention would also need protection that lasts more than a season without yearly shots,
+      and broad, cheap access rather than eligibility limited to older and high-risk people.

@@ -1,0 +1,140 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: asthma
+name: Asthma
+category: other
+tracking: active
+summary: A long-term condition in which the airways become inflamed and narrow, causing wheezing, coughing,
+  chest tightness and breathlessness that come and go, sometimes as sudden, serious attacks.
+toll:
+  text: WHO estimates about 363 million people had asthma and 442,000 died of it in 2023, most deaths
+    in low- and lower-middle-income countries; in the US 27.8 million people (8.4%) have asthma and 3,624
+    died of it in 2023 (CDC).
+  url: https://www.who.int/news-room/fact-sheets/detail/asthma
+  ratio: "About 1 in 12"
+  ratio_caption: "people in the US currently has asthma"
+  ratio_url: https://www.cdc.gov/asthma-data/about/most-recent-asthma-data.html
+  ratio_basis: "Derived: CDC says 8.4% of the US population had current asthma in 2023 (NHIS); 8.4% is about 1 in 12."
+status:
+  level: 2
+  why: Inhalers let most people with asthma live normal, active lives, and biologic injections bring
+    about a third of people with severe asthma into remission, but treatment has to continue and nothing
+    cures it.
+  today: For most people an inhaler combining a steroid with formoterol, taken as needed or daily, controls
+    symptoms and cuts serious attacks, and guidelines no longer advise relying on a quick-relief inhaler
+    alone. For the few percent with severe asthma, biologic injections (omalizumab, mepolizumab, benralizumab,
+    dupilumab, tezepelumab and, since December 2025, twice-yearly depemokimab) cut attacks by roughly
+    half, and about 30-38% reach clinical remission while on them. Steroid inhalers are missing from
+    public primary care in more than half of low- and lower-middle-income countries.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - As-needed or daily inhaled steroid plus formoterol (such as budesonide-formoterol)
+  - Inhaled steroid with long-acting bronchodilators, including triple inhalers
+  - Biologic injections for severe asthma (mepolizumab, benralizumab, dupilumab, tezepelumab, omalizumab,
+    depemokimab)
+  - Avoiding triggers such as smoke and allergens
+  burden: moderate
+  burden_note: Lifelong inhalers that are cheap as generics and mostly well tolerated, with hoarseness
+    or thrush from inhaled steroids; severe asthma adds costly biologic injections every 2 weeks to 6
+    months, and steroid inhalers are often unavailable in poorer countries.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 2
+    p2045: 8
+    median: 2068
+    low: 2045
+    high: 2100
+  faster:
+    p2035: 4
+    p2045: 16
+    median: 2058
+    low: 2040
+    high: 2100
+  faster_note: Faster target discovery and trials could find treatments that reset the immune response
+    in the airways, but proving remission lasts off treatment takes years of follow-up, so the gain shows
+    mostly after 2040.
+  outlook: Level 4 is read here as most people with asthma staying symptom-free off all treatment after
+    a finite course. Biologics now bring some people with severe asthma into remission, but only while
+    they keep taking them, and no drug has yet been shown to switch asthma off for good. Trials of early
+    treatment in high-risk toddlers, such as PARK with omalizumab, are the first tests of prevention or
+    lasting change, with results around 2028.
+pipeline:
+- name: Lunsekimig (Sanofi, nanobody blocking TSLP and IL-13)
+  stage: Phase 2
+  note: An injected nanobody that blocks two airway immune signals at once; it cut attacks and improved lung function in the AIRCULES
+    Phase 2b in moderate to severe asthma (April 2026, regardless of blood markers); the AIRLYMPUS trial
+    in high-risk asthma reaches primary completion in June 2027.
+  url: https://clinicaltrials.gov/study/NCT06676319
+  expected: '2027-06-21'
+  effect: small
+  effect_note: A win would widen biologic options to people without the usual allergy-type markers, but
+    it would still be ongoing treatment, not a cure.
+- name: Verekitug (Upstream Bio, long-acting TSLP receptor antibody)
+  stage: Phase 2
+  note: Cut severe asthma attacks by 56% with doses every 12 weeks in the 478-person VALIANT Phase 2
+    (February 2026); the company plans to start Phase 3 dosing in the first quarter of 2027.
+  url: https://www.hcplive.com/view/phase-2-valiant-verekitug-reduces-average-annual-asthma-flare-ups
+  expected: '2027-03'
+  effect: small
+  effect_note: Less frequent injections would ease treatment for severe asthma but would not change whether
+    it can be cured.
+- name: Tezepelumab ARRIVAL (AstraZeneca and Amgen)
+  stage: Phase 3
+  note: An open-label study testing whether people with severe asthma on tezepelumab can cut back their
+    other asthma medicines while keeping control; primary completion June 2027.
+  url: https://clinicaltrials.gov/study/NCT06473779
+  expected: '2027-06'
+  effect: small
+  effect_note: Shows whether biologics can lighten the rest of the treatment load, a burden gain rather
+    than a cure.
+- name: Omalizumab to prevent asthma in high-risk toddlers (PARK, NIH)
+  stage: Phase 3
+  note: Tests whether two years of omalizumab in about 250 children aged 2-3 at high risk of asthma prevents
+    it from developing or makes it milder; primary completion January 2028.
+  url: https://clinicaltrials.gov/study/NCT02570984
+  expected: '2028-01'
+  effect: some
+  effect_note: The first sign that treating early can change the course of asthma, though the result would
+    apply to allergic children at high risk rather than people who already have asthma.
+- name: Depemokimab (Exdensur, GSK, twice-yearly IL-5 antibody)
+  stage: Approved 2025 (US)
+  note: FDA approved it in December 2025 as an add-on for severe eosinophilic asthma from age 12, after
+    the SWIFT-1 and SWIFT-2 trials cut attacks by 58% and 48%, with two injections a year.
+  url: https://us.gsk.com/media/gctjoq5v/exdensur-fda-approval_uspr_final.pdf
+  effect: small
+  effect_note: Already approved; fewer injections ease the burden but the drug controls rather than cures.
+- name: Breztri (AstraZeneca, triple inhaler) for asthma
+  stage: Approved 2026 (US)
+  note: FDA approved this steroid plus two-bronchodilator inhaler for asthma from age 12 in April 2026,
+    after the 4,300-person KALOS and LOGOS trials improved lung function.
+  url: https://www.astrazeneca.com/media-centre/press-releases/2026/positive-and-clinically-meaningful-results-from-the-phase-iii-kalos-and-logos-trials-for-breztri.html
+  effect: small
+  effect_note: Adds an inhaler option for people not controlled on two-drug inhalers.
+recent:
+- date: 2026-04
+  text: WHO updated its asthma fact sheet to about 363 million people with asthma and 442,000 deaths in
+    2023, and found steroid inhalers in public primary care in fewer than half of low- and lower-middle-income
+    countries.
+  url: https://www.who.int/news-room/fact-sheets/detail/asthma
+- date: 2026-04
+  text: FDA approved the triple inhaler Breztri for asthma in people 12 and older.
+  url: https://www.astrazeneca.com/media-centre/press-releases/2026/positive-and-clinically-meaningful-results-from-the-phase-iii-kalos-and-logos-trials-for-breztri.html
+- date: 2026-04
+  text: Sanofi's lunsekimig cut asthma attacks and improved lung function in the AIRCULES Phase 2b trial.
+  url: https://www.biopharminternational.com/view/sanofi-s-lunsekimig-meets-phase-2-endpoints-in-asthma-and-crswnp-showing-promise-as-a-dual-targeting-respiratory-therapy
+- date: 2026-02
+  text: Upstream Bio's verekitug cut severe asthma attacks by up to 56% in the VALIANT Phase 2 trial.
+  url: https://www.hcplive.com/view/phase-2-valiant-verekitug-reduces-average-annual-asthma-flare-ups
+- date: 2025-12
+  text: FDA approved depemokimab (Exdensur), the first twice-yearly biologic for severe asthma.
+  url: https://us.gsk.com/media/gctjoq5v/exdensur-fda-approval_uspr_final.pdf
+next_milestone:
+  date: '2027-06-21'
+  url: https://clinicaltrials.gov/study/NCT06676319
+  what: Primary completion of Sanofi's Phase 2 AIRLYMPUS trial of lunsekimig in high-risk asthma.
+ai:
+  impact: low
+  note: The new biologics target immune signals such as TSLP, IL-5 and IL-13 found through conventional
+    immunology, with no AI-discovered asthma drug known to be in late trials.
+markets: []

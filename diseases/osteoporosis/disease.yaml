@@ -1,0 +1,96 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: osteoporosis
+name: Osteoporosis
+category: aging
+tracking: active
+summary: A condition in which bones lose density and strength, mostly with age and after menopause,
+  so they break easily, especially in the hip, spine and wrist.
+toll:
+  text: About 21% of women and 6% of men over 50 worldwide have osteoporosis, up to 500 million people,
+    and up to 37 million fragility fractures occur each year in people over 55 (IOF).
+  url: https://www.osteoporosis.foundation/facts-statistics/epidemiology-of-osteoporosis-and-fragility-fractures
+  ratio: "1 in 3"
+  ratio_caption: "women over 50 will break a bone because of osteoporosis"
+  ratio_url: https://www.osteoporosis.foundation/facts-statistics/epidemiology-of-osteoporosis-and-fragility-fractures
+  ratio_basis: "International Osteoporosis Foundation: 1 in 3 women and 1 in 5 men aged over 50 will have an osteoporotic fracture."
+status:
+  level: 2
+  why: Drugs cut fracture risk by roughly 30 to 70% and bone-building drugs can restore density for some,
+    but treatment must continue or be followed by another drug, and fractures still happen.
+  today: Bisphosphonates and denosumab slow bone loss and cut spine fractures by about half or more and
+    hip fractures by about 40 to 50% in trials. Bone-building drugs (teriparatide, abaloparatide, romosozumab) add new
+    bone and work better than bisphosphonates in people at very high risk, but are limited to one or two
+    years and must be followed by another drug. Many people are never treated, even after a hip fracture.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Bisphosphonates (alendronate, zoledronic acid)
+  - Denosumab (Prolia and biosimilars)
+  - Teriparatide and abaloparatide (daily injections)
+  - Romosozumab (Evenity, monthly for 12 months)
+  - Calcium, vitamin D, exercise and fall prevention
+  burden: moderate
+  burden_note: Treatment runs for years as weekly pills, yearly infusions or injections every six months,
+    with rare jaw bone damage and unusual thigh fractures; denosumab cannot simply be stopped, and the
+    bone-building drugs mean daily injections or carry a heart attack and stroke warning.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 3
+    p2045: 12
+    median: 2058
+    low: 2040
+    high: 2100
+  faster:
+    p2035: 6
+    p2045: 27
+    median: 2048
+    low: 2036
+    high: 2090
+  faster_note: Faster discovery of treatments that rebuild bone lastingly, and trials shortened by the
+    new hip bone density endpoint, would matter most; restoring strong bone in most people still needs
+    biology that keeps the effect after treatment ends.
+  outlook: Today's drugs lower fracture risk a lot but don't make bones normal for good, and their benefit
+    fades or reverses when stopped. The FDA's 2025 acceptance of hip bone density as a trial endpoint
+    should speed new drugs, such as an oral bone-building tablet in Phase 3 from late 2026. Cured for most
+    would need a safe treatment that restores bone strength and keeps it, which looks decades away.
+pipeline:
+- name: EB613 (Entera Bio, oral PTH(1-34) tablet)
+  stage: Phase 3
+  note: A once-daily bone-building tablet; FDA agreed a single 750-woman placebo-controlled Phase 3 with
+    12-month hip density as its main goal, due to start in late 2026.
+  url: https://www.sec.gov/Archives/edgar/data/0001638097/000117891326003946/exhibit_99-1.htm
+  expected: '2028'
+  effect: small
+  effect_note: A pill could replace daily injections of teriparatide and widen use of bone-building drugs,
+    but it would not cure osteoporosis.
+- name: HCELL glycoengineered stem cell therapy
+  stage: Phase 1
+  note: One infusion of a patient's own modified bone marrow stem cells was safe in 10 women with advanced
+    osteoporosis, and fractures fell sharply; uncontrolled and very small (Cell, 2026).
+  url: https://medicalxpress.com/news/2026-09-osteoporosis-fractures-fall-small-human.html
+  effect: some
+  effect_note: If controlled trials confirm lasting bone gains from a single infusion, it would be the
+    first treatment aimed at restoring bone for good.
+recent:
+- date: '2026-09'
+  text: A first-in-human trial of edited stem cells in 10 women with advanced osteoporosis reported a sharp
+    fall in fractures over two years.
+  url: https://medicalxpress.com/news/2026-09-osteoporosis-fractures-fall-small-human.html
+- date: '2026-06'
+  text: FDA agreed to a single Phase 3 trial of Entera's oral bone-building tablet EB613 using hip bone
+    density as its main endpoint.
+  url: https://www.sec.gov/Archives/edgar/data/0001638097/000117891326003946/exhibit_99-1.htm
+- date: '2025-12'
+  text: FDA qualified the change in total hip bone density as a surrogate for fracture risk in postmenopausal
+    osteoporosis trials, so new drugs no longer need large fracture trials.
+  url: https://www.businesswire.com/news/home/20251219872991/en/FNIH-Announces-FDA-Qualification-of-First-Surrogate-Endpoint-for-Use-in-Osteoporosis-Clinical-Trials
+next_milestone:
+  date: '2026-12'
+  what: Entera plans to start the Phase 3 trial of its oral bone-building tablet EB613 in late 2026.
+  url: https://www.sec.gov/Archives/edgar/data/0001638097/000117891326003946/exhibit_99-1.htm
+ai:
+  impact: low
+  note: AI is mainly used to spot low bone density on CT scans taken for other reasons (FDA-cleared tools
+    such as Nanox HealthOST); the leading drugs were not AI-discovered.
+markets: []

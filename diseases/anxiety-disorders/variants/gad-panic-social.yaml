@@ -1,0 +1,32 @@
+# Cure Watch variant record: one stage or type of Anxiety disorders. Field guide: CONTRIBUTING.md.
+id: gad-panic-social
+name: Generalized, panic and social anxiety
+order: 1
+what: Ongoing worry about many things (generalized anxiety), repeated sudden panic attacks (panic disorder),
+  or intense fear of being judged by others (social anxiety disorder).
+level: 2
+burden: moderate
+burden_why: Usually months of weekly CBT sessions or months to years of daily antidepressants with side
+  effects, and both can be hard to get.
+survival: About 51% reach remission after CBT (meta-analysis of 100 studies, all anxiety disorders)
+share: In the US, about 5.7% of adults have generalized anxiety, 4.7% panic disorder and 12.1% social
+  anxiety at some point in life
+share_url: https://www.nimh.nih.gov/health/statistics/generalized-anxiety-disorder
+treatment: CBT (with exposure for panic and social anxiety) and SSRI or SNRI antidepressants are standard,
+  often combined. About half of people reach remission after CBT and many stay well, while those who
+  stop antidepressants after responding relapse more often (about 36% vs 16% within a year). Social anxiety
+  has among the lowest CBT remission rates.
+caveat: Remission rates depend heavily on how studies define remission, and most trials follow people
+  for a year or less; at 12 months or more CBT's benefit over control is small to medium for generalized
+  and social anxiety and not significant for panic disorder. Lifetime prevalence figures are from the
+  NIMH disorder pages (2001-2003 survey).
+url: https://pubmed.ncbi.nlm.nih.gov/29576326/
+forecast:
+  median: 2060
+  low: 2040
+  high: 2100
+  p2035: 3
+  p2045: 11
+  note: Cured for most would need treatments that bring lasting remission for the half of people CBT does
+    not, plus much wider access; single-dose psychedelic treatment is promising, but its durability beyond
+    12 weeks is unproven.

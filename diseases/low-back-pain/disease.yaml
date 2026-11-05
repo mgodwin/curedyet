@@ -1,0 +1,126 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: low-back-pain
+name: Low back pain
+category: aging
+tracking: active
+summary: Pain in the lower back with no specific identifiable cause (non-specific low back pain), the
+  world's leading cause of years lived with disability. Back pain from specific causes such as fractures,
+  cancer, infection or inflammatory arthritis is a different problem and is not covered here.
+toll:
+  text: About 619M people worldwide had low back pain in 2020, projected to reach about 843M by 2050;
+    it is the leading cause of years lived with disability (GBD 2021).
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10234592/
+  ratio: "About 1 in 13"
+  ratio_caption: "people worldwide has low back pain at any one time"
+  ratio_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10234592/
+  ratio_basis: "GBD 2021 Low Back Pain Collaborators, Lancet Rheumatology 2023: 619 million prevalent cases in 2020, out of a world population of about 7.8 billion, is about 7.9%, or 1 in 13 (our arithmetic)."
+status:
+  level: 2
+  why: Most back pain episodes settle within weeks and most people keep a near-normal life, but recurrences
+    are common and long-lasting back pain is only modestly eased by today's treatments.
+  today: About 90% of low back pain has no specific cause that can be found. Most new episodes ease a
+    lot within six weeks with simple care such as staying active, heat and anti-inflammatory pills, but
+    about a third of people have lingering or recurring pain. For chronic back pain, exercise and
+    psychological therapies give modest average benefits; opioids, many injections and surgery help
+    little for non-specific pain, and newer approaches such as pain reprocessing therapy look promising
+    but need confirming.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Advice to stay active, heat, NSAIDs
+  - Structured exercise therapy
+  - Cognitive functional therapy and CBT-based programmes
+  - Pain reprocessing therapy (early evidence)
+  - Spinal manipulation (WHO conditional recommendation)
+  burden: moderate
+  burden_note: Acute episodes need little more than self-care, but chronic pain means weeks to months of
+    exercise or psychological therapy that is hard to access in many places, and medicines carry stomach,
+    kidney or dependence risks.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 4
+    p2045: 12
+    median: 2060
+    low: 2040
+    high: 2100
+  faster:
+    p2035: 7
+    p2045: 25
+    median: 2050
+    low: 2036
+    high: 2095
+  faster_note: Faster trials of brain-based pain therapies and better ways to predict who will go on to
+    chronic pain would matter most; a drug that switches off chronic pain without the harms of opioids
+    is the larger but less certain prize.
+  outlook: Non-specific back pain has no single cause to fix, and decades of drugs, injections and surgery
+    have barely moved chronic pain. The most promising leads are not drugs but therapies that change how
+    the brain processes pain (cognitive functional therapy, pain reprocessing therapy) and programmes
+    that prevent recurrence, such as walking. If those replicate and scale, many more people could be
+    largely pain-free, but cured for most is still decades off.
+pipeline:
+- name: VER-01 (Exilby, Vertanical, full-spectrum cannabis extract)
+  stage: Phase 3
+  note: Approved in Germany June 2026 for chronic low back pain with a neuropathic component; pain fell
+    0.6 points more than placebo on a 0-10 scale in Phase 3. FDA Breakthrough designation May 2026; US
+    Phase 3 data expected 2027.
+  url: https://www.pharmacytimes.com/view/fda-grants-breakthrough-therapy-designation-to-investigational-cannabis-derived-therapy-for-chronic-low-back-pain
+  variants:
+  - chronic
+  expected: '2027'
+  effect: small
+  effect_note: If the US trial succeeds, it adds a non-opioid pill, but the average benefit over placebo
+    is small and it would not make most people pain-free.
+- name: Suzetrigine (Journavx, Vertex, NaV1.8 blocker)
+  stage: Phase 2
+  note: Approved in the US for short-term acute pain in Jan 2025. In a Phase 2 trial in sciatica (painful
+    lumbosacral radiculopathy) pain fell about as much as on placebo, and Vertex said it would not run
+    another trial in that condition.
+  url: https://pharmaphorum.com/news/vertex-smarting-pain-portfolio-setback
+  variants:
+  - chronic
+  effect: small
+  effect_note: Not being developed further for back-related nerve pain; it was tested in sciatica rather
+    than non-specific back pain, so it is unlikely to change the outlook.
+- name: Pain reprocessing therapy
+  stage: Phase 2
+  note: In a 151-person randomised trial, 66% were pain-free or nearly so after treatment vs 10% on usual
+    care, with gains largely kept at one year; a single-site trial in people with mostly moderate pain,
+    so it needs replicating.
+  url: https://pubmed.ncbi.nlm.nih.gov/34586357/
+  variants:
+  - chronic
+  effect: some
+  effect_note: If larger trials confirm it, a short course of psychological therapy could leave many people
+    with chronic back pain nearly pain-free, the closest thing to a cure in view.
+- name: Cognitive functional therapy (RESTORE)
+  stage: Phase 3
+  note: Large Phase 3 trial in Australia showed bigger, lasting cuts in disability and pain than usual
+    care, sustained to three years, at lower cost.
+  url: https://doi.org/10.1016/S0140-6736(23)00441-5
+  variants:
+  - chronic
+  effect: some
+  effect_note: Already shown to work; wider training and access could help many more people, though
+    most still have some pain.
+recent:
+- date: 2026-06
+  text: Germany approved VER-01 (Exilby), a cannabis extract, as the first European approval of the drug
+    for chronic low back pain with a neuropathic component.
+  url: https://pharmafile.com/?p=42943
+- date: 2026-05
+  text: FDA granted VER-01 Breakthrough Therapy designation for chronic low back pain.
+  url: https://www.pharmacytimes.com/view/fda-grants-breakthrough-therapy-designation-to-investigational-cannabis-derived-therapy-for-chronic-low-back-pain
+- date: 2024-06
+  text: The WalkBack trial found a walking and education programme nearly doubled the time before back
+    pain came back (median 208 vs 112 days).
+  url: https://pubmed.ncbi.nlm.nih.gov/38908392/
+next_milestone:
+  date: '2027'
+  url: https://www.pharmacytimes.com/view/fda-grants-breakthrough-therapy-designation-to-investigational-cannabis-derived-therapy-for-chronic-low-back-pain
+  what: First data from Vertanical's US Phase 3 trial of VER-01 in chronic low back pain (company guidance).
+ai:
+  impact: low
+  note: AI is used to triage imaging and power digital exercise programmes, but no AI-discovered treatment
+    for back pain is in late trials.
+markets: []
