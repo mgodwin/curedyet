@@ -49,6 +49,7 @@ Prefer, in roughly this order: regulators (FDA, EMA), WHO, CDC and national heal
 | `next_milestone` | The next dated event to watch: `date`, `what`, `url`. |
 | `ai.impact`, `ai.note` | `high`, `some` or `low`: is AI plausibly speeding progress now? One sentence with an example. |
 | `markets` | Forecasting-market questions about this disease: `who`, `what`, `url`. |
+| `life_stage` | Optional `true` for natural life stages (menopause), so pages talk about relief rather than cure. |
 | `prevention` | Infections only: the prevention ladder. `level` (0 to 4, see [METHODOLOGY.md](METHODOLOGY.md#the-prevention-ladder)), `burden`, `why`, `burden_why`, `best`, `url`, and `forecast` / `easy` / `reached` / `reached_easy` shaped like a variant's. A variant can carry its own `prevention` when its type differs. |
 
 ## Variants: stages and types

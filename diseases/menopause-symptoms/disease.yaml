@@ -3,6 +3,7 @@ id: menopause-symptoms
 name: Menopause symptoms
 category: aging
 tracking: active
+life_stage: true
 summary: Menopause is a natural life stage, not a disease, when periods stop for good as the ovaries
   make less estrogen (usually between 45 and 55); this record tracks how well its symptoms and longer-term
   effects, such as hot flashes, vaginal and urinary changes and bone loss, can be relieved.
