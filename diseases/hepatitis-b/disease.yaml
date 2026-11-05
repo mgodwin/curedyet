@@ -85,3 +85,22 @@ ai:
   note: 'Unclear: the leading cure candidates are antisense and siRNA drugs, with no clear AI-discovery
     role.'
 markets: []
+prevention:
+  level: 3
+  burden: light
+  why: The hepatitis B vaccine gives nearly 100% protection, lasting at least 20 years and probably for
+    life.
+  burden_why: It is a cheap infant series (birth dose plus 2-3 shots) with few side effects that reaches
+    84% of babies worldwide, though only 43% get the crucial birth dose (about 11% in Africa).
+  best:
+  - Hepatitis B vaccine (birth dose plus infant series)
+  - Hepatitis B immune globulin plus vaccine for babies of infected mothers
+  url: https://www.who.int/news-room/fact-sheets/detail/hepatitis-b
+  reached:
+    year: 1981
+    basis: FDA licensed the first hepatitis B vaccine (Heptavax-B); recombinant vaccine followed in 1986.
+  reached_easy:
+    year: 2001
+    basis: Cheap recombinant vaccine in universal infant programmes in 126 of 191 WHO member states by
+      2001, following the 1992 WHA call.
+    url: https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5236a5.htm

@@ -212,6 +212,10 @@ a.more{text-decoration:none}
 .vkey span{display:inline-flex;gap:6px;align-items:center}.vkey i{width:10px;height:10px;border-radius:50%;flex:none}
 .masonry{display:flex;gap:12px;align-items:flex-start}
 .mcol{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:12px}
+.vlist.two li a,.vhead{display:grid;grid-template-columns:minmax(0,1fr) 108px 72px;gap:10px;align-items:center}
+.vhead{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-top:4px}.vhead span{text-align:right}
+.pline{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:13px;font-weight:600;border-top:1px solid var(--rule);padding-top:8px}
+.pline>span:last-child{text-align:right;display:flex;flex-direction:column;line-height:1.25}.pline small{font-size:11px;font-weight:400;color:var(--muted)}
 .dwhy{margin:0;font-size:15px;line-height:1.45;text-wrap:pretty}
 .cstat{flex:none;text-align:right;font-size:13px;font-weight:600;display:flex;flex-direction:column;line-height:1.25}
 .cstat small{font-size:11px;font-weight:400;color:var(--muted)}
@@ -308,6 +312,12 @@ const STAGING="Cancer stages run from 0 to IV. Stage 0 is abnormal cells that ha
 function delta(cur,prev){if(prev==null||cur==null||cur===prev)return"";const d=cur-prev;return`<span class="delta ${d>0?"up":"down"}">${d>0?"▲":"▼"}${Math.abs(d)}</span>`}
 function catName(id){const c=S.cats.find(c=>c.id===id);return c?c.name:""}
 
+/* Prevention ladder (infections): how well the best vaccine or preventive drug protects those who get it.
+   Colours mirror cures: strong or eliminated is green, yellow or orange by burden; partial is orange; weak or none grey. */
+const PLEVELS=["No protection","Weak protection","Partial protection","Strong protection","Eliminated"];
+const toPV=(level,burden)=>level>=3?(burden==="light"?"mild":burden==="moderate"?"mod":"hard"):level===2?"hard":"no";
+const pvLine=pv=>{if(!pv)return"";const L=Math.max(0,Math.min(PLEVELS.length-1,pv.level|0));
+  return `<span class="pline"><span class="muted">Prevention</span><span class="v-${toPV(L,pv.burden)}">${esc(PLEVELS[L])}${L>=3&&pv.burden?`<small>${esc(bword(pv.burden))}</small>`:""}</span></span>`};
 /* ---------- Home: search, filters and one card per disease ---------- */
 function filtered(){
   let L=S.dz.slice();
@@ -321,18 +331,27 @@ function filtered(){
 /* One row's status: the rung in its colour, plus how hard the treatment is once most are cured. */
 const statusHTML=(level,burden)=>`<span class="cstat v-${toV(level,burden)}">${esc(LEVELS[level])}${level>=4&&burden?`<small>${esc(bword(burden))} treatment</small>`:""}</span>`;
 /* Diseases split into stages or types list each one's status instead of an overall verdict. Forecasts live on the disease pages. */
-function groupCardHTML(d){return `<article class="dcard">
+/* Infections with types show two columns per row: once infected, and prevention (the type's own, or the disease's). */
+const PSHORT=["None","Weak","Partial","Strong","Eliminated"];
+const pvOf=(d,g)=>g.prevention||d.prevention;
+const pvStatusHTML=pv=>{const L=Math.max(0,Math.min(PLEVELS.length-1,pv.level|0));
+  return `<span class="cstat pcol v-${toPV(L,pv.burden)}" title="Prevention: ${esc(PLEVELS[L])}">${esc(PSHORT[L])}${L>=3&&pv.burden?`<small>${esc(bword(pv.burden))}</small>`:""}</span>`};
+function groupCardHTML(d){const two=!!d.prevention||d.groups.some(g=>g.prevention);
+  return `<article class="dcard">
     <h2><a class="dcard-title" href="#d-${esc(d.id)}">${esc(d.name)}</a></h2>
-    <ul class="vlist" aria-label="${isStages(d)?"By stage":"By type"}">${d.groups.map(g=>{const gl=Math.max(0,Math.min(LEVELS.length-1,g.level|0));
-      return `<li><a href="#d-${esc(d.id)}/${esc(g.id)}"><span class="vname">${esc(g.name)}</span>${statusHTML(gl,g.burden)}</a></li>`}).join("")}</ul>
+    ${two?`<div class="vhead" aria-hidden="true"><span></span><span>Once infected</span><span>Prevention</span></div>`:""}
+    <ul class="vlist${two?" two":""}" aria-label="${isStages(d)?"By stage":"By type"}">${d.groups.map(g=>{const gl=Math.max(0,Math.min(LEVELS.length-1,g.level|0)),pv=two?pvOf(d,g):null;
+      return `<li><a href="#d-${esc(d.id)}/${esc(g.id)}"><span class="vname">${esc(g.name)}</span>${statusHTML(gl,g.burden)}${pv?pvStatusHTML(pv):two?`<span class="cstat pcol v-no">—</span>`:""}</a></li>`}).join("")}</ul>
     <a class="more" href="#d-${esc(d.id)}">See all ${isStages(d)?"stages":"types"} →</a></article>`}
 function cardHTML(d){
   if((d.groups||[]).length)return groupCardHTML(d);
   const L=lv(d),since=L>=4&&d.timeline?.median?` ${L>=5?"Cured for all":"Cured for most"} since about ${d.timeline.median}.`:"";
   return `<a class="dcard" href="#d-${esc(d.id)}">
     <h2>${esc(d.name)}</h2>
+    ${d.prevention?`<span class="eyebrow">Once infected</span>`:""}
     <span class="verdict v-${toV(L,d.txBurden)}">${esc(LEVELS[L])}.</span>
     <p class="dwhy">${esc(d.levelWhy||d.short)}${since}</p>
+    ${pvLine(d.prevention)}
     <span class="more">See details →</span></a>`;
 }
 /* Masonry: each card, in sort order, goes into the shortest column, so the order still reads left to right. */
@@ -473,11 +492,12 @@ let rsz;window.addEventListener("resize",()=>{clearTimeout(rsz);rsz=setTimeout(d
 /* ---------- Disease pages: single disease, hub (has variants) and variant ---------- */
 const vcolor=(level,burden)=>`var(${VCOL[toV(level,burden)]})`;
 /* Segments up to the rung fill in the status colour; on cured for most or all, the top one fills by how mild the treatment is. */
-function stripHTML(level,burden){const L=Math.max(0,Math.min(LEVELS.length-1,level|0)),c=`var(${VFILL[toV(L,burden)]})`,f=L>=4?(BFRAC[burden]||33):100;
-  return `<div class="ladder-strip">${LEVELS.map((_,i)=>`<i style="${L>0&&i<L?`background:${c}`:L>0&&i===L?`background:${f===100?c:`linear-gradient(90deg,${c} 0 ${f}%,var(--rule) ${f}%)`}`:""}"></i>`).join("")}</div>`}
-function ladderHTML(level,burden){const L=Math.max(0,Math.min(LEVELS.length-1,level|0));
-  return `${stripHTML(L,burden)}
-    <div class="ladder-labels">${LEVELS.map((l,i)=>`<span style="${i===L?"color:var(--ink);font-weight:600":""}">${l}</span>`).join("")}</div>`}
+/* Both ladders share one drawing: names, a colour function and the rung where the burden fill starts. */
+function stripHTML(level,burden,names=LEVELS,vf=toV,cut=4){const L=Math.max(0,Math.min(names.length-1,level|0)),c=`var(${VFILL[vf(L,burden)]})`,f=L>=cut?(BFRAC[burden]||33):100;
+  return `<div class="ladder-strip" style="grid-template-columns:repeat(${names.length},minmax(0,1fr))">${names.map((_,i)=>`<i style="${L>0&&i<L?`background:${c}`:L>0&&i===L?`background:${f===100?c:`linear-gradient(90deg,${c} 0 ${f}%,var(--rule) ${f}%)`}`:""}"></i>`).join("")}</div>`}
+function ladderHTML(level,burden,names=LEVELS,vf=toV,cut=4){const L=Math.max(0,Math.min(names.length-1,level|0));
+  return `${stripHTML(L,burden,names,vf,cut)}
+    <div class="ladder-labels" style="grid-template-columns:repeat(${names.length},minmax(0,1fr))">${names.map((l,i)=>`<span style="${i===L?"color:var(--ink);font-weight:600":""}">${l}</span>`).join("")}</div>`}
 function burdenTip(b,id){if(!b)return"";return `<span class="tip"><button type="button" class="tb ${esc(b)}" aria-describedby="bk-${id}">${esc(bword(b))}</button><span class="pop" id="bk-${id}" role="tooltip">
   <span><b>Mild:</b> a short or easy course with few side effects</span><span><b>Moderate:</b> ongoing treatment, or real but manageable side effects</span><span><b>Difficult:</b> serious risks, intensive procedures, heavy monitoring or very high cost</span></span></span>`}
 const EFFECT={big:"Big effect",some:"Some effect",small:"Small effect"};
@@ -534,11 +554,27 @@ const kindWord=d=>isStages(d)?"stage":"type";
 const baseRow=(d,useSnap)=>{const T=(d.trend||[])[0];if(!T)return[];const m=useSnap&&T.level<4?T.median:null;
   return [{date:T.date,text:m?`Tracking began at ~${YRS(m,+String(T.date).slice(0,4))} years (${m>=2100?"after 2100":m}).`:"Tracking began.",tag:"Baseline"}]};
 
+/* ---------- Prevention (infections): vaccines and preventive drugs, on their own ladder ---------- */
+function preventionHTML(pv,scope){if(!pv)return"";const L=Math.max(0,Math.min(PLEVELS.length-1,pv.level|0)),mild=L>=3&&pv.burden==="light";
+  const when=f=>`<span class="display num" style="font-size:24px;line-height:1.1">~${YRS(f.median)} years</span> <span class="muted">best guess · ${f.median>=2100?"after 2100":f.median}${f.low!=null?` · optimistic ${f.low}, pessimistic ${f.high>=2100?"after 2100":f.high}`:""}</span>`;
+  let fc="";
+  if(L>=3)fc=`<span style="font-size:14px">${pv.reached?.year?`Strong protection since ~${esc(pv.reached.year)}. `:""}${mild?(pv.reached_easy?.year?`Easy to get and take since ~${esc(pv.reached_easy.year)}.`:""):pv.easy?.median?"":"No forecast yet for when it gets easy to get and take."}</span>
+    ${!mild&&pv.easy?.median?`<div style="display:flex;flex-direction:column;gap:2px"><span class="eyebrow">When will strong protection be easy to get and take?</span><div>${when(pv.easy)}</div></div>`:""}`;
+  else if(pv.forecast?.median)fc=`<div style="display:flex;flex-direction:column;gap:2px"><span class="eyebrow">When will strong protection exist?</span><div>${when(pv.forecast)}</div><span class="muted" style="font-size:13px">Chance by 2035: ${esc(pv.forecast.p2035)}% · by 2045: ${esc(pv.forecast.p2045)}%</span></div>`;
+  const note=(L<3?pv.forecast:pv.easy)?.note;
+  return `<section class="card" id="prevention"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><span class="eyebrow">Prevention${scope?` · ${esc(scope)}`:""}</span>${L>0?burdenTip(pv.burden,"pv-"+(scope||"d")):""}</div>
+    <span class="display v-${toPV(L,pv.burden)}" style="font-size:30px;line-height:1">${esc(PLEVELS[L])}</span>${ladderHTML(L,pv.burden,PLEVELS,toPV,3)}
+    ${pv.why?`<span style="font-size:14px">${esc(pv.why)}</span>`:""}
+    ${(pv.best||[]).length?`<div class="chips">${pv.best.map(b=>`<span>${esc(b)}</span>`).join("")}</div>`:""}
+    ${L>0&&pv.burden_why?`<div class="why ${esc(pv.burden||"")}"><b>Why it's rated ${esc(bword(pv.burden))}:</b> ${esc(pv.burden_why)}</div>`:""}
+    ${fc}${note?`<details class="gacc"><summary>Why we think so</summary><div class="gacc-body"><span style="font-size:14px">${esc(note)}</span></div></details>`:""}
+    ${safe(pv.url)?srcLinks([pv.url]):""}</section>`}
 function singlePage(d){const t=d.timeline||{},L=lv(d),col=vcolor(L,d.txBurden);
   const logRows=baseRow(d,true).concat((d.events||[]).map(e=>({date:e.date,text:e.text,url:e.url,tag:"Changed"})),(d.breakthroughs||[]).map(b=>({date:b.date,text:b.text,url:b.url,tag:"Counted in baseline"})));
   return `${headerHTML(d,d.name,d.short)}
   <div class="dlayout"><main class="dmain">
-    <section class="card"><span class="eyebrow">Where it stands</span><span class="display" style="font-size:30px;line-height:1">${esc(LEVELS[L])}</span>${ladderHTML(L,d.txBurden)}${d.levelWhy?`<span style="font-size:14px">${esc(d.levelWhy)}</span>`:""}</section>
+    <section class="card"><span class="eyebrow">${d.prevention?"Once infected":"Where it stands"}</span><span class="display" style="font-size:30px;line-height:1">${esc(LEVELS[L])}</span>${ladderHTML(L,d.txBurden)}${d.levelWhy?`<span style="font-size:14px">${esc(d.levelWhy)}</span>`:""}</section>
+    ${preventionHTML(d.prevention)}
     <section class="card"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><h2 class="ch" style="font-size:22px">Treatment today</h2>${burdenTip(d.txBurden,d.id)}</div>
       ${d.status?`<p style="margin:0">${esc(d.status)}</p>`:""}${(d.bestTherapies||[]).length?`<div class="chips">${d.bestTherapies.map(b=>`<span>${esc(b)}</span>`).join("")}</div>`:""}
       ${d.txBurdenNote?`<div class="why ${esc(d.txBurden||"")}"><b>Why it's rated ${esc(bword(d.txBurden))}:</b> ${esc(d.txBurdenNote)}</div>`:""}</section>
@@ -547,9 +583,10 @@ function singlePage(d){const t=d.timeline||{},L=lv(d),col=vcolor(L,d.txBurden);
   </main>${railHTML(d)}</div>${footerHTML()}`}
 
 function hubPage(d){const t=d.timeline||{},G=d.groups,w=kindWord(d);
-  const rows=G.map(g=>{const f=g.forecast,gl=g.level|0;
+  const rows=G.map(g=>{const f=g.forecast,gl=g.level|0,pv=pvOf(d,g),pl=pv?Math.max(0,Math.min(PLEVELS.length-1,pv.level|0)):0;
     const when=gl>=4&&g.burden==="light"?`<b class="v-mild">${esc(LEVELS[gl])}</b><div class="muted" style="font-size:12px">with mild treatment</div>`:gl>=4?`<b class="v-${toV(gl,g.burden)}">${esc(LEVELS[gl])}</b><div class="muted" style="font-size:12px">next: mild treatment${g.easy?` ~${YRS(g.easy.median)} yrs`:""}</div>`:f?`<b class="display num" style="font-size:22px">~${YRS(f.median)} yrs</b><div class="muted" style="font-size:12px">until most curable · ${f.median>=2100?"after 2100":f.median}</div>`:`<span class="muted">Forecast coming</span>`;
-    return `<a class="vrow" href="#d-${esc(d.id)}/${esc(g.id)}"><div style="display:flex;flex-direction:column;gap:6px;min-width:0"><b style="font-size:17px">${esc(g.name)}</b>${g.what?`<span class="muted" style="font-size:13px">${esc(g.what)}</span>`:""}${stripHTML(gl,g.burden)}<span style="font-size:13px;font-weight:600">${esc(LEVELS[gl])}</span></div>
+    return `<a class="vrow" href="#d-${esc(d.id)}/${esc(g.id)}"><div style="display:flex;flex-direction:column;gap:6px;min-width:0"><b style="font-size:17px">${esc(g.name)}</b>${g.what?`<span class="muted" style="font-size:13px">${esc(g.what)}</span>`:""}${pv?`<span class="eyebrow" style="font-size:11px;margin-top:2px">Once infected</span>`:""}${stripHTML(gl,g.burden)}<span style="font-size:13px;font-weight:600">${esc(LEVELS[gl])}</span>
+      ${pv?`<span class="eyebrow" style="font-size:11px;margin-top:6px">Prevention</span>${stripHTML(pl,pv.burden,PLEVELS,toPV,3)}<span class="v-${toPV(pl,pv.burden)}" style="font-size:13px;font-weight:600">${esc(PLEVELS[pl])}${pl>=1&&pv.burden?`<span class="muted" style="font-weight:400"> · ${esc(bword(pv.burden))}</span>`:""}</span>`:""}</div>
       <div class="vhide">${g.survival?`<span style="font-size:14px">${esc(g.survival)}</span>`:""}${g.burden?`<div style="margin-top:4px"><span class="tb ${esc(g.burden)}">${esc(bword(g.burden))} treatment</span></div>`:""}</div>
       <div class="vhide">${when}</div><span aria-hidden="true" class="vgo">→</span></a>`}).join("");
   return `${headerHTML(d,d.name,`${d.short||""} How it's treated and how likely a cure is depend on the ${w}, so each ${w} has its own page.`)}
@@ -557,6 +594,7 @@ function hubPage(d){const t=d.timeline||{},G=d.groups,w=kindWord(d);
     <section style="display:flex;flex-direction:column;gap:10px"><h2 class="ch" style="font-size:24px">Choose a ${w}</h2>
       ${isStages(d)?`<span class="muted" style="font-size:13px">${STAGING}</span>`:""}
       <nav class="vlist-nav" aria-label="${w==="stage"?"Stages":"Types"}">${rows}</nav></section>
+    ${preventionHTML(d.prevention,(d.groups||[]).some(g=>g.prevention)?`typical person at risk; each ${w} has its own`:"")}
     ${lv(d)>=4?`<section class="card"><span class="eyebrow">Across all ${w}s</span><span class="display" style="font-size:28px;line-height:1.1">${esc(LEVELS[lv(d)])} for the typical patient${t.median?` since ~${t.median}`:""}</span>
       <span class="muted" style="font-size:13px">Pooled across everyone diagnosed. Some ${w}s are still far from a cure; each has its own page.</span></section>`:""}
     ${lv(d)<4&&t.median!=null?`<section class="card"><span class="eyebrow">Across all ${w}s</span>
@@ -573,8 +611,9 @@ function variantPage(d,g){const gl=g.level|0,col=vcolor(gl,g.burden),f=g.forecas
   const logRows=baseRow(d,false).concat((g.events||[]).map(e=>({date:e.date,text:e.text,url:e.url,tag:"Changed"})));
   return `${headerHTML(d,title,g.what,crumb)}
   <div class="dlayout"><main class="dmain">
-    <section class="card"><span class="eyebrow">Where it stands</span><span class="display" style="font-size:30px;line-height:1">${esc(LEVELS[gl])}</span>${ladderHTML(gl,g.burden)}
+    <section class="card"><span class="eyebrow">${g.prevention||d.prevention?"Once infected":"Where it stands"}</span><span class="display" style="font-size:30px;line-height:1">${esc(LEVELS[gl])}</span>${ladderHTML(gl,g.burden)}
       ${g.survival?`<span style="font-size:14px"><b>Prognosis:</b> ${esc(g.survival)}</span>`:""}</section>
+    ${preventionHTML(g.prevention||d.prevention,g.prevention?g.name:"")}
     <section class="card"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><h2 class="ch" style="font-size:22px">Treatment today</h2>${burdenTip(g.burden,g.id)}</div>
       <p style="margin:0">${esc(g.note)}</p>${g.burden_why?`<div class="why ${esc(g.burden||"")}"><b>Why it's rated ${esc(bword(g.burden))}:</b> ${esc(g.burden_why)}</div>`:""}${g.caveat?`<span class="muted" style="font-size:12px">${esc(g.caveat)}</span>`:""}</section>
     ${forecastHTML({head:`When will most people with ${g.name.replace(/^Stage /,"stage ")} be curable?`,level:gl,burden:g.burden,f,note:f.note,reached:g.reached?.year,reachedEasy:g.reached_easy?.year,easy:g.easy,

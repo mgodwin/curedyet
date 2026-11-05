@@ -11,6 +11,10 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [CEPI: MBP1F5 antibody trials](https://cepi.net/new-human-trials-novel-antibody-offer-hope-immediate-protection-against-deadly-nipah)
 - [Therapeutics for Nipah virus disease: systematic review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12062192/)
 - [Bangladesh reports first Nipah death of 2026](https://thepeninsulaqatar.com/article/07/02/2026/bangladesh-reports-first-nipah-virus-fatality-in-2026)
+- [WHO fact sheet: Nipah virus](https://www.who.int/news-room/fact-sheets/detail/nipah-virus) - No approved vaccine; prevention measures
+- [Oxford: world's first Phase II Nipah vaccine trial launches (Dec 2025)](https://www.ox.ac.uk/news/2025-12-15-worlds-first-phase-ii-nipah-virus-vaccine-trial-launch) - ChAdOx1 NipahB Phase 2 in Bangladesh, 306 participants; EMA PRIME
+- [ISRCTN62461807: Nipah vaccine study in Bangladesh](https://www.isrctn.com/ISRCTN62461807) - Phase 2a immunogenicity and safety design
+- [Pharmaphorum: NIH starts trial of Moderna's mRNA Nipah vaccine](https://pharmaphorum.com/news/nih-starts-trial-of-modernas-mrna-nipah-virus-vaccine) - mRNA-1215 Phase 1
 
 ## Research log
 

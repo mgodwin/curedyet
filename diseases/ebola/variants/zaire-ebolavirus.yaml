@@ -38,3 +38,30 @@ easy:
   note: Ebola is a sudden, severe illness that needs isolation and hospital care, so a mild cure would
     require a treatment given very early, such as oral pills after exposure or at first symptoms, that
     stops the disease before it becomes severe.
+prevention:
+  level: 3
+  burden: heavy
+  why: Ervebo (rVSV-ZEBOV), a single-dose licensed vaccine, showed 100% efficacy in the Guinea ring trial
+    and about 97.5% in DRC outbreak use, against Zaire ebolavirus only.
+  burden_why: It is mostly given only during outbreaks to contacts and health workers via ring vaccination,
+    and needs ultra-cold (-80 to -60 C) storage in remote, often conflict-affected areas.
+  best:
+  - Ervebo (rVSV-ZEBOV) ring vaccination
+  - Zabdeno + Mvabea (Ad26.ZEBOV/MVA-BN-Filo) for preventive use
+  url: https://www.healio.com/news/infectious-disease/20170116/ebola-vaccine-was-100-effective-in-major-trial
+  easy:
+    median: 2040
+    low: 2030
+    high: 2070
+    p2035: 30
+    p2045: 55
+    note: 'Ervebo already gives strong protection, so the gap is burden: it needs -80 to -60 C storage
+      and is used mainly in outbreak rings and for some health workers, not routinely for people in at-risk
+      areas. Getting to mild needs a thermostable or easily stored vaccine and routine preventive use
+      in high-risk areas; Gavi-funded preventive vaccination of health workers began in 2024, but wider
+      routine use has no set timeline. Base rate: delivery and formulation improvements for existing vaccines
+      typically take 10-20 years to reach routine programmes in low-income settings.'
+  reached:
+    year: 2019
+    basis: EMA and FDA licensed Ervebo in Nov-Dec 2019 after the Guinea ring trial showed 100% efficacy.
+    url: https://www.merck.com/news/merck-announces-fda-approval-for-ervebo-ebola-zaire-vaccine-live/

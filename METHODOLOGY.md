@@ -39,6 +39,22 @@ The data uses `light`, `moderate` and `heavy`; the site shows them as **mild**, 
 
 A safer or easier treatment counts as progress even when the level doesn't move.
 
+## The prevention ladder
+
+Infections get a second ladder for prevention: vaccines and preventive drugs, including pre-exposure (HIV PrEP) and post-exposure (rabies) prophylaxis. "Is it cured?" is only half the story for them: hepatitis B can rarely be cured but is almost fully prevented by a vaccine, and hepatitis C is the reverse.
+
+| Level | Name | Meaning |
+|---|---|---|
+| 0 | No protection | No licensed vaccine or proven preventive drug. |
+| 1 | Weak protection | The best licensed option cuts risk by less than about half, or its protection in people is unproven. |
+| 2 | Partial protection | About 50 to 85% protection for those who get it. |
+| 3 | Strong protection | About 85% or more protection for those who get it, licensed and in real use. |
+| 4 | Eliminated | Prevention is used so widely the disease no longer spreads in most countries. |
+
+The rung rates the best option for a typical person at risk. How hard it is to get and take is rated like treatment burden: **mild** (one lasting course, few side effects, cheap and broadly available), **moderate** (repeat doses, a daily pill, or real cost or access hurdles), **difficult** (urgent or intensive courses, serious risks, very high cost, or out of reach for most people at risk, such as outbreak-only use). Colours follow the cure ladder: strong or eliminated is green, yellow or orange by burden; partial is orange; weak or none is grey.
+
+Prevention forecasts use the single-track variant shape: when strong protection will exist (`forecast`), and when it will also be easy to get and take (`easy`). Records already there give the year (`reached`, `reached_easy`). Where types of a disease differ in prevention (Ebola species), each type carries its own block.
+
 ## Forecasts
 
 For each disease below level 4:

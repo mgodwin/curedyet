@@ -25,3 +25,36 @@ forecast:
   note: A treatment that raises survival to Zaire-like levels would be needed; the pan-species antibody
     MBP134 and remdesivir could cover Sudan virus if they work against Bundibugyo, but Sudan outbreaks
     are small, so proof may rely on animal data and future outbreak trials.
+prevention:
+  level: 0
+  burden: heavy
+  why: No vaccine is licensed for Sudan virus; candidates such as IAVI's rVSV-SUDV (ring trial in Uganda
+    2025) and Sabin's cAd3-Sudan have no proven efficacy, and Ervebo does not cover it.
+  burden_why: Candidates are given only to contacts and health workers under trial protocols during outbreaks,
+    in hard-to-reach settings.
+  best:
+  - Infection control and contact tracing
+  - Investigational rVSV-SUDV or cAd3-Sudan vaccine (trial only)
+  url: https://www.iavi.org/press-release/first-participants-vaccinated-with-iavis-ebola-sudan-vaccine-candidate-in-uganda/
+  forecast:
+    median: 2040
+    low: 2030
+    high: 2080
+    p2035: 30
+    p2045: 55
+    note: 'Leading candidates are IAVI''s rVSV-SUDV, built on the same platform as Ervebo (ring trial
+      in Uganda in 2025, but the outbreak ended at 14 cases so efficacy could not be shown), and Sabin''s
+      cAd3-Sudan, which finished Phase 2 enrollment in March 2026. Sudan outbreaks are small and short,
+      so licensure may need animal-rule or immunobridging data, and rung 3 needs real protection data.
+      Base rate: roughly a third of vaccines leaving Phase 2 reach licensure, typically 5-10 years later;
+      the proven rVSV platform raises the odds.'
+  easy:
+    median: 2050
+    low: 2035
+    high: 2100
+    p2035: 10
+    p2045: 35
+    note: 'Strong protection would first come as an outbreak-only ring vaccine needing cold storage, which
+      is heavy burden. Mild burden would also need routine, easy-to-store preventive use in at-risk areas,
+      which has no plan yet. Base rate: for Zaire, about 5 years passed from licensure to the first preventive
+      programmes and those still cover only health workers.'

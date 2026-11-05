@@ -58,3 +58,35 @@ ai:
   note: Cures already exist; AI shows up only at the edges, such as an AI-assisted single-visit test-and-treat
     trial.
 markets: []
+prevention:
+  level: 0
+  burden: heavy
+  why: There is no vaccine and no proven preventive drug for hepatitis C; the only vaccine tested for
+    efficacy failed in a 2021 trial.
+  burden_why: With nothing to take, protection relies on safe injections, blood screening and harm reduction
+    such as opioid substitution therapy (which roughly halves risk), and these services are missing for
+    most people who inject drugs.
+  best:
+  - Harm reduction (opioid substitution therapy, needle and syringe programmes)
+  - Blood and injection safety
+  url: https://www.who.int/news-room/fact-sheets/detail/hepatitis-c
+  forecast:
+    median: 2058
+    low: 2040
+    high: 2100
+    p2035: 2
+    p2045: 12
+    note: 'No candidate is in efficacy trials: the only efficacy trial (ChAd3/MVA, NEJM 2021) did not
+      prevent chronic infection, the protein vaccine AVIHepC1 is only starting phase 1, and others such
+      as HCVIVA are preclinical. Base rate: roughly 1 in 10 vaccine candidates entering phase 1 reach
+      licensure, typically 10-15 years later, and HCV''s high variability makes it harder than average.'
+  easy:
+    median: 2062
+    low: 2042
+    high: 2100
+    p2035: 1
+    p2045: 10
+    note: A strong, mild option would be a cheap, lasting vaccine, which depends on the same early-stage
+      candidates (AVIHepC1 phase 1, HCVIVA preclinical). It also needs rollout to people who inject drugs
+      and to high-burden countries, adding years after any licensure, so this is anchored to phase 1 base
+      rates of about 10% success.

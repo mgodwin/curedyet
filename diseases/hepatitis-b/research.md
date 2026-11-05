@@ -11,6 +11,8 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Vir MARCH study data](https://investors.vir.bio/news/news-details/2025/Vir-Biotechnology-Announces-Preliminary-24-Week-Post-End-of-Treatment-Data-for-Tobevibart-and-Elebsiran-Combinations-in-Chronic-Hepatitis-B-From-the-MARCH-Study/default.aspx)
 - [GSK: Hibsago (bepirovirsen) approved in the US for the treatment of chronic hepatitis B (20 Oct 2026)](https://www.gsk.com/media/alvmln3q/final-2-_bepi_us_approval_sea_201026.pdf) - survival by subtype
 - [GSK: bepirovirsen approved in Japan](https://www.gsk.com/media/yd3hdtnz/bepirovirsen-japan-approval-sea.pdf) - first approval anywhere, Aug 2026
+- [WHO fact sheet: Immunization coverage](https://www.who.int/news-room/fact-sheets/detail/immunization-coverage) - 2025: HepB3 84% globally; birth dose 43% globally, about 11% in the African Region
+- [CDC MMWR 2003: Global progress toward universal childhood hepatitis B vaccination](https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5236a5.htm) - 126 of 191 WHO member states had universal infant/childhood HBV vaccination by 2001
 
 ## Research log
 

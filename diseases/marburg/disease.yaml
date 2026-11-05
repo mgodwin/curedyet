@@ -85,3 +85,37 @@ ai:
   note: Marburg countermeasures come from survivor antibodies and adenovirus vectors; no AI-designed Marburg
     drug is in trials.
 markets: []
+prevention:
+  level: 0
+  burden: heavy
+  why: WHO lists no licensed Marburg vaccine; Sabin's single-dose cAd3-Marburg vaccine was given to contacts
+    and health workers in Rwanda (2024) and Ethiopia (2025-26) trials but has no published efficacy result.
+  burden_why: The only candidate is given during outbreaks to contacts and frontline workers under trial
+    protocols, so almost no one at risk can get it.
+  best:
+  - Infection control and contact tracing
+  - Investigational cAd3-Marburg vaccine (trial only)
+  url: https://www.who.int/news-room/fact-sheets/detail/marburg-virus-disease
+  forecast:
+    median: 2045
+    low: 2032
+    high: 2090
+    p2035: 20
+    p2045: 50
+    note: 'Sabin''s cAd3-Marburg has finished enrollment in all Phase 2 trials (Mar 2026), with outbreak
+      use in Rwanda (over 1,700 vaccinated, including a randomized part) and Ethiopia (about 640 doses,
+      trial completed May 2026), but no efficacy data are published; Oxford''s ChAdOx1 Marburg is in Phase
+      1. Outbreaks are too small to prove high protection, so a first licence may rest on animal and immune
+      data, which would count as unproven protection, not rung 3. Base rate: roughly a third of Phase
+      2 vaccines reach licensure, often 5-10 years later, and showing 85% protection needs several outbreaks''
+      worth of data.'
+  easy:
+    median: 2060
+    low: 2040
+    high: 2100
+    p2035: 5
+    p2045: 25
+    note: 'Any first vaccine will be outbreak-only ring or health-worker use, which is heavy burden. Mild
+      burden needs routine preventive use in at-risk areas, which no one plans for a disease with sporadic
+      outbreaks of tens of cases. Base rate: Zaire Ebola has no routine public vaccination 7 years after
+      licensure.'

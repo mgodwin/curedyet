@@ -88,3 +88,36 @@ ai:
   note: Structure-guided antibody and vaccine antigen design helps, but no AI-discovered Nipah drug is
     in human trials.
 markets: []
+prevention:
+  level: 0
+  burden: heavy
+  why: WHO says no Nipah vaccine is approved; the lead candidate, Oxford's ChAdOx1 NipahB, is in a Phase
+    2 safety and immune-response trial in Bangladesh, so prevention relies on avoiding raw date palm sap,
+    sick animals and unprotected contact with patients.
+  burden_why: With no vaccine, protection depends on behaviour changes and hospital infection control
+    in poor rural areas of Bangladesh and India.
+  best:
+  - Avoiding raw date palm sap and bat-bitten fruit
+  - Hospital infection control and contact tracing
+  url: https://www.who.int/news-room/fact-sheets/detail/nipah-virus
+  forecast:
+    median: 2050
+    low: 2034
+    high: 2100
+    p2035: 12
+    p2045: 40
+    note: 'ChAdOx1 NipahB (Oxford/Serum Institute, CEPI) began a 306-person Phase 2a trial in Bangladesh
+      in Dec 2025 and has EMA PRIME status; Moderna''s mRNA-1215 completed Phase 1, and an HeV-sG subunit
+      vaccine reportedly finished Phase 1. Outbreaks are tiny and sporadic, so a first licence would likely
+      rest on immune data and count as unproven protection; proving 85% protection could take many seasons.
+      Base rate: about a third of Phase 2 vaccines reach licensure, typically 5-10 years later, with proof
+      of real-world protection later still.'
+  easy:
+    median: 2060
+    low: 2040
+    high: 2100
+    p2035: 5
+    p2045: 25
+    note: 'A first vaccine would likely be outbreak or targeted use, not routine and cheap for rural communities
+      at risk. Mild burden needs an affordable, routinely offered vaccine in Bangladesh and India. Base
+      rate: niche outbreak vaccines rarely reach routine programmes within 15 years of licensure.'

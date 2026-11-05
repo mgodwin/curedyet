@@ -93,3 +93,32 @@ markets:
 - url: https://tech-insider.org/hiv-vaccine-fda-approval-2030-manifold-odds/
   what: HIV vaccine FDA approval by 2030, about 16% (as reported)
   who: Manifold
+prevention:
+  level: 3
+  burden: moderate
+  why: 'PrEP gives strong protection: twice-yearly lenacapavir shots cut infections by 96-100% in two
+    large trials, and daily PrEP pills are about 99% effective against sexual HIV when taken as prescribed.'
+  burden_why: There is no vaccine, so protection means a shot every six months or a daily pill plus regular
+    HIV tests, and lenacapavir costs $28,218 a year in the US while cheap generics ($40 a year) are only
+    now reaching poorer countries.
+  best:
+  - Lenacapavir twice-yearly injection (Yeztugo)
+  - Daily oral PrEP (tenofovir/emtricitabine)
+  - Cabotegravir injection every 2 months
+  url: https://www.gilead.com/news/news-details/2024/gilead-announces-new-england-journal-of-medicine-publication-of-purpose-2-results
+  easy:
+    median: 2048
+    low: 2036
+    high: 2100
+    p2035: 7
+    p2045: 35
+    note: Mild prevention would need one lasting course, which means a vaccine; once-yearly lenacapavir
+      (phase 3 PURPOSE 365, filing possible 2027) would still be a repeat dose. Every HIV vaccine efficacy
+      trial so far has failed and the leading germline-targeting designs are in phase 1, where historically
+      about 1 in 10 vaccine candidates reach licensure after 10-15 years. A cheap yearly or longer-acting
+      shot could count as near-mild sooner, which is the main upside risk.
+  reached:
+    year: 2012
+    basis: FDA approved daily Truvada as PrEP; it is about 99% effective against sexual HIV when taken
+      as prescribed.
+    url: https://www.gilead.com/news/press-releases/2012/7/us-food-and-drug-administration-approves-gileads-truvada-for-reducing-the-risk-of-acquiring-hiv

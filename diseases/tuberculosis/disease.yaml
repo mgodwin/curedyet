@@ -89,3 +89,37 @@ ai:
   note: WHO-recommended AI software that reads chest X-rays (computer-aided detection) is widely used
     to screen for TB.
 markets: []
+prevention:
+  level: 1
+  burden: moderate
+  why: The only vaccine, BCG, protects babies well against the deadliest childhood forms (about 85% against
+    TB meningitis and miliary TB) but gives little reliable protection against lung TB in teens and adults,
+    who drive most cases and spread.
+  burden_why: BCG is one cheap shot at birth, but for adults the main tool is preventive treatment (3-9
+    months of pills, cutting risk about 60%), which only reaches people found through contact tracing
+    or HIV care, and coverage is low.
+  best:
+  - BCG vaccine (infants)
+  - TB preventive treatment (isoniazid, 3HP) for infected contacts
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7024998
+  forecast:
+    median: 2058
+    low: 2040
+    high: 2100
+    p2035: 3
+    p2045: 15
+    note: 'The lead candidate, M72/AS01E, is in a 20,000-person phase 3 trial with results expected late
+      2028 and filings from 2029, but its phase 2b showed only about 50% protection, so success would
+      most likely reach rung 2, not 3. MTBVAC (infant phase 3) aims to beat BCG, while VPM1002 failed
+      in phase 3 in 2024. Base rates: about half of phase 3 vaccines are licensed, and no TB vaccine candidate
+      has yet shown 85% protection against adult lung TB.'
+  easy:
+    median: 2062
+    low: 2042
+    high: 2100
+    p2035: 2
+    p2045: 12
+    note: Strong and mild would need a cheap, lasting vaccine giving about 85% protection to adolescents
+      and adults, which no current candidate has shown. M72 (2 doses, about 50% in phase 2b) is the only
+      late-stage adult option, so this depends on a next-generation candidate still in early trials, where
+      historical success is about 10% over 10-15 years.

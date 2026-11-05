@@ -10,6 +10,12 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [CDC: Global summary of human H5N1 cases Aug 2025 to Jun 2026](https://cdc.gov/bird-flu/spotlights/global-summary-06262026.html)
 - [Moderna initiates Phase 3 bird flu vaccine trial](https://www.emjreviews.com/emj-gold/news/moderna-initiates-phase-3-bird-flu-vaccine-trial/)
 - [EMA: Incellipan EPAR](https://www.ema.europa.eu/en/medicines/human/EPAR/incellipan)
+- [FDA: Audenz](https://www.fda.gov/vaccines-blood-biologics/audenz) - Licensed Jan 2020 for H5N1 prevention in people at increased risk
+- [ESWI: Inactivated H5N8 vaccine induces robust antibody responses (Finland)](https://eswi.org/education-hub/inactivated-zoonotic-influenza-ah5n8-vaccine-induces-robust-antibody-responses) - Antibody (not efficacy) data from Finnish workers
+- [medRxiv: zoonotic H5N8 vaccine antibody responses against clade 2.3.4.4b](https://www.medrxiv.org/content/10.1101/2025.02.12.25322044.full.pdf) - 83-97% seroprotection after two doses; Finland rollout June 2024
+- [ESWI: Finland offers bird flu vaccination to poultry and fur farm workers](https://eswi.org/education-hub/finland-offers-vaccination-against-bird-flu-those-working-poultry-or-fur-farms) - Only country using H5 vaccine in workers
+- [CBS News: bird flu vaccine doses](https://www.cbsnews.com/news/bird-flu-vaccine-doses-this-summer-cases) - US stockpile of 4.8 million doses; CDC not recommending for farm workers
+- [CEPI to fund Phase 3 of Moderna's mRNA pandemic flu vaccine](https://cepi.net/cepi-fund-pivotal-phase-3-trial-modernas-mrna-pandemic-influenza-candidate) - mRNA-1018 Phase 3 (immunogenicity) after HHS funding cut
 
 ## Research log
 
