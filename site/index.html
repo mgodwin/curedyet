@@ -199,14 +199,15 @@ a.more{text-decoration:none}
 /* Home: nav, cards in masonry columns, colour key */
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .topnav{display:flex;justify-content:space-between;align-items:center;gap:8px 20px;flex-wrap:wrap;min-height:44px}
-.brand{font-size:17px;color:var(--ink);text-decoration:none}
+.brand{font-size:clamp(24px,3vw,30px);line-height:1.1;color:var(--ink);text-decoration:none}
 .themebtn{font:600 13px var(--f-body);min-height:32px;padding:0 10px;border-radius:999px;border:1px solid var(--soft);background:var(--card);color:var(--ink);cursor:pointer}
 .navlinks{display:flex;gap:4px 18px;flex-wrap:wrap;align-items:center;font-size:14px;font-weight:600}
 .navlinks a{color:var(--ink);text-decoration:none;min-height:32px;display:inline-flex;align-items:center}.navlinks a:hover{text-decoration:underline}
-.hero{display:flex;flex-direction:column;gap:14px;align-items:flex-start;padding-top:8px}
-.hero .search{width:100%;max-width:720px}.hero .search input{height:56px;font-size:17px}
-.upd{font-size:14px;font-weight:600;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px}
-.chiprow{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}.chiprow::-webkit-scrollbar{display:none}.chiprow .chip{flex:none}
+.hero{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.hero .search{width:100%}.hero .search input{height:56px;font-size:17px}
+.navlinks a.updchip{font-size:13px;min-height:32px;padding:0 12px;border-radius:999px;border:1px solid var(--light-c);color:var(--light-c);text-decoration:none}.navlinks a.updchip:hover{background:var(--light-soft);text-decoration:none}
+.controls{gap:8px 12px}.controls label{display:flex;gap:8px;align-items:center;font-size:13px}.controls select{min-height:40px;padding:0 10px}
+.controls select#cat{font-weight:600;max-width:min(240px,46vw)}
 .vkey{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:13px;color:var(--muted)}
 .vkey span{display:inline-flex;gap:6px;align-items:center}.vkey i{width:10px;height:10px;border-radius:50%;flex:none}
 .masonry{display:flex;gap:12px;align-items:flex-start}
@@ -306,8 +307,6 @@ const best=d=>Math.max(...lines(d).map(score));
 const STAGING="Cancer stages run from 0 to IV. Stage 0 is abnormal cells that have not invaded. Stages I to III mean a bigger tumor or spread to nearby tissue or lymph nodes. Stage IV, also called metastatic, means it has spread to distant organs.";
 function delta(cur,prev){if(prev==null||cur==null||cur===prev)return"";const d=cur-prev;return`<span class="delta ${d>0?"up":"down"}">${d>0?"▲":"▼"}${Math.abs(d)}</span>`}
 function catName(id){const c=S.cats.find(c=>c.id===id);return c?c.name:""}
-const KEY=[["mild","Cured for most, mild treatment"],["mod","Cured for most, moderate treatment"],["hard","Cured for most with difficult treatment, or cured for some"],["no","Not curable yet"]];
-const keyHTML=()=>`<div class="vkey" aria-label="Colour key">${KEY.map(([k,t])=>`<span><i style="background:var(${VFILL[k]})"></i>${t}</span>`).join("")}</div>`;
 
 /* ---------- Home: search, filters and one card per disease ---------- */
 function filtered(){
@@ -340,7 +339,8 @@ function cardHTML(d){
 const ncols=el=>{const w=el.clientWidth;return w>=1040?3:w>=660?2:1};
 let masonCols=0;
 function renderCards(){const el=$("cards");if(!el)return;const L=filtered();
-  const n=$("shown");if(n)n.textContent=`${L.length} of ${S.dz.length}`;
+  /* The count only shows once a search or category narrows the list. */
+  const n=$("shown");if(n)n.textContent=L.length<S.dz.length?`${L.length} of ${S.dz.length}`:"";
   if(!L.length){masonCols=0;el.innerHTML=`<div class="empty" style="flex:1">No disease matches "${esc(q)}". Try another name.</div>`;return}
   const k=masonCols=ncols(el);
   el.innerHTML=`<div class="mcol"></div>`.repeat(k);
@@ -348,7 +348,7 @@ function renderCards(){const el=$("cards");if(!el)return;const L=filtered();
   L.forEach(d=>{const i=h.indexOf(Math.min(...h));tmp.innerHTML=cardHTML(d);const c=tmp.firstElementChild;cols[i].append(c);h[i]+=c.offsetHeight});
 }
 function navHTML(){const repo=S.meta?.repo;
-  return `<nav class="topnav" aria-label="Site"><a class="brand display" href="#">Cure Watch</a><div class="navlinks"><a href="#record">This week</a><a href="#pipeline">Pipeline</a><a href="#stats">Stats</a>${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate</a>`:""}${themeBtn()}</div></nav>`}
+  return `<nav class="topnav" aria-label="Site"><a class="brand display" href="#">Is it cured yet?</a><div class="navlinks">${S.meta?.updatedAt?`<a class="updchip" href="#record">Updated ${fd(S.meta.updatedAt).replace(/, \d{4}$/,"")} · what changed →</a>`:`<a href="#record">This week</a>`}<a href="#pipeline">Pipeline</a><a href="#stats">Stats</a>${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate</a>`:""}${themeBtn()}</div></nav>`}
 /* Theme: follows the device unless the reader picks light or dark; the choice is remembered in this browser. */
 const THEMES=["system","light","dark"],TLABEL={system:"◐ Auto",light:"☀ Light",dark:"☾ Dark"};
 const curTheme=()=>document.documentElement.dataset.theme||"system";
@@ -361,17 +361,15 @@ function home(){
   const m=S.meta||{};const cats=S.cats.slice().sort((a,b)=>(a.order||0)-(b.order||0));
   return `
   <header class="hero">
-    <h1 class="display">Is it cured yet?</h1>
-    ${m.updatedAt?`<a class="upd" href="#record">Updated ${fd(m.updatedAt)}: what changed this week →</a>`:""}
+    <h1 class="sr-only">Is it cured yet? Search diseases</h1>
     <label for="q" class="sr-only">Search diseases, stages and types</label>
     <div class="search"><input id="q" type="search" autocomplete="off" placeholder="Search: Alzheimer's, HIV, stage IV…" value="${esc(q)}"></div>
+    <span class="muted" style="font-size:13px;margin-top:-6px">Tracking ${S.dz.length} diseases</span>
   </header>
-  <div class="filters chiprow" role="group" aria-label="Category">
-    <button class="chip" type="button" data-c="all" aria-pressed="${catF==="all"}">All</button>
-    ${cats.map(k=>`<button class="chip" type="button" data-c="${esc(k.id)}" aria-pressed="${catF===k.id}">${esc(k.name)}</button>`).join("")}
-  </div>
-  <div class="filters" style="justify-content:space-between">${keyHTML()}
-    <span style="display:flex;gap:12px;align-items:center"><span class="muted num" id="shown" style="font-size:13px"></span><label style="display:flex;gap:8px;align-items:center;font-size:13px">Sort <select id="sort"><option value="closest">Closest to cured</option><option value="az">A to Z</option><option value="cat">By category</option></select></label></span></div>
+  <div class="filters controls">
+    <label><span class="sr-only">Category</span><select id="cat"><option value="all">All categories</option>${cats.map(k=>`<option value="${esc(k.id)}"${catF===k.id?" selected":""}>${esc(k.name)}</option>`).join("")}</select></label>
+    <label>Sort <select id="sort"><option value="closest">Closest to cured</option><option value="az">A to Z</option><option value="cat">By category</option></select></label>
+    <span class="muted num" id="shown" style="font-size:13px;margin-left:auto"></span></div>
   <div class="masonry" id="cards"></div>
   <p class="muted" style="font-size:12px;margin:0">Updated weekly and scored against what actually happens. A research tracker, not medical advice.${m.repo?` Open data: <a href="https://github.com/${esc(m.repo)}" target="_blank" rel="noopener">add a disease or fix a fact on GitHub</a>.`:""}</p>`;
 }
@@ -668,16 +666,18 @@ function render(){const app=$("app"),r=route(),key=r.v+(r.id||"")+"/"+(r.vid||""
   if(!S.ready&&!S.dz.length){app.innerHTML=`<div class="empty">${esc(S.err||"Loading the tracker…")}</div>`;return}
   const focusQ=document.activeElement&&document.activeElement.id==="q",selStart=focusQ?document.activeElement.selectionStart:0;
   app.innerHTML=navHTML()+(r.v==="detail"?detail(r.id,r.vid):r.v==="pipeline"?pipeline():r.v==="record"?record():r.v==="stats"?stats():home());
-  if(r.v==="home"){const s=$("sort");if(s)s.value=sort;renderCards();if(focusQ){const i=$("q");if(i){i.focus();try{i.setSelectionRange(selStart,selStart)}catch(e){}}}}
+  if(r.v==="home"){const s=$("sort");if(s)s.value=sort;renderCards();if(masonRO){masonRO.disconnect();masonRO.observe($("cards"))}if(focusQ){const i=$("q");if(i){i.focus();try{i.setSelectionRange(selStart,selStart)}catch(e){}}}}
   if(r.v==="detail")drawTrend();
   if(key!==lastView){if(lastView)window.scrollTo(0,0);lastView=key}
   document.title=r.v==="stats"?"Stats · Cure Watch":r.v==="detail"?`${(S.dz.find(d=>d.id===r.id)||{}).name||"Disease"} · Cure Watch`:"Cure Watch";
 }
 window.addEventListener("hashchange",render);
 document.addEventListener("input",e=>{if(e.target.id==="q"){q=e.target.value;renderCards()}});
-document.addEventListener("change",e=>{if(e.target.id==="sort"){sort=e.target.value;try{localStorage.setItem("cw2-sort",sort)}catch(_){}renderCards()}});
-document.addEventListener("click",e=>{if(e.target.closest("[data-theme-cycle]")){cycleTheme();return}const c=e.target.closest("[data-c]");if(c){catF=c.dataset.c;render()}});
-/* Re-pack the masonry when the column count changes. */
+document.addEventListener("change",e=>{if(e.target.id==="cat"){catF=e.target.value;renderCards();return}if(e.target.id==="sort"){sort=e.target.value;try{localStorage.setItem("cw2-sort",sort)}catch(_){}renderCards()}});
+document.addEventListener("click",e=>{if(e.target.closest("[data-theme-cycle]"))cycleTheme()});
+/* Re-pack the masonry when the column count changes. Watching the card area itself also catches zoom and
+   viewport changes that don't fire a window resize. */
+const masonRO=typeof ResizeObserver==="function"?new ResizeObserver(()=>{const el=$("cards");if(el&&ncols(el)!==masonCols)renderCards()}):null;
 let rsz2;window.addEventListener("resize",()=>{clearTimeout(rsz2);rsz2=setTimeout(()=>{const el=$("cards");if(el&&ncols(el)!==masonCols)renderCards()},120)});
 
 (async()=>{
