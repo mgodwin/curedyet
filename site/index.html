@@ -206,7 +206,8 @@ a.more{text-decoration:none}
 .hero{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
 .hero .search{width:100%;max-width:720px}.hero .search input{height:56px;font-size:17px}
 .navlinks a.updchip{font-size:13px;min-height:32px;padding:0 12px;border-radius:999px;border:1px solid var(--light-c);color:var(--light-c);text-decoration:none}.navlinks a.updchip:hover{background:var(--light-soft);text-decoration:none}
-.chiprow{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}.chiprow::-webkit-scrollbar{display:none}.chiprow .chip{flex:none}
+.controls{gap:8px 12px}.controls label{display:flex;gap:8px;align-items:center;font-size:13px}.controls select{min-height:40px;padding:0 10px}
+.controls select#cat{font-weight:600;max-width:min(240px,46vw)}
 .vkey{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:13px;color:var(--muted)}
 .vkey span{display:inline-flex;gap:6px;align-items:center}.vkey i{width:10px;height:10px;border-radius:50%;flex:none}
 .masonry{display:flex;gap:12px;align-items:flex-start}
@@ -363,12 +364,10 @@ function home(){
     <label for="q" class="sr-only">Search diseases, stages and types</label>
     <div class="search"><input id="q" type="search" autocomplete="off" placeholder="Search: Alzheimer's, HIV, stage IV…" value="${esc(q)}"></div>
   </header>
-  <div class="filters chiprow" role="group" aria-label="Category">
-    <button class="chip" type="button" data-c="all" aria-pressed="${catF==="all"}">All</button>
-    ${cats.map(k=>`<button class="chip" type="button" data-c="${esc(k.id)}" aria-pressed="${catF===k.id}">${esc(k.name)}</button>`).join("")}
-  </div>
-  <div class="filters" style="justify-content:flex-end">
-    <span style="display:flex;gap:12px;align-items:center"><span class="muted num" id="shown" style="font-size:13px"></span><label style="display:flex;gap:8px;align-items:center;font-size:13px">Sort <select id="sort"><option value="closest">Closest to cured</option><option value="az">A to Z</option><option value="cat">By category</option></select></label></span></div>
+  <div class="filters controls">
+    <label><span class="sr-only">Category</span><select id="cat"><option value="all">All categories</option>${cats.map(k=>`<option value="${esc(k.id)}"${catF===k.id?" selected":""}>${esc(k.name)}</option>`).join("")}</select></label>
+    <label>Sort <select id="sort"><option value="closest">Closest to cured</option><option value="az">A to Z</option><option value="cat">By category</option></select></label>
+    <span class="muted num" id="shown" style="font-size:13px;margin-left:auto"></span></div>
   <div class="masonry" id="cards"></div>
   <p class="muted" style="font-size:12px;margin:0">Updated weekly and scored against what actually happens. A research tracker, not medical advice.${m.repo?` Open data: <a href="https://github.com/${esc(m.repo)}" target="_blank" rel="noopener">add a disease or fix a fact on GitHub</a>.`:""}</p>`;
 }
@@ -672,8 +671,8 @@ function render(){const app=$("app"),r=route(),key=r.v+(r.id||"")+"/"+(r.vid||""
 }
 window.addEventListener("hashchange",render);
 document.addEventListener("input",e=>{if(e.target.id==="q"){q=e.target.value;renderCards()}});
-document.addEventListener("change",e=>{if(e.target.id==="sort"){sort=e.target.value;try{localStorage.setItem("cw2-sort",sort)}catch(_){}renderCards()}});
-document.addEventListener("click",e=>{if(e.target.closest("[data-theme-cycle]")){cycleTheme();return}const c=e.target.closest("[data-c]");if(c){catF=c.dataset.c;render()}});
+document.addEventListener("change",e=>{if(e.target.id==="cat"){catF=e.target.value;renderCards();return}if(e.target.id==="sort"){sort=e.target.value;try{localStorage.setItem("cw2-sort",sort)}catch(_){}renderCards()}});
+document.addEventListener("click",e=>{if(e.target.closest("[data-theme-cycle]"))cycleTheme()});
 /* Re-pack the masonry when the column count changes. Watching the card area itself also catches zoom and
    viewport changes that don't fire a window resize. */
 const masonRO=typeof ResizeObserver==="function"?new ResizeObserver(()=>{const el=$("cards");if(el&&ncols(el)!==masonCols)renderCards()}):null;
