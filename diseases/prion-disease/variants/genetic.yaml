@@ -1,0 +1,72 @@
+# Cure Watch variant record: one stage or type of Prion disease (CJD). Field guide: CONTRIBUTING.md.
+id: genetic
+name: Genetic prion disease
+order: 2
+what: Inherited forms caused by a change in the prion protein gene (PRNP), passed down from a parent,
+  including genetic CJD, Gerstmann-Straussler-Scheinker disease (GSS) and fatal familial insomnia.
+level: 0
+burden: moderate
+burden_why: Care is comfort-focused, as for sporadic CJD, though slower forms such as GSS can mean years
+  of growing care needs.
+survival: Genetic CJD usually under 1 year; fatal familial insomnia usually over 1 year; GSS about 5 years
+  on average, varying by gene change
+share: About 10-15% of prion disease is genetic (CDC gives 5-15%).
+share_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9579322/
+treatment: As with other prion diseases, no treatment slows it once symptoms start, and care focuses
+  on comfort. Because carriers can be found by a genetic test years before symptoms, this group is the
+  first focus for trials of drugs that lower prion protein before the disease begins.
+caveat: Survival and age of onset vary widely by the specific PRNP change, and some changes do not always
+  cause disease, so one figure fits this group poorly.
+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9579322/
+forecast:
+  median: 2055
+  low: 2040
+  high: 2100
+  p2035: 2
+  p2045: 15
+  note: Treating people who already have symptoms is as hard as in sporadic CJD, but slower forms such
+    as GSS leave more time to act, and lessons from carrier trials may carry over. ION717 (PrProfile, primary
+    completion April 2027) and the PRiSM siRNA trial (to 2029) are still early safety studies.
+easy:
+  median: 2070
+  low: 2048
+  high: 2100
+  p2035: 0
+  p2045: 6
+  note: A working PrP-lowering drug would likely be injected into the spinal fluid every few months for
+    life; a mild cure would need a one-time treatment, such as the CHARM epigenetic editor, still only
+    in mice.
+prevention:
+  level: 0
+  burden: heavy
+  why: Nothing is yet proven to stop disease in a carrier; PrP-lowering drugs are only now being tested
+    for safety in healthy carriers (PRiSM siRNA trial, from May 2026), though IVF with embryo testing
+    lets carriers avoid passing the gene on.
+  burden_why: The only options for a carrier today are genetic counselling, an early-phase trial with repeated
+    spinal injections, or IVF with embryo testing (PGT) to protect children, which is costly and not always
+    available.
+  best:
+  - Genetic counselling and predictive testing
+  - IVF with preimplantation genetic testing (protects children, not the carrier)
+  - PrP-lowering siRNA in the PRiSM trial (unproven)
+  url: https://clinicaltrials.gov/study/NCT07444580
+  forecast:
+    median: 2040
+    low: 2032
+    high: 2075
+    p2035: 15
+    p2045: 55
+    note: 'PRiSM (Phase 1, about 45 adults including healthy carriers, primary completion August 2029)
+      must first show safe, lasting prion protein lowering. A prevention trial would then likely rely
+      on lowering spinal-fluid prion protein as a stand-in measure, as researchers studying carriers have
+      proposed, but proving strong protection takes years because onset age varies widely. Base rate:
+      about 1 in 10 drugs entering human trials are approved.'
+  easy:
+    median: 2050
+    low: 2036
+    high: 2100
+    p2035: 4
+    p2045: 35
+    note: Even a working drug would likely mean spinal injections every few months for decades from mid-life,
+      a moderate or heavy burden. Mild prevention would need a one-time treatment such as the CHARM epigenetic
+      editor, which silenced the gene in mouse brains but has not reached human trials.

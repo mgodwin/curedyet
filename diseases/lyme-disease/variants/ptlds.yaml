@@ -1,0 +1,30 @@
+# Cure Watch variant record: one stage or type of Lyme disease. Field guide: CONTRIBUTING.md.
+id: ptlds
+name: Post-treatment Lyme disease syndrome
+order: 3
+what: Fatigue, body aches or trouble thinking that last six months or more after recommended antibiotic
+  treatment for Lyme disease, with no ongoing infection found.
+level: 1
+burden: moderate
+burden_why: No treatment is proven, so care means managing pain, sleep, fatigue and mood over months,
+  sometimes with several specialists.
+survival: Symptoms usually improve over time, though full recovery can take many months (CDC); 13.7% of
+  a well-treated cohort met criteria
+treatment: Care focuses on easing symptoms such as pain, fatigue and poor sleep. Trials in the US and
+  Europe found that longer antibiotic courses, including months of IV or oral antibiotics, did not work
+  better than placebo and carried risks such as serious bloodstream infections and colitis.
+caveat: 'The symptoms are real and can disrupt work and daily life; what is unknown is the cause, and
+  similar lasting symptoms are reported after other infections such as COVID-19. Estimates of how many people are affected range from about 5% to
+  20% depending on the definition. CDC uses the term PTLDS and discourages "chronic Lyme disease", a
+  debated label that implies an ongoing infection, which is not the currently known cause.'
+url: https://www.cdc.gov/lyme/signs-symptoms/chronic-symptoms-and-lyme-disease.html
+forecast:
+  median: 2055
+  low: 2038
+  high: 2100
+  p2035: 5
+  p2045: 20
+  note: A cure for most would need the cause to be found and a treatment shown to resolve symptoms in a
+    placebo-controlled trial. Only small pilot studies (a pulse ceftriaxone trial, brain stimulation for
+    cognitive symptoms) are running, and research on long COVID and other post-infection syndromes may
+    help. As a base rate, a level 1 condition with no Phase 3 candidate has under 5% odds by 2035.

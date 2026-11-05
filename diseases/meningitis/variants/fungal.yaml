@@ -1,0 +1,70 @@
+# Cure Watch variant record: one stage or type of Meningitis. Field guide: CONTRIBUTING.md.
+id: fungal
+name: Cryptococcal (fungal) meningitis
+order: 3
+what: Meningitis caused by the fungus Cryptococcus, which strikes mostly people with advanced HIV and
+  is the most common cause of meningitis in adults with HIV in sub-Saharan Africa.
+level: 3
+burden: heavy
+burden_why: It needs about two weeks of hospital-based induction with IV amphotericin and flucytosine,
+  repeated spinal taps to relieve pressure in many patients, then months of fluconazole, and the drugs
+  are hard to get in many low-income countries.
+survival: ~75% alive at 10 weeks with WHO's single high-dose liposomal amphotericin regimen (AMBITION-cm
+  trial, Africa; 24.8% died vs 28.7% on the older regimen)
+treatment: WHO's preferred regimen since 2022 is a single high dose of liposomal amphotericin B with
+  two weeks of flucytosine and fluconazole, then months of fluconazole while HIV treatment rebuilds the
+  immune system. It worked as well as the older seven-day amphotericin course with fewer side effects,
+  but liposomal amphotericin and flucytosine remain scarce and costly in many African countries.
+caveat: The survival figure is from a trial in five African countries; outcomes in rich countries with
+  intensive care are likely better but are not well measured, since the disease is now rare there. About
+  112,000 people died of it in 2020, about 19% of AIDS-related deaths, most of them in Africa.
+url: https://www.nejm.org/doi/full/10.1056/NEJMoa2111904
+forecast:
+  median: 2042
+  low: 2032
+  high: 2075
+  p2035: 22
+  p2045: 52
+  note: 'Needs at least 85% of patients to survive and stay well, up from about 75% at 10 weeks in the
+    best African trial; better access to the WHO regimen, faster diagnosis and oral amphotericin forms
+    (Phase 2 EnACT reported about 85-90% survival at 18 weeks, but its Phase 3 was registered without starting enrolment) are the
+    main routes. Base rate: the AMBITION regimen took about four years from trial start (2018) to WHO guidance (2022).'
+easy:
+  median: 2055
+  low: 2038
+  high: 2100
+  p2035: 5
+  p2045: 25
+  note: Mild would need an all-oral course that can be given outside hospital and is affordable in Africa,
+    which depends on an oral amphotericin passing Phase 3.
+prevention:
+  level: 2
+  burden: moderate
+  why: In people with advanced HIV, fluconazole prophylaxis cut cryptococcal disease by about 71% in
+    a Cochrane review, and WHO recommends blood tests for cryptococcal antigen with pre-emptive fluconazole
+    for those who test positive; prompt HIV treatment, which prevents advanced HIV, is the main protection.
+  burden_why: It depends on CD4 testing, antigen screening and months of daily fluconazole for people
+    found positive, and screening coverage is low in many of the countries with the most cases.
+  best:
+  - Starting HIV treatment early
+  - Cryptococcal antigen screening with pre-emptive fluconazole (CD4 100 or below)
+  - Fluconazole prophylaxis where screening is unavailable
+  url: https://pubmed.ncbi.nlm.nih.gov/30156270/
+  forecast:
+    median: 2045
+    low: 2032
+    high: 2090
+    p2035: 12
+    p2045: 50
+    note: 'No vaccine against Cryptococcus is in human trials, so strong protection most likely comes
+      from HIV treatment reaching nearly everyone before their immune system fails, plus universal antigen
+      screening. Base rate: cryptococcal deaths fell from about 181,000 in 2014 to 112,000 in 2020 as
+      HIV treatment expanded.'
+  easy:
+    median: 2050
+    low: 2035
+    high: 2100
+    p2035: 8
+    p2045: 40
+    note: Mild needs routine HIV testing and treatment that keeps people from reaching advanced HIV, so
+      that screening and fluconazole are rarely needed; long-acting HIV drugs could help.

@@ -1,0 +1,129 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: plague
+name: Plague
+category: outbreaks
+tracking: active
+summary: A bacterial infection caused by Yersinia pestis, spread mainly by fleas from rodents, that
+  infects the lymph nodes (bubonic), blood (septicemic) or lungs (pneumonic).
+toll:
+  text: Nearly 4,000 suspected human cases and 423 deaths reported to WHO by 10 countries in 2019-2025,
+    mostly in DRC and Madagascar; the US averages about 5 cases a year (CDC).
+  url: https://www.swissinfo.ch/eng/international-geneva/who-reports-of-a-possible-second-death-in-irkutsk/92184836
+status:
+  level: 4
+  why: Most plague is bubonic, and about 10 days of common antibiotics cures about 9 in 10 people treated
+    promptly, but the rarer blood and lung forms still kill roughly a quarter to a third of patients
+    even with antibiotics.
+  today: Plague responds to cheap, widely available antibiotics (gentamicin or streptomycin, ciprofloxacin
+    or levofloxacin, doxycycline) given for 10 to 14 days, and in a 2025 randomized trial 10 days of oral
+    ciprofloxacin alone worked as well as injections for bubonic plague. Speed is the problem, since untreated
+    pneumonic and septicemic plague are nearly always fatal, and pneumonic plague can kill within a day,
+    so outcomes depend on recognising it fast. In rural Madagascar and eastern DRC, where most cases occur,
+    late diagnosis and poor access mean about 1 in 6 reported cases died in 2013-2018.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Ciprofloxacin or levofloxacin (oral or IV)
+  - Gentamicin or streptomycin (injection)
+  - Doxycycline (bubonic)
+  - Intensive supportive care for septicemic and pneumonic plague
+  burden: moderate
+  burden_note: About 10 to 14 days of generic antibiotics, usually starting in hospital with injections
+    or IV drugs and isolation for lung infection; side effects are usually mild, but streptomycin is hard
+    to get and care in endemic areas is often far away.
+forecast:
+  bottleneck: access-limited
+  reached: 1950
+  faster_note: Already curable for most when treated; acceleration would help mainly through faster point-of-care
+    tests, which matter most for pneumonic plague, and through vaccine trials, but the remaining gap is
+    speed of diagnosis and access in endemic areas.
+  outlook: Bubonic plague, over 80% of cases, has been curable with antibiotics since the 1940s, and the
+    2025 IMASOY trial showed an all-oral 10-day course works. The forms that remain deadly are limited
+    by how fast patients are diagnosed, not by drugs, and almost all deaths now occur in poor rural areas
+    of DRC and Madagascar. Transferable antibiotic resistance has been found in a few Madagascar strains,
+    a risk to watch.
+pipeline:
+- name: Oral ciprofloxacin monotherapy (IMASOY trial)
+  stage: Phase 3
+  note: Randomized trial in Madagascar (NEJM, Aug 2025); 10 days of oral ciprofloxacin failed in 9.0%
+    vs 8.1% for injectable aminoglycoside then ciprofloxacin, meeting non-inferiority.
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7618094
+  variants:
+  - bubonic
+  effect: some
+  effect_note: Already published; an all-oral course could let more bubonic patients avoid injections
+    and possibly hospital, once guidelines adopt it.
+- name: rF1V-1018 vaccine (Dynavax, US Department of Defense funded)
+  stage: Phase 2
+  note: Recombinant F1 and V protein vaccine with CpG 1018 adjuvant; a 148-adult Phase 2 (NCT07207408)
+    started Sept 2025 and is no longer recruiting, after an earlier 200-person Phase 2 that finished in 2024.
+  url: https://clinicaltrials.gov/study/NCT07207408
+  expected: 2027-01
+  effect: small
+  effect_note: Good immune responses would move a biodefense vaccine toward licensure, which would prevent
+    infections in high-risk workers but not change how well treatment cures the sick.
+- name: ChAdOx1 Plague vaccine (University of Oxford)
+  stage: Phase 1
+  note: Viral-vector vaccine on the same platform as the Oxford COVID-19 vaccine; tested in a UK Phase
+    1 and a Phase 1b in healthy adults in Uganda.
+  url: https://www.isrctn.com/ISRCTN79243381
+  effect: small
+  effect_note: A vaccine suitable for endemic areas would prevent cases rather than improve cure rates.
+recent:
+- date: 2026-10
+  text: WHO said nearly 4,000 suspected plague cases and 423 deaths were reported from 10 countries in
+    2019-2025, while asking Russia for details on a lab worker's death at an Irkutsk plague institute.
+  url: https://www.swissinfo.ch/eng/international-geneva/who-reports-of-a-possible-second-death-in-irkutsk/92184836
+- date: 2025-08
+  text: The IMASOY trial (NEJM) showed 10 days of oral ciprofloxacin is as effective as injectable aminoglycoside
+    plus ciprofloxacin for bubonic plague, in one of very few randomized trials of plague treatment.
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7618094
+- date: 2025-07
+  text: A northern Arizona resident died of pneumonic plague the day they were seen in a Flagstaff emergency
+    department, the county's first plague death since 2007.
+  url: https://www.nbcnews.com/health/health-news/arizona-patient-dies-plague-rcna218251
+next_milestone:
+  date: '2027-01-29'
+  what: Estimated primary completion of Dynavax's Phase 2 trial of the rF1V-1018 plague vaccine
+  url: https://clinicaltrials.gov/study/NCT07207408
+ai:
+  impact: low
+  note: Treatment uses decades-old antibiotics and the open problems are fast diagnosis and access; AI
+    plays little visible role beyond general outbreak surveillance.
+markets: []
+prevention:
+  level: 1
+  burden: heavy
+  why: No plague vaccine is licensed in the US or Europe (the US killed vaccine stopped in 1999), and
+    the standard 7-day antibiotic course for close contacts is widely used but its protection has never
+    been measured in a trial.
+  burden_why: Prevention is mostly urgent antibiotics for traced contacts of patients during outbreaks,
+    plus flea and rodent control; WHO advises vaccination only for high-risk groups such as lab workers,
+    and no vaccine is available to people living in endemic areas.
+  best:
+  - Antibiotic prophylaxis for 7 days after close contact (doxycycline or ciprofloxacin)
+  - Flea control, insect repellent and avoiding sick or dead rodents
+  - Isolation and contact tracing for pneumonic plague
+  url: https://www.who.int/news-room/fact-sheets/detail/plague
+  forecast:
+    median: 2050
+    low: 2035
+    high: 2100
+    p2035: 8
+    p2045: 28
+    note: 'Strong protection needs a licensed vaccine shown to work in people. The lead candidates are
+      Dynavax''s rF1V-1018 (Phase 2, results expected 2027) and Oxford''s ChAdOx1 Plague (Phase 1/1b);
+      rF1V and China''s SV1 subunit vaccine have passed Phase 2, but no plague vaccine has ever had a
+      Phase 3 efficacy trial. Cases are too few and scattered for a standard efficacy trial, so a biodefense
+      vaccine would likely be licensed on animal data, which would count as unproven protection in people
+      (rung 1). Base rate: about half of Phase 3 vaccines are licensed, and plague candidates have sat
+      in Phase 2 for two decades.'
+  easy:
+    median: 2062
+    low: 2040
+    high: 2100
+    p2035: 3
+    p2045: 14
+    note: Mild burden would need a cheap, lasting vaccine offered routinely to people in endemic parts
+      of Madagascar and DRC, not just to soldiers or lab workers. No funder has a plan for that, and the
+      candidates furthest along are aimed at biodefense in rich countries.

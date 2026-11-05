@@ -1,0 +1,37 @@
+# Cure Watch variant record: one stage or type of Plague. Field guide: CONTRIBUTING.md.
+id: bubonic
+name: Bubonic plague
+order: 1
+what: The most common form, where bacteria from a flea bite infect a nearby lymph node, causing a painful
+  swollen node (a bubo), fever and weakness.
+level: 4
+burden: moderate
+burden_why: About 10 days of antibiotics, usually starting in hospital with injections or IV drugs; an
+  all-oral ciprofloxacin course now has trial support but is not yet standard everywhere.
+survival: ~91% treatment success and 5 of 111 deaths with 10 days of oral ciprofloxacin (IMASOY, Madagascar);
+  US fatality 13% with antibiotics since 1942 vs 66% untreated
+share: Over 80% of US plague cases are bubonic
+share_url: https://www.cdc.gov/plague/maps-statistics/index.html
+treatment: Patients get 10 to 14 days of a common antibiotic, such as gentamicin or streptomycin injections,
+  doxycycline, or ciprofloxacin or levofloxacin by mouth or IV, which cures about 9 in 10. In a 2025 trial
+  10 days of oral ciprofloxacin alone matched three days of injections followed by ciprofloxacin.
+caveat: 'IMASOY ran in Madagascar, with patients in hospital for the first 3 days and then visited daily
+  by health workers; a few patients in each arm developed lung infection on treatment. The US 13% figure
+  spans 1942-2012 and includes patients diagnosed or treated late. Rated 4: about 87-91% are cured with
+  prompt antibiotics, just above the 85% line.'
+url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7618094
+easy:
+  median: 2033
+  low: 2027
+  high: 2050
+  p2035: 58
+  p2045: 82
+  note: The drugs are cheap, generic and usually well tolerated, so mild burden mainly needs guidelines
+    to adopt the trial-backed all-oral 10-day ciprofloxacin course, ideally with care at home for patients
+    who are not very ill. The IMASOY team said it would work with bodies such as WHO on guideline updates; base rate,
+    guideline changes after a decisive trial typically take 2 to 5 years.
+reached:
+  year: 1950
+  basis: 'Approximate: sulfonamides from 1942 and then streptomycin in the late 1940s cut US bubonic plague
+    deaths from 66% to about 13%.'
+  url: https://wwwnc.cdc.gov/eid/article/21/1/14-0564

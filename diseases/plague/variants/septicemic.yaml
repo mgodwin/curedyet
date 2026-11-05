@@ -1,0 +1,29 @@
+# Cure Watch variant record: one stage or type of Plague. Field guide: CONTRIBUTING.md.
+id: septicemic
+name: Septicemic plague
+order: 2
+what: Plague bacteria multiply in the bloodstream, either from the start or after bubonic plague spreads,
+  causing shock, bleeding under the skin and tissue death in fingers and toes.
+level: 3
+burden: heavy
+burden_why: Needs IV antibiotics, often two drug classes, and intensive care for shock and organ failure;
+  some survivors lose fingers, toes or limbs.
+survival: ~73% survived in the US antibiotic era (21 of 78 died, 1942-2012); untreated it is nearly always
+  fatal
+treatment: Patients need IV antibiotics at once, such as gentamicin or a fluoroquinolone like ciprofloxacin,
+  plus intensive care for sepsis. The drugs kill the bacteria, but because there is often no swollen lymph
+  node to give it away, diagnosis is frequently late, when shock has set in.
+caveat: Septicemic plague is rare, so the US figure rests on 78 cases over 70 years, and it includes late
+  diagnoses; the form is about twice as deadly as bubonic in that series. Rated 3 because roughly a
+  quarter of patients die even with antibiotics.
+url: https://wwwnc.cdc.gov/eid/article/21/1/14-0564
+forecast:
+  median: 2050
+  low: 2034
+  high: 2100
+  p2035: 14
+  p2045: 40
+  note: Effective antibiotics already exist, so reaching 85% survival depends on diagnosing it before
+    shock, for example with rapid blood tests or wider early use of antibiotics for unexplained sepsis
+    in endemic areas, and on better sepsis care generally. No plague-specific candidate is in trials,
+    and cases are too few to prove a gain quickly.

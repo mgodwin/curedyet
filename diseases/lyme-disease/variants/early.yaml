@@ -1,0 +1,30 @@
+# Cure Watch variant record: one stage or type of Lyme disease. Field guide: CONTRIBUTING.md.
+id: early
+name: Early Lyme disease
+order: 1
+what: Infection caught in the first days to weeks, usually as a spreading rash (erythema migrans) with
+  fever or aches, or soon after it spreads to cause facial palsy, meningitis or heart rhythm problems.
+level: 4
+burden: light
+burden_why: Usually 10-14 days of cheap, generic antibiotic pills with mostly mild side effects; spread
+  to the nerves or heart can need 14-21 days and, for some, IV antibiotics in hospital at first.
+survival: Usually a rapid and complete recovery with antibiotics (CDC); about 14% met criteria for post-treatment
+  Lyme disease in one well-treated US cohort, vs 4% of people never infected
+treatment: A rash with early Lyme disease is treated with 10-14 days of doxycycline or 14 days of amoxicillin
+  or cefuroxime, which usually clears it quickly and prevents late disease. Facial palsy, meningitis or
+  Lyme carditis are treated for 14-21 days with oral doxycycline or IV ceftriaxone.
+caveat: 'Cured here means the infection clears and symptoms resolve. A minority have lasting fatigue, pain
+  or trouble thinking afterwards: CDC says such symptoms are 5-10% more common at 6 months than in people
+  who never had Lyme disease, and one Johns Hopkins cohort found 13.7%. Those people are rated separately
+  under post-treatment Lyme disease syndrome. Many infections are missed because the rash is not always
+  noticed or recognised.'
+url: https://www.cdc.gov/lyme/hcp/clinical-care/erythema-migrans-rash.html
+reached:
+  year: 1983
+  basis: A trial of 1980-82 patients showed 10 days of tetracycline resolved early Lyme disease and prevented
+    major late complications; doxycycline, a related drug, became standard.
+  url: https://doi.org/10.7326/0003-4819-99-1-22
+reached_easy:
+  year: 1983
+  basis: The cure was a short course of cheap antibiotic pills from the start.
+  url: https://doi.org/10.7326/0003-4819-99-1-22
