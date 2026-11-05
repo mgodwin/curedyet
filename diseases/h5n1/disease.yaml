@@ -13,7 +13,7 @@ toll:
 status:
   level: 1
   why: Oseltamivir and other flu antivirals help if given early, and most recent US cases were mild, but
-    severe cases still die about half the time globally; licensed H5 vaccines exist for preparedness but
+    globally about half of severe cases are still fatal; licensed H5 vaccines exist for preparedness but
     are not in routine use.
   today: 'Patients get neuraminidase inhibitors such as oseltamivir (CDC has an emergency use protocol)
     plus supportive or ICU care; baloxavir is an option. Outcomes split sharply: most of the 72 US cases
@@ -28,8 +28,8 @@ treatment:
   - Supportive / ICU care
   - Licensed H5 pandemic vaccines (Audenz, Incellipan) for prevention
   burden: light
-  burden_note: Five-day oseltamivir course with mild nausea for most US cases; severe pneumonia cases
-    elsewhere need ICU care and ventilation and often die.
+  burden_note: Five-day oseltamivir course with mild nausea for most US cases; people with severe
+    pneumonia elsewhere need ICU care and ventilation, and many do not survive.
 forecast:
   bottleneck: design-limited
   normal:

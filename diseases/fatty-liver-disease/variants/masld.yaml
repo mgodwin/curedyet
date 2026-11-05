@@ -1,0 +1,32 @@
+# Cure Watch variant record: one stage or type of Fatty liver disease (MASLD/MASH). Field guide: CONTRIBUTING.md.
+id: masld
+name: Simple fatty liver (MASLD without MASH)
+order: 1
+what: Extra fat in the liver with little or no inflammation or scarring, the most common form of fatty
+  liver disease.
+level: 3
+burden: moderate
+burden_why: Reversing it takes lasting weight loss through diet and exercise, or ongoing weight-loss drugs,
+  which most people find hard to sustain.
+survival: Usually does not progress to liver damage or complications (NIDDK)
+share: Most people with fatty liver disease have this milder form; NIDDK estimates about 24% of US adults
+  have MASLD and 1.5-6.5% have MASH
+share_url: https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash/definition-facts
+treatment: There is no approved drug for simple fatty liver; care is weight loss, more activity and control
+  of diabetes, blood pressure and cholesterol. Losing weight and keeping it off clears the extra fat for
+  many, but the fat usually returns if the weight does, and weight-loss drugs work only while they are
+  taken.
+caveat: Rated on whether the liver fat goes away and stays away, not on the risk of harm, which is low;
+  the main health risk for this group is heart disease rather than liver failure. No good figure exists
+  for how many people clear liver fat for good through lifestyle change, so the level is a judgement
+  that it is a real cure for a meaningful minority.
+url: https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash/definition-facts
+forecast:
+  median: 2045
+  low: 2034
+  high: 2085
+  p2035: 10
+  p2045: 35
+  note: Needs weight loss, or another way to clear liver fat, that lasts after treatment stops for most
+    people. Weight-loss drugs clear fat while taken, and the open question, as with obesity, is how to
+    keep it off without lifelong drugs.

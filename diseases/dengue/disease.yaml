@@ -1,0 +1,132 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: dengue
+name: Dengue
+category: infectious
+tracking: active
+summary: A mosquito-borne viral infection that usually causes a fever and aches, and in about 1 in 20
+  people with symptoms becomes severe dengue with bleeding, plasma leakage and shock.
+toll:
+  text: A record 14.6 million cases and more than 12,000 deaths reported to WHO in 2024, mostly in the
+    Americas; an estimated 100-400 million infections a year, endemic in more than 100 countries (WHO, 2025).
+  url: https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue
+  ratio: "About 1 in 2"
+  ratio_caption: "people worldwide lives where dengue is a risk"
+  ratio_url: https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue
+  ratio_basis: "WHO dengue fact sheet (Aug 2025): about half of the world's population is now at risk of dengue."
+status:
+  level: 1
+  why: No drug acts on the dengue virus; careful fluid and hospital care eases the illness and cuts deaths
+    from severe dengue to under 0.5%, but it cannot stop the infection from progressing.
+  today: Most people recover on their own within about a week with rest, fluids and paracetamol. About
+    1 in 20 people with symptoms develop severe dengue, and prompt intravenous fluids in hospital bring
+    its death rate below 0.5%, though deaths rise where outbreaks overwhelm clinics. No antiviral is approved;
+    the most advanced, J&J's mosnodenvir, was dropped in 2024.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Supportive care (oral or IV fluids, paracetamol)
+  - Hospital monitoring and IV fluids for warning signs
+  - Qdenga or Butantan-DV vaccine for prevention
+  burden: moderate
+  burden_note: Most cases need only rest and fluids at home, but severe cases need close hospital monitoring
+    and intravenous fluids, and large outbreaks strain hospitals in poorer countries where most cases occur.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 3
+    p2045: 14
+    median: 2058
+    low: 2040
+    high: 2100
+  faster:
+    p2035: 6
+    p2045: 28
+    median: 2049
+    low: 2036
+    high: 2090
+  faster_note: Faster design of pan-serotype antivirals and quicker field trials during outbreaks would
+    help most, but proving a drug works needs dosing before warning signs appear, which keeps most of the
+    lift after 2035.
+  outlook: A cure for most would mean an antiviral, taken early, that reliably stops dengue from turning
+    severe. Only one candidate (Novartis's EYU688) is in efficacy trials, with results due around 2027,
+    and the field lost its leading drug when J&J stopped mosnodenvir. Vaccines and mosquito control are
+    the stronger levers for now.
+pipeline:
+- name: EYU688 (NITD-688, Novartis, oral NS4B inhibitor)
+  stage: Phase 2
+  note: Placebo-controlled trial in about 108 adults with dengue fever, testing whether it clears the
+    virus faster; still recruiting in 2026.
+  url: https://www.novartis.com/clinicaltrials/study/nct06006559
+  expected: 2027-07
+  effect: some
+  effect_note: A clear antiviral effect would give dengue its first drug candidate headed for Phase 3,
+    but it would still need years of larger trials to show it prevents severe disease.
+- name: Butantan-DV (single-dose vaccine)
+  stage: Approved 2025-26
+  note: Approved in Brazil in Nov 2025 for ages 12-59; rollout began in 2026, with about 30 million doses
+    planned for late 2026.
+  url: https://centerforimmunizationresearch.org/butantan-institutes-dengue-vaccine-the-worlds-first-single-dose-vaccine-has-been-approved-by-anvisa
+  effect: small
+  effect_note: Prevents disease rather than treating it, so it lowers the toll without changing how a
+    patient is treated.
+- name: V181 (Merck, single-dose vaccine)
+  stage: Phase 3
+  note: MOBILIZE-1, about 12,000 children aged 2-17 in Asia-Pacific; primary completion estimated Oct 2031.
+  url: https://clinicaltrials.gov/study/NCT07013487
+  expected: 2031-10
+  effect: small
+  effect_note: A second single-dose vaccine would widen prevention, especially for children, but does
+    not change treatment.
+recent:
+- date: 2026-07
+  text: India approved Takeda's Qdenga for ages 4-60, its first dengue vaccine.
+  url: https://www.theweek.in/news/health/2026/07/20/how-effective-is-qdenga-india-approves-first-dengue-vaccine-by-japanese-drugmaker-for-ages-4-60.html
+- date: 2026-03
+  text: Five-year Phase 3 data showed one dose of Butantan-DV cut symptomatic dengue by 65% and severe
+    dengue with warning signs by 80.5%.
+  url: https://www.nature.com/articles/s41591-026-04255-3
+- date: 2025-11
+  text: Brazil's regulator approved Butantan-DV, the first single-dose dengue vaccine.
+  url: https://centerforimmunizationresearch.org/butantan-institutes-dengue-vaccine-the-worlds-first-single-dose-vaccine-has-been-approved-by-anvisa
+next_milestone:
+  date: 2027-07
+  what: Estimated completion of Novartis's Phase 2 trial of EYU688, the only dengue antiviral in efficacy
+    trials.
+  url: https://www.novartis.com/clinicaltrials/study/nct06006559
+ai:
+  impact: low
+  note: 'Unclear: the leading dengue antiviral and vaccines came from conventional chemistry and virology,
+    though AI-assisted outbreak forecasting is being tested.'
+markets: []
+prevention:
+  level: 2
+  burden: moderate
+  why: The two vaccines in wide use give partial protection, cutting symptomatic dengue by about 61-65%
+    over 4-5 years and hospital stays by about 80-84%.
+  burden_why: Qdenga is two doses three months apart and Butantan-DV one dose, but neither is licensed
+    in the US, WHO backs Qdenga only for ages 6-16 in high-transmission areas, supply is limited, and Dengvaxia
+    is being withdrawn because it raises severe-dengue risk in people never infected before.
+  best:
+  - Qdenga (TAK-003), two doses
+  - Butantan-DV, single dose (Brazil, ages 12-59)
+  - Mosquito control, including Wolbachia mosquito releases
+  url: https://www.nature.com/articles/s41591-026-04255-3
+  forecast:
+    median: 2036
+    low: 2029
+    high: 2060
+    p2035: 42
+    p2045: 70
+    note: Strong protection needs a vaccine that cuts symptomatic dengue by about 85% across all four types
+      and regardless of past infection. Butantan-DV reached about 80% over two years (90% in adults) but
+      65% over five, and Merck's similar V181 reports around 2031; better durability or a booster could
+      tip it over the line.
+  easy:
+    median: 2042
+    low: 2032
+    high: 2075
+    p2035: 18
+    p2045: 58
+    note: Mild prevention would be a cheap single dose with strong protection available across Asia, Africa
+      and the Americas. Butantan-DV is single-dose but made mainly for Brazil, with up to 100 million doses
+      planned by 2027; strong efficacy plus global supply and WHO prequalification are both needed.

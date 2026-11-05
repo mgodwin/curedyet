@@ -3,16 +3,16 @@ id: rabies
 name: Rabies
 category: outbreaks
 tracking: active
-summary: A viral brain infection spread mostly by dog bites that is almost always fatal once symptoms
-  start.
+summary: A viral brain infection spread mostly by dog bites that can be prevented after a bite but has no
+  effective treatment once symptoms start.
 toll:
   text: About 44,000 deaths/yr worldwide by WHO's 2021 model (true toll likely higher; CDC cites ~70,000),
     mostly children in Africa and Asia; under 10 US deaths/yr but ~100,000 Americans get PEP yearly.
   url: https://www.who.int/news-room/fact-sheets/detail/rabies
 status:
   level: 0
-  why: Once symptoms appear rabies is virtually 100% fatal and no therapy changes that, even though prompt
-    post-exposure prophylaxis prevents nearly all deaths.
+  why: Once symptoms appear rabies is virtually always fatal and no therapy yet changes that, even though
+    prompt post-exposure prophylaxis prevents nearly all deaths.
   today: 'Prevention works: wound washing plus a vaccine course and, when indicated, rabies immunoglobulin
     or monoclonal antibodies given soon after a bite stop the virus before it reaches the brain. Pre-exposure
     vaccination protects high-risk groups, and mass dog vaccination can end dog-mediated spread. After
@@ -26,8 +26,9 @@ treatment:
   - Mass dog vaccination
   - Palliative care once symptomatic
   burden: moderate
-  burden_note: Post-exposure vaccine series over about two weeks plus immunoglobulin, with mild side effects,
-    but immunoglobulin is scarce in poor regions and costly in the US; symptomatic disease is untreatable.
+  burden_note: Post-exposure vaccine series over about two weeks plus immunoglobulin, with mild side
+    effects, but immunoglobulin is scarce in poor regions and costly in the US; once symptoms start there
+    is no effective treatment.
 forecast:
   bottleneck: design-limited
   normal:

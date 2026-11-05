@@ -13,9 +13,9 @@ survival: 91% of infants with type 1 survived without permanent ventilation at 1
 treatment: Patients get one-time gene therapy (Zolgensma, or Itvisma for ages 2 and up), repeated spinal
   injections (nusinersen) or daily risdiplam, all very costly. These usually stop or slow the decline
   and can bring some gains, but nerve cells already lost do not come back, so most live with lasting disability.
-caveat: 'Level sits between 1 and 2: treatment often halts decline, but life is not near-normal, which
-  level 2 requires. Survival figure is for symptomatic infants with type 1 SMA; older patients with types
-  2-3 mostly stabilize rather than improve.'
+caveat: 'Level sits between 1 and 2: treatment often halts decline, but daily function does not return
+  to near-normal, which level 2 requires. Survival figure is for symptomatic infants with type 1 SMA;
+  older patients with types 2-3 mostly stabilize rather than improve.'
 url: https://pubmed.ncbi.nlm.nih.gov/33743238/
 forecast:
   median: 2075

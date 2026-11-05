@@ -3,8 +3,8 @@ id: alzheimers
 name: Alzheimer's disease
 category: neuro
 tracking: active
-summary: The most common cause of dementia, in which amyloid plaques and tau tangles destroy memory and
-  thinking.
+summary: The most common cause of dementia, in which amyloid plaques and tau tangles steadily damage
+  memory and thinking.
 toll:
   text: About 7.4 million Americans aged 65+ living with Alzheimer's in 2026 (Alzheimer's Association).
   url: https://www.alz.org/facts-and-figures
@@ -16,10 +16,11 @@ status:
   level: 1
   why: Anti-amyloid antibodies slow decline by roughly a quarter to a third in early disease, but the
     disease still progresses.
-  today: Lecanemab (Leqembi) and donanemab (Kisunla) clear amyloid and modestly slow decline in early-stage
-    patients, with brain swelling and bleeding (ARIA) risks and MRI monitoring. Subcutaneous lecanemab
-    is now approved for starting and maintaining treatment at home. Moderate and late-stage patients have
-    only symptomatic drugs, and many 2026 trials (semaglutide, AL002, XPro1595) failed.
+  today: Lecanemab (Leqembi) and donanemab (Kisunla) clear amyloid and modestly slow decline in people at
+    an early stage, with brain swelling and bleeding (ARIA) risks and MRI monitoring. Subcutaneous
+    lecanemab is now approved for starting and maintaining treatment at home. People at moderate and late
+    stages have only drugs that ease symptoms, and many 2026 trials (semaglutide, AL002, XPro1595)
+    failed.
   last_reviewed: '2026-11-03'
 treatment:
   best:

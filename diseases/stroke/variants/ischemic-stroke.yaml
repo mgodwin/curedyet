@@ -2,7 +2,7 @@
 id: ischemic-stroke
 name: Ischemic stroke
 order: 1
-what: A clot blocks an artery to the brain, starving part of it of blood.
+what: A clot blocks an artery to the brain, cutting off blood flow to part of it.
 level: 3
 burden: heavy
 burden_why: Emergency clot-busting drugs or catheter procedures, then rehab and lifelong prevention pills,

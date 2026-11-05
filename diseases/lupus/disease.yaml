@@ -30,8 +30,8 @@ treatment:
   - Obinutuzumab (lupus nephritis)
   burden: moderate
   burden_note: Lifelong hydroxychloroquine needing eye screening plus intermittent steroids with weight,
-    bone and infection effects; lupus nephritis patients face heavier immunosuppression and costly biologic
-    infusions.
+    bone and infection effects; people with lupus nephritis need heavier immunosuppression and costly
+    biologic infusions.
 forecast:
   bottleneck: trial-limited
   normal:

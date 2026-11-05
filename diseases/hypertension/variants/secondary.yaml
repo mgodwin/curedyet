@@ -1,0 +1,32 @@
+# Cure Watch variant record: one stage or type of High blood pressure. Field guide: CONTRIBUTING.md.
+id: secondary
+name: Secondary high blood pressure
+order: 2
+what: High blood pressure caused by another condition, most often a hormone-making adrenal gland (primary
+  aldosteronism), kidney disease, narrowed kidney arteries or sleep apnoea.
+level: 3
+burden: heavy
+burden_why: The cure, when there is one, is usually surgery or a procedure, such as keyhole removal of
+  an adrenal gland, and many others need lifelong targeted pills.
+survival: 'Unilateral primary aldosteronism: 37% have normal blood pressure without pills after adrenal
+  surgery and 47% more improve (PASO, 705 patients)'
+share: About 1 in 10 adults with high blood pressure has an identifiable cause
+share_url: https://www.acc.org/Latest-in-Cardiology/Ten-Points-to-Remember/2017/11/09/11/41/2017-Guideline-for-High-Blood-Pressure-in-Adults
+treatment: Doctors treat the cause. When one adrenal gland is overproducing aldosterone, keyhole surgery
+  to remove it fixes the hormone problem in about 94% and leaves about a third off all blood pressure pills;
+  rarer tumours and some narrowed kidney arteries can also be fixed. When both adrenal glands are involved
+  or the cause is kidney disease, treatment is lifelong targeted pills such as spironolactone.
+caveat: Secondary causes are often missed, so the true share may be higher than 10%; primary aldosteronism
+  alone may affect about 5-10% of people with high blood pressure, and only some have the one-sided form
+  surgery can cure. The cure figure is for the surgically treatable subgroup, not all secondary causes,
+  so fewer than 85% are cured overall.
+url: https://pubmed.ncbi.nlm.nih.gov/28576687/
+forecast:
+  median: 2058
+  low: 2040
+  high: 2100
+  p2035: 4
+  p2045: 20
+  note: Many secondary causes, such as kidney disease and two-sided adrenal disease, cannot be removed,
+    so a cure for most would need either far better screening and surgery or treatments that fix the underlying
+    disease; better adrenal imaging and testing are improving, but slowly.

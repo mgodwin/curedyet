@@ -3,7 +3,7 @@ id: schizophrenia
 name: Schizophrenia
 category: mental
 tracking: active
-summary: A severe mental disorder with psychosis, disordered thinking and loss of motivation.
+summary: A serious mental health condition involving psychosis, disordered thinking and reduced motivation.
 toll:
   text: About 27 million people worldwide, 1 in 300 (WHO, GBD 2023 data)
   url: https://www.who.int/news-room/fact-sheets/detail/schizophrenia
@@ -13,11 +13,12 @@ toll:
   ratio_basis: "WHO schizophrenia fact sheet: 'Globally, 1 in 300 (or 27 million) people live with schizophrenia' (1 in 206 among adults 20+)."
 status:
   level: 1
-  why: Antipsychotics ease hallucinations and delusions, but negative and cognitive symptoms usually persist
-    and most patients do not live near-normal lives.
+  why: Antipsychotics ease hallucinations and delusions, but negative and cognitive symptoms usually
+    persist, and for most people symptoms continue to affect daily life.
   today: Antipsychotics, including long-acting injections, reduce psychosis and relapse, and clozapine
-    helps many treatment-resistant patients. WHO says at least a third of people fully recover, but the
-    rest have lasting or recurring symptoms. Only 29% of people with psychosis get specialist care worldwide.
+    helps many people whose symptoms have not responded to other antipsychotics. WHO says at least a
+    third of people fully recover, but the rest have lasting or recurring symptoms. Only 29% of people
+    with psychosis get specialist care worldwide.
   last_reviewed: '2026-11-03'
 treatment:
   best:

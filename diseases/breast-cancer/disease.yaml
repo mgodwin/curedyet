@@ -15,8 +15,8 @@ toll:
   ratio_basis: "American Cancer Society: 'about 1 in 8 women will develop breast cancer.'"
 status:
   level: 4
-  why: Most patients are diagnosed at an early stage and are cured with surgery, radiation and systemic
-    therapy, though metastatic disease remains incurable.
+  why: Most people are diagnosed at an early stage and are cured with surgery, radiation and systemic
+    therapy, though metastatic disease cannot yet be cured.
   today: Early-stage disease is usually cured with surgery plus endocrine therapy, HER2 drugs or chemo-immunotherapy
     depending on subtype. Metastatic breast cancer is treated as a chronic disease with CDK4/6 inhibitors,
     oral SERDs and antibody-drug conjugates, but it is rarely cured. Triple-negative and late-relapsing

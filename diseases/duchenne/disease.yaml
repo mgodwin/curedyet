@@ -30,9 +30,9 @@ treatment:
   - Exon-skipping PMOs
   - Cardiac and respiratory care
   burden: heavy
-  burden_note: Most boys take lifelong corticosteroids causing weight gain, bone loss, fractures and stunted
-    growth; Elevidys gene therapy carries serious liver risk and multimillion-dollar cost and only slows
-    decline.
+  burden_note: Most boys take lifelong corticosteroids causing weight gain, bone loss, fractures and
+    slowed growth; Elevidys gene therapy carries serious liver risk and multimillion-dollar cost and only
+    slows decline.
 forecast:
   bottleneck: design-limited
   normal:

@@ -1,0 +1,133 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: rsv
+name: RSV (respiratory syncytial virus)
+category: infectious
+tracking: active
+summary: A common respiratory virus that infects nearly every child by age two and is usually a cold,
+  but can cause bronchiolitis and pneumonia in babies and older adults.
+toll:
+  text: About 101,000 deaths a year in children under 5 worldwide (2019), 97% of them in low- and middle-income
+    countries (Lancet 2022); in the US, 60,000-160,000 hospital stays and 6,000-10,000 deaths a year in
+    adults 65 and older (CDC).
+  url: https://pubmed.ncbi.nlm.nih.gov/35598608/
+  ratio: "About 1 in 40"
+  ratio_caption: "US babies under 6 months is hospitalized with RSV each year"
+  ratio_url: https://www.cdc.gov/rsv/hcp/clinical-overview/index.html
+  ratio_basis: "Derived: CDC clinical overview says 2-3% of infants under 6 months are hospitalized with RSV every year; 2.5% is about 1 in 40."
+status:
+  level: 1
+  why: There is no routinely used antiviral, so care is supportive (oxygen, fluids, breathing support),
+    which eases the illness while the body clears the virus.
+  today: Most people recover in one to two weeks without treatment. Babies and older adults who become
+    seriously ill get oxygen, fluids and sometimes ventilation in hospital. Inhaled ribavirin is licensed
+    but rarely used, and the leading new oral antiviral, zelicapavir, missed its main goal in a 2026 Phase
+    2b trial in adults.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Supportive care (oxygen, fluids, suction)
+  - Breathing support in hospital for severe cases
+  - Nirsevimab, clesrovimab or maternal vaccine for infant prevention
+  - Older-adult vaccines (Arexvy, Abrysvo, mResvia)
+  burden: moderate
+  burden_note: Most cases need nothing beyond home care, but severe cases in babies and older adults mean
+    hospital stays with oxygen or ventilation, and there is no drug to shorten them.
+forecast:
+  bottleneck: trial-limited
+  normal:
+    p2035: 5
+    p2045: 20
+    median: 2052
+    low: 2036
+    high: 2090
+  faster:
+    p2035: 10
+    p2045: 38
+    median: 2045
+    low: 2033
+    high: 2080
+  faster_note: Faster, better-designed trials matter most, because RSV antivirals must be given within
+    a few days of symptoms and past trials have struggled to show clinical benefit; a faster pipeline mainly
+    lifts the 2045 odds.
+  outlook: A cure for most would mean an antiviral that, given early, reliably stops RSV from turning severe
+    in babies and older adults. Several drugs lower viral load, and China's ziresovir helped hospitalised
+    infants in Phase 3, but none has clearly cut hospital stays in a large trial. Prevention is advancing
+    much faster than treatment.
+pipeline:
+- name: Zelicapavir (Enanta, oral N-protein inhibitor)
+  stage: Phase 2
+  note: Missed its main symptom goal in high-risk adults (IDWeek 2026) but cut hospitalisation (1.7% vs
+    5.0%); a registrational Phase 2b/3 (RESOLVE) starts Q4 2026 and a paediatric Phase 2b reports in 2027.
+  url: https://www.contagionlive.com/view/novel-rsv-therapy-addressing-a-clinical-need
+  expected: '2027'
+  effect: some
+  effect_note: A clear win in children would give the first modern oral RSV antiviral a path to approval,
+    but it would treat illness rather than cure most severe cases.
+- name: Ziresovir (ArkBio, oral fusion inhibitor)
+  stage: Filed
+  note: Phase 3 AIRFLO in 311 hospitalised infants in China cut signs and symptoms and viral load (NEJM
+    2024); China's regulator has the application under priority review.
+  url: https://prnewswire.com/apac/news-releases/arkbio-announces-publication-of-phase-3-clinical-trial-results-of-ziresovir-for-the-treatment-of-rsv-infection-in-the-new-england-journal-of-medicine-302259902.html
+  effect: some
+  effect_note: Approval in China would give hospitalised infants a targeted drug, though trials outside
+    China would be needed before it changes care in most rich countries.
+- name: Clesrovimab (Enflonsia, Merck, infant antibody)
+  stage: Approved 2025-26
+  note: FDA approved June 2025 as a second single-dose antibody for infants in their first RSV season;
+    90.9% efficacy against RSV hospitalisation in trials.
+  url: https://www.cdc.gov/rsv/hcp/vaccine-clinical-guidance/infants-young-children.html
+  effect: small
+  effect_note: Adds supply and choice for infant prevention but does not treat RSV.
+recent:
+- date: 2026-10
+  text: Zelicapavir's Phase 2b in high-risk adults missed its primary symptom endpoint but lowered hospitalisation
+    and viral load.
+  url: https://www.contagionlive.com/view/novel-rsv-therapy-addressing-a-clinical-need
+- date: 2026-03
+  text: FDA expanded GSK's Arexvy vaccine to adults aged 18-49 at increased risk.
+  url: https://www.pharmacytimes.com/view/fda-approves-gsk-s-rsv-vaccine-for-adults-aged-18-49-at-increased-risk
+- date: 2025-06
+  text: FDA approved clesrovimab, a second long-acting antibody for infants.
+  url: https://www.cdc.gov/rsv/hcp/vaccine-clinical-guidance/infants-young-children.html
+next_milestone:
+  date: '2027'
+  what: Topline results from Enanta's paediatric Phase 2b trial of zelicapavir.
+  url: https://www.enanta.com/pipeline/respiratory-syncytial-virus/
+ai:
+  impact: low
+  note: 'Unclear: the leading RSV drugs and vaccines came from structure-based design of the virus''s fusion
+    protein, with no clear AI-discovery role yet.'
+markets: []
+prevention:
+  level: 2
+  burden: moderate
+  why: For the people most at risk, infants and older adults, the best options cut RSV hospital stays
+    by about 70-90% in the first season, but older-adult protection fades to about 50-70% over two seasons
+    and less severe illness is prevented less well.
+  burden_why: Each is a single shot (an antibody at birth, a vaccine in late pregnancy, or one older-adult
+    dose), but timing must match the RSV season, older-adult vaccines are recommended only for some age
+    and risk groups, and the products are scarce in the poorer countries where 97% of child deaths occur.
+  best:
+  - Nirsevimab (Beyfortus) or clesrovimab (Enflonsia), one shot for infants
+  - Abrysvo vaccine in pregnancy (weeks 32-36 in the US, from 28 under WHO)
+  - Arexvy, Abrysvo or mResvia, one dose for adults 75+ and at-risk adults 50-74
+  url: https://www.cdc.gov/rsv/hcp/vaccine-clinical-guidance/infants-young-children.html
+  forecast:
+    median: 2032
+    low: 2028
+    high: 2045
+    p2035: 62
+    p2045: 85
+    note: Infant antibodies already reach about 80-90% against hospitalisation, so strong protection mainly
+      needs older-adult vaccines that hold up past the first season, and evidence that protection against
+      milder illness also reaches about 85%. Revaccination schedules and next-generation vaccines are being
+      tested; an infant vaccine is further off after a 2024 safety signal paused that work.
+  easy:
+    median: 2038
+    low: 2030
+    high: 2060
+    p2035: 30
+    p2045: 65
+    note: Mild prevention would mean cheap, widely available single shots, including in low-income countries.
+      WHO prequalified the maternal vaccine in 2025, opening Gavi funding, but infant antibodies remain
+      costly and supply-limited outside rich countries.

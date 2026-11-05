@@ -1,0 +1,159 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: cervical-cancer
+name: Cervical cancer
+category: cancer
+tracking: active
+summary: Cancer of the cervix, the lower part of the womb, almost always caused by long-lasting infection
+  with high-risk types of human papillomavirus (HPV).
+toll:
+  text: About 604,000 new cases and 280,000 deaths/yr worldwide (2024), with about 94% of deaths in low-
+    and middle-income countries; ~13,490 US cases and ~4,200 US deaths est. 2026.
+  url: https://www.who.int/news-room/fact-sheets/detail/cervical-cancer
+  ratio: "About 1 in 170"
+  ratio_caption: "US women will be diagnosed with cervical cancer in their lifetime"
+  ratio_url: https://seer.cancer.gov/statfacts/html/cervix.html
+  ratio_basis: "NCI SEER Cancer Stat Facts: about 0.6% of women diagnosed in their lifetime (2021-2023 data); 0.6% is about 1 in 170."
+status:
+  level: 3
+  why: Precancers and early cancers are usually cured, but only about 69% of US women with invasive cervical
+    cancer are alive at 5 years, and cancer that has spread far is rarely curable.
+  today: Screening finds precancers that a short outpatient procedure removes, and stage I cancer is usually
+    cured with surgery. Locally advanced cancer is treated with chemoradiation, now often with pembrolizumab
+    or induction chemotherapy added, which cures many but not most women with stage III. Metastatic disease
+    is treated with chemotherapy, immunotherapy and the antibody-drug conjugate tisotumab vedotin, which
+    extend life but rarely cure. About 94% of deaths are in low- and middle-income countries, where screening,
+    vaccination and radiotherapy are scarce, and it is the leading cause of cancer death in women in 26 countries,
+    mostly in sub-Saharan Africa.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - HPV testing and removal of precancers (LEEP or cone)
+  - Radical or simple hysterectomy for early cancer
+  - Cisplatin chemoradiation plus brachytherapy
+  - Pembrolizumab with chemoradiation for high-risk locally advanced disease
+  - Pembrolizumab plus chemotherapy, with or without bevacizumab, for metastatic disease
+  - Tisotumab vedotin after chemotherapy
+  burden: heavy
+  burden_note: Invasive cancer means major surgery or about six weeks of chemoradiation plus internal
+    radiation, which usually ends fertility and can cause early menopause and lasting bowel, bladder and
+    sexual side effects; metastatic disease means ongoing drug treatment.
+forecast:
+  bottleneck: access-limited
+  normal:
+    p2035: 10
+    p2045: 35
+    median: 2050
+    low: 2034
+    high: 2085
+  faster:
+    p2035: 15
+    p2045: 50
+    median: 2045
+    low: 2032
+    high: 2075
+  faster_note: Faster trials of immunotherapy and antibody-drug conjugates for locally advanced and metastatic
+    disease would lift the odds most by 2045; screening and HPV self-testing already exist, so speed of
+    discovery matters less than reach.
+  outlook: Invasive cervical cancer sits well short of the cured-for-most line because about half of US
+    cases are found after spreading beyond the cervix, often in women who were not screened. Recent gains
+    from adding pembrolizumab or induction chemotherapy to chemoradiation are real but modest. Vaccination
+    and screening may shrink the disease faster than treatment improves, which would leave the remaining
+    cases harder to cure.
+pipeline:
+- name: Pembrolizumab plus chemoradiation (KEYNOTE-A18)
+  stage: Approved
+  note: FDA-approved Jan 2024 for FIGO 2014 stage III-IVA; final analysis showed 36-month survival of
+    82% vs 74% (HR 0.73).
+  url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-chemoradiotherapy-figo-2014-stage-iii-iva-cervical-cancer
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: some
+  effect_note: Already approved; it adds a few points of survival for high-risk locally advanced disease
+    but does not by itself push stage III near 85%.
+- name: Induction carboplatin and paclitaxel before chemoradiation (INTERLACE)
+  stage: Phase 3
+  note: Six weekly chemo doses before chemoradiation raised 5-year survival to 80% from 72% (Lancet 2024);
+    some guidelines now list it as an option.
+  url: https://doi.org/10.1016/S0140-6736(24)01438-7
+  variants:
+  - stage-ii
+  - stage-iii
+  effect: some
+  effect_note: Already reported; wider use could lift cure rates for locally advanced disease by several
+    points with cheap generic drugs.
+- name: Volrustomig after chemoradiation (eVOLVE-Cervical)
+  stage: Phase 3
+  note: AstraZeneca's PD-1/CTLA-4 bispecific antibody versus placebo in about 800 women with FIGO 2018
+    stage IIIA-IVA disease; primary completion listed for Nov 2027.
+  url: https://clinicaltrials.gov/study/NCT06079671
+  variants:
+  - stage-iii
+  - stage-iv
+  expected: '2028'
+  effect: some
+  effect_note: A clear win would add another option to cut relapse after chemoradiation, nudging stage
+    III disease toward the 85% line.
+- name: Tisotumab vedotin (Tivdak)
+  stage: Approved
+  note: Full FDA approval Apr 2024 after innovaTV 301 extended median survival to 11.5 from 9.5 months
+    versus chemotherapy.
+  url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-tisotumab-vedotin-tftv-recurrent-or-metastatic-cervical-cancer
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Already approved; it adds about two months of life after chemotherapy and does not cure.
+- name: CT-P73 (tissue factor antibody-drug conjugate)
+  stage: Phase 1
+  note: Celltrion's drug won FDA fast track in Aug 2026 for recurrent or metastatic disease after platinum
+    chemotherapy.
+  url: https://en.edaily.co.kr/news/eda202608135135/
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Early; at best another later-line drug that extends life.
+recent:
+- date: 2026-08
+  text: FDA granted fast track to Celltrion's CT-P73 for recurrent or metastatic cervical cancer.
+  url: https://en.edaily.co.kr/news/eda202608135135/
+- date: 2026-03
+  text: A Swedish study in The BMJ of over 926,000 women found HPV vaccine protection against invasive
+    cervical cancer held for up to 18 years with no sign of waning.
+  url: https://ascopost.com/news/march-2026/hpv-vaccination-protection-from-cervical-cancer-sustained-long-term/
+- date: 2025-06
+  text: Final KEYNOTE-A18 results confirmed that pembrolizumab with chemoradiation improves survival in
+    high-risk locally advanced cervical cancer.
+  url: https://www.onclive.com/view/final-phase-3-data-underscore-role-of-pembrolizumab-chemoradiotherapy-in-high-risk-locally-advanced-cervical-cancer
+next_milestone:
+  date: '2027-11'
+  url: https://clinicaltrials.gov/study/NCT06079671
+  what: Listed primary completion of eVOLVE-Cervical, the Phase 3 trial of volrustomig after chemoradiation;
+    results would follow.
+ai:
+  impact: some
+  note: Hologic's AI-assisted digital Pap test review won FDA clearance in 2024, flagging abnormal cells
+    for cytologists, though it speeds screening rather than finding new cures.
+markets: []
+prevention:
+  level: 3
+  burden: light
+  why: HPV vaccines block infection with the types behind most cervical cancers, and women vaccinated
+    as girls have about 80 to 100% lower rates of invasive cancer in Swedish and Scottish studies; regular
+    HPV screening catches most of the rest as treatable precancer.
+  burden_why: One or two shots in early adolescence with few side effects, free in school programmes
+    in most rich countries, though only about a third of girls worldwide had a first dose in 2025.
+  best:
+  - HPV vaccine (one or two doses at age 9-14)
+  - HPV testing every 5 years, including self-collected samples
+  - Treatment of precancers found by screening
+  url: https://www.who.int/news-room/fact-sheets/detail/cervical-cancer
+  reached:
+    year: 2006
+    basis: FDA approved Gardasil, the first HPV vaccine, in June 2006 after trials showed near-complete
+      protection against HPV 16 and 18 precancers.
+    url: https://pubmed.ncbi.nlm.nih.gov/17998730/
+  reached_easy:
+    year: 2007
+    basis: Australia began a free school-based HPV vaccination programme for girls aged 12-13 in April
+      2007, and other rich countries followed within a few years.
+    url: https://immunisationhandbook.health.gov.au/contents/vaccine-preventable-diseases/human-papillomavirus-hpv

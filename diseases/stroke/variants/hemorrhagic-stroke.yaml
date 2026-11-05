@@ -5,14 +5,14 @@ order: 2
 what: A blood vessel in or around the brain bursts and bleeds, damaging brain tissue.
 level: 1
 burden: heavy
-burden_why: Intensive hospital care, sometimes brain surgery, then long rehab, and most survivors remain
-  dependent.
+burden_why: Intensive hospital care, sometimes brain surgery, then long rehab, and most survivors need
+  ongoing help with daily life.
 survival: ~20% functionally independent 6 months after a bleed inside the brain
 share: About 13% of strokes are caused by bleeding
 share_url: https://www.cdc.gov/stroke/data-research/facts-stats/index.html
 treatment: 'Care is intensive and aims to limit damage: rapid blood pressure lowering, reversing blood
   thinners, sometimes surgery to remove blood or relieve pressure, then long rehab. No treatment undoes
-  the bleed, about a third die within a month, and most survivors stay dependent.'
+  the bleed, about a third die within a month, and most survivors need ongoing help with daily life.'
 caveat: The outcome figure is for bleeding inside the brain (intracerebral hemorrhage), the most common
   type; bleeding around the brain (subarachnoid hemorrhage from a burst aneurysm) has different, often
   better outcomes when treated. Share is the remainder after CDC's 87% ischemic figure.

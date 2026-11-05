@@ -3,8 +3,8 @@ id: melanoma
 name: Melanoma
 category: cancer
 tracking: active
-summary: Skin cancer arising from pigment cells, deadly when it spreads but usually curable when caught
-  early.
+summary: Skin cancer arising from pigment cells, life-threatening when it spreads but usually curable
+  when caught early.
 toll:
   text: ~112,000 US cases and ~8,510 US deaths est. 2026; distant-stage 5-year survival has risen to about
     35%.

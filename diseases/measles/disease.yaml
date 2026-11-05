@@ -1,0 +1,112 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: measles
+name: Measles
+category: infectious
+tracking: active
+summary: A highly contagious viral infection that causes fever and rash and can lead to pneumonia, brain
+  swelling and death, mostly in young children.
+toll:
+  text: About 11 million infections and 95,000 deaths worldwide in 2024, mostly children under 5 (WHO);
+    4,852 US cases in 2026 through Oct 29, the most since elimination in 2000 (CDC).
+  url: https://www.who.int/news-room/fact-sheets/detail/measles
+status:
+  level: 1
+  why: No antiviral treats measles; care eases symptoms and vitamin A cuts severe illness in children,
+    and most people recover on their own, but about 1 to 3 in 1,000 infected children die.
+  today: Treatment is supportive care, with fluids, fever control and antibiotics for bacterial pneumonia
+    or ear infections, plus two doses of vitamin A, which WHO recommends for young children with measles and CDC for severe
+    cases. Ribavirin
+    is sometimes tried in severely ill or immunocompromised patients, but evidence that it helps is lacking.
+    Nothing reverses encephalitis or the rare fatal brain disease SSPE that can appear years later, and
+    measles can wipe out existing immunity to other infections for months or years.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Supportive care (fluids, fever control, nutrition)
+  - Vitamin A for children
+  - Antibiotics for bacterial complications
+  - Post-exposure MMR vaccine or immunoglobulin
+  burden: light
+  burden_note: Most people are ill for a week or two and need only rest, fluids and fever control; vitamin
+    A is cheap, though severe complications can mean hospital care.
+forecast:
+  bottleneck: trial-limited
+  normal:
+    p2035: 3
+    p2045: 12
+    median: 2058
+    low: 2038
+    high: 2100
+  faster:
+    p2035: 5
+    p2045: 22
+    median: 2050
+    low: 2035
+    high: 2100
+  faster_note: Oral polymerase inhibitors already protect animals, so faster, smaller human trials during
+    outbreaks would matter more than faster drug design.
+  outlook: Measles is rated on treatment, not on the vaccine. Oral polymerase inhibitors such as ERDRP-0519
+    and GHP-88309 stopped disease in monkeys and ferrets, but neither has reported human trials, and a cheap
+    vaccine that prevents nearly all cases leaves little commercial push for a drug. An antiviral that clears infection and
+    prevents complications for most patients is therefore decades away at today's pace.
+pipeline:
+- name: ERDRP-0519 and GHP-88309 (oral polymerase inhibitors)
+  stage: Preclinical
+  note: ERDRP-0519 protected squirrel monkeys from measles when given after exposure (Nature Communications
+    2021); GHP-88309 worked better orally in ferret studies.
+  url: https://www.nature.com/articles/s41467-021-25497-4
+  effect: some
+  effect_note: A first-in-human trial would be the first step toward a real measles antiviral, most useful
+    after exposure or early in illness.
+- name: Measles-rubella microarray patch (Micron Biomedical)
+  stage: Phase 2
+  note: A single patch protected over 90% of infants against measles in a Gambian Phase 1/2 trial (Lancet
+    2024); it needs no needles or trained vaccinators.
+  url: https://doi.org/10.1016/S0140-6736(24)00532-4
+  effect: small
+  effect_note: It would not treat measles, but could make vaccination easier to deliver in poor and remote
+    areas where most deaths occur.
+recent:
+- date: 2026-10
+  text: US measles cases reached 4,852 for 2026 by Oct 29, across 43 new outbreaks.
+  url: https://www.cdc.gov/measles/data-research/index.html
+- date: 2026-01
+  text: WHO's European verification commission found that the UK, Spain, Austria, Armenia, Azerbaijan
+    and Uzbekistan had lost measles elimination status.
+  url: https://www.local.gov.uk/about/news/uk-loses-measles-elimination-status-lga-response
+- date: 2025-11
+  text: Canada lost its measles elimination status, so the Americas lost their status as free of endemic
+    measles.
+  url: https://www.paho.org/en/news/2-3-2026-update-review-measles-elimination-status
+next_milestone:
+  date: '2026-11'
+  url: https://www.paho.org/en/news/2-3-2026-update-review-measles-elimination-status
+  what: PAHO's Regional Verification Commission reviews whether the US and Mexico have lost measles elimination
+    status at its annual meeting.
+ai:
+  impact: low
+  note: No AI-designed measles drug is in trials; the leading antiviral candidates came from conventional
+    screening and chemistry.
+markets: []
+prevention:
+  level: 3
+  burden: light
+  why: Two MMR doses are about 97% effective and protection is probably lifelong, but rung 4 does not
+    fit because fewer than half of countries have verified elimination and measles is spreading again in
+    Canada, the US, the UK and other rich countries as coverage slips.
+  burden_why: Two cheap childhood shots with few side effects, free in most countries, though worldwide
+    only 84% of children got a first dose and 77% a second in 2025, short of the 95% WHO target.
+  best:
+  - MMR or MR vaccine, two doses in childhood
+  - MMR within 72 hours or immunoglobulin within 6 days of exposure
+  url: https://www.cdc.gov/measles/hcp/vaccine-considerations/index.html
+  reached:
+    year: 1963
+    basis: The first live measles vaccine (Edmonston B) was licensed in the US, giving strong protection
+      after one dose.
+    url: https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-13-measles.html
+  reached_easy:
+    year: 1968
+    basis: A further attenuated Edmonston-Enders strain with fewer reactions was licensed in the US, replacing
+      the original vaccine that often caused fever and rash; combined MMR followed in 1971.
+    url: https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-13-measles.html

@@ -14,12 +14,12 @@ toll:
   ratio_basis: "IDF Diabetes Atlas 11th edition (2025): 'nearly one in nine adults (589 million) are now living with diabetes'; type 2 accounts for over 90%. Covers all diabetes, not type 2 alone."
 status:
   level: 2
-  why: Modern drugs keep most patients controlled long term, and remission happens for some after major
-    weight loss, but it usually returns without ongoing treatment.
+  why: Modern drugs keep blood sugar controlled long term for most people, and remission happens for some
+    after major weight loss, but it usually returns without ongoing treatment.
   today: Metformin, GLP-1 and GIP/GLP-1 drugs, and SGLT2 inhibitors control blood sugar and cut heart
     and kidney risk. Large weight loss from bariatric surgery, intensive diet programs or tirzepatide
     can put the disease into remission for a subset, but relapse is common. Control in practice is uneven,
-    and many patients worldwide are undiagnosed.
+    and many people worldwide are undiagnosed.
   last_reviewed: '2026-11-03'
 treatment:
   best:

@@ -1,0 +1,30 @@
+# Cure Watch variant record: one stage or type of High blood pressure. Field guide: CONTRIBUTING.md.
+id: primary
+name: Primary (essential) high blood pressure
+order: 1
+what: High blood pressure with no single identifiable cause, driven by a mix of genes, age, weight, salt
+  and other factors; it covers about 9 in 10 adults with high blood pressure.
+level: 2
+burden: moderate
+burden_why: Daily pills for life, usually cheap generics with mild side effects, plus regular checks.
+survival: Treatment lowering systolic pressure by 10 mmHg cuts major heart and stroke events by about
+  a fifth, but only about 1 in 4 people with it worldwide is controlled
+share: About 90% of adults with high blood pressure (a specific cause is found in about 10%)
+share_url: https://www.acc.org/Latest-in-Cardiology/Ten-Points-to-Remember/2017/11/09/11/41/2017-Guideline-for-High-Blood-Pressure-in-Adults
+treatment: Lifestyle changes plus usually two or three generic pills taken daily for life control blood
+  pressure for most people who take them. Those whose pressure stays high on three drugs (resistant high
+  blood pressure, about 1 in 8 treated patients) can add spironolactone or baxdrostat, or have renal denervation,
+  which lowers it modestly. Stopping treatment lets blood pressure rise again.
+caveat: Includes resistant high blood pressure, which is harder to control but still managed rather than
+  cured. The 1-in-5 risk reduction is from a large meta-analysis of drug trials; real-world control is
+  much lower because many people are undiagnosed, untreated or on too little treatment.
+url: https://www.who.int/news-room/fact-sheets/detail/hypertension
+forecast:
+  median: 2068
+  low: 2045
+  high: 2100
+  p2035: 2
+  p2045: 8
+  note: Needs a one-time treatment that resets blood pressure for life. Twice-yearly zilebesiran and renal
+    denervation point that way but only lower pressure partly or for months; gene-editing approaches to
+    blood pressure genes are preclinical.

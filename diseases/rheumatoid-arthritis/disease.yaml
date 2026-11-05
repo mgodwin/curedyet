@@ -4,7 +4,7 @@ name: Rheumatoid arthritis
 category: immune
 tracking: active
 summary: An autoimmune disease where the immune system attacks joint linings, causing pain, swelling and
-  joint destruction.
+  joint damage.
 toll:
   text: About 17.6M people had RA worldwide in 2020, projected to reach about 31.7M by 2050 (GBD).
   url: https://spiral.imperial.ac.uk/handle/10044/1/109351
@@ -15,7 +15,7 @@ toll:
 status:
   level: 2
   why: Methotrexate, biologics and JAK inhibitors bring many patients to remission or low activity, but
-    they need lifelong drugs and a minority stay refractory.
+    they need lifelong drugs and a minority have disease that is hard to treat.
   today: Early treatment with methotrexate, then TNF, IL-6, CD20, CTLA4-Ig or JAK inhibitors if needed,
     prevents joint damage in most patients. Drug-free remission is uncommon and stopping drugs usually
     brings flares. About 1 in 5 patients have difficult-to-treat disease.

@@ -1,0 +1,29 @@
+# Cure Watch variant record: one stage or type of Age-related vision loss. Field guide: CONTRIBUTING.md.
+id: presbyopia
+name: Presbyopia
+order: 1
+what: The lens slowly stiffens with age, so from the 40s onward the eye can no longer focus up close
+  and people need reading glasses.
+level: 2
+burden: light
+burden_why: Reading glasses are cheap, have no side effects and fully correct near vision while worn.
+share: About 1 in 4 people worldwide had presbyopia in 2015, and nearly half of those who needed correction
+  lacked it
+share_url: https://pubmed.ncbi.nlm.nih.gov/29753495/
+treatment: Reading glasses, bifocals or progressive lenses, or multifocal or monovision contact lenses,
+  give clear near vision. Prescription drops that narrow the pupil (Vuity 2021, Vizz 2025, Yuvezzi 2026)
+  sharpen near vision for some hours. Lens or laser surgery can reduce dependence on glasses, with trade-offs
+  such as glare or weaker distance vision. None restores the eye's own focusing.
+caveat: 'Rated "Controlled": correction is full and nearly free of side effects, but it has to be used
+  for life and the stiffening lens is untouched. In low-income regions most people with presbyopia lack
+  even reading glasses.'
+url: https://pubmed.ncbi.nlm.nih.gov/29753495/
+forecast:
+  median: 2060
+  low: 2040
+  high: 2100
+  p2035: 2
+  p2045: 9
+  note: A cure would mean restoring natural focusing, by softening the lens with a drug or with an implant
+    that truly accommodates. Novartis stopped UNR844, the leading lens-softening drop, after its Phase
+    2b failed in 2022, and no successor is in late-stage trials.

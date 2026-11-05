@@ -1,0 +1,35 @@
+# Cure Watch variant record: one stage or type of Age-related vision loss. Field guide: CONTRIBUTING.md.
+id: cataract
+name: Cataract
+order: 2
+what: The eye's lens gradually turns cloudy, blurring and dimming vision and making glare worse.
+level: 4
+burden: moderate
+burden_why: It is surgery, though a short same-day operation under numbing drops, followed by eye drops
+  while it heals (most people fully heal within about 8 weeks) and a small risk of infection or other
+  complications.
+survival: ~91% of eyes saw 6/12 (about 20/40) or better after surgery, ~95% without other eye disease
+  and ~80% with it (UK Cataract National Dataset, 55,567 operations, 2001-2006)
+share: By age 80, most Americans have a cataract or have had cataract surgery
+share_url: https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/cataracts
+treatment: Surgery removes the clouded lens and replaces it with a permanent artificial lens, and a cataract
+  can't come back. About 9 in 10 people see better afterward; some later need a quick laser treatment
+  for clouding behind the implant, and many need a new glasses prescription once healed.
+caveat: 'Most shortfalls come from other eye diseases (such as macular degeneration or glaucoma), not
+  failed surgery. Worldwide only about half of people who need the operation get it, and cataract is
+  still the leading cause of blindness: about 15M people in 2020.'
+url: https://www.nature.com/articles/6703015
+easy:
+  median: 2058
+  low: 2038
+  high: 2100
+  p2035: 2
+  p2045: 10
+  note: Mild treatment would need a drug that clears or prevents cataract without surgery. Lanosterol
+    drops cleared cataracts in animals in 2015, but later lab tests on human lenses failed, and no candidate
+    is in human trials.
+reached:
+  year: 1990
+  basis: 'Approximate: by about 1990 small-incision lens removal with an implanted artificial lens was
+    standard care in rich countries and restored useful vision in the large majority.'
+  url: https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/cataracts

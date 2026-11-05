@@ -17,10 +17,10 @@ status:
   level: 3
   why: Early-stage and some oncogene-driven or immunotherapy-responsive patients are cured or in long
     remission, but most are diagnosed late and 5-year survival is about 28%.
-  today: Stage I-II NSCLC is often cured with surgery or radiation, and perioperative immunotherapy raises
-    cure rates in stage II-III. Metastatic disease is treated with targeted drugs (EGFR, ALK, ROS1, HER2
-    and others) or immunotherapy, which give years of control for some but rarely cure. Small cell lung
-    cancer remains highly lethal.
+  today: Stage I-II NSCLC is often cured with surgery or radiation, and perioperative immunotherapy
+    raises cure rates in stage II-III. Metastatic disease is treated with targeted drugs (EGFR, ALK,
+    ROS1, HER2 and others) or immunotherapy, which give years of control for some but rarely cure. Small
+    cell lung cancer is still rarely cured.
   last_reviewed: '2026-11-03'
 treatment:
   best:
