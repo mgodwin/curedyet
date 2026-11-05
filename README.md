@@ -18,7 +18,7 @@ diseases/
     variants/        one file per stage or type, each with its own page
   _template/         copy this to add a disease
 pipeline/            one file per pipeline stage, with sourced durations
-tracker/             weekly summary, short-range forecasts, calendar, history
+tracker/             latest summary, short-range forecasts, calendar, history
 categories.yaml      disease categories, in display order
 scripts/             validate.py and build.py
 site/                the web page that renders data.json
@@ -33,7 +33,7 @@ CONTRIBUTING.md      how to add a disease or fix a fact
 3. Run `python scripts/validate.py`.
 4. Open a pull request.
 
-You don't need to write forecasts. Leave `tracking: proposed` and the weekly review adds them. Full guide: [CONTRIBUTING.md](CONTRIBUTING.md).
+You don't need to write forecasts. Leave `tracking: proposed` and the next update adds them. Full guide: [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Run it locally
 

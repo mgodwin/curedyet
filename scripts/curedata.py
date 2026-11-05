@@ -2,7 +2,7 @@
 
 Every disease lives in diseases/<id>/ as disease.yaml (structured record) plus
 research.md (sources and research notes). Pipeline stages live in pipeline/,
-weekly tracker state in tracker/. build.py turns all of it into one data.json
+tracker state in tracker/. build.py turns all of it into one data.json
 that the static site reads.
 """
 from __future__ import annotations
@@ -368,7 +368,7 @@ def compile_site(data: dict) -> dict:
                      timeline={k: blend(n[k], f[k], idx) for k in ("median", "low", "high")})
         p = prev_d.get(r["id"]) or {}
         x.update(prevP2035=p.get("p2035"), prevP2045=p.get("p2045"), prevMedian=p.get("median"), prevLevel=p.get("level"))
-        # Estimate history for the chart: one point per weekly snapshot, plus today's if it isn't snapshotted yet.
+        # Estimate history for the chart: one point per update snapshot, plus today's if it isn't snapshotted yet.
         trend = [{"date": str(h["date"]), **{k: h["diseases"][r["id"]].get(k) for k in ("median", "low", "high", "level")}}
                  for h in reversed(hist) if r["id"] in (h.get("diseases") or {})]
         tl = x.get("timeline") or {}

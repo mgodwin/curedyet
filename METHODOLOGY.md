@@ -88,12 +88,17 @@ Forecasts start from these and move only on evidence:
 - Real cures have taken decades. Hepatitis C: virus identified 1989, curative pills 2013. HIV: identified 1983, effective control 1996, still no cure.
 - A level 0 or 1 disease with no Phase 3 curative candidate should usually have a normal-pace chance by 2035 under 5%.
 
-### Weekly update rules
+### Update rules
 
 - A track's odds can move 3+ points, or its year 2+ years, only if a cited forecasting market moved the same way or a discrete event happened (approval, rejection, pivotal trial result, program shutdown). Otherwise moves are capped at 2 points and 1 year.
-- No single move larger than 10 points or 5 years in a week without a major event.
-- If a forecast moves the same direction three weeks running, it gets re-checked against markets and expert outlooks before moving again.
-- Five diseases get a full re-review each week on rotation; the rest get a news sweep.
+- No single move larger than 10 points or 5 years in one update without a major event.
+- If a forecast moves the same direction three updates running, it gets re-checked against markets and expert outlooks before moving again.
+- Every disease gets a full re-review once a month. Updates run on the 1st, 8th, 15th and 22nd, and each covers one group of categories:
+  - **1st**: cancers, plus the monthly review of the pipeline stages.
+  - **8th**: infections and deadly outbreaks.
+  - **15th**: brain and nerves, mental health, autoimmune, and aging and everyday conditions.
+  - **22nd**: metabolic, genetic, heart and stroke, and eyes, kidneys and lungs.
+- Every update also checks dated events for all diseases and refreshes the counts for active outbreaks. A major event, like an approval or a pivotal trial result, pulls a disease into that update out of turn. New diseases go into the next update, whatever their category.
 
 ## The cure pipeline
 
@@ -122,6 +127,6 @@ For stages driven mostly by AI, the odds of getting much faster by 2030 are tied
 
 ## Tracking how estimates move
 
-Each weekly update saves a snapshot in `tracker/history/<date>.json` with every disease's level, best-guess year, optimistic year (`low`, the 10th percentile) and pessimistic year (`high`, the 90th). Each disease page charts these as **years until most patients are curable**, with the optimistic to pessimistic range as a band. Because time passes, the number falls by one each year even if the forecast never changes, so the chart also draws that "same forecast" line. A line falling faster than it means a cure is getting closer; a flat or rising line means it is slipping.
+Each update saves a snapshot in `tracker/history/<date>.json` with every disease's level, best-guess year, optimistic year (`low`, the 10th percentile) and pessimistic year (`high`, the 90th). Each disease page charts these as **years until most patients are curable**, with the optimistic to pessimistic range as a band. Because time passes, the number falls by one each year even if the forecast never changes, so the chart also draws that "same forecast" line. A line falling faster than it means a cure is getting closer; a flat or rising line means it is slipping.
 
 Changes and news in `tracker/updates/<date>.yaml` that carry a `disease: <id>` field appear on that disease's chart and in its list of what moved it.

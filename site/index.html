@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Is it cured yet? Where major diseases stand on the road to a cure, with sourced forecasts updated weekly.">
+<meta name="description" content="Is it cured yet? Where major diseases stand on the road to a cure, with sourced forecasts reviewed monthly.">
 <title>Cure Watch</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -372,7 +372,7 @@ function renderCards(){const el=$("cards");if(!el)return;const L=filtered();
   L.forEach(d=>{const i=h.indexOf(Math.min(...h));tmp.innerHTML=cardHTML(d);const c=tmp.firstElementChild;cols[i].append(c);h[i]+=c.offsetHeight});
 }
 function navHTML(){const repo=S.meta?.repo;
-  return `<nav class="topnav" aria-label="Site"><a class="brand display" href="#">Is it cured yet?</a><div class="navlinks">${S.meta?.updatedAt?`<a class="updchip" href="#record">Updated ${fd(S.meta.updatedAt).replace(/, \d{4}$/,"")}<span class="nophone"> · what changed</span> →</a>`:`<a href="#record">This week</a>`}<a href="#pipeline">Pipeline</a><a href="#stats">Stats</a>${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate</a>`:""}</div>${themeBtn()}</nav>`}
+  return `<nav class="topnav" aria-label="Site"><a class="brand display" href="#">Is it cured yet?</a><div class="navlinks">${S.meta?.updatedAt?`<a class="updchip" href="#record">Updated ${fd(S.meta.updatedAt).replace(/, \d{4}$/,"")}<span class="nophone"> · what changed</span> →</a>`:`<a href="#record">Latest update</a>`}<a href="#pipeline">Pipeline</a><a href="#stats">Stats</a>${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate</a>`:""}</div>${themeBtn()}</nav>`}
 /* Theme: follows the device unless the reader picks light or dark; the choice is remembered in this browser. */
 const THEMES=["system","light","dark"],TLABEL={system:"◐ Auto",light:"☀ Light",dark:"☾ Dark"};
 const curTheme=()=>document.documentElement.dataset.theme||"system";
@@ -395,7 +395,7 @@ function home(){
     <label><span class="slabel">Sort</span> <select id="sort" aria-label="Sort"><option value="closest">Closest to cured</option><option value="az">A to Z</option><option value="cat">By category</option></select></label>
     <span class="muted num" id="shown" style="font-size:13px;margin-left:auto"></span></div>
   <div class="masonry" id="cards"></div>
-  <p class="muted" style="font-size:12px;margin:0">Updated weekly and scored against what actually happens. A research tracker, not medical advice.${m.repo?` Open data: <a href="https://github.com/${esc(m.repo)}" target="_blank" rel="noopener">add a disease or fix a fact on GitHub</a>.`:""}</p>`;
+  <p class="muted" style="font-size:12px;margin:0">Reviewed monthly and scored against what actually happens. A research tracker, not medical advice.${m.repo?` Open data: <a href="https://github.com/${esc(m.repo)}" target="_blank" rel="noopener">add a disease or fix a fact on GitHub</a>.`:""}</p>`;
 }
 
 /* ---------- Stats: how many patient groups sit at each status ---------- */
@@ -414,7 +414,7 @@ function stats(){
   <section class="card"><h2 class="ch">By rung on the cure ladder</h2>
     <div class="srows">${byRung.map(([n,k])=>`<div><b class="num">${k}</b><span>${esc(n)}</span></div>`).join("")}</div>
     <p class="muted" style="margin:0;font-size:13px">Cured for most needs at least about 85% of patients cured, cured for all about 98%. How hard the treatment is is rated on its own: mild, moderate or difficult.${m.repo?` <a href="https://github.com/${esc(m.repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate →</a>`:""}</p></section>
-  ${m.headline?`<a class="week" href="#record"><span class="eyebrow">This week${m.week?` · week ${esc(m.week)}`:""}</span><span style="font-weight:600">${esc(m.headline)}</span><span class="more">This week and our track record →</span></a>`:""}
+  ${m.headline?`<a class="week" href="#record"><span class="eyebrow">Latest update${m.week?` · update ${esc(m.week)}`:""}</span><span style="font-weight:600">${esc(m.headline)}</span><span class="more">Latest update and our track record →</span></a>`:""}
   <a class="dark-card" href="#pipeline">
     <span class="eyebrow">Why do cures take so long?</span>
     <span class="display" style="font-size:28px;line-height:1.1">${T?`About ${T.today} years, from discovery to patients`:"From discovery to patients"}</span>
@@ -447,10 +447,10 @@ const yrsAway=(y,date)=>Math.max(0,Math.round(Math.min(2100,y)-decYear(Date.pars
 function eventsHTML(E){return E.length?`<ul class="events">${E.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).map(e=>`<li><span class="muted num">${fd(e.date)}</span><span>${esc(e.text)} ${safe(e.url)?link(e.url,"Source"):""}</span></li>`).join("")}</ul>`:""}
 function trendHTML(d){const T=(d.trend||[]).filter(p=>p.median!=null),E=d.events||[];
   const head=`<h3 style="font-size:14px;margin-top:6px">Years until most patients are curable</h3>`;
-  if(!T.length)return `${head}<p class="muted" style="margin:0;font-size:13px">Tracking started ${fd(T[0]?.date||S.meta?.updatedAt)}, ${T[0]?`about ${yrsAway(T[0].median,T[0].date)} years away`:""}. Each weekly update adds a point here, marked with the news that moved it. A line falling faster than time passes means a cure is getting closer.</p>${eventsHTML(E)}`;
+  if(!T.length)return `${head}<p class="muted" style="margin:0;font-size:13px">Tracking started ${fd(T[0]?.date||S.meta?.updatedAt)}, ${T[0]?`about ${yrsAway(T[0].median,T[0].date)} years away`:""}. Each update adds a point here, marked with the news that moved it. A line falling faster than time passes means a cure is getting closer.</p>${eventsHTML(E)}`;
   const rows=T.map(p=>`<tr><td class="num">${fd(p.date)}</td><td class="num">${yrsAway(p.median,p.date)} yrs (${yr(p.median)})</td><td class="num">${p.low!=null?`${yr(p.low)} to ${hiLabel(p.high)}`:"—"}</td></tr>`).join("");
-  const first=T.length===1?`<p class="muted" style="margin:0;font-size:13px">Tracking started ${fd(T[0].date)}, about ${yrsAway(T[0].median,T[0].date)} years away. Each weekly update adds a point, marked with any news that moved it. A line falling faster than the grey one means a cure is getting closer.</p>`:"";
-  return `${head}${first}<div class="trend-wrap"><div class="trend" data-id="${esc(d.id)}" tabindex="0" role="img" aria-label="Years until most patients are curable, at each weekly update. Use arrow keys to step through."></div><div class="ttip" hidden></div></div>
+  const first=T.length===1?`<p class="muted" style="margin:0;font-size:13px">Tracking started ${fd(T[0].date)}, about ${yrsAway(T[0].median,T[0].date)} years away. Each update adds a point, marked with any news that moved it. A line falling faster than the grey one means a cure is getting closer.</p>`:"";
+  return `${head}${first}<div class="trend-wrap"><div class="trend" data-id="${esc(d.id)}" tabindex="0" role="img" aria-label="Years until most patients are curable, at each update. Use arrow keys to step through."></div><div class="ttip" hidden></div></div>
     <div class="tkey"><span><i style="background:var(--some)"></i>Best guess, with optimistic to pessimistic band</span><span><i style="background:var(--muted);opacity:.6"></i>Same forecast: falls one year per year if nothing changes</span>${E.length?`<span>◆ News that moved it</span>`:""}</div>
     ${eventsHTML(E)}
     <details style="font-size:13px"><summary class="muted" style="cursor:pointer">Show as table</summary><table class="ttable"><thead><tr><th>Update</th><th>Best guess</th><th>Optimistic to pessimistic year</th></tr></thead><tbody>${rows}</tbody></table></details>`}
@@ -537,7 +537,7 @@ function sourcesHTML(list){return list&&list.length?`<section class="srcs"><h2 s
 function footerHTML(){const repo=S.meta?.repo;
   return `<footer class="dfoot"><div style="display:flex;flex-direction:column;gap:4px;max-width:640px"><b style="font-size:16px">See a problem? Help fix it.</b><span class="muted">Every number on this page lives in an open repo. If something is wrong, out of date or missing a source, open a pull request or an issue on GitHub.</span></div>
     ${repo?`<a class="pill-link" href="https://github.com/${esc(repo)}" target="_blank" rel="noopener">Contribute on GitHub →</a>`:""}
-    <span class="muted" style="flex-basis:100%;font-size:12px">Forecasts are Claude's weekly judgment from trial results, approvals and forecasting markets, anchored to historical base rates. A research tracker, not medical advice.</span></footer>`}
+    <span class="muted" style="flex-basis:100%;font-size:12px">Forecasts are Claude's monthly judgment from trial results, approvals and forecasting markets, anchored to historical base rates. A research tracker, not medical advice.</span></footer>`}
 const YRS=(y,base)=>Math.max(0,Math.min(2100,y)-(base||NOW));
 const yearsBig=f=>`<div style="display:flex;flex-direction:column;gap:2px"><div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><span class="big-year num">~${YRS(f.median)} years</span><span class="muted" style="font-size:15px">best guess · ${f.median>=2100?"after 2100":f.median}</span></div>
   ${f.low!=null?`<span class="muted" style="font-size:13px">Optimistic ~${YRS(f.low)} years (${f.low}) · pessimistic ${f.high>=2100?"after 2100":`~${YRS(f.high)} years (${f.high})`}</span>`:""}</div>`;
@@ -628,7 +628,7 @@ function variantPage(d,g){const gl=g.level|0,col=vcolor(gl,g.burden),f=g.forecas
     <section class="card"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><h2 class="ch" style="font-size:22px">Treatment today</h2>${burdenTip(g.burden,g.id)}</div>
       <p style="margin:0">${esc(g.note)}</p>${g.burden_why?`<div class="why ${esc(g.burden||"")}"><b>Why it's rated ${esc(bword(g.burden))}:</b> ${esc(g.burden_why)}</div>`:""}${g.caveat?`<span class="muted" style="font-size:12px">${esc(g.caveat)}</span>`:""}</section>
     ${forecastHTML({relief:d.lifeStage,head:d.lifeStage?"When could relief last without ongoing treatment?":`When will most people with ${g.name.replace(/^Stage /,"stage ")} be curable?`,level:gl,burden:g.burden,f,note:f.note,reached:g.reached?.year,reachedEasy:g.reached_easy?.year,easy:g.easy,
-      trend:`<div class="placeholder">Years-until-cure history for ${esc(g.name)} starts with the next weekly update.</div>`})}
+      trend:`<div class="placeholder">Years-until-cure history for ${esc(g.name)} starts with the next update.</div>`})}
     ${preventionHTML(g.prevention||d.prevention,g.prevention?g.name:"")}
     ${catalystsHTML(g.catalysts,g.name)}${logHTML(logRows)}
     ${sourcesHTML([g.url?{url:g.url,title:"Survival figure"}:null,g.reached?.url?{url:g.reached.url,title:`Cured for most since ~${g.reached.year}`}:null].filter(Boolean))}
@@ -692,17 +692,17 @@ function record(){
   const checks=S.checks.slice().sort((a,b)=>((a.resolved?1:0)-(b.resolved?1:0))||String(a.resolvesBy).localeCompare(String(b.resolvesBy)));
   const cal=S.cal.filter(c=>String(c.date)>=today).sort((a,b)=>String(a.date).localeCompare(String(b.date))).slice(0,14);
   return `<a class="back" href="#">← All diseases</a>
-  <header style="display:flex;flex-direction:column;gap:6px"><span class="eyebrow">${m.week?`Week ${esc(m.week)} · `:""}${fd(m.updatedAt)}</span><h1 class="display" style="font-size:36px;line-height:1.05">This week</h1>
+  <header style="display:flex;flex-direction:column;gap:6px"><span class="eyebrow">${m.week?`Update ${esc(m.week)} · `:""}${fd(m.updatedAt)}</span><h1 class="display" style="font-size:36px;line-height:1.05">Latest update</h1>
     ${m.headline?`<p style="margin:0;font-weight:600">${esc(m.headline)}</p>`:""}</header>
   ${(m.thisWeek||[]).length?`<div class="card">${m.thisWeek.map(p=>`<p style="margin:0">${esc(p)}</p>`).join("")}</div>`:""}
-  <div class="card"><h2 style="font-size:15px">What moved</h2>${u&&(u.changes||[]).length?`<ul class="changes">${u.changes.map(c=>`<li><b>${esc(c.target)}</b> <span class="num">${esc(c.from)} → ${esc(c.to)}</span>. ${esc(c.why)} ${safe(c.url)?link(c.url,"Source"):""}</li>`).join("")}</ul>`:`<p class="muted" style="margin:0">No forecast moved this week.</p>`}</div>
+  <div class="card"><h2 style="font-size:15px">What moved</h2>${u&&(u.changes||[]).length?`<ul class="changes">${u.changes.map(c=>`<li><b>${esc(c.target)}</b> <span class="num">${esc(c.from)} → ${esc(c.to)}</span>. ${esc(c.why)} ${safe(c.url)?link(c.url,"Source"):""}</li>`).join("")}</ul>`:`<p class="muted" style="margin:0">No forecast moved in this update.</p>`}</div>
   <div class="card"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap"><h2 style="font-size:15px">Short-range forecasts</h2><span class="muted" style="font-size:12px">${sc.length?`Brier score ${(sc.reduce((a,b)=>a+(+b.brier||0),0)/sc.length).toFixed(3)} · ${sc.length} resolved`:"None resolved yet"}</span></div>
     <p class="muted" style="margin:0;font-size:13px">Dated yes-or-no calls that resolve within months. They are how this tracker checks its own accuracy. Lower Brier is better; always guessing 50% scores 0.25.</p>
     <div>${checks.map(c=>`<div class="check"><div>${link(c.url,c.label)}<div class="muted" style="font-size:12px;margin-top:2px">${c.resolved==="void"?`<span class="res void">void</span> ${esc(c.note||"not scored")}`:c.resolved?`<span class="res ${esc(c.resolved)}">${esc(c.resolved)}</span> last forecast ${esc(c.lastForecast??c.prevProb)}%`:`Resolves by ${fd(c.resolvesBy)}`}</div></div><div class="prob num">${c.resolved?"":esc(c.prob)+"%"}</div></div>`).join("")}</div></div>
   <div class="card"><h2 style="font-size:15px">Coming up</h2><ul class="cal">${cal.map(c=>`<li><span class="muted num">${fd(c.date)}</span><span>${link(c.url,c.event)}</span></li>`).join("")||`<li class="muted">Nothing scheduled yet.</li>`}</ul></div>
   <div class="card"><h2 style="font-size:15px">How this works</h2>
     <p style="margin:0;font-size:14px">Each disease, and each stage or type, sits on a 0 to 5 ladder, from no treatment to cured for all, and how hard its treatment is gets rated on its own. The best-guess year is when we expect most patients to be curable with tolerable care. Each forecast blends a today's-pace track and a faster-pipeline track, weighted by the acceleration index. Forecasts start from shared base rates: about 1 in 10 drugs that enter human trials get approved, and past cures took decades.</p>
-    <p style="margin:0;font-size:14px">Every Thursday Claude sweeps the week's news for all diseases and re-checks five in depth on rotation. Anyone can add a disease or a source by pull request.</p></div>`;
+    <p style="margin:0;font-size:14px">Four times a month Claude re-checks one group of diseases in depth, so each gets a full review every month, and follows up dated events and active outbreaks for all of them. Anyone can add a disease or a source by pull request.</p></div>`;
 }
 
 /* ---------- Router ---------- */

@@ -32,7 +32,7 @@ Prefer, in roughly this order: regulators (FDA, EMA), WHO, CDC and national heal
 | `id` | Same as the folder name. |
 | `name` | Display name. |
 | `category` | An id from `categories.yaml`. |
-| `tracking` | `proposed` for new diseases. The weekly review switches it to `active` once forecasts are in. |
+| `tracking` | `proposed` for new diseases. The next update switches it to `active` once forecasts are in. |
 | `summary` | One sentence: what the disease is. |
 | `toll.text`, `toll.url` | How many people it affects, with year and source. |
 | `toll.ratio`, `toll.ratio_caption`, `toll.ratio_url` | Optional headline ratio for "How many people", e.g. `1 in 24` + `Americans will get it in their lifetime`, with the page that states it. Prefer lifetime risk, then share living with it now. |
@@ -74,7 +74,7 @@ A disease whose stages or types are really different diseases (cancer stages, MS
 
 ### Forecasts
 
-New diseases can skip the `forecast` block; the weekly review fills it in. If you want to propose numbers, add both tracks:
+New diseases can skip the `forecast` block; the next update fills it in. If you want to propose numbers, add both tracks:
 
 ```yaml
 forecast:
@@ -97,7 +97,7 @@ forecast:
 
 Don't write the headline odds directly; the build blends the two tracks. A disease already at level 4 or above uses `forecast.reached: <year>` instead of the tracks, and if its treatment is also light, `forecast.reached_easy: <year>`.
 
-Proposed numbers are a starting point. The weekly review checks them against the base rates in METHODOLOGY.md and may change them.
+Proposed numbers are a starting point. The next update checks them against the base rates in METHODOLOGY.md and may change them.
 
 ## Ground rules
 
@@ -109,4 +109,4 @@ Proposed numbers are a starting point. The weekly review checks them against the
 
 ## Review
 
-A maintainer reviews every pull request. The weekly update may also revise facts as new evidence arrives, and logs what changed in `tracker/updates/`. Tag each change or news item with `disease: <id>` so it shows on that disease's estimate chart.
+A maintainer reviews every pull request. Scheduled updates may also revise facts as new evidence arrives, and logs what changed in `tracker/updates/`. Tag each change or news item with `disease: <id>` so it shows on that disease's estimate chart.
