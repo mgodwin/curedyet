@@ -198,7 +198,8 @@ a.more{text-decoration:none}
 
 /* Home: nav, cards in masonry columns, colour key */
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.topnav{display:flex;justify-content:space-between;align-items:center;gap:8px 20px;flex-wrap:wrap;min-height:44px}
+.topnav{display:flex;align-items:center;gap:8px 20px;flex-wrap:wrap;min-height:44px}.topnav .brand{margin-right:auto}
+@media (max-width:640px){.topnav .navlinks{order:3;width:100%;gap:4px 14px}.nophone{display:none}}
 .brand{font-size:clamp(24px,3vw,30px);line-height:1.1;color:var(--ink);text-decoration:none}
 .themebtn{font:600 13px var(--f-body);min-height:32px;padding:0 10px;border-radius:999px;border:1px solid var(--soft);background:var(--card);color:var(--ink);cursor:pointer}
 .navlinks{display:flex;gap:4px 18px;flex-wrap:wrap;align-items:center;font-size:14px;font-weight:600}
@@ -208,6 +209,7 @@ a.more{text-decoration:none}
 .navlinks a.updchip{font-size:13px;min-height:32px;padding:0 12px;border-radius:999px;border:1px solid var(--light-c);color:var(--light-c);text-decoration:none}.navlinks a.updchip:hover{background:var(--light-soft);text-decoration:none}
 .controls{gap:8px 12px}.controls label{display:flex;gap:8px;align-items:center;font-size:13px}.controls select{min-height:40px;padding:0 10px}
 .controls select#cat{font-weight:600;max-width:min(240px,46vw)}
+@media (max-width:640px){.controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.controls label{min-width:0}.controls select,.controls select#cat{width:100%;max-width:none}.controls .slabel{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}#shown{grid-column:1/-1;margin-left:0!important}}
 .vkey{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:13px;color:var(--muted)}
 .vkey span{display:inline-flex;gap:6px;align-items:center}.vkey i{width:10px;height:10px;border-radius:50%;flex:none}
 .masonry{display:flex;gap:12px;align-items:flex-start}
@@ -243,6 +245,7 @@ a.more{text-decoration:none}
 .eff.big{background:var(--yes-soft);color:var(--light-c)}.eff.some{background:var(--tough-soft);color:var(--tough)}
 .log{display:flex;flex-direction:column}
 .log-row{display:grid;grid-template-columns:84px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:10px 0;border-top:1px solid var(--rule);font-size:14px}
+@media (max-width:640px){.log-row{grid-template-columns:auto auto;gap:4px 12px;justify-content:space-between}.log-row>span:nth-child(2){grid-column:1/-1;grid-row:2}.log-row>span:nth-child(3){justify-self:end}}
 .srcs ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:13px}
 .srcs h2{margin:0 0 8px}
 .dfoot{border-top:1px solid var(--soft);padding-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;align-items:baseline;font-size:14px}
@@ -369,7 +372,7 @@ function renderCards(){const el=$("cards");if(!el)return;const L=filtered();
   L.forEach(d=>{const i=h.indexOf(Math.min(...h));tmp.innerHTML=cardHTML(d);const c=tmp.firstElementChild;cols[i].append(c);h[i]+=c.offsetHeight});
 }
 function navHTML(){const repo=S.meta?.repo;
-  return `<nav class="topnav" aria-label="Site"><a class="brand display" href="#">Is it cured yet?</a><div class="navlinks">${S.meta?.updatedAt?`<a class="updchip" href="#record">Updated ${fd(S.meta.updatedAt).replace(/, \d{4}$/,"")} · what changed →</a>`:`<a href="#record">This week</a>`}<a href="#pipeline">Pipeline</a><a href="#stats">Stats</a>${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate</a>`:""}${themeBtn()}</div></nav>`}
+  return `<nav class="topnav" aria-label="Site"><a class="brand display" href="#">Is it cured yet?</a><div class="navlinks">${S.meta?.updatedAt?`<a class="updchip" href="#record">Updated ${fd(S.meta.updatedAt).replace(/, \d{4}$/,"")}<span class="nophone"> · what changed</span> →</a>`:`<a href="#record">This week</a>`}<a href="#pipeline">Pipeline</a><a href="#stats">Stats</a>${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate</a>`:""}</div>${themeBtn()}</nav>`}
 /* Theme: follows the device unless the reader picks light or dark; the choice is remembered in this browser. */
 const THEMES=["system","light","dark"],TLABEL={system:"◐ Auto",light:"☀ Light",dark:"☾ Dark"};
 const curTheme=()=>document.documentElement.dataset.theme||"system";
@@ -389,7 +392,7 @@ function home(){
   </header>
   <div class="filters controls">
     <label><span class="sr-only">Category</span><select id="cat"><option value="all">All categories</option>${cats.map(k=>`<option value="${esc(k.id)}"${catF===k.id?" selected":""}>${esc(k.name)}</option>`).join("")}</select></label>
-    <label>Sort <select id="sort"><option value="closest">Closest to cured</option><option value="az">A to Z</option><option value="cat">By category</option></select></label>
+    <label><span class="slabel">Sort</span> <select id="sort" aria-label="Sort"><option value="closest">Closest to cured</option><option value="az">A to Z</option><option value="cat">By category</option></select></label>
     <span class="muted num" id="shown" style="font-size:13px;margin-left:auto"></span></div>
   <div class="masonry" id="cards"></div>
   <p class="muted" style="font-size:12px;margin:0">Updated weekly and scored against what actually happens. A research tracker, not medical advice.${m.repo?` Open data: <a href="https://github.com/${esc(m.repo)}" target="_blank" rel="noopener">add a disease or fix a fact on GitHub</a>.`:""}</p>`;
@@ -543,7 +546,7 @@ function forecastHTML(o){const L=o.level|0,mild=L>=4&&o.burden==="light";let bod
   if(mild)body=`<span class="big-year" style="font-size:34px">${esc(LEVELS[L])}${o.reached?` since ~${o.reached}`:""}</span><span class="muted">${o.reachedEasy?`With mild treatment since ~${o.reachedEasy}. `:""}Patients are cured with mild treatment, the goal for every disease.</span>`;
   else if(L>=4)body=`<div style="display:flex;flex-direction:column;gap:2px"><span class="big-year" style="font-size:34px">${esc(LEVELS[L])}${o.reached?` since ~${o.reached}`:""}</span><span class="muted" style="font-size:13px">The cure works, but the treatment is ${esc(bword(o.burden)||"hard")}. The next goal is a cure with mild treatment.</span></div>
     ${o.easy?`<h3 style="font-size:15px;margin-top:6px">When will the treatment get mild?</h3>${yearsBig(o.easy)}${o.easy.low!=null?rangeHTML(o.easy,XR)+`<div class="axis"><span>2025</span><span>2045</span><span>2065</span><span>2080+</span></div>`:""}${o.easy.note?`<p style="margin:0;font-size:14px">${esc(o.easy.note)}</p>`:""}`:`<span class="muted" style="font-size:13px">No forecast yet for when the treatment gets mild.</span>`}`;
-  else if(o.f&&o.f.median!=null)body=`${yearsBig(o.f)}<p class="muted" style="margin:0;font-size:13px">This is our best guess for when most people with it could be cured, not a prediction for any one person. Treatments usually improve along the way, and trials may be open now.</p>${o.f.low!=null?rangeHTML(o.f,XR)+`<div class="axis"><span>2025</span><span>2045</span><span>2065</span><span>2080+</span></div>`:""}
+  else if(o.f&&o.f.median!=null)body=`${yearsBig(o.f)}<p class="muted" style="margin:0;font-size:13px">This is our best guess for when most people ${o.relief?"could get lasting relief":"with it could be cured"}, not a prediction for any one person. Treatments usually improve along the way, and trials may be open now.</p>${o.f.low!=null?rangeHTML(o.f,XR)+`<div class="axis"><span>2025</span><span>2045</span><span>2065</span><span>2080+</span></div>`:""}
     ${o.trend||""}${o.note?`<p style="margin:0;font-size:14px">${esc(o.note)}</p>`:""}${o.method||""}`;
   else body=`<span class="muted">Forecast coming after the next review.</span>`;
   return `<section class="card" id="forecast"><div style="display:flex;flex-direction:column;gap:4px"><span class="eyebrow">Forecast</span><h2 class="ch" style="font-size:22px">${esc(mild?"When it became easy to cure":L>=4?"When it became curable":o.head)}</h2></div>${body}</section>`}
@@ -582,22 +585,23 @@ function singlePage(d){const t=d.timeline||{},L=lv(d),col=vcolor(L,d.txBurden);
   return `${headerHTML(d,d.name,d.short)}
   <div class="dlayout"><main class="dmain">
     <section class="card"><span class="eyebrow">${d.prevention?"Once infected":"Where it stands"}</span><span class="display" style="font-size:30px;line-height:1">${esc(lword(L))}</span>${ladderHTML(L,d.txBurden)}${d.levelWhy?`<span style="font-size:14px">${esc(d.levelWhy)}</span>`:""}</section>
-    ${preventionHTML(d.prevention)}
     <section class="card"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><h2 class="ch" style="font-size:22px">Treatment today</h2>${burdenTip(d.txBurden,d.id)}</div>
       ${d.status?`<p style="margin:0">${esc(d.status)}</p>`:""}${(d.bestTherapies||[]).length?`<div class="chips">${d.bestTherapies.map(b=>`<span>${esc(b)}</span>`).join("")}</div>`:""}
       ${d.txBurdenNote?`<div class="why ${esc(d.txBurden||"")}"><b>Why it's rated ${esc(bword(d.txBurden))}:</b> ${esc(d.txBurdenNote)}</div>`:""}</section>
     ${forecastHTML({head:d.id==="aging"?"When could most people halt or reverse aging?":"When will most patients be curable?",level:L,burden:d.txBurden,f:t,note:d.outlook,reached:L>=4?t.median:null,reachedEasy:d.reachedEasy,easy:d.easy,trend:trendHTML(d),method:methodHTML(d)})}
+    ${preventionHTML(d.prevention)}
     ${catalystsHTML(d.pipeline)}${logHTML(logRows)}${sourcesHTML(d.sources)}
   </main>${railHTML(d)}</div>${footerHTML()}`}
 
 function hubPage(d){const t=d.timeline||{},G=d.groups,w=kindWord(d);
   const rows=G.map(g=>{const f=g.forecast,gl=g.level|0,pv=pvOf(d,g),pl=pv?Math.max(0,Math.min(PLEVELS.length-1,pv.level|0)):0;
-    const when=gl>=4&&g.burden==="light"?`<b class="v-mild">${esc(LEVELS[gl])}</b><div class="muted" style="font-size:12px">with mild treatment</div>`:gl>=4?`<b class="v-${toV(gl,g.burden)}">${esc(LEVELS[gl])}</b><div class="muted" style="font-size:12px">next: mild treatment${g.easy?` ~${YRS(g.easy.median)} yrs`:""}</div>`:f?`<b class="display num" style="font-size:22px">~${YRS(f.median)} yrs</b><div class="muted" style="font-size:12px">until most curable · ${f.median>=2100?"after 2100":f.median}</div>`:`<span class="muted">Forecast coming</span>`;
-    return `<a class="vrow" href="#d-${esc(d.id)}/${esc(g.id)}"><div style="display:flex;flex-direction:column;gap:6px;min-width:0"><b style="font-size:17px">${esc(g.name)}</b>${g.what?`<span class="muted" style="font-size:13px">${esc(g.what)}</span>`:""}${pv?`<span class="eyebrow" style="font-size:11px;margin-top:2px">Once infected</span>`:""}${stripHTML(gl,g.burden)}<span style="font-size:13px;font-weight:600">${esc(lword(gl))}</span>
+    const when=gl>=4&&g.burden==="light"?`<b class="v-mild">${esc(LEVELS[gl])}</b><div class="muted" style="font-size:12px">with mild treatment</div>`:gl>=4?`<b class="v-${toV(gl,g.burden)}">${esc(LEVELS[gl])}</b><div class="muted" style="font-size:12px">next: mild treatment${g.easy?` ~${YRS(g.easy.median)} yrs`:""}</div>`:f?`<b class="display num" style="font-size:22px">~${YRS(f.median)} yrs</b><div class="muted" style="font-size:12px">${d.lifeStage?"until lasting relief":"until most curable"} · ${f.median>=2100?"after 2100":f.median}</div>`:`<span class="muted">Forecast coming</span>`;
+    return `<a class="vrow" href="#d-${esc(d.id)}/${esc(g.id)}"><div style="display:flex;flex-direction:column;gap:6px;min-width:0"><b style="font-size:17px">${esc(g.name)}</b>${g.what?`<span class="muted" style="font-size:13px">${esc(g.what)}</span>`:""}${pv?`<span class="eyebrow" style="font-size:11px;margin-top:2px">Once infected</span>`:""}${stripHTML(gl,g.burden)}<span class="v-${toV(gl,g.burden)}" style="font-size:13px;font-weight:600">${esc(lword(gl))}</span>
       ${pv?`<span class="eyebrow" style="font-size:11px;margin-top:6px">Prevention</span>${stripHTML(pl,pv.burden,PLEVELS,toPV,3)}<span class="v-${toPV(pl,pv.burden)}" style="font-size:13px;font-weight:600">${esc(PLEVELS[pl])}${pl>=1&&pv.burden?`<span class="muted" style="font-weight:400"> · ${esc(bword(pv.burden))}</span>`:""}</span>`:""}</div>
       <div class="vhide">${g.survival?`<span style="font-size:14px">${esc(g.survival)}</span>`:""}${g.burden?`<div style="margin-top:4px"><span class="tb ${esc(g.burden)}">${esc(bword(g.burden))} treatment</span></div>`:""}</div>
       <div class="vhide">${when}</div><span aria-hidden="true" class="vgo">→</span></a>`}).join("");
-  return `${headerHTML(d,d.name,`${d.short||""} How it's treated and how likely a cure is depend on the ${w}, so each ${w} has its own page.`)}
+  /* Natural life stages (life_stage: true) talk about relief, not cure. */
+  return `${headerHTML(d,d.name,`${d.short||""} ${d.lifeStage?`How well it can be relieved depends on the ${w}`:`How it's treated and how likely a cure is depend on the ${w}`}, so each ${w} has its own page.`)}
   <div class="dlayout"><main class="dmain">
     <section style="display:flex;flex-direction:column;gap:10px"><h2 class="ch" style="font-size:24px">Choose a ${w}</h2>
       ${isStages(d)?`<span class="muted" style="font-size:13px">${STAGING}</span>`:""}
@@ -606,7 +610,7 @@ function hubPage(d){const t=d.timeline||{},G=d.groups,w=kindWord(d);
     ${lv(d)>=4?`<section class="card"><span class="eyebrow">Across all ${w}s</span><span class="display" style="font-size:28px;line-height:1.1">${esc(LEVELS[lv(d)])} for the typical patient${t.median?` since ~${t.median}`:""}</span>
       <span class="muted" style="font-size:13px">Pooled across everyone diagnosed. Some ${w}s are still far from a cure; each has its own page.</span></section>`:""}
     ${lv(d)<4&&t.median!=null?`<section class="card"><span class="eyebrow">Across all ${w}s</span>
-      <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><span class="display num" style="font-size:32px;line-height:1">~${YRS(t.median)} years</span><span class="muted">until most people with ${esc(d.name.toLowerCase())} are curable (best guess ${t.median>=2100?"after 2100":t.median})</span></div>
+      <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><span class="display num" style="font-size:32px;line-height:1">~${YRS(t.median)} years</span><span class="muted">${d.lifeStage?`until most people get lasting relief without ongoing treatment`:`until most people with ${esc(d.name.toLowerCase())} are curable`} (best guess ${t.median>=2100?"after 2100":t.median})</span></div>
       <span class="muted" style="font-size:13px">Pooled across everyone diagnosed, whatever their ${w}. Each ${w} has its own forecast on its page.</span>
       <details class="gacc"><summary>How it's changed over time</summary><div class="gacc-body">${trendHTML(d)}${methodHTML(d)}</div></details></section>`:""}
     ${sourcesHTML(d.sources)}
@@ -621,11 +625,11 @@ function variantPage(d,g){const gl=g.level|0,col=vcolor(gl,g.burden),f=g.forecas
   <div class="dlayout"><main class="dmain">
     <section class="card"><span class="eyebrow">${g.prevention||d.prevention?"Once infected":"Where it stands"}</span><span class="display" style="font-size:30px;line-height:1">${esc(lword(gl))}</span>${ladderHTML(gl,g.burden)}
       ${g.survival?`<span style="font-size:14px"><b>Prognosis:</b> ${esc(g.survival)}</span>`:""}</section>
-    ${preventionHTML(g.prevention||d.prevention,g.prevention?g.name:"")}
     <section class="card"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><h2 class="ch" style="font-size:22px">Treatment today</h2>${burdenTip(g.burden,g.id)}</div>
       <p style="margin:0">${esc(g.note)}</p>${g.burden_why?`<div class="why ${esc(g.burden||"")}"><b>Why it's rated ${esc(bword(g.burden))}:</b> ${esc(g.burden_why)}</div>`:""}${g.caveat?`<span class="muted" style="font-size:12px">${esc(g.caveat)}</span>`:""}</section>
-    ${forecastHTML({head:`When will most people with ${g.name.replace(/^Stage /,"stage ")} be curable?`,level:gl,burden:g.burden,f,note:f.note,reached:g.reached?.year,reachedEasy:g.reached_easy?.year,easy:g.easy,
+    ${forecastHTML({relief:d.lifeStage,head:d.lifeStage?"When could relief last without ongoing treatment?":`When will most people with ${g.name.replace(/^Stage /,"stage ")} be curable?`,level:gl,burden:g.burden,f,note:f.note,reached:g.reached?.year,reachedEasy:g.reached_easy?.year,easy:g.easy,
       trend:`<div class="placeholder">Years-until-cure history for ${esc(g.name)} starts with the next weekly update.</div>`})}
+    ${preventionHTML(g.prevention||d.prevention,g.prevention?g.name:"")}
     ${catalystsHTML(g.catalysts,g.name)}${logHTML(logRows)}
     ${sourcesHTML([g.url?{url:g.url,title:"Survival figure"}:null,g.reached?.url?{url:g.reached.url,title:`Cured for most since ~${g.reached.year}`}:null].filter(Boolean))}
   </main>${railHTML(d,`${g.share?`<section class="card"><span class="eyebrow">How common</span><span style="font-weight:600">${safe(g.share_url)?link(g.share_url,g.share):esc(g.share)}</span></section>`:""}<section class="card"><span class="eyebrow">Part of ${esc(d.name)}</span><a href="#d-${esc(d.id)}" style="font-weight:600">See every ${w}, the overall forecast and how many people are affected →</a></section>`,true)}</div>${footerHTML()}`}

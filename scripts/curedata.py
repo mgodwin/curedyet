@@ -231,6 +231,8 @@ def validate(data: dict) -> list[str]:
                 errs.append(f"{where}: pipeline item '{item.get('name')}' effect must be big, some or small")
         if rec.get("prevention") is not None:
             validate_prevention(rec["prevention"], errs, where)
+        if rec.get("life_stage") is not None and not isinstance(rec["life_stage"], bool):
+            errs.append(f"{where}: life_stage must be true or false")
         tx = rec.get("treatment") or {}
         if tx.get("burden") is not None and tx["burden"] not in BURDENS:
             errs.append(f"{where}: treatment.burden must be light, moderate or heavy")
@@ -347,6 +349,7 @@ def compile_site(data: dict) -> dict:
             "id": r["id"], "order": i + 1, "name": r["name"], "category": r["category"], "tracking": r.get("tracking", "proposed"),
             "short": r.get("summary"), "burden": (r.get("toll") or {}).get("text"), "burdenUrl": (r.get("toll") or {}).get("url"),
             "level": level, "levelWhy": st.get("why"), "groups": compile_variants(d, data), "reachedEasy": fc.get("reached_easy"),
+            "lifeStage": bool(r.get("life_stage")),
             "prevention": {k: r["prevention"][k] for k in PREVENTION_KEYS if r["prevention"].get(k) is not None} if r.get("prevention") else None,
             "ratio": {k: (r.get("toll") or {}).get(k) for k in ("ratio", "ratio_caption", "ratio_url")} if (r.get("toll") or {}).get("ratio") else None, "status": st.get("today"), "lastDeep": str(st["last_reviewed"]) if st.get("last_reviewed") else None,
             "bestTherapies": tx.get("best") or [], "txBurden": tx.get("burden"), "txBurdenNote": tx.get("burden_note"),
