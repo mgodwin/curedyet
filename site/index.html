@@ -339,7 +339,8 @@ function cardHTML(d){
 const ncols=el=>{const w=el.clientWidth;return w>=1040?3:w>=660?2:1};
 let masonCols=0;
 function renderCards(){const el=$("cards");if(!el)return;const L=filtered();
-  const n=$("shown");if(n)n.textContent=`${L.length} of ${S.dz.length}`;
+  /* The count only shows once a search or category narrows the list. */
+  const n=$("shown");if(n)n.textContent=L.length<S.dz.length?`${L.length} of ${S.dz.length}`:"";
   if(!L.length){masonCols=0;el.innerHTML=`<div class="empty" style="flex:1">No disease matches "${esc(q)}". Try another name.</div>`;return}
   const k=masonCols=ncols(el);
   el.innerHTML=`<div class="mcol"></div>`.repeat(k);
@@ -363,6 +364,7 @@ function home(){
     <h1 class="sr-only">Is it cured yet? Search diseases</h1>
     <label for="q" class="sr-only">Search diseases, stages and types</label>
     <div class="search"><input id="q" type="search" autocomplete="off" placeholder="Search: Alzheimer's, HIV, stage IV…" value="${esc(q)}"></div>
+    <span class="muted" style="font-size:13px;margin-top:-6px">Tracking ${S.dz.length} diseases</span>
   </header>
   <div class="filters controls">
     <label><span class="sr-only">Category</span><select id="cat"><option value="all">All categories</option>${cats.map(k=>`<option value="${esc(k.id)}"${catF===k.id?" selected":""}>${esc(k.name)}</option>`).join("")}</select></label>
