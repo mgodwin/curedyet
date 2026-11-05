@@ -1,0 +1,143 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: menopause-symptoms
+name: Menopause symptoms
+category: aging
+tracking: active
+summary: Menopause is a natural life stage, not a disease, when periods stop for good as the ovaries
+  make less estrogen (usually between 45 and 55); this record tracks how well its symptoms and longer-term
+  effects, such as hot flashes, vaginal and urinary changes and bone loss, can be relieved.
+toll:
+  text: Over 1.2 billion women worldwide are projected to be menopausal or postmenopausal by 2030 (WHO
+    projection, cited in Lancet Global Health 2025); up to 80% get hot flashes or night sweats during
+    the transition. In the US, symptoms cost an estimated $1.8B a year in lost work time (Mayo Clinic,
+    2023).
+  url: https://doi.org/10.1016/S2214-109X(24)00528-X
+  ratio: "About 1 in 3"
+  ratio_caption: "US women aged 40-65 after menopause have moderate or severe hot flashes or night sweats"
+  ratio_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8746897/
+  ratio_basis: "Nappi et al., Menopause 2021 (global survey of postmenopausal women aged 40-65): moderate-to-severe vasomotor symptoms in 34% in the US, 40% in Europe and 16% in Japan."
+status:
+  level: 2
+  why: Hormone therapy and newer non-hormonal pills relieve hot flashes for most women, and vaginal treatments
+    relieve dryness and pain, but relief lasts only while treatment continues.
+  today: 'Hormone therapy cuts hot flashes by about three quarters and also treats vaginal symptoms and
+    prevents bone loss; for healthy women under 60 or within 10 years of menopause its benefits are judged
+    to outweigh its risks, and in 2025-26 the FDA began removing the broad boxed warnings added after
+    the Women''s Health Initiative. Women who can''t or prefer not to use hormones can use fezolinetant
+    or elinzanetant, SSRIs/SNRIs, gabapentin or CBT, and low-dose vaginal estrogen relieves vaginal and
+    urinary symptoms with little effect on the rest of the body. Disrupted sleep is common with night
+    sweats, and mood changes are common around menopause; bone loss after menopause is covered in its own osteoporosis record, and heart
+    risk also rises after menopause.'
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Menopausal hormone therapy (estrogen, plus a progestogen with a uterus)
+  - Fezolinetant (Veozah) or elinzanetant (Lynkuet)
+  - SSRIs/SNRIs (low-dose paroxetine), gabapentin
+  - Cognitive behavioral therapy
+  - Low-dose vaginal estrogen, vaginal DHEA (prasterone), ospemifene, moisturisers
+  burden: moderate
+  burden_note: Daily or twice-weekly treatment taken for as long as symptoms last, often years; hormone
+    therapy carries small risks of clots, stroke and breast cancer that grow with age and time since
+    menopause, fezolinetant needs liver blood tests and has a boxed liver warning, and newer drugs are
+    costly.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 3
+    p2045: 12
+    median: 2060
+    low: 2040
+    high: 2100
+  faster:
+    p2035: 5
+    p2045: 22
+    median: 2052
+    low: 2036
+    high: 2095
+  faster_note: Faster biology and trials would mostly help ovarian-aging research, such as testing whether
+    drugs like rapamycin can safely delay menopause; even a clear early signal would need years of follow-up,
+    so the gain is mostly after 2035.
+  outlook: Relief is already good and getting easier, with two non-hormonal brain-targeted pills approved
+    since 2023 and clearer hormone therapy labels. 'Cured for most' would mean lasting relief without
+    ongoing treatment, most plausibly by slowing ovarian aging so menopause comes later or more gently.
+    That work is at the pilot stage, so control will keep improving long before anything like a cure.
+pipeline:
+- name: Elinzanetant (Lynkuet, Bayer) for hot flashes from breast cancer endocrine therapy
+  stage: Filed
+  note: FDA accepted the supplemental application with priority review in September 2026, based on the
+    OASIS-4 trial in 474 women; already approved for this use in the EU.
+  url: https://www.targetedonc.com/view/elinzanetant-priority-review-vms-breast-cancer-endocrine-therapy
+  variants:
+  - vasomotor
+  expected: '2027'
+  effect: small
+  effect_note: Approval would give women on breast cancer endocrine therapy, who usually can't take hormones,
+    an approved non-hormonal option; it relieves rather than cures.
+- name: Rapamycin to slow ovarian aging (VIBRANT, Columbia)
+  stage: Phase 2
+  note: 50 women aged 35-45 took 5 mg rapamycin or placebo weekly for 12 weeks; early unpublished results
+    suggest about 20% slower ovarian aging. Study completion estimated September 2026.
+  url: https://clinicaltrials.gov/study/NCT05836025
+  variants:
+  - vasomotor
+  - genitourinary
+  - premature-ovarian-insufficiency
+  expected: '2027'
+  effect: some
+  effect_note: A published, confirmed signal would support a larger multicenter trial of delaying menopause;
+    it would take many years to show later menopause or fewer symptoms.
+- name: Elinzanetant (Lynkuet, Bayer) for menopausal hot flashes
+  stage: Approved 2025
+  note: FDA-approved October 24, 2025 as a once-nightly NK1/NK3 blocker; liver tests at baseline and
+    3 months, but no boxed warning.
+  url: https://www.bayer.com/media/en-us/bayers-lynkuet-elinzanetant-approved-in-the-us-for-treatment-of-moderate-to-severe-vasomotor-symptoms-due-to-menopause/
+  variants:
+  - vasomotor
+  effect: small
+  effect_note: Already approved; a second non-hormonal brain-targeted option, which controls hot flashes
+    while taken.
+- name: Estetrol (Fylrevy, Gedeon Richter) hormone therapy
+  stage: Approved 2025-26
+  note: EU-authorised March 26, 2026 for menopausal symptoms, using a different natural estrogen; reduced
+    hot flush number and severity versus placebo in two trials of 1,225 women.
+  url: https://www.ema.europa.eu/en/medicines/human/EPAR/fylrevy
+  variants:
+  - vasomotor
+  effect: small
+  effect_note: Already approved in the EU; another hormone option, whose long-term safety versus standard
+    estradiol is not yet known.
+recent:
+- date: 2026-10
+  text: FDA approved updated labels for 3 more menopausal hormone therapy products, removing heart disease,
+    breast cancer and dementia statements from their boxed warnings.
+  url: https://www.contemporaryobgyn.net/view/fda-removes-boxed-warnings-from-3-more-menopausal-hormone-therapy-products
+- date: 2026-09
+  text: FDA granted priority review to elinzanetant for hot flashes caused by breast cancer endocrine
+    therapy.
+  url: https://www.targetedonc.com/view/elinzanetant-priority-review-vms-breast-cancer-endocrine-therapy
+- date: 2026-03
+  text: The EU authorised estetrol (Fylrevy) as a new hormone therapy for menopausal symptoms.
+  url: https://www.ema.europa.eu/en/medicines/human/EPAR/fylrevy
+- date: 2026-02
+  text: FDA approved the first 6 revised hormone therapy labels, including a vaginal estrogen, without
+    heart disease, breast cancer and dementia statements in the boxed warning.
+  url: https://www.fda.gov/news-events/press-announcements/fda-approves-labeling-changes-menopausal-hormone-therapy-products
+- date: 2025-11
+  text: FDA began removing the broad boxed warnings from menopausal hormone therapy, keeping the endometrial
+    cancer warning for systemic estrogen-alone products.
+  url: https://www.fda.gov/news-events/press-announcements/hhs-advances-womens-health-removes-misleading-fda-warnings-hormone-replacement-therapy
+- date: 2025-10
+  text: FDA approved elinzanetant (Lynkuet), the second non-hormonal brain-targeted drug for menopausal
+    hot flashes.
+  url: https://www.bayer.com/media/en-us/bayers-lynkuet-elinzanetant-approved-in-the-us-for-treatment-of-moderate-to-severe-vasomotor-symptoms-due-to-menopause/
+next_milestone:
+  date: '2027-03'
+  url: https://www.targetedonc.com/view/elinzanetant-priority-review-vms-breast-cancer-endocrine-therapy
+  what: Expected FDA decision on elinzanetant for hot flashes from breast cancer endocrine therapy (estimate
+    from priority review timing; no date published).
+ai:
+  impact: low
+  note: The NK3 and NK1/NK3 drugs came from conventional neuroscience on the brain's temperature-control
+    neurons, and ovarian-aging trials are limited by follow-up time, not drug design.
+markets: []
