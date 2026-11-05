@@ -1,0 +1,146 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: meningitis
+name: Meningitis
+category: infectious
+tracking: active
+summary: Inflammation of the membranes around the brain and spinal cord, usually caused by bacteria,
+  viruses or fungi; bacterial meningitis can kill within hours.
+toll:
+  text: About 2.5 million cases and 236,000 deaths worldwide in 2019, about half of the deaths in children
+    under 5 (Global Burden of Disease study, Lancet Neurology 2023); HIV-related cryptococcal meningitis
+    caused a further estimated 112,000 deaths in 2020.
+  url: https://doi.org/10.1016/S1474-4422(23)00195-3
+status:
+  level: 3
+  why: Fast antibiotics cure most bacterial meningitis, but about 1 in 6 people with it die and 1 in
+    5 are left with lasting effects such as hearing loss, so fewer than 85% recover fully.
+  today: Bacterial meningitis is an emergency treated with IV antibiotics, started before test results,
+    plus dexamethasone in most settings; outcomes depend on speed. Viral meningitis, the most common type,
+    usually clears on its own within 7 to 10 days, and herpes virus causes are treated with acyclovir.
+    Cryptococcal (fungal) meningitis in people with advanced HIV is treated with antifungals, including
+    WHO's single high-dose liposomal amphotericin regimen, but about a quarter of patients in African
+    trials still die within 10 weeks.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - IV ceftriaxone or cefotaxime started immediately (bacterial)
+  - Dexamethasone with the first antibiotic dose (bacterial)
+  - IV acyclovir (herpes simplex)
+  - Single high-dose liposomal amphotericin B plus flucytosine and fluconazole (cryptococcal)
+  burden: heavy
+  burden_note: Bacterial and fungal meningitis need emergency hospital care with days to weeks of IV
+    drugs, often in intensive care, and survivors may need hearing, rehabilitation or seizure care; viral
+    meningitis usually needs only rest and pain relief.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 5
+    p2045: 18
+    median: 2058
+    low: 2038
+    high: 2100
+  faster:
+    p2035: 8
+    p2045: 30
+    median: 2049
+    low: 2035
+    high: 2095
+  faster_note: Faster design and trials could produce adjunct drugs that calm the brain inflammation
+    that causes death and hearing loss even after the bacteria are killed, but no such drug is in late
+    trials, so a faster pipeline mostly moves the 2045 odds.
+  outlook: Antibiotics already kill the bacteria, so the gap is the damage done before and during treatment.
+    Case fatality has fallen from about 32% before 1961 to about 15% after 2010, mostly with antibiotics,
+    intensive care and dexamethasone, and no new adjunct has a pivotal trial under way. Vaccines are cutting
+    how many people get bacterial meningitis much faster than treatment is improving outcomes for those
+    who do, which this ladder rates separately.
+pipeline:
+- name: VAX-31 (Vaxcyte, 31-valent pneumococcal conjugate vaccine)
+  stage: Phase 3
+  note: Met its immunogenicity goals against PCV20 and PCV21 in the adult OPUS-1 Phase 3 (Oct 2026);
+    two more adult Phase 3s and the infant Phase 2 read out in the first half of 2027, with a US filing
+    for adults planned for the first half of 2028.
+  url: https://www.sec.gov/Archives/edgar/data/0001649094/000164909426000051/pcvx-20261104xexx991.htm
+  variants:
+  - bacterial
+  expected: 2027-06
+  effect: small
+  effect_note: Wider serotype coverage would prevent more pneumococcal meningitis, the deadliest common
+    type, but would not change how well treatment works once someone is ill.
+- name: GBS6 (Pfizer, maternal group B streptococcus vaccine)
+  stage: Phase 3
+  note: The 6,000-person BEATRIX trial in pregnant women started in August 2025 and is estimated to finish
+    in March 2029; Phase 2 showed strong antibody transfer to babies.
+  url: https://ctv.veeva.com/study/beatrix-a-study-to-learn-about-a-group-b-streptococcus-vaccine-in-healthy-pregnant-women-and-their
+  variants:
+  - bacterial
+  expected: '2029'
+  effect: small
+  effect_note: A vaccine given in pregnancy would be the first to prevent group B strep, the main cause
+    of meningitis in newborns, but it would not improve treatment.
+- name: Men5CV (MenFive) preventive campaigns in the African meningitis belt
+  stage: Approved
+  note: Prequalified by WHO in 2023 and first used in Nigeria in 2024; Gavi supports outbreak use, routine
+    use and preventive mass campaigns in high-risk belt countries, with Niger running the first preventive
+    campaign in 2025.
+  url: https://www.who.int/news/item/12-04-2024-in-world-first--nigeria-introduces-new-5-in-1-vaccine-against-meningitis
+  variants:
+  - bacterial
+  effect: small
+  effect_note: Already approved; wider campaigns would help end meningococcal epidemics in Africa but
+    would not change treatment outcomes.
+recent:
+- date: 2026-10
+  text: Vaxcyte's 31-valent pneumococcal vaccine VAX-31 met its goals in the adult OPUS-1 Phase 3 trial.
+  url: https://www.sec.gov/Archives/edgar/data/0001649094/000164909426000051/pcvx-20261104xexx991.htm
+- date: 2025-04
+  text: WHO published its first global guidelines on diagnosing and treating meningitis, including immediate
+    IV antibiotics and dexamethasone with the first dose.
+  url: https://www.contagionlive.com/view/with-its-global-bacterial-meningitis-guidelines-who-aims-to-speed-up-diagnosis-treatment
+- date: 2025-02
+  text: The FDA approved GSK's Penmenvy, a second five-serogroup (MenABCWY) meningococcal vaccine, after
+    Pfizer's Penbraya.
+  url: https://cm.healio.com/news/pediatrics/20250217/fda-approves-gsks-pentavalent-meningococcal-vaccine
+next_milestone:
+  date: 2027-06
+  url: https://www.sec.gov/Archives/edgar/data/0001649094/000164909426000051/pcvx-20261104xexx991.htm
+  what: VAX-31 infant Phase 2 topline data, the first test of the 31-valent pneumococcal vaccine in babies
+    (expected by end of the first half of 2027).
+ai:
+  impact: low
+  note: Recent advances are conjugate vaccines and simpler drug regimens from conventional trials; AI
+    has no clear role yet in meningitis drug discovery.
+markets: []
+prevention:
+  level: 2
+  burden: moderate
+  why: Conjugate vaccines against Hib, pneumococcus and meningococcus protect strongly against the strains
+    they cover, but for a typical person the remaining bacterial meningitis comes largely from causes
+    vaccines miss, such as group B strep in newborns, Listeria and non-vaccine pneumococcal types, and
+    the MenB vaccine was about 60% effective in England, so overall protection is partial.
+  burden_why: Protection needs several childhood series and teen boosters, some vaccines such as MenB
+    are not routine in every rich country, and coverage in the African meningitis belt depends on campaigns.
+  best:
+  - Hib conjugate vaccine
+  - Pneumococcal conjugate vaccines (PCV15, PCV20, PCV21)
+  - Meningococcal vaccines (MenACWY, MenB, MenABCWY; Men5CV in Africa)
+  - Antibiotics for close contacts of meningococcal disease
+  url: https://www.who.int/news-room/fact-sheets/detail/meningitis
+  forecast:
+    median: 2038
+    low: 2030
+    high: 2070
+    p2035: 35
+    p2045: 60
+    note: 'Strong protection needs vaccines covering most remaining causes: broader pneumococcal vaccines
+      (VAX-31 adult filing planned 2028, infant data 2027), a maternal group B strep vaccine (Pfizer''s
+      BEATRIX Phase 3, estimated to finish 2029) and better MenB coverage. Base rate: about half of Phase
+      3 vaccines are licensed, and Listeria and E. coli have no vaccine candidates near approval.'
+  easy:
+    median: 2045
+    low: 2033
+    high: 2085
+    p2035: 15
+    p2045: 50
+    note: Mild would need these vaccines folded into fewer combination shots in routine schedules, as
+      MenABCWY vaccines began doing in 2023-25, and reliable routine coverage in the meningitis belt rather
+      than campaign-based protection.

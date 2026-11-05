@@ -1,0 +1,57 @@
+# Cure Watch variant record: one stage or type of Meningitis. Field guide: CONTRIBUTING.md.
+id: viral
+name: Viral meningitis
+order: 2
+what: The most common type of meningitis, usually caused by enteroviruses and sometimes by herpes viruses,
+  which is usually milder than bacterial meningitis.
+level: 1
+burden: light
+burden_why: For most people care is rest, fluids and pain relief at home or after a short hospital stay,
+  though doctors often give antibiotics or acyclovir until bacterial or herpes causes are ruled out.
+survival: Most people with mild viral meningitis recover on their own within 7 to 10 days (CDC)
+treatment: There is no specific drug for enteroviruses, so care eases symptoms while the body clears
+  the virus, and most people recover fully. Babies under 1 month are most likely to become seriously ill.
+  When herpes simplex virus spreads into the brain itself (encephalitis), prompt IV acyclovir cuts deaths
+  from about 70% untreated to close to 20%.
+caveat: Rated 1 as for other self-limiting viral infections, since no drug changes the course of enteroviral
+  meningitis; this does not mean the outlook is poor, as nearly everyone recovers. Herpes encephalitis
+  is a brain infection with a much graver outlook and is mentioned only for comparison.
+url: https://www.cdc.gov/meningitis/about/viral-meningitis.html
+forecast:
+  median: 2065
+  low: 2042
+  high: 2100
+  p2035: 2
+  p2045: 8
+  note: 'Level 4 here would mean an antiviral that clears enteroviral meningitis much faster than the
+    body does. No antiviral is approved for enteroviruses, and there is little room to beat recovery that
+    already takes about a week. Base rate as for the common cold: no broad antiviral against these virus
+    families has been approved despite decades of attempts.'
+prevention:
+  level: 0
+  burden: heavy
+  why: No vaccine protects against the enteroviruses that cause most viral meningitis; China's EV71 vaccines
+    prevent one enterovirus type (about 95% in trials) but are not used elsewhere and EV71 causes few cases
+    in rich countries, while MMR and chickenpox vaccines have already removed older causes such as mumps.
+  burden_why: With nothing to take against enteroviruses, protection relies on hand-washing and avoiding
+    sick contacts, which are hard to keep up against common viruses.
+  best:
+  - MMR and chickenpox vaccines (against older causes)
+  - Hand-washing and avoiding close contact with people who are ill
+  url: https://www.cdc.gov/meningitis/about/viral-meningitis.html
+  forecast:
+    median: 2065
+    low: 2040
+    high: 2100
+    p2035: 3
+    p2045: 10
+    note: 'Dozens of enterovirus types cause meningitis, so strong protection would need a multi-type
+      vaccine; only single-type EV71 vaccines exist, first licensed in China in December 2015. Base rate: no multivalent enterovirus vaccine is in late-stage trials.'
+  easy:
+    median: 2070
+    low: 2045
+    high: 2100
+    p2035: 2
+    p2045: 8
+    note: A multi-type enterovirus vaccine would also need to be cheap and added to routine schedules,
+      which typically takes a decade or more after licensure.

@@ -1,0 +1,37 @@
+# Cure Watch variant record: one stage or type of Prion disease (CJD). Field guide: CONTRIBUTING.md.
+id: sporadic
+name: Sporadic CJD
+order: 1
+what: The most common form, which arises for no known reason when prion protein misfolds on its own,
+  usually in people over 55.
+level: 0
+burden: moderate
+burden_why: Care is comfort-focused, with drugs for jerking, agitation and seizures, but the fast decline
+  means full-time nursing or hospice care within months.
+survival: Median 4-5 months from first symptoms (CDC)
+share: About 85% of people with CJD have the sporadic form (CDC).
+share_url: https://www.cdc.gov/creutzfeldt-jakob/hcp/clinical-overview/
+treatment: No treatment slows or stops it, so care centres on comfort and support for the person and their
+  family. PrP-lowering drugs (ION717 and a siRNA) are in early trials that include people with sporadic
+  CJD.
+caveat: Nothing is known to prevent sporadic CJD, so it has no prevention rating.
+url: https://www.cdc.gov/creutzfeldt-jakob/hcp/clinical-overview/
+forecast:
+  median: 2065
+  low: 2045
+  high: 2100
+  p2035: 1
+  p2045: 8
+  note: PrP-lowering drugs work best before much brain damage, but sporadic CJD is usually diagnosed after
+    weeks to months of rapid decline. A cure for most would need both a drug that halts the disease and
+    much earlier diagnosis, for example by spinal-fluid or blood seeding tests; ION717 and the PRiSM siRNA
+    trial are only in Phase 1-2 safety testing.
+easy:
+  median: 2075
+  low: 2050
+  high: 2100
+  p2035: 0
+  p2045: 4
+  note: The leading drugs are injected into the spinal fluid, and even a working drug would likely need
+    repeated doses for life, so a mild cure would need an easier route, such as a one-time gene-silencing
+    treatment like the CHARM epigenetic editor, which has only been tested in mice.

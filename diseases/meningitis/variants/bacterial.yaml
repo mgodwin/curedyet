@@ -1,0 +1,76 @@
+# Cure Watch variant record: one stage or type of Meningitis. Field guide: CONTRIBUTING.md.
+id: bacterial
+name: Bacterial meningitis
+order: 1
+what: Meningitis caused by bacteria such as pneumococcus, meningococcus, Hib, group B strep (in newborns)
+  or Listeria, which can become life-threatening within hours.
+level: 3
+burden: heavy
+burden_why: It needs emergency IV antibiotics in hospital for one to two weeks, often with intensive
+  care, and survivors may need hearing aids or implants, rehabilitation or seizure treatment.
+survival: About 1 in 6 die and 1 in 5 have lasting effects (WHO); case fatality ~15% in studies after
+  2010, ~24% for pneumococcal and ~9% for meningococcal (80-year meta-analysis)
+treatment: IV antibiotics such as ceftriaxone start as soon as meningitis is suspected, without waiting
+  for test results, usually with dexamethasone given alongside the first dose to cut deaths and nerve
+  damage. The antibiotics clear the infection, but damage done before and during treatment, such as hearing
+  loss, seizures, memory problems or limb loss after sepsis, can be permanent.
+caveat: 'The WHO and meta-analysis figures pool rich and poor countries; outcomes are better where care
+  is fast, but even in high-income countries pneumococcal meningitis kills about 20-37% of patients (Nature
+  Reviews Disease Primers 2016).
+  Rated 3 because counting both deaths and lasting effects, fewer than 85% recover fully. Case fatality
+  varies by germ and age, so this one rating hides a wide spread.'
+url: https://www.who.int/news-room/fact-sheets/detail/meningitis
+forecast:
+  median: 2058
+  low: 2038
+  high: 2100
+  p2035: 5
+  p2045: 18
+  note: 'Needs treatments that protect the brain from the inflammation that continues after antibiotics
+    kill the bacteria, for example complement inhibitors, which help in animal studies but have no
+    human randomised trial. Base rate: dexamethasone, the last adjunct to change care, took decades to
+    prove, and case fatality fell only from about 32% to 15% over 80 years.'
+easy:
+  median: 2075
+  low: 2045
+  high: 2100
+  p2035: 2
+  p2045: 8
+  note: A sudden infection of the brain lining will always need urgent hospital care, so mild treatment
+    would require catching and treating it before it becomes severe, for example with rapid bedside tests.
+prevention:
+  level: 2
+  burden: moderate
+  why: Conjugate vaccines against Hib, pneumococcus and meningococcus protect strongly against the strains
+    they cover, and MenAfriVac nearly eliminated serogroup A in Africa, but group B strep, Listeria and
+    non-vaccine pneumococcal types have no vaccine and MenB was about 60% effective in England, so a typical
+    person's overall protection is partial.
+  burden_why: Protection needs several childhood series and teen boosters, MenB is not routine in every
+    rich country, and coverage in the African meningitis belt depends on campaigns and outbreak stockpiles.
+  best:
+  - Hib conjugate vaccine
+  - Pneumococcal conjugate vaccines (PCV15, PCV20, PCV21)
+  - MenACWY, MenB and MenABCWY (Penbraya, Penmenvy) vaccines
+  - MenAfriVac and Men5CV (MenFive) in the African meningitis belt
+  - Antibiotics in labour for mothers carrying group B strep; antibiotics for close contacts of meningococcal
+    disease
+  url: https://www.who.int/news-room/fact-sheets/detail/meningitis
+  forecast:
+    median: 2038
+    low: 2030
+    high: 2070
+    p2035: 35
+    p2045: 60
+    note: 'Strong protection needs vaccines covering most remaining causes: broader pneumococcal vaccines
+      (VAX-31 adult filing planned 2028, infant data 2027), a maternal group B strep vaccine (Pfizer''s
+      BEATRIX Phase 3, estimated to finish 2029) and better MenB protection. Base rate: about half of Phase
+      3 vaccines are licensed, and Listeria and E. coli have no vaccine candidates near approval.'
+  easy:
+    median: 2045
+    low: 2033
+    high: 2085
+    p2035: 15
+    p2045: 50
+    note: Mild would need these vaccines folded into fewer combination shots in routine schedules, as
+      MenABCWY vaccines began doing in 2023-25, and reliable routine coverage in the meningitis belt rather
+      than campaign-based protection.

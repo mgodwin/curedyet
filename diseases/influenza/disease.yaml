@@ -1,0 +1,194 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: influenza
+name: Flu (seasonal influenza)
+category: infectious
+tracking: active
+summary: A contagious respiratory infection caused by influenza A and B viruses that spreads in yearly
+  winter waves, bringing fever, cough and aches that usually clear within a week but can lead to pneumonia
+  and death, especially in older adults, young children and people with chronic illness; pandemic bird
+  flu (H5N1) is tracked separately.
+toll:
+  text: WHO estimates about 1 billion flu cases, 3-5 million severe cases and 290,000-650,000 respiratory
+    deaths worldwide each year; in the US, CDC's preliminary estimate for the 2025-26 season is at least
+    32 million illnesses, 390,000 hospital stays and 24,000 deaths, including 174 children by late May 2026.
+  url: https://www.who.int/news-room/fact-sheets/detail/influenza-(seasonal)
+  ratio: "About 1 in 12"
+  ratio_caption: "people in the US gets sick with flu in an average season (3% to 11%, depending on the season)"
+  ratio_url: https://www.cdc.gov/flu/about/index.html
+  ratio_basis: "Derived: CDC says about 8% of the US population gets sick from flu each season, with a range of 3% to 11%; 8% is about 1 in 12."
+status:
+  level: 1
+  why: Antivirals shorten flu by about a day when started early, but none reliably prevents severe illness
+    or death, and most people recover on their own within about a week.
+  today: Four antivirals are approved in the US (oseltamivir, baloxavir, zanamivir and peramivir); started
+    within two days, they cut illness by roughly 17 to 29 hours, and baloxavir also modestly cuts spread
+    to household members. Whether they prevent hospital stays and deaths is disputed; Cochrane and a 2023
+    meta-analysis found no clear effect in trials, CDC points to observational data suggesting fewer deaths
+    in hospitalised patients, and in 2024 WHO advised baloxavir only for people at high risk and oseltamivir
+    only for severe illness. Otherwise care is rest, fluids and fever relief, with oxygen and intensive
+    care for the sickest.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Oseltamivir (Tamiflu), five days of pills
+  - Baloxavir (Xofluza), one dose
+  - Zanamivir (inhaled) or peramivir (single IV dose)
+  - Rest, fluids and fever relief; oxygen and intensive care for severe illness
+  burden: light
+  burden_note: A five-day course or a single dose of pills with mostly mild side effects such as nausea
+    with oseltamivir, though they need a prescription early in the illness, and people with severe pneumonia
+    need hospital or intensive care.
+forecast:
+  bottleneck: trial-limited
+  normal:
+    p2035: 4
+    p2045: 15
+    median: 2055
+    low: 2036
+    high: 2100
+  faster:
+    p2035: 7
+    p2045: 27
+    median: 2047
+    low: 2033
+    high: 2090
+  faster_note: New drug classes and antibody combinations can already be designed, so the gain from a
+    faster pipeline would come mostly from quicker, larger trials in high-risk and hospitalised patients,
+    which lifts the 2045 odds more than 2035.
+  outlook: Level 4 is read here as an early treatment that clears most flu within a day or two and prevents
+    most hospital stays and deaths in people at high risk. Today's drugs do the first only partly and have
+    not proven the second in trials, adding baloxavir to oseltamivir-type drugs did not help hospitalised
+    patients in the FLAGSTONE trial, and newer polymerase inhibitors approved in China (such as onradivir) work like existing
+    drugs. Because flu clears on its own in most people, any new drug has little room to show a gain, so
+    a cure for most is decades away at today's pace.
+pipeline:
+- name: Efitazanamivir alfa (MK-1406, formerly CD388; Merck, long-acting antiviral for prevention)
+  stage: Phase 3
+  note: A single shot of zanamivir linked to an antibody fragment (an Fc conjugate), meant to protect for a whole season regardless
+    of strain; 76% protection at the top dose in the 5,000-person Phase 2b NAVIGATE (company-reported,
+    2025); the 10,000-person ANCHOR trial in high-risk people reaches primary completion in June 2027.
+  url: https://clinicaltrials.gov/study/NCT07159763
+  expected: '2027'
+  effect: small
+  effect_note: A win would give the first season-long flu preventive drug for people at high risk, a big
+    step for prevention, but it would not treat flu once someone is ill.
+- name: Centi-Flu 01 (Centivax, universal flu vaccine)
+  stage: Phase 1
+  note: A vaccine designed to target parts of the virus shared across strains; a 180-person Phase 1a in
+    Australia was fully enrolled in spring 2026 and is testing immune responses against a 24-strain panel,
+    with first data expected in 2026.
+  url: https://www.synbiobeta.com/read/centivax-fully-enrolls-180-subject-universal-flu-vaccine-trial-two-months-after-first-dose
+  expected: '2026-12'
+  effect: small
+  effect_note: Broad antibody responses in people would be an early sign that a universal vaccine is possible,
+    but efficacy trials would still be years away.
+- name: GSK mRNA flu vaccine (FLUm3HA.b-3NA)
+  stage: Phase 3
+  note: An mRNA vaccine that targets both main flu surface proteins (HA and NA); GSK picked it after a
+    971-person Phase 2 and planned to start a Phase 3 efficacy trial in adults 18-64 in September 2026,
+    with FDA Fast Track.
+  url: https://www.gsk.com/en-gb/media/press-releases/gsk-to-advance-mrna-seasonal-flu-vaccine-candidate-to-phase-iii-following-positive-phase-ii-data/
+  effect: small
+  effect_note: Adding the NA protein might give broader protection than current shots, but it would prevent,
+    not treat, flu.
+- name: Pfizer modRNA flu vaccine
+  stage: Phase 3
+  note: In a Phase 3 trial in adults 18-64 it prevented 34.5% more flu-like illness than a standard licensed
+    shot (NEJM 2025; 28.7% at end of season); Pfizer says it is discussing a path to licensure, with no
+    filing date given.
+  url: https://www.fiercebiotech.com/biotech/pfizer-details-phase-3-data-mrna-flu-vaccine
+  effect: small
+  effect_note: Would add a second mRNA flu vaccine for younger adults, modestly better than standard shots.
+- name: OVX836 (Osivax, broadly protective nucleoprotein vaccine)
+  stage: Phase 2
+  note: Aimed to protect across strains by targeting a conserved internal protein, but missed its main
+    goal in a 2,850-person Phase 2b, with 24% efficacy against a 50% target (Oct 2026); Osivax now plans
+    combinations with seasonal vaccines.
+  url: https://pharmatimes.com/news/osivax-reports-phase-2b-data-for-ovx836/
+  effect: small
+  effect_note: The miss shows how hard broad protection is to prove in people; combination studies start
+    no earlier than late 2027.
+- name: BPL-1357 (NIAID, whole-virus universal flu vaccine)
+  stage: Phase 1
+  note: An inactivated vaccine made from four bird flu strains, aimed at broad protection; it was well
+    tolerated and raised immune responses in a placebo-controlled Phase 1 (Nature Communications 2026).
+  url: https://www.nature.com/articles/s41467-026-78583-w
+  effect: small
+  effect_note: Still early, and whether it prevents infection has not been tested.
+- name: Onradivir (Raynovent and Zhongsheng, oral PB2 inhibitor)
+  stage: Approved 2025 (China)
+  note: A new class of flu A antiviral approved in China in May 2025 for uncomplicated flu in adults; a
+    children's formulation entered priority review in China in June 2026 after a 120-child Phase 3 against
+    oseltamivir.
+  url: https://govt.chinadaily.com.cn/s/202506/11/WS684965ea498eec7e1f73987f/china-approves-novel-homegrown-flu-drug.html
+  effect: small
+  effect_note: Adds a new drug class, but it has not been shown to do more than shorten illness, and it
+    is not approved outside China.
+recent:
+- date: 2026-10
+  text: Osivax's broadly protective OVX836 vaccine missed its primary goal in a Phase 2b trial, showing
+    24% efficacy against a 50% target.
+  url: https://pharmatimes.com/news/osivax-reports-phase-2b-data-for-ovx836/
+- date: 2026-09
+  text: GSK said it would move its mRNA flu vaccine targeting both HA and NA into a Phase 3 efficacy trial
+    after positive Phase 2 data.
+  url: https://www.gsk.com/en-gb/media/press-releases/gsk-to-advance-mrna-seasonal-flu-vaccine-candidate-to-phase-iii-following-positive-phase-ii-data/
+- date: 2026-08
+  text: FDA approved Moderna's mFlusiva (mRNA-1010), the first mRNA flu vaccine, for adults 50 and older,
+    with accelerated approval for those 65 and older pending a confirmatory study.
+  url: https://www.biopharmadive.com/news/moderna-fda-approve-mflusiva-seasonal-influenza/826864/
+- date: 2026-05
+  text: CDC's final weekly report of the 2025-26 season estimated at least 32 million US flu illnesses,
+    390,000 hospital stays and 24,000 deaths, with high severity in children.
+  url: https://www.cdc.gov/fluview/surveillance/2026-week-20.html
+- date: 2026-03
+  text: CDC's interim estimate put 2025-26 vaccine effectiveness at about 22-34% against outpatient flu
+    in adults, lower than recent seasons, because the dominant H3N2 subclade K had drifted from the vaccine
+    strain.
+  url: https://www.cdc.gov/mmwr/volumes/75/wr/mm7509a2.htm
+next_milestone:
+  date: '2027-06-30'
+  url: https://clinicaltrials.gov/study/NCT07159763
+  what: Primary completion of Merck's Phase 3 ANCHOR trial of the season-long flu preventive efitazanamivir
+    alfa (CD388) in people at high risk.
+ai:
+  impact: low
+  note: The leading new products, mRNA vaccines and the long-acting CD388, came from established vaccine
+    platforms and drug-conjugate chemistry, with no clear AI-discovery role in a late-stage flu drug or
+    vaccine yet.
+markets: []
+prevention:
+  level: 1
+  burden: moderate
+  why: Yearly flu vaccines cut the risk of medically attended flu by about 30-56% in US seasons since 2015,
+    about 40-60% when the strains match well but only 36% in 2025-26, so the typical season falls short
+    of the 50% line.
+  burden_why: A cheap shot or nasal spray with mostly mild side effects, but it is needed every year because
+    the virus keeps changing, older adults need high-dose or adjuvanted versions to respond well, and vaccines
+    and antivirals are far scarcer in the poorer countries where 99% of child flu pneumonia deaths occur.
+  best:
+  - Yearly flu vaccine for everyone 6 months and older
+  - High-dose, adjuvanted or recombinant vaccine for adults 65 and older
+  - FluMist nasal spray, including self-given at home for ages 18-49
+  - Oseltamivir or baloxavir after close exposure for people at high risk
+  url: https://www.cdc.gov/flu-vaccines-work/php/effectiveness-studies/past-seasons-estimates.html
+  forecast:
+    median: 2052
+    low: 2034
+    high: 2100
+    p2035: 8
+    p2045: 30
+    note: 'Strong protection is read as about 85% fewer flu illnesses in a typical season. mRNA vaccines
+      beat standard shots by only about 27-35%, and the long-acting antiviral CD388 showed 76% in Phase
+      2b, so the next few years most likely bring rung 2, not rung 3. Rung 3 probably needs a universal
+      vaccine, and the broadly protective OVX836 just missed its Phase 2b goal. Base rate: no flu vaccine
+      in 80 years has reliably shown 85% protection.'
+  easy:
+    median: 2058
+    low: 2037
+    high: 2100
+    p2035: 4
+    p2045: 20
+    note: Mild prevention would need strong, lasting protection without a yearly shot, cheap enough for
+      the low- and middle-income countries where most flu deaths happen; even a season-long antibody
+      would still be a yearly injection.

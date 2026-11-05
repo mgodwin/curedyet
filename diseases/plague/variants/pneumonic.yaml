@@ -1,0 +1,31 @@
+# Cure Watch variant record: one stage or type of Plague. Field guide: CONTRIBUTING.md.
+id: pneumonic
+name: Pneumonic plague
+order: 3
+what: Plague infection of the lungs, either spreading from another form or caught by breathing droplets
+  from a coughing patient; the only form that passes from person to person.
+level: 3
+burden: heavy
+burden_why: Needs immediate hospital care with IV antibiotics and isolation, because it can kill within
+  18 to 24 hours of the first symptoms.
+survival: ~64% survived in the US antibiotic era (5 of 14 died, 1942-2012); WHO says recovery rates are
+  high if treated within 24 hours, and untreated it is always fatal
+treatment: Patients get IV antibiotics, such as ciprofloxacin, levofloxacin or gentamicin, in isolation
+  with intensive supportive care, and close contacts take 7 days of preventive antibiotics. Survival depends
+  mostly on how fast treatment starts; in monkeys, doxycycline started 6 hours after fever saved 88% versus
+  75% at 15 hours.
+caveat: 'US numbers are tiny, so the 64% is imprecise. In Madagascar''s 2017 outbreak about 1,800 of 2,348
+  cases were classed as pneumonic, but most were suspected or probable rather than confirmed, so the outbreak''s
+  8.6% overall fatality does not give a reliable figure for true pneumonic plague. Rated 3: the cure
+  works only when started very early, and many patients are diagnosed too late.'
+url: https://www.who.int/news-room/fact-sheets/detail/plague
+forecast:
+  median: 2050
+  low: 2035
+  high: 2100
+  p2035: 12
+  p2045: 38
+  note: 'The speed problem decides this: drugs that kill the bacteria exist, so 85% survival needs fast
+    point-of-care tests and treatment at the first cough or fever, which is hard where cases are rare
+    and doctors rarely think of plague, and in remote endemic areas. No new plague drug is in trials,
+    and cases are too few to prove gains quickly; a vaccine would prevent cases rather than cure them.'

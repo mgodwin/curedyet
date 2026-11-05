@@ -1,0 +1,36 @@
+# Cure Watch variant record: one stage or type of Lyme disease. Field guide: CONTRIBUTING.md.
+id: late
+name: Late Lyme disease
+order: 2
+what: Infection that was not treated early and, months later, causes arthritis in one or a few large
+  joints, usually the knee, or less often long-lasting nerve or brain involvement.
+level: 4
+burden: moderate
+burden_why: About 4 weeks of antibiotic pills, and for some a second course or 2-4 weeks of IV ceftriaxone
+  through a line, plus anti-inflammatory treatment and specialist care if arthritis persists.
+survival: Arthritis resolves with antibiotics in about 90% of adults; it persists in about 10%
+treatment: Lyme arthritis is treated with 28 days of oral doxycycline, amoxicillin or cefuroxime, and if
+  swelling persists, a second oral course or IV ceftriaxone. Arthritis that lasts after antibiotics is
+  thought to be an immune reaction rather than ongoing infection and is treated with anti-inflammatory
+  or rheumatoid-arthritis drugs, and usually settles in time. Late nerve disease is treated with oral
+  doxycycline or IV ceftriaxone.
+caveat: The 90% figure is for Lyme arthritis in adults, cited in a large pediatric cohort study; nerve
+  damage from late neurologic disease may not fully recover, so this group sits close to the 85% line.
+  About 1 in 4 reported US cases have arthritis, though CDC says reporting may overstate it.
+url: https://www.jrheum.org/content/37/5/1049
+share: About 1 in 4 reported US Lyme disease cases are Lyme arthritis (CDC)
+share_url: https://www.cdc.gov/lyme/hcp/clinical-care/lyme-arthritis.html
+easy:
+  median: 2040
+  low: 2030
+  high: 2075
+  p2035: 30
+  p2045: 58
+  note: The infection already clears with a month of pills in most people; mild treatment for most would
+    need tests that confirm the bacteria are gone, to avoid repeat and IV courses, and better treatment
+    for the immune-driven arthritis that persists afterwards. Earlier diagnosis would also shrink this group.
+reached:
+  year: 1994
+  basis: 'Approximate: by the mid-1990s trials showed a month of oral doxycycline or amoxicillin usually
+    resolved Lyme arthritis, with IV antibiotics for those who did not respond.'
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11322885/

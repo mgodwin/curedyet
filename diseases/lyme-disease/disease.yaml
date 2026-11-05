@@ -1,0 +1,145 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: lyme-disease
+name: Lyme disease
+category: infectious
+tracking: active
+summary: A bacterial infection spread by the bite of blacklegged (Ixodes) ticks that usually starts with
+  a spreading rash and fever, and if untreated can reach the joints, nerves and heart.
+toll:
+  text: An estimated 476,000 people treated a year in the US, from insurance claims, with more than 80,000
+    cases reported to CDC (CDC); about 129,000 cases reported a year across 25 European surveillance systems,
+    an undercount (Burn et al., 2023).
+  url: https://www.cdc.gov/lyme/data-research/facts-stats/index.html
+  ratio: "About 1 in 700"
+  ratio_caption: "Americans is treated for Lyme disease each year"
+  ratio_url: https://www.cdc.gov/lyme/data-research/facts-stats/index.html
+  ratio_basis: "Derived: CDC's claims-based estimate of 476,000 people treated a year divided by a US population
+    of about 340 million in 2024 (https://www.census.gov/newsroom/press-releases/2024/population-estimates-international-migration.html).
+    CDC notes the claims estimate may be high because billing codes don't always reflect a confirmed diagnosis."
+status:
+  level: 4
+  why: A 10-14 day course of antibiotic pills cures most people treated early, and later infection of
+    the joints or nerves also usually clears with antibiotics, though some people have lasting symptoms
+    after treatment.
+  today: Doxycycline, amoxicillin or cefuroxime for 10-14 days usually brings a rapid and complete recovery
+    when Lyme disease is caught early, and 2-4 week courses treat infection that has spread to the nerves,
+    heart or joints. About 1 in 10 people with Lyme arthritis still have joint swelling after antibiotics,
+    and some people have fatigue, pain or trouble thinking for months after treatment (post-treatment Lyme
+    disease syndrome), for which no treatment is proven. There is no licensed human vaccine.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Doxycycline (10-14 days for early disease)
+  - Amoxicillin or cefuroxime
+  - IV ceftriaxone for some neurologic disease or arthritis that persists after oral antibiotics
+  - Single-dose doxycycline after a high-risk tick bite (prevention)
+  burden: light
+  burden_note: Most people need 10-14 days of cheap, generic antibiotic pills with mostly mild side effects
+    such as nausea and sun sensitivity; late disease needs about 4 weeks of pills or, for some, IV antibiotics.
+forecast:
+  bottleneck: biology-limited
+  reached: 1983
+  reached_easy: 1983
+  faster_note: Already curable for most with a short course of pills; a faster pipeline would matter mainly
+    for understanding and treating lasting symptoms after treatment, for better early tests, and for vaccines.
+  outlook: The infection itself is cured for most people with a short antibiotic course, and the main gaps
+    are missed or late diagnosis, the minority whose arthritis or nerve symptoms persist, and post-treatment
+    Lyme disease syndrome, whose cause is unknown. The first vaccine in over 20 years is under EU review
+    after a Phase 3 trial showed about 73% protection.
+pipeline:
+- name: PF-07307405 (LB6V, formerly VLA15; Pfizer/Valneva six-valent OspA vaccine)
+  stage: Filed
+  note: VALOR Phase 3 (ages 5+) showed 73.2% efficacy (95% CI 15.8-93.5) but missed its first pre-set statistical
+    bar after fewer cases than expected; EMA validated the application in Aug 2026, with a CHMP opinion expected
+    in 2027. US filing still under discussion with the FDA.
+  url: https://www.sec.gov/Archives/edgar/data/0001836564/000162828026056999/finallymeematechnicalvalid.htm
+  expected: '2027'
+  effect: small
+  effect_note: Would be the first human Lyme vaccine since 2002, preventing many cases, but it does not
+    change how well treatment cures those who get infected.
+- name: mRNA-1982 (Moderna mRNA OspA vaccine)
+  stage: Phase 2
+  note: Phase 1/2 (with the multivalent mRNA-1975) showed dose-dependent antibody responses; a 366-person
+    Phase 2 of mRNA-1982 alone started Apr 2026, with primary completion estimated Nov 2028.
+  url: https://clinicaltrials.gov/study/NCT07561294
+  expected: 2028-11
+  effect: small
+  effect_note: Immune-response and safety data only; an efficacy trial would still be needed, and Moderna
+    has said it is cutting back on new late-stage vaccine trials.
+- name: TNX-4800 (formerly 2217LS or "Lyme PrEP", seasonal anti-OspA antibody shot)
+  stage: Phase 1
+  note: A once-a-season antibody injection meant to kill Lyme bacteria inside the feeding tick; Phase 1
+    was well tolerated with lasting blood levels. Tonix plans a 3,300-person Phase 2 field study from Q1 2027,
+    with most enrollment in the 2028 season.
+  url: https://www.biospace.com/press-releases/tonix-pharmaceuticals-announces-positive-minutes-from-type-c-fda-meeting-to-discuss-adaptive-phase-2-field-study-of-tnx-4800-a-human-anti-ospa-monoclonal-antibody-to-prevent-lyme-disease-in-the-u-s
+  expected: 2027-03
+  effect: small
+  effect_note: Trial start, not a result; efficacy data are unlikely before 2029, and an antibody would
+    prevent infection rather than change treatment.
+- name: Pulse-dosed IV ceftriaxone for post-treatment Lyme disease
+  stage: Phase 1
+  note: Small (44-person) placebo-controlled pilot at SUNY Upstate; primary completion estimated Dec 2026.
+    Earlier trials of longer antibiotic courses did not help.
+  url: https://clinicaltrials.gov/study/NCT06611111
+  variants:
+  - ptlds
+  expected: 2026-12
+  effect: small
+  effect_note: A pilot this small can only hint at whether a different antibiotic schedule helps, and
+    larger trials of extended antibiotics have been negative.
+recent:
+- date: 2026-08
+  text: The EMA validated Pfizer and Valneva's application for the PF-07307405 Lyme vaccine, starting its
+    review.
+  url: https://www.sec.gov/Archives/edgar/data/0001836564/000162828026056999/finallymeematechnicalvalid.htm
+- date: 2026-03
+  text: The VALOR Phase 3 trial found the PF-07307405 vaccine about 73% effective in people aged 5 and
+    older, though it missed its first pre-set statistical criterion.
+  url: https://valneva.com/press-release/pfizer-and-valneva-announce-lyme-disease-vaccine-candidate-demonstrates-strong-efficacy-in-phase-3-valor-trial/
+- date: 2026-04
+  text: Moderna began a Phase 2 trial of its mRNA-1982 Lyme vaccine in 366 adults.
+  url: https://clinicaltrials.gov/study/NCT07561294
+next_milestone:
+  date: '2027'
+  what: EMA CHMP opinion on PF-07307405, which would be the first licensed human Lyme vaccine since LYMErix
+    was withdrawn in 2002.
+  url: https://www.pharmalive.com/pfizer-eyes-europe-first-for-lyme-vaccine-as-prevalence-rises-in-us/
+ai:
+  impact: low
+  note: 'Unclear: the leading vaccines and the preventive antibody build on the OspA protein target known
+    since the 1990s, with no clear AI-discovery role.'
+markets: []
+prevention:
+  level: 1
+  burden: moderate
+  why: There is no licensed human vaccine; a single dose of doxycycline after a high-risk tick bite cut
+    Lyme disease by 87% in one trial, but it only helps when a tick bite is noticed, and many people never
+    see the tick that infects them.
+  burden_why: Post-bite doxycycline is one cheap pill but needs a clinician visit within 72 hours of removing
+    an attached blacklegged tick, so protection otherwise relies on repellents, clothing and daily tick checks.
+  best:
+  - Single-dose doxycycline within 72 hours of a high-risk tick bite
+  - Repellents, protective clothing and tick checks
+  url: https://www.cdc.gov/lyme/media/pdfs/Caring-for-Patients-after-a-Tick-Bite.pdf
+  forecast:
+    median: 2038
+    low: 2030
+    high: 2065
+    p2035: 30
+    p2045: 60
+    note: 'PF-07307405 could be licensed in Europe in 2027, but at about 73% efficacy (with a wide confidence
+      interval) it would most likely be rung 2, not 3. Strong protection needs about 85%: real-world data
+      or a later analysis could show the vaccine does better, and Moderna''s mRNA-1982 and the TNX-4800 antibody
+      shot are earlier candidates. LYMErix reached 76% after three doses in 1998, so OspA vaccines have
+      sat around three-quarters protection for decades. Base rate: about half of Phase 3 vaccines are licensed,
+      and Phase 2 candidates take 5-10 years.'
+  easy:
+    median: 2045
+    low: 2033
+    high: 2085
+    p2035: 12
+    p2045: 50
+    note: Mild prevention would need one lasting course; OspA vaccines work by killing the bacteria inside
+      the feeding tick, so they need high antibody levels and PF-07307405 is three doses plus a booster
+      before the next season, with further boosters likely. LYMErix was withdrawn in 2002 amid low demand
+      and side-effect fears, so uptake is also a hurdle.

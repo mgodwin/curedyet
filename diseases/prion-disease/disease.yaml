@@ -3,8 +3,10 @@ id: prion-disease
 name: Prion disease (CJD)
 category: outbreaks
 tracking: active
-summary: Brain diseases caused by misfolded prion protein, including sporadic, genetic and acquired
-  Creutzfeldt-Jakob disease.
+summary: Rare brain diseases caused by misfolded prion protein. Most cases are sporadic Creutzfeldt-Jakob
+  disease (CJD); others are inherited, or acquired, as with variant CJD from BSE ("mad cow disease"), which
+  affected about 230 people worldwide, mostly in the UK, before feed bans and food controls all but ended
+  it.
 toll:
   text: About 1-2 cases per million people per year worldwide (roughly 85% sporadic, 5-15% genetic, under
     1% acquired); median survival 4-5 months after symptoms (CDC).
@@ -19,9 +21,9 @@ status:
   today: For all forms of CJD, sporadic, genetic and acquired (iatrogenic or variant), care focuses on
     comfort. Acquired cases are prevented by instrument sterilization, blood and tissue safeguards and
     BSE controls. The main hope is lowering prion protein (PrP) with antisense or siRNA drugs, which
-    extended survival in mice and is now in early human trials in symptomatic patients, with prevention
-    trials planned for genetic carriers.
-  last_reviewed: '2026-11-03'
+    extended survival in mice and is now in early human trials in people with symptoms; the PRiSM siRNA
+    trial also enrols healthy carriers of PRNP gene changes.
+  last_reviewed: '2026-11-05'
 treatment:
   best:
   - Supportive and palliative care
@@ -51,25 +53,50 @@ forecast:
     subset well before a cure for most.
 pipeline:
 - name: PrP-lowering divalent siRNA 2439-s4 (Broad Institute / UMass)
-  note: Single-dose trial (NCT07444580) of about 15 symptomatic patients at 50-200 mg began recruiting
-    April 2026.
+  note: PRiSM single-dose trial (NCT07444580) of about 45 adults with symptoms or healthy carriers of
+    PRNP gene changes started May 2026; primary completion is estimated for August 2029.
   stage: Phase 1
-  url: https://www.cureffi.org/2026/04/22/divalent-sirna-clinical-trial-is-now-recruiting/
+  url: https://clinicaltrials.gov/study/NCT07444580
+  variants:
+  - sporadic
+  - genetic
+  - acquired
+  expected: 2029-08
+  effect: some
+  effect_note: Safe, lasting PrP lowering would open the way to prevention trials in carriers and larger
+    trials in people with symptoms, though it would not itself show benefit.
 - name: ION717 antisense oligonucleotide (Ionis)
-  note: PrProfile Phase 1/2a reopened March 2026 with an open-label Regimen 3; last patient visit expected
-    around February 2027.
+  note: PrProfile Phase 1/2a reopened March 2026 with an open-label Regimen 3 and closed to recruitment
+    by August 2026 with 85 enrolled; primary completion estimated April 2027.
   stage: Phase 2
-  url: https://www.cureffi.org/2026/03/17/ion717-trial-reopens/
+  url: https://clinicaltrials.gov/study/NCT06153966
+  variants:
+  - sporadic
+  - genetic
+  - acquired
+  expected: 2027-04
+  effect: some
+  effect_note: Clear prion protein lowering with a hint of slower decline would support a larger efficacy
+    trial; no benefit would push forecasts later.
 - name: CHARM compact epigenetic editor (AAV, Broad)
   note: One-time AAV-delivered editor silenced PRNP across the mouse brain.
   stage: Preclinical
   url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11875203/
+  variants:
+  - sporadic
+  - genetic
+  - acquired
 - name: Primary prevention in PRNP mutation carriers
   note: Natural history study of presymptomatic carriers underway to support biomarker-based prevention
     trials.
   stage: Preclinical
   url: https://www.bioxconomy.com/modalities/oligo-based-therapies-lead-charge-against-prion-disease
+  variants:
+  - genetic
 recent:
+- date: 2026-08
+  text: Ionis said the ION717 PrProfile trial was no longer recruiting; the registry lists 85 enrolled.
+  url: https://clinicaltrials.gov/study/NCT06153966
 - date: 2026-04
   text: First-in-human divalent siRNA trial for prion disease opened enrollment after FDA IND clearance.
   url: https://www.cureffi.org/2026/04/22/divalent-sirna-clinical-trial-is-now-recruiting/
