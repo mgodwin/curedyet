@@ -205,7 +205,7 @@ a.more{text-decoration:none}
 .navlinks a{color:var(--ink);text-decoration:none;min-height:32px;display:inline-flex;align-items:center}.navlinks a:hover{text-decoration:underline}
 .hero{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
 .hero .search{width:100%;max-width:720px}.hero .search input{height:56px;font-size:17px}
-.upd{font-size:14px;font-weight:600;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px}
+.navlinks a.updchip{font-size:13px;min-height:32px;padding:0 12px;border-radius:999px;border:1px solid var(--light-c);color:var(--light-c);text-decoration:none}.navlinks a.updchip:hover{background:var(--light-soft);text-decoration:none}
 .chiprow{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}.chiprow::-webkit-scrollbar{display:none}.chiprow .chip{flex:none}
 .vkey{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:13px;color:var(--muted)}
 .vkey span{display:inline-flex;gap:6px;align-items:center}.vkey i{width:10px;height:10px;border-radius:50%;flex:none}
@@ -346,7 +346,7 @@ function renderCards(){const el=$("cards");if(!el)return;const L=filtered();
   L.forEach(d=>{const i=h.indexOf(Math.min(...h));tmp.innerHTML=cardHTML(d);const c=tmp.firstElementChild;cols[i].append(c);h[i]+=c.offsetHeight});
 }
 function navHTML(){const repo=S.meta?.repo;
-  return `<nav class="topnav" aria-label="Site"><a class="brand display" href="#">Is it cured yet?</a><div class="navlinks"><a href="#record">This week</a><a href="#pipeline">Pipeline</a><a href="#stats">Stats</a>${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate</a>`:""}${themeBtn()}</div></nav>`}
+  return `<nav class="topnav" aria-label="Site"><a class="brand display" href="#">Is it cured yet?</a><div class="navlinks">${S.meta?.updatedAt?`<a class="updchip" href="#record">Updated ${fd(S.meta.updatedAt).replace(/, \d{4}$/,"")} · what changed →</a>`:`<a href="#record">This week</a>`}<a href="#pipeline">Pipeline</a><a href="#stats">Stats</a>${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate</a>`:""}${themeBtn()}</div></nav>`}
 /* Theme: follows the device unless the reader picks light or dark; the choice is remembered in this browser. */
 const THEMES=["system","light","dark"],TLABEL={system:"◐ Auto",light:"☀ Light",dark:"☾ Dark"};
 const curTheme=()=>document.documentElement.dataset.theme||"system";
@@ -360,7 +360,6 @@ function home(){
   return `
   <header class="hero">
     <h1 class="sr-only">Is it cured yet? Search diseases</h1>
-    ${m.updatedAt?`<a class="upd" href="#record">Updated ${fd(m.updatedAt)}: what changed this week →</a>`:""}
     <label for="q" class="sr-only">Search diseases, stages and types</label>
     <div class="search"><input id="q" type="search" autocomplete="off" placeholder="Search: Alzheimer's, HIV, stage IV…" value="${esc(q)}"></div>
   </header>
