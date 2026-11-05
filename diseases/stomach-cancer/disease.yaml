@@ -1,0 +1,137 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: stomach-cancer
+name: Stomach cancer
+category: cancer
+tracking: active
+summary: Cancer of the stomach lining, almost always adenocarcinoma, driven mostly by long-term Helicobacter
+  pylori infection.
+toll:
+  text: About 980,000 new cases and 642,000 deaths worldwide (2024, GLOBOCAN), the fifth most common cancer
+    and cancer killer; about 31,510 US cases and 10,740 US deaths expected in 2026.
+  url: https://gco.iarc.who.int/media/globocan/factsheets/cancers/7-stomach-fact-sheet.pdf
+  ratio: "1 in 125"
+  ratio_caption: "Americans will be diagnosed with stomach cancer in their lifetime"
+  ratio_url: https://seer.cancer.gov/statfacts/html/stomach.html
+  ratio_basis: "NCI SEER Cancer Stat Facts: about 0.8% of men and women diagnosed in their lifetime (2021-2023 data); 0.8% is 1 in 125."
+status:
+  level: 3
+  why: Cancers caught early are often cured with surgery or endoscopic removal, but in the West most are
+    found late and only about 40% of US patients survive 5 years.
+  today: Japan and Korea screen with regular endoscopy, find most cancers while still localized, and see
+    5-year survival near 78%, against about 40% in the US. Stage IB-III disease is treated with FLOT chemotherapy
+    before and after gastrectomy, now with durvalumab added, which cures a minority to about half. Spread
+    disease is treated with chemotherapy plus immunotherapy, HER2 drugs (trastuzumab, zanidatamab) or
+    the claudin 18.2 antibody zolbetuximab, which extend life but rarely cure.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Endoscopic resection for small early tumors
+  - Gastrectomy with perioperative FLOT plus durvalumab
+  - Chemotherapy with nivolumab or pembrolizumab (PD-L1 positive)
+  - Trastuzumab or zanidatamab for HER2-positive tumors
+  - Zolbetuximab for claudin 18.2-positive tumors
+  burden: heavy
+  burden_note: Most curable patients get months of FLOT chemotherapy plus removal of part or all of the
+    stomach, which permanently changes eating; spread disease means indefinite chemotherapy-based treatment.
+forecast:
+  bottleneck: access-limited
+  normal:
+    p2035: 6
+    p2045: 20
+    median: 2056
+    low: 2038
+    high: 2100
+  faster:
+    p2035: 10
+    p2045: 32
+    median: 2049
+    low: 2035
+    high: 2090
+  faster_note: Faster drug development would add better perioperative and claudin- or HER2-targeted drugs,
+    but the biggest gain still needs Western health systems to find cancers earlier, which drug speed does
+    not fix.
+  outlook: About three in four stomach cancers are attributed to H. pylori, and eradicating the infection
+    cuts gastric cancer risk by roughly a third to a half. Korea shows what early detection does, with most cancers found while
+    localized, but even there overall survival is under 85%, so better treatment for node-positive and
+    spread disease is also needed. Perioperative immunotherapy (MATTERHORN) is a real but modest step.
+pipeline:
+- name: Durvalumab plus FLOT (MATTERHORN)
+  stage: Approved 2025-26
+  note: FDA-approved Nov 2025 around surgery; final results showed longer survival (HR 0.78) and nearly
+    triple the complete response rate at surgery (19% vs 7%).
+  url: https://www.cancernetwork.com/view/fda-approves-durvalumab-plus-flot-in-resectable-gastric-gej-cancers
+  variants:
+  - stage-i
+  - stage-ii
+  - stage-iii
+  effect: some
+  effect_note: Already approved; it cures somewhat more of the patients who get surgery, but adds months
+    of immunotherapy and does not by itself bring stage II-III near the 85% line.
+- name: Zanidatamab (Ziihera) first-line for HER2-positive disease
+  stage: Approved 2025-26
+  note: FDA-approved Aug 2026 with chemotherapy, with or without tislelizumab; an ESMO 2026 update put
+    median survival at 27.0 months with the triple combination versus 19.6 with trastuzumab.
+  url: https://fda.gov/drugs/resources-information-approved-drugs/fda-approves-zanidatamab-hrii-and-tislelizumab-jsgr-her2-positive-gastric-gastroesophageal-junction
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Already approved; it lengthens life for patients whose spread disease is HER2-positive
+    but rarely cures.
+- name: Claudin 18.2 antibody-drug conjugates (arcotatug tavatecan, sonesitatug vedotin)
+  stage: Phase 3
+  note: Both improved overall survival over standard later-line treatment at ESMO 2026 (median about 10
+    vs 5 to 7 months).
+  url: https://oncodaily.com/gastrointestinal-oncology/esmo-2026-gec
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: If approved and moved into first-line use, they would extend life for claudin 18.2-positive
+    patients, but no trial yet shows cures.
+- name: HLX22 plus trastuzumab and chemotherapy (first-line HER2-positive)
+  stage: Phase 3
+  note: Global trial of about 550 patients adding a second HER2 antibody; primary completion expected
+    mid-2027.
+  url: https://clinicaltrials.gov/study/NCT06532006
+  variants:
+  - stage-iv
+  expected: '2027-06'
+  effect: small
+  effect_note: A win would add another HER2 option that extends survival in spread disease, not a cure.
+- name: Claudin 18.2 CAR-T cells for unresectable locally advanced disease
+  stage: Phase 3
+  note: Randomized Phase 3 in China of engineered T cells against claudin 18.2; primary completion expected
+    mid-2027.
+  url: https://clinicaltrials.gov/study/NCT07103668
+  variants:
+  - stage-iii
+  - stage-iv
+  expected: '2027-05'
+  effect: small
+  effect_note: The trial measures time to progression in 150 patients, so even a win would show slower
+    growth, not cure, and cell therapy is costly and hard to access.
+recent:
+- date: 2026-10
+  text: At ESMO 2026 two claudin 18.2 drug conjugates improved survival in previously treated disease, and
+    LOMAC found 4 months of chemotherapy after surgery as good as 6.
+  url: https://oncodaily.com/gastrointestinal-oncology/esmo-2026-gec
+- date: 2026-09
+  text: Final MATTERHORN results confirmed that adding durvalumab to FLOT around surgery improves overall
+    survival (HR 0.78).
+  url: https://pubmed.ncbi.nlm.nih.gov/42716074/
+- date: 2026-08
+  text: FDA approved zanidatamab with chemotherapy, with or without tislelizumab, for first-line HER2-positive
+    advanced disease.
+  url: https://fda.gov/drugs/resources-information-approved-drugs/fda-approves-zanidatamab-hrii-and-tislelizumab-jsgr-her2-positive-gastric-gastroesophageal-junction
+- date: 2025-11
+  text: FDA approved durvalumab plus FLOT as the first immunotherapy around surgery for resectable stomach
+    and junction cancer.
+  url: https://www.cancernetwork.com/view/fda-approves-durvalumab-plus-flot-in-resectable-gastric-gej-cancers
+next_milestone:
+  date: '2027-06'
+  url: https://clinicaltrials.gov/study/NCT06532006
+  what: Expected primary completion of the global Phase 3 trial of HLX22 plus trastuzumab for first-line
+    HER2-positive stomach cancer.
+ai:
+  impact: low
+  note: AI endoscopy aids cut missed areas of the stomach, but a 2026 trial of about 29,500 patients in
+    China found they did not raise confirmed detection of gastric neoplasms.

@@ -1,0 +1,36 @@
+# Cure Watch variant record: one stage or type of Stomach cancer. Field guide: CONTRIBUTING.md.
+id: stage-iii
+name: Stage III
+order: 3
+what: The cancer has grown through the stomach wall and reached many nearby lymph nodes or nearby organs,
+  but not distant ones.
+level: 3
+burden: heavy
+burden_why: Months of FLOT chemotherapy plus durvalumab around a gastrectomy, often total, with real toxicity
+  and lasting eating changes.
+survival: ~25% alive at 5 years (net survival, England, diagnosed 2013-2017)
+share: Most of the roughly 1 in 4 US stomach cancers that have spread to nearby lymph nodes or tissue (SEER
+  'regional', 23%)
+share_url: https://seer.cancer.gov/statfacts/html/stomach.html
+treatment: The same perioperative FLOT plus durvalumab and gastrectomy as stage II, when the tumor can
+  be removed. Many patients relapse, and some are too unwell to finish treatment.
+caveat: The English figures cover people diagnosed in 2013-2017, before FLOT and perioperative immunotherapy
+  became standard, so current results are likely somewhat better.
+url: https://www.cancerresearchuk.org/about-cancer/stomach-cancer/survival
+forecast:
+  median: 2060
+  low: 2042
+  high: 2100
+  p2035: 3
+  p2045: 18
+  note: About a quarter survive 5 years, so a much larger leap is needed than any single trial has delivered.
+    Candidates include targeted drugs (HER2, claudin 18.2) and cell therapy moved earlier, and blood tests
+    that find leftover cancer after surgery.
+easy:
+  median: 2080
+  low: 2050
+  high: 2100
+  p2035: 1
+  p2045: 4
+  note: A mild cure would need drugs that replace both gastrectomy and intensive chemotherapy, which is
+    far off.

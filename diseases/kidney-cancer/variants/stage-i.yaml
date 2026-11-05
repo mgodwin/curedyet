@@ -1,0 +1,35 @@
+# Cure Watch variant record: one stage or type of Kidney cancer. Field guide: CONTRIBUTING.md.
+id: stage-i
+name: Stage I
+order: 1
+what: A tumor 7 cm or smaller that is still confined to the kidney.
+level: 4
+burden: heavy
+burden_why: Most have surgery to remove part or all of the kidney, though small tumors can be watched
+  or destroyed with a needle probe instead.
+survival: ~90% alive at 5 years (net survival, England 2016-2020)
+share: Most of the roughly 2 in 3 US kidney cancers found while still confined to the kidney (SEER 'localized',
+  66%)
+share_url: https://seer.cancer.gov/statfacts/html/kidrp.html
+treatment: Partial nephrectomy, often by keyhole or robotic surgery, cures most and keeps the rest of
+  the kidney; larger or central tumors may need the whole kidney removed. Small masses under about 3-4
+  cm can instead be watched with regular scans, since some are benign or slow-growing, or destroyed by
+  freezing (cryoablation) or heat through a needle, especially in older or less fit people.
+caveat: Almost 90% survive 5 years in England and about 94% of localized cases in the US (SEER), so it
+  is above 85%. Kidney cancer can occasionally relapse after 5 years, and many people are older with
+  other illnesses, which lowers the all-cause figures.
+url: https://www.cancerresearchuk.org/about-cancer/kidney-cancer/survival
+easy:
+  median: 2045
+  low: 2033
+  high: 2090
+  p2035: 12
+  p2045: 50
+  note: Ablation and watchful monitoring already spare some people with small masses from surgery. A
+    mild cure for most stage I would need ablation or focused radiation to match surgery for tumors up
+    to 7 cm, and better scans or biopsies to tell which small masses need treatment at all.
+reached:
+  year: 1970
+  basis: 'Approximate: by the 1970s radical nephrectomy was standard for cancer confined to the kidney
+    and cured the large majority.'
+  url: https://www.cancerresearchuk.org/about-cancer/kidney-cancer/survival

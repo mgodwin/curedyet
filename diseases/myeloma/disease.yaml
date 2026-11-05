@@ -1,0 +1,155 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: myeloma
+name: Multiple myeloma
+category: cancer
+tracking: active
+summary: A blood cancer of plasma cells in the bone marrow that damages bones, kidneys and blood counts,
+  usually preceded by a symptom-free precursor stage called smoldering myeloma.
+toll:
+  text: About 188,000 new cases and 121,000 deaths worldwide (GLOBOCAN 2022); ~36,000 US cases and ~10,850
+    US deaths est. 2026, with about 203,000 Americans living with myeloma (2023).
+  url: https://seer.cancer.gov/statfacts/html/mulmy.html
+  ratio: "About 1 in 125"
+  ratio_caption: "Americans will be diagnosed with myeloma in their lifetime"
+  ratio_url: https://seer.cancer.gov/statfacts/html/mulmy.html
+  ratio_basis: "Derived: NCI SEER Cancer Stat Facts says about 0.8% of men and women will be diagnosed with myeloma in their lifetime (2021-2023 data); 0.8% is about 1 in 125."
+status:
+  level: 2
+  why: Modern drug combinations keep most people in long remissions and about 64% are alive at 5 years,
+    but almost everyone relapses eventually, and whether any group is truly cured is still unproven.
+  today: Most newly diagnosed people get a four-drug combination built on daratumumab, often with a stem
+    cell transplant and then years of maintenance; in trials about 8 in 10 are free of progression at
+    6 years. When it comes back, CAR-T cells (cilta-cel, ide-cel) and bispecific antibodies (teclistamab,
+    elranatamab, talquetamab, linvoseltamab) can bring deep remissions, and about a third of heavily
+    treated people given cilta-cel in one trial were still progression-free 5 years later without further
+    treatment. Myeloma experts drafted the first definition of cure in 2026, but it needs at least 5
+    years off treatment with no detectable disease, and no trial has yet shown that for most patients.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Daratumumab plus bortezomib, lenalidomide and dexamethasone (D-VRd)
+  - Autologous stem cell transplant, then lenalidomide-based maintenance
+  - BCMA CAR-T cells (cilta-cel, ide-cel)
+  - Bispecific antibodies (teclistamab with daratumumab, elranatamab, talquetamab, linvoseltamab)
+  - Daratumumab for high-risk smoldering myeloma
+  burden: heavy
+  burden_note: Most people take drug combinations for years, often with a stem cell transplant, and later
+    treatments such as CAR-T and bispecific antibodies carry risks of cytokine release syndrome, nerve
+    toxicity and serious infections, at very high cost.
+forecast:
+  bottleneck: trial-limited
+  normal:
+    p2035: 3
+    p2045: 20
+    median: 2055
+    low: 2040
+    high: 2100
+  faster:
+    p2035: 5
+    p2045: 32
+    median: 2048
+    low: 2038
+    high: 2090
+  faster_note: The strongest tools (quadruplets, CAR-T, bispecifics) already exist, so a faster pipeline
+    mainly helps by running first-line combination and stop-treatment trials sooner and by accepting
+    MRD as an early endpoint; proving cure still needs years of follow-up off treatment.
+  outlook: Level 4 means about 85% of people cured, which here means staying free of detectable myeloma
+    for years after stopping all treatment, as in the International Myeloma Society's 2026 draft definition.
+    Today about 70% of transplant-eligible patients on D-VRd reach sustained MRD negativity, and early
+    CAR-T in newly diagnosed patients (CARTITUDE-5 and -6) and bispecifics in first line (MajesTEC-7) could
+    push deeper, but those trials read out around 2029-2033 and cure needs five or more years off therapy
+    after that. Myeloma has never been curable for most, so the base rate argues for patience.
+pipeline:
+- name: Anitocabtagene autoleucel (anito-cel, Arcellx/Kite)
+  stage: Filed
+  note: BCMA CAR-T for myeloma after four or more prior lines; FDA accepted the application with an action
+    date of Dec 23, 2026, based on the iMMagine-1 trial.
+  url: https://www.sec.gov/Archives/edgar/data/1786205/000119312526063955/d112937dex991.htm
+  variants:
+  - relapsed-refractory
+  expected: '2026-12-23'
+  effect: small
+  effect_note: If approved, it adds a third BCMA CAR-T with less nerve toxicity, widening options for heavily
+    treated patients, but it would not change whether most are cured.
+- name: Teclistamab plus daratumumab (Tec-Dara)
+  stage: Approved 2025-26
+  note: FDA approved Mar 2026 after one prior line, based on MajesTEC-3, which cut progression or death
+    by 83% (HR 0.17) and death by 54% versus standard daratumumab combinations.
+  url: https://ascopost.com/issues/march-25-2026/fda-approves-teclistamab-and-daratumumab-for-relapsed-or-refractory-multiple-myeloma/
+  variants:
+  - relapsed-refractory
+  effect: some
+  effect_note: Already approved; it brings a bispecific antibody to first relapse with a large survival
+    gain, though it is given continuously and long-term cure is unproven.
+- name: Cilta-cel in newly diagnosed myeloma (CARTITUDE-5 and CARTITUDE-6)
+  stage: Phase 3
+  note: CARTITUDE-5 (743 people not planned for transplant) compares one cilta-cel infusion with standard
+    maintenance, primary completion est. Feb 2029; CARTITUDE-6 (759 people) compares cilta-cel with transplant,
+    est. June 2033.
+  url: https://clinicaltrials.gov/study/NCT04923893
+  variants:
+  - newly-diagnosed
+  expected: '2029-02'
+  effect: big
+  effect_note: If one CAR-T infusion early on keeps most people in remission off treatment for years, that
+    would be the first plausible route to curing most newly diagnosed patients.
+- name: Teclistamab or talquetamab with daratumumab and lenalidomide, first line (MajesTEC-7)
+  stage: Phase 3
+  note: About 1,590 newly diagnosed people; tests bispecific-based combinations against daratumumab-lenalidomide,
+    primary completion est. April 2031.
+  url: https://clinicaltrials.gov/study/NCT05552222
+  variants:
+  - newly-diagnosed
+  expected: '2031-04'
+  effect: some
+  effect_note: A win would move bispecifics into first treatment and deepen remissions, a step toward stopping
+    treatment, but cure would still need years of follow-up.
+- name: Talquetamab plus pomalidomide or daratumumab (MonumenTAL-3)
+  stage: Phase 3
+  note: Improved progression-free and overall survival over daratumumab-pomalidomide-dexamethasone in 864
+    people with relapsed myeloma (June 2026).
+  url: https://www.pharmacytimes.com/view/phase-3-monumental-3-trial-demonstrates-significant-survival-benefit-with-talquetamab-based-regimens-in-relapsed-refractory-multiple-myeloma
+  variants:
+  - relapsed-refractory
+  effect: small
+  effect_note: If filed and approved, it adds a GPRC5D-targeted option at relapse that extends life rather
+    than curing.
+- name: Daratumumab for high-risk smoldering myeloma (AQUILA)
+  stage: Approved 2025-26
+  note: FDA approved Nov 2025 as the first treatment for high-risk smoldering myeloma; 5-year progression-free
+    survival 63% vs 41% with monitoring.
+  url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-daratumumab-and-hyaluronidase-fihj-high-risk-smoldering-multiple-myeloma
+  variants:
+  - smoldering
+  effect: small
+  effect_note: Already approved; it delays active myeloma in high-risk people but is not shown to prevent
+    it for good.
+recent:
+- date: 2026-09
+  text: Seven-year PERSEUS data showed 81% of transplant-eligible patients on D-VRd free of progression
+    at 6 years, and about three-quarters of those who stopped daratumumab after sustained MRD negativity
+    had not restarted it.
+  url: https://www.onclive.com/view/long-term-perseus-data-confirm-durable-pfs-benefit-with-d-vrd-in-transplant-eligible-newly-diagnosed-myeloma
+- date: 2026-08
+  text: The International Myeloma Society published a draft definition of cure after its March 2026 summit,
+    requiring at least 5 years off treatment with repeated negative MRD tests.
+  url: https://www.myeloma.org/blog/road-cure-2026-close-finish-line
+- date: 2026-06
+  text: MonumenTAL-3 showed talquetamab-based regimens improved survival over standard therapy in relapsed
+    myeloma.
+  url: https://www.pharmacytimes.com/view/phase-3-monumental-3-trial-demonstrates-significant-survival-benefit-with-talquetamab-based-regimens-in-relapsed-refractory-multiple-myeloma
+- date: 2026-03
+  text: FDA approved teclistamab plus daratumumab for myeloma after one prior line of therapy.
+  url: https://www.fda.gov/news-events/press-announcements/fda-grants-third-approval-under-national-priority-voucher-program
+- date: 2026-01
+  text: FDA approved D-VRd for newly diagnosed patients who are not having a transplant, based on CEPHEUS.
+  url: https://ajmc.com/view/in-final-cepheus-analysis-for-myeloma-median-pfs-not-reached-after-more-than-6-years
+next_milestone:
+  date: '2026-12-23'
+  url: https://www.sec.gov/Archives/edgar/data/1786205/000119312526063955/d112937dex991.htm
+  what: FDA decision on anito-cel, a BCMA CAR-T, for myeloma after four or more prior lines of therapy.
+ai:
+  impact: low
+  note: 'Unclear: the leading therapies, CD38 antibodies, BCMA CAR-T cells and bispecific antibodies,
+    came from antibody and cell engineering with no clear AI-discovery role.'
+markets: []

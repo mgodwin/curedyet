@@ -1,0 +1,144 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: head-and-neck-cancer
+name: Head and neck cancer
+category: cancer
+tracking: active
+summary: Squamous cell cancers of the mouth, throat (oropharynx and hypopharynx) and voice box (larynx),
+  caused mostly by tobacco and alcohol or, in the tonsils and base of the tongue, by human papillomavirus
+  (HPV).
+toll:
+  text: About 845,000 new cases and 392,000 deaths/yr worldwide (2024, mouth, oropharynx, hypopharynx
+    and larynx); ~60,480 US mouth and throat cancers plus ~12,290 voice box cancers, and ~17,100 US deaths,
+    est. 2026.
+  url: https://gco.iarc.who.int/media/globocan/factsheets/cancers/1-lip-oral-cavity-fact-sheet.pdf
+  ratio: "About 1 in 83"
+  ratio_caption: "Americans will be diagnosed with mouth or throat cancer in their lifetime, not counting the voice box"
+  ratio_url: https://seer.cancer.gov/statfacts/html/oralcav.html
+  ratio_basis: "NCI SEER Cancer Stat Facts: about 1.2% of men and women diagnosed with oral cavity and pharynx cancer in their lifetime (2021-2023 data); 1.2% is about 1 in 83. Larynx adds about 0.3%."
+status:
+  level: 3
+  why: Most HPV-driven throat cancers and most small cancers are cured, but about two in three people
+    are diagnosed after the cancer has reached the neck nodes, and only about half of those with advanced
+    tobacco- and alcohol-related cancers are cured.
+  today: Small cancers are usually cured with surgery or radiation alone. Larger cancers need surgery
+    followed by radiation, or six to seven weeks of radiation with cisplatin, which cures many but often
+    leaves lasting dry mouth and swallowing problems. HPV-driven throat cancers do much better than tobacco-related
+    ones, and pembrolizumab before and after surgery became an option for resectable advanced cancers
+    in 2025. Cancer that comes back and cannot be removed, or that spreads, is treated with pembrolizumab
+    with or without chemotherapy, and about one in six are alive five years later. Mouth cancer linked
+    to areca nut and tobacco is far more common in South Asia, where radiotherapy and surgery are harder
+    to reach.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Surgery (including transoral robotic or laser surgery) for small cancers
+  - Radiation alone for small voice box and throat cancers
+  - Cisplatin chemoradiation for locally advanced cancers
+  - Surgery then radiation or chemoradiation for advanced mouth and other resectable cancers
+  - Pembrolizumab before and after surgery for resectable advanced cancers (PD-L1 CPS 1 or more)
+  - Pembrolizumab with or without chemotherapy for recurrent or metastatic cancer
+  burden: heavy
+  burden_note: Most people need major surgery, six to seven weeks of radiation to the head and neck,
+    or both, often with cisplatin; dry mouth, swallowing difficulty, changes to taste, speech or appearance
+    and sometimes a feeding tube can last for years.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 7
+    p2045: 25
+    median: 2055
+    low: 2036
+    high: 2095
+  faster:
+    p2035: 11
+    p2045: 38
+    median: 2049
+    low: 2034
+    high: 2085
+  faster_note: Faster trials would mostly help advanced tobacco- and alcohol-related cancers, where new
+    antibodies such as petosemtamab and perioperative immunotherapy are just reaching patients; HPV vaccination
+    works on a decades-long timescale whatever the pace.
+  outlook: HPV-driven throat cancers and small cancers are already cured most of the time, but the advanced
+    HPV-negative cancers that make up much of the disease cure only about half the time, holding the
+    whole picture below the line. Perioperative pembrolizumab and adjuvant nivolumab trim relapse by several
+    points, and petosemtamab showed a large survival gain in recurrent disease in 2026, but none yet pushes
+    advanced HPV-negative cancer near 85%. HPV vaccination should shrink oropharyngeal cancer, but mainly
+    after 2050, when vaccinated cohorts reach the usual age of diagnosis.
+pipeline:
+- name: Perioperative pembrolizumab (KEYNOTE-689)
+  stage: Approved
+  note: FDA-approved June 12, 2025 for resectable stage III-IVA cancers with PD-L1 CPS 1 or more; median
+    event-free survival 59.7 vs 29.6 months (HR 0.70).
+  url: https://ascopost.com/news/june-2025/fda-approves-neoadjuvant-and-adjuvant-pembrolizumab-for-resectable-locally-advanced-head-and-neck-cancer
+  variants:
+  - advanced-hpv-negative
+  effect: some
+  effect_note: Already approved; it cuts relapse after surgery, with 3-year survival about 68% vs 59%
+    for PD-L1 CPS 10 or more at an interim analysis, but leaves advanced cancer well short of 85%.
+- name: Nivolumab added to chemoradiation after surgery (NIVOPOSTOP)
+  stage: Phase 3
+  note: 680 high-risk patients; 3-year disease-free survival 63% vs 53% (HR 0.76), with more severe side
+    effects; published in The Lancet Dec 2025, overall survival still awaited.
+  url: https://ascopost.com/issues/august-25-2025/adding-nivolumab-to-adjuvant-chemoradiotherapy-reduces-risk-of-recurrence-in-patients-with-head-and-neck-cancer/
+  variants:
+  - advanced-hpv-negative
+  expected: '2027'
+  effect: some
+  effect_note: A clear overall survival gain would add a second immunotherapy option after surgery and
+    nudge cure rates for high-risk resected cancers up by a few points.
+- name: Petosemtamab plus pembrolizumab (LiGeR-HN1)
+  stage: Phase 3
+  note: Genmab's EGFR x LGR5 bispecific antibody cut the risk of death by about 50% vs pembrolizumab alone
+    in first-line PD-L1-positive recurrent or metastatic disease (topline, Oct 28, 2026).
+  url: https://www.cancernetwork.com/view/petosemtamab-pembrolizumab-improves-os-in-first-line-pd-l1-positive-hnscc
+  variants:
+  - recurrent-or-metastatic
+  expected: '2027'
+  effect: some
+  effect_note: Full data and filings are expected next; it would be the largest survival gain in recurrent
+    disease since pembrolizumab, though it is unlikely to cure most people.
+- name: Risk-adapted radiation after robotic surgery (PATHOS)
+  stage: Phase 3
+  note: About 1,100 patients with HPV-positive throat cancer; tests lower radiation doses, or dropping
+    cisplatin, after transoral surgery, measuring swallowing and survival; results not yet reported.
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11976804/
+  variants:
+  - hpv-positive-oropharyngeal
+  expected: '2027'
+  effect: some
+  effect_note: A win would give some HPV-positive patients a gentler cure with less long-term swallowing
+    damage, a step toward mild treatment.
+- name: Reduced-dose radiation for HPV-positive throat cancer (NRG-HN005)
+  stage: Phase 3
+  note: 60 Gy with cisplatin or with nivolumab failed to match standard 70 Gy with cisplatin (2-year progression-free
+    survival 89-90% vs 98%); reported at ASTRO 2024.
+  url: https://ascopost.com/news/april-2025/study-finds-standard-chemoradiation-therapy-superior-to-deintensification-approaches-for-hpv-related-oropharyngeal-cancer
+  variants:
+  - hpv-positive-oropharyngeal
+  effect: small
+  effect_note: Already reported; it keeps full-dose chemoradiation as the standard and shows how hard
+    it has been to make the cure gentler.
+recent:
+- date: 2026-10
+  text: Petosemtamab plus pembrolizumab cut the risk of death by about half in the Phase 3 LiGeR-HN1 trial
+    in recurrent or metastatic disease (topline).
+  url: https://www.cancernetwork.com/view/petosemtamab-pembrolizumab-improves-os-in-first-line-pd-l1-positive-hnscc
+- date: 2025-12
+  text: NIVOPOSTOP was published in The Lancet, showing adding nivolumab to chemoradiation after surgery
+    lowers relapse.
+  url: https://ascopost.com/issues/august-25-2025/adding-nivolumab-to-adjuvant-chemoradiotherapy-reduces-risk-of-recurrence-in-patients-with-head-and-neck-cancer/
+- date: 2025-06
+  text: FDA approved pembrolizumab before and after surgery for resectable advanced head and neck cancer,
+    the first new approval in the disease in six years.
+  url: https://ascopost.com/news/june-2025/fda-approves-neoadjuvant-and-adjuvant-pembrolizumab-for-resectable-locally-advanced-head-and-neck-cancer
+next_milestone:
+  date: '2027'
+  url: https://www.cancernetwork.com/view/petosemtamab-pembrolizumab-improves-os-in-first-line-pd-l1-positive-hnscc
+  what: Full LiGeR-HN1 results for petosemtamab plus pembrolizumab, which Genmab plans to present at a
+    medical meeting and take to regulators.
+ai:
+  impact: some
+  note: Deep-learning tools can outline 21 head and neck organs on radiotherapy planning scans about as
+    well as experts, speeding planning that aims to spare swallowing and salivary glands, though they
+    do not find new cures.
+markets: []

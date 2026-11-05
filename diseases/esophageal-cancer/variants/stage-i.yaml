@@ -1,0 +1,37 @@
+# Cure Watch variant record: one stage or type of Esophageal cancer. Field guide: CONTRIBUTING.md.
+id: stage-i
+name: Stage I
+order: 1
+what: The cancer is in the inner layers of the esophagus wall and has not reached lymph nodes or other
+  organs.
+level: 3
+burden: heavy
+burden_why: Tumors limited to the lining can be removed through an endoscope, but deeper ones need esophagectomy,
+  a major operation with long recovery and lasting eating changes.
+survival: ~65% alive at 5 years (net survival, England, diagnosed 2016-2020)
+share: Part of the roughly 1 in 5 US esophageal cancers found while still confined to the esophagus (SEER
+  'localized', 19%)
+share_url: https://seer.cancer.gov/statfacts/html/esoph.html
+treatment: Cancers limited to the lining, often found during Barrett esophagus checks, can be removed
+  through an endoscope. Deeper tumors need esophagectomy, and people who cannot have surgery may get chemoradiation
+  instead.
+caveat: 'Squamous and adenocarcinoma are pooled here: both are treated similarly at this stage. The 65%
+  is net survival across all ages and includes people too unwell for full treatment. High-grade dysplasia in Barrett esophagus (sometimes called stage 0) is not
+  split out because registries rarely report it.'
+url: https://www.cancerresearchuk.org/about-cancer/oesophageal-cancer/survival
+forecast:
+  median: 2045
+  low: 2032
+  high: 2080
+  p2035: 18
+  p2045: 50
+  note: More tumors found at the lining-only stage, through surveillance of Barrett esophagus and endoscopy
+    in high-risk groups, could push stage I toward 85% cured; finding them that early is the main obstacle.
+easy:
+  median: 2060
+  low: 2040
+  high: 2100
+  p2035: 4
+  p2045: 25
+  note: A mild cure for most needs tumors caught early enough for endoscopic removal rather than esophagectomy,
+    which depends on better early detection.

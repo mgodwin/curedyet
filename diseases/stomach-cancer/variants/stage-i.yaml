@@ -1,0 +1,39 @@
+# Cure Watch variant record: one stage or type of Stomach cancer. Field guide: CONTRIBUTING.md.
+id: stage-i
+name: Stage I
+order: 1
+what: The cancer is in the inner or muscle layers of the stomach wall, with at most one or two nearby
+  lymph nodes involved.
+level: 3
+burden: heavy
+burden_why: Most Western patients need part or all of the stomach removed, often with chemotherapy, though
+  the smallest tumors can be cut out through an endoscope.
+survival: ~65% alive at 5 years (net survival, England, diagnosed 2013-2017)
+share: Part of the roughly 1 in 3 US stomach cancers found while still confined to the stomach (SEER 'localized',
+  32%), against about 7 in 10 in Korea, where most adults are screened by endoscopy
+share_url: https://seer.cancer.gov/statfacts/html/stomach.html
+treatment: Small tumors limited to the lining can be removed through an endoscope; others need gastrectomy,
+  and stage IB tumors usually also get FLOT chemotherapy, now with durvalumab, before and after surgery.
+  Surgery cures most, but losing some or all of the stomach changes eating for life.
+caveat: 'Judgement call: English and US figures (65% at 5 years; 78% for SEER localized) are below 85%,
+  but Korea reports about 96-98% 5-year survival for localized stomach cancer, partly because screening
+  finds smaller tumors. Rated 3 for Western patients; for Japan and Korea it would be 4. The English
+  figures predate perioperative FLOT and immunotherapy.'
+url: https://www.cancerresearchuk.org/about-cancer/stomach-cancer/survival
+forecast:
+  median: 2040
+  low: 2030
+  high: 2070
+  p2035: 30
+  p2045: 58
+  note: East Asia already cures most stage I patients, so the gap is mostly how early Western cancers are
+    found and how fit patients are. Targeted endoscopy for high-risk groups and newer perioperative drugs
+    like durvalumab could push Western results over 85%.
+easy:
+  median: 2050
+  low: 2036
+  high: 2100
+  p2035: 8
+  p2045: 40
+  note: A mild cure for most needs tumors found small enough for endoscopic removal, as is common in Japan
+    and Korea, rather than gastrectomy; that depends on screening the West has not adopted.

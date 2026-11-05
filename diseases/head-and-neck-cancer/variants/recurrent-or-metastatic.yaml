@@ -1,0 +1,29 @@
+# Cure Watch variant record: one stage or type of Head and neck cancer. Field guide: CONTRIBUTING.md.
+id: recurrent-or-metastatic
+name: Recurrent or metastatic
+order: 4
+what: Cancer that has come back after treatment and cannot be removed or re-irradiated, or that has spread
+  to distant organs such as the lungs.
+level: 1
+burden: heavy
+burden_why: Most people stay on immunotherapy, often with chemotherapy, for as long as it works, and
+  a minority with a local recurrence face further major surgery or radiation.
+survival: ~16% alive at 5 years with first-line pembrolizumab plus chemotherapy (KEYNOTE-048 trial)
+share: About 1 in 8 US mouth and throat cancers have spread to distant organs at diagnosis (SEER 'distant',
+  12%), and more come back after treatment
+share_url: https://seer.cancer.gov/statfacts/html/oralcav.html
+treatment: First-line pembrolizumab alone or with platinum chemotherapy extends life, and a minority
+  have lasting responses; cetuximab and chemotherapy follow. Some local recurrences can still be cured
+  by salvage surgery or repeat radiation.
+caveat: HPV-positive cancers that spread, often to the lungs, tend to do better than HPV-negative ones.
+  KEYNOTE-048 figures are from a trial; petosemtamab (2026 topline) may raise survival further.
+url: https://pubmed.ncbi.nlm.nih.gov/40262400/
+forecast:
+  median: 2072
+  low: 2045
+  high: 2100
+  p2035: 1
+  p2045: 6
+  note: Pembrolizumab raised 5-year survival from about 5% to about 16%, and petosemtamab halved the
+    risk of death in its Phase 3 interim analysis, but a cure for most would need treatments that clear
+    widespread disease in most people, which none yet does.

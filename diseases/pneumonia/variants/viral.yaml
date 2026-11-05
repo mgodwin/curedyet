@@ -1,0 +1,62 @@
+# Cure Watch variant record: one stage or type of Pneumonia. Field guide: CONTRIBUTING.md.
+id: viral
+name: Viral pneumonia
+order: 2
+what: Pneumonia caused by viruses such as flu, RSV, COVID-19 and rhinovirus, which are found more often
+  than bacteria in adults hospitalised with pneumonia.
+level: 1
+burden: moderate
+burden_why: Mild cases recover at home, but people with viral pneumonia often need hospital stays with oxygen
+  or ventilation, and there are few drugs to shorten them.
+survival: In the CDC EPIC study of US adults hospitalised with pneumonia, viruses were found in 23% (bacteria
+  in 11%); 21% needed intensive care and 2% died in hospital (all causes combined)
+treatment: Care is mostly supportive, with oxygen, fluids and breathing support. Flu antivirals (oseltamivir,
+  baloxavir) and COVID-19 antivirals (nirmatrelvir-ritonavir, remdesivir) work best when started within
+  days of symptoms, and dexamethasone lowers deaths in COVID-19 patients who need oxygen. RSV has no routinely
+  used antiviral. None reliably clears the virus once pneumonia has set in (see the flu and RSV pages).
+caveat: 'Rated 1 to match the flu and RSV pages: most people recover, but because their bodies clear the
+  virus, not because a drug cures it. Bacterial infection on top of viral pneumonia is common and is
+  treated with antibiotics. Dexamethasone''s benefit (RECOVERY trial, 2020) was in COVID-19, and US guidance
+  advises against steroids in flu pneumonia.'
+url: https://pubmed.ncbi.nlm.nih.gov/26172429/
+forecast:
+  median: 2052
+  low: 2036
+  high: 2100
+  p2035: 4
+  p2045: 18
+  note: Level 4 would need early antivirals or immune treatments that prevent most deaths from viral pneumonia
+    across flu, RSV and COVID-19. Late-stage candidates mostly shorten illness rather than prevent death,
+    and RSV's zelicapavir missed its main goal in adults in 2026, so progress tracks the slow flu and RSV
+    forecasts.
+prevention:
+  level: 2
+  burden: moderate
+  why: For older adults, the best vaccines cut hospital stays by about 70-90% for RSV in the first season,
+    about 50-55% for COVID-19 and about 30-56% for flu, which averages out to partial protection.
+  burden_why: Flu and COVID-19 shots are needed every year, RSV shots must be timed to the season and are
+    recommended only for some age and risk groups, and coverage is low in poorer countries.
+  best:
+  - Yearly flu vaccine
+  - Updated COVID-19 vaccine
+  - RSV vaccine for adults 75 and older and at-risk adults 50-74; nirsevimab, clesrovimab or maternal vaccine
+    for babies
+  - Measles vaccine
+  url: https://www.cdc.gov/rsv/hcp/vaccine-clinical-guidance/infants-young-children.html
+  forecast:
+    median: 2045
+    low: 2033
+    high: 2080
+    p2035: 15
+    p2045: 50
+    note: RSV prevention may reach strong protection around the early 2030s, but flu and COVID-19 vaccines
+      remain well below 85%, so strong protection against viral pneumonia as a whole probably needs a
+      universal flu vaccine, which keeps missing in trials.
+  easy:
+    median: 2052
+    low: 2036
+    high: 2100
+    p2035: 6
+    p2045: 30
+    note: Mild prevention would need lasting protection without yearly shots, cheap enough for low- and
+      middle-income countries.

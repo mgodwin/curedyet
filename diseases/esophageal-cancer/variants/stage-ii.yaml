@@ -1,0 +1,38 @@
+# Cure Watch variant record: one stage or type of Esophageal cancer. Field guide: CONTRIBUTING.md.
+id: stage-ii
+name: Stage II
+order: 2
+what: The cancer has grown into the muscle or outer wall of the esophagus, or reached one or two nearby
+  lymph nodes, but not distant organs.
+level: 3
+burden: heavy
+burden_why: Weeks of chemoradiation or months of FLOT chemotherapy, followed by esophagectomy and often
+  a year of nivolumab.
+survival: ~30% alive at 5 years (net survival, England, diagnosed 2016-2020)
+share: Part of the US esophageal cancers found while localized (19%) or regional (32%) in SEER
+share_url: https://seer.cancer.gov/statfacts/html/esoph.html
+treatment: Chemoradiation then esophagectomy (CROSS), or for adenocarcinoma FLOT chemotherapy before and
+  after surgery, which gave better 3-year survival than CROSS in ESOPEC (57% vs 51%). Nivolumab is given
+  for a year if cancer remains at surgery. Squamous cancers can instead be treated with chemoradiation
+  alone, with surgery kept for cancer that persists.
+caveat: 'Pooled across types: squamous cancer responds better to chemoradiation (in CROSS, median survival
+  about 82 months vs 43 for adenocarcinoma), which is why organ-sparing approaches are mostly used for
+  it. English figures cover diagnoses in 2016-2020, before FLOT replaced CROSS for many adenocarcinomas.'
+url: https://www.cancerresearchuk.org/about-cancer/oesophageal-cancer/survival
+forecast:
+  median: 2060
+  low: 2042
+  high: 2100
+  p2035: 3
+  p2045: 15
+  note: The best trial arms keep only about 55-60% alive at 3 years, so reaching 85% cured needs a large
+    leap. Adding immunotherapy around surgery has helped modestly at best, and adding it to chemoradiation
+    failed in KEYNOTE-975.
+easy:
+  median: 2078
+  low: 2048
+  high: 2100
+  p2035: 1
+  p2045: 5
+  note: Organ-sparing approaches (SANO, NEEDS) could make the cure milder for squamous patients who respond
+    completely, but a mild cure for most would need drugs that replace both chemoradiation and surgery.

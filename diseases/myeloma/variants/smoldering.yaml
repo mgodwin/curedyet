@@ -1,0 +1,32 @@
+# Cure Watch variant record: one stage or type of Multiple myeloma. Field guide: CONTRIBUTING.md.
+id: smoldering
+name: Smoldering myeloma
+order: 1
+what: A symptom-free precursor in which abnormal plasma cells are present in the marrow but have not yet
+  damaged bones, kidneys or blood counts; about half progress to active myeloma within 5 years.
+level: 2
+burden: moderate
+burden_why: Most people only need regular blood tests and scans, while those at high risk may take three
+  years of daratumumab injections, with more serious infections than monitoring alone.
+survival: About 51% progress to active myeloma by 5 years and 73% by 15 years (Mayo cohort, NEJM 2007);
+  in high-risk patients, 5-year survival was 93% with daratumumab vs 87% with monitoring (AQUILA)
+treatment: Standard care is watchful monitoring. Since Nov 2025, people at high risk can also take daratumumab
+  injections for up to three years, which in AQUILA cut the risk of progression or death by about half
+  (5-year progression-free 63% vs 41%), with more grade 3-4 infections (16% vs 5%). Neither approach
+  is shown to stop progression for good.
+caveat: Rated 2 because people live normally for years and daratumumab delays active disease, but no treatment
+  is shown to cure it, and most high-risk people still progress eventually. Whether early treatment is
+  better than waiting is still debated, partly because AQUILA's risk criteria predate the current ones.
+  Some trials are testing stronger regimens, including CAR-T, to try to cure high-risk smoldering myeloma
+  early, but these are small and early.
+url: https://pubmed.ncbi.nlm.nih.gov/17582068/
+forecast:
+  median: 2050
+  low: 2036
+  high: 2100
+  p2035: 5
+  p2045: 30
+  note: Level 4 would mean treating high-risk smoldering myeloma so it never becomes active myeloma, or
+    is cleared for good, in most people. Daratumumab alone delays rather than prevents it, and stronger
+    approaches such as CAR-T in high-risk smoldering disease are only in small Phase 2 trials (CAR-PRISM,
+    20 people), so proof is at least a decade away.

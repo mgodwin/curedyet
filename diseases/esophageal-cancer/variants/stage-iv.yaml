@@ -1,0 +1,28 @@
+# Cure Watch variant record: one stage or type of Esophageal cancer. Field guide: CONTRIBUTING.md.
+id: stage-iv
+name: Stage IV
+order: 4
+what: The cancer has grown into nearby vital structures or many lymph nodes (IVA), or spread to distant
+  organs such as the liver or lungs (IVB).
+level: 1
+burden: heavy
+burden_why: Most people stay on chemotherapy with immunotherapy for as long as it works, and may need
+  stents or radiation to keep swallowing.
+survival: ~5% alive at 4 years (net survival, England, diagnosed 2016-2020); 5% alive at 5 years (US, SEER
+  'distant', 2016-2022)
+share: About 2 in 5 US esophageal cancers have spread to distant organs at diagnosis (SEER 'distant', 39%)
+share_url: https://seer.cancer.gov/statfacts/html/esoph.html
+treatment: Chemotherapy plus a PD-1 drug (nivolumab, pembrolizumab or tislelizumab) for tumors with PD-L1
+  scores of 1 or more, and HER2-targeted drugs for HER2-positive adenocarcinoma. These extend life but
+  rarely cure.
+caveat: In CheckMate 648, nivolumab-based treatment kept a survival edge over chemotherapy at 5 years in
+  advanced squamous cancer, but long-term survivors remain a small minority.
+url: https://www.cancerresearchuk.org/about-cancer/oesophageal-cancer/survival
+forecast:
+  median: 2075
+  low: 2050
+  high: 2100
+  p2035: 1
+  p2045: 5
+  note: Spread esophageal cancer is treated to extend life, and new drugs add months rather than cures;
+    curing most would need treatments that clear widespread disease, which no trial has shown.

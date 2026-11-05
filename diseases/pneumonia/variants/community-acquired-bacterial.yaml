@@ -1,0 +1,69 @@
+# Cure Watch variant record: one stage or type of Pneumonia. Field guide: CONTRIBUTING.md.
+id: community-acquired-bacterial
+name: Bacterial pneumonia (community-acquired)
+order: 1
+what: Pneumonia caught outside hospital and caused by bacteria, most often pneumococcus (Streptococcus
+  pneumoniae), the leading single cause of lower respiratory infection deaths worldwide.
+level: 4
+burden: moderate
+burden_why: Many adults need only a short course of pills at home, but older and sicker people need hospital
+  care with IV antibiotics and sometimes oxygen or intensive care, and recovery can take weeks.
+survival: About 6.5% of US adults hospitalised with pneumonia die in hospital, 13% within 30 days and 31%
+  within a year (Louisville 2014-2016, all causes of community-acquired pneumonia)
+treatment: Antibiotics such as amoxicillin or doxycycline at home, or a beta-lactam with a macrolide in
+  hospital, for usually 3 to 5 days once stable (at least 5 for severe cases). Since 2025, US guidance
+  suggests hydrocortisone for severe cases in intensive care. Antibiotics clear the infection in most
+  people, but some die of sepsis or organ failure despite them.
+caveat: 'Rated 4 because antibiotics clear most bacterial pneumonia and deaths cluster in people sick enough
+  to need hospital care; but even there 30-day mortality is around 13%, so for frail, hospitalised older
+  adults the outlook is closer to level 3. Many later deaths reflect other illnesses, not failed treatment.
+  The survival figure mixes bacterial and viral cases, since no germ is found in most patients (62% in
+  the CDC EPIC study). Sepsis is a common route to death: lower respiratory infection is the most common
+  underlying cause of sepsis deaths worldwide. Rising antibiotic resistance, about 1 in 6 lab-confirmed
+  bacterial infections in 2023 (WHO), threatens this cure, especially where resistance is highest.'
+url: https://pubmed.ncbi.nlm.nih.gov/29020164/
+easy:
+  median: 2050
+  low: 2035
+  high: 2100
+  p2035: 10
+  p2045: 35
+  note: Mild treatment for most would mean far fewer people needing hospital care, through earlier diagnosis
+    and treatment at home and broader vaccines that prevent the pneumonia that hits frail older adults
+    hardest. New antibiotics alone would not do it, and resistance pushes the other way.
+reached:
+  year: 1945
+  basis: 'Approximate: sulfonamides in the late 1930s and penicillin in the 1940s cut pneumonia deaths from
+    an estimated 30-40% in the early 20th century to about 10% or less in treated pneumococcal pneumonia.'
+  url: https://www.jci.org/articles/view/29920
+prevention:
+  level: 1
+  burden: moderate
+  why: Pneumococcal conjugate vaccine cut vaccine-type pneumonia by about 46% in adults 65 and older in
+    the CAPiTA trial but did not clearly lower pneumonia from all causes (5%), since many other bacteria
+    and serotypes remain.
+  burden_why: Adults 50 and older need one shot and children a four-dose series, with few side effects,
+    but coverage is uneven, the vaccines are costly, and older adults respond less well.
+  best:
+  - PCV20 or PCV21 (Capvaxive, made for adults) from age 50, or 19-49 with risk conditions
+  - PCV15 or PCV20 series for all children under 5
+  - Hib vaccine for infants
+  - Flu vaccine, since flu often leads to bacterial pneumonia
+  url: https://www.cdc.gov/pneumococcal/vaccines/index.html
+  forecast:
+    median: 2060
+    low: 2040
+    high: 2100
+    p2035: 3
+    p2045: 15
+    note: Wider vaccines such as VAX-31 (adult filing planned 2028) and Pfizer's 25-valent infant vaccine
+      cover more pneumococcal types, but pneumococcus causes only part of bacterial pneumonia, so strong
+      all-cause protection would need vaccines against other bacteria too, none of which are near approval.
+  easy:
+    median: 2065
+    low: 2042
+    high: 2100
+    p2035: 2
+    p2045: 12
+    note: Mild prevention would need such strong vaccines to be cheap single shots given routinely to
+      children and older adults worldwide.

@@ -1,0 +1,38 @@
+# Cure Watch variant record: one stage or type of Kidney cancer. Field guide: CONTRIBUTING.md.
+id: stage-iii
+name: Stage III
+order: 3
+what: The cancer has grown into large veins or the fat around the kidney, or reached nearby lymph nodes,
+  but has not spread beyond the fat around the kidney.
+level: 3
+burden: heavy
+burden_why: It means removing the kidney, sometimes with surgery on the main vein to the heart, then
+  often a year of immunotherapy with immune side effects.
+survival: ~75% alive at 5 years (net survival, England 2016-2020)
+share: Most of the roughly 17% of US kidney cancers diagnosed after spreading to nearby tissue or lymph
+  nodes (SEER 'regional')
+share_url: https://seer.cancer.gov/statfacts/html/kidrp.html
+treatment: Radical nephrectomy, sometimes with removal of tumor from the vena cava, followed for clear
+  cell tumors by a year of pembrolizumab, now sometimes with belzutifan. In KEYNOTE-564 adjuvant pembrolizumab
+  raised 4-year survival to 91% from 86% in higher-risk patients.
+caveat: 'Rated 3: around 75% survive 5 years in England and about 78% in SEER regional stage (2016-2022),
+  both mostly before adjuvant pembrolizumab; trial patients are fitter than average, so the 91% figure
+  overstates typical cure.'
+url: https://www.cancerresearchuk.org/about-cancer/kidney-cancer/survival
+forecast:
+  median: 2043
+  low: 2031
+  high: 2078
+  p2035: 15
+  p2045: 52
+  note: About 75% survive 5 years before adjuvant immunotherapy, which has since lowered relapse and death.
+    Reaching 85% for most would take that benefit plus belzutifan's to hold up long term, and better
+    drugs for the tumors that still relapse.
+easy:
+  median: 2078
+  low: 2050
+  high: 2100
+  p2035: 1
+  p2045: 4
+  note: Surgery plus a year of immunotherapy is the cure today; a mild cure would need drugs that clear
+    locally advanced cancer without major surgery.

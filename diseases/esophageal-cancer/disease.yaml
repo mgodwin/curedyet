@@ -1,0 +1,137 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: esophageal-cancer
+name: Esophageal cancer
+category: cancer
+tracking: active
+summary: Cancer of the food pipe, either squamous cell carcinoma (linked to smoking and alcohol, most
+  common worldwide) or adenocarcinoma (linked to reflux and Barrett esophagus, most common in the US).
+toll:
+  text: About 494,000 new cases and 442,000 deaths worldwide (2024, GLOBOCAN), about 85% of them squamous; about 22,530 US cases and 16,290 US deaths expected in 2026.
+  url: https://gco.iarc.who.int/media/globocan/factsheets/cancers/6-oesophagus-fact-sheet.pdf
+  ratio: "1 in 200"
+  ratio_caption: "Americans will be diagnosed with esophageal cancer in their lifetime"
+  ratio_url: https://seer.cancer.gov/statfacts/html/esoph.html
+  ratio_basis: "NCI SEER Cancer Stat Facts: about 0.5% of men and women diagnosed in their lifetime (2021-2023 data); 0.5% is 1 in 200."
+status:
+  level: 3
+  why: A minority are cured by surgery, chemoradiation or both, but most cancers are found after spreading
+    and only about 22% of US patients survive 5 years.
+  today: Very early tumors can be removed through an endoscope. Locally advanced disease is treated with
+    chemoradiation then surgery (CROSS), or for adenocarcinoma with FLOT chemotherapy around surgery, which
+    beat CROSS in the ESOPEC trial; nivolumab follows if cancer remains at surgery. Some squamous cancers
+    are treated with chemoradiation alone, keeping the esophagus, and spread disease gets chemotherapy
+    with immunotherapy, which extends life but rarely cures.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Endoscopic resection for very early tumors
+  - CROSS chemoradiation then esophagectomy
+  - Perioperative FLOT for adenocarcinoma
+  - Adjuvant nivolumab for cancer left after surgery
+  - Definitive chemoradiation for squamous cancer
+  - Chemotherapy plus nivolumab, pembrolizumab or tislelizumab
+  burden: heavy
+  burden_note: Curative treatment usually means weeks of chemoradiation or months of chemotherapy plus
+    removal of the esophagus, a major operation that changes eating for life; spread disease means indefinite
+    treatment.
+forecast:
+  bottleneck: design-limited
+  normal:
+    p2035: 2
+    p2045: 8
+    median: 2068
+    low: 2047
+    high: 2100
+  faster:
+    p2035: 4
+    p2045: 15
+    median: 2058
+    low: 2042
+    high: 2100
+  faster_note: Faster drug development would help most here, since the gap is weak drugs for locally advanced
+    and spread disease, but few esophageal cancers are found early and that would still hold the odds down.
+  outlook: Most esophageal cancers are found after spreading, and even with the best combined treatment
+    only about half of patients with locally advanced disease are alive at 3 years. Recent progress has
+    mostly made cures milder (organ-sparing surveillance) or slightly more frequent (FLOT, adjuvant nivolumab),
+    and adding immunotherapy to chemoradiation failed in KEYNOTE-975. Reaching 85% cured would need both
+    much earlier detection and much stronger drugs.
+pipeline:
+- name: NEEDS trial (chemoradiation with surgery only if needed)
+  stage: Phase 3
+  note: Compares chemoradiation with surgery reserved for leftover or returning cancer against standard
+    chemoradiation then surgery in squamous cancer; ~1,020 patients, primary completion est. Dec 2026.
+  url: https://clinicaltrials.gov/study/NCT04460352
+  variants:
+  - stage-ii
+  - stage-iii
+  expected: '2027'
+  effect: some
+  effect_note: If survival is no worse, many squamous patients could keep their esophagus, a much milder
+    cure, though it would not cure more people.
+- name: Durvalumab with definitive chemoradiation (KUNLUN)
+  stage: Phase 3
+  note: About 600 patients with unresectable locally advanced squamous cancer; primary completion est.
+    June 2027.
+  url: https://clinicaltrials.gov/study/NCT04550260
+  variants:
+  - stage-ii
+  - stage-iii
+  expected: '2027-06'
+  effect: small
+  effect_note: A win could raise cure rates for people who cannot have surgery, but the similar KEYNOTE-975
+    trial of pembrolizumab with chemoradiation failed, so expectations are low.
+- name: Zanidatamab (Ziihera) for HER2-positive adenocarcinoma
+  stage: Approved 2025-26
+  note: FDA-approved Aug 2026 for first-line HER2-positive gastroesophageal adenocarcinoma, including the
+    esophagus, with or without tislelizumab.
+  url: https://ecancer.org/en/news/28775-fda-approves-zanidatamab-hrii-and-tislelizumab-jsgr-for-her2-positive-gastric-gastro-oesophageal-junction-or-oesophageal-adenocarcinoma
+  variants:
+  - stage-iv
+  effect: small
+  effect_note: Already approved; it lengthens life for the HER2-positive minority of spread adenocarcinomas
+    but rarely cures.
+- name: Active surveillance after chemoradiation (SANO)
+  stage: Phase 3
+  note: Watching instead of operating on patients with no detectable cancer after chemoradiation gave similar
+    2-year survival (74% vs 71%); longer follow-up pending.
+  url: https://pubmed.ncbi.nlm.nih.gov/40112851/
+  variants:
+  - stage-ii
+  - stage-iii
+  effect: some
+  effect_note: Already reported; if long-term follow-up holds up, patients whose cancer disappears after
+    chemoradiation could skip esophagectomy, a much milder cure for them.
+recent:
+- date: 2026-10
+  text: KEYNOTE-975 found adding pembrolizumab to definitive chemoradiation did not improve survival, and
+    the study was stopped.
+  url: https://oncodaily.com/gastrointestinal-oncology/esmo-2026-gec
+- date: 2026-08
+  text: Five-year CheckMate 648 results confirmed nivolumab-based first-line treatment keeps a survival
+    edge over chemotherapy alone in advanced squamous cancer.
+  url: https://pubmed.ncbi.nlm.nih.gov/42575473/
+- date: 2026-08
+  text: FDA approved zanidatamab regimens for first-line HER2-positive gastroesophageal adenocarcinoma,
+    including esophageal adenocarcinoma.
+  url: https://ecancer.org/en/news/28775-fda-approves-zanidatamab-hrii-and-tislelizumab-jsgr-for-her2-positive-gastric-gastro-oesophageal-junction-or-oesophageal-adenocarcinoma
+- date: 2025-06
+  text: Final CheckMate 577 results showed adjuvant nivolumab's survival edge (46% vs 41% at 5 years) did
+    not reach statistical significance.
+  url: https://www.targetedonc.com/view/adjuvant-nivolumab-shows-sustained-benefit-in-esophageal-gej-cancer
+- date: 2025-03
+  text: The SANO trial found active surveillance after chemoradiation gave 2-year survival similar to immediate
+    surgery.
+  url: https://pubmed.ncbi.nlm.nih.gov/40112851/
+- date: 2025-01
+  text: ESOPEC showed perioperative FLOT beat CROSS chemoradiation for adenocarcinoma (3-year survival
+    57% vs 51%).
+  url: https://pubmed.ncbi.nlm.nih.gov/39842010/
+next_milestone:
+  date: '2026-12-31'
+  url: https://clinicaltrials.gov/study/NCT04460352
+  what: Planned primary completion of NEEDS, testing chemoradiation with surgery only if needed against
+    routine surgery in squamous esophageal cancer; results would follow.
+ai:
+  impact: low
+  note: AI endoscopy tools for the upper gut have not yet raised confirmed cancer detection in large trials;
+    a 2026 trial of about 29,500 patients found no gain for gastric neoplasms.

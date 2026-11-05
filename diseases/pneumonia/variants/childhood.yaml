@@ -1,0 +1,67 @@
+# Cure Watch variant record: one stage or type of Pneumonia. Field guide: CONTRIBUTING.md.
+id: childhood
+name: Childhood pneumonia in low-income settings
+order: 3
+what: Pneumonia in children under 5 in low- and middle-income countries, where it is one of the biggest
+  killers of young children, mostly through lack of timely antibiotics and oxygen.
+level: 3
+burden: heavy
+burden_why: The treatment itself is cheap, usually a few days of amoxicillin, but many children never
+  reach it, and severe cases need hospital oxygen that fewer than 1 in 3 people who need it in poorer countries
+  receive.
+survival: 6.4% of children hospitalised with severe pneumonia died within 30 days (PERCH, 7 countries in
+  Africa and Asia); only about a third of children with pneumonia get the antibiotics they need (WHO)
+share: About 502,000 of the world's lower respiratory infection deaths in 2021 were children under 5, about
+  half of them in the lowest-income countries (GBD 2021)
+share_url: https://pubmed.ncbi.nlm.nih.gov/38636536/
+treatment: WHO recommends amoxicillin dispersible tablets, which trained community health workers can give
+  at home, with hospital care, oxygen and injectable antibiotics for severe cases. Most children who get
+  this care recover, but about 4 in 10 children with pneumonia symptoms are not taken to a health provider,
+  and hospital oxygen and pulse oximeters are often missing.
+caveat: 'This variant is rated for children in low- and middle-income countries rather than the typical
+  patient in rich countries, where nearly all children with pneumonia recover. Rated 3 because a cheap
+  cure exists but most children who need it do not reliably get it, as the methodology does for cures
+  that only some patients can get. Most severe childhood pneumonia in PERCH was viral (61%), led by RSV,
+  so antibiotics alone are not the whole answer. Malnutrition, HIV and indoor smoke raise the risk.'
+url: https://www.who.int/news-room/fact-sheets/detail/pneumonia
+forecast:
+  median: 2045
+  low: 2033
+  high: 2080
+  p2035: 15
+  p2045: 50
+  note: 'This is access-limited: level 4 needs most children with pneumonia in poor countries to get timely
+    antibiotics, pulse oximetry and oxygen. The Lancet Global Health oxygen commission (2025) put the cost
+    of closing oxygen gaps at about US$6.8 billion a year; care-seeking has risen only slowly, from about
+    55% to about 62% of children with symptoms.'
+prevention:
+  level: 1
+  burden: moderate
+  why: Pneumococcal conjugate vaccines prevent about 80% of vaccine-type invasive pneumococcal disease in
+    young children but only about 27% of X-ray-confirmed pneumonia, because many germs cause it.
+  burden_why: Children need three or four doses of several vaccines (pneumococcal, Hib, measles, whooping
+    cough), and pneumococcal vaccine reached about 71% of the world's children in 2025, leaving gaps in
+    the poorest countries, while RSV antibodies and maternal vaccines are scarce there.
+  best:
+  - Pneumococcal conjugate vaccine (PCV10, PCV13 or newer)
+  - Hib, measles and whooping cough vaccines
+  - Exclusive breastfeeding for 6 months, good nutrition and clean cooking fuel
+  - Daily cotrimoxazole for children with HIV
+  url: https://www.cochrane.org/evidence/CD004977_vaccines-against-overwhelming-blood-infection-due-pneumococcus-bacteria-and-lung-infection-pneumonia
+  forecast:
+    median: 2055
+    low: 2038
+    high: 2100
+    p2035: 5
+    p2045: 20
+    note: Strong protection would need affordable RSV protection for babies in poor countries, plus wider
+      pneumococcal vaccines, on top of full coverage of today's vaccines. RSV, the leading cause of severe
+      childhood pneumonia in PERCH, is the biggest gap.
+  easy:
+    median: 2062
+    low: 2042
+    high: 2100
+    p2035: 3
+    p2045: 14
+    note: Mild prevention would need these vaccines folded into fewer, cheap routine shots that reach nearly
+      every child.
