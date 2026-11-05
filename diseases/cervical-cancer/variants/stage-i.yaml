@@ -1,0 +1,34 @@
+# Cure Watch variant record: one stage or type of Cervical cancer. Field guide: CONTRIBUTING.md.
+id: stage-i
+name: Stage I
+order: 2
+what: The cancer has invaded the cervix but has not spread beyond it.
+level: 4
+burden: heavy
+burden_why: Most need a hysterectomy, which ends fertility, or chemoradiation; only the smallest tumors
+  can be removed with a cone alone.
+survival: ~95% alive at 5 years (net survival, England 2013-2017)
+share: Most of the roughly 41% of US cervical cancers found while still confined to the cervix (SEER
+  'localized')
+share_url: https://seer.cancer.gov/statfacts/html/cervix.html
+treatment: The tiniest tumors can be cut out with a cone, and young women wanting children may have a
+  trachelectomy that removes only the cervix. Most others have a hysterectomy with lymph node removal,
+  sometimes followed by radiation, or chemoradiation instead. For small low-risk tumors the SHAPE trial
+  found simple hysterectomy as safe as radical surgery, with fewer bladder problems.
+caveat: About 95% survive 5 years, far enough above the 85% line to allow for some later relapses.
+  Stage I covers a wide range, from microscopic tumors that are almost always cured to tumors over 4 cm with lower cure rates.
+url: https://www.cancerresearchuk.org/about-cancer/cervical-cancer/survival
+easy:
+  median: 2048
+  low: 2034
+  high: 2100
+  p2035: 8
+  p2045: 42
+  note: Most stage I tumors still need a hysterectomy or chemoradiation. A mild cure for most would need
+    cone or other fertility-sparing surgery to become safe for most small tumors, as the SHAPE trial began
+    to show for simpler surgery, and more cancers found tiny by HPV screening.
+reached:
+  year: 1950
+  basis: 'Approximate: by mid-century radical hysterectomy and radium treatment were standard for cancer
+    confined to the cervix and cured the large majority.'
+  url: https://www.cancerresearchuk.org/about-cancer/cervical-cancer/survival

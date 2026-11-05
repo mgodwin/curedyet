@@ -3,8 +3,8 @@ id: sma
 name: Spinal muscular atrophy
 category: genetic
 tracking: active
-summary: An inherited disease where loss of the SMN1 gene kills motor nerve cells, causing muscle weakness
-  and, in severe forms, infant death.
+summary: An inherited disease where loss of the SMN1 gene causes motor nerve cells to die, leading to
+  muscle weakness and, in severe forms, death in infancy.
 toll:
   text: About 1 in 7,000-10,000 births (US/Europe); the leading genetic cause of infant death before modern
     treatment.
@@ -16,11 +16,12 @@ toll:
 status:
   level: 3
   why: Infants found by newborn screening and treated before symptoms, often with one-time Zolgensma,
-    can reach near-normal motor milestones, but patients treated after symptoms keep lasting deficits.
+    can reach near-normal motor milestones, but people treated after symptoms start keep lasting weakness.
   today: Three disease-modifying therapies (nusinersen, risdiplam, onasemnogene) changed SMA from fatal
     to treatable, and timing matters most. Newborn screening lets many babies be treated before symptoms.
-    Older patients improve or stabilize but stay disabled, and in 2025-26 an intrathecal gene therapy
-    for ages 2+ (Itvisma) and a muscle-targeted add-on (apitegromab) were approved.
+    People treated later improve or stabilize but live with lasting disability, and in 2025-26 an
+    intrathecal gene therapy for ages 2+ (Itvisma) and a muscle-targeted add-on (apitegromab) were
+    approved.
   last_reviewed: null
 treatment:
   best:
@@ -50,8 +51,11 @@ forecast:
     every new case; acceleration helps with cheaper delivery and fixes for older patients, so the lift
     is real but modest.
   outlook: With universal newborn screening and one-time gene therapy, most new cases in rich countries
-    may soon get near-normal lives, which is close to a cure for most. The gap is older patients already
-    damaged and gaps in screening. Level 4 could arrive in the 2030s as screened cohorts grow up. Most people living with SMA today were treated after symptoms, a group unlikely to be cured soon; this forecast assumes people screened and treated before symptoms become most of those living with SMA over the coming decades.
+    may soon get near-normal lives, which is close to a cure for most. The gap is older patients who lost
+    motor nerve cells before treatment and gaps in screening. Level 4 could arrive in the 2030s as
+    screened cohorts grow up. Most people living with SMA today were treated after symptoms, a group
+    unlikely to be cured soon; this forecast assumes people screened and treated before symptoms become
+    most of those living with SMA over the coming decades.
 pipeline:
 - name: Apitegromab (Isembyld)
   stage: Approved 2025-26

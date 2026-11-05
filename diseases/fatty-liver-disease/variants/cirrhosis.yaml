@@ -1,0 +1,29 @@
+# Cure Watch variant record: one stage or type of Fatty liver disease (MASLD/MASH). Field guide: CONTRIBUTING.md.
+id: cirrhosis
+name: MASH cirrhosis
+order: 3
+what: Fatty liver disease that has scarred the liver so much that its structure is distorted (fibrosis
+  stage F4), which can lead to liver failure and liver cancer.
+level: 1
+burden: heavy
+burden_why: Lifelong monitoring with scans and scopes for cancer and bleeding, and for those whose liver
+  fails, a transplant with lifelong immune-suppressing drugs.
+survival: ~30% developed liver failure complications and ~13% died over a median 5.5 years (794 people
+  with compensated MASH cirrhosis, TARGET-NASH)
+treatment: No drug is approved for MASH cirrhosis. Care is weight loss, control of diabetes and other
+  risk factors, and regular checks for liver cancer and swollen veins that can bleed. Liver transplant
+  can cure liver failure for those eligible, but donor livers are scarce and the surgery and lifelong
+  drugs are demanding.
+caveat: Covers compensated and decompensated cirrhosis; outlook is much worse once the liver fails. Small
+  open-label studies of resmetirom and the Phase 2b SYMMETRY trial of efruxifermin suggest scarring can
+  partly reverse, but no controlled trial has yet shown fewer complications or deaths.
+url: https://www.ajmc.com/view/real-world-data-show-mash-progresses-faster-than-trials-suggest
+forecast:
+  median: 2060
+  low: 2040
+  high: 2100
+  p2035: 2
+  p2045: 12
+  note: Needs drugs that reverse cirrhosis and prevent liver failure for most patients, then a way to
+    keep the disease from returning; outcome trials of resmetirom (data guided for 2027) and FGF21 drugs
+    are the first tests, and success there would be control, not cure.

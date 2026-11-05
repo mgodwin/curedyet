@@ -1,0 +1,27 @@
+# Cure Watch variant record: one stage or type of Cervical cancer. Field guide: CONTRIBUTING.md.
+id: stage-iv
+name: Stage IV
+order: 5
+what: The cancer has grown into the bladder or rectum (IVA) or spread to distant organs such as the lungs,
+  liver or bones (IVB).
+level: 1
+burden: heavy
+burden_why: Most women stay on chemotherapy, immunotherapy and later-line drugs indefinitely, with fatigue,
+  nerve damage and immune side effects.
+survival: ~15% alive at 5 years (net survival, England 2013-2017)
+share: About 1 in 6 US cervical cancers (16%) have spread to distant organs at diagnosis (SEER 'distant')
+share_url: https://seer.cancer.gov/statfacts/html/cervix.html
+treatment: Stage IVA is sometimes cured with chemoradiation. Metastatic disease is treated with platinum
+  chemotherapy plus pembrolizumab, with or without bevacizumab, and later tisotumab vedotin, which extend
+  life but rarely cure.
+caveat: The 15% figure mixes IVA, where some are cured, with IVB, where cure is rare.
+url: https://www.cancerresearchuk.org/about-cancer/cervical-cancer/survival
+forecast:
+  median: 2068
+  low: 2045
+  high: 2100
+  p2035: 1
+  p2045: 8
+  note: Immunotherapy has produced some long-lasting responses, but a cure for most metastatic cervical
+    cancer would need drugs that clear widespread disease; newer antibody-drug conjugates such as CT-P73
+    are early and aimed at longer survival.

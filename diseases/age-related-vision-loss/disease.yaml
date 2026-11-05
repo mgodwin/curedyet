@@ -1,0 +1,93 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: age-related-vision-loss
+name: Age-related vision loss
+category: aging
+tracking: active
+summary: The common ways eyesight fades with age, here presbyopia (losing close-up focus) and cataract
+  (a clouding lens); macular degeneration and glaucoma are tracked on their own pages.
+toll:
+  text: About 1.8B people had presbyopia in 2015, 826M of them without adequate glasses (Ophthalmology,
+    2018); cataract causes vision impairment or blindness in 94M people who lack treatment (WHO).
+  url: https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment
+  ratio: "1 in 4"
+  ratio_caption: "people worldwide had presbyopia in 2015"
+  ratio_url: https://pubmed.ncbi.nlm.nih.gov/29753495/
+  ratio_basis: "Fricke et al., Ophthalmology 2018: an estimated 1.8 billion people (25% of the world population) had presbyopia in 2015."
+status:
+  level: 2
+  why: Reading glasses fully correct presbyopia, which nearly everyone gets, but they don't restore the
+    eye's own focusing; cataract surgery cures cataract for about 9 in 10 people.
+  today: Glasses, contact lenses and, since 2021, eye drops that narrow the pupil give clear near vision
+    for presbyopia, but nothing restores natural focusing. Cataract surgery replaces the clouded lens
+    with an implant and improves vision for about 9 in 10 people, in a short same-day operation. Worldwide,
+    about half of people who need cataract surgery can't get it, and cataract remains the leading cause
+    of blindness.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Reading glasses, bifocals or progressive lenses
+  - Multifocal or monovision contact lenses
+  - Presbyopia eye drops (Vuity, Vizz, Yuvezzi)
+  - Cataract surgery with an artificial lens implant
+  burden: light
+  burden_note: For presbyopia, cheap glasses worn as needed with no side effects; cataract surgery is
+    a short same-day operation, then eye drops while it heals, with a small risk of infection or other
+    complications.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 2
+    p2045: 9
+    median: 2060
+    low: 2040
+    high: 2100
+  faster:
+    p2035: 4
+    p2045: 18
+    median: 2052
+    low: 2036
+    high: 2095
+  faster_note: Faster drug design could revive the search for drops that soften the stiffened lens, but
+    the first such drug failed and none is in late trials, so the lift is mostly after 2035.
+  outlook: Cataract is already cured for most by surgery, so the forecast follows presbyopia, which nearly
+    everyone gets. A cure would restore the eye's own focusing, by softening the aging lens or with an
+    implant that truly accommodates. The leading lens-softening drop failed in 2022, and today's drops
+    and lens implants work around the problem rather than fixing it.
+pipeline:
+- name: Yuvezzi (carbachol plus brimonidine, Tenpoint)
+  stage: Approved 2025-26
+  note: FDA-approved January 2026 as the first combination eye drop for presbyopia.
+  url: https://www.thepharmaletter.com/pharma-news/fda-approves-tenpoint-s-yuvezzi
+  variants:
+  - presbyopia
+  effect: small
+  effect_note: Already approved; like other pupil-narrowing drops it sharpens near vision for some hours
+    a day and does not restore focusing.
+- name: Vizz (aceclidine, LENZ Therapeutics)
+  stage: Approved 2025-26
+  note: FDA-approved July 2025; once-daily drop that improved near vision within 30 minutes for up to
+    about 10 hours in trials.
+  url: https://www.biospace.com/press-releases/lenz-therapeutics-announces-us-fda-approval-of-vizz-for-the-treatment-of-presbyopia
+  variants:
+  - presbyopia
+  effect: small
+  effect_note: Already approved; a longer-lasting drop makes glasses optional for more of the day but
+    is ongoing treatment, not a cure.
+recent:
+- date: 2026-01
+  text: FDA approved Yuvezzi, a carbachol and brimonidine combination drop for presbyopia.
+  url: https://www.thepharmaletter.com/pharma-news/fda-approves-tenpoint-s-yuvezzi
+- date: 2025-07
+  text: FDA approved Vizz (aceclidine), a once-daily presbyopia drop lasting up to about 10 hours in
+    trials.
+  url: https://www.biospace.com/press-releases/lenz-therapeutics-announces-us-fda-approval-of-vizz-for-the-treatment-of-presbyopia
+next_milestone:
+  date: '2030'
+  url: https://www.who.int/publications/i/item/9789240058002
+  what: Deadline for the WHO targets of a 30-percentage-point rise in effective cataract surgery coverage
+    and a 40-point rise in effective glasses coverage worldwide.
+ai:
+  impact: low
+  note: No leading candidate to restore focusing or clear cataracts without surgery is known to be AI-discovered;
+    the main gaps are lens biology and access to surgery and glasses.
+markets: []

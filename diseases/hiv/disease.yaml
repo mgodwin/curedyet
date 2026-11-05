@@ -3,7 +3,7 @@ id: hiv
 name: HIV/AIDS
 category: infectious
 tracking: active
-summary: A viral infection that destroys immune cells and, untreated, leads to AIDS.
+summary: A viral infection that attacks immune cells and, untreated, leads to AIDS.
 toll:
   text: 41.0M people living with HIV, 1.2M new infections and 570,000 AIDS-related deaths in 2025 (UNAIDS)
   url: https://www.unaids.org/sites/default/files/2026-07/2026_UNAIDS_Global_HIV_Factsheet_en.pdf
@@ -16,9 +16,9 @@ status:
   why: Antiretroviral therapy gives near-normal life expectancy and stops transmission, but must be taken
     for life; cures have only come from rare stem cell transplants.
   today: Daily pills or long-acting injections keep the virus undetectable, and 32.1M people (78%) were
-    on treatment in 2025. Twice-yearly lenacapavir injections prevent HIV in at least 96% of cases and
-    are rolling out in Africa. Antibody combinations can hold the virus off without drugs for some people
-    in trials, but no cure is ready.
+    on treatment in 2025, so about 1 in 5 people with HIV were not. Twice-yearly lenacapavir injections
+    prevent HIV in at least 96% of cases and are rolling out in Africa. Antibody combinations can hold
+    the virus off without drugs for some people in trials, but no cure is ready.
   last_reviewed: '2026-11-03'
 treatment:
   best:

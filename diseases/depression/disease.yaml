@@ -13,7 +13,7 @@ toll:
   ratio_basis: "NIMH: 8.3% of US adults (21.0 million) had a past-year major depressive episode in 2021; 8.3% is about 1 in 12."
 status:
   level: 2
-  why: Many patients reach remission with therapy and medication, but relapse is common and a sizable
+  why: Many people reach remission with therapy and medication, but relapse is common and a sizable
     minority have treatment-resistant depression.
   today: Psychotherapy and antidepressants work for mild to severe depression, and many people recover
     from an episode. About a third do not respond to two or more drugs; esketamine, augmenting drugs,
@@ -29,7 +29,8 @@ treatment:
   - Transcranial magnetic stimulation
   burden: moderate
   burden_note: Weeks of therapy or months to years of antidepressants with sexual dysfunction, weight
-    gain and withdrawal effects; resistant cases may need ECT with memory loss or frequent TMS sessions.
+    gain and withdrawal effects; people with treatment-resistant depression may need ECT, which can cause
+    memory loss, or frequent TMS sessions.
 forecast:
   bottleneck: biology-limited
   normal:
@@ -46,9 +47,9 @@ forecast:
     high: 2095
   faster_note: Biomarkers and causal biology from AI would matter most because depression is diverse and
     recurrent; the lift is modest since lasting cure needs biology that does not yet exist.
-  outlook: New drugs such as psilocybin and novel add-ons widen the options, especially for treatment-resistant
-    cases. Still, depression is diverse and recurrent, and no therapy offers lasting cure for most patients.
-    A cure for most needs better biology and biomarkers, which look decades away.
+  outlook: New drugs such as psilocybin and novel add-ons widen the options, especially for
+    treatment-resistant cases. Still, depression is diverse and recurrent, and no therapy offers lasting
+    cure for most people. A cure for most needs better biology and biomarkers, which look decades away.
 pipeline:
 - name: COMP360 psilocybin (treatment-resistant depression)
   note: Rolling NDA nearly done as of Nov 2026, with a National Priority Voucher; launch hoped for H1

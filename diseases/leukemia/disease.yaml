@@ -15,11 +15,11 @@ status:
   level: 3
   why: Childhood ALL and APL are cured in most patients and CML is well controlled, but AML in older adults
     and relapsed disease are usually fatal.
-  today: About 90% of children with ALL are cured, and CML patients on tyrosine kinase inhibitors live
+  today: About 90% of children with ALL are cured, and people with CML on tyrosine kinase inhibitors live
     near-normal lives. CLL is controlled for years with BTK inhibitors and venetoclax, now including an
     all-oral fixed-duration regimen. AML remains the hardest, with cure mostly limited to younger fit
-    patients who get intensive chemo or a transplant, though menin and other targeted inhibitors are adding
-    options.
+    patients who get intensive chemo or a transplant, though menin and other targeted inhibitors are
+    adding options.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -46,11 +46,12 @@ forecast:
     low: 2034
     high: 2063
   faster_note: Faster design and testing of menin inhibitors, fixed-duration CLL regimens and cheaper
-    CAR-T could raise cure rates in older AML patients, the main holdout, giving a solid lift since many
-    candidates already exist.
+    CAR-T could raise cure rates in older adults with AML, the hardest group to cure, giving a solid lift
+    since many candidates already exist.
   outlook: 'Leukemia is a mix: some types are already cured for most and others are controlled, so the
     bar hinges on AML and CLL. Menin inhibitors and fixed-duration CLL regimens could raise cure or deep-remission
-    rates, but older AML patients remain the bottleneck. Wider CAR-T and bispecific use in adult ALL is
+    rates, but older adults with AML remain the hardest group to cure. Wider CAR-T and bispecific use in
+    adult ALL is
     a further lever. AML and CLL are each about a third of cases, so cured for most waits on at least one of them, which sets this forecast.'
 pipeline:
 - name: Ziftomenib with 7+3 in new AML (KOMET-007)

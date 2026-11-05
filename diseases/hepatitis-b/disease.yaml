@@ -13,8 +13,8 @@ toll:
   ratio_basis: "Derived: WHO's 240 million living with chronic HBV in 2024 divided by UN world population of 8.2 billion in 2024 (https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/)."
 status:
   level: 3
-  why: Antivirals control most patients for life, and in Oct 2026 the FDA approved bepirovirsen, which
-    gave a functional cure to about 19-26% of an eligible low-HBsAg subgroup.
+  why: Antivirals control the infection for life in most people, and in Oct 2026 the FDA approved
+    bepirovirsen, which gave a functional cure to about 19-26% of an eligible low-HBsAg subgroup.
   today: Daily tenofovir or entecavir suppresses the virus and cuts liver damage, but rarely clears it.
     Bepirovirsen (Hibsago), added to antivirals, now offers a finite-course functional cure for some adults
     with low HBsAg and no cirrhosis. A vaccine prevents infection with near 100% protection, but coverage

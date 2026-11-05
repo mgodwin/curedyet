@@ -14,12 +14,12 @@ toll:
   ratio_basis: "Heart Failure Society of America, HF Stats 2025: lifetime risk of HF has increased to 24%, about 1 in 4."
 status:
   level: 1
-  why: Modern drug combinations slow decline and cut deaths, but most patients still worsen and about
-    half die within five years of diagnosis.
+  why: Modern drug combinations slow decline and cut deaths, but the condition still worsens for most
+    people, and about half die within five years of diagnosis.
   today: For reduced ejection fraction, four drug classes (ARNI, beta blocker, MRA, SGLT2 inhibitor) plus
-    devices extend life a lot. Preserved ejection fraction now has SGLT2 inhibitors, finerenone (FDA approved
-    2025) and GLP-1 drugs in obese patients. Heart transplant or LVAD helps a small number with end-stage
-    disease.
+    devices extend life a lot. Preserved ejection fraction now has SGLT2 inhibitors, finerenone (FDA
+    approved 2025) and GLP-1 drugs in people with obesity. Heart transplant or LVAD helps a small number
+    with end-stage disease.
   last_reviewed: '2026-11-03'
 treatment:
   best:

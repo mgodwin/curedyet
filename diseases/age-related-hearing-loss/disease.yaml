@@ -1,0 +1,114 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: age-related-hearing-loss
+name: Age-related hearing loss
+category: aging
+tracking: active
+summary: 'Presbycusis: the gradual loss of hearing in both ears that comes with age, as sound-sensing
+  hair cells, the nerve fibers they connect to and other parts of the inner ear wear out.'
+toll:
+  text: About 430M people worldwide have disabling hearing loss, and more than 1 in 4 people over 60 (WHO,
+    2026); in the US about 22% of adults aged 65-74 and 55% of those 75 and older have disabling loss
+    (NIDCD).
+  url: https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss
+  ratio: "More than 1 in 2"
+  ratio_caption: "Americans aged 75 and older has disabling hearing loss"
+  ratio_url: https://www.nidcd.nih.gov/health/statistics/quick-statistics-hearing
+  ratio_basis: "NIDCD Quick Statistics About Hearing: about 55% of adults 75 and older have disabling hearing loss (35 dB or more in the better ear)."
+status:
+  level: 2
+  why: Hearing aids, and cochlear implants for severe loss, let most people hear and talk with others
+    well again, but they don't restore natural hearing, especially in noise, and nothing stops or reverses
+    the loss itself.
+  today: Hearing aids make sounds audible again for mild to severe loss, and since October 2022 adults
+    in the US can buy aids for mild to moderate loss over the counter. Cochlear implants bypass damaged
+    hair cells for severe loss. No drug or gene therapy repairs the aging inner ear; the regenerative
+    drug FX-322 failed in 2023, and the first approved hearing gene therapy (2026) is only for a rare
+    inherited form. Hearing loss is linked to higher dementia risk, but the ACHIEVE trial found hearing
+    aids did not slow cognitive decline overall.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Prescription hearing aids
+  - Over-the-counter hearing aids (mild to moderate loss)
+  - Cochlear implants (severe to profound loss)
+  - Hearing assistive devices and captioning
+  burden: moderate
+  burden_note: Aids are worn every day for life and a prescription pair has often cost thousands of dollars
+    in the US, though over-the-counter aids cost less; cochlear implants need surgery and months of listening
+    therapy.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 2
+    p2045: 10
+    median: 2058
+    low: 2040
+    high: 2100
+  faster:
+    p2035: 4
+    p2045: 22
+    median: 2050
+    low: 2036
+    high: 2095
+  faster_note: Faster design could produce better hair-cell and nerve regeneration drugs, but the aging
+    ear loses several cell types at once and hearing trials need months of follow-up, so the lift shows
+    mostly by 2045.
+  outlook: A cure for most would mean restoring natural hearing in an aged inner ear that has lost hair
+    cells, nerve connections and the tissue that powers them. The 2026 gene therapy approval shows the
+    inner ear can be treated, but it replaces one missing gene in an otherwise healthy ear, which presbycusis
+    isn't. Regenerative drugs have failed in mid-stage trials so far, and the current candidates are in
+    first-in-human studies, so better devices are the likely near-term progress.
+pipeline:
+- name: Rincell-1 (Rinri Therapeutics), stem-cell-derived auditory nerve cells
+  stage: Phase 1
+  note: First-in-human Phase 1/2a in 20 adults getting a cochlear implant, about half with presbycusis;
+    cells are placed in the cochlea during implant surgery. UK approval July 2025.
+  url: https://clinicaltrials.gov/study/NCT07032038
+  expected: 2027-04
+  effect: small
+  effect_note: Early safety data from a small trial; even a good signal would only help people already
+    getting implants and is years from approval.
+- name: DX243 (Dendrogenix), oral small molecule for age-related hearing loss
+  stage: Phase 2
+  note: Phase 1/2a placebo-controlled trial in about 24 adults with mild to moderate loss began dosing
+    in May 2026; primary completion estimated October 2027.
+  url: https://clinicaltrials.gov/study/NCT07637981
+  expected: 2027-10
+  effect: small
+  effect_note: A first small test aimed at the biology of presbycusis; a positive result would justify
+    larger trials but would not change the outlook soon.
+- name: Otarmeni (lunsotogene parvec, Regeneron), OTOF gene therapy
+  stage: Approved 2025-26
+  note: FDA accelerated approval April 2026 for severe-to-profound hearing loss from OTOF gene variants,
+    a rare inherited form; 11 of 12 children improved in the CHORD trial.
+  url: https://www.pharmacytimes.com/view/fda-grants-accelerated-approval-to-otarmeni-first-and-only-gene-therapy-for-genetic-hearing-loss
+  effect: small
+  effect_note: Already approved, but not for age-related loss; it matters as proof that gene delivery
+    into the human cochlea can work.
+recent:
+- date: 2026-05
+  text: Dendrogenix began dosing in a placebo-controlled Phase 1/2a trial of DX243 in mild to moderate
+    hearing loss.
+  url: https://www.brusselstimes.com/2169801/potential-drug-developed-by-a-belgian-biotech-can-reverse-age-related-hearing-loss
+- date: 2026-04
+  text: FDA granted accelerated approval to Otarmeni, the first gene therapy for hearing loss, for a rare
+    inherited OTOF form.
+  url: https://www.pharmacytimes.com/view/fda-grants-accelerated-approval-to-otarmeni-first-and-only-gene-therapy-for-genetic-hearing-loss
+- date: 2023-07
+  text: The ACHIEVE trial found hearing aids plus counseling did not slow 3-year cognitive decline overall
+    in adults 70-84, though a higher-risk subgroup declined less.
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10737284/
+- date: 2023-02
+  text: Frequency Therapeutics stopped FX-322, the leading hair-cell regeneration drug, after its Phase
+    2b missed its speech-understanding goal.
+  url: https://www.businesswire.com/news/home/20230213005212/en
+next_milestone:
+  date: 2027-04
+  url: https://clinicaltrials.gov/study/NCT07032038
+  what: Estimated primary completion of the first-in-human Rincell-1 trial of regenerated auditory nerve
+    cells given with a cochlear implant.
+ai:
+  impact: low
+  note: No leading regenerative candidate for age-related hearing loss is known to be AI-discovered; the
+    bottleneck is the biology of repairing several cell types in an aged ear.
+markets: []

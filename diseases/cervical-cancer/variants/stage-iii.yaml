@@ -1,0 +1,38 @@
+# Cure Watch variant record: one stage or type of Cervical cancer. Field guide: CONTRIBUTING.md.
+id: stage-iii
+name: Stage III
+order: 4
+what: The cancer has reached the lower vagina or the pelvic wall, blocked a kidney tube, or spread to
+  lymph nodes in the pelvis or abdomen.
+level: 3
+burden: heavy
+burden_why: Chemoradiation and brachytherapy, often with up to two years of pembrolizumab infusions
+  or induction chemotherapy, with lasting pelvic side effects.
+survival: ~40% alive at 5 years (net survival, England 2013-2017)
+share: Most of the roughly 37% of US cervical cancers diagnosed after spreading to nearby tissue or lymph
+  nodes (SEER 'regional')
+share_url: https://seer.cancer.gov/statfacts/html/cervix.html
+treatment: Chemoradiation with cisplatin and brachytherapy, now often with pembrolizumab during and after
+  it (FDA-approved 2024 after KEYNOTE-A18 improved survival) or induction chemotherapy beforehand. It cures
+  a meaningful share, but many relapse.
+caveat: 'Rated 3: more than 40% survive 5 years in England (2013-2017), well below 85%. The 2018 FIGO system
+  moved women with positive lymph nodes into stage III, so newer stage III groups do better than these
+  older figures, and recent drug gains are not yet reflected.'
+url: https://www.cancerresearchuk.org/about-cancer/cervical-cancer/survival
+forecast:
+  median: 2058
+  low: 2040
+  high: 2100
+  p2035: 3
+  p2045: 18
+  note: Pembrolizumab and induction chemotherapy each add only a few points, so reaching 85% needs much
+    better ways to stop relapse after chemoradiation. Candidates include PD-1/CTLA-4 drugs such as volrustomig
+    (eVOLVE-Cervical) and antibody-drug conjugates moving earlier in treatment.
+easy:
+  median: 2080
+  low: 2050
+  high: 2100
+  p2035: 1
+  p2045: 3
+  note: A mild cure would need drugs that replace chemoradiation for bulky pelvic disease, which no current
+    candidate approaches.

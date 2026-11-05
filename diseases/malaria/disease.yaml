@@ -3,8 +3,8 @@ id: malaria
 name: Malaria
 category: infectious
 tracking: active
-summary: A mosquito-borne parasite infection that causes fever and can kill, mostly young children in
-  Africa.
+summary: A mosquito-borne parasite infection that causes fever and can be fatal, especially for young
+  children in Africa.
 toll:
   text: About 282 million cases and 610,000 deaths in 2024 (WHO World Malaria Report 2025)
   url: https://www.who.int/teams/global-malaria-programme/reports/world-malaria-report-2025
@@ -14,7 +14,8 @@ toll:
   ratio_basis: "Derived: WHO's 282 million malaria cases in 2024 divided by UN world population of 8.2 billion (https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/). Cases, not people. Alternative: WHO says children under 5 are about 3 in 4 malaria deaths in Africa."
 status:
   level: 4
-  why: Artemisinin combination therapies cure most uncomplicated cases in 3 days when given promptly.
+  why: Artemisinin combination therapies cure most uncomplicated cases in 3 days when given promptly,
+    yet about 610,000 people still died of malaria in 2024, most of them young children in Africa.
   today: ACTs cure about 94-97% of uncomplicated cases, and IV artesunate treats severe malaria. Two vaccines
     (RTS,S and R21) are in 25 African countries, and 47 countries are certified malaria-free. Artemisinin
     partial resistance in at least 8 African countries and funding gaps threaten progress.

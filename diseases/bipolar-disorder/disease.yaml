@@ -1,0 +1,111 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: bipolar-disorder
+name: Bipolar disorder
+category: mental
+tracking: active
+summary: A long-term mood condition with episodes of mania or hypomania (high energy, elevated or irritable
+  mood) and episodes of depression, with more stable periods in between.
+toll:
+  text: About 36 million people worldwide were living with bipolar disorder in 2023, about 0.4% of people
+    (WHO).
+  url: https://www.who.int/news-room/fact-sheets/detail/bipolar-disorder
+  ratio: "About 1 in 23"
+  ratio_caption: "US adults will have bipolar disorder at some point in their life"
+  ratio_url: https://www.nimh.nih.gov/health/statistics/bipolar-disorder
+  ratio_basis: "NIMH, from the National Comorbidity Survey Replication (2001-2003): lifetime prevalence of 4.4% among US adults; about 1 in 23. The survey counts bipolar I, bipolar II and milder subthreshold forms together."
+status:
+  level: 2
+  why: Mood stabilisers such as lithium, with therapy, let many people live full lives and cut relapses,
+    but the condition is lifelong and episodes often return even on treatment.
+  today: Lithium, other mood stabilisers and some antipsychotics treat mania and depression and lower
+    the chance of new episodes, and psychoeducation and talking therapies help people spot early signs
+    and stay well. Even so, about half of people who recovered had another episode within two years in
+    a large US study, and people with bipolar disorder die on average 13 years earlier than others. WHO says treatment coverage is low, especially in low- and middle-income
+    countries.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Lithium
+  - Other mood stabilisers (valproate, lamotrigine)
+  - Antipsychotics for mania and bipolar depression (e.g. lumateperone)
+  - Psychoeducation, CBT and family psychoeducation
+  - Regular sleep and routine, mood monitoring
+  burden: moderate
+  burden_note: Usually lifelong daily medicine; lithium needs regular blood tests because the safe and
+    toxic levels are close, and long-term use can affect the thyroid and kidneys, while some medicines
+    are not safe in pregnancy.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 2
+    p2045: 8
+    median: 2066
+    low: 2045
+    high: 2100
+  faster:
+    p2035: 4
+    p2045: 20
+    median: 2055
+    low: 2040
+    high: 2100
+  faster_note: The biology of mood switching is poorly understood and lithium's own mechanism is unclear,
+    so AI-found causes and biomarkers would matter most; proving that episodes stop for good takes many
+    years of follow-up, which limits the lift before 2045.
+  outlook: New drugs for mania and bipolar depression keep arriving, but they are more ways to control
+    episodes, not to stop the condition. A cure for most would mean people staying well for years without
+    ongoing treatment, and nothing in trials aims at that. Expect better control and fewer side effects,
+    with a cure decades away.
+pipeline:
+- name: Xanomeline-trospium (Cobenfy) as add-on for bipolar I mania
+  stage: Phase 3
+  note: Bristol Myers Squibb trial of about 424 people already taking lithium, valproate or lamotrigine;
+    estimated primary completion June 2027.
+  url: https://clinicaltrials.gov/study/NCT07140913
+  expected: 2027-06
+  effect: small
+  effect_note: A win would add the first muscarinic drug option for mania, improving control rather than
+    changing the long-term course.
+- name: Lumateperone (Caplyta) for bipolar I mania
+  stage: Phase 3
+  note: Study 451 met its goal in Sept 2026 (45.8% vs 20.9% response at 3 weeks); a second pivotal study
+    is complete with analysis under way. Already approved for bipolar depression.
+  url: https://www.jnj.com/media-center/press-releases/caplyta-lumateperone-shows-significant-and-rapid-improvement-in-bipolar-mania-in-pivotal-phase-3-study
+  effect: small
+  effect_note: It would let one drug cover both mania and depression (dry mouth and nausea were the
+    most common side effects), but it is still ongoing control.
+- name: RAP-219 (Rapport Therapeutics)
+  stage: Phase 2
+  note: Beat placebo by 3.1 points on a mania scale at week 3 in a 253-person trial (Oct 2026); two Phase
+    3 trials planned to start in H2 2027.
+  url: https://www.psychiatrictimes.com/view/positive-topline-results-from-phase-2-trial-of-rap-219-for-the-treatment-of-bipolar-mania
+  effect: small
+  effect_note: A new mechanism for mania with low sleepiness so far, but the effect was modest and Phase
+    3 is years from results.
+- name: Milsaperidone (Bysanti)
+  stage: Approved 2025-26
+  note: FDA approved Feb 2026 for acute manic or mixed episodes in bipolar I and for schizophrenia, based
+    on bioequivalence to iloperidone.
+  url: https://www.hcplive.com/view/fda-approves-milsaperidone-acute-bipolar-i-disorder-schizophrenia
+  effect: small
+  effect_note: Already approved; it adds another antipsychotic option for mania rather than a new way
+    to prevent episodes.
+recent:
+- date: 2026-10
+  text: Rapport's RAP-219 beat placebo in a Phase 2 trial in bipolar mania.
+  url: https://www.psychiatrictimes.com/view/positive-topline-results-from-phase-2-trial-of-rap-219-for-the-treatment-of-bipolar-mania
+- date: 2026-09
+  text: Lumateperone (Caplyta) eased mania from day 3 in a pivotal Phase 3 trial in bipolar I disorder.
+  url: https://www.jnj.com/media-center/press-releases/caplyta-lumateperone-shows-significant-and-rapid-improvement-in-bipolar-mania-in-pivotal-phase-3-study
+- date: 2026-02
+  text: FDA approved milsaperidone (Bysanti) for manic or mixed episodes in bipolar I disorder.
+  url: https://www.hcplive.com/view/fda-approves-milsaperidone-acute-bipolar-i-disorder-schizophrenia
+next_milestone:
+  date: 2027-06
+  url: https://clinicaltrials.gov/study/NCT07140913
+  what: Estimated primary completion of the Phase 3 trial of add-on xanomeline-trospium (Cobenfy) for
+    bipolar I mania.
+ai:
+  impact: low
+  note: 'Unclear: no AI-discovered drug for bipolar disorder is known to be in late-stage trials, and
+    the newest options came from conventional discovery.'
+markets: []

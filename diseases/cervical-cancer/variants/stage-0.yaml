@@ -1,0 +1,30 @@
+# Cure Watch variant record: one stage or type of Cervical cancer. Field guide: CONTRIBUTING.md.
+id: stage-0
+name: Stage 0 (precancer)
+order: 1
+what: Severely abnormal cells (CIN3, or adenocarcinoma in situ) on the surface of the cervix that have
+  not invaded deeper tissue, usually found by screening.
+level: 4
+burden: light
+burden_why: Usually a single outpatient loop excision (LEEP) or cone under local anaesthetic, taking minutes,
+  though it can slightly raise the risk of preterm birth in later pregnancies.
+survival: ~94% free of recurrence 5 years after treatment for CIN3 (~91% for adenocarcinoma in situ);
+  most recurrences are treated again before cancer develops
+url: https://doi.org/10.1097/LGT.0000000000000542
+treatment: Removing the abnormal area with a wire loop (LEEP), a cone biopsy or laser, or destroying it
+  with cold or heat, stops it from becoming cancer in nearly all women. Follow-up HPV tests catch the few
+  that come back, which are treated again.
+caveat: Current FIGO staging no longer has a stage 0, but it is included because treating precancer is
+  how screening prevents most cervical cancers. The recurrence figures come from a population cohort of
+  over 15,000 treated women in Ontario. Women treated for CIN3 keep a somewhat higher risk of cervical
+  cancer for decades, so long-term screening matters.
+reached:
+  year: 1975
+  basis: 'Approximate: by the 1970s colposcopy-guided cone biopsy, cryotherapy and laser treatment of CIN3
+    were standard and stopped most precancers becoming cancer, though cone biopsy then usually meant a
+    hospital stay.'
+reached_easy:
+  year: 1990
+  basis: 'Approximate: the loop electrosurgical excision procedure (LEEP), done in a clinic under local
+    anaesthetic, spread from about 1990 and became the usual treatment.'
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10863218/

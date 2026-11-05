@@ -3,7 +3,7 @@ id: prion-disease
 name: Prion disease (CJD)
 category: outbreaks
 tracking: active
-summary: Fatal brain diseases caused by misfolded prion protein, including sporadic, genetic and acquired
+summary: Brain diseases caused by misfolded prion protein, including sporadic, genetic and acquired
   Creutzfeldt-Jakob disease.
 toll:
   text: About 1-2 cases per million people per year worldwide (roughly 85% sporadic, 5-15% genetic, under
@@ -16,9 +16,9 @@ toll:
 status:
   level: 0
   why: CDC says CJD is always fatal and no therapy slows it; care is supportive only.
-  today: All forms of CJD, sporadic, genetic and acquired (iatrogenic or variant), are fatal, and treatment
-    is comfort care. Acquired cases are prevented by instrument sterilization, blood and tissue safeguards
-    and BSE controls. The main hope is lowering prion protein (PrP) with antisense or siRNA drugs, which
+  today: For all forms of CJD, sporadic, genetic and acquired (iatrogenic or variant), care focuses on
+    comfort. Acquired cases are prevented by instrument sterilization, blood and tissue safeguards and
+    BSE controls. The main hope is lowering prion protein (PrP) with antisense or siRNA drugs, which
     extended survival in mice and is now in early human trials in symptomatic patients, with prevention
     trials planned for genetic carriers.
   last_reviewed: '2026-11-03'
@@ -46,9 +46,9 @@ forecast:
   faster_note: PrP-lowering drugs are in human trials, so biomarker-based approval and faster trials would
     help most; the lift stays modest because sporadic CJD is diagnosed late after rapid brain damage.
   outlook: PrP lowering is a strong idea and may prevent genetic prion disease in carriers within 10-15
-    years. Curing patients who already have symptoms is much harder because sporadic CJD destroys the
-    brain within months and is usually diagnosed late. Expect slowing or prevention for a subset well
-    before a cure for most.
+    years. Curing patients who already have symptoms is much harder because sporadic CJD damages the
+    brain very quickly, within months, and is usually diagnosed late. Expect slowing or prevention for a
+    subset well before a cure for most.
 pipeline:
 - name: PrP-lowering divalent siRNA 2439-s4 (Broad Institute / UMass)
   note: Single-dose trial (NCT07444580) of about 15 symptomatic patients at 50-200 mg began recruiting

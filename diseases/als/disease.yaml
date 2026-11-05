@@ -3,8 +3,8 @@ id: als
 name: ALS
 category: neuro
 tracking: active
-summary: Amyotrophic lateral sclerosis, a fatal disease that destroys motor neurons and causes progressive
-  paralysis.
+summary: Amyotrophic lateral sclerosis, a fatal disease in which motor neurons gradually die, causing
+  progressive paralysis.
 toll:
   text: About 1.9 new cases per 100,000 people per year worldwide; median survival about 2-4 years from
     onset (published estimates).
@@ -15,12 +15,12 @@ toll:
   ratio_basis: "Lifetime risk of about 1 in 400, stated in Turnbull, 'Platform Trials in ALS', JAMA 2025 editorial."
 status:
   level: 1
-  why: Riluzole, edaravone and tofersen modestly slow decline in some patients, but ALS still progresses
+  why: Riluzole, edaravone and tofersen modestly slow decline for some people, but ALS still progresses
     and is fatal.
-  today: Riluzole adds a few months of survival and edaravone slows function loss in a subset of early
-    patients. Tofersen (Qalsody) lowers toxic SOD1 protein and helps the roughly 2% of patients with SOD1
-    mutations. Ventilation and multidisciplinary care extend life, but most patients die within a few
-    years.
+  today: Riluzole adds a few months of survival and edaravone slows function loss for some people treated
+    early. Tofersen (Qalsody) lowers toxic SOD1 protein and helps the roughly 2% of people with ALS who
+    have SOD1 mutations. Ventilation and multidisciplinary care extend life, but for most people the
+    disease is still fatal within a few years.
   last_reviewed: null
 treatment:
   best:
@@ -48,9 +48,9 @@ forecast:
     high: 2090
   faster_note: AI that finds causal targets for sporadic TDP-43 ALS would be the key change, since gene-targeted
     drugs already work for rare forms; the 2045 lift is large but 2035 stays low.
-  outlook: Gene-targeted antisense drugs now work for rare genetic forms (SOD1, FUS), which together cover
-    only a few percent of patients. Most ALS is sporadic and TDP-43 driven, and no therapy yet clearly
-    slows it. Expect more subset successes, not a cure for most, by 2035.
+  outlook: Gene-targeted antisense drugs now work for rare genetic forms (SOD1, FUS), which together
+    cover only a few percent of people with ALS. Most ALS is sporadic and TDP-43 driven, and no therapy
+    yet clearly slows it. Expect more subset successes, not a cure for most, by 2035.
 pipeline:
 - name: Ulefnersen (ION363, Ionis/Otsuka) for FUS-ALS
   note: FUSION met its primary endpoint (p=0.0005) in Sept 2026; FDA talks on expedited filing planned.

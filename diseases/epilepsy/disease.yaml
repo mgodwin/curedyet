@@ -18,8 +18,8 @@ status:
     treatment and about a third have drug-resistant epilepsy.
   today: Most patients control seizures with one or two antiseizure medicines taken every day. Surgery
     can stop seizures for some people with drug-resistant focal epilepsy, and devices such as responsive
-    neurostimulation reduce seizures for others. In low-income countries about three quarters of patients
-    do not get the treatment they need.
+    neurostimulation reduce seizures for others. In low-income countries about three quarters of people
+    with epilepsy do not get the treatment they need.
   last_reviewed: '2026-11-03'
 treatment:
   best:
@@ -30,7 +30,8 @@ treatment:
   - Ketogenic diet therapy
   burden: moderate
   burden_note: Usually lifelong daily antiseizure pills with dizziness, fatigue, mood changes or rare
-    serious rashes, plus birth defect concerns with some drugs; surgery helps select drug-resistant patients.
+    serious rashes, plus birth defect concerns with some drugs; surgery helps some people with
+    drug-resistant epilepsy.
 forecast:
   bottleneck: biology-limited
   normal:

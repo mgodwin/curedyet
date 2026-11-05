@@ -3,7 +3,7 @@ id: macular-degeneration
 name: Macular degeneration
 category: other
 tracking: active
-summary: Age-related damage to the central retina that blurs and destroys central vision.
+summary: Age-related damage to the central retina that blurs central vision and can take it away.
 toll:
   text: AMD causes vision impairment or blindness in about 8M people worldwide (WHO).
   url: https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment
@@ -15,9 +15,9 @@ status:
   level: 1
   why: Wet AMD is well controlled by repeated eye injections, but the more common dry form only has drugs
     that modestly slow geographic atrophy.
-  today: Anti-VEGF injections (aflibercept, ranibizumab, faricimab) preserve vision for most wet AMD patients
-    but need injections every 1-4 months for life. For geographic atrophy, pegcetacoplan and avacincaptad
-    slow lesion growth about 20% without clear vision benefit. Nothing restores lost vision.
+  today: Anti-VEGF injections (aflibercept, ranibizumab, faricimab) preserve vision for most people with
+    wet AMD but need injections every 1-4 months for life. For geographic atrophy, pegcetacoplan and
+    avacincaptad slow lesion growth about 20% without clear vision benefit. Nothing restores lost vision.
   last_reviewed: null
 treatment:
   best:

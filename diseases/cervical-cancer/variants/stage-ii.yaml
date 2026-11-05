@@ -1,0 +1,35 @@
+# Cure Watch variant record: one stage or type of Cervical cancer. Field guide: CONTRIBUTING.md.
+id: stage-ii
+name: Stage II
+order: 3
+what: The cancer has spread beyond the cervix into the upper vagina or the tissue beside the womb, but
+  not to the pelvic wall or lymph nodes.
+level: 3
+burden: heavy
+burden_why: About six weeks of daily radiation with weekly cisplatin, then internal radiation (brachytherapy),
+  which ends fertility and can cause lasting bowel, bladder and vaginal side effects.
+survival: ~70% alive at 5 years (net survival, England 2013-2017)
+treatment: Most get chemoradiation with cisplatin followed by brachytherapy; some small stage IIA tumors
+  are treated with surgery. The INTERLACE trial found that six weeks of carboplatin and paclitaxel before
+  chemoradiation raised 5-year survival in locally advanced disease to 80% from 72%.
+caveat: 'Rated 3: about 70% survive 5 years in England, below 85%. These figures predate INTERLACE and
+  pembrolizumab; with them stage II may now sit closer to 80%, but no stage-specific long-term data confirm
+  it yet.'
+url: https://www.cancerresearchuk.org/about-cancer/cervical-cancer/survival
+forecast:
+  median: 2045
+  low: 2033
+  high: 2080
+  p2035: 12
+  p2045: 50
+  note: Induction chemotherapy and immunotherapy have each added several points of survival to chemoradiation
+    in locally advanced disease, so stage II may be within reach of 85%. Long-term data confirming that
+    for stage II specifically, or another gain from trials such as eVOLVE-Cervical, would be needed.
+easy:
+  median: 2075
+  low: 2048
+  high: 2100
+  p2035: 1
+  p2045: 5
+  note: The cure today is chemoradiation and brachytherapy, with lasting effects on fertility, bowel, bladder
+    and sex; a mild cure would need drugs that replace radiation, which is far off.

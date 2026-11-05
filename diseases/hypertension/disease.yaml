@@ -1,0 +1,119 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: hypertension
+name: High blood pressure
+category: cardio
+tracking: active
+summary: Blood pressure that stays too high, usually without symptoms, raising the risk of heart attack,
+  stroke, heart failure and kidney disease.
+toll:
+  text: About 1.4 billion adults aged 30-79 had high blood pressure in 2024, and only 320 million (23%)
+    had it under control; uncontrolled high blood pressure is linked to more than 10 million deaths a year
+    (WHO, 2025).
+  url: https://www.who.int/news/item/23-09-2025-uncontrolled-high-blood-pressure-puts-over-a-billion-people-at-risk
+  ratio: "About 1 in 3"
+  ratio_caption: "adults aged 30-79 worldwide has high blood pressure"
+  ratio_url: https://www.who.int/news-room/fact-sheets/detail/hypertension
+  ratio_basis: "WHO hypertension fact sheet (Sep 2025): 1.4 billion adults aged 30-79 in 2024, or 33% of that age group."
+status:
+  level: 2
+  why: Cheap daily pills bring blood pressure down and sharply cut heart attacks and strokes, but they
+    must usually be taken for life, and only about 1 in 4 people with it worldwide is controlled.
+  today: Lifestyle changes plus one to three generic pills (such as ACE inhibitors or ARBs, calcium channel
+    blockers and thiazide diuretics) control most people who take them. For blood pressure that stays
+    high, there is spironolactone, the new aldosterone synthase inhibitor baxdrostat (FDA-approved May
+    2026), and renal denervation, a catheter procedure that lowers pressure modestly. About 1 in 10 cases
+    has an identifiable cause, and removing it can cure some of them.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - ACE inhibitors or ARBs
+  - Calcium channel blockers
+  - Thiazide-type diuretics
+  - Spironolactone or baxdrostat (Baxfendy) for resistant cases
+  - Renal denervation (selected patients)
+  burden: moderate
+  burden_note: Daily generic pills for life, usually cheap and well tolerated, with side effects such as
+    cough, ankle swelling or potassium changes and regular blood pressure and blood checks.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 2
+    p2045: 8
+    median: 2068
+    low: 2045
+    high: 2100
+  faster:
+    p2035: 4
+    p2045: 18
+    median: 2055
+    low: 2038
+    high: 2100
+  faster_note: Faster discovery of the causes of common high blood pressure and of one-time gene-silencing
+    or editing treatments could open a route to cure, but proving such treatments safe for decades in
+    healthy-feeling people would still take long trials.
+  outlook: Control is getting easier, with twice-yearly injections such as zilebesiran in outcome trials
+    and new drug classes for resistant cases. A cure for most would need a one-time treatment that resets
+    blood pressure for life, and common high blood pressure has many small causes rather than one target.
+    The larger gap today is access, since three in four people with it worldwide are not controlled.
+pipeline:
+- name: Lorundrostat (Mineralys, aldosterone synthase inhibitor)
+  stage: Filed
+  note: FDA decision due Dec 22, 2026, as an add-on for blood pressure not controlled on other drugs.
+  url: https://www.barchart.com/story/news/1752148/mineralys-therapeutics-reports-first-quarter-2026-financial-results-and-provides-corporate-update
+  variants:
+  - primary
+  expected: '2026-12-22'
+  effect: small
+  effect_note: Approval would add a second drug of the baxdrostat class for hard-to-control blood pressure,
+    improving control without curing it.
+- name: Zilebesiran (Alnylam/Roche, twice-yearly siRNA injection)
+  stage: Phase 3
+  note: ZENITH outcomes trial in about 11,000 people with uncontrolled blood pressure and high heart risk
+    began enrolling in 2025-26; earlier KARDIA-3 missed its main goal.
+  url: https://www.businesswire.com/news/home/20250830170505/en/Genentech-and-Alnylam-Advance-Zilebesiran-Into-Global-Phase-III-Cardiovascular-Outcomes-Trial-for-People-With-Uncontrolled-Hypertension/
+  variants:
+  - primary
+  effect: some
+  effect_note: A win would make control a shot every six months instead of daily pills, a big gain for
+    people who miss doses, but still lifelong control rather than cure.
+- name: Baxdrostat (Baxfendy, AstraZeneca)
+  stage: Approved 2025-26
+  note: FDA approved May 2026 for blood pressure not controlled on other drugs; cut systolic pressure about
+    9-10 mmHg more than placebo in BaxHTN.
+  url: https://www.tctmd.com/news/fda-approves-baxdrostat-inadequately-controlled-hypertension
+  variants:
+  - primary
+  - secondary
+  effect: small
+  effect_note: A new option for resistant blood pressure that improves control without curing it.
+- name: Renal denervation (Symplicity Spyral, Paradise)
+  stage: Approved 2025-26
+  note: FDA-approved Nov 2023; Medicare national coverage finalised Oct 2025; lowers daytime systolic pressure
+    about 6 mmHg more than a sham procedure.
+  url: https://citoday.com/news/cms-finalizes-national-coverage-determination-for-renal-denervation-systems-1
+  variants:
+  - primary
+  effect: small
+  effect_note: A one-time procedure that lowers pressure modestly for some people, but most still need
+    pills afterwards.
+recent:
+- date: 2026-05
+  text: FDA approved baxdrostat, the first aldosterone synthase inhibitor, for blood pressure not controlled
+    on other drugs.
+  url: https://www.tctmd.com/news/fda-approves-baxdrostat-inadequately-controlled-hypertension
+- date: 2025-10
+  text: Medicare finalised national coverage for renal denervation for uncontrolled high blood pressure.
+  url: https://citoday.com/news/cms-finalizes-national-coverage-determination-for-renal-denervation-systems-1
+- date: 2025-09
+  text: WHO's second global hypertension report found only 23% of 1.4 billion adults with high blood pressure
+    had it controlled.
+  url: https://www.who.int/news/item/23-09-2025-uncontrolled-high-blood-pressure-puts-over-a-billion-people-at-risk
+next_milestone:
+  date: '2026-12-22'
+  what: FDA decision on lorundrostat for blood pressure not controlled on other drugs.
+  url: https://www.barchart.com/story/news/1752148/mineralys-therapeutics-reports-first-quarter-2026-financial-results-and-provides-corporate-update
+ai:
+  impact: low
+  note: 'Unclear: the newest drugs (aldosterone synthase inhibitors, siRNA) came from conventional target
+    biology; AI is mainly being tested for spotting hypertension and its causes from ECGs and health records.'
+markets: []

@@ -1,0 +1,169 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: fatty-liver-disease
+name: Fatty liver disease (MASLD/MASH)
+category: metabolic
+tracking: active
+summary: A build-up of fat in the liver linked to excess weight, type 2 diabetes and other metabolic
+  problems, which in some people inflames and scars the liver (MASH) and can lead to cirrhosis.
+toll:
+  text: About 38% of adults worldwide have fatty liver disease by 2016-2019 data, and it is rising with
+    obesity and diabetes; about 32% of US adults (NHANES 2017-2023).
+  url: https://pmc.ncbi.nlm.nih.gov/articles/11925440
+  ratio: "About 1 in 3"
+  ratio_caption: "US adults has fatty liver disease linked to metabolic risk factors (MASLD)"
+  ratio_url: https://pubmed.ncbi.nlm.nih.gov/39610192/
+  ratio_basis: "Clin Mol Hepatol 2025, NHANES 2017-2023: age-adjusted MASLD prevalence of 31.9% among US adults; about 1 in 3. Estimates range from about 24% (NIDDK) to 42% depending on method and definition."
+status:
+  level: 2
+  why: Most people have simple liver fat that rarely causes harm and can reverse with weight loss, and
+    two drugs now treat MASH with scarring, but most need ongoing treatment and cirrhosis has no approved
+    drug.
+  today: Weight loss is the core treatment; losing 10% or more of body weight clears liver inflammation
+    for most who manage it, and bariatric surgery does so for most who have it. For MASH with moderate
+    to advanced scarring, resmetirom (Rezdiffra, 2024) and semaglutide (Wegovy, 2025) have accelerated
+    approval in the US, and resmetirom in the EU, but they clear MASH in only a quarter to two-thirds
+    of patients and are taken indefinitely. Neither is approved for cirrhosis, where transplant is the
+    last resort, and outside rich countries the new drugs are largely unavailable.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Weight loss through diet and exercise
+  - Semaglutide (Wegovy) for MASH with F2-F3 fibrosis
+  - Resmetirom (Rezdiffra) for MASH with F2-F3 fibrosis
+  - Bariatric surgery
+  - Liver transplant for decompensated cirrhosis
+  burden: moderate
+  burden_note: Lasting weight loss is hard to sustain; the two MASH drugs are taken indefinitely with
+    nausea and other GI effects and cost hundreds to thousands of dollars a month out of pocket, while
+    surgery and transplant are heavy, one-time options for a minority.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 5
+    p2045: 20
+    median: 2053
+    low: 2037
+    high: 2095
+  faster:
+    p2035: 9
+    p2045: 36
+    median: 2045
+    low: 2034
+    high: 2085
+  faster_note: Faster discovery and trials of drugs that reverse scarring (FGF21 analogs, combinations
+    with GLP-1 drugs) and of ways to keep weight off after treatment stops would matter most; outcome
+    trials take years, so the lift shows mostly after 2035.
+  outlook: Drugs for MASH are arriving quickly, with two approved and several FGF21 and incretin drugs
+    in Phase 3, so control of the scarring stage should keep improving. A cure for most would mean fat,
+    inflammation and scarring gone and staying gone without lifelong drugs, which today only large, lasting
+    weight loss achieves. Cirrhosis remains the hardest stage and depends on outcome trials due from 2027.
+pipeline:
+- name: Lanifibranor (Inventiva, pan-PPAR agonist)
+  stage: Phase 3
+  note: NATiV3 (1,009 patients with F2-F3 MASH) finished its last 72-week visit; topline due Q4 2026,
+    with filing for accelerated approval targeted for H1 2027.
+  url: https://www.marketbeat.com/instant-alerts/transcript-inventiva-q2-earnings-call-highlights-2026-09-28/
+  variants:
+  - mash
+  expected: 2026-12
+  effect: small
+  effect_note: A win would add a third daily option for MASH with scarring, but like the approved drugs
+    it would likely be taken indefinitely and help only part of patients.
+- name: Efruxifermin (Novo Nordisk, FGF21 analog)
+  stage: Phase 3
+  note: Reversed cirrhosis versus placebo at 96 weeks in the Phase 2b SYMMETRY trial; the Phase 3 SYNCHRONY
+    Histology biopsy readout in F2-F3 MASH is due in H1 2027, with a separate cirrhosis outcomes trial.
+  url: https://www.biospace.com/business/novo-strikes-up-to-5-2b-deal-for-akero-in-red-hot-mash-space
+  variants:
+  - mash
+  - cirrhosis
+  expected: '2027'
+  effect: some
+  effect_note: Positive Phase 3 biopsy results would point to a drug that undoes scarring, not just slows
+    it, which matters most for people heading toward cirrhosis.
+- name: Resmetirom (Rezdiffra) in compensated cirrhosis
+  stage: Phase 3
+  note: MAESTRO-NASH OUTCOMES, an event-driven trial of 845 patients with compensated MASH cirrhosis,
+    is fully enrolled; Madrigal has guided to data in 2027.
+  url: https://www.sec.gov/Archives/edgar/data/1157601/000119312525035787/d924231dex991.htm
+  variants:
+  - cirrhosis
+  expected: '2027'
+  effect: some
+  effect_note: If it cuts liver failure, cancer and death, it would be the first drug proven to change
+    outcomes in MASH cirrhosis, though as an ongoing pill rather than a cure.
+- name: Pegozafermin (Roche, FGF21 analog)
+  stage: Phase 3
+  note: ENLIGHTEN-Fibrosis (about 1,000 F2-F3 patients, 52-week biopsy endpoints) and ENLIGHTEN-Cirrhosis
+    are under way; Roche bought 89bio in 2025.
+  url: https://www.biospace.com/business/how-akeros-mash-success-drove-roches-3-5b-takeout-of-89bio
+  variants:
+  - mash
+  - cirrhosis
+  effect: some
+  effect_note: A second FGF21 drug with strong results would confirm the class can reverse scarring and
+    widen access.
+- name: Survodutide (Boehringer Ingelheim, GLP-1/glucagon agonist)
+  stage: Phase 3
+  note: LIVERAGE tests biopsy and outcome endpoints in F2-F3 MASH, with a separate cirrhosis trial running
+    to about 2029; it cut liver fat in the Phase 3 SYNCHRONIZE-MASLD trial (2026).
+  url: https://clinicaltrials.gov/study/NCT06632444
+  variants:
+  - masld
+  - mash
+  - cirrhosis
+  effect: small
+  effect_note: It would add a stronger weight-loss drug aimed at the liver, improving control rather
+    than giving a cure that lasts off treatment.
+- name: Efinopegdutide (Merck, GLP-1/glucagon agonist)
+  stage: Phase 2
+  note: In a Phase 2b biopsy trial presented at AASLD in November 2026, the 7 mg dose resolved MASH in
+    63% versus 13% on placebo.
+  url: https://endpoints.news/aasld26-merck-unwraps-mash-biopsy-data-for-drug-it-got-from-south-koreas-hanmi/
+  variants:
+  - mash
+  effect: small
+  effect_note: Strong early resolution rates, but Phase 3 and outcome data are years away.
+- name: Semaglutide (Wegovy) for MASH
+  stage: Approved 2025-26
+  note: FDA accelerated approval Aug 2025 for F2-F3 MASH; MASH resolved in about 63% vs 34% on placebo
+    at 72 weeks in ESSENCE, with outcome results due in 2029.
+  url: https://www.ajmc.com/view/fda-approves-semaglutide-for-mash-with-fibrosis
+  variants:
+  - mash
+  effect: small
+  effect_note: Already approved; it treats the liver and weight together but must be continued.
+- name: Resmetirom (Rezdiffra) for MASH
+  stage: Approved
+  note: First MASH drug, FDA accelerated approval March 2024 and EU conditional approval August 2025;
+    MASH resolved in 26-30% vs 10% on placebo at 52 weeks.
+  url: https://www.ema.europa.eu/en/medicines/human/EPAR/rezdiffra
+  variants:
+  - mash
+  effect: small
+  effect_note: Already approved; a daily pill that helps a minority beyond placebo and must be continued.
+recent:
+- date: 2026-11
+  text: Merck's efinopegdutide resolved MASH in 63% of patients versus 13% on placebo in a Phase 2b biopsy
+    trial.
+  url: https://endpoints.news/aasld26-merck-unwraps-mash-biopsy-data-for-drug-it-got-from-south-koreas-hanmi/
+- date: 2026-07
+  text: A real-world study of 794 people with compensated MASH cirrhosis found about 30% developed liver
+    failure complications and 13% died over a median 5.5 years.
+  url: https://www.ajmc.com/view/real-world-data-show-mash-progresses-faster-than-trials-suggest
+- date: 2025-12
+  text: FDA qualified PathAI's AIM-MASH, an AI tool that scores liver biopsies, for use in MASH drug trials.
+  url: https://www.healio.com/news/gastroenterology/20251215/fda-qualifies-first-ai-tool-to-accelerate-mash-drug-development
+- date: 2025-08
+  text: Semaglutide (Wegovy) became the second drug approved for MASH with moderate to advanced scarring.
+  url: https://www.ajmc.com/view/fda-approves-semaglutide-for-mash-with-fibrosis
+next_milestone:
+  date: 2026-12
+  url: https://www.marketbeat.com/instant-alerts/transcript-inventiva-q2-earnings-call-highlights-2026-09-28/
+  what: Topline results of Inventiva's Phase 3 NATiV3 trial of lanifibranor in MASH with F2-F3 fibrosis
+    (guided to Q4 2026).
+ai:
+  impact: some
+  note: FDA qualified the AI biopsy-scoring tool AIM-MASH in December 2025, making trial endpoints more
+    consistent; the leading drugs themselves came from conventional discovery.
+markets: []
