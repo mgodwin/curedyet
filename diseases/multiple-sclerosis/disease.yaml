@@ -7,7 +7,7 @@ summary: An autoimmune disease in which the immune system attacks myelin in the 
   causing relapses and disability.
 toll:
   text: About 3.1 million people living with MS worldwide (2024).
-  url: https://en.wikipedia.org/wiki/Multiple_sclerosis
+  url: https://pubmed.ncbi.nlm.nih.gov/42693747/
   ratio: "About 1 in 320"
   ratio_caption: "US adults is living with multiple sclerosis"
   ratio_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6442006/
@@ -68,7 +68,7 @@ pipeline:
 - name: Tolebrutinib (Cenrifki, Sanofi)
   stage: Approved 2025-26
   note: EU approved June 2026 for non-relapsing secondary progressive MS; FDA did not approve.
-  url: https://www.sanofi.com/en/media-room/press-releases
+  url: https://www.sanofi.com/en/media-room/press-releases/2026/2026-06-23-05-00-00-3315699
   variants:
   - progressive
   effect: small
@@ -77,7 +77,7 @@ pipeline:
 - name: CD19 CAR-T for MS
   stage: Phase 1
   note: Early trials aim to reset the immune system in refractory MS; no efficacy data yet.
-  url: https://en.wikipedia.org/wiki/Multiple_sclerosis
+  url: https://clinicaltrials.gov/study/NCT06451159
   variants:
   - relapsing
   - progressive
@@ -88,7 +88,7 @@ recent:
 - date: 2026-06
   text: Tolebrutinib became the first BTK inhibitor approved for MS, in the EU for non-relapsing secondary
     progressive disease.
-  url: https://www.sanofi.com/en/media-room/press-releases
+  url: https://www.sanofi.com/en/media-room/press-releases/2026/2026-06-23-05-00-00-3315699
 - date: 2026-09
   text: FDA accepted fenebrutinib for priority review in both relapsing and primary progressive MS.
   url: https://www.gene.com/media/press-releases/15130/2026-09-29/genentechs-fenebrutinib-is-the-first-btk

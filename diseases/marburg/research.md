@@ -8,7 +8,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Gavi: How Rwanda stopped a Marburg outbreak](https://www.gavi.org/vaccineswork/how-rwanda-stopped-marburg-outbreak)
 - [Sabin completes enrollment in Phase 2 trials (Mar 2026)](https://www.sabin.org/resources/sabin-vaccine-institute-completes-enrollment-in-all-phase-2-clinical-trials-for-cad3-marburg-vaccine-and-cad3-sudan-ebolavirus-vaccine/)
 - [ASPR: doses for Ethiopia Marburg outbreak](https://www.aspr.gov/news-updates/newsroom/2025-12/hhs-provides-doses-investigational-vaccine)
-- [2025-26 Ethiopian Marburg outbreak](https://en.wikipedia.org/wiki/2025%E2%80%9326_Ethiopian_Marburg_virus_disease_outbreak)
+- [WHO Africa: Ethiopia declares end of first-ever Marburg virus disease outbreak (26 Jan 2026)](https://www.afro.who.int/countries/ethiopia/news/ethiopia-declares-end-first-ever-marburg-virus-disease-outbreak) - 14 confirmed cases, 9 deaths among them; outbreak confirmed 14 Nov 2025
 - [Health Policy Watch: Marburg detected in Uganda (Jul 2026)](https://healthpolicy-watch.news/marburg-is-detected-in-uganda/)
 - [Sabin: investigational Marburg vaccine delivered to Ethiopia](https://www.sabin.org/resources/sabin-vaccine-institutes-investigational-marburg-vaccine-delivered-to-ethiopia-for-outbreak-response/) - Ethiopia 2025 outbreak trial design and doses
 - [ENA: Ethiopia marks completion of Marburg vaccine trial](https://www.ena.et/web/eng/w/eng_8777572) - Ethiopia trial completed May 2026; no efficacy data

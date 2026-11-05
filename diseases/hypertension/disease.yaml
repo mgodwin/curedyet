@@ -59,7 +59,7 @@ pipeline:
 - name: Lorundrostat (Mineralys, aldosterone synthase inhibitor)
   stage: Filed
   note: FDA decision due Dec 22, 2026, as an add-on for blood pressure not controlled on other drugs.
-  url: https://www.barchart.com/story/news/1752148/mineralys-therapeutics-reports-first-quarter-2026-financial-results-and-provides-corporate-update
+  url: https://www.sec.gov/Archives/edgar/data/1933414/000193341426000082/mlys2026q18kex991.htm
   variants:
   - primary
   expected: '2026-12-22'
@@ -111,7 +111,7 @@ recent:
 next_milestone:
   date: '2026-12-22'
   what: FDA decision on lorundrostat for blood pressure not controlled on other drugs.
-  url: https://www.barchart.com/story/news/1752148/mineralys-therapeutics-reports-first-quarter-2026-financial-results-and-provides-corporate-update
+  url: https://www.sec.gov/Archives/edgar/data/1933414/000193341426000082/mlys2026q18kex991.htm
 ai:
   impact: low
   note: 'Unclear: the newest drugs (aldosterone synthase inhibitors, siRNA) came from conventional target

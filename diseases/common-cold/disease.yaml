@@ -1,0 +1,157 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: common-cold
+name: Common cold
+category: infectious
+tracking: active
+summary: A mild viral infection of the nose and throat, caused by more than 200 viruses (mostly rhinoviruses),
+  that brings a runny or blocked nose, sore throat and cough and usually clears within about a week to 10 days.
+toll:
+  text: Upper respiratory infections, mostly colds, caused about 12.8 billion illness episodes worldwide in
+    2021 (GBD); in the US colds were estimated to cost about $40 billion a year, with 189 million missed
+    school days and 126 million workdays missed by parents caring for children (2003 study).
+  url: https://doi.org/10.1016/S1473-3099(24)00430-4
+  ratio: "2 to 3"
+  ratio_caption: "colds a year for the average US adult, and children get more"
+  ratio_url: https://www.cdc.gov/common-cold/about/index.html
+status:
+  level: 1
+  why: No drug clears the viruses or shortens a cold by much; treatment only eases symptoms while the
+    body clears the infection, which it nearly always does within about a week to 10 days.
+  today: Care is rest, fluids and over-the-counter medicines for symptoms. Cochrane reviews find small
+    or uncertain benefits for zinc lozenges, decongestant and ipratropium nasal sprays, and short-term
+    antihistamines in adults, and none in children, and antibiotics do not help. Colds are rarely dangerous,
+    but they set off most asthma flare-ups in children and many COPD flare-ups, and nothing yet prevents
+    that.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Rest, fluids, and pain and fever relievers (paracetamol or ibuprofen)
+  - Decongestant or ipratropium nasal sprays for adults
+  - Zinc lozenges started early (uncertain benefit)
+  burden: light
+  burden_note: Remedies are cheap and sold over the counter with mostly minor side effects, though cough
+    and cold medicines are not recommended for children under 6 and zinc can cause nausea and taste changes.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 2
+    p2045: 8
+    median: 2065
+    low: 2042
+    high: 2100
+  faster:
+    p2035: 4
+    p2045: 16
+    median: 2055
+    low: 2037
+    high: 2100
+  faster_note: Faster design could produce host-targeting or broad antivirals that cover many cold viruses
+    at once, but each still needs large trials that show a real gain over an illness that ends on its
+    own, so a faster pipeline mostly lifts the 2045 odds.
+  outlook: Level 4 is read here as a treatment that, taken early, clears most colds within a day or two
+    and prevents asthma and COPD flare-ups. Pleconaril shortened colds by only about a day and was turned
+    down in 2002, and the leading drug today, vapendavir, targets rhinoviruses alone and is being tested
+    only in people with COPD. With so many viruses and so little room to beat natural recovery, a cure
+    for most colds is decades away at today's pace.
+pipeline:
+- name: Vapendavir (Altesa BioSciences, oral rhinovirus capsid inhibitor)
+  stage: Phase 2
+  note: In a rhinovirus challenge study in people with COPD, symptoms cleared in a median 5 days vs 8.5
+    on placebo (ATS 2026, company-reported); the 900-patient Phase 2b CARDINAL trial runs through Q4
+    2027.
+  url: https://www.biospace.com/press-releases/altesa-biosciences-presents-positive-phase-2-challenge-study-results-for-vapendavir-at-american-thoracic-society-international-conference-2026
+  expected: '2028'
+  effect: some
+  effect_note: A win would give the first antiviral for rhinovirus colds a path to approval in people
+    with COPD, but it would not cover the many other cold viruses or most healthy people.
+- name: APL-10456 (Apollo Therapeutics and Imperial College, rhinovirus vaccine)
+  stage: Phase 1
+  note: A protein vaccine that, in 144 healthy adults, was well tolerated and produced immune responses
+    to all three rhinovirus species after one dose (Aug 2026); two-dose data in adults 55+ are due Q4
+    2026 and a COPD Phase 2 is planned for H1 2027.
+  url: https://www.biospace.com/press-releases/apollo-therapeutics-announces-positive-immunogenicity-data-and-cross-species-activity-from-phase-1-trial-of-apl-10456-a-pan-rhinovirus-vaccine-for-the-prevention-of-copd-exacerbations
+  expected: '2026-12'
+  effect: small
+  effect_note: It would prevent rather than treat colds, and has not yet shown it stops infection or illness.
+- name: INNA-051 (ENA Respiratory, nasal immune-priming spray)
+  stage: Phase 2
+  note: A weekly nasal powder that switches on the nose's own innate defences against many viruses; a
+    1,100-person Phase 2a prevention trial in healthy adults began Dec 2025.
+  url: https://clinicaltrials.gov/study/NCT07222670
+  expected: '2027-03'
+  effect: small
+  effect_note: A host-directed spray that works across virus types would prevent some colds, but would
+    not treat colds once started.
+- name: KRP-A218 (Kyorin, oral host-targeting PI4KB inhibitor)
+  stage: Phase 1
+  note: Blocks a human enzyme that rhinoviruses and related viruses need to copy themselves; it worked
+    in mice and a first-in-human study was reported under way in 2021, with no results since.
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8644906/
+  effect: small
+  effect_note: Targeting the host rather than the virus could cover many rhinovirus types at once, but
+    the program's status is unclear.
+- name: Polyvalent inactivated rhinovirus vaccine (Emory University)
+  stage: Preclinical
+  note: Mixing up to 50 inactivated rhinovirus types in one shot produced broad neutralising antibodies
+    in rhesus macaques (Nature Communications 2016); no human trial has been reported.
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5036149/
+  effect: small
+  effect_note: It showed a many-type vaccine is technically possible, but rhinoviruses cause only part
+    of all colds.
+recent:
+- date: 2026-08
+  text: Apollo Therapeutics and Imperial College reported that the rhinovirus vaccine APL-10456 was well
+    tolerated and produced immune responses in a 144-person Phase 1 trial.
+  url: https://www.imperial.ac.uk/news/articles/medicine/nhli/2026/early-trials-for-common-cold-vaccine-offer-encouraging-signs/
+- date: 2026-05
+  text: Altesa presented challenge-study data showing vapendavir shortened rhinovirus illness in people
+    with COPD, and began its Phase 2b CARDINAL trial.
+  url: https://www.biospace.com/press-releases/altesa-biosciences-presents-positive-phase-2-challenge-study-results-for-vapendavir-at-american-thoracic-society-international-conference-2026
+- date: 2025-12
+  text: ENA Respiratory started a 1,100-person Phase 2a trial of its INNA-051 nasal spray to prevent viral
+    respiratory illness.
+  url: https://clinicaltrials.gov/study/NCT07222670
+- date: 2024-05
+  text: A Cochrane review of 34 trials found zinc may shorten colds by about two days but rated the evidence
+    as weak, and found no clear benefit for preventing colds.
+  url: https://www.cochrane.org/evidence/CD014914/zinc-prevention-and-treatment-common-cold
+next_milestone:
+  date: '2026-12'
+  url: https://www.biospace.com/press-releases/apollo-therapeutics-announces-positive-immunogenicity-data-and-cross-species-activity-from-phase-1-trial-of-apl-10456-a-pan-rhinovirus-vaccine-for-the-prevention-of-copd-exacerbations
+  what: Two-dose Phase 1 data for the APL-10456 rhinovirus vaccine in adults aged 55 and over.
+ai:
+  impact: low
+  note: The leading candidates, vapendavir and APL-10456, came from conventional structure-based chemistry
+    and vaccine research, with no clear AI-discovery role yet.
+markets: []
+prevention:
+  level: 0
+  burden: heavy
+  why: There is no licensed vaccine or proven preventive drug, because more than 200 viruses cause colds
+    and rhinoviruses alone come in over 160 types; hand-washing cuts respiratory infections by only about
+    14%, and zinc and routine vitamin C do not prevent colds for most people.
+  burden_why: With nothing to take, protection relies on hand hygiene and avoiding sick contacts, which
+    are cheap but hard to keep up against viruses that are everywhere and spread before symptoms are
+    obvious.
+  best:
+  - Hand-washing and hand sanitiser
+  - Staying away from people who are ill, and covering coughs and sneezes
+  url: https://pubmed.ncbi.nlm.nih.gov/36715243/
+  forecast:
+    median: 2065
+    low: 2045
+    high: 2100
+    p2035: 1
+    p2045: 6
+    note: 'Strong protection is read here as about 85% fewer colds overall. The most advanced vaccine,
+      APL-10456, is only in Phase 1 and covers rhinoviruses alone, which cause roughly half of colds,
+      so even a working vaccine would leave many colds unprevented. Base rate: about 1 in 10 vaccine
+      candidates entering Phase 1 reach licensure, typically 10-15 years later.'
+  easy:
+    median: 2070
+    low: 2048
+    high: 2100
+    p2035: 1
+    p2045: 4
+    note: Mild prevention would mean a cheap, lasting shot or spray against most cold viruses for everyone,
+      not just people with asthma or COPD, which is where current vaccine and antiviral work is aimed first.

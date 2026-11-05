@@ -13,13 +13,17 @@ toll:
   ratio_url: https://www.cdc.gov/obesity/adult-obesity-facts/index.html
   ratio_basis: "CDC Adult Obesity Facts: prevalence of obesity among US adults 20+ was 41.9% (2017-March 2020); about 2 in 5."
 status:
-  level: 2
-  why: GLP-1-based drugs and surgery now give large, lasting weight loss for many, but weight usually
-    returns when drugs stop.
-  today: Tirzepatide and semaglutide produce about 15-20% average weight loss and cut heart risk, and
-    oral options (Wegovy pill, orforglipron) launched in 2025-26. Bariatric surgery gives the most durable
-    results. Access and cost limit use, and most people must stay on drugs to keep the weight off.
-  last_reviewed: '2026-11-03'
+  level: 3
+  why: Metabolic surgery gives lasting remission to a meaningful minority of people, while GLP-1 drugs
+    help many people lose a lot of weight but only while they keep taking them.
+  today: People who have gastric bypass keep off about a quarter of their body weight for 7-12 years, and about half of people
+    with type 2 diabetes are still in remission 12 years later (NEJM 2017; JAMA Surgery 2018); in one
+    12-year cohort about 30% had a BMI under 30 (Obesity Surgery 2021), and in the Swedish Obese Subjects
+    study 30% were still free of diabetes at 15 years (JAMA 2014). Fewer than 1% of eligible people
+    have surgery each year. Tirzepatide and semaglutide produce about 15-20% average weight loss and
+    cut heart risk, and oral options (Wegovy pill, orforglipron) launched in 2025-26, but weight usually
+    returns when they stop.
+  last_reviewed: '2026-11-05'
 treatment:
   best:
   - Tirzepatide
@@ -27,8 +31,10 @@ treatment:
   - Orforglipron (Foundayo)
   - Bariatric surgery
   burden: moderate
-  burden_note: GLP-1 drugs cause nausea and GI effects and some muscle loss, must be taken indefinitely
-    as weight returns on stopping, and cost limits access; surgery is a heavier one-time option.
+  burden_note: For most people the best standard option is a GLP-1 drug, which causes nausea, GI effects
+    and some muscle loss, must be taken indefinitely, and costs enough to limit access. The route to lasting
+    remission is surgery, a heavy option with operative risk, lifelong vitamin supplements and follow-up,
+    that suits mainly people with severe obesity and reaches under 1% of them each year.
 forecast:
   bottleneck: biology-limited
   normal:
@@ -44,10 +50,11 @@ forecast:
     low: 2034
     high: 2080
   faster_note: Faster biology could reveal how to reset the body's weight set point so loss lasts off-drug;
-    the lift is moderate because no durable approach exists yet and proving lasting effect takes years.
-  outlook: Weight-loss drugs will keep improving and getting cheaper, so control should become routine.
-    A cure for most would require weight loss that lasts after treatment stops, and no approach has shown
-    that at scale. Expect strong control by 2035 but cure much later, if ever.
+    the lift is moderate because no durable non-surgical approach exists yet and proving lasting effect takes years.
+  outlook: Surgery already gives lasting remission for a minority, and weight-loss drugs will keep improving
+    and getting cheaper, so control should become routine. A cure for most would require weight loss that
+    lasts after a short, mild treatment, and no drug or device has shown that at scale. Expect strong control
+    by 2035 but cure for most much later, if ever.
 pipeline:
 - name: Orforglipron (Foundayo)
   note: First small-molecule oral GLP-1, FDA approved April 2026, about 12% weight loss at top dose.

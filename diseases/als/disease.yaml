@@ -6,9 +6,9 @@ tracking: active
 summary: Amyotrophic lateral sclerosis, a fatal disease in which motor neurons gradually die, causing
   progressive paralysis.
 toll:
-  text: About 1.9 new cases per 100,000 people per year worldwide; median survival about 2-4 years from
+  text: About 1.7 new cases per 100,000 people per year worldwide; median survival about 2-4 years from
     onset (published estimates).
-  url: https://en.wikipedia.org/wiki/Amyotrophic_lateral_sclerosis
+  url: https://pubmed.ncbi.nlm.nih.gov/27185810/
   ratio: "1 in 400"
   ratio_caption: "people will develop ALS in their lifetime"
   ratio_url: https://jamanetwork.com/journals/jama/fullarticle/2830516
@@ -59,11 +59,11 @@ pipeline:
 - name: QRL-201 (QurAlis, UNC13A/STMN2)
   note: Early biomarker and safety signals; phase 3 planned.
   stage: Phase 2
-  url: https://en.wikipedia.org/wiki/Amyotrophic_lateral_sclerosis
+  url: https://www.businesswire.com/news/home/20260224163772/en/QurAlis-Demonstrates-Effects-on-Disease-Progression-and-Target-Engagement-in-ANQUR-Clinical-Trial-of-QRL-201-a-First-in-Class-Precision-Medicine-in-Development-for-Sporadic-ALS
 - name: Tofersen in presymptomatic SOD1 carriers (ATLAS)
   note: Tests whether early treatment delays onset in people with SOD1 mutations.
   stage: Phase 3
-  url: https://en.wikipedia.org/wiki/Tofersen
+  url: https://clinicaltrials.gov/study/NCT04856982
 recent:
 - date: 2026-09
   text: Antisense drug ulefnersen became the second genetic ALS therapy to succeed in phase 3, for the

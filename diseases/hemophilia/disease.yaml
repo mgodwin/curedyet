@@ -6,8 +6,9 @@ tracking: active
 summary: An inherited bleeding disorder caused by missing clotting factor VIII (A) or IX (B), mostly in
   males.
 toll:
-  text: About 1 in 5,000 male births for hemophilia A and 1 in 40,000 for B; ~18,000 people in the US.
-  url: https://en.wikipedia.org/wiki/Haemophilia
+  text: About 1 in 4,300 US male births have hemophilia (A is three to four times as common as B); about 30,000-33,000
+    US males live with it.
+  url: https://pubmed.ncbi.nlm.nih.gov/32329553/
   ratio: "1 in 4,000 to 5,000"
   ratio_caption: "baby boys is born with hemophilia A, the most common type"
   ratio_url: https://medlineplus.gov/genetics/condition/hemophilia/
@@ -55,9 +56,9 @@ forecast:
     A, which is still early. Expect better control near term and cure for most in the 2040s. About 80% of patients have hemophilia A, which has no cure available, so this forecast follows hemophilia A's.
 pipeline:
 - name: Denecimig (Mim8, Frehemgo)
-  stage: Approved 2025-26
-  note: Bispecific for hemophilia A; approved in Saudi Arabia and positive CHMP opinion in Sept 2026.
-  url: https://en.wikipedia.org/wiki/Denecimig
+  stage: Filed
+  note: Bispecific for hemophilia A; positive CHMP opinion in Sept 2026, awaiting EU decision; US review ongoing.
+  url: https://www.ema.europa.eu/en/medicines/human/EPAR/frehemgo
   variants:
   - hemophilia-a
   expected: 2026-11
@@ -67,7 +68,7 @@ pipeline:
 - name: Fitusiran (Qfitlia)
   stage: Approved 2025-26
   note: Antithrombin-lowering siRNA dosed as rarely as every two months, US approval March 2025.
-  url: https://en.wikipedia.org/wiki/Haemophilia
+  url: https://www.fda.gov/news-events/press-announcements/fda-approves-novel-treatment-hemophilia-or-b-or-without-factor-inhibitors
   variants:
   - hemophilia-a
   - hemophilia-b
@@ -77,7 +78,7 @@ pipeline:
 - name: Hemgenix (etranacogene dezaparvovec)
   stage: Approved 2025-26
   note: One-time AAV gene therapy for hemophilia B, approved 2022, $3.5M list price.
-  url: https://en.wikipedia.org/wiki/Etranacogene_dezaparvovec
+  url: https://www.fda.gov/media/163466/download
   variants:
   - hemophilia-b
   effect: small
@@ -87,13 +88,13 @@ recent:
 - date: 2026-09
   text: EMA's CHMP recommended approval of denecimig, a once-weekly-or-less bispecific for hemophilia
     A.
-  url: https://en.wikipedia.org/wiki/Denecimig
+  url: https://www.ema.europa.eu/en/medicines/human/EPAR/frehemgo
 - date: 2026-02
   text: BioMarin pulled the hemophilia A gene therapy Roctavian from the market after finding no buyer.
-  url: https://en.wikipedia.org/wiki/Haemophilia
+  url: https://www.biomarin.com/news/company-statements/biomarin-voluntarily-withdraws-roctavian-from-the-market/
 next_milestone:
   date: 2026-11
-  url: https://en.wikipedia.org/wiki/Denecimig
+  url: https://www.ema.europa.eu/en/medicines/human/EPAR/frehemgo
   what: European Commission decision on denecimig (Frehemgo) after the Sept 2026 positive CHMP opinion
 ai:
   impact: low

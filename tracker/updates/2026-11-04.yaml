@@ -145,4 +145,12 @@ changes:
   to: Cured for some
   why: Re-rated under the new 85% cured line.
   url: null
+- target: Obesity level
+  disease: obesity
+  from: Controlled
+  to: Cured for some
+  why: Gastric bypass keeps off about a quarter of body weight for 7-12 years and keeps type 2 diabetes
+    in remission for about half of people at 12 years, durable remission for a meaningful minority; GLP-1
+    drugs still work only while taken.
+  url: https://doi.org/10.1056/NEJMoa1700459
 news: []
