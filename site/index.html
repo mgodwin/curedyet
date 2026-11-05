@@ -199,11 +199,11 @@ a.more{text-decoration:none}
 /* Home: nav, cards in masonry columns, colour key */
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .topnav{display:flex;justify-content:space-between;align-items:center;gap:8px 20px;flex-wrap:wrap;min-height:44px}
-.brand{font-size:17px;color:var(--ink);text-decoration:none}
+.brand{font-size:clamp(24px,3vw,30px);line-height:1.1;color:var(--ink);text-decoration:none}
 .themebtn{font:600 13px var(--f-body);min-height:32px;padding:0 10px;border-radius:999px;border:1px solid var(--soft);background:var(--card);color:var(--ink);cursor:pointer}
 .navlinks{display:flex;gap:4px 18px;flex-wrap:wrap;align-items:center;font-size:14px;font-weight:600}
 .navlinks a{color:var(--ink);text-decoration:none;min-height:32px;display:inline-flex;align-items:center}.navlinks a:hover{text-decoration:underline}
-.hero{display:flex;flex-direction:column;gap:14px;align-items:flex-start;padding-top:8px}
+.hero{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
 .hero .search{width:100%;max-width:720px}.hero .search input{height:56px;font-size:17px}
 .upd{font-size:14px;font-weight:600;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px}
 .chiprow{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}.chiprow::-webkit-scrollbar{display:none}.chiprow .chip{flex:none}
@@ -348,7 +348,7 @@ function renderCards(){const el=$("cards");if(!el)return;const L=filtered();
   L.forEach(d=>{const i=h.indexOf(Math.min(...h));tmp.innerHTML=cardHTML(d);const c=tmp.firstElementChild;cols[i].append(c);h[i]+=c.offsetHeight});
 }
 function navHTML(){const repo=S.meta?.repo;
-  return `<nav class="topnav" aria-label="Site"><a class="brand display" href="#">Cure Watch</a><div class="navlinks"><a href="#record">This week</a><a href="#pipeline">Pipeline</a><a href="#stats">Stats</a>${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate</a>`:""}${themeBtn()}</div></nav>`}
+  return `<nav class="topnav" aria-label="Site"><a class="brand display" href="#">Is it cured yet?</a><div class="navlinks"><a href="#record">This week</a><a href="#pipeline">Pipeline</a><a href="#stats">Stats</a>${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate</a>`:""}${themeBtn()}</div></nav>`}
 /* Theme: follows the device unless the reader picks light or dark; the choice is remembered in this browser. */
 const THEMES=["system","light","dark"],TLABEL={system:"◐ Auto",light:"☀ Light",dark:"☾ Dark"};
 const curTheme=()=>document.documentElement.dataset.theme||"system";
@@ -361,7 +361,7 @@ function home(){
   const m=S.meta||{};const cats=S.cats.slice().sort((a,b)=>(a.order||0)-(b.order||0));
   return `
   <header class="hero">
-    <h1 class="display">Is it cured yet?</h1>
+    <h1 class="sr-only">Is it cured yet? Search diseases</h1>
     ${m.updatedAt?`<a class="upd" href="#record">Updated ${fd(m.updatedAt)}: what changed this week →</a>`:""}
     <label for="q" class="sr-only">Search diseases, stages and types</label>
     <div class="search"><input id="q" type="search" autocomplete="off" placeholder="Search: Alzheimer's, HIV, stage IV…" value="${esc(q)}"></div>
@@ -668,7 +668,7 @@ function render(){const app=$("app"),r=route(),key=r.v+(r.id||"")+"/"+(r.vid||""
   if(!S.ready&&!S.dz.length){app.innerHTML=`<div class="empty">${esc(S.err||"Loading the tracker…")}</div>`;return}
   const focusQ=document.activeElement&&document.activeElement.id==="q",selStart=focusQ?document.activeElement.selectionStart:0;
   app.innerHTML=navHTML()+(r.v==="detail"?detail(r.id,r.vid):r.v==="pipeline"?pipeline():r.v==="record"?record():r.v==="stats"?stats():home());
-  if(r.v==="home"){const s=$("sort");if(s)s.value=sort;renderCards();if(focusQ){const i=$("q");if(i){i.focus();try{i.setSelectionRange(selStart,selStart)}catch(e){}}}}
+  if(r.v==="home"){const s=$("sort");if(s)s.value=sort;renderCards();if(masonRO){masonRO.disconnect();masonRO.observe($("cards"))}if(focusQ){const i=$("q");if(i){i.focus();try{i.setSelectionRange(selStart,selStart)}catch(e){}}}}
   if(r.v==="detail")drawTrend();
   if(key!==lastView){if(lastView)window.scrollTo(0,0);lastView=key}
   document.title=r.v==="stats"?"Stats · Cure Watch":r.v==="detail"?`${(S.dz.find(d=>d.id===r.id)||{}).name||"Disease"} · Cure Watch`:"Cure Watch";
@@ -677,7 +677,9 @@ window.addEventListener("hashchange",render);
 document.addEventListener("input",e=>{if(e.target.id==="q"){q=e.target.value;renderCards()}});
 document.addEventListener("change",e=>{if(e.target.id==="sort"){sort=e.target.value;try{localStorage.setItem("cw2-sort",sort)}catch(_){}renderCards()}});
 document.addEventListener("click",e=>{if(e.target.closest("[data-theme-cycle]")){cycleTheme();return}const c=e.target.closest("[data-c]");if(c){catF=c.dataset.c;render()}});
-/* Re-pack the masonry when the column count changes. */
+/* Re-pack the masonry when the column count changes. Watching the card area itself also catches zoom and
+   viewport changes that don't fire a window resize. */
+const masonRO=typeof ResizeObserver==="function"?new ResizeObserver(()=>{const el=$("cards");if(el&&ncols(el)!==masonCols)renderCards()}):null;
 let rsz2;window.addEventListener("resize",()=>{clearTimeout(rsz2);rsz2=setTimeout(()=>{const el=$("cards");if(el&&ncols(el)!==masonCols)renderCards()},120)});
 
 (async()=>{
