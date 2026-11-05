@@ -1,0 +1,35 @@
+# Cure Watch variant record: one stage or type of Multiple myeloma. Field guide: CONTRIBUTING.md.
+id: newly-diagnosed
+name: Newly diagnosed myeloma
+order: 2
+what: Active myeloma that has started to damage bones, kidneys or blood counts and is being treated for
+  the first time.
+level: 2
+burden: heavy
+burden_why: Months of four-drug induction, often a high-dose chemotherapy and stem cell transplant, then
+  years of maintenance, with nerve damage, infections and fatigue.
+survival: ~64% of all US myeloma patients alive at 5 years (SEER 2016-2022); in PERSEUS, 81% free of progression
+  and 86% alive at 6 years with D-VRd and transplant
+treatment: Most get induction with daratumumab, bortezomib, lenalidomide and dexamethasone (D-VRd), usually
+  followed by a stem cell transplant if fit enough, then lenalidomide-based maintenance for years. About
+  70% of transplant-eligible patients on D-VRd reach sustained MRD negativity (no detectable myeloma cells),
+  and many stay in remission for years, but most patients eventually relapse.
+caveat: 'Is anyone cured? Evidence is emerging but not proven. In FORTE, people who stayed MRD-negative
+  for 3 years had 85% progression-free survival at 7 years, and in PERSEUS about three-quarters of those
+  who stopped daratumumab after sustained MRD negativity had not restarted it after a median of 44 months,
+  still on lenalidomide. The International Myeloma Society''s 2026 draft cure definition needs at least
+  5 years off all treatment with repeated negative tests, and no large trial has yet reported that, so
+  this is rated 2, not 3. Older or frailer patients who cannot have a transplant do less well (CEPHEUS:
+  59% progression-free at 6 years with D-VRd).'
+url: https://www.onclive.com/view/long-term-perseus-data-confirm-durable-pfs-benefit-with-d-vrd-in-transplant-eligible-newly-diagnosed-myeloma
+forecast:
+  median: 2052
+  low: 2038
+  high: 2100
+  p2035: 4
+  p2045: 25
+  note: Level 3 could come first, if MRD-guided stop-treatment studies show a meaningful share staying in
+    remission 5 or more years off all therapy. Level 4 needs about 85% cured, which probably requires moving
+    CAR-T (CARTITUDE-5, est. 2029; CARTITUDE-6, est. 2033) or bispecifics (MajesTEC-7, est. 2031) into first
+    treatment, then years of off-treatment follow-up, including for high-risk patients, who still relapse
+    far more often.

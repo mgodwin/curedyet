@@ -1,0 +1,67 @@
+# Cure Watch variant record: one stage or type of Head and neck cancer. Field guide: CONTRIBUTING.md.
+id: hpv-positive-oropharyngeal
+name: HPV-positive throat cancer
+order: 1
+what: Cancer of the tonsils or base of the tongue caused by human papillomavirus (HPV), usually found
+  once it has reached lymph nodes in the neck but not spread beyond the head and neck.
+level: 4
+burden: heavy
+burden_why: Standard cure is six to seven weeks of radiation with cisplatin, or robotic surgery often
+  followed by radiation, and many people are left with lasting dry mouth and swallowing trouble.
+survival: ~85% alive at 5 years after radiation with cisplatin (RTOG 1016 trial, mostly larger tumors
+  or several neck nodes)
+share: About three in four US oropharyngeal cancers are caused by HPV
+share_url: https://www.cancer.gov/types/head-and-neck/head-neck-fact-sheet
+treatment: Radiation to the throat and neck with cisplatin over six to seven weeks, or transoral robotic
+  surgery for smaller tumors (often followed by radiation), cures most people. Late effects such as dry
+  mouth, thick saliva, taste changes and swallowing problems are common, and attempts to lower the dose
+  or swap cisplatin for gentler drugs have so far cost cures.
+caveat: 'Borderline: 84.6% were alive at 5 years in the cisplatin arm of RTOG 1016, and cancer-specific
+  cure is higher because some deaths are from other causes, but trial patients were fitter than average,
+  people who smoked heavily do worse, and in the older RTOG 0129 trial about 71% were alive at 8 years. It
+  could slip to 3 if population data come in lower.'
+url: https://www.pubmed.gov/30449625/
+easy:
+  median: 2045
+  low: 2032
+  high: 2080
+  p2035: 10
+  p2045: 50
+  note: Mild cure would need much lower radiation doses, surgery alone or a non-toxic drug for most patients.
+    Cetuximab (RTOG 1016, De-ESCALaTE) and 60 Gy regimens (NRG-HN005) all lost cures; PATHOS and blood
+    HPV DNA tests that pick out who can safely get less are the next chances.
+reached:
+  year: 2005
+  basis: 'Approximate: cisplatin chemoradiation and intensity-modulated radiation were standard by the
+    mid-2000s, and trials of that era (RTOG 0129, then RTOG 1016) showed about 75-85% of HPV-positive
+    patients alive at 5 years.'
+  url: https://www.pubmed.gov/30449625/
+prevention:
+  level: 2
+  burden: light
+  why: HPV vaccines prevent about 88% of oral infections with the vaccine types in vaccinated young adults,
+    and early record studies link vaccination before 27 to far fewer throat cancers, but the cancers
+    take decades to appear, so protection against the cancer itself is not yet measured.
+  burden_why: One or two shots in early adolescence with few side effects, free in school programmes
+    for boys and girls in many rich countries, though uptake in boys has lagged.
+  best:
+  - HPV vaccine (Gardasil 9, FDA-approved in 2020 for preventing HPV-related oropharyngeal cancer)
+  url: https://www.cancer.gov/types/head-and-neck/head-neck-fact-sheet
+  forecast:
+    median: 2042
+    low: 2032
+    high: 2065
+    p2035: 15
+    p2045: 60
+    note: Rated partial only because cancer-level proof is missing. Vaccinated cohorts (girls from 2006,
+      boys some years later) reach the usual age of diagnosis, the 60s, only after 2050,
+      so proof will come first from younger adults and from record studies like the 2026 one that found
+      91% fewer oropharyngeal cancers with tiny case numbers.
+  easy:
+    median: 2043
+    low: 2033
+    high: 2068
+    p2035: 13
+    p2045: 57
+    note: The vaccine is already easy to get in most rich countries, so once strong protection against
+      the cancer is shown it will be mild almost at once; wider uptake in boys would help.

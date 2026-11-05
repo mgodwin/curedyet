@@ -1,0 +1,34 @@
+# Cure Watch variant record: one stage or type of Kidney cancer. Field guide: CONTRIBUTING.md.
+id: stage-ii
+name: Stage II
+order: 2
+what: A tumor larger than 7 cm that is still confined to the kidney.
+level: 3
+burden: heavy
+burden_why: It means major kidney surgery, usually removing the whole kidney, and higher-risk clear cell
+  tumors add a year of immunotherapy.
+survival: ~75% alive at 5 years (net survival, England 2016-2020)
+treatment: Removal of the kidney (radical nephrectomy), or part of it where possible, is the main treatment
+  and cures many. Higher-risk clear cell tumors can add a year of pembrolizumab, now sometimes with belzutifan,
+  to lower the chance of relapse.
+caveat: 'Rated 3: around 75% survive 5 years in England (2016-2020), below 85%, but those data mostly
+  predate adjuvant pembrolizumab (approved 2021), and US localized-stage survival is about 94%, mostly
+  smaller stage I tumors. It may be closer to the line than the England figure suggests.'
+url: https://www.cancerresearchuk.org/about-cancer/kidney-cancer/survival
+forecast:
+  median: 2040
+  low: 2030
+  high: 2070
+  p2035: 22
+  p2045: 60
+  note: About 75% survive 5 years in older data, and adjuvant pembrolizumab, now with belzutifan, cuts
+    relapse after surgery. If newer stage data and long-term adjuvant survival come in well, stage II
+    could reach 85% without new drugs.
+easy:
+  median: 2070
+  low: 2045
+  high: 2100
+  p2035: 1
+  p2045: 8
+  note: Large tumors need major surgery; a mild cure would need drugs or ablation that reliably destroy
+    tumors over 7 cm, which is far off.

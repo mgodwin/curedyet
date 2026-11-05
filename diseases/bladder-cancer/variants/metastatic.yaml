@@ -1,0 +1,30 @@
+# Cure Watch variant record: one stage or type of Bladder cancer. Field guide: CONTRIBUTING.md.
+id: metastatic
+name: Metastatic
+order: 3
+what: Cancer that has spread to distant lymph nodes or organs such as the lungs, liver or bones, or that
+  has come back after treatment and cannot be removed.
+level: 1
+burden: heavy
+burden_why: Most people stay on enfortumab vedotin plus pembrolizumab or other drugs for as long as they
+  work, with nerve damage, skin reactions, high blood sugar and immune side effects common.
+survival: ~10% alive at 5 years (SEER 'distant', 2016-2022, before current drugs); median survival 33.6
+  months with enfortumab vedotin plus pembrolizumab (EV-302)
+share: About 6% of US bladder cancers have spread to distant organs at diagnosis (SEER 'distant'), and
+  more spread later
+share_url: https://seer.cancer.gov/statfacts/html/urinb.html
+treatment: Enfortumab vedotin plus pembrolizumab, approved first-line in 2023, roughly doubled median
+  survival over platinum chemotherapy, and a minority have a complete response that can last years. Chemotherapy
+  and other drugs follow when it stops working. It rarely cures.
+caveat: SEER's 9.6% 5-year figure is from patients diagnosed 2016-2022, mostly before enfortumab vedotin
+  plus pembrolizumab, so current 5-year survival is likely higher; 44% were alive at 42 months in EV-302.
+url: https://www.cancernetwork.com/view/enfortumab-vedotin-pembrolizumab-shows-long-term-survival-benefit-in-1l-urothelial-carcinoma
+forecast:
+  median: 2062
+  low: 2042
+  high: 2100
+  p2035: 2
+  p2045: 12
+  note: EV-302 doubled median survival, and some complete responders may stay well for years, which is
+    real progress. A cure for most would need long remissions off treatment in most patients, which has
+    not been shown; newer antibody-drug conjugates and combinations are the next candidates.

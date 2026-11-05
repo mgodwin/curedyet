@@ -326,7 +326,7 @@ function filtered(){
   if(q){const t=q.toLowerCase();L=L.filter(d=>[d.name,d.short,catName(d.category),...(d.groups||[]).map(g=>g.name)].some(s=>String(s||"").toLowerCase().includes(t)))}
   if(catF!=="all")L=L.filter(d=>d.category===catF);
   if(sort==="az")L.sort((a,b)=>String(a.name).localeCompare(String(b.name)));
-  else if(sort==="cat")L.sort((a,b)=>(a.order||0)-(b.order||0));
+  else if(sort==="cat"){const ci=id=>{const c=S.cats.find(c=>c.id===id);return c?(c.order??S.cats.indexOf(c)):99};L.sort((a,b)=>ci(a.category)-ci(b.category)||String(a.name).localeCompare(String(b.name)))}
   else L.sort((a,b)=>best(b)-best(a)||String(a.name).localeCompare(String(b.name)));
   return L;
 }

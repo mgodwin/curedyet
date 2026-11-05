@@ -1,0 +1,28 @@
+# Cure Watch variant record: one stage or type of Stomach cancer. Field guide: CONTRIBUTING.md.
+id: stage-iv
+name: Stage IV
+order: 4
+what: The cancer has spread to distant organs, most often the liver or the lining of the abdomen (peritoneum).
+level: 1
+burden: heavy
+burden_why: Most people stay on chemotherapy-based combinations for as long as they work, with nausea,
+  nerve damage and fatigue.
+survival: ~20% alive at 1 year (net survival, England, diagnosed 2013-2017); 8% alive at 5 years (US, SEER
+  'distant', 2016-2022)
+share: About 1 in 3 US stomach cancers have spread to distant organs at diagnosis (SEER 'distant', 35%)
+share_url: https://seer.cancer.gov/statfacts/html/stomach.html
+treatment: Chemotherapy combined with a drug matched to the tumor, such as nivolumab or pembrolizumab for
+  PD-L1-positive tumors, trastuzumab or zanidatamab for HER2-positive ones, or zolbetuximab for claudin
+  18.2-positive ones. These extend median survival into the range of about 1 to 2 years but rarely cure.
+caveat: The English 1-year figure covers people diagnosed in 2013-2017, before most of today's immunotherapy
+  and targeted drugs; in CheckMate 649 about 16% of patients with PD-L1 scores of 5 or more given nivolumab and chemotherapy
+  were alive at 5 years.
+url: https://www.cancerresearchuk.org/about-cancer/stomach-cancer/survival
+forecast:
+  median: 2070
+  low: 2048
+  high: 2100
+  p2035: 1
+  p2045: 7
+  note: Spread stomach cancer is treated to extend life, and even the best new combinations add months.
+    Curing most would need treatments that clear widespread disease, which no trial has yet shown.

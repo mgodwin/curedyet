@@ -1,0 +1,37 @@
+# Cure Watch variant record: one stage or type of Stomach cancer. Field guide: CONTRIBUTING.md.
+id: stage-ii
+name: Stage II
+order: 2
+what: The cancer has grown deeper into or through the stomach wall, or reached a few nearby lymph nodes,
+  but not distant organs.
+level: 3
+burden: heavy
+burden_why: Standard care is months of FLOT chemotherapy, now with durvalumab, around a gastrectomy.
+survival: ~35% alive at 5 years (net survival, England, diagnosed 2013-2017)
+share: Part of the US stomach cancers found while localized (32%) or regional (23%) in SEER
+share_url: https://seer.cancer.gov/statfacts/html/stomach.html
+treatment: FLOT chemotherapy before and after surgery to remove part or all of the stomach, with durvalumab
+  added since 2025. In the FLOT4 trial of resectable locally advanced disease, median survival with FLOT
+  was about 4 years (50 months).
+caveat: The English figures cover people diagnosed in 2013-2017, before FLOT became standard and before
+  perioperative immunotherapy, so current results are likely somewhat better; trial patients in FLOT4
+  and MATTERHORN were fitter than average.
+url: https://www.cancerresearchuk.org/about-cancer/stomach-cancer/survival
+forecast:
+  median: 2050
+  low: 2036
+  high: 2090
+  p2035: 8
+  p2045: 35
+  note: Durvalumab added to FLOT cut the risk of death by about a fifth; reaching 85% cured needs further
+    gains of that size, such as targeted drugs for HER2- or claudin 18.2-positive tumors moved into the
+    perioperative setting, plus earlier diagnosis.
+easy:
+  median: 2072
+  low: 2045
+  high: 2100
+  p2035: 1
+  p2045: 6
+  note: The cure today is gastrectomy plus months of chemotherapy and immunotherapy; a mild cure would need
+    drug-only treatment that clears the tumor, which so far exists only for the small mismatch-repair-deficient
+    subset in early trials.

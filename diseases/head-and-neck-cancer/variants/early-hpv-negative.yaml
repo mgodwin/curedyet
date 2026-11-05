@@ -1,0 +1,40 @@
+# Cure Watch variant record: one stage or type of Head and neck cancer. Field guide: CONTRIBUTING.md.
+id: early-hpv-negative
+name: Early HPV-negative cancer
+order: 2
+what: A small cancer of the mouth, voice box or throat not caused by HPV (stage I-II), still confined
+  to where it started without spread to neck lymph nodes.
+level: 4
+burden: heavy
+burden_why: It usually means surgery in the mouth or throat, sometimes with removal of neck nodes, or
+  five to seven weeks of radiation, with possible lasting effects on speech, voice, swallowing or dry
+  mouth.
+survival: ~80-89% alive at 5 years for cancers still confined to where they started (SEER relative survival,
+  2016-2022; voice box 80%, mouth and throat 89%)
+share: About one in four US mouth and throat cancers, and about half of voice box cancers, are found
+  while still localized (SEER)
+share_url: https://seer.cancer.gov/statfacts/html/laryn.html
+treatment: Surgery, often through the mouth with a laser or robot, or radiation alone, cures most small
+  cancers. Early voice box cancer is often treated with laser surgery or radiation that keeps the voice.
+  Many people treated for one tobacco-related cancer develop a second cancer in the mouth, throat or
+  lungs later, so follow-up lasts years.
+caveat: 'Borderline: SEER''s localized figures include some HPV-driven cancers and lump together very
+  different sites, and voice box cancer alone is at 80%. Because many patients have smoked, deaths from
+  other causes and second cancers lower survival even when the first cancer is cured, so the cure rate
+  is judged to be just above 85%; it could be rated 3.'
+url: https://seer.cancer.gov/statfacts/html/oralcav.html
+easy:
+  median: 2050
+  low: 2035
+  high: 2100
+  p2035: 6
+  p2045: 35
+  note: Small voice box cancers treated with laser surgery are already close to mild, but most early mouth
+    and throat cancers still need open or robotic surgery or weeks of radiation. A mild cure for most
+    would need earlier detection, when a small excision is enough, or drugs that clear the cancer without
+    surgery.
+reached:
+  year: 1975
+  basis: 'Approximate: by the 1970s surgery and radiotherapy were standard for small mouth, throat and
+    voice box cancers and cured most patients; there is no single dated milestone.'
+  url: https://seer.cancer.gov/statfacts/html/laryn.html

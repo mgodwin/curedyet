@@ -1,0 +1,129 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: uterine-cancer
+name: Uterine (endometrial) cancer
+category: cancer
+tracking: active
+summary: Cancer of the endometrium, the lining of the womb, the most common gynecologic cancer in rich
+  countries. Uterine sarcomas, rarer cancers of the womb's muscle wall, are a different disease and are
+  not covered here.
+toll:
+  text: About 435,000 new cases and 101,000 deaths/yr worldwide (2024); ~68,270 US cases and ~14,450 US
+    deaths est. 2026, with US case rates rising about 0.7% and death rates about 1.3% a year.
+  url: https://seer.cancer.gov/statfacts/html/corp.html
+  ratio: "About 1 in 32"
+  ratio_caption: "US women will be diagnosed with uterine cancer in their lifetime"
+  ratio_url: https://seer.cancer.gov/statfacts/html/corp.html
+  ratio_basis: "NCI SEER Cancer Stat Facts: about 3.1% of women diagnosed in their lifetime (2021-2023 data); 3.1% is about 1 in 32."
+status:
+  level: 3
+  why: Most women are diagnosed early and cured by hysterectomy, but about 81% of US women are alive
+    at 5 years overall, and cancer that has spread beyond the pelvis is rarely curable.
+  today: About two in three cancers are found while still confined to the womb, usually after abnormal
+    bleeding, and hysterectomy alone or with radiation cures most of them. Tumors are now sorted into
+    four molecular groups (POLE-mutated, mismatch repair-deficient, p53-abnormal and no specific profile)
+    that predict outlook better than how the cells look, from almost always cured for POLE to about half
+    relapse-free for p53-abnormal. Since 2023 immunotherapy (dostarlimab, pembrolizumab or durvalumab)
+    added to chemotherapy has improved survival in advanced and recurrent disease, most strongly in
+    mismatch repair-deficient tumors. In the US, incidence and deaths are rising, and Black women die
+    of it at about twice the rate of White women although their case rates are only slightly higher.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Hysterectomy with removal of tubes and ovaries, often minimally invasive
+  - Vaginal brachytherapy or pelvic radiation for higher-risk tumors
+  - Molecular classification (POLE, MMR, p53) to guide added treatment
+  - Carboplatin-paclitaxel plus dostarlimab or pembrolizumab for advanced or recurrent disease
+  - Pembrolizumab plus lenvatinib after chemotherapy
+  burden: heavy
+  burden_note: Nearly everyone has a hysterectomy, which ends fertility and, with removal of the ovaries,
+    brings menopause in younger women; higher-risk cancers add radiation or months of chemotherapy, and
+    immunotherapy can cause lasting immune side effects.
+forecast:
+  bottleneck: biology-limited
+  normal:
+    p2035: 22
+    p2045: 50
+    median: 2045
+    low: 2031
+    high: 2075
+  faster:
+    p2035: 30
+    p2045: 65
+    median: 2040
+    low: 2030
+    high: 2065
+  faster_note: Faster trials of immunotherapy, antibody-drug conjugates and molecularly guided treatment
+    would lift the 2045 odds most, especially for p53-abnormal and serous tumors that drive most deaths.
+  outlook: Uterine cancer sits just below the cured-for-most line because most cases are found early,
+    but rising incidence and the aggressive p53-abnormal and serous types hold it back. Immunotherapy
+    has clearly helped mismatch repair-deficient tumors, and molecular sorting lets doctors aim more treatment
+    at high-risk cancers. Much of the US death toll falls on Black women, who are more often diagnosed
+    with aggressive types and later stages, so access and equal care matter as well as new drugs.
+pipeline:
+- name: Dostarlimab plus chemotherapy (RUBY)
+  stage: Approved
+  note: FDA expanded approval to all primary advanced or recurrent endometrial cancer in Aug 2024 after
+    RUBY cut the risk of death by 31% (HR 0.69); progression risk fell 72% in dMMR tumors.
+  url: https://ascopost.com/news/august-2024/fda-expands-endometrial-cancer-indication-for-dostarlimab-gxly-with-chemotherapy/
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: some
+  effect_note: Already approved; it adds real survival for advanced disease, most in the dMMR quarter
+    or so of tumors, but does not by itself cure most women with spread cancer.
+- name: Pembrolizumab plus chemotherapy (NRG-GY018)
+  stage: Approved
+  note: FDA-approved Jun 2024; at ASCO 2026, 48-month survival in dMMR tumors was 78.6% vs 60.4% (HR 0.56),
+    with a smaller, non-significant gain in pMMR tumors (HR 0.86).
+  url: https://oncodaily.com/trial-updates/nrg-gy018-trial-asco-2026
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: some
+  effect_note: Already approved; long-term data suggest many women with dMMR advanced disease stay alive
+    and well for years, though benefit in the more common pMMR type is modest.
+- name: Sacituzumab tirumotecan (TroFuse-005)
+  stage: Filed
+  note: TROP2 antibody-drug conjugate extended median survival to 19.0 from 12.1 months (HR 0.68) after
+    chemotherapy and immunotherapy; FDA priority review, decision due Jun 15, 2027.
+  url: https://www.onclive.com/view/sac-tmt-improves-pfs-and-os-is-under-fda-priority-review-in-previously-treated-endometrial-cancer
+  variants:
+  - stage-iv
+  expected: '2027-06-15'
+  effect: small
+  effect_note: If approved, it adds about seven months of median survival for recurrent disease after
+    standard drugs but does not cure.
+- name: Pembrolizumab alone as first treatment for dMMR disease (KEYNOTE-C93)
+  stage: Phase 3
+  note: Pembrolizumab alone delayed progression versus chemotherapy (median 38.2 vs 8.4 months) with
+    far fewer serious side effects; the survival difference was not yet significant at ESMO 2026.
+  url: https://www.curetoday.com/view/3-esmo-2026-results-in-endometrial-and-breast-cancer-to-know
+  variants:
+  - stage-iii
+  - stage-iv
+  effect: small
+  effect_note: It could let women with dMMR advanced disease skip chemotherapy, a milder treatment, but
+    it does not raise cure rates on current data.
+recent:
+- date: 2026-10
+  text: At ESMO 2026, the antibody-drug conjugate sac-TMT improved survival after chemotherapy and immunotherapy,
+    and pembrolizumab alone beat chemotherapy on progression in dMMR advanced disease.
+  url: https://www.curetoday.com/view/3-esmo-2026-results-in-endometrial-and-breast-cancer-to-know
+- date: 2026-05
+  text: Four-year NRG-GY018 data showed pembrolizumab plus chemotherapy keeps a survival benefit in dMMR
+    advanced endometrial cancer.
+  url: https://oncodaily.com/trial-updates/nrg-gy018-trial-asco-2026
+- date: 2024-08
+  text: FDA expanded dostarlimab plus chemotherapy to all primary advanced or recurrent endometrial cancer,
+    regardless of MMR status.
+  url: https://ascopost.com/news/august-2024/fda-expands-endometrial-cancer-indication-for-dostarlimab-gxly-with-chemotherapy/
+next_milestone:
+  date: '2027-06-15'
+  url: https://www.onclive.com/view/sac-tmt-improves-pfs-and-os-is-under-fda-priority-review-in-previously-treated-endometrial-cancer
+  what: FDA decision on sacituzumab tirumotecan for endometrial cancer that has progressed after chemotherapy
+    and immunotherapy.
+ai:
+  impact: low
+  note: Deep learning models such as im4MEC can predict a tumor's molecular group from standard tissue
+    slides in research studies, but are not yet in routine use and do not create new treatments.
+markets: []

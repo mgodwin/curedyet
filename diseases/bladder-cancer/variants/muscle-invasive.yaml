@@ -1,0 +1,43 @@
+# Cure Watch variant record: one stage or type of Bladder cancer. Field guide: CONTRIBUTING.md.
+id: muscle-invasive
+name: Muscle-invasive
+order: 2
+what: Cancer that has grown into the bladder muscle or beyond (stage T2-T4a), possibly into nearby lymph
+  nodes, but not to distant organs.
+level: 3
+burden: heavy
+burden_why: Treatment is bladder removal with a urinary stoma or a new bladder made from bowel, or weeks
+  of chemoradiation, plus months of drugs before and after that can cause nerve damage, rash, high blood
+  sugar and immune side effects.
+survival: ~50% alive at 5 years for stage 2 and more than 40% for stage 3 (England, diagnosed 2016-2020);
+  ~87% alive at 2 years with perioperative enfortumab vedotin plus pembrolizumab (KEYNOTE-B15)
+share: About 1 in 4 bladder cancers have invaded the muscle or spread when found (NCI estimates 70-80% are
+  non-muscle-invasive)
+share_url: https://www.cancer.gov/types/bladder/hp/bladder-treatment-pdq
+treatment: Radical cystectomy with drug treatment before and after, now often enfortumab vedotin plus
+  pembrolizumab (approved 2025-26) or cisplatin chemotherapy with durvalumab (2025). Trimodality therapy
+  (scope resection then chemoradiation) keeps the bladder and gave similar 5-year cancer control to cystectomy
+  in a large matched study.
+caveat: 'Rated 3: England figures (2016-2020) and historical cystectomy series predate perioperative immunotherapy
+  and enfortumab vedotin. KEYNOTE-B15 enrolled fit, cisplatin-eligible patients, and 2-year survival does
+  not show the long-term cure rate, but if 5-year results hold up this stage could approach the 85% line
+  for fit patients.'
+url: https://www.cancerresearchuk.org/about-cancer/bladder-cancer/survival
+forecast:
+  median: 2042
+  low: 2032
+  high: 2075
+  p2035: 15
+  p2045: 55
+  note: 'KEYNOTE-B15 (2-year survival 86.9% vs 81.3%, pathologic complete response 56%) and KEYNOTE-905
+    (survival HR 0.50) are the biggest gains in decades. Reaching 85% cured for most would need 5-year
+    data to confirm them, and similar results in older, frailer patients who make up much of this group.'
+easy:
+  median: 2058
+  low: 2040
+  high: 2100
+  p2035: 3
+  p2045: 20
+  note: A mild cure would mean keeping the bladder without chemoradiation, for example drugs alone in people
+    whose cancer vanishes on enfortumab vedotin plus pembrolizumab, which trials are only starting to
+    test.

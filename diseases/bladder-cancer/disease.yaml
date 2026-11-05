@@ -1,0 +1,162 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: bladder-cancer
+name: Bladder cancer
+category: cancer
+tracking: active
+summary: Cancer of the lining of the bladder, almost always urothelial carcinoma, with tobacco smoke
+  the biggest known cause and workplace chemicals, arsenic in water and the parasite infection schistosomiasis
+  among others.
+toll:
+  text: About 635,000 new cases and 228,000 deaths/yr worldwide (2024); ~84,530 US cases and ~17,870
+    US deaths est. 2026.
+  url: https://gco.iarc.who.int/media/globocan/factsheets/cancers/30-bladder-fact-sheet.pdf
+  ratio: "About 1 in 48"
+  ratio_caption: "Americans will be diagnosed with bladder cancer in their lifetime"
+  ratio_url: https://seer.cancer.gov/statfacts/html/urinb.html
+  ratio_basis: "NCI SEER Cancer Stat Facts: about 2.1% of men and women diagnosed in their lifetime (2021-2023 data); 2.1% is about 1 in 48."
+status:
+  level: 3
+  why: Most bladder cancers are caught before they invade the bladder muscle and rarely prove fatal, but
+    about 79% of all US patients are alive at 5 years, and cancer that has invaded the muscle or spread
+    cures far less often.
+  today: Cancer confined to the bladder lining is removed through a scope, often followed by BCG washes
+    into the bladder, though it comes back in more than half of people and needs years of camera checks.
+    Muscle-invasive cancer is treated with bladder removal or bladder-sparing chemoradiation, and since
+    2025-26 with enfortumab vedotin plus pembrolizumab or durvalumab around surgery, which raised survival
+    in large trials. Enfortumab vedotin plus pembrolizumab roughly doubled survival in metastatic disease
+    but rarely cures it. A BCG shortage since 2019 limits the main treatment for early disease, and in
+    parts of Africa and the Middle East bladder cancer linked to schistosomiasis is common and treatment
+    harder to reach.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Transurethral resection (TURBT) and surveillance cystoscopy
+  - Intravesical BCG, with durvalumab for BCG-naive high-risk disease
+  - Gemcitabine intravesical system (Inlexzo), nadofaragene and other options after BCG fails
+  - Radical cystectomy or trimodality chemoradiation for muscle-invasive disease
+  - Perioperative enfortumab vedotin plus pembrolizumab, or durvalumab with cisplatin chemotherapy
+  - Enfortumab vedotin plus pembrolizumab for metastatic disease
+  burden: heavy
+  burden_note: Early cancer means repeated scope surgery, cystoscopies every few months for years and
+    often one to three years of BCG; invasive cancer means bladder removal with a urinary stoma or new
+    bladder, or chemoradiation, plus months of drugs that can cause nerve damage, rash and immune side
+    effects.
+forecast:
+  bottleneck: access-limited
+  normal:
+    p2035: 18
+    p2045: 48
+    median: 2046
+    low: 2032
+    high: 2080
+  faster:
+    p2035: 25
+    p2045: 60
+    median: 2042
+    low: 2031
+    high: 2070
+  faster_note: Faster trials would mostly speed up proof that perioperative enfortumab vedotin and immunotherapy
+    cure more muscle-invasive cancers and let some people keep their bladder; for early disease the limits
+    are BCG supply and recurrence, not discovery.
+  outlook: Bladder cancer sits below the line mainly because muscle-invasive and metastatic cancers cure
+    far less often than early cancer. The 2025-26 approvals of perioperative enfortumab vedotin plus pembrolizumab
+    and durvalumab are the biggest change in decades, with two-year survival near 87% in KEYNOTE-B15,
+    but long-term cure rates are not yet known, older and frailer patients may not get them, and their
+    cost is high. Early disease is rarely fatal, so overall progress depends on invasive cancer.
+pipeline:
+- name: Perioperative enfortumab vedotin plus pembrolizumab (KEYNOTE-905/EV-303, KEYNOTE-B15/EV-304)
+  stage: Approved 2025-26
+  note: FDA-approved Nov 21, 2025 for cisplatin-ineligible and July 10, 2026 for all cystectomy candidates;
+    in KEYNOTE-B15, 2-year survival 86.9% vs 81.3% with cisplatin chemotherapy (HR 0.65).
+  url: https://www.pharmacytimes.com/view/pembrolizumab-plus-ev-regimens-receive-fda-approval-for-muscle-invasive-bladder-cancer
+  variants:
+  - muscle-invasive
+  effect: big
+  effect_note: Already approved; in cisplatin-ineligible patients it halved the risk of death versus surgery
+    alone, and it may lift long-term cure of muscle-invasive cancer substantially once follow-up matures.
+- name: Perioperative durvalumab with chemotherapy (NIAGARA)
+  stage: Approved
+  note: FDA-approved Mar 28, 2025 with gemcitabine-cisplatin before cystectomy and durvalumab after; overall
+    survival HR 0.75 in 1,063 patients.
+  url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-durvalumab-muscle-invasive-bladder-cancer
+  variants:
+  - muscle-invasive
+  effect: some
+  effect_note: Already approved; it adds a few points of survival over chemotherapy and surgery alone.
+- name: Durvalumab plus BCG (POTOMAC)
+  stage: Approved 2025-26
+  note: FDA-approved May 28, 2026 for BCG-naive high-risk non-muscle-invasive disease; 32% lower risk of
+    recurrence or death vs BCG alone (HR 0.68).
+  url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-durvalumab-combination-bacillus-calmette-guerin-high-risk-non-muscle-invasive-bladder
+  variants:
+  - non-muscle-invasive
+  effect: small
+  effect_note: Already approved; it cuts recurrence in high-risk early disease but adds a year of infusions
+    and immune side effects, and depends on scarce BCG.
+- name: Gemcitabine intravesical system (TAR-200, Inlexzo)
+  stage: Approved
+  note: FDA-approved Sept 9, 2025 for BCG-unresponsive carcinoma in situ; 82% complete response, about
+    half lasting a year or more; a small device left in the bladder for three weeks at a time.
+  url: https://www.targetedonc.com/view/fda-approves-intravesical-gemcitabine-delivery-for-bladder-cancer
+  variants:
+  - non-muscle-invasive
+  effect: some
+  effect_note: Already approved; it lets more people whose cancer resists BCG keep their bladder, and the
+    SunRISe-3 trial tests it in place of BCG.
+- name: Cretostimogene grenadenorepvec
+  stage: Filed
+  note: CG Oncology's cancer-killing virus gave a 75.5% complete response in BCG-unresponsive disease (BOND-003),
+    42% still responding at 24 months; rolling BLA started Nov 2025, completion guided for Q4 2026.
+  url: https://www.nasdaq.com/articles/cg-oncology-touts-cretostimogene-data-bla-progress-bladder-cancer-push
+  variants:
+  - non-muscle-invasive
+  expected: '2027'
+  effect: small
+  effect_note: Approval would add a well-tolerated bladder-sparing option after BCG fails, alongside nadofaragene
+    and Inlexzo, but would not change the outlook for most patients.
+- name: Nadofaragene firadenovec (Adstiladrin)
+  stage: Approved
+  note: FDA-approved Dec 16, 2022 as the first bladder cancer gene therapy for BCG-unresponsive carcinoma
+    in situ; 51% complete response, given every three months.
+  url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-disco-burst-edition-fda-approval-adstiladrin-nadofaragene-firadenovec-vncg-patients-high-risk
+  variants:
+  - non-muscle-invasive
+  effect: small
+  effect_note: Already approved; it helps about half of people whose cancer resists BCG avoid bladder removal
+    for a time.
+- name: Enfortumab vedotin plus pembrolizumab (EV-302)
+  stage: Approved
+  note: FDA-approved Dec 2023 for first-line advanced disease; median survival 33.6 vs 15.9 months with
+    chemotherapy at 3.5 years of follow-up, with 44% vs 25% alive at 42 months.
+  url: https://www.cancernetwork.com/view/enfortumab-vedotin-pembrolizumab-shows-long-term-survival-benefit-in-1l-urothelial-carcinoma
+  variants:
+  - metastatic
+  effect: some
+  effect_note: Already approved; it doubled survival and some complete responders stay well for years,
+    but most people still die of the cancer.
+recent:
+- date: 2026-07
+  text: FDA extended perioperative enfortumab vedotin plus pembrolizumab to all muscle-invasive bladder
+    cancer patients who can have cystectomy, after KEYNOTE-B15 beat cisplatin chemotherapy.
+  url: https://www.pharmacytimes.com/view/pembrolizumab-plus-ev-regimens-receive-fda-approval-for-muscle-invasive-bladder-cancer
+- date: 2026-05
+  text: FDA approved durvalumab with BCG for BCG-naive high-risk non-muscle-invasive bladder cancer.
+  url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-durvalumab-combination-bacillus-calmette-guerin-high-risk-non-muscle-invasive-bladder
+- date: 2025-11
+  text: FDA approved perioperative enfortumab vedotin plus pembrolizumab for cisplatin-ineligible muscle-invasive
+    bladder cancer, which halved the risk of death versus surgery alone.
+  url: https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-enfortumab-vedotin-ejfv-muscle-invasive-bladder-cancer
+- date: 2025-09
+  text: FDA approved TAR-200 (Inlexzo), a gemcitabine-releasing bladder device, for BCG-unresponsive carcinoma
+    in situ.
+  url: https://www.targetedonc.com/view/fda-approves-intravesical-gemcitabine-delivery-for-bladder-cancer
+next_milestone:
+  date: '2026-12'
+  url: https://www.nasdaq.com/articles/cg-oncology-touts-cretostimogene-data-bla-progress-bladder-cancer-push
+  what: CG Oncology expects to complete its rolling application for cretostimogene in BCG-unresponsive
+    high-risk non-muscle-invasive bladder cancer by year end.
+ai:
+  impact: some
+  note: An AI test that reads routine pathology slides to sort early bladder cancers by risk won FDA Breakthrough
+    Device designation in 2026, though AI tools for cystoscopy and pathology are mostly still being validated.
+markets: []

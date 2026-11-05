@@ -1,0 +1,34 @@
+# Cure Watch variant record: one stage or type of Uterine (endometrial) cancer. Field guide: CONTRIBUTING.md.
+id: stage-ii
+name: Stage II
+order: 2
+what: The cancer has grown into the connective tissue of the cervix but has not spread outside the womb.
+level: 3
+burden: heavy
+burden_why: It means a hysterectomy, sometimes a radical one, usually followed by radiation and for higher-grade
+  tumors chemotherapy.
+survival: ~75% alive at 5 years (net survival, England 2013-2017)
+treatment: Treatment is usually a hysterectomy with removal of the tubes, ovaries and often lymph nodes,
+  followed by radiation; higher-grade tumors may add carboplatin and paclitaxel. Women who cannot have
+  surgery can be treated with external and internal radiation.
+caveat: 'Rated 3: around 75% survive 5 years (England, 2013-2017), below 85%. These data predate molecular
+  classification and the 2023 FIGO staging update, which moves some aggressive tumors to higher stages
+  and some low-risk ones lower, so the true figure for today''s stage II may differ.'
+url: https://www.cancerresearchuk.org/about-cancer/womb-cancer/survival
+forecast:
+  median: 2045
+  low: 2032
+  high: 2080
+  p2035: 15
+  p2045: 50
+  note: About 75% survive 5 years, so a gain of around 10 points is needed. Using molecular groups to
+    give chemotherapy to p53-abnormal tumors and spare low-risk ones, plus immunotherapy for mismatch
+    repair-deficient tumors, could get there, but trials guided by molecular groups are still running.
+easy:
+  median: 2070
+  low: 2045
+  high: 2100
+  p2035: 1
+  p2045: 8
+  note: Stage II needs surgery and usually radiation; a mild cure would need drugs that replace both,
+    which is far off.

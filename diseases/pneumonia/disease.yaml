@@ -1,0 +1,174 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: pneumonia
+name: Pneumonia
+category: infectious
+tracking: active
+summary: An infection of the lungs' air sacs, caused mostly by bacteria such as pneumococcus or by viruses
+  such as flu, RSV and COVID-19, that fills them with fluid and makes breathing hard; WHO counts it with
+  other lower respiratory infections.
+toll:
+  text: Lower respiratory infections killed about 2.7 million people in 2023, the 4th leading cause of death
+    and the deadliest infectious disease worldwide (WHO); pneumonia killed 740,000 children under 5 in
+    2019. In the US, about 1.6 million adults are hospitalised with pneumonia each year and 41,627 deaths
+    were attributed to it in 2024.
+  url: https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death
+  ratio: "About 1 in 7"
+  ratio_caption: "deaths of children under 5 worldwide is caused by pneumonia"
+  ratio_url: https://www.who.int/news-room/fact-sheets/detail/pneumonia
+  ratio_basis: "WHO fact sheet: pneumonia accounted for 14% of all deaths of children under 5 in 2019 (22% of deaths at ages 1-5); 14% is about 1 in 7."
+status:
+  level: 3
+  why: Antibiotics cure most bacterial pneumonia in rich countries, but viral pneumonia has no reliable
+    cure, about 13% of US adults hospitalised with pneumonia die within 30 days, and many children in poor
+    countries never get treatment.
+  today: Bacterial pneumonia is treated with a few days of antibiotics, at home or in hospital, and severe
+    cases may also get oxygen, intensive care and, since 2025, steroids. Viral pneumonia from flu, RSV
+    or COVID-19 gets supportive care plus antivirals where they exist (see the flu and RSV pages). Older
+    adults, babies and people with other illnesses are most at risk, often dying of sepsis, the body's
+    runaway response to infection; lower respiratory infection is the most common underlying cause of
+    sepsis deaths worldwide. Worldwide, only
+    about a third of children with pneumonia get the antibiotics they need, fewer than 1 in 3 people in
+    poorer countries who need oxygen get it, and resistance to antibiotics is rising.
+  last_reviewed: '2026-11-05'
+treatment:
+  best:
+  - Antibiotics, e.g. amoxicillin or doxycycline at home, a beta-lactam plus a macrolide in hospital
+  - Oxygen and intensive care, including ventilation, for severe pneumonia
+  - Hydrocortisone for severe bacterial pneumonia (not flu)
+  - Antivirals for flu (oseltamivir, baloxavir) and COVID-19 (nirmatrelvir-ritonavir, remdesivir)
+  - Dexamethasone for COVID-19 pneumonia needing oxygen
+  - Amoxicillin dispersible tablets for children, given by community health workers
+  burden: moderate
+  burden_note: Many people need only three to five days of pills at home, but older adults and those with
+    severe pneumonia need hospital stays with IV antibiotics, oxygen or ventilation, and about 1 in 3 adults
+    hospitalised with pneumonia dies within a year.
+forecast:
+  bottleneck: trial-limited
+  normal:
+    p2035: 10
+    p2045: 30
+    median: 2052
+    low: 2035
+    high: 2100
+  faster:
+    p2035: 14
+    p2045: 42
+    median: 2046
+    low: 2033
+    high: 2095
+  faster_note: A faster pipeline would help most through quicker, larger trials of early antivirals and
+    immune-calming drugs in older adults with viral pneumonia, and of new antibiotics against resistant
+    bacteria; prevention would gain from faster broad-coverage vaccine trials.
+  outlook: Bacterial pneumonia is already cured for most, so the disease as a whole is held back by viral
+    pneumonia, which has no drug that reliably clears it, and by the frail older adults who still die after
+    hospital care. Level 4 for the typical patient needs treatment that prevents most deaths from viral
+    pneumonia, and recent flu and RSV antiviral trials have mostly missed. Rising antibiotic resistance
+    is a risk to the cure that already exists.
+pipeline:
+- name: VAX-31 (Vaxcyte, 31-valent pneumococcal conjugate vaccine)
+  stage: Phase 3
+  note: Met all its immune-response goals against PCV20 and PCV21 in the 4,047-adult OPUS-1 Phase 3 (Oct
+    2026); OPUS-2 and -3 and infant Phase 2 data due in the first half of 2027, adult filing planned 1H 2028.
+  url: https://www.sec.gov/Archives/edgar/data/0001649094/000164909426000051/pcvx-20261104xexx991.htm
+  variants:
+  - community-acquired-bacterial
+  - childhood
+  expected: '2027-06'
+  effect: small
+  effect_note: Broader serotype coverage could prevent more pneumococcal pneumonia, but vaccines cover only
+    one cause and do not change how well pneumonia is treated.
+- name: Pfizer 25-valent pneumococcal conjugate vaccine (25vPnC) for infants
+  stage: Phase 3
+  note: Pivotal paediatric Phase 3 of about 2,400 infants against PCV20 began May 2026 after Phase 2 showed
+    a much stronger response to serotype 3; Pfizer says it would cover about 25% more invasive disease
+    than PCV20.
+  url: https://www.pfizer.com/news/press-release/press-release-detail/pfizer-advances-pivotal-pediatric-pneumococcal-vaccine
+  variants:
+  - childhood
+  effect: small
+  effect_note: Could cut more pneumococcal disease in children, but most childhood pneumonia deaths in poor
+    countries come from lack of care and from other germs.
+- name: Zelicapavir (Enanta, oral RSV antiviral)
+  stage: Phase 2
+  note: Missed its main symptom goal in high-risk adults but lowered hospitalisation; a paediatric Phase
+    2b reports in 2027 (details on the RSV page).
+  url: https://www.contagionlive.com/view/novel-rsv-therapy-addressing-a-clinical-need
+  variants:
+  - viral
+  expected: '2027'
+  effect: small
+  effect_note: A clear win would give the first modern RSV antiviral a path to approval, a small step for
+    viral pneumonia, which has many causes.
+- name: Hydrocortisone for severe community-acquired pneumonia
+  stage: Approved 2025-26
+  note: In the CAPE COD trial (NEJM 2023), 28-day deaths fell from 11.9% to 6.2% in ICU patients; the 2025
+    ATS guideline now suggests steroids for severe pneumonia except flu, though other trials disagreed and
+    IDSA did not endorse it.
+  url: https://contagionlive.com/view/2025-american-thoracic-society-clinical-practice-guideline-updates-for-the-diagnosis-and-management-of-community-acquired-pneumonia
+  variants:
+  - community-acquired-bacterial
+  effect: small
+  effect_note: Already in guidelines; it may save some lives in intensive care, but the evidence is mixed
+    and it helps only the sickest patients.
+recent:
+- date: 2026-10
+  text: WHO's updated top causes of death showed lower respiratory infections again the deadliest infectious
+    disease, killing 2.7 million people in 2023.
+  url: https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death
+- date: 2026-10
+  text: Vaxcyte's 31-valent pneumococcal vaccine met its immune-response goals in the adult OPUS-1 Phase
+    3 trial.
+  url: https://www.sec.gov/Archives/edgar/data/0001649094/000164909426000051/pcvx-20261104xexx991.htm
+- date: 2026-05
+  text: Pfizer moved its 25-valent pneumococcal vaccine for infants into Phase 3.
+  url: https://www.pfizer.com/news/press-release/press-release-detail/pfizer-advances-pivotal-pediatric-pneumococcal-vaccine
+- date: 2025-10
+  text: WHO reported that about 1 in 6 lab-confirmed bacterial infections worldwide resisted antibiotics
+    in 2023, with resistance rising in over 40% of drug-germ pairs monitored.
+  url: https://www.who.int/news/item/13-10-2025-who-warns-of-widespread-resistance-to-common-antibiotics-worldwide
+- date: 2025-07
+  text: The American Thoracic Society's updated pneumonia guideline suggested steroids for severe pneumonia
+    not caused by flu, a reversal from 2019.
+  url: https://contagionlive.com/view/2025-american-thoracic-society-clinical-practice-guideline-updates-for-the-diagnosis-and-management-of-community-acquired-pneumonia
+next_milestone:
+  date: '2027-06'
+  url: https://www.sec.gov/Archives/edgar/data/0001649094/000164909426000051/pcvx-20261104xexx991.htm
+  what: First infant data for Vaxcyte's 31-valent pneumococcal vaccine VAX-31, plus its OPUS-2 and OPUS-3
+    adult results, due by the end of the first half of 2027.
+ai:
+  impact: low
+  note: 'Unclear: the newest pneumonia vaccines and the steroid result came from conventional vaccine chemistry
+    and trials, with no clear AI role yet in a late-stage pneumonia drug or vaccine.'
+markets: []
+prevention:
+  level: 1
+  burden: moderate
+  why: Vaccines prevent specific causes well, but in trials they cut pneumonia from all causes far less
+    than half, about 27% fewer X-ray-confirmed cases in young children for pneumococcal vaccine and no clear
+    drop in older adults, because many different germs cause it.
+  burden_why: Protection takes several vaccines, a pneumococcal series in childhood and a dose from age
+    50, plus yearly flu and COVID-19 shots and RSV shots for babies and older adults, and coverage is lowest
+    in the poorer countries where most deaths occur.
+  best:
+  - Pneumococcal conjugate vaccines (PCV15, PCV20, PCV21 including V116/Capvaxive)
+  - Hib vaccine for infants
+  - Flu, COVID-19, RSV, measles and whooping cough vaccines
+  - Clean cooking fuel, breastfeeding and good nutrition for young children
+  url: https://www.cochrane.org/evidence/CD004977_vaccines-against-overwhelming-blood-infection-due-pneumococcus-bacteria-and-lung-infection-pneumonia
+  forecast:
+    median: 2070
+    low: 2045
+    high: 2100
+    p2035: 2
+    p2045: 10
+    note: Strong protection against pneumonia from all causes would need vaccines against most of its germs,
+      including universal flu and broad pneumococcal vaccines; each new vaccine adds partial protection,
+      so rung 3 for pneumonia as a whole is far off.
+  easy:
+    median: 2080
+    low: 2050
+    high: 2100
+    p2035: 1
+    p2045: 6
+    note: Mild prevention would also need those vaccines combined into few, cheap shots that reach children
+      and older adults in low-income countries.

@@ -1,0 +1,32 @@
+# Cure Watch variant record: one stage or type of Kidney cancer. Field guide: CONTRIBUTING.md.
+id: stage-iv
+name: Stage IV
+order: 4
+what: The cancer has grown beyond the fat around the kidney, into the adrenal gland, or spread to distant
+  organs such as the lungs, bones, liver or brain.
+level: 1
+burden: heavy
+burden_why: Most stay on immunotherapy and targeted pills for years, often with immune side effects and fatigue.
+survival: ~15% alive at 5 years (net survival, England 2016-2020)
+share: Includes the roughly 15% of US kidney cancers that have spread to distant organs at diagnosis
+  (SEER 'distant')
+share_url: https://seer.cancer.gov/statfacts/html/kidrp.html
+treatment: First treatment is usually an immunotherapy combination, such as nivolumab with ipilimumab
+  or pembrolizumab with axitinib or lenvatinib, followed by drugs such as cabozantinib or belzutifan.
+  A few people with limited spread can have all tumors removed or ablated. These extend life by years
+  for many, and about 1 in 10 have complete responses that can last years, but most still progress.
+caveat: The England (2016-2020) and SEER distant (about 20%, 2016-2022) figures only partly reflect
+  immunotherapy combinations. In CheckMate 214, about 12% had complete responses and about 23% were alive
+  without progression at 7.5 years on nivolumab plus ipilimumab; some of them may be cured, but most patients
+  are not, so it is rated 1.
+url: https://www.cancerresearchuk.org/about-cancer/kidney-cancer/survival
+forecast:
+  median: 2060
+  low: 2040
+  high: 2100
+  p2035: 3
+  p2045: 15
+  note: Immunotherapy already gives a lasting complete response to about 1 in 10, which is more than
+    most spread cancers, but a cure for most needs drugs that turn the majority of responses into lasting
+    ones. The 2026 failure of the belzutifan triplet shows that adding today's drugs is not enough; new
+    drugs such as the HIF-2 inhibitor casdatifan are being tested.

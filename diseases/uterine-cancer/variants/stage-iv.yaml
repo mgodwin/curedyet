@@ -1,0 +1,31 @@
+# Cure Watch variant record: one stage or type of Uterine (endometrial) cancer. Field guide: CONTRIBUTING.md.
+id: stage-iv
+name: Stage IV
+order: 4
+what: The cancer has spread into the bladder or bowel lining, or to distant organs such as the lungs,
+  liver, bones or the lining of the abdomen.
+level: 1
+burden: heavy
+burden_why: Chemotherapy with immunotherapy, often followed by ongoing immunotherapy or later-line drugs,
+  sometimes with surgery or radiation to control symptoms.
+survival: ~15% alive at 5 years (net survival, England 2013-2017)
+share: About 1 in 9 US uterine cancers have spread to distant organs at diagnosis (SEER 'distant', 11%)
+share_url: https://seer.cancer.gov/statfacts/html/corp.html
+treatment: Most women get carboplatin and paclitaxel with dostarlimab, pembrolizumab or durvalumab, then
+  maintenance immunotherapy; later options include pembrolizumab with lenvatinib and hormone therapy. These extend life and can control mismatch repair-deficient
+  cancers for years, but rarely cure most women.
+caveat: Survival figures from England (2013-2017) and SEER distant stage (about 20%, 2016-2022) predate
+  immunotherapy with first-line chemotherapy. Mismatch repair-deficient tumors, about a quarter to a third
+  of cases, can respond for years and some of these women may be cured; most other stage IV cancers still
+  progress, so it is rated 1.
+url: https://www.cancerresearchuk.org/about-cancer/womb-cancer/survival
+forecast:
+  median: 2068
+  low: 2045
+  high: 2100
+  p2035: 1
+  p2045: 8
+  note: Immunotherapy can hold mismatch repair-deficient spread disease for years, but most stage IV
+    tumors are mismatch repair-proficient and still progress. A cure for most would need drugs that clear
+    widespread disease of that type; antibody-drug conjugates such as sac-TMT extend life after other
+    drugs fail but have not been shown to cure.

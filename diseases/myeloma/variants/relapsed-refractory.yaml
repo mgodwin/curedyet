@@ -1,0 +1,33 @@
+# Cure Watch variant record: one stage or type of Multiple myeloma. Field guide: CONTRIBUTING.md.
+id: relapsed-refractory
+name: Relapsed or refractory myeloma
+order: 3
+what: Myeloma that has come back after treatment or stopped responding to it; each later relapse tends
+  to be harder to control.
+level: 2
+burden: heavy
+burden_why: CAR-T needs cell collection, chemotherapy and a hospital stay with risks of cytokine release
+  syndrome and nerve toxicity, and bispecifics are given continuously with frequent serious infections,
+  at very high cost.
+survival: After cilta-cel in heavily treated patients, about 33% progression-free at 5 years with no further
+  treatment and median survival about 5 years (CARTITUDE-1, 97 patients)
+treatment: At first relapse, options include teclistamab plus daratumumab (approved Mar 2026, cutting progression
+  or death by 83% versus older combinations) and earlier CAR-T. Later on, CAR-T cells (cilta-cel, ide-cel)
+  and bispecific antibodies (teclistamab, elranatamab, talquetamab, linvoseltamab) produce deep responses
+  in most people, but most still relapse, and bispecifics are usually continued indefinitely.
+caveat: 'CARTITUDE-1 is the strongest sign of cure in myeloma: 32 of 97 heavily treated people were still
+  progression-free 5 years after a single cilta-cel infusion, with no maintenance, and the authors called
+  it potentially curative. But it is one Phase 1b/2 trial, MRD was tested over time in only 12 of those
+  32, CAR-T is costly and not available to everyone, and most patients still relapse, so this is rated
+  2 rather than 3 until longer and larger data confirm it.'
+url: https://pubmed.ncbi.nlm.nih.gov/40459151/
+forecast:
+  median: 2060
+  low: 2042
+  high: 2100
+  p2035: 2
+  p2045: 12
+  note: Curing most relapsed myeloma would need treatments that clear resistant disease for good, for example
+    combinations of CAR-T and bispecifics against different targets (BCMA, GPRC5D). Anito-cel's FDA decision
+    (Dec 2026) adds another CAR-T, but current data show long remissions in a minority, and cure for most
+    relapsed patients is likely to trail first-line progress by a decade or more.

@@ -1,0 +1,37 @@
+# Cure Watch variant record: one stage or type of Esophageal cancer. Field guide: CONTRIBUTING.md.
+id: stage-iii
+name: Stage III
+order: 3
+what: The cancer has grown through the esophagus wall and reached several nearby lymph nodes, but not
+  distant organs.
+level: 3
+burden: heavy
+burden_why: Chemoradiation or months of chemotherapy, then esophagectomy, often followed by a year of
+  nivolumab, with serious side effects at each step.
+survival: ~20% alive at 5 years (net survival, England, diagnosed 2016-2020)
+share: Most of the roughly 1 in 3 US esophageal cancers that have spread to nearby lymph nodes or tissue
+  (SEER 'regional', 32%)
+share_url: https://seer.cancer.gov/statfacts/html/esoph.html
+treatment: The same combined treatment as stage II when surgery is possible; otherwise chemoradiation
+  alone. In the CROSS trial of locally advanced disease, chemoradiation before surgery raised 10-year
+  survival from 25% to 38%.
+caveat: English figures cover diagnoses in 2016-2020 and include people too unwell for full treatment.
+  Adjuvant nivolumab (CheckMate 577) clearly delayed relapse, but its survival gain (46% vs 41% at 5 years)
+  did not reach statistical significance.
+url: https://www.cancerresearchuk.org/about-cancer/oesophageal-cancer/survival
+forecast:
+  median: 2066
+  low: 2045
+  high: 2100
+  p2035: 2
+  p2045: 10
+  note: About one in five survive 5 years, so curing most needs drugs far stronger than today's. Immunotherapy
+    and targeted drugs that work in spread disease, moved before surgery, are the main hope, and none has
+    yet shown a large survival gain there.
+easy:
+  median: 2085
+  low: 2052
+  high: 2100
+  p2035: 1
+  p2045: 3
+  note: A mild cure would need drugs that replace both chemoradiation and esophagectomy, which is far off.

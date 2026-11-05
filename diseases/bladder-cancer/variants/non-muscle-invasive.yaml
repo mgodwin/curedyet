@@ -1,0 +1,40 @@
+# Cure Watch variant record: one stage or type of Bladder cancer. Field guide: CONTRIBUTING.md.
+id: non-muscle-invasive
+name: Non-muscle-invasive
+order: 1
+what: Cancer confined to the inner lining of the bladder (stage Ta, T1 or carcinoma in situ), not grown
+  into the bladder muscle.
+level: 4
+burden: heavy
+burden_why: It means scope surgery under anaesthetic, cystoscopy every few months for years, frequent
+  repeat surgery for recurrences and, for higher-risk cancers, one to three years of BCG washes that cause
+  bladder irritation and flu-like symptoms; some end up needing bladder removal.
+survival: ~98% alive at 5 years for non-invasive and in situ cancers (SEER relative survival, 2016-2022);
+  more than 75% for stage 1 in England, which includes T1 cancers that reach the deeper lining
+share: About half of US bladder cancers are found while still non-invasive (SEER 'in situ', 50%), and
+  about 70-80% are non-muscle-invasive at diagnosis (NCI)
+share_url: https://seer.cancer.gov/statfacts/html/urinb.html
+treatment: The tumor is cut out through a scope (TURBT), often followed by chemotherapy or BCG washed
+  into the bladder; high-risk cancers get BCG for one to three years, and since 2026 durvalumab can be
+  added. When BCG stops working, options include bladder removal, the gemcitabine-releasing device Inlexzo,
+  the gene therapy nadofaragene or other bladder washes.
+caveat: 'Judgement call: few people die of it, but in one long study about 80% had a recurrence within
+  20 years, so "cured" here means kept free of life-threatening cancer by repeated treatment, and high-grade
+  cancers progress to muscle invasion far more often than low-grade ones. It could be argued as 3.
+  A shortage of BCG since 2019 means some people get reduced doses or substitutes.'
+url: https://seer.cancer.gov/statfacts/html/urinb.html
+easy:
+  median: 2048
+  low: 2034
+  high: 2100
+  p2035: 7
+  p2045: 40
+  note: Mild cure would need far fewer recurrences and repeat surgeries, urine or blood tests in place
+    of most cystoscopies, and drugs that clear high-risk disease without years of BCG or bladder removal.
+    Longer-acting bladder drugs (Inlexzo, cretostimogene, sustained-release mitomycin) and urine tumor-DNA
+    tests point that way but are not yet standard.
+reached:
+  year: 1990
+  basis: 'Approximate: by about 1990 scope resection plus intravesical BCG was standard for early bladder
+    cancer and kept most people from dying of it; there is no single dated milestone.'
+  url: https://www.cancer.gov/types/bladder/hp/bladder-treatment-pdq

@@ -1,0 +1,36 @@
+# Cure Watch variant record: one stage or type of Uterine (endometrial) cancer. Field guide: CONTRIBUTING.md.
+id: stage-i
+name: Stage I
+order: 1
+what: The cancer is confined to the body of the womb and has not reached the cervix, lymph nodes or other
+  organs.
+level: 4
+burden: heavy
+burden_why: Nearly everyone has a hysterectomy with removal of the tubes and ovaries, which ends fertility,
+  and higher-risk tumors add internal or pelvic radiation.
+survival: '>90% alive at 5 years (net survival, England 2013-2017)'
+share: Most of the roughly 2 in 3 US uterine cancers found while still confined to the womb (SEER 'localized',
+  67%)
+share_url: https://seer.cancer.gov/statfacts/html/corp.html
+treatment: A hysterectomy with removal of both tubes and ovaries, usually by keyhole or robotic surgery,
+  cures most women, and many need nothing more. Higher-grade or deeper tumors may add vaginal brachytherapy
+  or pelvic radiation, and aggressive types such as serous cancers often add chemotherapy. A few young
+  women with the lowest-risk tumors try hormone (progestin) treatment first to preserve fertility.
+caveat: More than 90% survive 5 years and late relapses are uncommon, so it is comfortably above 85%. The
+  rare p53-abnormal and serous stage I tumors do much worse than the typical one, and POLE-mutated tumors
+  almost never come back.
+url: https://www.cancerresearchuk.org/about-cancer/womb-cancer/survival
+easy:
+  median: 2055
+  low: 2036
+  high: 2100
+  p2035: 5
+  p2045: 28
+  note: Almost every stage I cancer still means a hysterectomy. A mild cure for most would need hormone
+    treatment, such as a progestin-releasing coil, or another non-surgical option to clear most early
+    tumors reliably, which today works only for a small group of young women with the lowest-risk cancers.
+reached:
+  year: 1950
+  basis: 'Approximate: by mid-century hysterectomy, often with radium treatment, was standard for cancer
+    confined to the womb and cured the large majority.'
+  url: https://www.cancerresearchuk.org/about-cancer/womb-cancer/survival

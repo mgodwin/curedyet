@@ -1,0 +1,41 @@
+# Cure Watch variant record: one stage or type of Head and neck cancer. Field guide: CONTRIBUTING.md.
+id: advanced-hpv-negative
+name: Advanced HPV-negative cancer
+order: 3
+what: A larger cancer of the mouth, voice box or throat not caused by HPV (stage III-IVB), usually spread
+  to lymph nodes in the neck but not to distant organs.
+level: 3
+burden: heavy
+burden_why: Treatment is major surgery, sometimes with removal of the voice box or reconstruction, followed
+  by six weeks of radiation, or radiation with cisplatin, often leaving lasting swallowing, speech and
+  dry mouth problems.
+survival: ~49% alive at 5 years for voice box cancer spread to neck nodes (SEER relative survival 2016-2022);
+  ~59-68% alive at 3 years in the KEYNOTE-689 trial
+  (PD-L1 CPS 10 or more)
+share: Most head and neck cancers are found after spread to the neck nodes (SEER 'regional', 55% of mouth
+  and throat and 30% of voice box cancers)
+share_url: https://seer.cancer.gov/statfacts/html/oralcav.html
+treatment: Surgery followed by radiation or chemoradiation, or six to seven weeks of radiation with cisplatin
+  to try to keep the voice box, cures about half. Since 2025, pembrolizumab before and after surgery
+  is an option for tumors with PD-L1 CPS 1 or more. Many people need a feeding tube for a time, and some
+  lose their voice box.
+caveat: 'Rated 3: about half survive five years. The SEER and trial figures were mostly gathered before
+  perioperative pembrolizumab (2025), which lowered relapse in KEYNOTE-689 but has immature survival data.'
+url: https://seer.cancer.gov/statfacts/html/laryn.html
+forecast:
+  median: 2062
+  low: 2040
+  high: 2100
+  p2035: 2
+  p2045: 12
+  note: Going from about 50% to 85% cured is a big jump. Perioperative pembrolizumab and adjuvant nivolumab
+    each add a few points, and new antibodies such as petosemtamab may move into earlier disease, but
+    no candidate yet looks able to close the gap.
+easy:
+  median: 2080
+  low: 2050
+  high: 2100
+  p2035: 1
+  p2045: 4
+  note: A mild cure would need drugs that replace surgery and radiation for most people, which is far
+    off.
