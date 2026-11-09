@@ -18,6 +18,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-09: No new outbreak since Uganda's isolated July 2026 case, and Sabin has not yet reported cAd3-Marburg Phase 2 immunogenicity. Forecasts unchanged.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 
 ## Open questions

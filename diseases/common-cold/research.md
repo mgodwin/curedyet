@@ -33,6 +33,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-09: No new readouts; APL-10456 two-dose data still expected in December. Forecasts unchanged.
 - 2026-11-05: First full record. Rated cure level 1 with light burden on symptom relief only, and prevention level 0 with heavy burden (nothing licensed to take). Found the first rhinovirus vaccine in human trials (APL-10456, Phase 1, Aug 2026) and the leading antiviral (vapendavir, Phase 2b CARDINAL in COPD).
 
 ## Open questions

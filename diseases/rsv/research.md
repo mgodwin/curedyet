@@ -24,6 +24,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-09: No new approvals or readouts; Enanta's zelicapavir trials expect topline data in 2027. Forecasts unchanged.
 - 2026-11-05: Baseline research for the first Cure Watch record (level, treatment, prevention, pipeline, forecasts).
 
 ## Open questions

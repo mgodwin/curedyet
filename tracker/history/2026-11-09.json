@@ -1,0 +1,763 @@
+{
+ "accelIndex": 21,
+ "checks": {
+  "chk-aging": 20,
+  "chk-aging-dogs": 55,
+  "chk-alzheimers": 15,
+  "chk-breast-cancer": 85,
+  "chk-ebola": 50,
+  "chk-epilepsy": 88,
+  "chk-h5n1": 1,
+  "chk-hair-loss": 65,
+  "chk-hepatitis-b": 60,
+  "chk-lung-cancer": 50,
+  "chk-marburg": 45,
+  "chk-nipah": 65,
+  "chk-osteoarthritis": 70,
+  "chk-prion-disease": 10,
+  "chk-prostate-cancer": 80,
+  "chk-schizophrenia": 80,
+  "chk-tuberculosis": 55
+ },
+ "date": "2026-11-09",
+ "diseases": {
+  "age-related-hearing-loss": {
+   "high": 2099,
+   "level": 2,
+   "low": 2039,
+   "median": 2056,
+   "p2035": 2,
+   "p2045": 13,
+   "txBurden": "moderate"
+  },
+  "age-related-vision-loss": {
+   "high": 2099,
+   "level": 2,
+   "low": 2039,
+   "median": 2058,
+   "p2035": 2,
+   "p2045": 11,
+   "txBurden": "light"
+  },
+  "aging": {
+   "high": 2100,
+   "level": 1,
+   "low": 2057,
+   "median": 2096,
+   "p2035": 1,
+   "p2045": 3,
+   "txBurden": "moderate"
+  },
+  "als": {
+   "high": 2098,
+   "level": 1,
+   "low": 2044,
+   "median": 2064,
+   "p2035": 2,
+   "p2045": 12,
+   "txBurden": "moderate"
+  },
+  "alzheimers": {
+   "high": 2095,
+   "level": 1,
+   "low": 2039,
+   "median": 2055,
+   "p2035": 4,
+   "p2045": 19,
+   "txBurden": "heavy"
+  },
+  "anxiety-disorders": {
+   "high": 2099,
+   "level": 2,
+   "low": 2039,
+   "median": 2056,
+   "p2035": 4,
+   "p2045": 15,
+   "txBurden": "moderate"
+  },
+  "asthma": {
+   "high": 2100,
+   "level": 2,
+   "low": 2044,
+   "median": 2066,
+   "p2035": 2,
+   "p2045": 10,
+   "txBurden": "moderate"
+  },
+  "atrial-fibrillation": {
+   "high": 2089,
+   "level": 2,
+   "low": 2037,
+   "median": 2052,
+   "p2035": 6,
+   "p2045": 25,
+   "txBurden": "moderate"
+  },
+  "bipolar-disorder": {
+   "high": 2100,
+   "level": 2,
+   "low": 2044,
+   "median": 2064,
+   "p2035": 2,
+   "p2045": 11,
+   "txBurden": "moderate"
+  },
+  "bladder-cancer": {
+   "high": 2078,
+   "level": 3,
+   "low": 2032,
+   "median": 2045,
+   "p2035": 19,
+   "p2045": 51,
+   "txBurden": "heavy"
+  },
+  "breast-cancer": {
+   "high": 2000,
+   "level": 4,
+   "low": 2000,
+   "median": 2000,
+   "p2035": 100,
+   "p2045": 100,
+   "txBurden": "heavy"
+  },
+  "cervical-cancer": {
+   "high": 2083,
+   "level": 3,
+   "low": 2034,
+   "median": 2049,
+   "p2035": 11,
+   "p2045": 38,
+   "txBurden": "heavy"
+  },
+  "chronic-kidney-disease": {
+   "high": 2100,
+   "level": 1,
+   "low": 2045,
+   "median": 2067,
+   "p2035": 1,
+   "p2045": 8,
+   "txBurden": "moderate"
+  },
+  "colorectal-cancer": {
+   "high": 2062,
+   "level": 3,
+   "low": 2030,
+   "median": 2040,
+   "p2035": 32,
+   "p2045": 63,
+   "txBurden": "heavy"
+  },
+  "common-cold": {
+   "high": 2100,
+   "level": 1,
+   "low": 2041,
+   "median": 2063,
+   "p2035": 2,
+   "p2045": 10,
+   "txBurden": "light"
+  },
+  "copd": {
+   "high": 2100,
+   "level": 1,
+   "low": 2049,
+   "median": 2072,
+   "p2035": 1,
+   "p2045": 7,
+   "txBurden": "moderate"
+  },
+  "coronary-artery-disease": {
+   "high": 2098,
+   "level": 2,
+   "low": 2041,
+   "median": 2057,
+   "p2035": 4,
+   "p2045": 16,
+   "txBurden": "moderate"
+  },
+  "covid-19": {
+   "high": 2098,
+   "level": 1,
+   "low": 2034,
+   "median": 2051,
+   "p2035": 6,
+   "p2045": 21,
+   "txBurden": "light"
+  },
+  "cystic-fibrosis": {
+   "high": 2086,
+   "level": 2,
+   "low": 2037,
+   "median": 2050,
+   "p2035": 5,
+   "p2045": 24,
+   "txBurden": "moderate"
+  },
+  "dengue": {
+   "high": 2098,
+   "level": 1,
+   "low": 2039,
+   "median": 2056,
+   "p2035": 4,
+   "p2045": 17,
+   "txBurden": "moderate"
+  },
+  "depression": {
+   "high": 2099,
+   "level": 2,
+   "low": 2041,
+   "median": 2059,
+   "p2035": 4,
+   "p2045": 13,
+   "txBurden": "moderate"
+  },
+  "duchenne": {
+   "high": 2097,
+   "level": 1,
+   "low": 2041,
+   "median": 2056,
+   "p2035": 4,
+   "p2045": 16,
+   "txBurden": "heavy"
+  },
+  "ebola": {
+   "high": 2072,
+   "level": 3,
+   "low": 2030,
+   "median": 2041,
+   "p2035": 33,
+   "p2045": 59,
+   "txBurden": "heavy"
+  },
+  "epilepsy": {
+   "high": 2097,
+   "level": 2,
+   "low": 2039,
+   "median": 2056,
+   "p2035": 5,
+   "p2045": 20,
+   "txBurden": "moderate"
+  },
+  "esophageal-cancer": {
+   "high": 2100,
+   "level": 3,
+   "low": 2046,
+   "median": 2066,
+   "p2035": 2,
+   "p2045": 9,
+   "txBurden": "heavy"
+  },
+  "fatty-liver-disease": {
+   "high": 2093,
+   "level": 2,
+   "low": 2036,
+   "median": 2051,
+   "p2035": 6,
+   "p2045": 23,
+   "txBurden": "moderate"
+  },
+  "glioblastoma": {
+   "high": 2100,
+   "level": 1,
+   "low": 2046,
+   "median": 2066,
+   "p2035": 1,
+   "p2045": 8,
+   "txBurden": "heavy"
+  },
+  "h5n1": {
+   "high": 2077,
+   "level": 1,
+   "low": 2032,
+   "median": 2046,
+   "p2035": 17,
+   "p2045": 46,
+   "txBurden": "light"
+  },
+  "hair-loss": {
+   "high": 2077,
+   "level": 2,
+   "low": 2033,
+   "median": 2047,
+   "p2035": 12,
+   "p2045": 42,
+   "txBurden": "moderate"
+  },
+  "head-and-neck-cancer": {
+   "high": 2093,
+   "level": 3,
+   "low": 2036,
+   "median": 2054,
+   "p2035": 8,
+   "p2045": 28,
+   "txBurden": "heavy"
+  },
+  "heart-failure": {
+   "high": 2100,
+   "level": 1,
+   "low": 2046,
+   "median": 2066,
+   "p2035": 2,
+   "p2045": 9,
+   "txBurden": "moderate"
+  },
+  "hemophilia": {
+   "high": 2085,
+   "level": 2,
+   "low": 2037,
+   "median": 2049,
+   "p2035": 8,
+   "p2045": 36,
+   "txBurden": "moderate"
+  },
+  "hepatitis-b": {
+   "high": 2080,
+   "level": 3,
+   "low": 2036,
+   "median": 2051,
+   "p2035": 7,
+   "p2045": 40,
+   "txBurden": "moderate"
+  },
+  "hepatitis-c": {
+   "high": 2014,
+   "level": 4,
+   "low": 2014,
+   "median": 2014,
+   "p2035": 100,
+   "p2045": 100,
+   "txBurden": "light"
+  },
+  "hiv": {
+   "high": 2087,
+   "level": 2,
+   "low": 2037,
+   "median": 2051,
+   "p2035": 5,
+   "p2045": 25,
+   "txBurden": "moderate"
+  },
+  "huntingtons": {
+   "high": 2090,
+   "level": 1,
+   "low": 2037,
+   "median": 2051,
+   "p2035": 4,
+   "p2045": 24,
+   "txBurden": "moderate"
+  },
+  "hypertension": {
+   "high": 2100,
+   "level": 2,
+   "low": 2044,
+   "median": 2065,
+   "p2035": 2,
+   "p2045": 10,
+   "txBurden": "moderate"
+  },
+  "ibd": {
+   "high": 2092,
+   "level": 2,
+   "low": 2039,
+   "median": 2055,
+   "p2035": 4,
+   "p2045": 16,
+   "txBurden": "moderate"
+  },
+  "influenza": {
+   "high": 2098,
+   "level": 1,
+   "low": 2035,
+   "median": 2053,
+   "p2035": 5,
+   "p2045": 18,
+   "txBurden": "light"
+  },
+  "kidney-cancer": {
+   "high": 2072,
+   "level": 3,
+   "low": 2031,
+   "median": 2043,
+   "p2035": 27,
+   "p2045": 55,
+   "txBurden": "heavy"
+  },
+  "leukemia": {
+   "high": 2075,
+   "level": 3,
+   "low": 2036,
+   "median": 2047,
+   "p2035": 13,
+   "p2045": 45,
+   "txBurden": "heavy"
+  },
+  "liver-cancer": {
+   "high": 2097,
+   "level": 3,
+   "low": 2039,
+   "median": 2056,
+   "p2035": 6,
+   "p2045": 22,
+   "txBurden": "heavy"
+  },
+  "low-back-pain": {
+   "high": 2099,
+   "level": 2,
+   "low": 2039,
+   "median": 2058,
+   "p2035": 5,
+   "p2045": 15,
+   "txBurden": "moderate"
+  },
+  "lung-cancer": {
+   "high": 2090,
+   "level": 3,
+   "low": 2038,
+   "median": 2051,
+   "p2035": 7,
+   "p2045": 28,
+   "txBurden": "heavy"
+  },
+  "lupus": {
+   "high": 2082,
+   "level": 1,
+   "low": 2037,
+   "median": 2050,
+   "p2035": 5,
+   "p2045": 25,
+   "txBurden": "moderate"
+  },
+  "lyme-disease": {
+   "high": 1983,
+   "level": 4,
+   "low": 1983,
+   "median": 1983,
+   "p2035": 100,
+   "p2045": 100,
+   "txBurden": "light"
+  },
+  "lymphoma": {
+   "high": 2075,
+   "level": 3,
+   "low": 2034,
+   "median": 2044,
+   "p2035": 15,
+   "p2045": 50,
+   "txBurden": "heavy"
+  },
+  "macular-degeneration": {
+   "high": 2095,
+   "level": 1,
+   "low": 2041,
+   "median": 2057,
+   "p2035": 3,
+   "p2045": 14,
+   "txBurden": "moderate"
+  },
+  "malaria": {
+   "high": 1950,
+   "level": 4,
+   "low": 1950,
+   "median": 1950,
+   "p2035": 100,
+   "p2045": 100,
+   "txBurden": "light"
+  },
+  "marburg": {
+   "high": 2082,
+   "level": 1,
+   "low": 2033,
+   "median": 2046,
+   "p2035": 15,
+   "p2045": 42,
+   "txBurden": "heavy"
+  },
+  "measles": {
+   "high": 2100,
+   "level": 1,
+   "low": 2037,
+   "median": 2056,
+   "p2035": 3,
+   "p2045": 14,
+   "txBurden": "light"
+  },
+  "melanoma": {
+   "high": 1990,
+   "level": 4,
+   "low": 1990,
+   "median": 1990,
+   "p2035": 100,
+   "p2045": 100,
+   "txBurden": "light"
+  },
+  "meningitis": {
+   "high": 2099,
+   "level": 3,
+   "low": 2037,
+   "median": 2056,
+   "p2035": 6,
+   "p2045": 21,
+   "txBurden": "heavy"
+  },
+  "menopause-symptoms": {
+   "high": 2099,
+   "level": 2,
+   "low": 2039,
+   "median": 2058,
+   "p2035": 3,
+   "p2045": 14,
+   "txBurden": "moderate"
+  },
+  "migraine": {
+   "high": 2100,
+   "level": 2,
+   "low": 2044,
+   "median": 2063,
+   "p2035": 2,
+   "p2045": 10,
+   "txBurden": "moderate"
+  },
+  "multiple-sclerosis": {
+   "high": 2092,
+   "level": 2,
+   "low": 2037,
+   "median": 2053,
+   "p2035": 5,
+   "p2045": 23,
+   "txBurden": "moderate"
+  },
+  "myeloma": {
+   "high": 2098,
+   "level": 2,
+   "low": 2040,
+   "median": 2054,
+   "p2035": 3,
+   "p2045": 23,
+   "txBurden": "heavy"
+  },
+  "nipah": {
+   "high": 2088,
+   "level": 0,
+   "low": 2036,
+   "median": 2051,
+   "p2035": 6,
+   "p2045": 29,
+   "txBurden": "heavy"
+  },
+  "obesity": {
+   "high": 2096,
+   "level": 3,
+   "low": 2037,
+   "median": 2053,
+   "p2035": 5,
+   "p2045": 22,
+   "txBurden": "moderate"
+  },
+  "osteoarthritis": {
+   "high": 2098,
+   "level": 1,
+   "low": 2041,
+   "median": 2058,
+   "p2035": 4,
+   "p2045": 14,
+   "txBurden": "moderate"
+  },
+  "osteoporosis": {
+   "high": 2098,
+   "level": 2,
+   "low": 2039,
+   "median": 2056,
+   "p2035": 4,
+   "p2045": 15,
+   "txBurden": "moderate"
+  },
+  "ovarian-cancer": {
+   "high": 2096,
+   "level": 3,
+   "low": 2039,
+   "median": 2056,
+   "p2035": 7,
+   "p2045": 24,
+   "txBurden": "heavy"
+  },
+  "pancreatic-cancer": {
+   "high": 2097,
+   "level": 1,
+   "low": 2048,
+   "median": 2068,
+   "p2035": 2,
+   "p2045": 9,
+   "txBurden": "heavy"
+  },
+  "parkinsons": {
+   "high": 2097,
+   "level": 1,
+   "low": 2041,
+   "median": 2059,
+   "p2035": 3,
+   "p2045": 14,
+   "txBurden": "moderate"
+  },
+  "plague": {
+   "high": 1950,
+   "level": 4,
+   "low": 1950,
+   "median": 1950,
+   "p2035": 100,
+   "p2045": 100,
+   "txBurden": "moderate"
+  },
+  "pneumonia": {
+   "high": 2099,
+   "level": 3,
+   "low": 2035,
+   "median": 2051,
+   "p2035": 11,
+   "p2045": 33,
+   "txBurden": "moderate"
+  },
+  "prion-disease": {
+   "high": 2100,
+   "level": 0,
+   "low": 2041,
+   "median": 2059,
+   "p2035": 3,
+   "p2045": 13,
+   "txBurden": "moderate"
+  },
+  "prostate-cancer": {
+   "high": 1995,
+   "level": 4,
+   "low": 1995,
+   "median": 1995,
+   "p2035": 100,
+   "p2045": 100,
+   "txBurden": "heavy"
+  },
+  "rabies": {
+   "high": 2100,
+   "level": 0,
+   "low": 2041,
+   "median": 2059,
+   "p2035": 2,
+   "p2045": 13,
+   "txBurden": "moderate"
+  },
+  "rheumatoid-arthritis": {
+   "high": 2082,
+   "level": 2,
+   "low": 2037,
+   "median": 2048,
+   "p2035": 6,
+   "p2045": 27,
+   "txBurden": "moderate"
+  },
+  "rsv": {
+   "high": 2088,
+   "level": 1,
+   "low": 2035,
+   "median": 2051,
+   "p2035": 6,
+   "p2045": 24,
+   "txBurden": "moderate"
+  },
+  "schizophrenia": {
+   "high": 2100,
+   "level": 1,
+   "low": 2047,
+   "median": 2071,
+   "p2035": 1,
+   "p2045": 8,
+   "txBurden": "moderate"
+  },
+  "sickle-cell": {
+   "high": 2062,
+   "level": 3,
+   "low": 2033,
+   "median": 2044,
+   "p2035": 18,
+   "p2045": 55,
+   "txBurden": "heavy"
+  },
+  "sma": {
+   "high": 2085,
+   "level": 3,
+   "low": 2042,
+   "median": 2058,
+   "p2035": 5,
+   "p2045": 22,
+   "txBurden": "heavy"
+  },
+  "stomach-cancer": {
+   "high": 2098,
+   "level": 3,
+   "low": 2037,
+   "median": 2055,
+   "p2035": 7,
+   "p2045": 23,
+   "txBurden": "heavy"
+  },
+  "stroke": {
+   "high": 2100,
+   "level": 3,
+   "low": 2045,
+   "median": 2065,
+   "p2035": 2,
+   "p2045": 10,
+   "txBurden": "heavy"
+  },
+  "thalassemia": {
+   "high": 2069,
+   "level": 3,
+   "low": 2033,
+   "median": 2045,
+   "p2035": 15,
+   "p2045": 50,
+   "txBurden": "heavy"
+  },
+  "tuberculosis": {
+   "high": 1970,
+   "level": 4,
+   "low": 1970,
+   "median": 1970,
+   "p2035": 100,
+   "p2045": 100,
+   "txBurden": "moderate"
+  },
+  "type-1-diabetes": {
+   "high": 2072,
+   "level": 2,
+   "low": 2035,
+   "median": 2045,
+   "p2035": 9,
+   "p2045": 43,
+   "txBurden": "moderate"
+  },
+  "type-2-diabetes": {
+   "high": 2095,
+   "level": 2,
+   "low": 2039,
+   "median": 2054,
+   "p2035": 4,
+   "p2045": 21,
+   "txBurden": "moderate"
+  },
+  "uterine-cancer": {
+   "high": 2073,
+   "level": 3,
+   "low": 2031,
+   "median": 2044,
+   "p2035": 24,
+   "p2045": 53,
+   "txBurden": "heavy"
+  }
+ },
+ "gates": {
+  "access": 8,
+  "approval": 15,
+  "biology": 20,
+  "design": 40,
+  "preclinical": 20,
+  "simulation": 29,
+  "trials": 12
+ }
+}

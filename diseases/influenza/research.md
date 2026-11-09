@@ -38,6 +38,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-09: No new approvals or pivotal readouts; Merck's ANCHOR Phase 3 of efitazanamivir alfa (CD388) still expected to complete in 2027. Forecasts unchanged.
 - 2026-11-05: First full record. Rated cure level 1 with light burden, and prevention level 1 with moderate burden. Pandemic bird flu stays on the separate h5n1 record.
 
 ## Open questions

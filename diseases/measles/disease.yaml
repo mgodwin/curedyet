@@ -7,7 +7,7 @@ summary: A highly contagious viral infection that causes fever and rash and can 
   swelling and death, mostly in young children.
 toll:
   text: About 11 million infections and 95,000 deaths worldwide in 2024, mostly children under 5 (WHO);
-    4,852 US cases in 2026 through Oct 29, the most since elimination in 2000 (CDC).
+    5,182 US cases in 2026 through Nov 5, the most since 1991 (CDC).
   url: https://www.who.int/news-room/fact-sheets/detail/measles
 status:
   level: 1
@@ -19,7 +19,7 @@ status:
     is sometimes tried in severely ill or immunocompromised patients, but evidence that it helps is lacking.
     Nothing reverses encephalitis or the rare fatal brain disease SSPE that can appear years later, and
     measles can wipe out existing immunity to other infections for months or years.
-  last_reviewed: '2026-11-05'
+  last_reviewed: '2026-11-09'
 treatment:
   best:
   - Supportive care (fluids, fever control, nutrition)
@@ -67,8 +67,8 @@ pipeline:
   effect_note: It would not treat measles, but could make vaccination easier to deliver in poor and remote
     areas where most deaths occur.
 recent:
-- date: 2026-10
-  text: US measles cases reached 4,852 for 2026 by Oct 29, across 43 new outbreaks.
+- date: 2026-11
+  text: US measles cases passed 5,000 for 2026, reaching 5,182 by Nov 5, the most since 1991.
   url: https://www.cdc.gov/measles/data-research/index.html
 - date: 2026-01
   text: WHO's European verification commission found that the UK, Spain, Austria, Armenia, Azerbaijan
@@ -79,10 +79,10 @@ recent:
     measles.
   url: https://www.paho.org/en/news/2-3-2026-update-review-measles-elimination-status
 next_milestone:
-  date: '2026-11'
-  url: https://www.paho.org/en/news/2-3-2026-update-review-measles-elimination-status
-  what: PAHO's Regional Verification Commission reviews whether the US and Mexico have lost measles elimination
-    status at its annual meeting.
+  date: '2026-11-13'
+  url: https://www.paho.org/en/news/14-10-2026-measles-and-rubella-elimination-regional-monitoring-and-re-verification-commission
+  what: PAHO's Regional Verification Commission meets Nov 10-13 and classifies each country's measles elimination
+    status, including the US and Mexico.
 ai:
   impact: low
   note: No AI-designed measles drug is in trials; the leading antiviral candidates came from conventional

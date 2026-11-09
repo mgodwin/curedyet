@@ -1,0 +1,39 @@
+date: '2026-11-09'
+week: 2
+headline: 'Infections and outbreaks reviewed: no cure odds moved, while the Bundibugyo Ebola epidemic passed
+  10,600 confirmed cases and its first targeted vaccines were cleared for testing.'
+summary: Reviewed all 21 infections and deadly outbreaks (a day late, after the Nov 8 run did not produce
+  an update). No approval, rejection or pivotal result landed in the group, so no level, burden or forecast
+  changed. Outbreak counts, US measles and bird flu news, hepatitis B durability data and the dengue pipeline
+  were updated, and two short-range checks were re-scored.
+changes: []
+news:
+- text: 'Ebola: WHO counted 10,668 confirmed Bundibugyo cases and 5,198 deaths in DRC as of Nov 3, plus
+    9 cases in Kenya and an imported case from Nigeria.'
+  date: '2026-11-06'
+  url: https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625
+  disease: ebola
+- text: 'Ebola: WHO advisers recommended adding Oxford''s ChAdOx1 and Moderna''s mRNA-1469, the first
+    Bundibugyo-specific vaccines, to the TUMAINI ring trial; the PARTNERS treatment trial will add maftivimab.'
+  date: '2026-11-04'
+  url: https://www.who.int/news/item/04-11-2026-two-new-candidate-vaccines-to-join-ebola-trial-as-treatment-research-advances
+  disease: ebola
+- text: 'Hepatitis B: About 91% of bepirovirsen functional cures held through week 96, about a year off
+    all treatment (AASLD 2026).'
+  date: '2026-11-07'
+  url: https://www.hcplive.com/view/bepirovirsen-functional-cure-durable-through-week-96-in-chronic-hepatitis-b
+  disease: hepatitis-b
+- text: 'H5N1 bird flu: A Washington resident exposed to infected dairy cattle died, the first US bird
+    flu death of 2026.'
+  date: '2026-11-02'
+  url: https://www.healio.com/news/infectious-disease/20261102/washington-resident-first-to-die-of-bird-flu-in-us-this-year
+  disease: h5n1
+- text: 'Measles: US cases reached 5,182 for 2026 by Nov 5, the most since 1991.'
+  date: '2026-11-06'
+  url: https://www.contagionlive.com/view/measles-update-november-6-2026
+  disease: measles
+- text: 'HIV: The FDA tentatively approved a generic twice-yearly lenacapavir PrEP shot for 120 lower-income
+    countries at about $40 a year.'
+  date: '2026-11-02'
+  url: https://www.contagionlive.com/view/fda-tentatively-approves-first-generic-lenacapavir-prep-for-120-lmics
+  disease: hiv

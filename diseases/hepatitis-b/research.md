@@ -13,13 +13,15 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [GSK: bepirovirsen approved in Japan](https://www.gsk.com/media/yd3hdtnz/bepirovirsen-japan-approval-sea.pdf) - first approval anywhere, Aug 2026
 - [WHO fact sheet: Immunization coverage](https://www.who.int/news-room/fact-sheets/detail/immunization-coverage) - 2025: HepB3 84% globally; birth dose 43% globally, about 11% in the African Region
 - [CDC MMWR 2003: Global progress toward universal childhood hepatitis B vaccination](https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5236a5.htm) - 126 of 191 WHO member states had universal infant/childhood HBV vaccination by 2001
+- [HCPLive: Bepirovirsen functional cure durable through week 96 (7 Nov 2026)](https://www.hcplive.com/view/bepirovirsen-functional-cure-durable-through-week-96-in-chronic-hepatitis-b) - 91% durability at week 96
+- [HCPLive: Triple therapy more than doubles HBsAg loss vs peginterferon (6 Nov 2026)](https://www.hcplive.com/view/triple-therapy-more-than-doubles-hbsag-loss-vs-peginterferon-in-hbv) - BRII-179 Phase 2 results
 
 ## Research log
 
+- 2026-11-09: Added AASLD 2026 week-96 data: about 91% of bepirovirsen functional cures held about a year off all treatment. Also noted Brii's Phase 2 BRII-179 plus elebsiran plus peginterferon results (HBsAg loss 17% vs 6% at 24 weeks off treatment). EU decision on bepirovirsen still expected in 2027. Durable cures support the low-HBsAg rating, but this is follow-up data, not a new approval, so forecasts are unchanged.
 - 2026-11-04: Japan approved bepirovirsen on Aug 24, 2026, before the US; next milestone moved to the EU decision and the Japan short-range forecast voided.
 - 2026-11-04: Added status.groups rating each subtype on the cure ladder with its own burden and survival.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 
 ## Open questions
-
-- None noted yet. Add gaps, conflicting sources or things to verify here.
+- Does Brii's interferon-based triple therapy move toward Phase 3? Interferon's side effects would keep its burden moderate or worse.

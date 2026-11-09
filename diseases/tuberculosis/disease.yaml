@@ -20,7 +20,7 @@ status:
     short all-oral regimens (BPaLM, and the BEAT-TB regimen that is safe for children and pregnancy). TB
     still causes more deaths than any other infection because many cases go undiagnosed, and the only
     vaccine, BCG, protects adults poorly.
-  last_reviewed: null
+  last_reviewed: '2026-11-09'
 treatment:
   best:
   - HRZE standard regimen (isoniazid, rifampicin, pyrazinamide, ethambutol)

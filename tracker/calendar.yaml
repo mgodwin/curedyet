@@ -29,6 +29,11 @@
   event: 'Glioblastoma: Society for Neuro-Oncology 2026 Annual Meeting in Philadelphia (Nov 12-15), main
     venue for new CAR-T and trial data.'
   url: https://www.soc-neuro-onc.org/meetings-education/31st-society-for-neuro-oncology-annual-meeting-education-day
+- date: '2026-11-13'
+  disease: measles
+  event: 'Measles: PAHO''s regional commission ends its Nov 10-13 meeting and classifies each country''s
+    measles elimination status, including the US and Mexico.'
+  url: https://www.paho.org/en/news/14-10-2026-measles-and-rubella-elimination-regional-monitoring-and-re-verification-commission
 - date: '2026-11-14'
   disease: lung-cancer
   event: 'Lung cancer: FDA decision on ivonescimab plus chemotherapy in EGFR-mutated NSCLC after TKI.'

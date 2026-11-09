@@ -1,29 +1,23 @@
 # Latest summary, written by each update (1st, 8th, 15th and 22nd). `week` is a running update number.
 repo: mgodwin/curedyet
-week: 1
-updated: '2026-11-03'
-next_update: '2026-11-08'
-headline: Only six patient groups are cured for most with mild treatment (hepatitis C, malaria, early Lyme
-  disease and the earliest stages of melanoma and cervical cancer), and none of the rest is better than a
-  coin flip to get a cure for most by 2035.
+week: 2
+updated: '2026-11-09'
+next_update: '2026-11-15'
+headline: No infection or outbreak moved closer to a cure this update, but the Bundibugyo Ebola epidemic
+  passed 10,600 confirmed cases and the first vaccines designed against it were cleared for testing.
 this_week:
-- This is the baseline, now covering 81 diseases split into 177 patient groups by stage or type. "Cured
-  for most" needs at least about 85% of patients cured, and how hard the treatment is gets rated on its
-  own. Drug-susceptible TB, bacterial pneumonia, cataract and the early stages of breast, prostate, colorectal,
-  kidney and uterine cancer are cured for most, but the treatment is moderate or difficult. 21 diseases
-  without stages or types still sit at level 0 or 1, including Alzheimer's, Parkinson's, ALS, rabies,
-  osteoarthritis and aging itself.
-- A new cure takes about 27 years today from discovery to most patients, and trials alone take 6 to 9.
-  Records already set somewhere, like COVID vaccine trials in about 7 months, show it could take about
-  5. Each forecast blends today's pace with a faster pipeline, weighted by the acceleration index, now
-  21%. Six of the seven pipeline stages are easing; getting cures to patients is still blocking.
-- A faster pipeline mostly moves the 2045 odds, not 2035, because human testing still takes years. The
-  nearest new cures are Ebola (33% by 2035), colorectal cancer (32%), kidney cancer (27%) and uterine cancer
-  (24%).
-- Infections also get a prevention ladder for vaccines and preventive drugs. Hepatitis B, HIV (PrEP),
-  measles, rabies and the HPV vaccine for cervical cancer give strong protection; flu, COVID-19, TB and
-  Lyme disease still only weak protection.
-- 'Watch next: the FDA decision on ivonescimab for lung cancer (Nov 14), Alzheimer''s data at CTAD (Nov
-  16), Arc''s Virtual Cell Challenge winners (mid-to-late November), the Bundibugyo Ebola outbreak in
-  the DRC, and ASH blood-cancer results in mid-December.'
+- This update reviewed the infections and deadly outbreaks group, all 21 diseases, a day late after the
+  Nov 8 run did not produce one. No approval, rejection or pivotal trial result landed in the group, so
+  no cure level, treatment burden or forecast changed. The acceleration index stays at 21%.
+- The Bundibugyo Ebola epidemic reached 10,668 confirmed cases and 5,198 deaths in DRC by Nov 3, with
+  9 cases in Kenya and one imported case from Nigeria. WHO advisers added the first two vaccines built
+  for this virus, from Oxford and Moderna, to the TUMAINI ring trial. WHO expects first findings from the
+  treatment trial in the coming months, so the check on PARTNERS results by mid-2027 rose from 40% to 50%.
+- For hepatitis B, about 91% of people cured by bepirovirsen were still cured about a year after stopping
+  all drugs. That supports the cure for the low-HBsAg group but does not reach more patients. US measles
+  passed 5,000 cases for the year, and Washington reported the first US bird flu death of 2026, with no
+  person-to-person spread.
+- 'Watch next: the FDA decision on ivonescimab for lung cancer (Nov 14), PAHO''s ruling on US and Mexico
+  measles elimination (Nov 10-13), Alzheimer''s data at CTAD (Nov 16), first PARTNERS treatment data for
+  Bundibugyo Ebola, and WHO''s 2026 TB report.'
 scorecard: []

@@ -16,11 +16,12 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [ESWI: Finland offers bird flu vaccination to poultry and fur farm workers](https://eswi.org/education-hub/finland-offers-vaccination-against-bird-flu-those-working-poultry-or-fur-farms) - Only country using H5 vaccine in workers
 - [CBS News: bird flu vaccine doses](https://www.cbsnews.com/news/bird-flu-vaccine-doses-this-summer-cases) - US stockpile of 4.8 million doses; CDC not recommending for farm workers
 - [CEPI to fund Phase 3 of Moderna's mRNA pandemic flu vaccine](https://cepi.net/cepi-fund-pivotal-phase-3-trial-modernas-mrna-pandemic-influenza-candidate) - mRNA-1018 Phase 3 (immunogenicity) after HHS funding cut
+- [Healio: Washington resident first to die of bird flu in US this year (2 Nov 2026)](https://www.healio.com/news/infectious-disease/20261102/washington-resident-first-to-die-of-bird-flu-in-us-this-year) - dairy exposure, 34 infected Washington herds, CDC count of 72 US cases as of Oct 15
 
 ## Research log
 
+- 2026-11-09: Added the first US H5N1 death of 2026 (Yakima County, Washington, dairy exposure, Nov 1). No person-to-person spread reported. Forecasts and the pandemic check unchanged.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 
 ## Open questions
-
-- None noted yet. Add gaps, conflicting sources or things to verify here.
+- Washington has reported several human cases since mid-October; confirm the CDC's updated national count next update.

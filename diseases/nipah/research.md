@@ -18,6 +18,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-09: No new WHO Nipah report since Kerala's single June 2026 case; the Bangladesh season starts in December. Forecasts unchanged.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 
 ## Open questions

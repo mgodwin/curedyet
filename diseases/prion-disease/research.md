@@ -21,6 +21,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-09: ION717 PrProfile is no longer recruiting and its primary completion date changed in Sept 2026; no data yet. Forecasts unchanged.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 - 2026-11-05: Split into sporadic, genetic and acquired variants (all level 0). Added vCJD/BSE totals, iatrogenic and kuru history, and prevention blocks: acquired rated 4 (eliminated: BSE feed and food controls, recombinant growth hormone, graft and instrument safeguards); genetic rated 0 (no proven protection for carriers; PGT protects children only; PRiSM enrols carriers). Sporadic has no prevention block because nothing prevents it. Updated siRNA and ION717 pipeline items from the registry.
 

@@ -23,9 +23,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Precision Vaccinations: Oxford launches plague vaccine study (2021)](https://precisionvaccinations.com/2021/07/28/oxford-launches-plague-vaccine-study) - UK Phase 1 of ChAdOx1 Plague
 - [Healio: FDA approves levofloxacin for plague (Apr 2012)](https://cm.healio.com/news/ooi/20120427/fda-approves-new-plague-treatment) - Animal Rule approval for treatment and prophylaxis; 94% of treated monkeys survived vs none on placebo
 - [NBC News: Arizona patient dies in emergency room from plague (Jul 2025)](https://www.nbcnews.com/health/health-news/arizona-patient-dies-plague-rcna218251) - pneumonic plague death, Coconino County, first there since 2007
+- [The Star: Madagascar reports 4 confirmed plague cases (14 Oct 2026)](https://www.thestar.com.my/news/world/2026/10/14/madagascar-reports-4-confirmed-plague-cases) - start of the 2026-27 season
 
 ## Research log
 
+- 2026-11-09: Madagascar reported 4 confirmed plague cases in mid-October; no change to treatment or trials. Forecasts unchanged.
 - 2026-11-05: Baseline research: level, three variants (bubonic, septicemic, pneumonic), treatment, prevention block, pipeline and forecasts.
 
 ## Open questions

@@ -6,10 +6,10 @@ tracking: active
 summary: A severe, often fatal viral hemorrhagic fever caused by several ebolavirus species, spread by
   contact with body fluids.
 toll:
-  text: '2026 Bundibugyo outbreak: 10,274 confirmed cases and 4,992 deaths in DRC as of 28 Oct 2026 (ECDC),
-    up from WHO''s 9,704 cases and 4,687 deaths as of 20 Oct; historic outbreaks kill roughly 25-90% of
-    cases.'
-  url: https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026
+  text: '2026 Bundibugyo outbreak: 10,668 confirmed cases and 5,198 deaths in DRC as of 3 Nov 2026, plus
+    9 cases and 2 deaths in Kenya and one imported case from Nigeria (WHO); historic outbreaks kill roughly
+    25-90% of cases.'
+  url: https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625
 status:
   level: 3
   why: For Zaire ebolavirus, a licensed vaccine and two FDA-approved antibody drugs save most
@@ -20,8 +20,8 @@ status:
     Bundibugyo virus, which drives the 2026 DRC epidemic, and Sudan virus have no approved vaccine or
     treatment, so care is fluids, symptom management and isolation; about 49% of confirmed DRC cases in
     2026 have died. Post-exposure prevention is being tested: oral obeldesivir for contacts and ring vaccination
-    in the TUMAINI trial.'
-  last_reviewed: '2026-11-03'
+    in the TUMAINI trial. WHO expects first findings from the treatment trials in the coming months.'
+  last_reviewed: '2026-11-09'
 treatment:
   best:
   - Ebanga (ansuvimab), Zaire only
@@ -57,8 +57,9 @@ pipeline:
 - name: TUMAINI ring-vaccination platform trial (Ervebo first; Moderna and Oxford/Serum Institute Bundibugyo
     vaccines to join)
   stage: Phase 3
-  note: Phase 2/3 adaptive trial in high-risk contacts; first participant vaccinated in Bunia on 23 Oct
-    2026.
+  note: Phase 2/3 adaptive ring trial in high-risk contacts; first participant vaccinated in Bunia on 23
+    Oct 2026. In Nov 2026 WHO advisers recommended adding Oxford's ChAdOx1 and Moderna's mRNA-1469, the
+    first Bundibugyo-specific vaccines tested in an outbreak. WHO expects results in early 2027.
   url: https://africa.com/featuresopinion/first-participant-vaccinated-in-pivotal-phase-2-3-bundibugyo-ebola-vaccine-trial-in-drc
   variants:
   - bundibugyo-virus
@@ -69,7 +70,8 @@ pipeline:
 - name: MBP134 (Mapp pan-ebolavirus antibody cocktail)
   stage: Phase 2
   note: Tested alone and with remdesivir versus standard care in the PARTNERS randomized trial in Bunia;
-    28-day mortality endpoint, 700-1,000 patients planned.
+    28-day mortality endpoint, 700-1,000 patients planned. WHO said in Nov 2026 that a maftivimab arm will
+    be added and first findings are expected in the coming months.
   url: https://www.itg.be/en/health-stories/press-releases/partners-trial
   variants:
   - bundibugyo-virus
@@ -107,6 +109,10 @@ pipeline:
   effect_note: If later trials succeed, a vaccine would help prevent Sudan virus outbreaks but would not
     improve survival for people already infected.
 recent:
+- date: 2026-11
+  text: WHO advisers recommended adding the first two Bundibugyo-specific vaccines, from Oxford and Moderna,
+    to the TUMAINI trial, and said the PARTNERS treatment trial will add a maftivimab arm.
+  url: https://www.who.int/news/item/04-11-2026-two-new-candidate-vaccines-to-join-ebola-trial-as-treatment-research-advances
 - date: 2026-10
   text: TUMAINI, the first pivotal Phase 2/3 vaccine trial against Bundibugyo virus, vaccinated its first
     participant in Bunia, DRC.

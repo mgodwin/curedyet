@@ -21,7 +21,7 @@ status:
     1 in 20 people with symptoms develop severe dengue, and prompt intravenous fluids in hospital bring
     its death rate below 0.5%, though deaths rise where outbreaks overwhelm clinics. No antiviral is approved;
     the most advanced, J&J's mosnodenvir, was dropped in 2024.
-  last_reviewed: '2026-11-05'
+  last_reviewed: '2026-11-09'
 treatment:
   best:
   - Supportive care (oral or IV fluids, paracetamol)
@@ -59,8 +59,16 @@ pipeline:
   url: https://www.novartis.com/clinicaltrials/study/nct06006559
   expected: 2027-07
   effect: some
-  effect_note: A clear antiviral effect would give dengue its first drug candidate headed for Phase 3,
+  effect_note: A clear antiviral effect would give dengue its first antiviral pill headed for Phase 3,
     but it would still need years of larger trials to show it prevents severe disease.
+- name: Serum Institute of India dengue antibody (formerly VIS513)
+  stage: Phase 3
+  note: Monoclonal antibody treatment in a pivotal Phase 3 in India; DNDi plans a roughly 1,000-patient
+    Phase 3 in Brazil, Malaysia and Thailand starting in early 2027.
+  url: https://seruminstitute.com/brazil-malaysia-and-thailand-set-to-start-global-clinical-trial-to-test-promising-dengue-treatment-developed-by-serum-institute-of-india.php
+  effect: some
+  effect_note: If it cuts severe dengue in treated patients, it would be the first specific treatment,
+    though an infusion is harder to deliver in outbreaks than a pill.
 - name: Butantan-DV (single-dose vaccine)
   stage: Approved 2025-26
   note: Approved in Brazil in Nov 2025 for ages 12-59; rollout began in 2026, with about 30 million doses
