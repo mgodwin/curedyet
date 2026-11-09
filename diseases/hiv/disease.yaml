@@ -19,7 +19,7 @@ status:
     on treatment in 2025, so about 1 in 5 people with HIV were not. Twice-yearly lenacapavir injections
     prevent HIV in at least 96% of cases and are rolling out in Africa. Antibody combinations can hold
     the virus off without drugs for some people in trials, but no cure is ready.
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-09'
 treatment:
   best:
   - Single-tablet ART (e.g. bictegravir/FTC/TAF)
@@ -68,6 +68,10 @@ pipeline:
   stage: Approved 2025-26
   url: https://unaids.org/en/resources/presscentre/pressreleaseandstatementarchive/2026/april/20260415_lenacapavir_expanded_rollout
 recent:
+- date: 2026-11
+  text: The FDA tentatively approved Dr. Reddy's generic twice-yearly lenacapavir PrEP for 120 lower-income
+    countries, at about $40 per person per year.
+  url: https://www.contagionlive.com/view/fda-tentatively-approves-first-generic-lenacapavir-prep-for-120-lmics
 - date: 2026-06
   text: Gilead and Merck reported once-weekly oral islatravir/lenacapavir matched daily regimens in two
     Phase 3 trials.

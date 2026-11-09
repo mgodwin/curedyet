@@ -38,6 +38,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-09: Vaxcyte's Nov 4 update keeps OPUS-2, OPUS-3 and infant data for 1H 2027. Forecasts unchanged.
 - 2026-11-05: Baseline research for the first Cure Watch record. Split into community-acquired bacterial, viral and childhood (low- and middle-income settings) variants because treatment, outlook and prevention differ sharply. Rated the disease at 3 overall: bacterial at 4, viral at 1 (matching the flu and RSV pages), childhood in low-income settings at 3 because of access.
 
 ## Open questions

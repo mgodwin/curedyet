@@ -21,6 +21,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-09: WHO's Global TB Report 2026 had not been published as of Nov 9; the check on 2025 deaths stays open. M72/AS01E Phase 3 still due 2028. Forecasts unchanged.
 - 2026-11-04: Added status.groups rating each subtype on the cure ladder with its own burden and survival.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 

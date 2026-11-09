@@ -19,7 +19,7 @@ status:
     Bepirovirsen (Hibsago), added to antivirals, now offers a finite-course functional cure for some adults
     with low HBsAg and no cirrhosis. A vaccine prevents infection with near 100% protection, but coverage
     gaps remain, especially in Africa.
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-09'
 treatment:
   best:
   - Tenofovir (TDF/TAF)
@@ -51,14 +51,14 @@ forecast:
 pipeline:
 - name: Bepirovirsen (Hibsago, antisense)
   stage: Approved 2025-26
-  note: Approved in Japan Aug 2026 (first approval anywhere) and by the FDA Oct 2026; EU and China decisions expected in 2027.
+  note: Approved in Japan Aug 2026 (first approval anywhere) and by the FDA Oct 2026; EU and China decisions expected in 2027. Week-96 data showed about 91% of cures lasted off treatment.
   url: https://www.healio.com/news/gastroenterology/20261021/hibsago-scores-fda-approval-as-first-antisense-therapy-for-chronic-hepatitis-b
   variants:
   - low-hbsag
-  expected: '2026'
+  expected: '2027'
   effect: small
-  effect_note: Already FDA-approved; a Japan decision widens access but does not change the roughly 1-in-5
-    functional cure rate seen in low-HBsAg patients.
+  effect_note: Already approved in Japan and the US; an EU decision widens access but does not change the
+    roughly 1-in-5 functional cure rate seen in low-HBsAg patients.
 - name: Tobevibart + elebsiran (antibody + siRNA)
   stage: Phase 2
   note: Vir's MARCH study tests finite combinations aiming for functional cure.
@@ -70,6 +70,10 @@ pipeline:
   effect_note: If a partner takes it into Phase 3 and finite combinations work, more people could stop
     treatment for good, but Vir has paused Phase 3 for hepatitis B without a partner.
 recent:
+- date: 2026-11
+  text: At AASLD 2026, 91% of people functionally cured by bepirovirsen were still cured at week 96, about
+    a year after stopping all hepatitis B drugs.
+  url: https://www.hcplive.com/view/bepirovirsen-functional-cure-durable-through-week-96-in-chronic-hepatitis-b
 - date: 2026-10
   text: FDA approved bepirovirsen as the first antisense therapy for chronic hepatitis B.
   url: https://www.healio.com/news/gastroenterology/20261021/hibsago-scores-fda-approval-as-first-antisense-therapy-for-chronic-hepatitis-b

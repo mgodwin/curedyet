@@ -84,7 +84,7 @@
   disease: marburg
   label: Sabin publicly reports cAd3-Marburg Phase 2 immunogenicity results by 2027-03-31
   resolves_by: '2027-03-31'
-  prob: 50
+  prob: 45
   resolved: null
   last_forecast: null
   note: ''
@@ -112,7 +112,7 @@
   label: PARTNERS trial publicly reports efficacy results for MBP134 or remdesivir in Bundibugyo disease
     by 2027-06-30
   resolves_by: '2027-06-30'
-  prob: 40
+  prob: 50
   resolved: null
   last_forecast: null
   note: ''

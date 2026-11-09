@@ -24,9 +24,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [EMA: Dengvaxia EPAR](https://www.ema.europa.eu/en/medicines/human/EPAR/dengvaxia) - EU marketing authorisation withdrawn Oct 2025 at Sanofi's request
 - [Utarini et al., NEJM 2021: Wolbachia-infected mosquito deployments for dengue control](https://www.nejm.org/doi/full/10.1056/NEJMoa2030243) - releases cut symptomatic dengue by 77% and hospitalisation by 86% in Yogyakarta
 - [WHO Weekly Epidemiological Record: global dengue update (2026)](https://www.who.int/publications/i/item/who-wer10140-285-289) - 2026 case counts so far below 2025
+- [Serum Institute of India: global trial of dengue antibody treatment (8 Jul 2026)](https://seruminstitute.com/brazil-malaysia-and-thailand-set-to-start-global-clinical-trial-to-test-promising-dengue-treatment-developed-by-serum-institute-of-india.php) - Phase 3, about 1,000 patients, start Q1 2027
 
 ## Research log
 
+- 2026-11-09: Added the Serum Institute of India dengue antibody (formerly VIS513), in a pivotal Phase 3 in India, with a DNDi-led Phase 3 in Brazil, Malaysia and Thailand due to start in early 2027. No approvals or readouts this month; forecasts unchanged.
 - 2026-11-05: Baseline research for the first Cure Watch record (level, treatment, prevention, pipeline, forecasts).
 
 ## Open questions
@@ -35,3 +37,4 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - Butantan-DV efficacy figures differ by follow-up: 79.6% at two years (NEJM 2024) vs 65% over five years (Nature Medicine 2026). The five-year figure is used for the rung.
 - Wolbachia mosquito releases are vector control rather than a vaccine or drug, so they are listed but not used to set the rung.
 - Mosnodenvir field-study results have not been published, as far as this review found.
+- No efficacy figures have been published for the Serum Institute antibody; look for the India Phase 3 results.

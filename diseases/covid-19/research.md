@@ -38,6 +38,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-09: No new approvals, rejections or pivotal readouts found this month. Forecasts unchanged.
 - 2026-11-05: Baseline research for the first Cure Watch record. Split into acute COVID-19 and long COVID because their treatment, outlook and burden differ sharply. Disease level anchored on acute COVID-19 (1, as for flu). Prevention rated 1 at disease level and on both variants.
 
 ## Open questions

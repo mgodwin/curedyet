@@ -30,6 +30,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-09: Vaxcyte's Nov 4 update keeps VAX-31 infant Phase 2 data for 1H 2027 and an adult filing for 1H 2028. Forecasts unchanged.
 - 2026-11-05: Baseline research for the first Cure Watch record. Split into bacterial, viral and cryptococcal (fungal) variants because outlooks, treatment and prevention differ sharply. Rated the disease at 3, anchored on bacterial meningitis.
 
 ## Open questions

@@ -20,9 +20,12 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Wittwer et al., Nature Communications 2021: polymerase inhibitor protects non-human primates from measles](https://www.nature.com/articles/s41467-021-25497-4) - ERDRP-0519 prevented disease in squirrel monkeys after exposure
 - [Nature Communications 2024: GHP-88309 in ferrets](https://link.springer.com/10.1038/s41467-024-45418-5) - better oral efficacy than ERDRP-0519; wider protection window
 - [Adigweme et al., Lancet 2024: measles-rubella microneedle patch in The Gambia](https://doi.org/10.1016/S0140-6736(24)00532-4) - Phase 1/2; over 90% of infants protected against measles after one patch
+- [Contagion Live: Measles update, November 6, 2026](https://www.contagionlive.com/view/measles-update-november-6-2026) - 5,182 US cases through Nov 5, 43 outbreaks
+- [PAHO: Measles and rubella elimination regional monitoring and re-verification commission (14 Oct 2026)](https://www.paho.org/en/news/14-10-2026-measles-and-rubella-elimination-regional-monitoring-and-re-verification-commission) - meeting Nov 10-13, 2026
 
 ## Research log
 
+- 2026-11-09: Updated the US count to 5,182 cases through Nov 5 (CDC via Contagion Live). PAHO's commission meets Nov 10-13 to classify elimination status; set next_milestone to that meeting. Forecasts unchanged.
 - 2026-11-05: First full record. Rated the cure ladder on treatment (supportive care and vitamin A, no antiviral) and the prevention ladder on MMR. Chose prevention rung 3, not 4: only 82 of 194 countries (42%) were verified measles-free at the end of 2023, and since then Canada (Nov 2025) and six European countries including the UK and Spain (Jan 2026) lost status, the Americas lost regional status, and the US decision is due at PAHO's November 2026 meeting.
 
 ## Open questions

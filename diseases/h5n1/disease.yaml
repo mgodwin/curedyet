@@ -8,7 +8,7 @@ summary: Highly pathogenic avian influenza that occasionally jumps from birds an
 toll:
   text: 'WHO: 1,003 human cases and 479 deaths worldwide 2003 to 6 Sep 2026; 30 cases/12 deaths in 2025
     and about 10 cases so far in 2026 (mostly Cambodia, Bangladesh, India); US: 72 cases since 2024 (CDC,
-    Oct 2026).'
+    Oct 15, 2026) and a first 2026 US death on Nov 1.'
   url: https://cdn.who.int/media/docs/default-source/wpro---documents/emergency/surveillance/avian-influenza/ai_20261002.pdf
 status:
   level: 1
@@ -20,7 +20,7 @@ status:
     (clade 2.3.4.4b, farm workers) had conjunctivitis or mild illness, while cases in Cambodia and elsewhere
     often progress to fatal pneumonia. Licensed pandemic H5 vaccines (Audenz in the US, Incellipan and
     others in the EU) sit in stockpiles, and no sustained human-to-human spread has been seen.'
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-09'
 treatment:
   best:
   - Oseltamivir (early)
@@ -61,6 +61,10 @@ pipeline:
   stage: Phase 1
   url: https://www.clinicaltrialsarena.com/analyst-comment/avian-influenza-mrna-vaccines/
 recent:
+- date: 2026-11
+  text: A Yakima County, Washington, resident exposed to infected dairy cattle died of H5N1, the first
+    US bird flu death of 2026; no person-to-person spread was found.
+  url: https://www.healio.com/news/infectious-disease/20261102/washington-resident-first-to-die-of-bird-flu-in-us-this-year
 - date: 2026-04
   text: Moderna dosed the first participants in a Phase 3 trial of its mRNA H5 pandemic vaccine, funded
     by CEPI.

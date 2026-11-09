@@ -16,9 +16,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [AP via News4Jax: approval of cheap generic lenacapavir (2 Nov 2026)](https://www.news4jax.com/business/2026/11/02/approval-of-a-cheap-version-of-hiv-prevention-shot-lenacapavir-raises-hopes-in-low-income-countries/) - FDA tentative approval of Dr. Reddy's generic for 120 LMICs at about $40/yr; US list price $28,218/yr; demand outstrips supply; ~20M people need PrEP
 - [Gilead: FDA approves Truvada for PrEP (Jul 2012)](https://www.gilead.com/news/press-releases/2012/7/us-food-and-drug-administration-approves-gileads-truvada-for-reducing-the-risk-of-acquiring-hiv) - First PrEP approval, the 'reached' year
 - [ClinicalTrials.gov NCT07047716: once-yearly lenacapavir PrEP (PURPOSE 365)](https://clinicaltrials.gov/study/NCT07047716) - Phase 3 of once-yearly injection, started July 2025
+- [Contagion Live: FDA tentatively approves first generic lenacapavir PrEP (3 Nov 2026)](https://www.contagionlive.com/view/fda-tentatively-approves-first-generic-lenacapavir-prep-for-120-lmics) - Dr. Reddy's, about $40 per person per year
 
 ## Research log
 
+- 2026-11-09: Added the FDA's tentative approval of Dr. Reddy's generic twice-yearly lenacapavir for 120 lower-income countries (about $40 a year). Once-weekly oral lenacapavir PrEP decision still due Feb 2, 2027. Forecasts unchanged.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 
 ## Open questions

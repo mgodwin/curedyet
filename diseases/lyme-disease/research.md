@@ -42,6 +42,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-09: EMA review of PF-07307405 continues, with an opinion expected in 2027. No other news. Forecasts unchanged.
 - 2026-11-05: Baseline research for the first Cure Watch record (level, variants, treatment, prevention, pipeline, forecasts).
 
 ## Open questions
