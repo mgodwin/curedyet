@@ -26,9 +26,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Vistagen: PALISADE-4 topline (Jun 30, 2026)](https://finance.yahoo.com/healthcare/articles/vistagen-announces-topline-post-hoc-120000253.html) - Missed primary endpoint; plans FDA discussion of a multi-dose Phase 3 with LSAS endpoint
 - [Big Health: FDA grants clearance for DaylightRx (Sep 2024)](https://www.bighealth.com/news/us-fda-grants-clearance-for-daylightrx) - First FDA-cleared digital treatment for GAD; prescription CBT program, adjunct to usual care
 - [Dartmouth: First therapy chatbot trial yields mental health benefits (Mar 2025)](https://tto.dartmouth.edu/news/2025/03/first-therapy-chatbot-trial-yields-mental-health-benefits) - Therabot RCT (NEJM AI) in 210 adults; greater symptom drops for depression, anxiety and eating concerns vs waitlist at 4 weeks
+- [Panabee: DT120 Panorama Phase 3 results (Sept 2026)](https://www.panabee.com/news/definium-therapeutics-reports-third-positive-phase-3-readout-for-dt120-odt-in-gad) - 5.1-point HAM-A difference at week 12; pre-NDA meeting Q4 2026
 
 ## Research log
 
+- 2026-11-15: Full review. No new approvals or readouts; Definium still plans a pre-NDA meeting in Q4 2026 and a DT120 filing in 1H 2027. Forecast unchanged.
 - 2026-11-05: Baseline research for the first Cure Watch record (level, variants, treatment, pipeline, forecasts).
 
 ## Open questions

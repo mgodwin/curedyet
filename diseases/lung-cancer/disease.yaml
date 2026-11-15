@@ -21,7 +21,7 @@ status:
     raises cure rates in stage II-III. Metastatic disease is treated with targeted drugs (EGFR, ALK,
     ROS1, HER2 and others) or immunotherapy, which give years of control for some but rarely cure. Small
     cell lung cancer is still rarely cured.
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-15'
 treatment:
   best:
   - Surgery or stereotactic radiation for early disease
@@ -54,15 +54,15 @@ forecast:
     disease, which is a decade-plus project. Smoking decline helps incidence but not the cure rate. Stage IV is close to half of patients, so cured for most needs stage III to become curable as well, which sets this forecast.
 pipeline:
 - name: Ivonescimab (PD-1/VEGF bispecific)
-  stage: Filed
-  note: BLA in EGFR-mutated NSCLC after TKI based on HARMONi; PDUFA Nov 14, 2026.
-  url: https://www.clinicaltrialsarena.com/news/summit-debuts-longer-term-ivonescimab-data-as-it-awaits-fda-nsclc-decision/
+  stage: Phase 3
+  note: FDA declined to approve it for EGFR-mutated NSCLC after TKI in Nov 2026 because HARMONi did not
+    show a significant survival benefit; first-line HARMONi-3 continues.
+  url: https://www.financialcontent.com/article/bizwire-2026-11-15-summit-therapeutics-provides-update-regarding-ivonescimab-biologics-license-application
   variants:
   - stage-iv
-  expected: '2026-11-14'
   effect: small
-  effect_note: If approved, it adds a post-TKI option for EGFR-mutated spread disease that delays progression;
-    overall survival benefit is unproven.
+  effect_note: Rejected for now; a positive first-line Phase 3 could still add an option for spread disease
+    without curing it.
 - name: Zidesamtinib (Jideytro)
   stage: Approved 2025-26
   note: ROS1 inhibitor approved July 2026 for previously treated ROS1-positive NSCLC.
@@ -103,6 +103,10 @@ recent:
 - date: 2026-02
   text: Zongertinib became an approved oral option for HER2-mutant lung cancer.
   url: https://www.mdlinx.com/article/the-biggest-fda-decision-drops-in-2026-so-far-oncology-approvals/4WRnWWH8XhXAO0mgWJJvfm
+- date: 2026-11
+  text: The FDA rejected ivonescimab plus chemotherapy for EGFR-mutated lung cancer after TKI, citing no
+    significant overall survival benefit.
+  url: https://www.financialcontent.com/article/bizwire-2026-11-15-summit-therapeutics-provides-update-regarding-ivonescimab-biologics-license-application
 - date: 2026-09
   text: Updated HARMONi data at WCLC 2026 showed a survival hazard ratio of 0.76 in Western patients on
     ivonescimab plus chemo.
@@ -112,9 +116,10 @@ recent:
     2% to 10%.
   url: https://pressroom.cancer.org/cancer-statistics-report-2026
 next_milestone:
-  date: '2026-11-14'
-  url: https://www.clinicaltrialsarena.com/news/summit-debuts-longer-term-ivonescimab-data-as-it-awaits-fda-nsclc-decision/
-  what: FDA decision on ivonescimab plus chemotherapy in EGFR-mutated NSCLC after TKI.
+  date: '2027-01-04'
+  url: https://www.cancernetwork.com/view/fda-accepts-snda-for-taletrectinib-in-ros1-positive-nsclc
+  what: FDA decision on the taletrectinib (Ibtrozi) supplemental application for advanced ROS1-positive
+    NSCLC.
 ai:
   impact: some
   note: AI reading of low-dose CT scans for nodule risk is spreading in screening programs, while AI-designed

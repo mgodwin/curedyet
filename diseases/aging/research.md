@@ -14,6 +14,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-15: Full review. No new human aging trial results or regulatory steps this month; Loyal still plans its LOY-002 conditional approval application in 2027. Forecast and milestones unchanged.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 
 ## Open questions

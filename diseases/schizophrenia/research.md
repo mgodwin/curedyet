@@ -9,9 +9,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Psychiatric Times: TEV-749 NDA accepted](https://www.psychiatrictimes.com/view/nda-accepted-olanzapine-extended-release-injectable-suspension-for-treatment-of-schizophrenia)
 - [LB Pharmaceuticals NOVA-2 timing](https://www.biospace.com/press-releases/lb-pharmaceuticals-announces-accelerated-timing-of-topline-results-from-the-phase-3-nova-2-trial-of-lb-102-in-schizophrenia)
 - [Drug Topics: Cobenfy add-on trial miss](https://www.drugtopics.com/view/cobenfy-did-not-meet-primary-outcome-as-add-on-treatment-for-schizophrenia)
+- [HCPLive: FDA approves once-monthly subcutaneous olanzapine (Oct 2026)](https://www.hcplive.com/view/fda-approves-monthly-subcutaneous-olanzapine-schizophrenia) - Weltruza approval and SOLARIS safety
 
 ## Research log
 
+- 2026-11-15: Full review. The FDA approved Teva's once-monthly olanzapine injection (Weltruza, TEV-749), announced Oct 9, 2026, before the Q4 check was written; the check is voided, not scored. A new injection improves adherence, not cure, so the forecast is unchanged. Next milestone moved to LB-102 NOVA-2 topline (1H 2027).
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 
 ## Open questions

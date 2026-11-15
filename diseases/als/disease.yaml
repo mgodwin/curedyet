@@ -21,7 +21,7 @@ status:
     early. Tofersen (Qalsody) lowers toxic SOD1 protein and helps the roughly 2% of people with ALS who
     have SOD1 mutations. Ventilation and multidisciplinary care extend life, but for most people the
     disease is still fatal within a few years.
-  last_reviewed: null
+  last_reviewed: '2026-11-15'
 treatment:
   best:
   - Riluzole
@@ -53,7 +53,8 @@ forecast:
     yet clearly slows it. Expect more subset successes, not a cure for most, by 2035.
 pipeline:
 - name: Ulefnersen (ION363, Ionis/Otsuka) for FUS-ALS
-  note: FUSION met its primary endpoint (p=0.0005) in Sept 2026; FDA talks on expedited filing planned.
+  note: FUSION met its primary endpoint (p=0.0005) in Sept 2026; Ionis and Otsuka plan to seek expedited
+    FDA review, with no filing date announced.
   stage: Phase 3
   url: https://ir.ionis.com/news-releases/news-release-details/ionis-announces-positive-topline-results-phase-3-fusion-study
 - name: QRL-201 (QurAlis, UNC13A/STMN2)

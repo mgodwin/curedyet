@@ -1,0 +1,57 @@
+date: '2026-11-15'
+week: 3
+headline: 'Brain, mental health, autoimmune and aging conditions reviewed: no cure moved closer, Parkinson''s
+  2045 odds dipped after another failed trial, and the FDA turned down a lung cancer drug.'
+summary: Reviewed all 22 conditions in the brain and nerves, mental health, autoimmune, and aging and everyday
+  groups, plus lung cancer out of turn after an FDA rejection. No level or treatment burden changed. Parkinson's
+  odds of a cure by 2045 slipped one point after a second disease-modifying trial failed this year. Two
+  checks resolved (lung cancer no, tuberculosis yes), one was voided, and two were added.
+changes:
+- target: 'Parkinson''s: odds by 2045'
+  from: 14
+  to: 13
+  why: Bial's GCase activator BIA 28-6156 failed its phase 2b ACTIVATE trial in GBA-linked Parkinson's,
+    the second disease-modifying failure of 2026 after BIIB122; both tracks trimmed within the 2-point cap.
+  url: https://www.neurologylive.com/view/mds-congress-2026-late-breaking-data-snapshot
+  disease: parkinsons
+news:
+- text: 'Lung cancer: The FDA declined to approve ivonescimab plus chemotherapy for EGFR-mutated lung cancer
+    after TKI, saying a progression-free benefit without a significant survival benefit was not enough.'
+  date: '2026-11-15'
+  url: https://www.financialcontent.com/article/bizwire-2026-11-15-summit-therapeutics-provides-update-regarding-ivonescimab-biologics-license-application
+  disease: lung-cancer
+- text: 'Major depression: Compass completed the first full psilocybin NDA, for COMP360 in treatment-resistant
+    depression; Kalshi prices approval before July 2027 at about 81%.'
+  date: '2026-11-09'
+  url: https://ir.compasspathways.com/News--Events-/news/news-details/2026/Compass-Pathways-Completes-COMP360-Psilocybin-New-Drug-Application-to-U-S--FDA-for-Treatment-Resistant-Depression/default.aspx
+  disease: depression
+- text: 'Tuberculosis: WHO estimated 1.13 million TB deaths and 10.6 million new cases in 2025, deaths
+    down 4% from 2024.'
+  date: '2026-11-12'
+  url: https://www.who.int/news/item/12-11-2026-amid-challenges-countries-increase-domestic-investment-to-protect-progress-against-tuberculosis
+  disease: tuberculosis
+- text: 'Ebola: ECDC counted 11,197 confirmed Bundibugyo cases and 5,471 related deaths in DRC as of Nov
+    12, with Kenya at 9 cases and 2 deaths.'
+  date: '2026-11-13'
+  url: https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda
+  disease: ebola
+- text: 'Huntington''s disease: Roche ended tominersen after GENERATION HD2 lowered huntingtin without
+    a functional benefit.'
+  date: '2026-11-12'
+  url: https://en.hdbuzz.net/716-ehdn-2026-part-2-whats-the-latest-news-for-huntingtons-disease-clinical-trials/
+  disease: huntingtons
+- text: 'Schizophrenia: The FDA approved Weltruza, a once-monthly olanzapine injection under the skin
+    (announced Oct 9).'
+  date: '2026-10-09'
+  url: https://www.hcplive.com/view/fda-approves-monthly-subcutaneous-olanzapine-schizophrenia
+  disease: schizophrenia
+- text: 'Lupus: At ACR 2026, a CD19 CAR-T cleared urine protein in 8 of 14 people with lupus by 12 months
+    in an early trial.'
+  date: '2026-11-10'
+  url: https://www.lupus.org/blog/advancements-in-lupus-treatment-kidney-care-and-research-from-the-acr-2026-scientific-meeting
+  disease: lupus
+- text: 'Measles: PAHO''s commission met Nov 10-13 on US and Mexico elimination status; a decision is
+    expected the following week.'
+  date: '2026-11-11'
+  url: https://www.newstribune.com/news/2026/nov/11/us-faces-loss-of-measles-free-status-as-experts-meet-for-review/
+  disease: measles

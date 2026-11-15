@@ -18,9 +18,12 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Gates MRI M72/AS01E FAQ (Jul 2026)](https://www.gatesmri.org/wp-content/uploads/2026/07/GatesMRI_MFR_FAQ.pdf) - Phase 3 began March 2024 in 5 countries, 20,000 enrolled; results anticipated late 2028, submissions from 2029
 - [Fierce Biotech: M72/AS01E efficacy maintained to 3 years](https://www.fiercebiotech.com/biotech/gsk-tuberculosis-vaccine-maintains-efficacy-out-to-3-years) - Phase 2b about 50% protection against active lung TB in infected adults
 - [CIDRAP: VPM1002 misses the mark in newborn phase 3](https://www.cidrap.umn.edu/tuberculosis/novel-tb-vaccine-candidate-misses-mark-phase-3-trial-newborns) - Recombinant BCG failed non-inferiority vs BCG
+- [WHO: Global TB Report 2026 release (Nov 12, 2026)](https://www.who.int/news/item/12-11-2026-amid-challenges-countries-increase-domestic-investment-to-protect-progress-against-tuberculosis) - 10.6M new cases and about 1.1M deaths in 2025
+- [WHO: Global TB Report 2026 top findings](https://cdn.who.int/media/docs/default-source/hq-tuberculosis/top-findings-and-messages_english.pdf?download=true&sfvrsn=b9ebed45_21) - 1.13M deaths in 2025 vs 1.18M in 2024
 
 ## Research log
 
+- 2026-11-15: WHO's Global TB Report 2026 (Nov 12) estimated 1.13 million TB deaths in 2025 (95% range 1.05-1.22M), down 4% from a revised 1.18M in 2024, and 10.6 million new cases. Updated the toll and resolved the check on fewer deaths as yes. Next milestone moved to the M72 vaccine Phase 3. Forecast unchanged (not in this update's batch).
 - 2026-11-09: WHO's Global TB Report 2026 had not been published as of Nov 9; the check on 2025 deaths stays open. M72/AS01E Phase 3 still due 2028. Forecasts unchanged.
 - 2026-11-04: Added status.groups rating each subtype on the cure ladder with its own burden and survival.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).

@@ -26,9 +26,13 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [The 2020 genitourinary syndrome of menopause position statement of NAMS (PubMed)](https://pubmed.ncbi.nlm.nih.gov/32852449/) - GSM affects about 27-84% of postmenopausal women, likely underdiagnosed and undertreated; moisturisers for mild symptoms; low-dose vaginal estrogen, vaginal DHEA, systemic estrogen and ospemifene effective for moderate to severe; no progestogen needed; endometrial safety not studied beyond 1 year; insufficient evidence on laser
 - [ESHRE, ASRM, CREWHIRL and IMS 2024 evidence-based guideline: premature ovarian insufficiency (PubMed)](https://pubmed.ncbi.nlm.nih.gov/39647506/) - POI prevalence 3.5% in new data; effects on fertility, bone, heart and brain health; hormone therapy mitigates some
 - [ESHRE 2015 guideline summary: management of women with premature ovarian insufficiency](https://www.eshre.eu/-/media/sitecore-files/Guidelines/POI/ESHRE-guideline_POI-2015_summary_01122015.pdf) - prevalence about 1%; HRT for bone and heart health continued at least until average age of natural menopause; no breast cancer rise before that age; small chance of spontaneous pregnancy; egg donation established option
+- [Contemporary OB/GYN: ABCL635 Phase 2 data (Aug 10, 2026)](https://www.contemporaryobgyn.net/view/phase-2-data-abcl635-reduces-frequency-severity-vms-symptoms) - 92 women, single 600 mg dose
+- [Investing.com: AbCellera at Stifel 2026 (Nov 11, 2026)](https://investing.com/news/transcripts/abcellera-at-stifel-2026-healthcare-conference-hot-flash-drug-shines-93CH-5019014) - Phase 3 plans
+- [ACOG: expanded menopause symptom recommendations (Oct 2026)](https://www.acog.org/news/2026/10/acog-expands-recommendations-for-management-of-menopause-symptoms) - updated clinical guidance
 
 ## Research log
 
+- 2026-11-15: Full review. Added AbCellera's ABCL635, whose Phase 2 (Aug 2026) cut hot flashes by about half more than placebo after one injection; AbCellera said in Nov it is preparing a roughly 1,500-person Phase 3. ACOG issued expanded menopause guidance in Oct 2026. Phase 2 data do not move the forecast.
 - 2026-11-05: New record with three variants: hot flashes and night sweats (level 2, moderate), genitourinary syndrome of menopause (level 2, light) and menopause before 40 (level 2, moderate). Disease-level forecast follows the vasomotor variant. Bone loss is left to the osteoporosis record. No prevention block, since this isn't an infection.
 
 ## Open questions

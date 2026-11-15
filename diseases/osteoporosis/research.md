@@ -21,9 +21,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Entera Bio Q2 2026 results (SEC exhibit, Aug 7, 2026)](https://www.sec.gov/Archives/edgar/data/0001638097/000117891326003946/exhibit_99-1.htm) - EB613 oral PTH(1-34): single ~750-woman placebo-controlled Phase 3 planned for late 2026, primary endpoint 12-month total hip BMD, topline 2H 2028; FDA accepted the plan
 - [Medical Xpress: Osteoporosis fractures fall 94% in small first-in-human stem cell trial (Sep 2026)](https://medicalxpress.com/news/2026-09-osteoporosis-fractures-fall-small-human.html) - Moraleda et al., Cell 2026: one infusion of HCELL-edited autologous MSCs in 10 women; no treatment-related adverse events; fractures 8 to 0.5 a year over two years
 - [Fierce Biotech: Nanox nets FDA clearance for osteoporosis and spine fracture AI (2022)](https://www.fiercebiotech.com/medtech/nanox-nets-fda-clearance-osteoporosis-and-spine-fracture-ai) - HealthOST AI flags vertebral compression fractures and low bone density on spine CT scans taken for any reason
+- [Entera Q3 2026 results (Nov 6, 2026)](https://www.globenewswire.com/news-release/2026/11/06/3397893/0/en/entera-announces-third-quarter-2026-financial-results-and-business-updates.html) - Phase 3 start late 2026, topline 2H 2028
 
 ## Research log
 
+- 2026-11-15: Full review. Entera still expects first Phase 3 site activation for EB613 in late 2026, with topline results in 2H 2028. Forecast unchanged.
 - 2026-11-05: Baseline research for the first Cure Watch record (level, treatment, pipeline, forecasts).
 
 ## Open questions

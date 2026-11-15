@@ -29,7 +29,7 @@ status:
     urinary symptoms with little effect on the rest of the body. Disrupted sleep is common with night
     sweats, and mood changes are common around menopause; bone loss after menopause is covered in its own osteoporosis record, and heart
     risk also rises after menopause.'
-  last_reviewed: '2026-11-05'
+  last_reviewed: '2026-11-15'
 treatment:
   best:
   - Menopausal hormone therapy (estrogen, plus a progestogen with a uterus)
@@ -75,6 +75,14 @@ pipeline:
   effect: small
   effect_note: Approval would give women on breast cancer endocrine therapy, who usually can't take hormones,
     an approved non-hormonal option; it relieves rather than cures.
+- name: ABCL635 (AbCellera, antibody for hot flashes)
+  stage: Phase 2
+  note: One 600 mg injection cut moderate to severe hot flashes 83% vs 33% on placebo at week 4 in 92
+    women; AbCellera is planning a Phase 3 of about 1,500 people.
+  url: https://www.contemporaryobgyn.net/view/phase-2-data-abcl635-reduces-frequency-severity-vms-symptoms
+  effect: small
+  effect_note: A monthly injection with a larger effect than current non-hormonal pills would ease more
+    women's symptoms, but relief would still last only while treatment continues.
 - name: Rapamycin to slow ovarian aging (VIBRANT, Columbia)
   stage: Phase 2
   note: 50 women aged 35-45 took 5 mg rapamycin or placebo weekly for 12 weeks; early unpublished results

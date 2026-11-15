@@ -21,7 +21,7 @@ status:
     the disease keeps advancing. Knee and hip replacement works very well for end-stage joints and lasts
     15-20+ years, but it is major surgery and does not help other joints. GLP-1 drugs reduce knee pain
     in people with obesity (STEP 9), largely through weight loss.
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-15'
 treatment:
   best:
   - Exercise and physical therapy
@@ -55,7 +55,7 @@ forecast:
     effects. Replacement surgery will stay the main fix for end-stage joints for at least a decade.
 pipeline:
 - name: Lorecivivint (Biosplice, Wnt pathway modulator)
-  note: US NDA submitted Jan 2026 and UK MHRA accepted its filing Sep 2026; Phase 3 suggested preserved
+  note: US NDA submitted Jan 2026 and UK MHRA and EMA validated filings in Aug and Sep 2026; Phase 3 suggested preserved
     joint space, but approval is uncertain.
   stage: Filed
   url: https://longevity.technology/news/biosplice-files-fda-application-for-knee-osteoarthritis-drug/
@@ -79,7 +79,7 @@ recent:
   text: Biosplice submitted the first US NDA for a potentially disease-modifying knee OA drug, lorecivivint.
   url: https://longevity.technology/news/biosplice-files-fda-application-for-knee-osteoarthritis-drug/
 - date: 2026-09
-  text: UK MHRA accepted lorecivivint's application and began review.
+  text: The EMA validated lorecivivint's application and began review, after the UK MHRA did so in August.
   url: https://biosplice.com/news/default.aspx
 - date: 2025-11
   text: Pacira completed enrollment in Part A of the Phase 2 ASCEND study of its PCRX-201 knee gene therapy.

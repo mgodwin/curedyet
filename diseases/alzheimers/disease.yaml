@@ -21,7 +21,7 @@ status:
     lecanemab is now approved for starting and maintaining treatment at home. People at moderate and late
     stages have only drugs that ease symptoms, and many 2026 trials (semaglutide, AL002, XPro1595)
     failed.
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-15'
 treatment:
   best:
   - Lecanemab (Leqembi, IV or Iqlik subcutaneous)
@@ -67,7 +67,8 @@ pipeline:
   stage: Phase 3
   url: https://clinicaltrials.gov/study/NCT05026866
 - name: AR1001 (AriBio, PDE5 inhibitor)
-  note: 1,535-person POLARIS-AD results due at CTAD on Nov 16, 2026.
+  note: Topline results from the 1,535-person, 52-week POLARIS-AD trial are scheduled for CTAD on Nov
+    16, 2026; primary endpoint is change in CDR-SB.
   stage: Phase 3
   url: https://clinicaltrials.gov/study/NCT05531526
 - name: Remternetug (Lilly)
@@ -78,6 +79,10 @@ recent:
 - date: 2026-07
   text: FDA approved subcutaneous lecanemab for starting treatment, removing the need for IV infusions.
   url: https://www.healio.com/news/neurology/20260717/subcutaneous-leqembi-approved-for-initiation-longterm-stability-with-treatment-indicated
+- date: 2026-11
+  text: Roche said it will show updated trontinemab imaging and safety data and the design of the PrevenTRON
+    prevention trial at CTAD 2026 (Nov 16-19).
+  url: https://www.globenewswire.com/news-release/2026/11/10/3399142/0/en/roche-presents-new-data-across-pharmaceuticals-and-diagnostics-from-its-growing-alzheimer-s-disease-portfolio-at-ctad-2026.html
 - date: 2026-07
   text: Roche showed one-year trontinemab extension data with continued amyloid clearance and launched
     the PREVENTRON prevention trial.

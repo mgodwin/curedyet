@@ -21,9 +21,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Pharmacy Times: AAN 2026, Lundbeck R&D chief on PACAP and bocunebart](https://www.pharmacytimes.com/view/aan-2026-what-is-pacap-and-why-does-it-matter-for-migraine-lundbeck-s-r-d-chief-explains-the-science-behind-bocunebart) - first new preventive mechanism since CGRP; HOPE Phase 2a in people failing 2-4 preventives
 - [Pulse 2.0: TriGemX Bio raises $94M to advance Phase 3 migraine program (Oct 2026)](https://pulse2.com/trigemx-bio-raises-94-million-to-advance-phase-3-migraine-program/) - elismetrep Phase 3 underway, first results expected mid-2027
 - [ClinicalTrials.gov NCT07816367: elismetrep (K-304) for acute treatment of migraine](https://clinicaltrials.gov/study/NCT07816367) - Phase 3, start 2 Oct 2026, primary completion est. Oct 2027
+- [Investing.com: Lundbeck Q3 2026 earnings call transcript (Nov 2026)](https://investing.com/news/transcripts/earnings-call-transcript-lundbeck-lifts-2026-outlook-on-strong-q3-growth-93CH-5018792) - bocunebart Phase 3 start guided for Q4 2026
 
 ## Research log
 
+- 2026-11-15: Full review. Lundbeck said on its Q3 call (Nov 2026) it is on track to start the bocunebart Phase 3 this quarter. No approvals or pivotal readouts. Forecast unchanged.
 - 2026-11-05: First record. Split into episodic and chronic variants; baseline sources, ratings, pipeline and forecasts.
 
 ## Open questions

@@ -1,23 +1,38 @@
 # Latest summary, written by each update (1st, 8th, 15th and 22nd). `week` is a running update number.
 repo: mgodwin/curedyet
-week: 2
-updated: '2026-11-09'
-next_update: '2026-11-15'
-headline: No infection or outbreak moved closer to a cure this update, but the Bundibugyo Ebola epidemic
-  passed 10,600 confirmed cases and the first vaccines designed against it were cleared for testing.
+week: 3
+updated: '2026-11-15'
+next_update: '2026-11-22'
+headline: No brain, mental health, autoimmune or aging condition moved closer to a cure this update. Parkinson's
+  odds dipped after another failed trial, the first psilocybin application reached the FDA, and the FDA
+  turned down a lung cancer drug.
 this_week:
-- This update reviewed the infections and deadly outbreaks group, all 21 diseases, a day late after the
-  Nov 8 run did not produce one. No approval, rejection or pivotal trial result landed in the group, so
-  no cure level, treatment burden or forecast changed. The acceleration index stays at 21%.
-- The Bundibugyo Ebola epidemic reached 10,668 confirmed cases and 5,198 deaths in DRC by Nov 3, with
-  9 cases in Kenya and one imported case from Nigeria. WHO advisers added the first two vaccines built
-  for this virus, from Oxford and Moderna, to the TUMAINI ring trial. WHO expects first findings from the
-  treatment trial in the coming months, so the check on PARTNERS results by mid-2027 rose from 40% to 50%.
-- For hepatitis B, about 91% of people cured by bepirovirsen were still cured about a year after stopping
-  all drugs. That supports the cure for the low-HBsAg group but does not reach more patients. US measles
-  passed 5,000 cases for the year, and Washington reported the first US bird flu death of 2026, with no
-  person-to-person spread.
-- 'Watch next: the FDA decision on ivonescimab for lung cancer (Nov 14), PAHO''s ruling on US and Mexico
-  measles elimination (Nov 10-13), Alzheimer''s data at CTAD (Nov 16), first PARTNERS treatment data for
-  Bundibugyo Ebola, and WHO''s 2026 TB report.'
-scorecard: []
+- This update reviewed the brain and nerves, mental health, autoimmune, and aging and everyday conditions
+  groups, 22 conditions in all. No cure level or treatment burden changed. The acceleration index stays
+  at 21%.
+- The one forecast move was Parkinson's, whose chance of a cure by 2045 slipped from 14% to 13%. Bial's
+  GCase activator failed a phase 2b trial in Parkinson's linked to the GBA gene, the second
+  disease-modifying failure this year. Roche also ended tominersen for Huntington's after it lowered
+  huntingtin without helping patients.
+- Compass completed the first full FDA application for psilocybin, for treatment-resistant depression,
+  and Kalshi prices approval before July 2027 at about 81%. The FDA approved a once-monthly olanzapine
+  injection for schizophrenia. Lung cancer was pulled in out of turn after the FDA rejected ivonescimab
+  for lack of a survival benefit, so that check resolved no. WHO's TB report showed 2025 deaths fell to
+  1.13 million, so that check resolved yes.
+- The Bundibugyo Ebola epidemic reached 11,197 confirmed cases and 5,471 related deaths in DRC by Nov
+  12.
+- 'Watch next: AR1001 Alzheimer''s results at CTAD (Nov 16), PAHO''s measles ruling for the US and Mexico,
+  the FDA decision on obinutuzumab for lupus (by December), and FDA acceptance of azetukalner for epilepsy.'
+scorecard:
+- id: chk-lung-cancer
+  label: FDA approves ivonescimab for EGFR-mutated NSCLC by 2026-12-31
+  forecast: 50
+  outcome: 0
+  resolvedOn: '2026-11-15'
+  brier: 0.25
+- id: chk-tuberculosis
+  label: WHO's 2026 TB report estimates fewer TB deaths in 2025 than the 1.23M in 2024, published by 2026-12-31
+  forecast: 55
+  outcome: 1
+  resolvedOn: '2026-11-12'
+  brier: 0.2025

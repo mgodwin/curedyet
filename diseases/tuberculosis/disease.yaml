@@ -5,8 +5,9 @@ category: infectious
 tracking: active
 summary: A bacterial infection, usually of the lungs, spread through the air.
 toll:
-  text: About 1.23 million deaths in 2024; 8.3M people diagnosed, a record (WHO Global TB Report 2025)
-  url: https://www.pbs.org/newshour/health/global-tuberculosis-case-rise-to-a-record-but-deaths-fall-reports-who
+  text: About 1.13 million deaths and 10.6 million new cases in 2025, deaths down 4% from 2024 (WHO Global
+    TB Report 2026)
+  url: https://www.who.int/news/item/12-11-2026-amid-challenges-countries-increase-domestic-investment-to-protect-progress-against-tuberculosis
   ratio: "1 in 4"
   ratio_caption: "people worldwide is estimated to have been infected with TB bacteria, though most never fall ill"
   ratio_url: https://www.who.int/news-room/fact-sheets/detail/tuberculosis
@@ -82,9 +83,9 @@ recent:
   text: WHO reported TB deaths fell to 1.23M in 2024 while diagnoses hit a record 8.3M.
   url: https://www.pbs.org/newshour/health/global-tuberculosis-case-rise-to-a-record-but-deaths-fall-reports-who
 next_milestone:
-  date: 2026-11
-  url: https://www.who.int/teams/global-tuberculosis-programme/tb-reports/global-tuberculosis-report-2025
-  what: WHO Global Tuberculosis Report 2026 with 2025 burden data (expected, based on the Nov 2025 release)
+  date: '2028'
+  url: https://www.gatesmri.org/the-phase-3-clinical-trial-of-the-m72-aso1e-tuberculosis-tb-vaccine-candidate-has-reached-full-enrollment/
+  what: Expected results from the 20,000-person Phase 3 trial of the M72/AS01E TB vaccine.
 ai:
   impact: some
   note: WHO-recommended AI software that reads chest X-rays (computer-aided detection) is widely used

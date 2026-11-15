@@ -27,6 +27,7 @@ Scope: this record covers non-specific low back pain, the roughly 90% of back pa
 
 ## Research log
 
+- 2026-11-15: Full review. No new approvals or pivotal readouts; the US Phase 3 of VER-01 is ongoing with data guided for 2027. Forecast unchanged.
 - 2026-11-05: First record. Split into acute and chronic variants; baseline sources, ratings, pipeline and forecasts.
 
 ## Open questions

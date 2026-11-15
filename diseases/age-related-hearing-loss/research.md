@@ -21,6 +21,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-15: Full review. No new approvals or readouts; no public report yet of first dosing in the Rincell-1 trial. Forecast unchanged.
 - 2026-11-05: New record. Rated level 2 (controlled) with moderate burden; forecasts, pipeline and toll ratio added. Framed as the common age-related loss, not congenital or genetic deafness.
 
 ## Open questions
@@ -33,3 +34,4 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - **DX243 details** (mechanism, exact trial phase label) come from the registry and one news report; the company's own release was not found. Its primary completion date (Oct 2027) is an estimate.
 - **Rincell-1 start** is not confirmed by a first-patient-dosed release; the April 2027 completion is the registry estimate and may slip.
 - Forecast starts from the base rate for a level-2 condition with no Phase 3 curative candidate (normal-pace chance by 2035 under 5%).
+- Confirm whether Rinri has dosed the first Rincell-1 patient; the primary completion date (Apr 2027) may slip.
