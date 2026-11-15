@@ -20,7 +20,7 @@ status:
     can stop seizures for some people with drug-resistant focal epilepsy, and devices such as responsive
     neurostimulation reduce seizures for others. In low-income countries about three quarters of people
     with epilepsy do not get the treatment they need.
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-15'
 treatment:
   best:
   - Antiseizure medicines (e.g. levetiracetam, lamotrigine, cenobamate)
@@ -54,7 +54,8 @@ forecast:
 pipeline:
 - name: Azetukalner (Kv7 opener)
   stage: Filed
-  note: Xenon submitted the NDA for focal seizures in Sept 2026 after the positive Phase 3 X-TOLE2.
+  note: Xenon submitted the NDA for focal seizures in Sept 2026 after the positive Phase 3 X-TOLE2;
+    FDA acceptance not yet announced as of Nov 9.
   url: https://www.neurologylive.com/view/xenon-submits-new-drug-application-azetukalner-treatment-focal-seizures
   variants:
   - drug-resistant

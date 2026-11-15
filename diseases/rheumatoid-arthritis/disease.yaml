@@ -19,7 +19,7 @@ status:
   today: Early treatment with methotrexate, then TNF, IL-6, CD20, CTLA4-Ig or JAK inhibitors if needed,
     prevents joint damage in most patients. Drug-free remission is uncommon and stopping drugs usually
     brings flares. About 1 in 5 patients have difficult-to-treat disease.
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-15'
 treatment:
   best:
   - Methotrexate
@@ -52,7 +52,8 @@ forecast:
     off-the-shelf versions and proof of long-lasting remission. That is unlikely before the late 2030s.
 pipeline:
 - name: CD19 CAR-T (mivocabtagene autoleucel), COMPARE trial
-  note: Half of 6 refractory patients reached sustained drug-free remission; Nature Medicine 2026.
+  note: Half of 6 refractory patients reached sustained drug-free remission (Nature Medicine 2026); the
+    13-person Phase 2 is fully enrolled, with results expected in 2027.
   stage: Phase 1
   url: https://www.news-medical.net/news/20260827/CAR-T-cell-therapy-successfully-reverses-severe-rheumatoid-arthritis.aspx
 - name: Rosnilimab (PD-1 agonist)

@@ -19,8 +19,9 @@ status:
     underlying neuron loss.
   today: Levodopa, dopamine agonists, MAO-B inhibitors and deep brain stimulation control motor symptoms,
     often for many years. Tavapadon (Juvmo), a new D1/D5 agonist, was approved in September 2026. No therapy
-    slows progression, and the LRRK2 inhibitor BIIB122 failed its phase 2b in 2026.
-  last_reviewed: null
+    slows progression; in 2026 the LRRK2 inhibitor BIIB122 and the GCase activator BIA 28-6156 both failed
+    phase 2b trials.
+  last_reviewed: '2026-11-15'
 treatment:
   best:
   - Levodopa/carbidopa
@@ -35,13 +36,13 @@ forecast:
   bottleneck: biology-limited
   normal:
     p2035: 2
-    p2045: 10
+    p2045: 9
     median: 2062
     low: 2042
     high: 2100
   faster:
     p2035: 5
-    p2045: 30
+    p2045: 28
     median: 2048
     low: 2038
     high: 2085
@@ -73,6 +74,14 @@ pipeline:
   stage: Phase 2
   url: https://www.neurologylive.com/view/lrrk2-inhibitor-biib122-fails-slow-early-stage-parkinson-disease
 recent:
+- date: 2026-10
+  text: Bial's GCase activator BIA 28-6156 did not delay progression in GBA-linked Parkinson's in the phase
+    2b ACTIVATE trial.
+  url: https://www.neurologylive.com/view/mds-congress-2026-late-breaking-data-snapshot
+- date: 2026-10
+  text: Cerevance's solengepras, a symptom drug, cut daily off time by about 0.6 hours more than placebo
+    in the phase 3 ARISE trial.
+  url: https://www.neurologylive.com/view/mds-congress-2026-late-breaking-data-snapshot
 - date: 2026-05
   text: Phase 2b LUMA of LRRK2 inhibitor BIIB122 missed all endpoints in early Parkinson's (HR 1.04).
   url: https://www.neurologylive.com/view/lrrk2-inhibitor-biib122-fails-slow-early-stage-parkinson-disease

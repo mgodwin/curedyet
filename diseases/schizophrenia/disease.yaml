@@ -19,11 +19,11 @@ status:
     helps many people whose symptoms have not responded to other antipsychotics. WHO says at least a
     third of people fully recover, but the rest have lasting or recurring symptoms. Only 29% of people
     with psychosis get specialist care worldwide.
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-15'
 treatment:
   best:
   - Second-generation antipsychotics
-  - Long-acting injectable antipsychotics (e.g. Uzedy)
+  - Long-acting injectable antipsychotics (e.g. Uzedy, Weltruza)
   - Clozapine for treatment-resistant cases
   - Xanomeline-trospium (Cobenfy)
   - CBT for psychosis and family interventions
@@ -50,11 +50,11 @@ forecast:
     adherence, not cure. Negative and cognitive symptoms remain largely untreated. A cure for most would
     need a deep understanding of the disease's brain development roots, which is far off.
 pipeline:
-- name: TEV-749 (once-monthly olanzapine LAI)
-  note: Teva NDA accepted Feb 2026; FDA decision set for Q4 2026; no post-injection sedation events seen
-    in SOLARIS.
-  stage: Filed
-  url: https://www.rttnews.com/3692387/teva-presents-positive-post-hoc-data-for-tev-749-for-schizophrenia-fda-decision-in-q4-26.aspx
+- name: Olanzapine monthly injection (Weltruza, formerly TEV-749)
+  note: FDA approved Oct 2026 as the first once-monthly subcutaneous olanzapine; side effects match oral
+    olanzapine, including weight gain.
+  stage: Approved 2025-26
+  url: https://www.hcplive.com/view/fda-approves-monthly-subcutaneous-olanzapine-schizophrenia
 - name: LB-102 (benzamide D2/D3/5-HT7 antagonist)
   note: NOVA-2 topline moved up to H1 2027.
   stage: Phase 3
@@ -65,6 +65,9 @@ pipeline:
   stage: Approved 2025-26
   url: https://www.drugtopics.com/view/cobenfy-did-not-meet-primary-outcome-as-add-on-treatment-for-schizophrenia
 recent:
+- date: 2026-10
+  text: FDA approved Teva's once-monthly olanzapine injection (Weltruza) for adults with schizophrenia.
+  url: https://www.hcplive.com/view/fda-approves-monthly-subcutaneous-olanzapine-schizophrenia
 - date: 2026-02
   text: FDA accepted Teva's NDA for a once-monthly subcutaneous olanzapine injection.
   url: https://www.psychiatrictimes.com/view/nda-accepted-olanzapine-extended-release-injectable-suspension-for-treatment-of-schizophrenia
@@ -72,9 +75,10 @@ recent:
   text: Cobenfy missed its primary goal as an add-on to atypical antipsychotics in a 400-person trial.
   url: https://www.drugtopics.com/view/cobenfy-did-not-meet-primary-outcome-as-add-on-treatment-for-schizophrenia
 next_milestone:
-  date: 2026-12
-  url: https://www.rttnews.com/3692387/teva-presents-positive-post-hoc-data-for-tev-749-for-schizophrenia-fda-decision-in-q4-26.aspx
-  what: FDA decision on TEV-749 once-monthly olanzapine LAI (PDUFA in Q4 2026)
+  date: 2027-06
+  url: https://www.biospace.com/press-releases/lb-pharmaceuticals-announces-accelerated-timing-of-topline-results-from-the-phase-3-nova-2-trial-of-lb-102-in-schizophrenia
+  what: Topline results from LB Pharmaceuticals' Phase 3 NOVA-2 trial of LB-102 (guided for first half of
+    2027)
 ai:
   impact: low
   note: 'Unclear: no AI-discovered antipsychotic is known to be in late-stage trials.'

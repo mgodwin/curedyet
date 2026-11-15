@@ -22,7 +22,7 @@ status:
     durable results for people with enough donor hair, at high out-of-pocket cost. Women have fewer options
     (minoxidil, spironolactone off-label); JAK inhibitors are approved for alopecia areata, a different
     autoimmune disease.
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-15'
 treatment:
   best:
   - Finasteride / dutasteride
@@ -65,14 +65,26 @@ pipeline:
   url: https://www.bioworld.com/keywords/51634-kx-826
 - name: PP405 (Pelage) follicle stem cell activator
   note: Topical; Phase 2a showed new terminal hairs from dormant follicles after 4 weeks; late-stage AWAKEN
-    study reported started in 2026.
-  stage: Phase 2
-  url: https://www.businesswire.com/news/home/20260317204870/en
+    study (Phase 2/3, about 600 men) dosed its first patient in Oct 2026.
+  stage: Phase 3
+  url: https://www.biospace.com/press-releases/pelage-pharmaceuticals-announces-first-patient-dosed-in-phase-2-3-awaken-trial-of-pp405-for-androgenetic-alopecia-the-most-common-form-of-hair-loss
+- name: VDPHL01 (Veradermics, extended-release oral minoxidil)
+  stage: Phase 3
+  note: In a Phase 2/3 study in men, twice-daily dosing added about 44 hairs per square cm at 12 months
+    with no new safety signals; female study results due 1H 2027.
+  url: https://dermatologytimes.com/view/veradermics-reports-sustained-hair-growth-with-vdphl01-at-1-year
 - name: GT20029 (Kintor) topical AR degrader (PROTAC)
   note: China Phase 2 met its primary endpoint in 2024; later-stage plans unclear.
   stage: Phase 2
   url: https://www.biospace.com/gt20029-china-phase-ii-trial-for-aga-reached-primary-endpoint
 recent:
+- date: 2026-11
+  text: Veradermics' extended-release oral minoxidil kept regrowing hair through 12 months in men.
+  url: https://dermatologytimes.com/view/veradermics-reports-sustained-hair-growth-with-vdphl01-at-1-year
+- date: 2026-10
+  text: Pelage dosed the first patient in AWAKEN, a 600-man Phase 2/3 trial of its PP405 follicle-waking
+    gel.
+  url: https://www.biospace.com/press-releases/pelage-pharmaceuticals-announces-first-patient-dosed-in-phase-2-3-awaken-trial-of-pp405-for-androgenetic-alopecia-the-most-common-form-of-hair-loss
 - date: 2026-04
   text: Cosmo reported 12-month Phase 3 data showing clascoterone 5% kept gains while switching to vehicle
     lost them.

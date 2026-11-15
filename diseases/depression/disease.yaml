@@ -19,7 +19,7 @@ status:
     from an episode. About a third do not respond to two or more drugs; esketamine, augmenting drugs,
     ECT and TMS help some of them. Only about a third of people with depression get treatment even in
     high-income countries.
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-15'
 treatment:
   best:
   - Psychotherapy (CBT, behavioral activation)
@@ -52,23 +52,28 @@ forecast:
     cure for most people. A cure for most needs better biology and biomarkers, which look decades away.
 pipeline:
 - name: COMP360 psilocybin (treatment-resistant depression)
-  note: Rolling NDA nearly done as of Nov 2026, with a National Priority Voucher; launch hoped for H1
-    2027 pending FDA and DEA.
+  note: Compass completed the NDA on Nov 9, 2026, with rolling review and a National Priority Voucher;
+    no decision date published, and DEA rescheduling is also needed before launch.
   stage: Filed
-  url: https://www.sec.gov/Archives/edgar/data/0001816590/000181659026000078/q32026pressrelease.htm
+  url: https://ir.compasspathways.com/News--Events-/news/news-details/2026/Compass-Pathways-Completes-COMP360-Psilocybin-New-Drug-Application-to-U-S--FDA-for-Treatment-Resistant-Depression/default.aspx
 - name: Lumateperone (Caplyta) adjunctive
   note: FDA approved it in late 2025 as an add-on to antidepressants for MDD.
   stage: Approved 2025-26
   url: https://www.indianpharmapost.com/regulatory/johnson-johnson-gets-fda-nod-for-new-depression-treatment-18193
 - name: Azetukalner (Kv7 opener) for MDD
-  note: X-NOVA2 topline data expected Q1 2027.
+  note: X-NOVA2 (about 360 patients) topline now expected Dec 2026; new enrollment in Xenon's depression
+    studies paused in Sept after a safety review of neuropsychiatric side effects.
   stage: Phase 3
-  url: https://www.neurologylive.com/view/xenon-submits-new-drug-application-azetukalner-treatment-focal-seizures
+  url: https://finviz.com/news/419393/xenon-reports-q3-2026-financial-results-and-provides-business-update
 - name: NBI-1065845 (osavampator) adjunctive
   note: Neurocrine is testing this AMPA potentiator as an add-on treatment for MDD.
   stage: Phase 3
   url: https://clinicaltrials.gov/study/NCT06963021
 recent:
+- date: 2026-11
+  text: Compass completed its NDA for COMP360 psilocybin in treatment-resistant depression, the first full
+    psilocybin filing with the FDA.
+  url: https://ir.compasspathways.com/News--Events-/news/news-details/2026/Compass-Pathways-Completes-COMP360-Psilocybin-New-Drug-Application-to-U-S--FDA-for-Treatment-Resistant-Depression/default.aspx
 - date: 2026-07
   text: Second COMP360 Phase 3 (COMP006) showed benefit lasting to at least week 26 in treatment-resistant
     depression.
@@ -77,11 +82,15 @@ recent:
   text: FDA approved lumateperone as adjunctive therapy for MDD based on two Phase 3 trials.
   url: https://www.indianpharmapost.com/regulatory/johnson-johnson-gets-fda-nod-for-new-depression-treatment-18193
 next_milestone:
-  date: 2026-11
-  url: https://www.sec.gov/Archives/edgar/data/0001816590/000181659026000078/q32026pressrelease.htm
-  what: Compass completes the final COMP360 psilocybin NDA submission for treatment-resistant depression
+  date: 2026-12
+  url: https://finviz.com/news/419393/xenon-reports-q3-2026-financial-results-and-provides-business-update
+  what: Topline results from Xenon's X-NOVA2 Phase 3 of azetukalner in major depression
 ai:
   impact: low
   note: No AI-discovered antidepressant is near approval; AI mainly appears in digital therapy and screening
     tools.
-markets: []
+markets:
+- who: Kalshi
+  what: When will the FDA approve COMP360 psilocybin? About 56% before Mar 2027 and 81% before July 2027
+    (Nov 2026).
+  url: https://kalshi.com/markets/kxfdaapprovaldatecmps/compass-pathways-drug-approval/kxfdaapprovaldatecmps-360

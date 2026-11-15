@@ -22,9 +22,11 @@ Scope: the common, near-universal ways vision fades with age, split into presbyo
 - [Pharmaphorum: Novartis drops presbyopia drug acquired with Encore Vision](https://pharmaphorum.com/news/novartis-drops-presbyopia-drug-acquired-with-encore-vision) - UNR844 lens-softening drop discontinued after Phase 2b missed its primary endpoint (2022)
 - [ClinicalTrials.gov NCT04806503: UNR844 dose-ranging study](https://clinicaltrials.gov/study/NCT04806503) - terminated, did not achieve primary objective
 - [WHO: Report of the 2030 targets on effective coverage of eye care](https://www.who.int/publications/i/item/9789240058002) - WHA74 (2021) targets: +30 percentage points effective cataract surgery coverage, +40 points effective refractive error coverage by 2030
+- [Healio: FDA approves Ryzumvi for presbyopia (Oct 16, 2026)](https://www.healio.com/news/ophthalmology/20261016/fda-approves-ryzumvi-eye-drop-for-presbyopia) - approval based on VEGA-2 and VEGA-3
 
 ## Research log
 
+- 2026-11-15: Full review. The FDA approved Ryzumvi (phentolamine 0.75%) for presbyopia in Oct 2026, adding another temporary near-vision drop. Drops still need daily use and do not restore focusing, so the level and forecast are unchanged.
 - 2026-11-05: New record with two variants, presbyopia (level 2, light) and cataract (level 4, moderate). Disease-level forecast follows presbyopia. Macular degeneration and glaucoma left to their own records.
 
 ## Open questions

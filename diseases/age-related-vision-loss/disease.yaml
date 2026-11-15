@@ -22,7 +22,7 @@ status:
     with an implant and improves vision for about 9 in 10 people, in a short same-day operation. Worldwide,
     about half of people who need cataract surgery can't get it, and cataract remains the leading cause
     of blindness.
-  last_reviewed: '2026-11-05'
+  last_reviewed: '2026-11-15'
 treatment:
   best:
   - Reading glasses, bifocals or progressive lenses
@@ -54,6 +54,11 @@ forecast:
     implant that truly accommodates. The leading lens-softening drop failed in 2022, and today's drops
     and lens implants work around the problem rather than fixing it.
 pipeline:
+- name: Ryzumvi (phentolamine 0.75%, Viatris/Opus Genetics)
+  stage: Approved 2025-26
+  note: FDA approved Oct 2026 for presbyopia; a drop that shrinks the pupil without acting on the focusing
+    muscle, based on the VEGA-2 and VEGA-3 trials.
+  url: https://www.healio.com/news/ophthalmology/20261016/fda-approves-ryzumvi-eye-drop-for-presbyopia
 - name: Yuvezzi (carbachol plus brimonidine, Tenpoint)
   stage: Approved 2025-26
   note: FDA-approved January 2026 as the first combination eye drop for presbyopia.
@@ -74,6 +79,9 @@ pipeline:
   effect_note: Already approved; a longer-lasting drop makes glasses optional for more of the day but
     is ongoing treatment, not a cure.
 recent:
+- date: 2026-10
+  text: FDA approved Ryzumvi (phentolamine), a third type of presbyopia eye drop.
+  url: https://www.healio.com/news/ophthalmology/20261016/fda-approves-ryzumvi-eye-drop-for-presbyopia
 - date: 2026-01
   text: FDA approved Yuvezzi, a carbachol and brimonidine combination drop for presbyopia.
   url: https://www.thepharmaletter.com/pharma-news/fda-approves-tenpoint-s-yuvezzi

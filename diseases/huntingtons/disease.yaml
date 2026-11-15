@@ -19,7 +19,7 @@ status:
   today: Tetrabenazine, deutetrabenazine and valbenazine reduce involuntary movements, and psychiatric
     symptoms are treated separately. Nothing approved changes the course of the disease. The AAV gene
     therapy AMT-130 is now under FDA priority review after small trials suggested slower progression.
-  last_reviewed: null
+  last_reviewed: '2026-11-15'
 treatment:
   best:
   - Valbenazine (Ingrezza)
@@ -52,11 +52,13 @@ forecast:
 pipeline:
 - name: AMT-130 / ifezuntirgene inilparvovec (uniQure)
   note: FDA accepted BLA with priority review; decision target May 1, 2027, based on small trial vs external
-    controls.
+    controls. An advisory committee is required (no date yet), and confirmatory trial screening is due
+    to start by end of 2026.
   stage: Filed
   url: https://en.hdbuzz.net/669-fda-sets-may-2027-decision-date-on-amt-130-gene-therapy-for-hd/
 - name: Brezosiran (Alnylam, RNAi)
-  note: Single dose cut mutant huntingtin in spinal fluid about 60%; pivotal trial planned for 2027.
+  note: Single dose cut mutant huntingtin in spinal fluid by up to about 64%; Alnylam plans to go straight
+    to a pivotal Phase 3 in 2027.
   stage: Phase 1
   url: https://en.hdbuzz.net/656-turning-down-huntingtin-alnylams-brezosiran-shows-promising-early-result/
 - name: Votoplam (PTC518, Novartis/PTC)
@@ -68,6 +70,10 @@ pipeline:
   stage: Phase 2
   url: https://en.hdbuzz.net/
 recent:
+- date: 2026-11
+  text: Roche's tominersen lowered huntingtin about 30% in GENERATION HD2 but gave no functional benefit,
+    and Roche will not develop it further.
+  url: https://en.hdbuzz.net/716-ehdn-2026-part-2-whats-the-latest-news-for-huntingtons-disease-clinical-trials/
 - date: 2026-09
   text: Four-year AMT-130 data showed 61% slowing on functional capacity in 12 high-dose patients, though
     results depend on the control dataset.

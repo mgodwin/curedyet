@@ -6,10 +6,10 @@ tracking: active
 summary: A severe, often fatal viral hemorrhagic fever caused by several ebolavirus species, spread by
   contact with body fluids.
 toll:
-  text: '2026 Bundibugyo outbreak: 10,668 confirmed cases and 5,198 deaths in DRC as of 3 Nov 2026, plus
-    9 cases and 2 deaths in Kenya and one imported case from Nigeria (WHO); historic outbreaks kill roughly
-    25-90% of cases.'
-  url: https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON625
+  text: '2026 Bundibugyo outbreak: 11,197 confirmed cases and 5,471 related deaths in DRC as of 12 Nov
+    2026, plus 9 cases and 2 deaths in Kenya and one imported case from Nigeria (ECDC); historic outbreaks
+    kill roughly 25-90% of cases.'
+  url: https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda
 status:
   level: 3
   why: For Zaire ebolavirus, a licensed vaccine and two FDA-approved antibody drugs save most

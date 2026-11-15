@@ -16,9 +16,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [ClinicalTrials.gov NCT07140913: adjunctive KarXT in bipolar I mania](https://clinicaltrials.gov/study/NCT07140913) - Phase 3, recruiting, about 424 participants, estimated primary completion 28 June 2027
 - [Psychiatric Times: positive Phase 2 results for RAP-219 in bipolar mania (20 Oct 2026)](https://www.psychiatrictimes.com/view/positive-topline-results-from-phase-2-trial-of-rap-219-for-the-treatment-of-bipolar-mania) - 253 patients, 3.1-point YMRS gain at week 3 (p=0.045); Phase 3 start H2 2027
 - [HCPLive: FDA approves milsaperidone for acute bipolar I disorder and schizophrenia (Feb 2026)](https://www.hcplive.com/view/fda-approves-milsaperidone-acute-bipolar-i-disorder-schizophrenia) - Bysanti approval based on bioequivalence to iloperidone
+- [Xenon Q3 2026 results (Nov 9, 2026)](https://finviz.com/news/419393/xenon-reports-q3-2026-financial-results-and-provides-business-update) - enrollment pause in the bipolar depression study
 
 ## Research log
 
+- 2026-11-15: Full review. No approval, rejection or pivotal readout this month. Xenon paused new enrollment in its azetukalner bipolar depression study after a safety review (not in this record's pipeline). Forecast unchanged.
 - 2026-11-05: First full record. Kept as a single record rather than splitting bipolar I and II: both are lifelong and recurrent, treated with the same families of medicines (mood stabilisers, some antipsychotics) plus therapy, and would sit at the same level with the same burden. The main differences (mania needing hospital care in bipolar I; depression dominating in bipolar II) change which drug is used for an episode, not the outlook for cure.
 
 ## Open questions

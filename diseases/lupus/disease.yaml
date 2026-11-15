@@ -20,7 +20,7 @@ status:
     and voclosporin for harder cases or lupus nephritis. Obinutuzumab is approved for lupus nephritis
     and is under FDA review for broader SLE. CD19 CAR-T has produced drug-free remissions in small studies
     but is still experimental.
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-15'
 treatment:
   best:
   - Hydroxychloroquine
@@ -65,11 +65,19 @@ pipeline:
   note: Drug-free remissions in refractory SLE and lupus nephritis in small trials.
   stage: Phase 2
   url: https://www.cgtlive.com/view/kyverna-progress-kyv-101-lupus-nephritis-us-germany-trials
+- name: Dapirolizumab pegol (UCB/Biogen, CD40L blocker)
+  note: PHOENYCS GO met its Phase 3 goal (BICLA response 50% vs 35% at week 48); filings in progress.
+  stage: Phase 3
+  url: https://www.techtimes.com/articles/330472/20261111/car-t-cell-therapy-delivers-drug-free-remissions-treatment-resistant-lupus-arthritis-three.htm
 - name: Afimetoran (TLR7/8 inhibitor)
   note: Met SRI-4 endpoint at week 48 in September 2026.
   stage: Phase 2
   url: https://www.rheum-live.com/view/what-we-re-looking-forward-rheumatology-h2-2026
 recent:
+- date: 2026-11
+  text: At ACR 2026, Novartis's CD19 CAR-T rapcabtagene autoleucel cleared urine protein in 8 of 14 people
+    with lupus by 12 months, and dapirolizumab pegol showed more remission than placebo in Phase 3.
+  url: https://www.lupus.org/blog/advancements-in-lupus-treatment-kidney-care-and-research-from-the-acr-2026-scientific-meeting
 - date: 2026-03
   text: 'ALLEGORY Phase 3 in NEJM: obinutuzumab doubled DORIS remission (34% vs 14%).'
   url: https://www.pharmanow.live/de/latest-news/fda-accepts-roche-sbla-obinutuzumab-sle-december-2026

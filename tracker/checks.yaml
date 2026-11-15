@@ -48,10 +48,10 @@
   disease: lung-cancer
   label: FDA approves ivonescimab for EGFR-mutated NSCLC by 2026-12-31
   resolves_by: '2026-12-31'
-  prob: 50
-  resolved: null
-  last_forecast: null
-  note: ''
+  prob: 0
+  resolved: 'no'
+  last_forecast: 50
+  note: Resolved no on 2026-11-15; last forecast 50%. Summit announced an FDA complete response letter citing no significant overall survival benefit.
   url: https://www.clinicaltrialsarena.com/news/summit-debuts-longer-term-ivonescimab-data-as-it-awaits-fda-nsclc-decision/
 - id: chk-prostate-cancer
   disease: prostate-cancer
@@ -67,19 +67,19 @@
   label: FDA approves Teva's TEV-749 olanzapine LAI by 2026-12-31
   resolves_by: '2026-12-31'
   prob: 80
-  resolved: null
-  last_forecast: null
-  note: ''
-  url: https://www.rttnews.com/3692387/teva-presents-positive-post-hoc-data-for-tev-749-for-schizophrenia-fda-decision-in-q4-26.aspx
+  resolved: void
+  last_forecast: 80
+  note: "Void: the FDA had already approved it (Weltruza), announced Oct 9, 2026, before this forecast was made, so it isn't scored."
+  url: https://www.hcplive.com/view/fda-approves-monthly-subcutaneous-olanzapine-schizophrenia
 - id: chk-tuberculosis
   disease: tuberculosis
   label: WHO's 2026 TB report estimates fewer TB deaths in 2025 than the 1.23M in 2024, published by 2026-12-31
   resolves_by: '2026-12-31'
-  prob: 55
-  resolved: null
-  last_forecast: null
-  note: ''
-  url: https://www.who.int/teams/global-tuberculosis-programme/tb-reports/global-tuberculosis-report-2025
+  prob: 100
+  resolved: 'yes'
+  last_forecast: 55
+  note: Resolved yes on 2026-11-12; last forecast 55%. WHO estimated 1.13M TB deaths in 2025, below both the 1.23M reported last year and the revised 1.18M for 2024.
+  url: https://www.who.int/news/item/12-11-2026-amid-challenges-countries-increase-domestic-investment-to-protect-progress-against-tuberculosis
 - id: chk-marburg
   disease: marburg
   label: Sabin publicly reports cAd3-Marburg Phase 2 immunogenicity results by 2027-03-31
@@ -153,3 +153,21 @@
   last_forecast: null
   note: Loyal has said it expects to apply in 2027; company timelines often slip.
   url: null
+- id: chk-lupus
+  disease: lupus
+  label: FDA approves obinutuzumab (Gazyva) for systemic lupus erythematosus by 2026-12-31
+  resolves_by: '2026-12-31'
+  prob: 85
+  resolved: null
+  last_forecast: null
+  note: Roche expects a decision by December 2026; Phase 3 ALLEGORY met its primary endpoint and the drug is already approved for lupus nephritis.
+  url: https://www.roche.com/media/releases/med-cor-2026-04-21
+- id: chk-depression
+  disease: depression
+  label: FDA approves Compass's COMP360 psilocybin for treatment-resistant depression by 2027-06-30
+  resolves_by: '2027-06-30'
+  prob: 75
+  resolved: null
+  last_forecast: null
+  note: NDA completed Nov 9, 2026 with a priority voucher; Kalshi priced approval before July 2027 at about 81% in Nov 2026.
+  url: https://kalshi.com/markets/kxfdaapprovaldatecmps/compass-pathways-drug-approval/kxfdaapprovaldatecmps-360
