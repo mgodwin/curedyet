@@ -1,0 +1,26 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: leprosy
+name: Leprosy (Hansen's disease)
+category: infectious
+tracking: proposed
+summary: A slow bacterial infection of the skin and nerves that can cause disability if untreated.
+toll:
+  text: 182,815 new cases reported worldwide in 2023 (PAHO/WHO).
+  url: https://www.paho.org/en/topics/leprosy?page=1
+status:
+  level: 4
+  why: Multidrug therapy cures leprosy in 6 to 12 months, and WHO provides it free.
+  today: 'WHO''s multidrug therapy cures leprosy: 6 months for milder forms and 12 months for others.
+    Treatment greatly cuts the chance of disability. The drugs have been donated by Novartis since 2000.'
+  last_reviewed: null
+treatment:
+  best:
+  - Multidrug therapy (MDT)
+  burden: moderate
+  burden_note: Daily pills for 6 to 12 months, free through WHO.
+forecast:
+  bottleneck: access-limited
+pipeline: []
+recent: []
+next_milestone: null
+markets: []

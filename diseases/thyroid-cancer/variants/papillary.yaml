@@ -1,0 +1,20 @@
+# Cure Watch variant record: one stage or type of Thyroid cancer. Field guide: CONTRIBUTING.md.
+id: papillary
+name: Papillary
+order: 1
+what: The most common type, usually slow-growing.
+level: 4
+burden: moderate
+burden_why: Surgery, sometimes radioactive iodine, and thyroid hormone pills.
+survival: '>99% alive at 5 years, all stages (SEER relative survival, diagnosed 2015-2021)'
+share: About 8 in 10 thyroid cancers
+share_url: https://www.cancer.org/cancer/thyroid-cancer/about/what-is-thyroid-cancer.html
+treatment: Surgery, with radioactive iodine for some. Nearly all are cured.
+url: https://www.cancer.org/cancer/thyroid-cancer/detection-diagnosis-staging/survival-rates.html
+caveat: Treatment burden detail (thyroid hormone pills) is not yet sourced. The reached year is a lower
+  bound from all-type data.
+reached:
+  year: 1975
+  basis: 'No later than 1975: US 5-year survival for all thyroid cancers diagnosed in 1975-77 was 92%,
+    and most are papillary or follicular. Radioactive iodine treatment dates from 1946.'
+  url: https://seer.cancer.gov/archive/csr/1975_2012/results_single/sect_26_table.08.pdf

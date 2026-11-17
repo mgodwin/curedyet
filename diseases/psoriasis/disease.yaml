@@ -1,0 +1,41 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: psoriasis
+name: Psoriasis
+category: immune
+tracking: proposed
+summary: A long-term immune disease that causes thick, scaly patches of skin and can affect the joints.
+toll:
+  text: About 100 million people worldwide (WHO, 2016).
+  url: https://www.who.int/news/item/26-02-2016-who-publishes-new-report-on-psoriasis
+status:
+  level: 2
+  why: Modern drugs clear or nearly clear the skin for many people, but there is no cure, so treatment
+    is ongoing.
+  today: Injected biologics that block IL-17 or IL-23, and oral drugs such as deucravacitinib, control
+    moderate to severe psoriasis. In March 2026 the FDA approved icotrokinra (Icotyde), an oral IL-23
+    receptor blocker; about 70% of patients reached clear or almost clear skin at week 16 in head-to-head
+    trials.
+  last_reviewed: null
+treatment:
+  best:
+  - IL-17 and IL-23 blocking biologics
+  - Icotrokinra (Icotyde)
+  - Deucravacitinib (Sotyktu)
+  burden: moderate
+  burden_note: Regular injections or daily pills, long term.
+forecast:
+  bottleneck: biology-limited
+pipeline:
+- name: Zasocitinib (TAK-279)
+  stage: Phase 3
+  note: Oral TYK2 blocker; over half of patients reached PASI 90 at week 16 and it beat apremilast in
+    pivotal trials.
+  url: https://www.dermatologytimes.com/view/dermatology-times-2025-year-in-review-psoriasis
+  effect: small
+  effect_note: Another strong pill would ease treatment but not cure the disease.
+recent:
+- date: 2026-03
+  text: FDA approved icotrokinra (Icotyde), the first oral peptide that blocks the IL-23 receptor.
+  url: https://www.healio.com/news/dermatology/20260318/fda-approves-icotrokinra-first-oral-peptide-for-adults-and-teens-with-plaque-psoriasis
+next_milestone: null
+markets: []

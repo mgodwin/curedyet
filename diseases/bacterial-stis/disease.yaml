@@ -1,0 +1,36 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: bacterial-stis
+name: Gonorrhea, chlamydia and syphilis
+category: infectious
+tracking: proposed
+summary: Common bacterial infections passed on through sex.
+toll:
+  text: About 129 million new chlamydia, 82 million gonorrhea and 7.1 million syphilis infections in 2020
+    (WHO).
+  url: https://who.int/news-room/fact-sheets/detail/sexually-transmitted-infections-%28stis%29
+status:
+  level: 4
+  why: Existing antibiotics, often a single dose, generally cure all three, but gonorrhea is becoming
+    resistant to the drugs that treat it.
+  today: Antibiotics cure chlamydia, gonorrhea and syphilis. Gonorrhea resistance has risen fast, including
+    to the last-line class that includes ceftriaxone. In December 2025 the FDA approved two new oral antibiotics,
+    gepotidacin (Blujepa) and zoliflodacin (Nuzolvence), the first new gonorrhea drugs since 1987.
+  last_reviewed: null
+treatment:
+  best:
+  - Ceftriaxone (gonorrhea)
+  - Zoliflodacin (Nuzolvence)
+  - Gepotidacin (Blujepa)
+  - Antibiotics for chlamydia and syphilis
+  burden: light
+  burden_note: Usually a single dose or short course of antibiotics.
+forecast:
+  bottleneck: access-limited
+pipeline: []
+recent:
+- date: 2025-12
+  text: FDA approved gepotidacin (Blujepa) and zoliflodacin (Nuzolvence), the first new gonorrhea antibiotics
+    since 1987.
+  url: https://www.healio.com/news/infectious-disease/20251212/fda-approves-first-new-gonorrhea-treatment-in-decades
+next_milestone: null
+markets: []

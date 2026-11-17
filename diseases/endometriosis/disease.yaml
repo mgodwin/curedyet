@@ -1,0 +1,30 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: endometriosis
+name: Endometriosis
+category: other
+tracking: proposed
+summary: A disease in which tissue similar to the lining of the womb grows outside it, often causing pelvic
+  pain and trouble getting pregnant.
+toll:
+  text: About 10% of reproductive-age women and girls worldwide, roughly 190 million (WHO, 2025).
+  url: https://who.int/news-room/fact-sheets/detail/endometriosis
+status:
+  level: 1
+  why: Pain medicines, hormones and surgery ease symptoms, but WHO says there is no cure.
+  today: Treatment aims to control symptoms with pain relievers, hormonal medicines such as progestins
+    and GnRH analogues, and surgery to remove lesions. WHO notes that even hysterectomy is not a cure.
+    Fertility treatment helps some people who want to conceive.
+  last_reviewed: null
+treatment:
+  best:
+  - Pain relievers
+  - Hormonal medicines
+  - Surgery to remove lesions
+  burden: moderate
+  burden_note: Long-term hormones or surgery; some hormonal options don't suit people trying to get pregnant.
+forecast:
+  bottleneck: biology-limited
+pipeline: []
+recent: []
+next_milestone: null
+markets: []

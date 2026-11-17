@@ -1,0 +1,33 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: ptsd
+name: PTSD (post-traumatic stress disorder)
+category: mental
+tracking: proposed
+summary: A mental health condition that can develop after a frightening or threatening event.
+toll:
+  text: About 3.9% of people worldwide have PTSD at some point in their lives (WHO, 2026).
+  url: https://who.int/news-room/fact-sheets/detail/post-traumatic-stress-disorder
+status:
+  level: 2
+  why: Trauma-focused talking therapies are the first-choice treatment and up to 40% of people recover
+    within a year, but there is no reliable cure for the rest.
+  today: WHO recommends trauma-focused cognitive behavioural therapy and EMDR first, with some antidepressants
+    when therapy isn't available. The FDA turned down MDMA-assisted therapy in August 2024 and brexpiprazole
+    with sertraline in September 2025.
+  last_reviewed: null
+treatment:
+  best:
+  - Trauma-focused CBT
+  - EMDR
+  - Antidepressants
+  burden: moderate
+  burden_note: A course of therapy sessions, or daily medicine.
+forecast:
+  bottleneck: biology-limited
+pipeline: []
+recent:
+- date: 2025-09
+  text: FDA rejected brexpiprazole plus sertraline for PTSD, citing insufficient evidence it works.
+  url: https://www.managedhealthcareexecutive.com/view/fda-rejects-rexulti-for-ptsd-noting-insufficient-evidence-of-effectiveness
+next_milestone: null
+markets: []
