@@ -1,0 +1,27 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: peptic-ulcers
+name: Stomach ulcers (H. pylori)
+category: infectious
+tracking: proposed
+summary: Sores in the lining of the stomach or small intestine, often caused by H. pylori bacteria.
+status:
+  level: 4
+  why: A combination of antibiotics and an acid-reducing drug clears H. pylori in most people, which lets
+    the ulcer heal and lowers the chance of new ones.
+  today: Doctors combine two or more antibiotics with an acid-reducing drug, sometimes with bismuth, and
+    retest at least 4 weeks later to confirm the bacteria are gone. Antibiotic resistance means some people
+    need a second regimen.
+  last_reviewed: null
+treatment:
+  best:
+  - Bismuth quadruple therapy
+  - Rifabutin triple therapy
+  - Vonoprazan plus amoxicillin
+  burden: light
+  burden_note: A short course of several pills, followed by a test to confirm cure.
+forecast:
+  bottleneck: access-limited
+pipeline: []
+recent: []
+next_milestone: null
+markets: []

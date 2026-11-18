@@ -1,0 +1,34 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: herpes
+name: Herpes (HSV)
+category: infectious
+tracking: proposed
+summary: A lifelong viral infection that causes recurring cold sores or genital sores.
+toll:
+  text: About 846 million people aged 15-49 had genital herpes in 2020, more than 1 in 5 (WHO, 2024).
+  url: https://www.who.int/news/item/11-12-2024-over-1-in-5-adults-worldwide-has-a-genital-herpes-infection-who
+status:
+  level: 2
+  why: Antiviral medicines ease and suppress outbreaks, but the virus hides in nerve cells for life and
+    there is no cure.
+  today: Antiviral medicines treat outbreaks and can be taken daily to prevent them. WHO says there is
+    no cure, and it is calling for new treatments and vaccines.
+  last_reviewed: null
+treatment:
+  best:
+  - Antiviral medicines
+  burden: moderate
+  burden_note: Pills during outbreaks, or daily to suppress them; they do not clear the virus.
+forecast:
+  bottleneck: biology-limited
+pipeline:
+- name: Gene editing of latent HSV
+  stage: Preclinical
+  note: Fred Hutch gene-editing enzymes removed up to about 90% of latent HSV-1 in mice (2020). No human
+    trial yet.
+  url: https://www.technologynetworks.com/biopharma/news/gene-therapy-eliminates-over-90-latent-herpes-virus-in-animal-model-338770
+  effect: big
+  effect_note: Clearing the hidden virus is the only route to a cure.
+recent: []
+next_milestone: null
+markets: []

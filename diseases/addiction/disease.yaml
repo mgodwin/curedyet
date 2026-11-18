@@ -1,0 +1,47 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: addiction
+name: Alcohol and opioid addiction
+category: mental
+tracking: proposed
+summary: Compulsive use of alcohol or opioids that continues despite harm.
+toll:
+  text: About 2.6 million deaths from alcohol and 0.6 million from drug use in 2019; about 400 million
+    people live with alcohol use disorders (WHO, 2024).
+  url: https://www.who.int/news/item/25-06-2024-over-3-million-annual-deaths-due-to-alcohol-and-drug-use-majority-among-men
+status:
+  level: 2
+  why: Medicines and therapy help many people stay well, and methadone and buprenorphine lower the risk
+    of death, but treatment is ongoing and most people never get it.
+  today: For opioid addiction, methadone and buprenorphine substantially lower the risk of overdose and
+    death, and monthly naltrexone injections are another option. For alcohol, naltrexone, acamprosate
+    and disulfiram are approved. In 2026 a small trial found weekly semaglutide cut heavy drinking more
+    than placebo.
+  last_reviewed: null
+treatment:
+  best:
+  - Methadone
+  - Buprenorphine
+  - Naltrexone
+  - Acamprosate
+  - Disulfiram
+  - Behavioral therapy
+  burden: moderate
+  burden_note: Daily medicine or monthly injections, often with counseling; in 2019 treatment reached
+    between under 1% and 35% of people in reporting countries.
+forecast:
+  bottleneck: biology-limited
+pipeline:
+- name: Semaglutide for alcohol use disorder
+  stage: Phase 2
+  note: In a 108-person trial in people with alcohol use disorder and obesity, weekly semaglutide plus
+    therapy cut heavy drinking days more than placebo plus therapy (Lancet, May 2026).
+  url: https://www.nih.gov/news-events/nih-research-matters/glp-1-plus-therapy-can-reduce-heavy-drinking
+  effect: some
+  effect_note: A widely available drug that curbs craving would reach far more people than current treatment.
+recent:
+- date: 2026-05
+  text: A Lancet trial found weekly semaglutide reduced heavy drinking days in people with alcohol use
+    disorder and obesity.
+  url: https://www.nih.gov/news-events/nih-research-matters/glp-1-plus-therapy-can-reduce-heavy-drinking
+next_milestone: null
+markets: []

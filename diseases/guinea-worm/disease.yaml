@@ -1,0 +1,30 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: guinea-worm
+name: Guinea worm disease
+category: infectious
+tracking: proposed
+summary: A parasitic infection caught from unfiltered water, in which the worm later emerges through the
+  skin.
+toll:
+  text: 10 human cases worldwide in 2025 (provisional), down from about 3.5 million a year in 1986 (Carter
+    Center).
+  url: https://www.cartercenter.org/health/guinea_worm/case-totals.html
+status:
+  level: 1
+  why: No drug or vaccine exists, so care means removing the emerging worm and easing symptoms, but the
+    disease is close to eradication.
+  today: Once the worm starts to emerge, the whole worm has to be removed; anti-inflammatory medicine
+    and antibiotic ointment ease pain and prevent infection. The 2025 cases were in Chad, Ethiopia and
+    South Sudan.
+  last_reviewed: null
+treatment:
+  best:
+  - Worm removal
+  - Anti-inflammatory medicine
+  - Antibiotic ointment
+  burden: moderate
+  burden_note: No medicine kills the worm; care is removal and wound care.
+pipeline: []
+recent: []
+next_milestone: null
+markets: []

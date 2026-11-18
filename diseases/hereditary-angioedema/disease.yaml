@@ -1,0 +1,44 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: hereditary-angioedema
+name: Hereditary angioedema
+category: genetic
+tracking: proposed
+summary: An inherited disorder that causes sudden attacks of swelling in the skin, gut and airway.
+toll:
+  text: About 1 in 50,000 people worldwide, roughly 6,000 in the US (Consultant360, 2025).
+  url: https://www.consultantlive.com/view/rare-disease-rapid-progress-fda-hae-approvals-in-2025-signal-changing-course
+status:
+  level: 2
+  why: Preventive drugs reduce attacks, but they are taken for life and no cure is approved yet.
+  today: Long-term preventive drugs such as garadacimab and donidalorsen, both approved in 2025, cut how
+    often attacks happen. Oral sebetralstat, also approved in 2025, treats attacks as they start. A one-time
+    CRISPR treatment, lonvo-z, is under FDA review.
+  last_reviewed: null
+treatment:
+  best:
+  - Garadacimab (Andembry)
+  - Donidalorsen (Dawnzera)
+  - Sebetralstat (Ekterly), on demand
+  burden: moderate
+  burden_note: Prevention means regular injections for life, plus a drug kept on hand for attacks.
+forecast:
+  bottleneck: trial-limited
+pipeline:
+- name: Lonvo-z (lonvoguran ziclumeran)
+  stage: Filed
+  note: One-time in vivo CRISPR treatment. In the Phase 3 HAELO trial, attacks fell 87% versus placebo
+    and 62% of treated patients had none.
+  url: https://www.healio.com/news/allergy-asthma/20260925/fda-grants-priority-review-to-lonvoguran-ziclumeran-for-hereditary-angioedema
+  expected: '2027-03-10'
+  effect: big
+  effect_note: Approval would bring a one-time treatment that left most trial patients with far fewer
+    attacks and many with none.
+recent:
+- date: 2025-08
+  text: FDA approved donidalorsen (Dawnzera) to prevent attacks, the third HAE approval of 2025.
+  url: https://www.consultantlive.com/view/rare-disease-rapid-progress-fda-hae-approvals-in-2025-signal-changing-course
+next_milestone:
+  date: '2027-03-10'
+  what: FDA decision on lonvo-z, a one-time CRISPR treatment
+  url: https://www.healio.com/news/allergy-asthma/20260925/fda-grants-priority-review-to-lonvoguran-ziclumeran-for-hereditary-angioedema
+markets: []

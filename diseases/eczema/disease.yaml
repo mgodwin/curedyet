@@ -1,0 +1,30 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: eczema
+name: Eczema (atopic dermatitis)
+category: immune
+tracking: proposed
+summary: A long-term inflammatory skin disease that causes dry, itchy, inflamed skin, often starting in
+  childhood.
+toll:
+  text: About 31.6 million people in the US have eczema, including about 9.6 million children with atopic
+    dermatitis (Allergy & Asthma Network).
+  url: https://allergyasthmanetwork.org/eczema-statistics
+status:
+  level: 2
+  why: Biologic drugs control moderate to severe eczema for many people, but none cures it.
+  today: Dupilumab, the first biologic for atopic dermatitis, is approved from 6 months of age, and tralokinumab
+    and lebrikizumab have followed. Treatment aims at long-term control rather than cure.
+  last_reviewed: null
+treatment:
+  best:
+  - Dupilumab (Dupixent)
+  - Tralokinumab
+  - Lebrikizumab
+  burden: moderate
+  burden_note: Regular injections for moderate to severe disease, long term.
+forecast:
+  bottleneck: biology-limited
+pipeline: []
+recent: []
+next_milestone: null
+markets: []

@@ -1,0 +1,33 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: sepsis
+name: Sepsis
+category: infectious
+tracking: proposed
+summary: The body's extreme response to an infection, which can damage organs and kill.
+toll:
+  text: About 49 million cases and 11 million deaths a year, about 1 in 5 deaths worldwide (WHO, data
+    published 2020).
+  url: https://who.int/news-room/fact-sheets/detail/sepsis
+status:
+  level: 3
+  why: Fast antibiotics, fluids and organ support save most patients, but 12% to 17% of US patients hospitalized
+    mainly for sepsis died in hospital in 2016-2021.
+  today: Treatment means early antimicrobials aimed at the infection, intravenous fluids, finding and
+    treating the source, and drugs to raise blood pressure when needed. Drug-resistant infections make
+    it harder to treat.
+  last_reviewed: null
+treatment:
+  best:
+  - Early antimicrobials
+  - Intravenous fluids
+  - Vasopressors
+  - Source control
+  burden: heavy
+  burden_note: Emergency hospital care, often intensive care; the average US sepsis stay cost about $28,800
+    in 2021.
+forecast:
+  bottleneck: biology-limited
+pipeline: []
+recent: []
+next_milestone: null
+markets: []

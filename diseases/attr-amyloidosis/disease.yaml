@@ -1,0 +1,39 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: attr-amyloidosis
+name: ATTR amyloidosis
+category: cardio
+tracking: proposed
+summary: A disease in which a misfolded protein, transthyretin, builds up in the heart or nerves and causes
+  heart failure or nerve damage.
+status:
+  level: 1
+  why: Approved drugs slow the disease and lower the risk of death and hospital stays, but none cures
+    it.
+  today: Tafamidis (2019) and acoramidis (2024) are approved for the heart form. Vutrisiran lowered deaths
+    and cardiovascular events in the 655-patient HELIOS-B trial and is now approved for the heart form
+    too. A one-time CRISPR treatment, nex-z, is in Phase 3.
+  last_reviewed: null
+treatment:
+  best:
+  - Tafamidis (Vyndamax)
+  - Acoramidis (Attruby)
+  - Vutrisiran (Amvuttra)
+  burden: moderate
+  burden_note: Lifelong daily pills or regular injections.
+forecast:
+  bottleneck: trial-limited
+pipeline:
+- name: Nex-z (nexiguran ziclumeran)
+  stage: Phase 3
+  note: One-time CRISPR gene-editing treatment. FDA paused both Phase 3 trials in October 2025 after one
+    patient's severe liver injury; the holds were lifted in January (nerve trial) and March 2026 (heart
+    trial).
+  url: https://oligotherapeutics.org/phase-3-trials-of-intellias-nex-z-crispr-therapy-resume-after-the-clinical-holds-are-lifted/
+  effect: big
+  effect_note: A one-time edit that stops the disease would be the first real cure.
+recent:
+- date: 2026-03
+  text: FDA lifted the clinical hold on MAGNITUDE, the Phase 3 trial of nex-z in ATTR cardiomyopathy.
+  url: https://oligotherapeutics.org/phase-3-trials-of-intellias-nex-z-crispr-therapy-resume-after-the-clinical-holds-are-lifted/
+next_milestone: null
+markets: []

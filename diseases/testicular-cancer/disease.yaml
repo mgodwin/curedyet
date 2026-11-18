@@ -1,0 +1,26 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: testicular-cancer
+name: Testicular cancer
+category: cancer
+tracking: proposed
+summary: Cancer that starts in the testicles.
+status:
+  level: 4
+  why: Surgery and cisplatin-based chemotherapy cure most men, even many whose cancer has spread; 96.5%
+    of UK men diagnosed survive 10 years.
+  today: Five-year survival is 99% when the cancer is confined to the testicle, 96% when it has reached
+    nearby lymph nodes and 72% when it has spread further. Cisplatin combination chemotherapy, first given
+    by Lawrence Einhorn in 1974, made spread testicular cancer curable.
+  last_reviewed: null
+treatment:
+  best:
+  - Surgery
+  - Cisplatin-based chemotherapy
+  burden: moderate
+  burden_note: Surgery for most; chemotherapy for spread disease is harder.
+forecast:
+  bottleneck: biology-limited
+pipeline: []
+recent: []
+next_milestone: null
+markets: []

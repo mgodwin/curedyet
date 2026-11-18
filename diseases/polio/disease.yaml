@@ -1,0 +1,26 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: polio
+name: Polio
+category: infectious
+tracking: proposed
+summary: A viral infection that can cause paralysis, now prevented by vaccines.
+toll:
+  text: 38 wild polio cases worldwide in 2025 as of October 22, all in Afghanistan and Pakistan (Health
+    Policy Watch, 2026).
+  url: https://healthpolicy-watch.news/wild-poliovirus-transmission-persists-in-afghanistan-and-pakistan/
+status:
+  level: 1
+  why: Polio has no cure and can only be prevented, but vaccines work well and two of the three wild types
+    are eradicated.
+  today: WHO says several vaccine doses can protect a child for life. Wild type 2 was declared eradicated
+    in 2015 and type 3 in 2019; wild type 1 still circulates only in Afghanistan and Pakistan.
+  last_reviewed: null
+treatment:
+  best:
+  - Inactivated polio vaccine (IPV)
+  - Oral polio vaccine (OPV)
+  burden_note: There is no treatment that cures polio; protection comes from vaccination.
+pipeline: []
+recent: []
+next_milestone: null
+markets: []

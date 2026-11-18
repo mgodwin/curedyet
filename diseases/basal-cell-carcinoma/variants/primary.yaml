@@ -1,0 +1,22 @@
+# Cure Watch variant record: one stage or type of Basal cell skin cancer. Field guide: CONTRIBUTING.md.
+id: primary
+name: Primary, operable
+order: 1
+what: A first basal cell cancer that can be removed by surgery, which covers nearly all cases.
+level: 4
+burden: light
+burden_why: A short outpatient skin surgery.
+survival: About 99% cured at 5 years with Mohs surgery, about 90% with standard excision
+treatment: Mohs surgery or standard excision. Nearly all are cured.
+url: https://mdedge.com/content/when-consider-mohs-surgery
+caveat: Reached years are approximate; surgery was curing most of these well before the 1989 review used
+  as the marker.
+reached:
+  year: 1989
+  basis: 'No later than 1989: Rowe, Carroll and Day''s review of long-term recurrence after treating primary
+    basal cell cancer.'
+  url: https://pubmed.ncbi.nlm.nih.gov/2646336/
+reached_easy:
+  year: 1989
+  basis: 'No later than 1989: the standard cure was already outpatient skin surgery.'
+  url: https://pubmed.ncbi.nlm.nih.gov/2646336/

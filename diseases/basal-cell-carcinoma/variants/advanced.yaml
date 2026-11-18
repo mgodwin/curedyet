@@ -1,0 +1,12 @@
+# Cure Watch variant record: one stage or type of Basal cell skin cancer. Field guide: CONTRIBUTING.md.
+id: advanced
+name: Advanced
+order: 2
+what: Locally advanced cancer that surgery can't remove, or the rare cancer that has spread.
+level: 2
+burden: moderate
+burden_why: Daily hedgehog-pathway pills, long term.
+survival: Tumors shrink in 43% of locally advanced and 30% of metastatic cases on vismodegib (Phase 2)
+treatment: Hedgehog-pathway pills (vismodegib, sonidegib) shrink tumors in a minority.
+url: https://www.targetedonc.com/view/hedgehog-pathway-inhibitors-explored-in-advanced-skin-cancer
+caveat: Response rates are not cure rates; cemiplimab immunotherapy is also used but not yet sourced here.

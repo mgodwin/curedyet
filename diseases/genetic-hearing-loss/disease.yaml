@@ -1,0 +1,35 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: genetic-hearing-loss
+name: Genetic hearing loss
+category: genetic
+tracking: proposed
+summary: Deafness or hearing loss caused by inherited gene changes, often present from birth.
+toll:
+  text: The OTOF form alone affects about 50 US newborns a year (Regeneron, 2026); many other genes cause
+    inherited deafness.
+  url: https://investor.regeneron.com/news-releases/news-release-details/otarmenitm-lunsotogene-parvec-cwha-approved-fda-first-and-only
+status:
+  level: 2
+  why: Cochlear implants give useful hearing but not normal hearing, and the first gene therapy, for the
+    rare OTOF form, won accelerated approval in 2026.
+  today: Cochlear implants, approved from 9 months of age, help many deaf children understand speech but
+    do not restore normal hearing. For the OTOF form, Otarmeni gene therapy brought 16 of 20 trial participants
+    to a hearing threshold of 70 dB or better by 24 weeks, and 5 of 12 followed to 48 weeks reached normal
+    hearing.
+  last_reviewed: null
+treatment:
+  best:
+  - Cochlear implants
+  - Otarmeni (lunsotogene parvec), OTOF form only
+  burden: moderate
+  burden_note: Implants need surgery and a worn device; the gene therapy is for one rare form only.
+forecast:
+  bottleneck: design-limited
+pipeline: []
+recent:
+- date: 2026-04
+  text: FDA granted accelerated approval to Otarmeni, the first gene therapy for genetic hearing loss
+    (OTOF form).
+  url: https://investor.regeneron.com/news-releases/news-release-details/otarmenitm-lunsotogene-parvec-cwha-approved-fda-first-and-only
+next_milestone: null
+markets: []

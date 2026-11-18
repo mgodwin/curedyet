@@ -1,0 +1,14 @@
+# Cure Watch variant record: one stage or type of Thyroid cancer. Field guide: CONTRIBUTING.md.
+id: anaplastic
+name: Anaplastic
+order: 4
+what: A rare, fast-growing type.
+level: 1
+burden: heavy
+burden_why: Intensive surgery, radiation and drug treatment.
+survival: 10% alive at 5 years, all stages (SEER relative survival, diagnosed 2015-2021)
+share: About 2% of thyroid cancers
+share_url: https://www.cancer.org/cancer/thyroid-cancer/about/what-is-thyroid-cancer.html
+treatment: Treatment slows it for some; most patients die within 5 years.
+url: https://www.cancer.org/cancer/thyroid-cancer/detection-diagnosis-staging/survival-rates.html
+caveat: Treatment detail not yet sourced.
