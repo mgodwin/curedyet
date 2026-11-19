@@ -432,7 +432,7 @@ function home(){
     <span class="ctl-right"><span class="muted num" id="shown" style="font-size:13px"></span>
     <label><select id="sort" aria-label="Sort"><option value="closest">Sort: Closest to cured</option><option value="az">Sort: A to Z</option><option value="cat">Sort: By category</option></select></label></span></div>
   <div class="masonry" id="cards"></div>
-  <p class="muted" style="font-size:12px;margin:0">Reviewed monthly and scored against what actually happens. A research tracker, not medical advice.${m.repo?` Open data: <a href="https://github.com/${esc(m.repo)}" target="_blank" rel="noopener">add a disease or fix a fact on GitHub</a>.`:""}</p>`;
+  ${footerHTML(true)}`;
 }
 
 /* ---------- Stats: how many patient groups sit at each status ---------- */
@@ -573,10 +573,12 @@ const host=u=>{try{return new URL(u).hostname.replace(/^www\./,"")}catch(e){retu
 function srcLinks(urls){const U=[...new Set((urls||[]).filter(safe))];
   return U.length?`<span class="muted" style="font-size:12px">Source${U.length>1?"s":""}: ${U.map(u=>link(u,host(u))).join(", ")}</span>`:""}
 function sourcesHTML(list){return list&&list.length?`<section class="srcs"><h2 style="font-size:15px">Sources</h2><ol>${list.map(s=>`<li>${link(s.url,s.title)}</li>`).join("")}</ol></section>`:""}
-function footerHTML(){const repo=S.meta?.repo;
-  return `<footer class="dfoot"><div style="display:flex;flex-direction:column;gap:4px;max-width:640px"><b style="font-size:16px">See a problem? Help fix it.</b><span class="muted">Every number on this page lives in an open repo. If something is wrong, out of date or missing a source, open a pull request or an issue on GitHub.</span></div>
+/* One footer for every page; the home page asks for new diseases, disease pages ask for fixes. */
+function footerHTML(home){const repo=S.meta?.repo;
+  const [title,body]=home?["Want to see another disease tracked?","Every disease here lives in an open repo. Suggest a new one, or fix a fact that's wrong or out of date, with an issue or a pull request on GitHub."]:["See a problem? Help fix it.","Every number on this page lives in an open repo. If something is wrong, out of date or missing a source, open a pull request or an issue on GitHub."];
+  return `<footer class="dfoot"><div style="display:flex;flex-direction:column;gap:4px;max-width:640px"><b style="font-size:16px">${title}</b><span class="muted">${body}</span></div>
     ${repo?`<a class="pill-link" href="https://github.com/${esc(repo)}" target="_blank" rel="noopener">Contribute on GitHub →</a>`:""}
-    <span class="muted" style="flex-basis:100%;font-size:12px">Forecasts are Claude's monthly judgment from trial results, approvals and forecasting markets, anchored to historical base rates. A research tracker, not medical advice.</span></footer>`}
+    <span class="muted" style="flex-basis:100%;font-size:12px">${home?"Reviewed monthly and scored against what actually happens. ":""}Forecasts are Claude's monthly judgment from trial results, approvals and forecasting markets, anchored to historical base rates. A research tracker, not medical advice.</span></footer>`}
 const YRS=(y,base)=>Math.max(0,Math.min(2100,y)-(base||NOW));
 const yearsBig=f=>`<div style="display:flex;flex-direction:column;gap:2px"><div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><span class="big-year num">~${YRS(f.median)} years</span><span class="muted" style="font-size:15px">best guess · ${f.median>=2100?"after 2100":f.median}</span></div>
   ${f.low!=null?`<span class="muted" style="font-size:13px">Optimistic ~${YRS(f.low)} years (${f.low}) · pessimistic ${f.high>=2100?"after 2100":`~${YRS(f.high)} years (${f.high})`}</span>`:""}</div>`;
