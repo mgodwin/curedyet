@@ -229,7 +229,8 @@ a.more{text-decoration:none}
 .navlinks a.updchip{font-size:13px;min-height:32px;padding:0 12px;border-radius:999px;border:1px solid var(--light-c);color:var(--light-c);text-decoration:none}.navlinks a.updchip:hover{background:var(--light-soft);text-decoration:none}
 .controls{gap:8px 12px}.controls label{display:flex;gap:8px;align-items:center;font-size:13px}.controls select{min-height:40px;padding:0 10px}
 .controls select#cat{font-weight:600;max-width:min(240px,46vw)}
-@media (max-width:640px){.controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.controls label{min-width:0}.controls select,.controls select#cat{width:100%;max-width:none}.controls .slabel{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}#shown{grid-column:1/-1;margin-left:0!important}}
+.ctl-right{display:flex;align-items:center;gap:12px;margin-left:auto}
+@media (max-width:640px){.controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.controls label{min-width:0}.controls select,.controls select#cat{width:100%;max-width:none}.controls .slabel{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.ctl-right{grid-column:1/-1;justify-content:space-between;margin-left:0}.ctl-right label{flex:0 1 auto;margin-left:auto}.ctl-right select#sort{width:auto;max-width:100%}}
 .vkey{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:13px;color:var(--muted)}
 .vkey span{display:inline-flex;gap:6px;align-items:center}.vkey i{width:10px;height:10px;border-radius:50%;flex:none}
 .masonry{display:flex;gap:12px;align-items:flex-start}
@@ -409,7 +410,7 @@ const RCOL=["--v-nof","--v-nof","--v-no","--v-hard","--v-mild","--g-all"];
 function tallyHTML(){const n=S.dz.length,c=LEVELS.map(()=>0);S.dz.forEach(d=>c[lv(d)]++);
   const cured=c[4]+c[5],part=S.dz.filter(d=>lv(d)<4&&(d.groups||[]).some(g=>(g.level|0)>=4)).length;
   return `<section class="tally" aria-label="How many are cured">
-    <p class="tally-head"><b class="num">${cured} of ${n}</b> diseases are cured for most patients.${part?` ${part} more are cured for most at some stages or types.`:""}</p>
+    <p class="tally-head"><b class="num">${cured} of ${n}</b> tracked diseases are cured for most patients.${part?` ${part} more are cured for most at some stages or types.`:""}</p>
     <div class="tally-wrap">
       <button class="tally-bar${levelF!=="all"?" hl":""}" type="button" aria-expanded="false" aria-controls="tally-pop" aria-label="How many diseases sit at each level">${c.map((k,i)=>k?`<i data-i="${i}"${levelF===String(i)?' class="on"':""} style="flex:${k};background:var(${RCOL[i]})"></i>`:"").reverse().join("")}</button>
       <div class="tally-pop" id="tally-pop" hidden><ul class="tally-key">${c.map((k,i)=>`<li data-i="${i}"><button type="button" data-lvl="${i}"><i style="background:var(${RCOL[i]})" aria-hidden="true"></i><span>${esc(lword(i))}</span><span><b class="num">${k}</b> <small class="num">${Math.round(100*k/n)}%</small></span></button></li>`).reverse().join("")}</ul></div>
@@ -428,8 +429,8 @@ function home(){
   <div class="filters controls">
     <label><span class="sr-only">Category</span><select id="cat"><option value="all">All categories</option>${cats.map(k=>`<option value="${esc(k.id)}"${catF===k.id?" selected":""}>${esc(k.name)}</option>`).join("")}</select></label>
     <label><span class="sr-only">Where it stands</span><select id="lvl"><option value="all">All levels</option>${LEVELS.map((_,i)=>LEVELS.length-1-i).map(i=>`<option value="${i}"${levelF===String(i)?" selected":""}>${esc(lword(i))}</option>`).join("")}</select></label>
-    <label><span class="slabel">Sort</span> <select id="sort" aria-label="Sort"><option value="closest">Closest to cured</option><option value="az">A to Z</option><option value="cat">By category</option></select></label>
-    <span class="muted num" id="shown" style="font-size:13px;margin-left:auto"></span></div>
+    <span class="ctl-right"><span class="muted num" id="shown" style="font-size:13px"></span>
+    <label><select id="sort" aria-label="Sort"><option value="closest">Sort: Closest to cured</option><option value="az">Sort: A to Z</option><option value="cat">Sort: By category</option></select></label></span></div>
   <div class="masonry" id="cards"></div>
   <p class="muted" style="font-size:12px;margin:0">Reviewed monthly and scored against what actually happens. A research tracker, not medical advice.${m.repo?` Open data: <a href="https://github.com/${esc(m.repo)}" target="_blank" rel="noopener">add a disease or fix a fact on GitHub</a>.`:""}</p>`;
 }
