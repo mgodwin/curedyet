@@ -230,7 +230,9 @@ a.more{text-decoration:none}
 .controls{gap:8px 12px}.controls label{display:flex;gap:8px;align-items:center;font-size:13px}.controls select{min-height:40px;padding:0 10px}
 .controls select#cat{font-weight:600;max-width:min(240px,46vw)}
 .ctl-right{display:flex;align-items:center;gap:12px;margin-left:auto}
-@media (max-width:640px){.controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.controls label{min-width:0}.controls select,.controls select#cat{width:100%;max-width:none}.controls .slabel{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.ctl-right{grid-column:1/-1;justify-content:space-between;margin-left:0}.ctl-right label{flex:0 1 auto;margin-left:auto}.ctl-right select#sort{width:auto;max-width:100%}}
+.clearf{all:unset;cursor:pointer;font-size:13px;font-weight:600;color:var(--light-c);text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.clearf:focus-visible{outline:2px solid var(--some);outline-offset:2px;border-radius:4px}
+@media (max-width:640px){.controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.controls label{min-width:0}.controls select,.controls select#cat{width:100%;max-width:none}.controls .slabel{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.clearf{grid-column:1/-1;justify-self:start}.ctl-right{grid-column:1/-1;justify-content:space-between;margin-left:0}.ctl-right label{flex:0 1 auto;margin-left:auto}.ctl-right select#sort{width:auto;max-width:100%}}
 .vkey{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:13px;color:var(--muted)}
 .vkey span{display:inline-flex;gap:6px;align-items:center}.vkey i{width:10px;height:10px;border-radius:50%;flex:none}
 .masonry{display:flex;gap:12px;align-items:flex-start}
@@ -387,6 +389,7 @@ let masonCols=0;
 function renderCards(){const el=$("cards");if(!el)return;const L=filtered();
   /* The count only shows once a search or category narrows the list. */
   const n=$("shown");if(n)n.textContent=L.length<S.dz.length?`${L.length} of ${S.dz.length}`:"";
+  const cf=$("clearf");if(cf)cf.hidden=!(q||catF!=="all"||levelF!=="all");
   if(!L.length){masonCols=0;el.innerHTML=`<div class="empty" style="flex:1">No disease matches "${esc(q)}". Try another name.</div>`;return}
   const k=masonCols=ncols(el);
   el.innerHTML=`<div class="mcol"></div>`.repeat(k);
@@ -429,6 +432,7 @@ function home(){
   <div class="filters controls">
     <label><span class="sr-only">Category</span><select id="cat"><option value="all">All categories</option>${cats.map(k=>`<option value="${esc(k.id)}"${catF===k.id?" selected":""}>${esc(k.name)}</option>`).join("")}</select></label>
     <label><span class="sr-only">Where it stands</span><select id="lvl"><option value="all">All levels</option>${LEVELS.map((_,i)=>LEVELS.length-1-i).map(i=>`<option value="${i}"${levelF===String(i)?" selected":""}>${esc(lword(i))}</option>`).join("")}</select></label>
+    <button type="button" class="clearf" id="clearf" hidden>Clear all filters</button>
     <span class="ctl-right"><span class="muted num" id="shown" style="font-size:13px"></span>
     <label><select id="sort" aria-label="Sort"><option value="closest">Sort: Closest to cured</option><option value="az">Sort: A to Z</option><option value="cat">Sort: By category</option></select></label></span></div>
   <div class="masonry" id="cards"></div>
@@ -767,6 +771,7 @@ window.addEventListener("hashchange",render);
 document.addEventListener("input",e=>{if(e.target.id==="q"){q=e.target.value;renderCards()}});
 document.addEventListener("change",e=>{if(e.target.id==="cat"){catF=e.target.value;renderCards();return}if(e.target.id==="lvl"){setLevel(e.target.value);return}if(e.target.id==="sort"){sort=e.target.value;try{localStorage.setItem("cw2-sort",sort)}catch(_){}renderCards()}});
 document.addEventListener("click",e=>{if(e.target.closest("[data-theme-cycle]"))cycleTheme();
+  if(e.target.closest("#clearf")){q="";catF="all";const qi=$("q"),ci=$("cat");if(qi)qi.value="";if(ci)ci.value="all";setLevel("all");return}
   const row=e.target.closest("[data-lvl]");if(row){tallyPin=false;setLevel(levelF===row.dataset.lvl?"all":row.dataset.lvl);return}
   const bar=e.target.closest(".tally-bar");if(bar){const seg=e.target.closest("[data-i]");
     /* A mouse click on a segment filters to it; a tap or keypress opens the breakdown, whose rows filter. */
