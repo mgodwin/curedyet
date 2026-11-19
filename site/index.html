@@ -58,11 +58,16 @@ h1,h2,h3{margin:0;text-wrap:balance}
 .hero h1{font-size:clamp(40px,10vw,56px);line-height:1}
 .search{display:flex;gap:8px}
 .search input{flex:1;min-width:0;height:48px;border:1.5px solid var(--ink);border-radius:12px;padding:0 14px;font:inherit;background:var(--card);color:var(--ink)}
-.counts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
-@media (min-width:560px){.counts{grid-template-columns:repeat(4,minmax(0,1fr))}}
-.count{background:var(--card);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:2px;border:0;font:inherit;color:inherit;text-align:left;cursor:pointer}
-.count[aria-pressed="true"]{outline:2px solid var(--ink)}
-.count b{font-family:var(--f-display);font-size:30px;line-height:1.1}
+.tally{width:100%;display:flex;flex-direction:column;gap:10px}
+.tally-head{margin:0;font-size:15px;line-height:1.35}
+.tally-head b{font-family:var(--f-display);font-size:clamp(30px,7vw,40px);line-height:1;margin-right:4px}
+.tally-bar{display:flex;height:10px;border-radius:5px;overflow:hidden;gap:2px;background:var(--rule)}
+.tally-bar i{display:block;min-width:3px}
+.counts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+@media (min-width:720px){.counts{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.count{background:var(--card);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;border:0;border-top:4px solid var(--c);font:inherit;color:inherit;text-align:left;cursor:pointer;min-width:0}
+.count[aria-pressed="true"]{outline:2px solid var(--ink);outline-offset:-2px}
+.count b{font-family:var(--f-display);font-size:26px;line-height:1.1}
 .count span{font-size:12px;font-weight:600}
 .key{margin:0;font-size:13px;color:var(--muted);border-left:3px solid var(--soft);padding-left:10px}
 .key b{color:var(--ink)}
@@ -283,7 +288,7 @@ a.more{text-decoration:none}
 (function(){
 const LEVELS=["No treatment","Slows it","Controlled","Cured for some","Cured for most","Cured for all"];
 const S={meta:null,cats:[],dz:[],checks:[],cal:[],updates:[],gates:[],ready:false,err:null};
-let q="", catF="all", sort="closest";
+let q="", catF="all", levelF=-1, sort="closest";
 try{sort=localStorage.getItem("cw2-sort")||sort}catch(e){}
 if(!["closest","az","cat"].includes(sort))sort="closest";
 const $=id=>document.getElementById(id);
@@ -328,6 +333,7 @@ function filtered(){
   let L=S.dz.slice();
   if(q){const t=q.toLowerCase();L=L.filter(d=>[d.name,d.short,catName(d.category),...(d.groups||[]).map(g=>g.name)].some(s=>String(s||"").toLowerCase().includes(t)))}
   if(catF!=="all")L=L.filter(d=>d.category===catF);
+  if(levelF>=0)L=L.filter(d=>lv(d)===levelF);
   if(sort==="az")L.sort((a,b)=>String(a.name).localeCompare(String(b.name)));
   else if(sort==="cat"){const ci=id=>{const c=S.cats.find(c=>c.id===id);return c?(c.order??S.cats.indexOf(c)):99};L.sort((a,b)=>ci(a.category)-ci(b.category)||String(a.name).localeCompare(String(b.name)))}
   else L.sort((a,b)=>best(b)-best(a)||String(a.name).localeCompare(String(b.name)));
@@ -365,7 +371,7 @@ let masonCols=0;
 function renderCards(){const el=$("cards");if(!el)return;const L=filtered();
   /* The count only shows once a search or category narrows the list. */
   const n=$("shown");if(n)n.textContent=L.length<S.dz.length?`${L.length} of ${S.dz.length}`:"";
-  if(!L.length){masonCols=0;el.innerHTML=`<div class="empty" style="flex:1">No disease matches "${esc(q)}". Try another name.</div>`;return}
+  if(!L.length){masonCols=0;el.innerHTML=`<div class="empty" style="flex:1">${q?`No disease matches "${esc(q)}". Try another name.`:"No disease matches these filters."}</div>`;return}
   const k=masonCols=ncols(el);
   el.innerHTML=`<div class="mcol"></div>`.repeat(k);
   const cols=[...el.children],h=cols.map(()=>0),tmp=document.createElement("div");
@@ -381,11 +387,22 @@ function cycleTheme(){const t=THEMES[(THEMES.indexOf(curTheme())+1)%THEMES.lengt
   if(t==="system")delete document.documentElement.dataset.theme;else document.documentElement.dataset.theme=t;
   try{t==="system"?localStorage.removeItem("cw-theme"):localStorage.setItem("cw-theme",t)}catch(e){}
   document.querySelectorAll("[data-theme-cycle]").forEach(b=>{b.textContent=TLABEL[t];b.setAttribute("aria-label",`Colour theme: ${TLABEL[t].slice(2)}. Click to change.`)})}
+/* The tally counts each disease once, at its overall rung (the typical patient), so the tiles add up to the total.
+   Rung colours: cured for most or all is green, cured for some orange, below that grey. Tap a tile to filter the cards. */
+const RCOL=["--v-nof","--v-nof","--v-no","--v-hard","--v-mild","--v-mild"];
+function tallyHTML(){const n=S.dz.length,c=LEVELS.map(()=>0);S.dz.forEach(d=>c[lv(d)]++);
+  const cured=c[4]+c[5],part=S.dz.filter(d=>lv(d)<4&&(d.groups||[]).some(g=>(g.level|0)>=4)).length;
+  return `<section class="tally" aria-label="How many are cured">
+    <p class="tally-head"><b class="num">${cured} of ${n}</b> diseases are cured for most patients.${part?` ${part} more are cured for most at some stages or types.`:""}</p>
+    <div class="tally-bar" aria-hidden="true">${c.map((k,i)=>k?`<i style="flex:${k};background:var(${RCOL[i]})"></i>`:"").join("")}</div>
+    <div class="counts" role="group" aria-label="Filter by where it stands">${c.map((k,i)=>`<button class="count" type="button" data-lv="${i}" aria-pressed="${levelF===i}" style="--c:var(${RCOL[i]})"><b class="num">${k}</b><span>${esc(lword(i))}</span></button>`).slice().reverse().join("")}</div>
+  </section>`}
 function home(){
   const m=S.meta||{};const cats=S.cats.slice().sort((a,b)=>(a.order||0)-(b.order||0));
   return `
   <header class="hero">
     <h1 class="sr-only">Is it cured yet? Search diseases</h1>
+    ${tallyHTML()}
     <label for="q" class="sr-only">Search diseases, stages and types</label>
     <div class="search"><input id="q" type="search" autocomplete="off" placeholder="Search: Alzheimer's, HIV, stage IV…" value="${esc(q)}"></div>
     <span class="muted" style="font-size:13px;margin-top:-6px">Tracking ${S.dz.length} diseases</span>
@@ -725,7 +742,9 @@ function render(){const app=$("app"),r=route(),key=r.v+(r.id||"")+"/"+(r.vid||""
 window.addEventListener("hashchange",render);
 document.addEventListener("input",e=>{if(e.target.id==="q"){q=e.target.value;renderCards()}});
 document.addEventListener("change",e=>{if(e.target.id==="cat"){catF=e.target.value;renderCards();return}if(e.target.id==="sort"){sort=e.target.value;try{localStorage.setItem("cw2-sort",sort)}catch(_){}renderCards()}});
-document.addEventListener("click",e=>{if(e.target.closest("[data-theme-cycle]"))cycleTheme()});
+document.addEventListener("click",e=>{if(e.target.closest("[data-theme-cycle]")){cycleTheme();return}
+  const t=e.target.closest("[data-lv]");if(t){const i=+t.dataset.lv;levelF=levelF===i?-1:i;
+    document.querySelectorAll("[data-lv]").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.lv===levelF)));renderCards()}});
 /* Re-pack the masonry when the column count changes. Watching the card area itself also catches zoom and
    viewport changes that don't fire a window resize. */
 const masonRO=typeof ResizeObserver==="function"?new ResizeObserver(()=>{const el=$("cards");if(el&&ncols(el)!==masonCols)renderCards()}):null;
