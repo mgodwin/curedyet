@@ -58,12 +58,20 @@ h1,h2,h3{margin:0;text-wrap:balance}
 .hero h1{font-size:clamp(40px,10vw,56px);line-height:1}
 .search{display:flex;gap:8px}
 .search input{flex:1;min-width:0;height:48px;border:1.5px solid var(--ink);border-radius:12px;padding:0 14px;font:inherit;background:var(--card);color:var(--ink)}
-.counts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
-@media (min-width:560px){.counts{grid-template-columns:repeat(4,minmax(0,1fr))}}
-.count{background:var(--card);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:2px;border:0;font:inherit;color:inherit;text-align:left;cursor:pointer}
-.count[aria-pressed="true"]{outline:2px solid var(--ink)}
-.count b{font-family:var(--f-display);font-size:30px;line-height:1.1}
-.count span{font-size:12px;font-weight:600}
+.tally{width:100%;display:flex;flex-direction:column;gap:10px}
+.tally-head{margin:0;font-size:15px;line-height:1.35}
+.tally-head b{font-family:var(--f-display);font-size:clamp(30px,7vw,40px);line-height:1;margin-right:4px}
+.tally-wrap{position:relative;width:100%}
+.tally-bar{display:flex;width:100%;height:12px;padding:0;border:0;border-radius:6px;overflow:hidden;gap:2px;background:var(--rule);cursor:pointer}
+.tally-bar i{display:block;min-width:3px;height:100%;transition:opacity .12s}
+.tally-bar.hl i:not(.on){opacity:.35}
+.tally-pop{position:absolute;z-index:20;top:calc(100% + 8px);left:0;min-width:240px;background:var(--card);border:1px solid var(--soft);border-radius:12px;padding:10px 12px;box-shadow:0 6px 20px rgba(0,0,0,.14)}
+.tally-key{display:flex;flex-direction:column;gap:4px;margin:0;padding:0;list-style:none;font-size:13px;color:var(--muted)}
+.tally-key li{display:grid;grid-template-columns:8px 1fr auto;align-items:center;gap:8px;padding:2px 4px;border-radius:6px}
+.tally-key li.on{background:var(--sunk);color:var(--ink)}
+.tally-key i{width:8px;height:8px;border-radius:50%}
+.tally-key b{color:var(--ink)}
+.tally-key small{font-size:12px}
 .key{margin:0;font-size:13px;color:var(--muted);border-left:3px solid var(--soft);padding-left:10px}
 .key b{color:var(--ink)}
 .filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
@@ -381,11 +389,25 @@ function cycleTheme(){const t=THEMES[(THEMES.indexOf(curTheme())+1)%THEMES.lengt
   if(t==="system")delete document.documentElement.dataset.theme;else document.documentElement.dataset.theme=t;
   try{t==="system"?localStorage.removeItem("cw-theme"):localStorage.setItem("cw-theme",t)}catch(e){}
   document.querySelectorAll("[data-theme-cycle]").forEach(b=>{b.textContent=TLABEL[t];b.setAttribute("aria-label",`Colour theme: ${TLABEL[t].slice(2)}. Click to change.`)})}
+/* The tally counts each disease once, at its overall rung (the typical patient), so the counts add up to the total.
+   Hovering the bar shows the breakdown and lights up the rung under the pointer; tapping it pins the breakdown open (for phones).
+   Rung colours: cured for most or all is green, cured for some orange, below that grey. */
+const RCOL=["--v-nof","--v-nof","--v-no","--v-hard","--v-mild","--v-mild"];
+function tallyHTML(){const n=S.dz.length,c=LEVELS.map(()=>0);S.dz.forEach(d=>c[lv(d)]++);
+  const cured=c[4]+c[5],part=S.dz.filter(d=>lv(d)<4&&(d.groups||[]).some(g=>(g.level|0)>=4)).length;
+  return `<section class="tally" aria-label="How many are cured">
+    <p class="tally-head"><b class="num">${cured} of ${n}</b> diseases are cured for most patients.${part?` ${part} more are cured for most at some stages or types.`:""}</p>
+    <div class="tally-wrap">
+      <button class="tally-bar" type="button" aria-expanded="false" aria-controls="tally-pop" aria-label="How many diseases sit at each level">${c.map((k,i)=>k?`<i data-i="${i}" style="flex:${k};background:var(${RCOL[i]})"></i>`:"").join("")}</button>
+      <div class="tally-pop" id="tally-pop" hidden><ul class="tally-key">${c.map((k,i)=>`<li data-i="${i}"><i style="background:var(${RCOL[i]})" aria-hidden="true"></i><span>${esc(lword(i))}</span><span><b class="num">${k}</b> <small class="num">${Math.round(100*k/n)}%</small></span></li>`).reverse().join("")}</ul></div>
+    </div>
+  </section>`}
 function home(){
   const m=S.meta||{};const cats=S.cats.slice().sort((a,b)=>(a.order||0)-(b.order||0));
   return `
   <header class="hero">
     <h1 class="sr-only">Is it cured yet? Search diseases</h1>
+    ${tallyHTML()}
     <label for="q" class="sr-only">Search diseases, stages and types</label>
     <div class="search"><input id="q" type="search" autocomplete="off" placeholder="Search: Alzheimer's, HIV, stage IV…" value="${esc(q)}"></div>
     <span class="muted" style="font-size:13px;margin-top:-6px">Tracking ${S.dz.length} diseases</span>
@@ -725,7 +747,20 @@ function render(){const app=$("app"),r=route(),key=r.v+(r.id||"")+"/"+(r.vid||""
 window.addEventListener("hashchange",render);
 document.addEventListener("input",e=>{if(e.target.id==="q"){q=e.target.value;renderCards()}});
 document.addEventListener("change",e=>{if(e.target.id==="cat"){catF=e.target.value;renderCards();return}if(e.target.id==="sort"){sort=e.target.value;try{localStorage.setItem("cw2-sort",sort)}catch(_){}renderCards()}});
-document.addEventListener("click",e=>{if(e.target.closest("[data-theme-cycle]"))cycleTheme()});
+document.addEventListener("click",e=>{if(e.target.closest("[data-theme-cycle]"))cycleTheme();
+  const bar=e.target.closest(".tally-bar");if(bar){tallyPin=!tallyPin;tallyShow(tallyPin,bar.closest(".tally-wrap").querySelector(".on")?.dataset.i);return}
+  if(tallyPin&&!e.target.closest(".tally-pop")){tallyPin=false;tallyShow(false)}});
+/* Bar breakdown: hover opens it, tap pins it, Escape or a tap elsewhere closes it. */
+let tallyPin=false;
+function tallyShow(open,i){const pop=$("tally-pop"),bar=document.querySelector(".tally-bar");if(!pop||!bar)return;
+  pop.hidden=!open;bar.setAttribute("aria-expanded",String(open));
+  const hl=open&&i!=null;bar.classList.toggle("hl",hl);
+  document.querySelectorAll(".tally-wrap [data-i]").forEach(el=>el.classList.toggle("on",hl&&el.dataset.i===String(i)))}
+document.addEventListener("pointerover",e=>{if(e.pointerType!=="mouse")return;const w=e.target.closest(".tally-wrap");if(!w)return;
+  const seg=e.target.closest("[data-i]");tallyShow(true,seg?seg.dataset.i:undefined)});
+document.addEventListener("pointerout",e=>{if(e.pointerType!=="mouse")return;const w=e.target.closest(".tally-wrap");if(!w||w.contains(e.relatedTarget))return;
+  tallyShow(tallyPin)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&$("tally-pop")&&!$("tally-pop").hidden){tallyPin=false;tallyShow(false)}});
 /* Re-pack the masonry when the column count changes. Watching the card area itself also catches zoom and
    viewport changes that don't fire a window resize. */
 const masonRO=typeof ResizeObserver==="function"?new ResizeObserver(()=>{const el=$("cards");if(el&&ncols(el)!==masonCols)renderCards()}):null;
