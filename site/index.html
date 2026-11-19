@@ -12,7 +12,7 @@
 /* Layout: wide pages; disease pages are a main column plus a side rail. Hash routes: home, d-<id> (disease or hub), d-<id>/<variant>, pipeline, record, stats. */
 :root{
   --tough:#806800; --tough-soft:#f3ecc8;
-  --v-mild:#1e7f4f; --v-mod:#806800; --v-modf:#e0b000; --v-hard:#a85400; --v-no:#4e5862; --v-nof:#8a9690;
+  --v-all:#a67c00; --g-all-ramp:linear-gradient(90deg,#6e4d00 0%,#9a6f00 30%,#c9971a 60%,#e2b434 80%,#f2cd5c 92%,#f8de8a 100%); --g-all:linear-gradient(110deg,#8a6400 0%,#c9971a 22%,#f6dc7a 40%,#fff4c4 48%,#e2b23a 58%,#a87900 78%,#8a6400 100%); --g-all-text:linear-gradient(100deg,#7a5600 0%,#a87900 30%,#e8bc3a 42%,#fff1b0 50%,#e8bc3a 58%,#a87900 70%,#7a5600 100%); --v-mild:#1e7f4f; --v-mod:#806800; --v-modf:#e0b000; --v-hard:#a85400; --v-no:#4e5862; --v-nof:#8a9690;
   --ground:#f4f6f3; --card:#ffffff; --sunk:#f4f6f3; --ink:#121815; --muted:#4e5862; --rule:#e1e6e2; --soft:#c9d2cb;
   --yes:#1e7f4f; --yes-soft:#e3ece6; --some:#a85400; --some-soft:#f6e7d7; --no:#4e5862;
   --heavy:#9c2f1f; --heavy-soft:#f8e1da; --mod:#8a5a00; --mod-soft:#f6ecd6; --light-c:#1e6b46; --light-soft:#e3ece6;
@@ -24,7 +24,7 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --tough:#e3cb55; --tough-soft:#332c0c;
-  --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
+  --v-all:#f4bf3a; --g-all-ramp:linear-gradient(90deg,#8a6400 0%,#b8860b 30%,#e2ae2a 60%,#f6cf52 82%,#ffeaa0 94%,#fffbe6 100%); --g-all:linear-gradient(110deg,#b8860b 0%,#e8b730 22%,#ffe58a 40%,#fff8d8 48%,#f2c443 58%,#c8930f 78%,#b8860b 100%); --g-all-text:linear-gradient(100deg,#c48a10 0%,#e8b730 30%,#ffd95c 42%,#fffbe6 50%,#ffd95c 58%,#e8b730 70%,#c48a10 100%); --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
   --ground:#0f1412; --card:#18201c; --sunk:#111815; --ink:#e9eee9; --muted:#a3aea7; --rule:#27312c; --soft:#3a4640;
   --yes:#5fd39a; --yes-soft:#173327; --some:#f0a254; --some-soft:#3a2914; --no:#a3aea7;
   --heavy:#f29a87; --heavy-soft:#3b1d17; --mod:#e8c06a; --mod-soft:#33290f; --light-c:#7fd8a8; --light-soft:#173327;
@@ -33,7 +33,7 @@
   --st1:#7f978c; --st2:#9ab4a8; --st3:#b7cec3; --st4:#e9eee9; --st5:#5f7a6e; --st6:#f0a254; color-scheme:dark;}}
 :root[data-theme="dark"]{
   --tough:#e3cb55; --tough-soft:#332c0c;
-  --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
+  --v-all:#f4bf3a; --g-all-ramp:linear-gradient(90deg,#8a6400 0%,#b8860b 30%,#e2ae2a 60%,#f6cf52 82%,#ffeaa0 94%,#fffbe6 100%); --g-all:linear-gradient(110deg,#b8860b 0%,#e8b730 22%,#ffe58a 40%,#fff8d8 48%,#f2c443 58%,#c8930f 78%,#b8860b 100%); --g-all-text:linear-gradient(100deg,#c48a10 0%,#e8b730 30%,#ffd95c 42%,#fffbe6 50%,#ffd95c 58%,#e8b730 70%,#c48a10 100%); --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
   --ground:#0f1412; --card:#18201c; --sunk:#111815; --ink:#e9eee9; --muted:#a3aea7; --rule:#27312c; --soft:#3a4640;
   --yes:#5fd39a; --yes-soft:#173327; --some:#f0a254; --some-soft:#3a2914; --no:#a3aea7;
   --heavy:#f29a87; --heavy-soft:#3b1d17; --mod:#e8c06a; --mod-soft:#33290f; --light-c:#7fd8a8; --light-soft:#173327;
@@ -83,9 +83,19 @@ select{font:600 13px var(--f-body);min-height:36px;border:1px solid var(--soft);
 @media (min-width:1100px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .dcard{text-decoration:none;color:inherit;background:var(--card);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0;border:1px solid transparent}
 .dcard:hover{border-color:var(--soft)}
+/* Cured for all: a metallic gold frame and a soft gold glow on the card, and the title in gold. */
+.gold-frame{border:2px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,var(--g-all) border-box;box-shadow:0 0 0 1px rgba(201,151,26,.08),0 6px 22px rgba(201,151,26,.22)}
+.dcard.gold-frame:hover{border-color:transparent;box-shadow:0 0 0 1px rgba(201,151,26,.18),0 8px 28px rgba(201,151,26,.32)}
 .dcard h2{font-size:17px;font-weight:600}
 .verdict{font-family:var(--f-display);font-weight:700;font-size:36px;line-height:1}
-.v-mild{color:var(--v-mild)} .v-mod{color:var(--v-mod)} .v-hard{color:var(--v-hard)} .v-no{color:var(--v-no)}
+/* Cured for all is metallic gold: gradient text where supported, plain gold otherwise; big words get a slow sheen. */
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .v-all{background:var(--g-all-text);background-size:300% 100%;background-position:30% 0;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+  .v-all small{-webkit-text-fill-color:var(--muted)}
+  .verdict.v-all{animation:goldsheen 4s ease-in-out infinite;filter:drop-shadow(0 1px 0 rgba(110,75,0,.25))}
+}
+@keyframes goldsheen{0%,40%{background-position:100% 0}100%{background-position:0 0}}
+.v-all{color:var(--v-all)} .v-mild{color:var(--v-mild)} .v-mod{color:var(--v-mod)} .v-hard{color:var(--v-hard)} .v-no{color:var(--v-no)}
 .vlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
 .vlist li{border-top:1px solid var(--rule);font-size:14px}
 .vlist li a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:7px 0;min-height:36px;color:inherit;text-decoration:none}
@@ -275,7 +285,7 @@ a.more{text-decoration:none}
 .tip .pop{display:none;position:absolute;top:calc(100% + 8px);left:0;z-index:5;width:300px;max-width:80vw;flex-direction:column;gap:6px;background:var(--dark);color:var(--on-dark);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.45;box-shadow:0 6px 20px rgba(0,0,0,.18)}
 .tip:hover .pop,.tip:focus-within .pop{display:flex}
 .placeholder{height:120px;border-radius:12px;background:var(--sunk);display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;font-size:13px;color:var(--muted)}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 <script>try{var t=localStorage.getItem("cw-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
@@ -304,11 +314,11 @@ const yr=y=>y==null?"—":(y>=2100?"2100+":"~"+y);
 const lv=d=>Math.max(0,Math.min(LEVELS.length-1,d.level|0));
 /* Status as a word: the bottom rung reads "No treatment yet", since research is moving; ladder labels keep the short name. */
 const lword=L=>L===0?"No treatment yet":LEVELS[L];
-/* Colour = rung plus treatment burden. Cured for most or all: green with mild treatment, yellow moderate, orange difficult.
+/* Colour = rung plus treatment burden. Cured for all is gold. Cured for most: green with mild treatment, yellow moderate, orange difficult.
    Cured for some is orange whatever the treatment; below that, grey. */
-const toV=(level,burden)=>level>=4?(burden==="light"?"mild":burden==="moderate"?"mod":"hard"):level===3?"hard":"no";
-const VCOL={mild:"--v-mild",mod:"--v-mod",hard:"--v-hard",no:"--v-no"};
-const VFILL={mild:"--v-mild",mod:"--v-modf",hard:"--v-hard",no:"--v-nof"};
+const toV=(level,burden)=>level>=5?"all":level>=4?(burden==="light"?"mild":burden==="moderate"?"mod":"hard"):level===3?"hard":"no";
+const VCOL={all:"--v-all",mild:"--v-mild",mod:"--v-mod",hard:"--v-hard",no:"--v-no"};
+const VFILL={all:"--g-all",mild:"--v-mild",mod:"--v-modf",hard:"--v-hard",no:"--v-nof"};
 /* Burden keys stay light/moderate/heavy in the data; readers see mild/moderate/difficult. */
 const BURDEN_WORD={light:"mild",moderate:"moderate",heavy:"difficult"};
 const bword=b=>BURDEN_WORD[b]||b;
@@ -359,8 +369,8 @@ function groupCardHTML(d){const two=!!d.prevention||d.groups.some(g=>g.preventio
 function cardHTML(d){
   if((d.groups||[]).length)return groupCardHTML(d);
   const L=lv(d),since=L>=4&&d.timeline?.median?` ${L>=5?"Cured for all":"Cured for most"} since about ${d.timeline.median}.`:"";
-  return `<a class="dcard" href="#d-${esc(d.id)}">
-    <h2>${esc(d.name)}</h2>
+  return `<a class="dcard${L>=5?" gold-frame":""}" href="#d-${esc(d.id)}">
+    <h2${L>=5?' class="v-all"':""}>${esc(d.name)}</h2>
     ${d.prevention?`<span class="eyebrow">Once infected</span>`:""}
     <span class="verdict v-${toV(L,d.txBurden)}">${esc(lword(L))}.</span>
     <p class="dwhy">${esc(d.levelWhy||d.short)}${since}</p>
@@ -391,14 +401,14 @@ function cycleTheme(){const t=THEMES[(THEMES.indexOf(curTheme())+1)%THEMES.lengt
   document.querySelectorAll("[data-theme-cycle]").forEach(b=>{b.textContent=TLABEL[t];b.setAttribute("aria-label",`Colour theme: ${TLABEL[t].slice(2)}. Click to change.`)})}
 /* The tally counts each disease once, at its overall rung (the typical patient), so the counts add up to the total.
    Hovering the bar shows the breakdown and lights up the rung under the pointer; tapping it pins the breakdown open (for phones).
-   Rung colours: cured for most or all is green, cured for some orange, below that grey. */
-const RCOL=["--v-nof","--v-nof","--v-no","--v-hard","--v-mild","--v-mild"];
+   Rung colours: cured for all is gold, cured for most green, cured for some orange, below that grey. */
+const RCOL=["--v-nof","--v-nof","--v-no","--v-hard","--v-mild","--g-all"];
 function tallyHTML(){const n=S.dz.length,c=LEVELS.map(()=>0);S.dz.forEach(d=>c[lv(d)]++);
   const cured=c[4]+c[5],part=S.dz.filter(d=>lv(d)<4&&(d.groups||[]).some(g=>(g.level|0)>=4)).length;
   return `<section class="tally" aria-label="How many are cured">
     <p class="tally-head"><b class="num">${cured} of ${n}</b> diseases are cured for most patients.${part?` ${part} more are cured for most at some stages or types.`:""}</p>
     <div class="tally-wrap">
-      <button class="tally-bar" type="button" aria-expanded="false" aria-controls="tally-pop" aria-label="How many diseases sit at each level">${c.map((k,i)=>k?`<i data-i="${i}" style="flex:${k};background:var(${RCOL[i]})"></i>`:"").join("")}</button>
+      <button class="tally-bar" type="button" aria-expanded="false" aria-controls="tally-pop" aria-label="How many diseases sit at each level">${c.map((k,i)=>k?`<i data-i="${i}" style="flex:${k};background:var(${RCOL[i]})"></i>`:"").reverse().join("")}</button>
       <div class="tally-pop" id="tally-pop" hidden><ul class="tally-key">${c.map((k,i)=>`<li data-i="${i}"><i style="background:var(${RCOL[i]})" aria-hidden="true"></i><span>${esc(lword(i))}</span><span><b class="num">${k}</b> <small class="num">${Math.round(100*k/n)}%</small></span></li>`).reverse().join("")}</ul></div>
     </div>
   </section>`}
@@ -422,9 +432,9 @@ function home(){
 
 /* ---------- Stats: how many patient groups sit at each status ---------- */
 function stats(){
-  const G=S.dz.flatMap(lines),c={mild:0,mod:0,hard:0,some:0,no:0};
+  const G=S.dz.flatMap(lines),c={all:0,mild:0,mod:0,hard:0,some:0,no:0};
   G.forEach(l=>{c[l.level>=4?toV(l.level,l.burden):l.level===3?"some":"no"]++});
-  const rows=[["mild","Cured for most, mild treatment","--v-mild"],["mod","Cured for most, moderate treatment","--v-modf"],["hard","Cured for most, difficult treatment","--v-hard"],["some","Cured for some","--v-hard"],["no","Not curable yet","--v-nof"]];
+  const rows=[["all","Cured for all","--g-all"],["mild","Cured for most, mild treatment","--v-mild"],["mod","Cured for most, moderate treatment","--v-modf"],["hard","Cured for most, difficult treatment","--v-hard"],["some","Cured for some","--v-hard"],["no","Not curable yet","--v-nof"]];
   const byRung=LEVELS.map((n,i)=>[n,G.filter(l=>l.level===i).length]);
   const T=pipeTotals(),m=S.meta||{};
   return `
@@ -525,8 +535,10 @@ document.addEventListener("toggle",e=>{if(e.target.open&&e.target.querySelector&
 const vcolor=(level,burden)=>`var(${VCOL[toV(level,burden)]})`;
 /* Segments up to the rung fill in the status colour; on cured for most or all, the top one fills by how mild the treatment is. */
 /* Both ladders share one drawing: names, a colour function and the rung where the burden fill starts. */
-function stripHTML(level,burden,names=LEVELS,vf=toV,cut=4){const L=Math.max(0,Math.min(names.length-1,level|0)),c=`var(${VFILL[vf(L,burden)]})`,f=L>=cut?(BFRAC[burden]||33):100;
-  return `<div class="ladder-strip" style="grid-template-columns:repeat(${names.length},minmax(0,1fr))">${names.map((_,i)=>`<i style="${L>0&&i<L?`background:${c}`:L>0&&i===L?`background:${f===100?c:`linear-gradient(90deg,${c} 0 ${f}%,var(--rule) ${f}%)`}`:""}"></i>`).join("")}</div>`}
+function stripHTML(level,burden,names=LEVELS,vf=toV,cut=4){const L=Math.max(0,Math.min(names.length-1,level|0)),c=`var(${VFILL[vf(L,burden)]})`,f=L>=cut&&vf(L,burden)!=="all"?(BFRAC[burden]||33):100;
+  /* Gold spans the whole strip as one gradient, brightest at cured for all: each segment shows its own slice. */
+  const N=names.length,gold=vf(L,burden)==="all",g=i=>gold?`;background-image:var(--g-all-ramp);background-size:${N*100}% 100%;background-position:${N>1?i/(N-1)*100:0}% 0`:"";
+  return `<div class="ladder-strip" style="grid-template-columns:repeat(${N},minmax(0,1fr))">${names.map((_,i)=>`<i style="${L>0&&i<L?`background:${c}${g(i)}`:L>0&&i===L?`background:${f===100?c:`linear-gradient(90deg,${c} 0 ${f}%,var(--rule) ${f}%)`}${g(i)}`:""}"></i>`).join("")}</div>`}
 function ladderHTML(level,burden,names=LEVELS,vf=toV,cut=4){const L=Math.max(0,Math.min(names.length-1,level|0));
   return `${stripHTML(L,burden,names,vf,cut)}
     <div class="ladder-labels" style="grid-template-columns:repeat(${names.length},minmax(0,1fr))">${names.map((l,i)=>`<span style="${i===L?"color:var(--ink);font-weight:600":""}">${l}</span>`).join("")}</div>`}
@@ -606,7 +618,7 @@ function singlePage(d){const t=d.timeline||{},L=lv(d),col=vcolor(L,d.txBurden);
   const logRows=baseRow(d,true).concat((d.events||[]).map(e=>({date:e.date,text:e.text,url:e.url,tag:"Changed"})),(d.breakthroughs||[]).map(b=>({date:b.date,text:b.text,url:b.url,tag:"Counted in baseline"})));
   return `${headerHTML(d,d.name,d.short)}
   <div class="dlayout"><main class="dmain">
-    <section class="card"><span class="eyebrow">${d.prevention?"Once infected":"Where it stands"}</span><span class="display" style="font-size:30px;line-height:1">${esc(lword(L))}</span>${ladderHTML(L,d.txBurden)}${d.levelWhy?`<span style="font-size:14px">${esc(d.levelWhy)}</span>`:""}</section>
+    <section class="card${L>=5?" gold-frame":""}"><span class="eyebrow">${d.prevention?"Once infected":"Where it stands"}</span><span class="display${L>=5?" verdict v-all":""}" style="font-size:30px;line-height:1">${esc(lword(L))}</span>${ladderHTML(L,d.txBurden)}${d.levelWhy?`<span style="font-size:14px">${esc(d.levelWhy)}</span>`:""}</section>
     <section class="card"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><h2 class="ch" style="font-size:22px">Treatment today</h2>${burdenTip(d.txBurden,d.id)}</div>
       ${d.status?`<p style="margin:0">${esc(d.status)}</p>`:""}${(d.bestTherapies||[]).length?`<div class="chips">${d.bestTherapies.map(b=>`<span>${esc(b)}</span>`).join("")}</div>`:""}
       ${d.txBurdenNote?`<div class="why ${esc(d.txBurden||"")}"><b>Why it's rated ${esc(bword(d.txBurden))}:</b> ${esc(d.txBurdenNote)}</div>`:""}</section>
