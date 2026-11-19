@@ -12,7 +12,7 @@
 /* Layout: wide pages; disease pages are a main column plus a side rail. Hash routes: home, d-<id> (disease or hub), d-<id>/<variant>, pipeline, record, stats. */
 :root{
   --tough:#806800; --tough-soft:#f3ecc8;
-  --v-all:#a67c00; --v-mild:#1e7f4f; --v-mod:#806800; --v-modf:#e0b000; --v-hard:#a85400; --v-no:#4e5862; --v-nof:#8a9690;
+  --v-all:#a67c00; --g-all:linear-gradient(110deg,#8a6400 0%,#c9971a 22%,#f6dc7a 40%,#fff4c4 48%,#e2b23a 58%,#a87900 78%,#8a6400 100%); --g-all-text:linear-gradient(100deg,#7a5600 0%,#a87900 30%,#e8bc3a 42%,#fff1b0 50%,#e8bc3a 58%,#a87900 70%,#7a5600 100%); --v-mild:#1e7f4f; --v-mod:#806800; --v-modf:#e0b000; --v-hard:#a85400; --v-no:#4e5862; --v-nof:#8a9690;
   --ground:#f4f6f3; --card:#ffffff; --sunk:#f4f6f3; --ink:#121815; --muted:#4e5862; --rule:#e1e6e2; --soft:#c9d2cb;
   --yes:#1e7f4f; --yes-soft:#e3ece6; --some:#a85400; --some-soft:#f6e7d7; --no:#4e5862;
   --heavy:#9c2f1f; --heavy-soft:#f8e1da; --mod:#8a5a00; --mod-soft:#f6ecd6; --light-c:#1e6b46; --light-soft:#e3ece6;
@@ -24,7 +24,7 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --tough:#e3cb55; --tough-soft:#332c0c;
-  --v-all:#f4bf3a; --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
+  --v-all:#f4bf3a; --g-all:linear-gradient(110deg,#b8860b 0%,#e8b730 22%,#ffe58a 40%,#fff8d8 48%,#f2c443 58%,#c8930f 78%,#b8860b 100%); --g-all-text:linear-gradient(100deg,#c48a10 0%,#e8b730 30%,#ffd95c 42%,#fffbe6 50%,#ffd95c 58%,#e8b730 70%,#c48a10 100%); --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
   --ground:#0f1412; --card:#18201c; --sunk:#111815; --ink:#e9eee9; --muted:#a3aea7; --rule:#27312c; --soft:#3a4640;
   --yes:#5fd39a; --yes-soft:#173327; --some:#f0a254; --some-soft:#3a2914; --no:#a3aea7;
   --heavy:#f29a87; --heavy-soft:#3b1d17; --mod:#e8c06a; --mod-soft:#33290f; --light-c:#7fd8a8; --light-soft:#173327;
@@ -33,7 +33,7 @@
   --st1:#7f978c; --st2:#9ab4a8; --st3:#b7cec3; --st4:#e9eee9; --st5:#5f7a6e; --st6:#f0a254; color-scheme:dark;}}
 :root[data-theme="dark"]{
   --tough:#e3cb55; --tough-soft:#332c0c;
-  --v-all:#f4bf3a; --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
+  --v-all:#f4bf3a; --g-all:linear-gradient(110deg,#b8860b 0%,#e8b730 22%,#ffe58a 40%,#fff8d8 48%,#f2c443 58%,#c8930f 78%,#b8860b 100%); --g-all-text:linear-gradient(100deg,#c48a10 0%,#e8b730 30%,#ffd95c 42%,#fffbe6 50%,#ffd95c 58%,#e8b730 70%,#c48a10 100%); --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
   --ground:#0f1412; --card:#18201c; --sunk:#111815; --ink:#e9eee9; --muted:#a3aea7; --rule:#27312c; --soft:#3a4640;
   --yes:#5fd39a; --yes-soft:#173327; --some:#f0a254; --some-soft:#3a2914; --no:#a3aea7;
   --heavy:#f29a87; --heavy-soft:#3b1d17; --mod:#e8c06a; --mod-soft:#33290f; --light-c:#7fd8a8; --light-soft:#173327;
@@ -85,6 +85,13 @@ select{font:600 13px var(--f-body);min-height:36px;border:1px solid var(--soft);
 .dcard:hover{border-color:var(--soft)}
 .dcard h2{font-size:17px;font-weight:600}
 .verdict{font-family:var(--f-display);font-weight:700;font-size:36px;line-height:1}
+/* Cured for all is metallic gold: gradient text where supported, plain gold otherwise; big words get a slow sheen. */
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .v-all{background:var(--g-all-text);background-size:300% 100%;background-position:30% 0;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+  .v-all small{-webkit-text-fill-color:var(--muted)}
+  .verdict.v-all{animation:goldsheen 4s ease-in-out infinite;filter:drop-shadow(0 1px 0 rgba(110,75,0,.25))}
+}
+@keyframes goldsheen{0%,40%{background-position:100% 0}100%{background-position:0 0}}
 .v-all{color:var(--v-all)} .v-mild{color:var(--v-mild)} .v-mod{color:var(--v-mod)} .v-hard{color:var(--v-hard)} .v-no{color:var(--v-no)}
 .vlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
 .vlist li{border-top:1px solid var(--rule);font-size:14px}
@@ -275,7 +282,7 @@ a.more{text-decoration:none}
 .tip .pop{display:none;position:absolute;top:calc(100% + 8px);left:0;z-index:5;width:300px;max-width:80vw;flex-direction:column;gap:6px;background:var(--dark);color:var(--on-dark);border-radius:10px;padding:12px 14px;font-size:13px;line-height:1.45;box-shadow:0 6px 20px rgba(0,0,0,.18)}
 .tip:hover .pop,.tip:focus-within .pop{display:flex}
 .placeholder{height:120px;border-radius:12px;background:var(--sunk);display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;font-size:13px;color:var(--muted)}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 <script>try{var t=localStorage.getItem("cw-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
@@ -308,7 +315,7 @@ const lword=L=>L===0?"No treatment yet":LEVELS[L];
    Cured for some is orange whatever the treatment; below that, grey. */
 const toV=(level,burden)=>level>=5?"all":level>=4?(burden==="light"?"mild":burden==="moderate"?"mod":"hard"):level===3?"hard":"no";
 const VCOL={all:"--v-all",mild:"--v-mild",mod:"--v-mod",hard:"--v-hard",no:"--v-no"};
-const VFILL={all:"--v-all",mild:"--v-mild",mod:"--v-modf",hard:"--v-hard",no:"--v-nof"};
+const VFILL={all:"--g-all",mild:"--v-mild",mod:"--v-modf",hard:"--v-hard",no:"--v-nof"};
 /* Burden keys stay light/moderate/heavy in the data; readers see mild/moderate/difficult. */
 const BURDEN_WORD={light:"mild",moderate:"moderate",heavy:"difficult"};
 const bword=b=>BURDEN_WORD[b]||b;
@@ -392,7 +399,7 @@ function cycleTheme(){const t=THEMES[(THEMES.indexOf(curTheme())+1)%THEMES.lengt
 /* The tally counts each disease once, at its overall rung (the typical patient), so the counts add up to the total.
    Hovering the bar shows the breakdown and lights up the rung under the pointer; tapping it pins the breakdown open (for phones).
    Rung colours: cured for all is gold, cured for most green, cured for some orange, below that grey. */
-const RCOL=["--v-nof","--v-nof","--v-no","--v-hard","--v-mild","--v-all"];
+const RCOL=["--v-nof","--v-nof","--v-no","--v-hard","--v-mild","--g-all"];
 function tallyHTML(){const n=S.dz.length,c=LEVELS.map(()=>0);S.dz.forEach(d=>c[lv(d)]++);
   const cured=c[4]+c[5],part=S.dz.filter(d=>lv(d)<4&&(d.groups||[]).some(g=>(g.level|0)>=4)).length;
   return `<section class="tally" aria-label="How many are cured">
@@ -424,7 +431,7 @@ function home(){
 function stats(){
   const G=S.dz.flatMap(lines),c={all:0,mild:0,mod:0,hard:0,some:0,no:0};
   G.forEach(l=>{c[l.level>=4?toV(l.level,l.burden):l.level===3?"some":"no"]++});
-  const rows=[["all","Cured for all","--v-all"],["mild","Cured for most, mild treatment","--v-mild"],["mod","Cured for most, moderate treatment","--v-modf"],["hard","Cured for most, difficult treatment","--v-hard"],["some","Cured for some","--v-hard"],["no","Not curable yet","--v-nof"]];
+  const rows=[["all","Cured for all","--g-all"],["mild","Cured for most, mild treatment","--v-mild"],["mod","Cured for most, moderate treatment","--v-modf"],["hard","Cured for most, difficult treatment","--v-hard"],["some","Cured for some","--v-hard"],["no","Not curable yet","--v-nof"]];
   const byRung=LEVELS.map((n,i)=>[n,G.filter(l=>l.level===i).length]);
   const T=pipeTotals(),m=S.meta||{};
   return `
