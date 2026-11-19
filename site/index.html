@@ -12,7 +12,7 @@
 /* Layout: wide pages; disease pages are a main column plus a side rail. Hash routes: home, d-<id> (disease or hub), d-<id>/<variant>, pipeline, record, stats. */
 :root{
   --tough:#806800; --tough-soft:#f3ecc8;
-  --v-all:#a67c00; --g-all:linear-gradient(110deg,#8a6400 0%,#c9971a 22%,#f6dc7a 40%,#fff4c4 48%,#e2b23a 58%,#a87900 78%,#8a6400 100%); --g-all-text:linear-gradient(100deg,#7a5600 0%,#a87900 30%,#e8bc3a 42%,#fff1b0 50%,#e8bc3a 58%,#a87900 70%,#7a5600 100%); --v-mild:#1e7f4f; --v-mod:#806800; --v-modf:#e0b000; --v-hard:#a85400; --v-no:#4e5862; --v-nof:#8a9690;
+  --v-all:#a67c00; --g-all-ramp:linear-gradient(90deg,#6e4d00 0%,#9a6f00 30%,#c9971a 60%,#e2b434 80%,#f2cd5c 92%,#f8de8a 100%); --g-all:linear-gradient(110deg,#8a6400 0%,#c9971a 22%,#f6dc7a 40%,#fff4c4 48%,#e2b23a 58%,#a87900 78%,#8a6400 100%); --g-all-text:linear-gradient(100deg,#7a5600 0%,#a87900 30%,#e8bc3a 42%,#fff1b0 50%,#e8bc3a 58%,#a87900 70%,#7a5600 100%); --v-mild:#1e7f4f; --v-mod:#806800; --v-modf:#e0b000; --v-hard:#a85400; --v-no:#4e5862; --v-nof:#8a9690;
   --ground:#f4f6f3; --card:#ffffff; --sunk:#f4f6f3; --ink:#121815; --muted:#4e5862; --rule:#e1e6e2; --soft:#c9d2cb;
   --yes:#1e7f4f; --yes-soft:#e3ece6; --some:#a85400; --some-soft:#f6e7d7; --no:#4e5862;
   --heavy:#9c2f1f; --heavy-soft:#f8e1da; --mod:#8a5a00; --mod-soft:#f6ecd6; --light-c:#1e6b46; --light-soft:#e3ece6;
@@ -24,7 +24,7 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --tough:#e3cb55; --tough-soft:#332c0c;
-  --v-all:#f4bf3a; --g-all:linear-gradient(110deg,#b8860b 0%,#e8b730 22%,#ffe58a 40%,#fff8d8 48%,#f2c443 58%,#c8930f 78%,#b8860b 100%); --g-all-text:linear-gradient(100deg,#c48a10 0%,#e8b730 30%,#ffd95c 42%,#fffbe6 50%,#ffd95c 58%,#e8b730 70%,#c48a10 100%); --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
+  --v-all:#f4bf3a; --g-all-ramp:linear-gradient(90deg,#8a6400 0%,#b8860b 30%,#e2ae2a 60%,#f6cf52 82%,#ffeaa0 94%,#fffbe6 100%); --g-all:linear-gradient(110deg,#b8860b 0%,#e8b730 22%,#ffe58a 40%,#fff8d8 48%,#f2c443 58%,#c8930f 78%,#b8860b 100%); --g-all-text:linear-gradient(100deg,#c48a10 0%,#e8b730 30%,#ffd95c 42%,#fffbe6 50%,#ffd95c 58%,#e8b730 70%,#c48a10 100%); --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
   --ground:#0f1412; --card:#18201c; --sunk:#111815; --ink:#e9eee9; --muted:#a3aea7; --rule:#27312c; --soft:#3a4640;
   --yes:#5fd39a; --yes-soft:#173327; --some:#f0a254; --some-soft:#3a2914; --no:#a3aea7;
   --heavy:#f29a87; --heavy-soft:#3b1d17; --mod:#e8c06a; --mod-soft:#33290f; --light-c:#7fd8a8; --light-soft:#173327;
@@ -33,7 +33,7 @@
   --st1:#7f978c; --st2:#9ab4a8; --st3:#b7cec3; --st4:#e9eee9; --st5:#5f7a6e; --st6:#f0a254; color-scheme:dark;}}
 :root[data-theme="dark"]{
   --tough:#e3cb55; --tough-soft:#332c0c;
-  --v-all:#f4bf3a; --g-all:linear-gradient(110deg,#b8860b 0%,#e8b730 22%,#ffe58a 40%,#fff8d8 48%,#f2c443 58%,#c8930f 78%,#b8860b 100%); --g-all-text:linear-gradient(100deg,#c48a10 0%,#e8b730 30%,#ffd95c 42%,#fffbe6 50%,#ffd95c 58%,#e8b730 70%,#c48a10 100%); --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
+  --v-all:#f4bf3a; --g-all-ramp:linear-gradient(90deg,#8a6400 0%,#b8860b 30%,#e2ae2a 60%,#f6cf52 82%,#ffeaa0 94%,#fffbe6 100%); --g-all:linear-gradient(110deg,#b8860b 0%,#e8b730 22%,#ffe58a 40%,#fff8d8 48%,#f2c443 58%,#c8930f 78%,#b8860b 100%); --g-all-text:linear-gradient(100deg,#c48a10 0%,#e8b730 30%,#ffd95c 42%,#fffbe6 50%,#ffd95c 58%,#e8b730 70%,#c48a10 100%); --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
   --ground:#0f1412; --card:#18201c; --sunk:#111815; --ink:#e9eee9; --muted:#a3aea7; --rule:#27312c; --soft:#3a4640;
   --yes:#5fd39a; --yes-soft:#173327; --some:#f0a254; --some-soft:#3a2914; --no:#a3aea7;
   --heavy:#f29a87; --heavy-soft:#3b1d17; --mod:#e8c06a; --mod-soft:#33290f; --light-c:#7fd8a8; --light-soft:#173327;
@@ -536,8 +536,8 @@ const vcolor=(level,burden)=>`var(${VCOL[toV(level,burden)]})`;
 /* Segments up to the rung fill in the status colour; on cured for most or all, the top one fills by how mild the treatment is. */
 /* Both ladders share one drawing: names, a colour function and the rung where the burden fill starts. */
 function stripHTML(level,burden,names=LEVELS,vf=toV,cut=4){const L=Math.max(0,Math.min(names.length-1,level|0)),c=`var(${VFILL[vf(L,burden)]})`,f=L>=cut&&vf(L,burden)!=="all"?(BFRAC[burden]||33):100;
-  /* Gold spans the whole strip as one gradient: each segment shows its own slice of it. */
-  const N=names.length,gold=vf(L,burden)==="all",g=i=>gold?`;background-size:${N*100}% 100%;background-position:${N>1?i/(N-1)*100:0}% 0`:"";
+  /* Gold spans the whole strip as one gradient, brightest at cured for all: each segment shows its own slice. */
+  const N=names.length,gold=vf(L,burden)==="all",g=i=>gold?`;background-image:var(--g-all-ramp);background-size:${N*100}% 100%;background-position:${N>1?i/(N-1)*100:0}% 0`:"";
   return `<div class="ladder-strip" style="grid-template-columns:repeat(${N},minmax(0,1fr))">${names.map((_,i)=>`<i style="${L>0&&i<L?`background:${c}${g(i)}`:L>0&&i===L?`background:${f===100?c:`linear-gradient(90deg,${c} 0 ${f}%,var(--rule) ${f}%)`}${g(i)}`:""}"></i>`).join("")}</div>`}
 function ladderHTML(level,burden,names=LEVELS,vf=toV,cut=4){const L=Math.max(0,Math.min(names.length-1,level|0));
   return `${stripHTML(L,burden,names,vf,cut)}
