@@ -67,7 +67,9 @@ h1,h2,h3{margin:0;text-wrap:balance}
 .tally-bar.hl i:not(.on){opacity:.35}
 .tally-pop{position:absolute;z-index:20;top:calc(100% + 8px);left:0;min-width:240px;background:var(--card);border:1px solid var(--soft);border-radius:12px;padding:10px 12px;box-shadow:0 6px 20px rgba(0,0,0,.14)}
 .tally-key{display:flex;flex-direction:column;gap:4px;margin:0;padding:0;list-style:none;font-size:13px;color:var(--muted)}
-.tally-key li{display:grid;grid-template-columns:8px 1fr auto;align-items:center;gap:8px;padding:2px 4px;border-radius:6px}
+.tally-key li{border-radius:6px}
+.tally-key button{all:unset;box-sizing:border-box;width:100%;display:grid;grid-template-columns:8px 1fr auto;align-items:center;gap:8px;padding:3px 6px;border-radius:6px;cursor:pointer}
+.tally-key button:hover,.tally-key button:focus-visible{background:var(--sunk);color:var(--ink)}
 .tally-key li.on{background:var(--sunk);color:var(--ink)}
 .tally-key i{width:8px;height:8px;border-radius:50%}
 .tally-key b{color:var(--ink)}
@@ -301,7 +303,7 @@ a.more{text-decoration:none}
 (function(){
 const LEVELS=["No treatment","Slows it","Controlled","Cured for some","Cured for most","Cured for all"];
 const S={meta:null,cats:[],dz:[],checks:[],cal:[],updates:[],gates:[],ready:false,err:null};
-let q="", catF="all", sort="closest";
+let q="", catF="all", levelF="all", sort="closest";
 try{sort=localStorage.getItem("cw2-sort")||sort}catch(e){}
 if(!["closest","az","cat"].includes(sort))sort="closest";
 const $=id=>document.getElementById(id);
@@ -346,6 +348,7 @@ function filtered(){
   let L=S.dz.slice();
   if(q){const t=q.toLowerCase();L=L.filter(d=>[d.name,d.short,catName(d.category),...(d.groups||[]).map(g=>g.name)].some(s=>String(s||"").toLowerCase().includes(t)))}
   if(catF!=="all")L=L.filter(d=>d.category===catF);
+  if(levelF!=="all")L=L.filter(d=>lv(d)===+levelF);
   if(sort==="az")L.sort((a,b)=>String(a.name).localeCompare(String(b.name)));
   else if(sort==="cat"){const ci=id=>{const c=S.cats.find(c=>c.id===id);return c?(c.order??S.cats.indexOf(c)):99};L.sort((a,b)=>ci(a.category)-ci(b.category)||String(a.name).localeCompare(String(b.name)))}
   else L.sort((a,b)=>best(b)-best(a)||String(a.name).localeCompare(String(b.name)));
@@ -408,8 +411,8 @@ function tallyHTML(){const n=S.dz.length,c=LEVELS.map(()=>0);S.dz.forEach(d=>c[l
   return `<section class="tally" aria-label="How many are cured">
     <p class="tally-head"><b class="num">${cured} of ${n}</b> diseases are cured for most patients.${part?` ${part} more are cured for most at some stages or types.`:""}</p>
     <div class="tally-wrap">
-      <button class="tally-bar" type="button" aria-expanded="false" aria-controls="tally-pop" aria-label="How many diseases sit at each level">${c.map((k,i)=>k?`<i data-i="${i}" style="flex:${k};background:var(${RCOL[i]})"></i>`:"").reverse().join("")}</button>
-      <div class="tally-pop" id="tally-pop" hidden><ul class="tally-key">${c.map((k,i)=>`<li data-i="${i}"><i style="background:var(${RCOL[i]})" aria-hidden="true"></i><span>${esc(lword(i))}</span><span><b class="num">${k}</b> <small class="num">${Math.round(100*k/n)}%</small></span></li>`).reverse().join("")}</ul></div>
+      <button class="tally-bar${levelF!=="all"?" hl":""}" type="button" aria-expanded="false" aria-controls="tally-pop" aria-label="How many diseases sit at each level">${c.map((k,i)=>k?`<i data-i="${i}"${levelF===String(i)?' class="on"':""} style="flex:${k};background:var(${RCOL[i]})"></i>`:"").reverse().join("")}</button>
+      <div class="tally-pop" id="tally-pop" hidden><ul class="tally-key">${c.map((k,i)=>`<li data-i="${i}"><button type="button" data-lvl="${i}"><i style="background:var(${RCOL[i]})" aria-hidden="true"></i><span>${esc(lword(i))}</span><span><b class="num">${k}</b> <small class="num">${Math.round(100*k/n)}%</small></span></button></li>`).reverse().join("")}</ul></div>
     </div>
   </section>`}
 function home(){
@@ -424,6 +427,7 @@ function home(){
   </header>
   <div class="filters controls">
     <label><span class="sr-only">Category</span><select id="cat"><option value="all">All categories</option>${cats.map(k=>`<option value="${esc(k.id)}"${catF===k.id?" selected":""}>${esc(k.name)}</option>`).join("")}</select></label>
+    <label><span class="sr-only">Where it stands</span><select id="lvl"><option value="all">All levels</option>${LEVELS.map((_,i)=>LEVELS.length-1-i).map(i=>`<option value="${i}"${levelF===String(i)?" selected":""}>${esc(lword(i))}</option>`).join("")}</select></label>
     <label><span class="slabel">Sort</span> <select id="sort" aria-label="Sort"><option value="closest">Closest to cured</option><option value="az">A to Z</option><option value="cat">By category</option></select></label>
     <span class="muted num" id="shown" style="font-size:13px;margin-left:auto"></span></div>
   <div class="masonry" id="cards"></div>
@@ -758,15 +762,24 @@ function render(){const app=$("app"),r=route(),key=r.v+(r.id||"")+"/"+(r.vid||""
 }
 window.addEventListener("hashchange",render);
 document.addEventListener("input",e=>{if(e.target.id==="q"){q=e.target.value;renderCards()}});
-document.addEventListener("change",e=>{if(e.target.id==="cat"){catF=e.target.value;renderCards();return}if(e.target.id==="sort"){sort=e.target.value;try{localStorage.setItem("cw2-sort",sort)}catch(_){}renderCards()}});
+document.addEventListener("change",e=>{if(e.target.id==="cat"){catF=e.target.value;renderCards();return}if(e.target.id==="lvl"){setLevel(e.target.value);return}if(e.target.id==="sort"){sort=e.target.value;try{localStorage.setItem("cw2-sort",sort)}catch(_){}renderCards()}});
 document.addEventListener("click",e=>{if(e.target.closest("[data-theme-cycle]"))cycleTheme();
-  const bar=e.target.closest(".tally-bar");if(bar){tallyPin=!tallyPin;tallyShow(tallyPin,bar.closest(".tally-wrap").querySelector(".on")?.dataset.i);return}
+  const row=e.target.closest("[data-lvl]");if(row){tallyPin=false;setLevel(levelF===row.dataset.lvl?"all":row.dataset.lvl);return}
+  const bar=e.target.closest(".tally-bar");if(bar){const seg=e.target.closest("[data-i]");
+    /* A mouse click on a segment filters to it; a tap or keypress opens the breakdown, whose rows filter. */
+    if(seg&&lastPtr==="mouse"){tallyPin=false;setLevel(levelF===seg.dataset.i?"all":seg.dataset.i);return}
+    tallyPin=!tallyPin;tallyShow(tallyPin);return}
   if(tallyPin&&!e.target.closest(".tally-pop")){tallyPin=false;tallyShow(false)}});
-/* Bar breakdown: hover opens it, tap pins it, Escape or a tap elsewhere closes it. */
-let tallyPin=false;
+/* Bar breakdown: hover opens it, tap pins it, Escape or a tap elsewhere closes it.
+   Choosing a level (segment, breakdown row or the level menu) filters the cards and keeps that segment lit. */
+let tallyPin=false,lastPtr="";
+document.addEventListener("pointerdown",e=>{lastPtr=e.pointerType},true);
+function setLevel(v){levelF=v;const sel=$("lvl");if(sel)sel.value=v;tallyShow(false);renderCards();
+  const c=$("cards");if(c&&v!=="all"&&c.getBoundingClientRect().top>window.innerHeight*.8)c.scrollIntoView({behavior:"smooth",block:"start"})}
 function tallyShow(open,i){const pop=$("tally-pop"),bar=document.querySelector(".tally-bar");if(!pop||!bar)return;
   pop.hidden=!open;bar.setAttribute("aria-expanded",String(open));
-  const hl=open&&i!=null;bar.classList.toggle("hl",hl);
+  if(i==null&&levelF!=="all")i=levelF;
+  const hl=i!=null;bar.classList.toggle("hl",hl);
   document.querySelectorAll(".tally-wrap [data-i]").forEach(el=>el.classList.toggle("on",hl&&el.dataset.i===String(i)))}
 document.addEventListener("pointerover",e=>{if(e.pointerType!=="mouse")return;const w=e.target.closest(".tally-wrap");if(!w)return;
   const seg=e.target.closest("[data-i]");tallyShow(true,seg?seg.dataset.i:undefined)});
