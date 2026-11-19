@@ -228,6 +228,11 @@ a.more{text-decoration:none}
 .hero .search{width:100%}.hero .search input{height:56px;font-size:17px}
 .navlinks a.updchip{font-size:13px;min-height:32px;padding:0 12px;border-radius:999px;border:1px solid var(--light-c);color:var(--light-c);text-decoration:none}.navlinks a.updchip:hover{background:var(--light-soft);text-decoration:none}
 .controls{gap:8px 12px}.controls label{display:flex;gap:8px;align-items:center;font-size:13px}.controls select{min-height:40px;padding:0 10px}
+/* Our own chevron with room to breathe: the browser's arrow sits flush against the edge. */
+.controls select{-webkit-appearance:none;appearance:none;padding:0 40px 0 14px;cursor:pointer}
+.controls label{position:relative}
+.controls label::after{content:"";position:absolute;right:16px;top:50%;width:7px;height:7px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.controls label:hover::after{border-color:var(--ink)}
 .controls select#cat{font-weight:600;max-width:min(240px,46vw)}
 /* Desktop: the panel's menus sit inline; the count and sort sit at the right. Phones: one Filters button opens them in a popover. */
 .controls{position:relative}.fpanel{display:contents}.fbtn{display:none}
