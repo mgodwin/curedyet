@@ -83,6 +83,9 @@ select{font:600 13px var(--f-body);min-height:36px;border:1px solid var(--soft);
 @media (min-width:1100px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .dcard{text-decoration:none;color:inherit;background:var(--card);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0;border:1px solid transparent}
 .dcard:hover{border-color:var(--soft)}
+/* Cured for all: a metallic gold frame and a soft gold glow on the card, and the title in gold. */
+.gold-frame{border:2px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,var(--g-all) border-box;box-shadow:0 0 0 1px rgba(201,151,26,.08),0 6px 22px rgba(201,151,26,.22)}
+.dcard.gold-frame:hover{border-color:transparent;box-shadow:0 0 0 1px rgba(201,151,26,.18),0 8px 28px rgba(201,151,26,.32)}
 .dcard h2{font-size:17px;font-weight:600}
 .verdict{font-family:var(--f-display);font-weight:700;font-size:36px;line-height:1}
 /* Cured for all is metallic gold: gradient text where supported, plain gold otherwise; big words get a slow sheen. */
@@ -366,8 +369,8 @@ function groupCardHTML(d){const two=!!d.prevention||d.groups.some(g=>g.preventio
 function cardHTML(d){
   if((d.groups||[]).length)return groupCardHTML(d);
   const L=lv(d),since=L>=4&&d.timeline?.median?` ${L>=5?"Cured for all":"Cured for most"} since about ${d.timeline.median}.`:"";
-  return `<a class="dcard" href="#d-${esc(d.id)}">
-    <h2>${esc(d.name)}</h2>
+  return `<a class="dcard${L>=5?" gold-frame":""}" href="#d-${esc(d.id)}">
+    <h2${L>=5?' class="v-all"':""}>${esc(d.name)}</h2>
     ${d.prevention?`<span class="eyebrow">Once infected</span>`:""}
     <span class="verdict v-${toV(L,d.txBurden)}">${esc(lword(L))}.</span>
     <p class="dwhy">${esc(d.levelWhy||d.short)}${since}</p>
@@ -613,7 +616,7 @@ function singlePage(d){const t=d.timeline||{},L=lv(d),col=vcolor(L,d.txBurden);
   const logRows=baseRow(d,true).concat((d.events||[]).map(e=>({date:e.date,text:e.text,url:e.url,tag:"Changed"})),(d.breakthroughs||[]).map(b=>({date:b.date,text:b.text,url:b.url,tag:"Counted in baseline"})));
   return `${headerHTML(d,d.name,d.short)}
   <div class="dlayout"><main class="dmain">
-    <section class="card"><span class="eyebrow">${d.prevention?"Once infected":"Where it stands"}</span><span class="display" style="font-size:30px;line-height:1">${esc(lword(L))}</span>${ladderHTML(L,d.txBurden)}${d.levelWhy?`<span style="font-size:14px">${esc(d.levelWhy)}</span>`:""}</section>
+    <section class="card${L>=5?" gold-frame":""}"><span class="eyebrow">${d.prevention?"Once infected":"Where it stands"}</span><span class="display${L>=5?" verdict v-all":""}" style="font-size:30px;line-height:1">${esc(lword(L))}</span>${ladderHTML(L,d.txBurden)}${d.levelWhy?`<span style="font-size:14px">${esc(d.levelWhy)}</span>`:""}</section>
     <section class="card"><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><h2 class="ch" style="font-size:22px">Treatment today</h2>${burdenTip(d.txBurden,d.id)}</div>
       ${d.status?`<p style="margin:0">${esc(d.status)}</p>`:""}${(d.bestTherapies||[]).length?`<div class="chips">${d.bestTherapies.map(b=>`<span>${esc(b)}</span>`).join("")}</div>`:""}
       ${d.txBurdenNote?`<div class="why ${esc(d.txBurden||"")}"><b>Why it's rated ${esc(bword(d.txBurden))}:</b> ${esc(d.txBurdenNote)}</div>`:""}</section>
