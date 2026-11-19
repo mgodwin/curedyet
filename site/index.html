@@ -536,7 +536,9 @@ const vcolor=(level,burden)=>`var(${VCOL[toV(level,burden)]})`;
 /* Segments up to the rung fill in the status colour; on cured for most or all, the top one fills by how mild the treatment is. */
 /* Both ladders share one drawing: names, a colour function and the rung where the burden fill starts. */
 function stripHTML(level,burden,names=LEVELS,vf=toV,cut=4){const L=Math.max(0,Math.min(names.length-1,level|0)),c=`var(${VFILL[vf(L,burden)]})`,f=L>=cut&&vf(L,burden)!=="all"?(BFRAC[burden]||33):100;
-  return `<div class="ladder-strip" style="grid-template-columns:repeat(${names.length},minmax(0,1fr))">${names.map((_,i)=>`<i style="${L>0&&i<L?`background:${c}`:L>0&&i===L?`background:${f===100?c:`linear-gradient(90deg,${c} 0 ${f}%,var(--rule) ${f}%)`}`:""}"></i>`).join("")}</div>`}
+  /* Gold spans the whole strip as one gradient: each segment shows its own slice of it. */
+  const N=names.length,gold=vf(L,burden)==="all",g=i=>gold?`;background-size:${N*100}% 100%;background-position:${N>1?i/(N-1)*100:0}% 0`:"";
+  return `<div class="ladder-strip" style="grid-template-columns:repeat(${N},minmax(0,1fr))">${names.map((_,i)=>`<i style="${L>0&&i<L?`background:${c}${g(i)}`:L>0&&i===L?`background:${f===100?c:`linear-gradient(90deg,${c} 0 ${f}%,var(--rule) ${f}%)`}${g(i)}`:""}"></i>`).join("")}</div>`}
 function ladderHTML(level,burden,names=LEVELS,vf=toV,cut=4){const L=Math.max(0,Math.min(names.length-1,level|0));
   return `${stripHTML(L,burden,names,vf,cut)}
     <div class="ladder-labels" style="grid-template-columns:repeat(${names.length},minmax(0,1fr))">${names.map((l,i)=>`<span style="${i===L?"color:var(--ink);font-weight:600":""}">${l}</span>`).join("")}</div>`}
