@@ -12,7 +12,7 @@
 /* Layout: wide pages; disease pages are a main column plus a side rail. Hash routes: home, d-<id> (disease or hub), d-<id>/<variant>, pipeline, record, stats. */
 :root{
   --tough:#806800; --tough-soft:#f3ecc8;
-  --v-mild:#1e7f4f; --v-mod:#806800; --v-modf:#e0b000; --v-hard:#a85400; --v-no:#4e5862; --v-nof:#8a9690;
+  --v-all:#a67c00; --v-mild:#1e7f4f; --v-mod:#806800; --v-modf:#e0b000; --v-hard:#a85400; --v-no:#4e5862; --v-nof:#8a9690;
   --ground:#f4f6f3; --card:#ffffff; --sunk:#f4f6f3; --ink:#121815; --muted:#4e5862; --rule:#e1e6e2; --soft:#c9d2cb;
   --yes:#1e7f4f; --yes-soft:#e3ece6; --some:#a85400; --some-soft:#f6e7d7; --no:#4e5862;
   --heavy:#9c2f1f; --heavy-soft:#f8e1da; --mod:#8a5a00; --mod-soft:#f6ecd6; --light-c:#1e6b46; --light-soft:#e3ece6;
@@ -24,7 +24,7 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --tough:#e3cb55; --tough-soft:#332c0c;
-  --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
+  --v-all:#f4bf3a; --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
   --ground:#0f1412; --card:#18201c; --sunk:#111815; --ink:#e9eee9; --muted:#a3aea7; --rule:#27312c; --soft:#3a4640;
   --yes:#5fd39a; --yes-soft:#173327; --some:#f0a254; --some-soft:#3a2914; --no:#a3aea7;
   --heavy:#f29a87; --heavy-soft:#3b1d17; --mod:#e8c06a; --mod-soft:#33290f; --light-c:#7fd8a8; --light-soft:#173327;
@@ -33,7 +33,7 @@
   --st1:#7f978c; --st2:#9ab4a8; --st3:#b7cec3; --st4:#e9eee9; --st5:#5f7a6e; --st6:#f0a254; color-scheme:dark;}}
 :root[data-theme="dark"]{
   --tough:#e3cb55; --tough-soft:#332c0c;
-  --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
+  --v-all:#f4bf3a; --v-mild:#5fd39a; --v-mod:#e3cb55; --v-modf:#d9b635; --v-hard:#f0a254; --v-no:#a3aea7; --v-nof:#66746d;
   --ground:#0f1412; --card:#18201c; --sunk:#111815; --ink:#e9eee9; --muted:#a3aea7; --rule:#27312c; --soft:#3a4640;
   --yes:#5fd39a; --yes-soft:#173327; --some:#f0a254; --some-soft:#3a2914; --no:#a3aea7;
   --heavy:#f29a87; --heavy-soft:#3b1d17; --mod:#e8c06a; --mod-soft:#33290f; --light-c:#7fd8a8; --light-soft:#173327;
@@ -85,7 +85,7 @@ select{font:600 13px var(--f-body);min-height:36px;border:1px solid var(--soft);
 .dcard:hover{border-color:var(--soft)}
 .dcard h2{font-size:17px;font-weight:600}
 .verdict{font-family:var(--f-display);font-weight:700;font-size:36px;line-height:1}
-.v-mild{color:var(--v-mild)} .v-mod{color:var(--v-mod)} .v-hard{color:var(--v-hard)} .v-no{color:var(--v-no)}
+.v-all{color:var(--v-all)} .v-mild{color:var(--v-mild)} .v-mod{color:var(--v-mod)} .v-hard{color:var(--v-hard)} .v-no{color:var(--v-no)}
 .vlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
 .vlist li{border-top:1px solid var(--rule);font-size:14px}
 .vlist li a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:7px 0;min-height:36px;color:inherit;text-decoration:none}
@@ -304,11 +304,11 @@ const yr=y=>y==null?"—":(y>=2100?"2100+":"~"+y);
 const lv=d=>Math.max(0,Math.min(LEVELS.length-1,d.level|0));
 /* Status as a word: the bottom rung reads "No treatment yet", since research is moving; ladder labels keep the short name. */
 const lword=L=>L===0?"No treatment yet":LEVELS[L];
-/* Colour = rung plus treatment burden. Cured for most or all: green with mild treatment, yellow moderate, orange difficult.
+/* Colour = rung plus treatment burden. Cured for all is gold. Cured for most: green with mild treatment, yellow moderate, orange difficult.
    Cured for some is orange whatever the treatment; below that, grey. */
-const toV=(level,burden)=>level>=4?(burden==="light"?"mild":burden==="moderate"?"mod":"hard"):level===3?"hard":"no";
-const VCOL={mild:"--v-mild",mod:"--v-mod",hard:"--v-hard",no:"--v-no"};
-const VFILL={mild:"--v-mild",mod:"--v-modf",hard:"--v-hard",no:"--v-nof"};
+const toV=(level,burden)=>level>=5?"all":level>=4?(burden==="light"?"mild":burden==="moderate"?"mod":"hard"):level===3?"hard":"no";
+const VCOL={all:"--v-all",mild:"--v-mild",mod:"--v-mod",hard:"--v-hard",no:"--v-no"};
+const VFILL={all:"--v-all",mild:"--v-mild",mod:"--v-modf",hard:"--v-hard",no:"--v-nof"};
 /* Burden keys stay light/moderate/heavy in the data; readers see mild/moderate/difficult. */
 const BURDEN_WORD={light:"mild",moderate:"moderate",heavy:"difficult"};
 const bword=b=>BURDEN_WORD[b]||b;
@@ -391,14 +391,14 @@ function cycleTheme(){const t=THEMES[(THEMES.indexOf(curTheme())+1)%THEMES.lengt
   document.querySelectorAll("[data-theme-cycle]").forEach(b=>{b.textContent=TLABEL[t];b.setAttribute("aria-label",`Colour theme: ${TLABEL[t].slice(2)}. Click to change.`)})}
 /* The tally counts each disease once, at its overall rung (the typical patient), so the counts add up to the total.
    Hovering the bar shows the breakdown and lights up the rung under the pointer; tapping it pins the breakdown open (for phones).
-   Rung colours: cured for most or all is green, cured for some orange, below that grey. */
-const RCOL=["--v-nof","--v-nof","--v-no","--v-hard","--v-mild","--v-mild"];
+   Rung colours: cured for all is gold, cured for most green, cured for some orange, below that grey. */
+const RCOL=["--v-nof","--v-nof","--v-no","--v-hard","--v-mild","--v-all"];
 function tallyHTML(){const n=S.dz.length,c=LEVELS.map(()=>0);S.dz.forEach(d=>c[lv(d)]++);
   const cured=c[4]+c[5],part=S.dz.filter(d=>lv(d)<4&&(d.groups||[]).some(g=>(g.level|0)>=4)).length;
   return `<section class="tally" aria-label="How many are cured">
     <p class="tally-head"><b class="num">${cured} of ${n}</b> diseases are cured for most patients.${part?` ${part} more are cured for most at some stages or types.`:""}</p>
     <div class="tally-wrap">
-      <button class="tally-bar" type="button" aria-expanded="false" aria-controls="tally-pop" aria-label="How many diseases sit at each level">${c.map((k,i)=>k?`<i data-i="${i}" style="flex:${k};background:var(${RCOL[i]})"></i>`:"").join("")}</button>
+      <button class="tally-bar" type="button" aria-expanded="false" aria-controls="tally-pop" aria-label="How many diseases sit at each level">${c.map((k,i)=>k?`<i data-i="${i}" style="flex:${k};background:var(${RCOL[i]})"></i>`:"").reverse().join("")}</button>
       <div class="tally-pop" id="tally-pop" hidden><ul class="tally-key">${c.map((k,i)=>`<li data-i="${i}"><i style="background:var(${RCOL[i]})" aria-hidden="true"></i><span>${esc(lword(i))}</span><span><b class="num">${k}</b> <small class="num">${Math.round(100*k/n)}%</small></span></li>`).reverse().join("")}</ul></div>
     </div>
   </section>`}
@@ -422,9 +422,9 @@ function home(){
 
 /* ---------- Stats: how many patient groups sit at each status ---------- */
 function stats(){
-  const G=S.dz.flatMap(lines),c={mild:0,mod:0,hard:0,some:0,no:0};
+  const G=S.dz.flatMap(lines),c={all:0,mild:0,mod:0,hard:0,some:0,no:0};
   G.forEach(l=>{c[l.level>=4?toV(l.level,l.burden):l.level===3?"some":"no"]++});
-  const rows=[["mild","Cured for most, mild treatment","--v-mild"],["mod","Cured for most, moderate treatment","--v-modf"],["hard","Cured for most, difficult treatment","--v-hard"],["some","Cured for some","--v-hard"],["no","Not curable yet","--v-nof"]];
+  const rows=[["all","Cured for all","--v-all"],["mild","Cured for most, mild treatment","--v-mild"],["mod","Cured for most, moderate treatment","--v-modf"],["hard","Cured for most, difficult treatment","--v-hard"],["some","Cured for some","--v-hard"],["no","Not curable yet","--v-nof"]];
   const byRung=LEVELS.map((n,i)=>[n,G.filter(l=>l.level===i).length]);
   const T=pipeTotals(),m=S.meta||{};
   return `
@@ -525,7 +525,7 @@ document.addEventListener("toggle",e=>{if(e.target.open&&e.target.querySelector&
 const vcolor=(level,burden)=>`var(${VCOL[toV(level,burden)]})`;
 /* Segments up to the rung fill in the status colour; on cured for most or all, the top one fills by how mild the treatment is. */
 /* Both ladders share one drawing: names, a colour function and the rung where the burden fill starts. */
-function stripHTML(level,burden,names=LEVELS,vf=toV,cut=4){const L=Math.max(0,Math.min(names.length-1,level|0)),c=`var(${VFILL[vf(L,burden)]})`,f=L>=cut?(BFRAC[burden]||33):100;
+function stripHTML(level,burden,names=LEVELS,vf=toV,cut=4){const L=Math.max(0,Math.min(names.length-1,level|0)),c=`var(${VFILL[vf(L,burden)]})`,f=L>=cut&&vf(L,burden)!=="all"?(BFRAC[burden]||33):100;
   return `<div class="ladder-strip" style="grid-template-columns:repeat(${names.length},minmax(0,1fr))">${names.map((_,i)=>`<i style="${L>0&&i<L?`background:${c}`:L>0&&i===L?`background:${f===100?c:`linear-gradient(90deg,${c} 0 ${f}%,var(--rule) ${f}%)`}`:""}"></i>`).join("")}</div>`}
 function ladderHTML(level,burden,names=LEVELS,vf=toV,cut=4){const L=Math.max(0,Math.min(names.length-1,level|0));
   return `${stripHTML(L,burden,names,vf,cut)}
