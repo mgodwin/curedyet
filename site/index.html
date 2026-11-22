@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: wide pages; disease pages are a main column plus a side rail. Hash routes: home, d-<id> (disease or hub), d-<id>/<variant>, pipeline, record, stats. */
+/* Layout: wide pages; disease pages are a main column plus a side rail. Hash routes: home, d-<id> (disease or hub), d-<id>/<variant>, pipeline, record, stats, about. */
 :root{
   --tough:#806800; --tough-soft:#f3ecc8;
   --v-all:#a67c00; --g-all-ramp:linear-gradient(90deg,#6e4d00 0%,#9a6f00 30%,#c9971a 60%,#e2b434 80%,#f2cd5c 92%,#f8de8a 100%); --g-all:linear-gradient(110deg,#8a6400 0%,#c9971a 22%,#f6dc7a 40%,#fff4c4 48%,#e2b23a 58%,#a87900 78%,#8a6400 100%); --g-all-text:linear-gradient(100deg,#7a5600 0%,#a87900 30%,#e8bc3a 42%,#fff1b0 50%,#e8bc3a 58%,#a87900 70%,#7a5600 100%); --v-mild:#1e7f4f; --v-mod:#806800; --v-modf:#e0b000; --v-hard:#a85400; --v-no:#4e5862; --v-nof:#8a9690;
@@ -219,7 +219,7 @@ a.more{text-decoration:none}
 /* Home: nav, cards in masonry columns, colour key */
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .topnav{display:flex;align-items:center;gap:8px 20px;flex-wrap:wrap;min-height:44px}.topnav .brand{margin-right:auto}
-@media (max-width:640px){.topnav .navlinks{order:3;width:100%;gap:4px 14px}.nophone{display:none}}
+@media (max-width:640px){.topnav .navlinks{order:3;width:100%;gap:4px 14px}.nophone,.navlinks a.nophone{display:none}}
 .brand{font-size:clamp(24px,3vw,30px);line-height:1.1;color:var(--ink);text-decoration:none}
 .themebtn{font:600 13px var(--f-body);min-height:32px;padding:0 10px;border-radius:999px;border:1px solid var(--soft);background:var(--card);color:var(--ink);cursor:pointer}
 .navlinks{display:flex;gap:4px 18px;flex-wrap:wrap;align-items:center;font-size:14px;font-weight:600}
@@ -285,6 +285,20 @@ a.more{text-decoration:none}
 @media (max-width:640px){.log-row{grid-template-columns:auto auto;gap:4px 12px;justify-content:space-between}.log-row>span:nth-child(2){grid-column:1/-1;grid-row:2}.log-row>span:nth-child(3){justify-self:end}}
 .srcs ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:13px}
 .srcs h2{margin:0 0 8px}
+/* About page: quote cards with a quiet accent rule, linked to the original post or transcript. */
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));gap:12px}
+.quote{background:var(--card);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0;margin:0}
+.quote blockquote{margin:0;padding-left:14px;border-left:3px solid var(--light-c);font-family:var(--f-display);font-size:20px;line-height:1.3;font-weight:600;text-wrap:pretty}
+.quote .who{display:flex;flex-direction:column;gap:2px;font-size:14px}
+.quote .ctx{margin:0;font-size:14px;color:var(--muted)}
+.quote .src{font-size:14px;font-weight:600;text-decoration:none;margin-top:auto}.quote .src:hover{text-decoration:underline}
+.card .scale{margin:0;padding:0;list-style:none;display:flex;flex-direction:column}
+.scale li{display:grid;grid-template-columns:200px minmax(0,1fr);gap:4px 20px;align-items:baseline;padding:12px 0;border-top:1px solid var(--rule);font-size:14px}
+.scale li:first-child{border-top:0;padding-top:0}
+.scale b{font-family:var(--f-display);font-size:26px;line-height:1.1}
+@media (max-width:640px){.scale li{grid-template-columns:1fr}}
+.about-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));gap:12px}
+.about-cols .card{padding:20px}.about-cols p{margin:0;font-size:14px}
 .dfoot{border-top:1px solid var(--soft);padding-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;align-items:baseline;font-size:14px}
 .pill-link{font-weight:600;text-decoration:none;border:1px solid var(--ink);color:var(--ink);border-radius:999px;padding:10px 16px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center}
 .vlist-nav{background:var(--card);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
@@ -412,7 +426,7 @@ function renderCards(){const el=$("cards");if(!el)return;const L=filtered();
   L.forEach(d=>{const i=h.indexOf(Math.min(...h));tmp.innerHTML=cardHTML(d);const c=tmp.firstElementChild;cols[i].append(c);h[i]+=c.offsetHeight});
 }
 function navHTML(){const repo=S.meta?.repo;
-  return `<nav class="topnav" aria-label="Site"><a class="brand display" href="#">Is it cured yet?</a><div class="navlinks">${S.meta?.updatedAt?`<a class="updchip" href="#record">Updated ${fd(S.meta.updatedAt).replace(/, \d{4}$/,"")}<span class="nophone"> · what changed</span> →</a>`:`<a href="#record">Latest update</a>`}<a href="#pipeline">Pipeline</a><a href="#stats">Stats</a>${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate</a>`:""}</div>${themeBtn()}</nav>`}
+  return `<nav class="topnav" aria-label="Site"><a class="brand display" href="#">Is it cured yet?</a><div class="navlinks">${S.meta?.updatedAt?`<a class="updchip" href="#record">Updated ${fd(S.meta.updatedAt).replace(/, \d{4}$/,"")}<span class="nophone"> · what changed</span> →</a>`:`<a href="#record">Latest update</a>`}<a href="#pipeline">Pipeline</a><a href="#stats">Stats</a><a class="nophone" href="#about">About</a>${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">How we rate</a>`:""}</div>${themeBtn()}</nav>`}
 /* Theme: follows the device unless the reader picks light or dark; the choice is remembered in this browser. */
 const THEMES=["system","light","dark"],TLABEL={system:"◐ Auto",light:"☀ Light",dark:"☾ Dark"};
 const curTheme=()=>document.documentElement.dataset.theme||"system";
@@ -599,7 +613,7 @@ function footerHTML(home){const repo=S.meta?.repo;
   const [title,body]=home?["Want to see another disease tracked?","Every disease here lives in an open repo. Suggest a new one, or fix a fact that's wrong or out of date, with an issue or a pull request on GitHub."]:["See a problem? Help fix it.","Every number on this page lives in an open repo. If something is wrong, out of date or missing a source, open a pull request or an issue on GitHub."];
   return `<footer class="dfoot"><div style="display:flex;flex-direction:column;gap:4px;max-width:640px"><b style="font-size:16px">${title}</b><span class="muted">${body}</span></div>
     ${repo?`<a class="pill-link" href="https://github.com/${esc(repo)}" target="_blank" rel="noopener">Contribute on GitHub →</a>`:""}
-    <span class="muted" style="flex-basis:100%;font-size:12px">${home?"Reviewed monthly and scored against what actually happens. ":""}Forecasts are Claude's monthly judgment from trial results, approvals and forecasting markets, anchored to historical base rates. A research tracker, not medical advice.</span></footer>`}
+    <span class="muted" style="flex-basis:100%;font-size:12px">${home?"Reviewed monthly and scored against what actually happens. ":""}Forecasts are Claude's monthly judgment from trial results, approvals and forecasting markets, anchored to historical base rates. A research tracker, not medical advice. <a href="#about">Why this site exists</a>.</span></footer>`}
 const YRS=(y,base)=>Math.max(0,Math.min(2100,y)-(base||NOW));
 const yearsBig=f=>`<div style="display:flex;flex-direction:column;gap:2px"><div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><span class="big-year num">~${YRS(f.median)} years</span><span class="muted" style="font-size:15px">best guess · ${f.median>=2100?"after 2100":f.median}</span></div>
   ${f.low!=null?`<span class="muted" style="font-size:13px">Optimistic ~${YRS(f.low)} years (${f.low}) · pessimistic ${f.high>=2100?"after 2100":`~${YRS(f.high)} years (${f.high})`}</span>`:""}</div>`;
@@ -767,22 +781,76 @@ function record(){
     <p style="margin:0;font-size:14px">Four times a month Claude re-checks one group of diseases in depth, so each gets a full review every month, and follows up dated events and active outbreaks for all of them. Anyone can add a disease or a source by pull request.</p></div>`;
 }
 
+/* ---------- About ---------- */
+/* Why the site exists. Quotes are verbatim and short, each linked to its original source; check wording before editing. */
+const CLAIMS=[
+  {who:"Demis Hassabis",role:"Then CEO of Google DeepMind; founder and CEO of Isomorphic Labs",date:"2025-04-20",where:"60 Minutes, CBS",
+   quote:"I think that's within reach. Maybe within the next decade or so, I don't see why not.",
+   ctx:"He had just said AI might one day help cure all disease. Scott Pelley asked if that meant the end of disease, and this was his answer.",
+   url:"https://www.cbsnews.com/news/artificial-intelligence-google-deepmind-ceo-demis-hassabis-60-minutes-transcript/",label:"Read the transcript"},
+  {who:"Demis Hassabis",role:"@demishassabis on X",date:"2025-04-21",where:"Post on X",
+   quote:"AI could be the ultimate tool to help us advance scientific progress … and perhaps one day even solve all disease.",
+   ctx:"His post after the interview aired. Isomorphic Labs, which he founded, designs drugs with AI.",
+   url:"https://x.com/demishassabis/status/1914487671193215295",label:"View the post on X"},
+  {who:"Dario Amodei",role:"CEO of Anthropic",date:"2024-10",where:"Essay, “Machines of Loving Grace”",
+   quote:"\u2026giving us the next 50-100 years of biological progress in 5-10 years.",
+   ctx:"His guess for what powerful AI could do once it exists. His list includes reliable prevention and treatment of nearly all natural infectious disease and the elimination of most cancer. He also writes that it could easily be wrong.",
+   url:"https://darioamodei.com/essay/machines-of-loving-grace",label:"Read the essay"},
+  {who:"Mark Zuckerberg and Priscilla Chan",role:"Chan Zuckerberg Initiative",date:"2016-09-21",where:"Announcement",
+   quote:"\u2026cure, prevent, or manage all diseases in our children's lifetime.",
+   ctx:"The goal they set when they committed $3 billion over ten years to science, years before today's AI boom.",
+   url:"https://chanzuckerberg.com/newsroom/supporting-scientific-research-to-cure-prevent-or-manage-all-diseases-in-our-childrens-lifetime/",label:"Read the announcement"}];
+function about(){const repo=S.meta?.repo,n=S.dz.length,groups=S.dz.flatMap(lines).length,cured=S.dz.filter(d=>lv(d)>=4).length,cancers=S.dz.filter(d=>d.category==="cancer").length;
+  const card=c=>`<figure class="quote"><span class="eyebrow">${fd(c.date)} · ${esc(c.where)}</span>
+    <blockquote>“${esc(c.quote)}”</blockquote>
+    <figcaption class="who"><b>${esc(c.who)}</b><span class="muted">${esc(c.role)}</span></figcaption>
+    <p class="ctx">${esc(c.ctx)}</p>
+    <a class="src" href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.label)} →</a></figure>`;
+  return `<a class="back" href="#">← All diseases</a>
+  <header style="display:flex;flex-direction:column;gap:10px"><span class="eyebrow">About</span>
+    <h1 class="display" style="font-size:clamp(36px,5vw,48px);line-height:1.05">Will AI really cure all disease?</h1>
+    <p class="lede">Some of the most prominent people in AI have said, in public and on the record, that AI could help cure all or most disease, and some say within a decade. That is a big claim, and it can be checked. This site exists to check it, one disease at a time.</p></header>
+  <section style="display:flex;flex-direction:column;gap:12px"><h2 class="ch">What they've said</h2>
+    <div class="quotes">${CLAIMS.map(card).join("")}</div></section>
+  <section class="card" style="padding:20px;gap:14px"><h2 class="ch">How big is the job?</h2>
+    <p style="margin:0">“All disease” is a lot. Here is the scale, and the slice this site covers.</p>
+    <ul class="scale">
+      <li><b class="num">~17,000</b><span>Diagnostic categories in the WHO's disease list, ICD-11. It also counts injuries and causes of death, and splits many diseases into subtypes, so it overcounts distinct diseases. ${link("https://www.who.int/news/item/14-02-2025-who-releases-2025-update-to-the-international-classification-of-diseases-%28icd-11%29","WHO, 2025")}</span></li>
+      <li><b class="num">7,000–10,000</b><span>Known rare diseases. Only about 5% have a treatment approved by the FDA. ${link("https://files.gao.gov/reports/GAO-25-106774/index.html","GAO, 2025")}</span></li>
+      <li><b class="num">1</b><span>Human disease ever eradicated: smallpox, declared gone in 1980. ${link("https://www.who.int/health-topics/smallpox","WHO")}</span></li>
+      <li><b class="num">${n||100}</b><span>Of the most common and deadliest diseases tracked here${cancers?`, ${cancers} of them cancers`:""}${groups?`, split into ${groups} patient groups by stage or type`:""}. A few already-cured ones are included for comparison. ${cured?`Today ${cured} of the ${n} are cured for most patients.`:""} We add more over time, and anyone can suggest one.</span></li>
+    </ul></section>
+  <section style="display:flex;flex-direction:column;gap:12px"><h2 class="ch">How we track it</h2>
+    <div class="about-cols">
+      <div class="card"><b>Where each disease stands</b><p>We follow ${n||"100"} of the most common diseases and cancers. Each sits on a ladder from no treatment to cured for all, with a separate rating for how hard its treatment is. You can see the whole picture on the ${`<a href="#stats">stats page</a>`}.</p></div>
+      <div class="card"><b>Two forecasts, blended</b><p>Each disease gets a forecast at today's pace and one for a much faster pipeline. How far we lean toward the faster one depends on evidence that drug discovery, trials and approvals are actually speeding up. See ${`<a href="#pipeline">the cure pipeline</a>`}.</p></div>
+      <div class="card"><b>Claims are signals, results are evidence</b><p>When a leader predicts a timeline, we note who said it, when, and what stake they have. It never moves a number on its own. A drug entering trials, a published result or an approval does.</p></div>
+      <div class="card"><b>Scored against what happens</b><p>Every disease is reviewed each month. We also make short, dated yes-or-no forecasts and publish how accurate they turned out. See ${`<a href="#record">the latest update</a>`}.</p></div>
+    </div></section>
+  <section class="card" style="padding:20px"><h2 class="ch">What this site is not</h2>
+    <p style="margin:0">It is a research tracker, not medical advice. It does not recommend any treatment. If you or someone you care for is ill, talk to a doctor.</p>
+    <p style="margin:0">It is not for or against AI. If the optimists are right, the numbers here should start to move, and we want to see that happen.</p>
+    <p style="margin:0" class="muted">A note on who writes this: the forecasts are written each month by Claude, an AI model made by Anthropic, whose CEO is quoted above. Every number is sourced and follows ${repo?`<a href="https://github.com/${esc(repo)}/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">a public method</a>`:"a public method"}, and anyone can challenge it on GitHub.</p></section>
+  ${footerHTML(true)}`;
+}
+
 /* ---------- Router ---------- */
 function route(){const h=(location.hash||"").replace(/^#/,"");
   if(h.startsWith("d-")){const [id,vid]=h.slice(2).split("/");return{v:"detail",id,vid}}
   if(h==="pipeline")return{v:"pipeline"};
   if(h==="record")return{v:"record"};
   if(h==="stats")return{v:"stats"};
+  if(h==="about")return{v:"about"};
   return{v:"home"};}
 let lastView="";
 function render(){const app=$("app"),r=route(),key=r.v+(r.id||"")+"/"+(r.vid||"");
   if(!S.ready&&!S.dz.length){app.innerHTML=`<div class="empty">${esc(S.err||"Loading the tracker…")}</div>`;return}
   const focusQ=document.activeElement&&document.activeElement.id==="q",selStart=focusQ?document.activeElement.selectionStart:0;
-  app.innerHTML=navHTML()+(r.v==="detail"?detail(r.id,r.vid):r.v==="pipeline"?pipeline():r.v==="record"?record():r.v==="stats"?stats():home());
+  app.innerHTML=navHTML()+(r.v==="detail"?detail(r.id,r.vid):r.v==="pipeline"?pipeline():r.v==="record"?record():r.v==="stats"?stats():r.v==="about"?about():home());
   if(r.v==="home"){const s=$("sort");if(s)s.value=sort;renderCards();if(masonRO){masonRO.disconnect();masonRO.observe($("cards"))}if(focusQ){const i=$("q");if(i){i.focus();try{i.setSelectionRange(selStart,selStart)}catch(e){}}}}
   if(r.v==="detail")drawTrend();
   if(key!==lastView){if(lastView)window.scrollTo(0,0);lastView=key}
-  document.title=r.v==="stats"?"Stats · Cure Watch":r.v==="detail"?`${(S.dz.find(d=>d.id===r.id)||{}).name||"Disease"} · Cure Watch`:"Cure Watch";
+  document.title=r.v==="about"?"About · Cure Watch":r.v==="stats"?"Stats · Cure Watch":r.v==="detail"?`${(S.dz.find(d=>d.id===r.id)||{}).name||"Disease"} · Cure Watch`:"Cure Watch";
 }
 window.addEventListener("hashchange",render);
 document.addEventListener("input",e=>{if(e.target.id==="q"){q=e.target.value;renderCards()}});
