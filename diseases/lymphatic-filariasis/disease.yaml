@@ -1,0 +1,27 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: lymphatic-filariasis
+name: "Lymphatic filariasis (elephantiasis)"
+category: infectious
+tracking: proposed
+summary: "A mosquito-borne worm infection that damages the lymph system and can cause severe swelling of the legs or genitals."
+toll:
+  text: "657 million people in 39 countries live where mass treatment is needed (WHO, 2023)."
+  url: https://www.who.int/news-room/fact-sheets/detail/lymphatic-filariasis
+status:
+  level: 3
+  why: "Drugs clear the infection, but swelling and damage that have already set in can't be reversed."
+  today: "Mass drug campaigns give yearly doses of albendazole with ivermectin or diethylcarbamazine to whole communities; a three-drug regimen cleared the parasite in 55 of 57 people for three years in one trial. Hygiene care and surgery ease swelling but do not cure it. About 51 million people were infected in 2018, down 74% since 2000."
+  last_reviewed: null
+treatment:
+  best:
+  - "Ivermectin, diethylcarbamazine and albendazole (IDA)"
+  - "Albendazole with ivermectin or diethylcarbamazine"
+  - "Limb hygiene and lymphedema care"
+  burden: light
+  burden_note: "A single yearly dose of tablets; people with lymphedema need lifelong daily care."
+forecast:
+  bottleneck: access-limited
+pipeline: []
+recent: []
+next_milestone: null
+markets: []

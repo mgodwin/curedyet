@@ -1,0 +1,34 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: leishmaniasis
+name: "Leishmaniasis (kala-azar and skin forms)"
+category: infectious
+tracking: proposed
+summary: "A parasite infection spread by sandfly bites that causes skin sores or, in its visceral form (kala-azar), attacks the spleen, liver and bone marrow."
+toll:
+  text: "50,000 to 90,000 new cases of the deadly visceral form each year (WHO)."
+  url: https://www.who.int/news-room/fact-sheets/detail/leishmaniasis
+status:
+  level: 3
+  why: "Drugs cure many patients, but they are toxic or need hospital drips, and results vary by region."
+  today: "Visceral leishmaniasis kills over 95% of people left untreated. Liposomal amphotericin B, miltefosine, paromomycin and antimony drugs, alone or combined, treat it, with regimens that differ between South Asia and East Africa. Only 25 to 45% of cases are reported to WHO."
+  last_reviewed: null
+treatment:
+  best:
+  - "Liposomal amphotericin B (AmBisome)"
+  - "Miltefosine"
+  - "Paromomycin with sodium stibogluconate"
+  burden: heavy
+  burden_note: "Days to weeks of infusions or injections in hospital, with serious side effects for some drugs."
+forecast:
+  bottleneck: design-limited
+pipeline:
+- name: "LXE408 (Novartis and DNDi)"
+  stage: "Phase 2"
+  note: "First oral drug designed for visceral leishmaniasis; Phase 2 trials in India and Ethiopia finished follow-up, with full results expected in 2026."
+  url: https://dndi.org/news/2026/2025-rd-programmes-in-review-leishmaniasis/
+  expected: "2026"
+  effect: some
+  effect_note: "A safe pill would replace hospital drips and make treatment far easier to reach."
+recent: []
+next_milestone: null
+markets: []
