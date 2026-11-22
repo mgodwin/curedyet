@@ -1,0 +1,32 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: sleeping-sickness
+name: "Sleeping sickness (African trypanosomiasis)"
+category: infectious
+tracking: proposed
+summary: "A parasite infection spread by tsetse flies in sub-Saharan Africa that invades the brain and is fatal without treatment."
+toll:
+  text: "546 new cases of the main form in 2024, down 98% since 1999 (WHO)."
+  url: https://www.who.int/data/gho/data/themes/topics/human-african-trypanosomiasis
+status:
+  level: 4
+  why: "Modern drugs, including an all-oral pill course, cure most patients, and cases have fallen to a few hundred a year."
+  today: "Fexinidazole, a 10-day course of pills, treats both forms of the disease in most patients over age 6. Older drugs given by drip are used for some cases. A single-dose drug, acoziborole, is in late testing."
+  last_reviewed: null
+treatment:
+  best:
+  - "Fexinidazole"
+  - "Nifurtimox-eflornithine combination"
+  burden: moderate
+  burden_note: "About 10 days of pills taken with food; some patients still need hospital drip treatment."
+forecast:
+  bottleneck: access-limited
+pipeline:
+- name: "Acoziborole"
+  stage: "Phase 3"
+  note: "Single-dose oral drug being tested in a screen-and-treat approach in the Democratic Republic of Congo; not yet registered."
+  url: https://dndi.org/wp-content/uploads/2025/08/DNDi-Factsheet-Sleeping-sickness-2024.pdf
+  effect: some
+  effect_note: "One pill at the point of testing would make elimination far easier."
+recent: []
+next_milestone: null
+markets: []

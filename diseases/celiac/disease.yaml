@@ -1,0 +1,34 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: celiac
+name: "Celiac disease"
+category: immune
+tracking: proposed
+summary: "An immune reaction to gluten in wheat, barley and rye that damages the small intestine."
+toll:
+  text: "About 1 in 100 people worldwide by blood tests and biopsy (Clinical Gastroenterology and Hepatology, 2018)."
+  url: https://pubmed.ncbi.nlm.nih.gov/29551598/
+status:
+  level: 2
+  why: "A strict gluten-free diet lets most people live normally, but there is no drug and the condition is lifelong."
+  today: "A lifelong gluten-free diet lets the gut heal in most people. There are no FDA-approved drugs. Some people still have symptoms or gut damage despite the diet."
+  last_reviewed: null
+treatment:
+  best:
+  - "Strict gluten-free diet"
+  burden: moderate
+  burden_note: "No drugs, but the diet is lifelong, costly and hard to keep, and small slips cause damage."
+forecast:
+  bottleneck: biology-limited
+pipeline:
+- name: "TEV-'408 (anti-IL-15)"
+  stage: "Phase 2"
+  note: "Reduced gluten-induced gut damage versus placebo in a 50-person Phase 2a trial in September 2026."
+  url: https://www.hcplive.com/view/tev-408-meets-primary-endpoint-in-celiac-trial
+  effect: small
+  effect_note: "A drug that protects against slips would ease the diet but not cure the disease."
+recent:
+- date: "2026-09"
+  text: "Teva's anti-IL-15 antibody met its main goal in a Phase 2a celiac trial."
+  url: https://www.hcplive.com/view/tev-408-meets-primary-endpoint-in-celiac-trial
+next_milestone: null
+markets: []

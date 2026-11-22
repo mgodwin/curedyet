@@ -1,0 +1,27 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: preterm-birth
+name: "Complications of preterm birth"
+category: other
+tracking: proposed
+summary: "Health problems in babies born before 37 weeks, such as breathing trouble, infections and brain bleeds, which can kill or leave lasting disability."
+toll:
+  text: "About 900,000 child deaths in 2019, the leading cause of death under age 5 (WHO)."
+  url: https://www.who.int/news-room/fact-sheets/detail/preterm-birth
+status:
+  level: 3
+  why: "In rich countries almost all preterm babies survive, but many of the earliest-born live with lasting disability."
+  today: "Neonatal intensive care, steroids before birth, kangaroo mother care and breathing support save most preterm babies in high-income countries. In the poorest countries most babies born before 32 weeks die within days. WHO says three quarters of these deaths could be prevented with current low-cost care."
+  last_reviewed: null
+treatment:
+  best:
+  - "Antenatal corticosteroids"
+  - "Kangaroo mother care"
+  - "Neonatal intensive care and breathing support"
+  burden: heavy
+  burden_note: "Weeks to months of hospital care for the earliest babies; survivors may need lifelong support."
+forecast:
+  bottleneck: access-limited
+pipeline: []
+recent: []
+next_milestone: null
+markets: []

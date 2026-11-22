@@ -1,0 +1,35 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: pku
+name: "Phenylketonuria (PKU)"
+category: genetic
+tracking: proposed
+summary: "An inherited disorder in which the body can't break down phenylalanine, an amino acid in protein, which builds up and harms the brain."
+toll:
+  text: "unclear"
+status:
+  level: 2
+  why: "Newborn screening and a strict low-protein diet, plus newer drugs, prevent brain damage, but treatment is lifelong."
+  today: "Babies found by newborn screening start a special low-protein diet that prevents brain damage if kept up. Sapropterin and sepiapterin (approved 2025) help people whose enzyme still partly works; pegvaliase injections lower levels in adults. No one-time cure is approved."
+  last_reviewed: null
+treatment:
+  best:
+  - "Low-phenylalanine diet and medical formula"
+  - "Sepiapterin (Sephience)"
+  - "Pegvaliase (Palynziq)"
+  burden: heavy
+  burden_note: "A strict lifelong diet that is hard to keep, or daily injections with allergy risk."
+forecast:
+  bottleneck: trial-limited
+pipeline:
+- name: "NGGT002 (AAV8 gene therapy)"
+  stage: "Phase 1/2"
+  note: "One-time gene therapy carrying a working PAH gene, in a 12-adult trial with five years of follow-up."
+  url: https://ctv.veeva.com/study/safety-and-efficacy-study-of-nggt002-in-cpku-adult-subjects
+  effect: big
+  effect_note: "A lasting one-time fix would end the diet."
+recent:
+- date: "2025-07"
+  text: "FDA approved sepiapterin (Sephience); it cut blood phenylalanine by 64% versus placebo in its Phase 3 trial."
+  url: https://www.fda.gov/drugs/drug-approvals-and-databases/drug-trials-snapshots-sephience
+next_milestone: null
+markets: []

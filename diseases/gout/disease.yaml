@@ -1,0 +1,33 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: gout
+name: "Gout"
+category: metabolic
+tracking: proposed
+summary: "A painful arthritis caused by uric acid crystals building up in the joints."
+toll:
+  text: "About 56 million people in 2020, rising to 96 million by 2050 (Lancet Rheumatology, 2024)."
+  url: https://pubmed.ncbi.nlm.nih.gov/38996590/
+status:
+  level: 2
+  why: "Daily urate-lowering pills dissolve crystals and stop attacks for most people, but gout returns if they stop."
+  today: "Allopurinol and febuxostat lower uric acid and, taken long term, prevent flares. Pegloticase infusions help the small group whose gout resists pills. Many patients are under-treated or stop their pills."
+  last_reviewed: null
+treatment:
+  best:
+  - "Allopurinol"
+  - "Febuxostat"
+  - "Pegloticase (for resistant gout)"
+  burden: light
+  burden_note: "One cheap pill a day, long term, after an early period of flare prevention."
+forecast:
+  bottleneck: access-limited
+pipeline:
+- name: "SEL-212 (pegadricase with ImmTOR)"
+  stage: "Filed"
+  note: "Monthly infusion for chronic refractory gout; Sobi began a rolling FDA filing in 2024 based on two Phase 3 trials. Current status unclear."
+  url: https://thepharmaletter.com/sobi-initiates-rolling-biologics-license-application-to-fda-for-sel-212
+  effect: small
+  effect_note: "Helps the few with resistant gout; does not change the outlook for most."
+recent: []
+next_milestone: null
+markets: []

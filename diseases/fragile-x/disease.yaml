@@ -1,0 +1,29 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: fragile-x
+name: "Fragile X syndrome"
+category: genetic
+tracking: proposed
+summary: "The most common inherited cause of intellectual disability, caused by a silenced FMR1 gene."
+toll:
+  text: "About 1 in 4,000 to 5,000 boys and 1 in 6,000 to 8,000 girls (CDC estimates)."
+  url: https://www.cdc.gov/fragile-x-syndrome/data/index.html
+status:
+  level: 1
+  why: "Therapy and medicines ease symptoms like anxiety and attention problems, but nothing treats the cause."
+  today: "Care uses early intervention, special education, speech therapy and medicines for anxiety, attention or mood. No drug is approved for Fragile X itself. In 2026 the leading drug candidate, zatolmilast, missed its main goal in two Phase 3 trials."
+  last_reviewed: null
+treatment:
+  best:
+  - "Early intervention and special education"
+  - "Medicines for anxiety, attention and mood"
+  burden: heavy
+  burden_note: "Lifelong support and therapy; symptom medicines taken daily."
+forecast:
+  bottleneck: biology-limited
+pipeline: []
+recent:
+- date: "2026-05"
+  text: "Shionogi said zatolmilast failed its main cognition goal in two Phase 3 trials in teens and adults."
+  url: https://www.clinicaltrialsarena.com/news/shionogi-zatolmilast-fxs-double-phase-iii-miss/
+next_milestone: null
+markets: []

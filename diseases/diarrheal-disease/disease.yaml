@@ -1,0 +1,30 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: diarrheal-disease
+name: "Diarrheal disease (cholera, rotavirus and others)"
+category: infectious
+tracking: proposed
+summary: "Infections of the gut, spread by dirty water, food or hands, that cause watery diarrhea and can kill through dehydration."
+toll:
+  text: "About 444,000 deaths a year in children under 5 (WHO, 2024)."
+  url: https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease
+status:
+  level: 4
+  why: "Oral rehydration salts and zinc save almost everyone who gets them, but children still die where care is out of reach."
+  today: "Most episodes clear once fluids are replaced; oral rehydration salts, zinc and, for cholera, antibiotics treat severe cases. Rotavirus and cholera vaccines prevent many cases. Cholera killed 7,870 people in 2025, the most since 1999, according to WHO."
+  last_reviewed: null
+treatment:
+  best:
+  - "Oral rehydration salts and zinc"
+  - "Rotavirus vaccine"
+  - "Oral cholera vaccine"
+  burden: light
+  burden_note: "A few days of cheap oral fluids and zinc; deaths come from lack of access, not lack of a cure."
+forecast:
+  bottleneck: access-limited
+pipeline: []
+recent:
+- date: "2026-01"
+  text: "WHO reported 451,499 cholera cases and 7,870 deaths in 2025, a 30% rise in deaths from 2024."
+  url: https://www.cidrap.umn.edu/cholera/who-global-cholera-deaths-rose-30-2025
+next_milestone: null
+markets: []

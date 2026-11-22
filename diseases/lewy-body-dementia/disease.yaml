@@ -1,0 +1,35 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: lewy-body-dementia
+name: "Lewy body dementia"
+category: neuro
+tracking: proposed
+summary: "A dementia caused by clumps of alpha-synuclein protein in the brain, bringing memory loss, hallucinations, movement problems and swings in alertness."
+toll:
+  text: "The second most common progressive dementia after Alzheimer's (Psychiatric Times, 2026)."
+  url: https://www.psychiatrictimes.com/view/neflamapimod-for-dementia-with-lewy-bodies-misses-end-point-subgroup-signal-emerges
+status:
+  level: 1
+  why: "Some drugs ease symptoms, but nothing slows the disease."
+  today: "Cholinesterase inhibitors such as rivastigmine can help thinking and hallucinations, and Parkinson's drugs can help movement. Many antipsychotics are dangerous for these patients. No drug is approved in the US or EU to treat the disease itself."
+  last_reviewed: null
+treatment:
+  best:
+  - "Cholinesterase inhibitors"
+  - "Levodopa for movement symptoms"
+  burden: moderate
+  burden_note: "Daily pills for symptoms, with careful drug choices because of sensitivity to antipsychotics."
+forecast:
+  bottleneck: biology-limited
+pipeline:
+- name: "Neflamapimod"
+  stage: "Phase 3"
+  note: "Oral p38 alpha kinase blocker; its Phase 2b trial missed the main goal but helped a subgroup with pure Lewy body disease, and CervoMed planned a 300-patient Phase 3 from late 2026."
+  url: https://www.psychiatrictimes.com/view/neflamapimod-for-dementia-with-lewy-bodies-misses-end-point-subgroup-signal-emerges
+  effect: some
+  effect_note: "Would be the first drug to slow the disease, likely in about half of patients."
+recent:
+- date: "2026-10"
+  text: "Full Phase 2b results for neflamapimod showed no benefit on the main measure but a signal in a biomarker-defined subgroup."
+  url: https://www.psychiatrictimes.com/view/neflamapimod-for-dementia-with-lewy-bodies-misses-end-point-subgroup-signal-emerges
+next_milestone: null
+markets: []
