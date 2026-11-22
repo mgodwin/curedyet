@@ -292,6 +292,11 @@ a.more{text-decoration:none}
 .quote .who{display:flex;flex-direction:column;gap:2px;font-size:14px}
 .quote .ctx{margin:0;font-size:14px;color:var(--muted)}
 .quote .src{font-size:14px;font-weight:600;text-decoration:none;margin-top:auto}.quote .src:hover{text-decoration:underline}
+.card .scale{margin:0;padding:0;list-style:none;display:flex;flex-direction:column}
+.scale li{display:grid;grid-template-columns:200px minmax(0,1fr);gap:4px 20px;align-items:baseline;padding:12px 0;border-top:1px solid var(--rule);font-size:14px}
+.scale li:first-child{border-top:0;padding-top:0}
+.scale b{font-family:var(--f-display);font-size:26px;line-height:1.1}
+@media (max-width:640px){.scale li{grid-template-columns:1fr}}
 .about-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));gap:12px}
 .about-cols .card{padding:20px}.about-cols p{margin:0;font-size:14px}
 .dfoot{border-top:1px solid var(--soft);padding-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;align-items:baseline;font-size:14px}
@@ -795,7 +800,7 @@ const CLAIMS=[
    quote:"\u2026cure, prevent, or manage all diseases in our children's lifetime.",
    ctx:"The goal they set when they committed $3 billion over ten years to science, years before today's AI boom.",
    url:"https://chanzuckerberg.com/newsroom/supporting-scientific-research-to-cure-prevent-or-manage-all-diseases-in-our-childrens-lifetime/",label:"Read the announcement"}];
-function about(){const repo=S.meta?.repo,n=S.dz.length;
+function about(){const repo=S.meta?.repo,n=S.dz.length,groups=S.dz.flatMap(lines).length,cured=S.dz.filter(d=>lv(d)>=4).length,cancers=S.dz.filter(d=>d.category==="cancer").length;
   const card=c=>`<figure class="quote"><span class="eyebrow">${fd(c.date)} · ${esc(c.where)}</span>
     <blockquote>“${esc(c.quote)}”</blockquote>
     <figcaption class="who"><b>${esc(c.who)}</b><span class="muted">${esc(c.role)}</span></figcaption>
@@ -807,9 +812,17 @@ function about(){const repo=S.meta?.repo,n=S.dz.length;
     <p class="lede">Some of the most prominent people in AI have said, in public and on the record, that AI could help cure all or most disease, and some say within a decade. That is a big claim, and it can be checked. This site exists to check it, one disease at a time.</p></header>
   <section style="display:flex;flex-direction:column;gap:12px"><h2 class="ch">What they've said</h2>
     <div class="quotes">${CLAIMS.map(card).join("")}</div></section>
+  <section class="card" style="padding:20px;gap:14px"><h2 class="ch">How big is the job?</h2>
+    <p style="margin:0">“All disease” is a lot. Here is the scale, and the slice this site covers.</p>
+    <ul class="scale">
+      <li><b class="num">~17,000</b><span>Diagnostic categories in the WHO's disease list, ICD-11. It also counts injuries and causes of death, and splits many diseases into subtypes, so it overcounts distinct diseases. ${link("https://www.who.int/news/item/14-02-2025-who-releases-2025-update-to-the-international-classification-of-diseases-%28icd-11%29","WHO, 2025")}</span></li>
+      <li><b class="num">7,000–10,000</b><span>Known rare diseases. Only about 5% have a treatment approved by the FDA. ${link("https://files.gao.gov/reports/GAO-25-106774/index.html","GAO, 2025")}</span></li>
+      <li><b class="num">1</b><span>Human disease ever eradicated: smallpox, declared gone in 1980. ${link("https://www.who.int/health-topics/smallpox","WHO")}</span></li>
+      <li><b class="num">${n||100}</b><span>Of the most common and deadliest diseases tracked here${cancers?`, ${cancers} of them cancers`:""}${groups?`, split into ${groups} patient groups by stage or type`:""}. A few already-cured ones are included for comparison. ${cured?`Today ${cured} of the ${n} are cured for most patients.`:""} We add more over time, and anyone can suggest one.</span></li>
+    </ul></section>
   <section style="display:flex;flex-direction:column;gap:12px"><h2 class="ch">How we track it</h2>
     <div class="about-cols">
-      <div class="card"><b>Where each disease stands</b><p>We follow ${n||"80+"} diseases. Each sits on a ladder from no treatment to cured for all, with a separate rating for how hard its treatment is. You can see the whole picture on the ${`<a href="#stats">stats page</a>`}.</p></div>
+      <div class="card"><b>Where each disease stands</b><p>We follow ${n||"100"} of the most common diseases and cancers. Each sits on a ladder from no treatment to cured for all, with a separate rating for how hard its treatment is. You can see the whole picture on the ${`<a href="#stats">stats page</a>`}.</p></div>
       <div class="card"><b>Two forecasts, blended</b><p>Each disease gets a forecast at today's pace and one for a much faster pipeline. How far we lean toward the faster one depends on evidence that drug discovery, trials and approvals are actually speeding up. See ${`<a href="#pipeline">the cure pipeline</a>`}.</p></div>
       <div class="card"><b>Claims are signals, results are evidence</b><p>When a leader predicts a timeline, we note who said it, when, and what stake they have. It never moves a number on its own. A drug entering trials, a published result or an approval does.</p></div>
       <div class="card"><b>Scored against what happens</b><p>Every disease is reviewed each month. We also make short, dated yes-or-no forecasts and publish how accurate they turned out. See ${`<a href="#record">the latest update</a>`}.</p></div>
