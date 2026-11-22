@@ -21,7 +21,7 @@ status:
     lecanemab is now approved for starting and maintaining treatment at home. People at moderate and late
     stages have only drugs that ease symptoms, and many 2026 trials (semaglutide, AL002, XPro1595)
     failed.
-  last_reviewed: '2026-11-15'
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Lecanemab (Leqembi, IV or Iqlik subcutaneous)
@@ -67,15 +67,18 @@ pipeline:
   stage: Phase 3
   url: https://clinicaltrials.gov/study/NCT05026866
 - name: AR1001 (AriBio, PDE5 inhibitor)
-  note: Topline results from the 1,535-person, 52-week POLARIS-AD trial are scheduled for CTAD on Nov
-    16, 2026; primary endpoint is change in CDR-SB.
+  note: POLARIS-AD met its primary endpoint in the monotherapy group (604 people, 31% slower CDR-SB decline)
+    but not in the full 1,535-person population; AriBio plans to discuss next steps with the FDA.
   stage: Phase 3
-  url: https://clinicaltrials.gov/study/NCT05531526
+  url: https://www.neurologylive.com/view/ar1001-slows-decline-monotherapy-group-phase-3-alzheimer-trial
 - name: Remternetug (Lilly)
   note: Next-generation amyloid antibody in TRAILRUNNER-ALZ trials.
   stage: Phase 3
   url: https://clinicaltrials.gov/study/NCT05463731
 recent:
+- date: 2026-11
+  text: "AriBio's oral AR1001 slowed decline 31% on CDR-SB in the monotherapy group of POLARIS-AD, one of two primary populations, but not in the full trial population."
+  url: https://www.neurologylive.com/view/ar1001-slows-decline-monotherapy-group-phase-3-alzheimer-trial
 - date: 2026-07
   text: FDA approved subcutaneous lecanemab for starting treatment, removing the need for IV infusions.
   url: https://www.healio.com/news/neurology/20260717/subcutaneous-leqembi-approved-for-initiation-longterm-stability-with-treatment-indicated
@@ -87,10 +90,7 @@ recent:
   text: Roche showed one-year trontinemab extension data with continued amyloid clearance and launched
     the PREVENTRON prevention trial.
   url: https://www.neurologylive.com/view/roche-unveils-preventron-phase-3-prevention-trial-trontinemab-cognitively-unimpaired-individuals-high-risk-alzheimers
-next_milestone:
-  date: '2026-11-16'
-  url: https://www.alzint.org/news-events/events/clinical-trials-on-alzheimers-disease-ctad-2026/
-  what: AR1001 Phase 3 POLARIS-AD results presented at CTAD 2026 in Boston.
+next_milestone: null
 ai:
   impact: some
   note: AI is used to read amyloid PET and MRI scans and to flag ARIA, and to screen targets, but no AI-discovered

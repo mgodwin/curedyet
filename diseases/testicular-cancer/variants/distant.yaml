@@ -10,3 +10,10 @@ survival: 72% alive at 5 years (SEER relative survival, diagnosed 2015-2021)
 treatment: Cisplatin-based combination chemotherapy, often with surgery. Many are cured, but fewer than
   85%.
 url: https://www.cancer.org/cancer/testicular-cancer/detection-diagnosis-staging/survival-rates.html
+forecast:
+  median: 2050
+  low: 2034
+  high: 2090
+  p2035: 12
+  p2045: 35
+  note: "Cured for most would need better treatment for tumors that resist cisplatin. No curative Phase 3 for that group is listed here."

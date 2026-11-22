@@ -30,9 +30,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [WHO: Two new candidate vaccines to join Ebola trial as treatment research advances (4 Nov 2026)](https://www.who.int/news/item/04-11-2026-two-new-candidate-vaccines-to-join-ebola-trial-as-treatment-research-advances) - TUMAINI additions, maftivimab arm, expected timing of results
 - [ECDC: Bundibugyo Ebola update (3 Nov 2026)](https://www.ecdc.europa.eu/en/public-health-events/2026-eip-00026/2026-11-03) - DRC death count under review after a data harmonisation issue
 - [ECDC: Ebola multi-country outbreak 2026 (updated Nov 13, 2026)](https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda) - confirmed cases and deaths by country
+- [WHO Disease Outbreak News 630 (Nov 2026)](https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON630) - Bundibugyo outbreak counts to Nov 17
 
 ## Research log
 
+- 2026-11-22: Outbreak toll refreshed from WHO Disease Outbreak News 630 (data to Nov 17, 2026): 11,613 confirmed cases and 5,678 deaths in DRC; Uganda outbreak declared over.
 - 2026-11-15: Refreshed the toll from ECDC (11,197 confirmed cases and 5,471 related deaths in DRC as of 12 Nov; Kenya 9 cases, 2 deaths; Nigeria 1 imported case; Uganda outbreak over). No trial result yet, so forecasts are unchanged.
 - 2026-11-09: Refreshed the toll from WHO DON625 (10,668 confirmed cases and 5,198 deaths in DRC as of 3 Nov; Kenya 9 cases, 2 deaths; one imported case from Nigeria). Added WHO's 4 Nov news: Oxford ChAdOx1 and Moderna mRNA-1469 recommended for TUMAINI, a maftivimab arm coming to PARTNERS, treatment findings expected in the coming months and vaccine results in early 2027. No approval or trial result yet, so forecasts are unchanged.
 - 2026-11-04: Added status.groups rating each subtype on the cure ladder with its own burden and survival.

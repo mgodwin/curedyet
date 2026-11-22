@@ -2,7 +2,7 @@
 id: guinea-worm
 name: Guinea worm disease
 category: infectious
-tracking: proposed
+tracking: active
 summary: A parasitic infection caught from unfiltered water, in which the worm later emerges through the
   skin.
 toll:
@@ -16,7 +16,7 @@ status:
   today: Once the worm starts to emerge, the whole worm has to be removed; anti-inflammatory medicine
     and antibiotic ointment ease pain and prevent infection. The 2025 cases were in Chad, Ethiopia and
     South Sudan.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Worm removal
@@ -24,6 +24,22 @@ treatment:
   - Antibiotic ointment
   burden: moderate
   burden_note: No medicine kills the worm; care is removal and wound care.
+forecast:
+  bottleneck: access-limited
+  normal:
+    p2035: 25
+    p2045: 55
+    median: 2043
+    low: 2030
+    high: 2085
+  faster:
+    p2035: 30
+    p2045: 60
+    median: 2041
+    low: 2030
+    high: 2080
+  faster_note: "Faster progress depends on funding, security and stopping animal infections, not on new science."
+  outlook: "No drug or vaccine exists, so the path to a cure is eradication, which would end the disease for everyone. Human cases fell from about 3.5 million a year in 1986 to 10 in 2025. Infections in dogs and other animals, and insecurity, keep slowing the last steps. These odds are for eradication, not a drug."
 pipeline: []
 recent: []
 next_milestone: null

@@ -9,9 +9,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Agios mitapivat PDUFA delay](https://www.stocktitan.net/news/AGIO/agios-announces-new-pdufa-goal-date-of-february-1-2027-for-mitapivat-b8gxlfed3y4l.html)
 - [Beam Q1 2026 results](https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-reports-first-quarter-2026-financial-results/)
 - [ACSH: limits of sickle cell gene therapy](https://www.acsh.org/news/2026/06/19/sickle-cell-gene-therapy-and-limits-medical-triumph-50183)
+- [HCPLive: etavopivat submitted to FDA and EMA (Nov 2026)](https://www.hcplive.com/view/etavopivat-submitted-to-fda-after-27-voc-reduction-in-phase-3-scd-trial) - HIBISCUS results and 2027 decision timing
 
 ## Research log
 
+- 2026-11-22: Full review. Etavopivat was submitted to the FDA and EMA on Nov 13, 2026. It treats symptoms and is not curative, so the forecast is unchanged.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 
 ## Open questions

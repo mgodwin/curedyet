@@ -2,7 +2,7 @@
 id: smallpox
 name: Smallpox
 category: infectious
-tracking: proposed
+tracking: active
 summary: A deadly viral disease that the world eradicated, declared gone in 1980.
 toll:
   text: Over 10 million cases and 2 million deaths in 43 countries in 1967; the last natural case was
@@ -15,7 +15,7 @@ status:
   today: No one has caught smallpox naturally since 1977. Two antivirals, tecovirimat (2018) and brincidofovir
     (2021), are approved in case it returns, but only on animal data. Vaccines given within 2 to 3 days
     of exposure can prevent or lessen disease.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Vaccination (led to eradication)
@@ -23,6 +23,10 @@ treatment:
   - Brincidofovir
   burden_note: No treatment is needed because the disease no longer occurs; the stockpiled antivirals
     are untested in sick people.
+forecast:
+  reached: 1980
+  faster_note: "Already eradicated."
+  outlook: "Smallpox was eradicated: WHO declared it gone in 1980. Two antivirals and vaccines are stockpiled in case it returns."
 pipeline: []
 recent: []
 next_milestone: null

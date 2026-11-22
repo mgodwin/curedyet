@@ -2,7 +2,7 @@
 id: attr-amyloidosis
 name: ATTR amyloidosis
 category: cardio
-tracking: proposed
+tracking: active
 summary: A disease in which a misfolded protein, transthyretin, builds up in the heart or nerves and causes
   heart failure or nerve damage.
 status:
@@ -12,7 +12,7 @@ status:
   today: Tafamidis (2019) and acoramidis (2024) are approved for the heart form. Vutrisiran lowered deaths
     and cardiovascular events in the 655-patient HELIOS-B trial and is now approved for the heart form
     too. A one-time CRISPR treatment, nex-z, is in Phase 3.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Tafamidis (Vyndamax)
@@ -22,6 +22,20 @@ treatment:
   burden_note: Lifelong daily pills or regular injections.
 forecast:
   bottleneck: trial-limited
+  normal:
+    p2035: 10
+    p2045: 32
+    median: 2049
+    low: 2032
+    high: 2085
+  faster:
+    p2035: 18
+    p2045: 48
+    median: 2045
+    low: 2031
+    high: 2075
+  faster_note: "Faster outcome trials and quicker safety reviews would help most. The FDA paused both nex-z trials for months after a liver injury in 2025."
+  outlook: "Approved drugs slow ATTR amyloidosis but do not stop it. Nex-z, a one-time CRISPR edit that switches off the TTR gene in the liver, finished enrolling its Phase 3 nerve trial (MAGNITUDE-2) in Q3 2026, and its heart trial (MAGNITUDE) is well advanced. If outcomes are strong, one-time editing could halt the disease for many, though damage already done may remain."
 pipeline:
 - name: Nex-z (nexiguran ziclumeran)
   stage: Phase 3
@@ -32,6 +46,9 @@ pipeline:
   effect: big
   effect_note: A one-time edit that stops the disease would be the first real cure.
 recent:
+- date: 2026-11
+  text: "Intellia finished enrolling MAGNITUDE-2, the Phase 3 trial of nex-z in the nerve form, with more than 60 patients."
+  url: https://www.globenewswire.com/news-release/2026/11/04/3395255/0/en/intellia-therapeutics-completes-enrollment-in-phase-3-magnitude-2-trial-of-nexiguran-ziclumeran-nex-z-for-patients-with-hereditary-transthyretin-amyloidosis-with-polyneuropathy-att.html
 - date: 2026-03
   text: FDA lifted the clinical hold on MAGNITUDE, the Phase 3 trial of nex-z in ATTR cardiomyopathy.
   url: https://oligotherapeutics.org/phase-3-trials-of-intellias-nex-z-crispr-therapy-resume-after-the-clinical-holds-are-lifted/

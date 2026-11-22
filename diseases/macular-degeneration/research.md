@@ -11,9 +11,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Spooner et al., Real-World 10-Year Outcomes of Anti-VEGF Therapy for Neovascular AMD: A Meta-Analysis (Clinical & Experimental Ophthalmology, 2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12516669/) - survival by subtype
 - [Heier et al., Pegcetacoplan for geographic atrophy (OAKS and DERBY), The Lancet 2023](https://pubmed.ncbi.nlm.nih.gov/37865470/) - survival by subtype
 - [National Eye Institute: AREDS/AREDS2 major findings](https://nei.nih.gov/research/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2) - survival by subtype
+- [REGENXBIO Q3 2026 results (Nov 2026)](https://www.prnewswire.com/news-releases/regenxbio-reports-third-quarter-2026-financial-results-and-operational-highlights-302930190.html) - sura-vec topline Q4 2026, filings 2027
 
 ## Research log
 
+- 2026-11-22: Full review. Sura-vec Phase 3 topline is still expected in Q4 2026, with global filings planned for 2027. Forecast unchanged.
 - 2026-11-04: Added status.groups rating each subtype on the cure ladder with its own burden and survival.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 

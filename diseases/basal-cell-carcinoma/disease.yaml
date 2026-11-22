@@ -2,7 +2,7 @@
 id: basal-cell-carcinoma
 name: Basal cell skin cancer
 category: cancer
-tracking: proposed
+tracking: active
 summary: The most common skin cancer, which grows slowly in the skin and rarely spreads.
 toll:
   text: About 5.4 million basal and squamous cell skin cancers are diagnosed each year in the US, in about
@@ -15,7 +15,7 @@ status:
   today: Most basal cell cancers are cut out, by standard excision or Mohs surgery. The rare advanced
     cases that can't be operated on are treated with hedgehog-pathway pills such as vismodegib and sonidegib,
     which shrink tumors in a minority.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Mohs surgery
@@ -25,6 +25,10 @@ treatment:
   burden_note: Usually a short outpatient skin surgery.
 forecast:
   bottleneck: access-limited
+  reached: 1989
+  reached_easy: 1989
+  faster_note: "Already curable for most. Acceleration matters mainly for advanced disease and for prevention."
+  outlook: "Most basal cell cancers are cured by outpatient skin surgery, and this tracker dates that to no later than 1989, matching the primary-tumor page. The hard cases are rare advanced tumors that surgery can't remove, where hedgehog-pathway pills shrink tumors in a minority."
 pipeline: []
 recent: []
 next_milestone: null

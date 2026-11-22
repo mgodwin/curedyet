@@ -27,6 +27,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-22: Full review. No approval, rejection or pivotal readout found since the last review. Forecast unchanged.
 - 2026-11-05: Baseline research for the first Cure Watch snapshot: toll, ladder levels for paroxysmal and persistent AF, factor XI pipeline dates from ClinicalTrials.gov, ablation and LAAC evidence, forecasts.
 
 ## Open questions

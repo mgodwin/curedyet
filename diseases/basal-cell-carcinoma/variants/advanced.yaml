@@ -10,3 +10,10 @@ survival: Tumors shrink in 43% of locally advanced and 30% of metastatic cases o
 treatment: Hedgehog-pathway pills (vismodegib, sonidegib) shrink tumors in a minority.
 url: https://www.targetedonc.com/view/hedgehog-pathway-inhibitors-explored-in-advanced-skin-cancer
 caveat: Response rates are not cure rates; cemiplimab immunotherapy is also used but not yet sourced here.
+forecast:
+  median: 2055
+  low: 2038
+  high: 2100
+  p2035: 4
+  p2045: 15
+  note: "Cured for most would need drugs that clear tumors surgery can't remove. Hedgehog-pathway pills shrink tumors in a minority, and no curative Phase 3 is listed here."

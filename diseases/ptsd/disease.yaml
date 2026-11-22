@@ -2,7 +2,7 @@
 id: ptsd
 name: PTSD (post-traumatic stress disorder)
 category: mental
-tracking: proposed
+tracking: active
 summary: A mental health condition that can develop after a frightening or threatening event.
 toll:
   text: About 3.9% of people worldwide have PTSD at some point in their lives (WHO, 2026).
@@ -14,7 +14,7 @@ status:
   today: WHO recommends trauma-focused cognitive behavioural therapy and EMDR first, with some antidepressants
     when therapy isn't available. The FDA turned down MDMA-assisted therapy in August 2024 and brexpiprazole
     with sertraline in September 2025.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Trauma-focused CBT
@@ -24,8 +24,25 @@ treatment:
   burden_note: A course of therapy sessions, or daily medicine.
 forecast:
   bottleneck: biology-limited
+  normal:
+    p2035: 2
+    p2045: 8
+    median: 2070
+    low: 2044
+    high: 2100
+  faster:
+    p2035: 6
+    p2045: 16
+    median: 2056
+    low: 2037
+    high: 2100
+  faster_note: "Faster psychedelic-assisted therapy trials, with designs regulators accept, would help most."
+  outlook: "Trauma-focused therapy and some drugs help many people, but symptoms often persist. The FDA rejected MDMA-assisted therapy in Aug 2024 and asked for another Phase 3. Israel opened a national trial of MDMA and psilocybin with therapy in Oct 2026. This tracker found no Phase 3 running now."
 pipeline: []
 recent:
+- date: 2026-10
+  text: "Israel's Health Ministry opened a national trial of MDMA and psilocybin with psychotherapy for treatment-resistant PTSD."
+  url: https://www.techtimes.com/articles/329458/20261025/israel-opens-first-national-mdma-psilocybin-ptsd-trial-after-fda-rejection.htm
 - date: 2025-09
   text: FDA rejected brexpiprazole plus sertraline for PTSD, citing insufficient evidence it works.
   url: https://www.managedhealthcareexecutive.com/view/fda-rejects-rexulti-for-ptsd-noting-insufficient-evidence-of-effectiveness

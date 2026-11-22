@@ -21,7 +21,7 @@ status:
     do not stop disease. Matched donor transplant and the gene therapies Casgevy and Lyfgenia are curative-intent,
     but they need harsh chemotherapy conditioning, cost $2-3M, and treated only about 160 US patients
     in 2025. Casgevy was extended to children 2 and older in the US in July 2026.
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Casgevy (exa-cel)
@@ -62,9 +62,10 @@ pipeline:
   stage: Phase 2
   url: https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-reports-first-quarter-2026-financial-results/
 - name: Etavopivat (Novo Nordisk)
-  note: HIBISCUS cut pain crises and raised hemoglobin.
-  stage: Phase 3
-  url: https://www.hcplive.com/view/phase-3-hibiscus-etavopivat-cuts-voc-events-improves-hemoglobin-in-scd
+  note: HIBISCUS cut pain crises 27% and raised hemoglobin; submitted to the FDA and EMA in Nov 2026,
+    with decisions expected in 2027.
+  stage: Filed
+  url: https://www.hcplive.com/view/etavopivat-submitted-to-fda-after-27-voc-reduction-in-phase-3-scd-trial
 - name: BEAM-103 (antibody conditioning, ESCAPE)
   note: Aims to replace chemotherapy conditioning, the main barrier to gene therapy.
   stage: Phase 1
@@ -74,6 +75,9 @@ pipeline:
   stage: Approved 2025-26
   url: https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results
 recent:
+- date: 2026-11
+  text: "Novo Nordisk submitted etavopivat to the FDA and EMA after it cut pain crises 27% in the HIBISCUS Phase 3."
+  url: https://www.hcplive.com/view/etavopivat-submitted-to-fda-after-27-voc-reduction-in-phase-3-scd-trial
 - date: 2026-07
   text: FDA approved Casgevy for children aged 2 and older with SCD.
   url: https://news.vrtx.com/news-releases/news-release-details/vertex-reports-third-quarter-2026-financial-results

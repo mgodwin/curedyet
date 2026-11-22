@@ -2,7 +2,7 @@
 id: psoriasis
 name: Psoriasis
 category: immune
-tracking: proposed
+tracking: active
 summary: A long-term immune disease that causes thick, scaly patches of skin and can affect the joints.
 toll:
   text: About 100 million people worldwide (WHO, 2016).
@@ -15,7 +15,7 @@ status:
     moderate to severe psoriasis. In March 2026 the FDA approved icotrokinra (Icotyde), an oral IL-23
     receptor blocker; about 70% of patients reached clear or almost clear skin at week 16 in head-to-head
     trials.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - IL-17 and IL-23 blocking biologics
@@ -25,6 +25,20 @@ treatment:
   burden_note: Regular injections or daily pills, long term.
 forecast:
   bottleneck: biology-limited
+  normal:
+    p2035: 3
+    p2045: 10
+    median: 2063
+    low: 2040
+    high: 2100
+  faster:
+    p2035: 6
+    p2045: 18
+    median: 2052
+    low: 2036
+    high: 2095
+  faster_note: "Trials designed to test drug-free remission after early, strong treatment would help most."
+  outlook: "Biologic injections clear skin for many, and an oral IL-23 pill, icotrokinra (Icotyde), was approved in March 2026. But psoriasis returns when treatment stops. A cure would need lasting drug-free remission, and no late-stage trial targets that."
 pipeline:
 - name: Zasocitinib (TAK-279)
   stage: Phase 3

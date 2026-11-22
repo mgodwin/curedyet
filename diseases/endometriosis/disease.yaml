@@ -2,7 +2,7 @@
 id: endometriosis
 name: Endometriosis
 category: other
-tracking: proposed
+tracking: active
 summary: A disease in which tissue similar to the lining of the womb grows outside it, often causing pelvic
   pain and trouble getting pregnant.
 toll:
@@ -14,7 +14,7 @@ status:
   today: Treatment aims to control symptoms with pain relievers, hormonal medicines such as progestins
     and GnRH analogues, and surgery to remove lesions. WHO notes that even hysterectomy is not a cure.
     Fertility treatment helps some people who want to conceive.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Pain relievers
@@ -24,7 +24,24 @@ treatment:
   burden_note: Long-term hormones or surgery; some hormonal options don't suit people trying to get pregnant.
 forecast:
   bottleneck: biology-limited
+  normal:
+    p2035: 1
+    p2045: 4
+    median: 2078
+    low: 2050
+    high: 2100
+  faster:
+    p2035: 3
+    p2045: 10
+    median: 2063
+    low: 2042
+    high: 2100
+  faster_note: "Faster non-surgical diagnosis and more research funding would help most. Diagnosis often takes years today."
+  outlook: "Surgery and hormone drugs ease pain, but endometriosis often returns, and hormone drugs block pregnancy while taken. Non-hormonal drugs are early: Gesynta finished enrolling its Phase 2 trial of vipoglanstat in Oct 2026. No trial aims at a cure."
 pipeline: []
-recent: []
+recent:
+- date: 2026-10
+  text: "Gesynta finished enrolling NOVA, a Phase 2 trial of the non-hormonal drug vipoglanstat."
+  url: https://www.globenewswire.com/news-release/2026/10/20/3384048/0/en/gesynta-pharma-completes-enrollment-in-phase-2-nova-trial-evaluating-vipoglanstat-in-endometriosis.html
 next_milestone: null
 markets: []

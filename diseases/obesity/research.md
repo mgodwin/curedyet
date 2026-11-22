@@ -15,9 +15,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Guimarães et al., How Sustained is Roux-en-Y Gastric Bypass Long-term Efficacy?, Obesity Surgery 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC8270797/): 281 patients at 12.2 years; 29.5% BMI under 30, mean 24.3% total weight loss, 29.9% lost under 20%, diabetes remission 54.2%.
 - [Salminen et al., SLEEVEPASS 10-year results, JAMA Surgery 2022](https://researchportal.tuni.fi/en/publications/effect-of-laparoscopic-sleeve-gastrectomy-vs-roux-en-y-gastric-by-2/): excess weight loss 43.5% sleeve vs 50.7% bypass at 10 years; diabetes remission about 26% vs 33%.
 - [ASMBS, Bariatric surgery procedures fall below 200,000 (May 2026)](https://www.eurekalert.org/news-releases/1126342): under 200,000 US procedures in 2024; less than 1% of eligible people have surgery in a given year.
+- [MedCentral: FDA decision nears for CagriSema (Nov 2026)](https://www.medcentral.com/endocrinology/obesity/fda-decision-nears-for-cagrisema-in-obesity) - NDA under review, decision expected Q4 2026
 
 ## Research log
 
+- 2026-11-22: Full review. CagriSema was still under FDA review as of Nov 5, 2026, with a decision expected by year end. Forecast unchanged.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 - 2026-11-05: Reviewed long-term surgery evidence (Utah 12-year cohort, LABS-2, SOS, SLEEVEPASS, Portuguese 12-year cohort). About half of people with diabetes stay in remission 12 years after bypass and about 30% sit below BMI 30, so moved level 2 to 3 (cured for some); burden stays moderate because GLP-1 drugs are the typical best option, with surgery noted as heavy. Forecast numbers unchanged; outlook text updated.
 

@@ -2,8 +2,11 @@
 id: thyroid-cancer
 name: Thyroid cancer
 category: cancer
-tracking: proposed
+tracking: active
 summary: Cancer that starts in the thyroid gland in the neck.
+toll:
+  text: About 45,240 new cases and 2,320 deaths expected in the US in 2026 (American Cancer Society).
+  url: https://www.cancer.org/cancer/types/thyroid-cancer/about/key-statistics.html
 status:
   level: 4
   why: About 9 in 10 thyroid cancers are papillary or follicular, and over 98% of those patients are alive
@@ -11,7 +14,7 @@ status:
   today: Most thyroid cancers are treated with surgery, with radioactive iodine for some. Five-year survival
     is over 99% for papillary, 98% for follicular and 93% for medullary cancer, but only 10% for the rare
     anaplastic type.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Surgery
@@ -20,6 +23,9 @@ treatment:
   burden_note: Surgery, sometimes radioactive iodine, and often lifelong thyroid hormone pills.
 forecast:
   bottleneck: biology-limited
+  reached: 1975
+  faster_note: "Already curable for most. Gains would come from treatments for anaplastic and drug-resistant tumors."
+  outlook: "Surgery, often with radioactive iodine, cures most papillary and follicular thyroid cancers, which make up most cases. Anaplastic thyroid cancer is rare and still deadly."
 pipeline: []
 recent: []
 next_milestone: null

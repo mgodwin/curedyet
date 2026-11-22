@@ -2,7 +2,7 @@
 id: bacterial-stis
 name: Gonorrhea, chlamydia and syphilis
 category: infectious
-tracking: proposed
+tracking: active
 summary: Common bacterial infections passed on through sex.
 toll:
   text: About 129 million new chlamydia, 82 million gonorrhea and 7.1 million syphilis infections in 2020
@@ -15,7 +15,7 @@ status:
   today: Antibiotics cure chlamydia, gonorrhea and syphilis. Gonorrhea resistance has risen fast, including
     to the last-line class that includes ceftriaxone. In December 2025 the FDA approved two new oral antibiotics,
     gepotidacin (Blujepa) and zoliflodacin (Nuzolvence), the first new gonorrhea drugs since 1987.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Ceftriaxone (gonorrhea)
@@ -26,8 +26,15 @@ treatment:
   burden_note: Usually a single dose or short course of antibiotics.
 forecast:
   bottleneck: access-limited
+  reached: 1945
+  reached_easy: 1945
+  faster_note: "Already curable. Faster progress would come from new antibiotics for resistant gonorrhea, vaccines and wider testing."
+  outlook: "Antibiotics have cured syphilis, gonorrhea and chlamydia for most people since penicillin spread in the mid-1940s (year approximate), usually with a single shot or a short pill course. Drug-resistant gonorrhea is the main threat. In Dec 2025 the FDA approved two new oral gonorrhea antibiotics, zoliflodacin (Nuzolvence) and gepotidacin (Blujepa). Infections stay common because many go untested."
 pipeline: []
 recent:
+- date: 2025-12
+  text: "FDA approved two new oral gonorrhea antibiotics, zoliflodacin (Nuzolvence) and gepotidacin (Blujepa)."
+  url: https://www.cidrap.umn.edu/antimicrobial-stewardship/fda-approves-2-new-oral-gonorrhea-antibiotics
 - date: 2025-12
   text: FDA approved gepotidacin (Blujepa) and zoliflodacin (Nuzolvence), the first new gonorrhea antibiotics
     since 1987.

@@ -1,0 +1,58 @@
+date: '2026-11-22'
+week: 4
+headline: "Metabolic, genetic, heart and other conditions reviewed and 19 new conditions now tracked. The FDA approved a first-of-its-kind pill to prevent repeat strokes, and an oral Alzheimer's drug met one of its two goals."
+summary: "Reviewed all 19 already-tracked conditions in the metabolic, genetic, heart and other groups, plus Alzheimer's, Ebola and measles for news. Nineteen proposed conditions got forecasts and joined the tracker. No level, treatment burden or long-range forecast changed for an existing condition. The Alzheimer's check resolved yes, the epilepsy check was lowered, and one check was added."
+changes:
+- target: "Epilepsy check: FDA accepts azetukalner NDA by 2026-12-31"
+  from: 88
+  to: 80
+  why: "No acceptance announced about 60 days after the September submission."
+  url: https://www.neurologylive.com/view/xenon-submits-new-drug-application-azetukalner-treatment-focal-seizures
+  disease: epilepsy
+- target: "Alzheimer check: AR1001 POLARIS-AD meets its primary endpoint"
+  from: 15
+  to: 100
+  why: "Resolved yes: the monotherapy group, one of two prespecified primary populations, met the endpoint."
+  url: https://www.neurologylive.com/view/ar1001-slows-decline-monotherapy-group-phase-3-alzheimer-trial
+  disease: alzheimers
+news:
+- text: "Stroke: The FDA approved asundexian (Sunharbo), the first factor XIa inhibitor, to prevent repeat strokes after a recent mild-to-moderate stroke or high-risk TIA."
+  date: '2026-11-09'
+  url: https://www.ajmc.com/view/fda-approves-asundexian-first-fxia-inhibitor-to-prevent-repeat-stroke
+  disease: stroke
+- text: "Coronary artery disease: Full Lp(a)HORIZON results at AHA showed pelacarsen cut Lp(a) 78% with no drop in heart attacks or strokes."
+  date: '2026-11-07'
+  url: https://newsroom.heart.org/news/lp-a-horizon-trial-lp-a-fell-by-78-but-cardiovascular-outcomes-unexpectedly-neutral
+  disease: coronary-artery-disease
+- text: "Hemophilia: The EU approved denecimig (Frehemgo) for hemophilia A, dosed as rarely as once a month."
+  date: '2026-11-13'
+  url: https://www.globenewswire.com/news-release/2026/11/13/3402854/0/en/frehemgo-denecimig-approved-in-the-eu-for-haemophilia-a-with-a-choice-of-monthly-every-two-weeks-or-weekly-dosing.html
+  disease: hemophilia
+- text: "Sickle cell disease: Novo Nordisk submitted etavopivat to the FDA and EMA after it cut pain crises 27% in Phase 3."
+  date: '2026-11-13'
+  url: https://www.hcplive.com/view/etavopivat-submitted-to-fda-after-27-voc-reduction-in-phase-3-scd-trial
+  disease: sickle-cell
+- text: "Duchenne muscular dystrophy: The FDA rejected Capricor's cell therapy deramiocel for a second time."
+  date: '2026-11-20'
+  url: https://www.statnews.com/2026/11/20/fda-rejects-capricor-duchenne-therapy/
+  disease: duchenne
+- text: "Spinal muscular atrophy: The FDA is investigating tumors linked to Zolgensma gene therapy; it still judges benefits to outweigh risks."
+  date: '2026-11-06'
+  url: https://www.neurologylive.com/view/fda-investigates-confirmed-insertional-oncogenesis-sma-gene-therapy
+  disease: sma
+- text: "Alzheimer's disease: Oral AR1001 slowed decline 31% in the monotherapy group of its Phase 3 trial, one of two primary populations, but not in the full trial."
+  date: '2026-11-17'
+  url: https://www.neurologylive.com/view/ar1001-slows-decline-monotherapy-group-phase-3-alzheimer-trial
+  disease: alzheimers
+- text: "Measles: PAHO said the US, Mexico and Bolivia lost measles elimination status."
+  date: '2026-11-17'
+  url: https://healthpolicy-watch.news/three-countries-lose-measles-free-status/
+  disease: measles
+- text: "Ebola: WHO counted 11,613 confirmed Bundibugyo cases including 5,678 deaths in DRC as of Nov 17; Uganda's outbreak is over."
+  date: '2026-11-20'
+  url: https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON630
+  disease: ebola
+- text: "ATTR amyloidosis: Intellia finished enrolling its Phase 3 trial of one-time CRISPR treatment nex-z in the nerve form."
+  date: '2026-11-04'
+  url: https://www.globenewswire.com/news-release/2026/11/04/3395255/0/en/intellia-therapeutics-completes-enrollment-in-phase-3-magnitude-2-trial-of-nexiguran-ziclumeran-nex-z-for-patients-with-hereditary-transthyretin-amyloidosis-with-polyneuropathy-att.html
+  disease: attr-amyloidosis

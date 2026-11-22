@@ -2,7 +2,7 @@
 id: hereditary-angioedema
 name: Hereditary angioedema
 category: genetic
-tracking: proposed
+tracking: active
 summary: An inherited disorder that causes sudden attacks of swelling in the skin, gut and airway.
 toll:
   text: About 1 in 50,000 people worldwide, roughly 6,000 in the US (Consultant360, 2025).
@@ -13,7 +13,7 @@ status:
   today: Long-term preventive drugs such as garadacimab and donidalorsen, both approved in 2025, cut how
     often attacks happen. Oral sebetralstat, also approved in 2025, treats attacks as they start. A one-time
     CRISPR treatment, lonvo-z, is under FDA review.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Garadacimab (Andembry)
@@ -23,6 +23,20 @@ treatment:
   burden_note: Prevention means regular injections for life, plus a drug kept on hand for attacks.
 forecast:
   bottleneck: trial-limited
+  normal:
+    p2035: 35
+    p2045: 60
+    median: 2038
+    low: 2028
+    high: 2070
+  faster:
+    p2035: 42
+    p2045: 68
+    median: 2036
+    low: 2028
+    high: 2062
+  faster_note: "Faster approval and longer follow-up of one-time editing would help most. The biology already works for many patients."
+  outlook: "Preventive drugs control attacks but are taken for life. Lonvo-z, a one-time CRISPR treatment, is under FDA priority review with a decision due March 10, 2027, and Intellia plans a US launch in Q1 2027. In Phase 3, 62% of treated patients had no attacks. If longer follow-up shows most stay attack-free without other drugs, HAE could reach cured for most."
 pipeline:
 - name: Lonvo-z (lonvoguran ziclumeran)
   stage: Filed

@@ -1,28 +1,15 @@
 # Latest summary, written by each update (1st, 8th, 15th and 22nd). `week` is a running update number.
 repo: mgodwin/curedyet
-week: 3
-updated: '2026-11-15'
-next_update: '2026-11-22'
-headline: No brain, mental health, autoimmune or aging condition moved closer to a cure this update. Parkinson's
-  odds dipped after another failed trial, the first psilocybin application reached the FDA, and the FDA
-  turned down a lung cancer drug.
+week: 4
+updated: '2026-11-22'
+next_update: '2026-12-01'
+headline: "No metabolic, genetic or heart condition moved closer to a cure this update. Nineteen new conditions joined the tracker, the FDA approved a new kind of pill to prevent repeat strokes, and three countries lost measles elimination."
 this_week:
-- This update reviewed the brain and nerves, mental health, autoimmune, and aging and everyday conditions
-  groups, 22 conditions in all. No cure level or treatment burden changed. The acceleration index stays
-  at 21%.
-- The one forecast move was Parkinson's, whose chance of a cure by 2045 slipped from 14% to 13%. Bial's
-  GCase activator failed a phase 2b trial in Parkinson's linked to the GBA gene, the second
-  disease-modifying failure this year. Roche also ended tominersen for Huntington's after it lowered
-  huntingtin without helping patients.
-- Compass completed the first full FDA application for psilocybin, for treatment-resistant depression,
-  and Kalshi prices approval before July 2027 at about 81%. The FDA approved a once-monthly olanzapine
-  injection for schizophrenia. Lung cancer was pulled in out of turn after the FDA rejected ivonescimab
-  for lack of a survival benefit, so that check resolved no. WHO's TB report showed 2025 deaths fell to
-  1.13 million, so that check resolved yes.
-- The Bundibugyo Ebola epidemic reached 11,197 confirmed cases and 5,471 related deaths in DRC by Nov
-  12.
-- 'Watch next: AR1001 Alzheimer''s results at CTAD (Nov 16), PAHO''s measles ruling for the US and Mexico,
-  the FDA decision on obinutuzumab for lupus (by December), and FDA acceptance of azetukalner for epilepsy.'
+- "This update reviewed the metabolic, genetic, heart and other groups, 19 already-tracked conditions in all. No cure level, treatment burden or long-range forecast changed. The acceleration index stays at 21%."
+- "Nineteen proposed conditions now have forecasts and are tracked, including polio, guinea worm, hereditary angioedema, ATTR amyloidosis, PTSD and sepsis. Smallpox, leprosy, stomach ulcers, bacterial STIs and three cancers are already cured for most, so they carry the year that happened."
+- "The FDA approved asundexian (Sunharbo), the first factor XIa pill, to prevent repeat strokes. Full Lp(a)HORIZON results confirmed that cutting Lp(a) 78% did not prevent heart attacks. The EU approved denecimig for hemophilia A, Novo filed etavopivat for sickle cell, and the FDA rejected deramiocel for Duchenne again. The FDA is also investigating tumors after Zolgensma gene therapy for SMA."
+- "Alzheimer's AR1001 met its goal in one of two primary groups, so that check resolved yes against our 15% forecast, a Brier score of 0.72. PAHO said the US, Mexico and Bolivia lost measles elimination status. The Bundibugyo Ebola epidemic reached 11,613 confirmed cases and 5,678 deaths in DRC by Nov 17."
+- "Watch next: the FDA decision on giredestrant for breast cancer (Nov 30), CagriSema for obesity (by year end), sura-vec gene therapy results for macular degeneration (Q4), and lorundrostat for high blood pressure (Dec 22)."
 scorecard:
 - id: chk-lung-cancer
   label: FDA approves ivonescimab for EGFR-mutated NSCLC by 2026-12-31
@@ -36,3 +23,9 @@ scorecard:
   outcome: 1
   resolvedOn: '2026-11-12'
   brier: 0.2025
+- id: chk-alzheimers
+  label: AriBio reports AR1001 POLARIS-AD Phase 3 met its primary endpoint by 2026-12-31
+  forecast: 15
+  outcome: 1
+  resolvedOn: '2026-11-17'
+  brier: 0.7225

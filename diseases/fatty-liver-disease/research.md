@@ -35,6 +35,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-22: Full review. No approval, rejection or pivotal readout found since the last review. Forecast unchanged.
 - 2026-11-05: First full record. Split into three variants (simple fatty liver, MASH before cirrhosis, MASH cirrhosis) because outlook and treatment differ sharply: simple fat rarely harms the liver, MASH with F2-F3 scarring now has two approved drugs, and cirrhosis has none and carries real risk of liver failure and death. Overall level 2 for the typical patient, who has simple fatty liver or non-cirrhotic MASH and lives a near-normal life but needs ongoing weight control or drugs.
 
 ## Open questions

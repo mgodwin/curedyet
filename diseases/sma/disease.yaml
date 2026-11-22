@@ -22,7 +22,7 @@ status:
     People treated later improve or stabilize but live with lasting disability, and in 2025-26 an
     intrathecal gene therapy for ages 2+ (Itvisma) and a muscle-targeted add-on (apitegromab) were
     approved.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Onasemnogene abeparvovec (Zolgensma)
@@ -76,6 +76,9 @@ pipeline:
   effect_note: Already approved; one-time gene therapy for older children and adults stabilizes the disease
     but cannot restore lost motor neurons.
 recent:
+- date: 2026-11
+  text: "FDA said it is investigating tumors linked to Zolgensma gene therapy, with vector DNA found near the GLI1 gene in 2 of 3 cases; no label change yet."
+  url: https://www.neurologylive.com/view/fda-investigates-confirmed-insertional-oncogenesis-sma-gene-therapy
 - date: 2025-12
   text: FDA approved Itvisma, extending one-time SMA gene therapy to patients 2 and older.
   url: https://www.healthday.com/healthpro-news/neurology/fda-approves-itvisma-for-spinal-muscular-atrophy
