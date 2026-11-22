@@ -1,0 +1,33 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: adhd
+name: "ADHD"
+category: mental
+tracking: proposed
+summary: "A brain development condition that causes ongoing trouble with attention, impulse control or hyperactivity."
+toll:
+  text: "About 7 million US children aged 3 to 17 ever diagnosed (CDC, 2022 data)."
+  url: https://www.cdc.gov/adhd/data/index.html
+  ratio: "1 in 9"
+  ratio_caption: "US children have ever been diagnosed with ADHD"
+  ratio_url: https://www.cdc.gov/adhd/data/index.html
+status:
+  level: 2
+  why: "Medicines and behavioral therapy control symptoms for many people, but they work only while used."
+  today: "Stimulants such as methylphenidate and amphetamines reduce symptoms for most people who take them; non-stimulants are an option for others. Behavioral therapy and skills training help, especially in children. In July 2026 the FDA approved centanafadine (Simtriyo), a new kind of non-stimulant."
+  last_reviewed: null
+treatment:
+  best:
+  - "Stimulant medicines"
+  - "Non-stimulant medicines"
+  - "Behavioral therapy"
+  burden: moderate
+  burden_note: "Daily pills, often for years, with side effects such as poor appetite and sleep trouble."
+forecast:
+  bottleneck: biology-limited
+pipeline: []
+recent:
+- date: "2026-07"
+  text: "FDA approved centanafadine (Simtriyo), the first reuptake inhibitor of three brain chemicals for ADHD."
+  url: https://www.psychiatrictimes.com/view/fda-approves-centanafadine-for-adhd-in-children-adolescents-and-adults
+next_milestone: null
+markets: []

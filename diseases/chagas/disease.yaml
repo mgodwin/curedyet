@@ -1,0 +1,32 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: chagas
+name: "Chagas disease"
+category: infectious
+tracking: proposed
+summary: "A parasite infection spread mainly by kissing bugs in Latin America that can quietly damage the heart and gut over decades."
+toll:
+  text: "About 7 million people infected, mostly in Latin America (WHO, 2025)."
+  url: https://www.who.int/news-room/fact-sheets/detail/chagas-disease-%28american-trypanosomiasis%29
+status:
+  level: 3
+  why: "Two old drugs cure the infection if given early, but most people are found years later, when cure is less certain."
+  today: "Benznidazole or nifurtimox cure Chagas in the acute phase and in infected newborns. In chronic infection they may prevent or slow damage, but a large trial found benznidazole did not halt existing heart disease. Most infected people are never diagnosed."
+  last_reviewed: null
+treatment:
+  best:
+  - "Benznidazole"
+  - "Nifurtimox"
+  burden: moderate
+  burden_note: "Up to two months of pills; side effects are common in adults and lead some to stop."
+forecast:
+  bottleneck: design-limited
+pipeline:
+- name: "Short-course benznidazole (NuestroBen)"
+  stage: "Phase 3"
+  note: "Tests 2- or 4-week courses against the standard 8 weeks in 540 adults with chronic Chagas; a Phase 2 trial found 2 weeks worked as well with fewer side effects."
+  url: https://dndi.org/scientific-articles/2025/new-benznidazole-regimens-chagas-disease-clinical-trial-protocol/
+  effect: some
+  effect_note: "A shorter, gentler course would help more people finish treatment but would not fix late-stage cure."
+recent: []
+next_milestone: null
+markets: []

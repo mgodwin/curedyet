@@ -1,0 +1,27 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: eating-disorders
+name: "Eating disorders"
+category: mental
+tracking: proposed
+summary: "Serious mental illnesses, including anorexia, bulimia and binge eating disorder, marked by harmful eating and deep concern about weight and shape."
+toll:
+  text: "About 16 million people in 2021, including 3.4 million children and teens (WHO)."
+  url: https://www.who.int/news-room/fact-sheets/detail/mental-disorders
+status:
+  level: 3
+  why: "Many people fully recover with treatment, but fewer than half do within a few years and anorexia has one of the highest death rates of any mental illness."
+  today: "Family-based therapy, cognitive behavioral therapy and nutritional rehabilitation are the main treatments. A 2023 review found about 46% of patients recovered overall, rising to about two thirds after 10 years. No drug is approved for anorexia."
+  last_reviewed: null
+treatment:
+  best:
+  - "Family-based therapy"
+  - "Cognitive behavioral therapy"
+  - "Nutritional rehabilitation"
+  burden: heavy
+  burden_note: "Months to years of therapy, sometimes hospital stays; access to specialist care is limited."
+forecast:
+  bottleneck: biology-limited
+pipeline: []
+recent: []
+next_milestone: null
+markets: []

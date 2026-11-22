@@ -1,0 +1,27 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: typhoid
+name: "Typhoid fever"
+category: infectious
+tracking: proposed
+summary: "A bacterial infection spread through contaminated food and water that causes high fever and can be fatal."
+toll:
+  text: "About 9 million cases and 110,000 deaths a year (WHO, 2019 estimates)."
+  url: https://www.who.int/news-room/fact-sheets/detail/typhoid
+status:
+  level: 4
+  why: "Antibiotics cure most cases, but drug-resistant strains are leaving fewer options."
+  today: "Antibiotics such as azithromycin cure most patients. Extensively drug-resistant typhoid, first seen in Pakistan in 2016, responds to only a few drugs. Typhoid conjugate vaccines prevent about 80% of cases in children."
+  last_reviewed: null
+treatment:
+  best:
+  - "Azithromycin"
+  - "Carbapenems for resistant strains"
+  - "Typhoid conjugate vaccine"
+  burden: light
+  burden_note: "One to two weeks of antibiotics; resistant cases may need hospital drip treatment."
+forecast:
+  bottleneck: access-limited
+pipeline: []
+recent: []
+next_milestone: null
+markets: []

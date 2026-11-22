@@ -1,0 +1,34 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: frontotemporal-dementia
+name: "Frontotemporal dementia (FTD)"
+category: neuro
+tracking: proposed
+summary: "A group of dementias that damage the front and sides of the brain, changing personality, behavior or language, often before age 65."
+toll:
+  text: "unclear"
+status:
+  level: 0
+  why: "No treatment slows or stops FTD."
+  today: "Care focuses on managing behavior, speech and safety, using antidepressants and therapy. There is no approved drug for FTD itself. A leading antibody for the inherited progranulin form failed its Phase 3 trial in 2025."
+  last_reviewed: null
+treatment:
+  best:
+  - "Supportive care"
+  - "Speech and occupational therapy"
+  burden: moderate
+  burden_note: "No disease-modifying treatment; families provide most care as symptoms worsen."
+forecast:
+  bottleneck: biology-limited
+pipeline:
+- name: "LY3884963 (PR006, progranulin gene therapy)"
+  stage: "Phase 2"
+  note: "One-time gene therapy for FTD caused by progranulin gene mutations; early trial showed it raised progranulin with manageable side effects."
+  url: https://pubmed.ncbi.nlm.nih.gov/38745011/
+  effect: some
+  effect_note: "Could slow the inherited progranulin form, a small share of FTD."
+recent:
+- date: "2025-10"
+  text: "Latozinemab, an antibody that raises progranulin, failed to slow FTD in the Phase 3 INFRONT-3 trial."
+  url: https://index.mirasmart.com/AAN2026/PDFfiles/AAN2026-005852.html
+next_milestone: null
+markets: []

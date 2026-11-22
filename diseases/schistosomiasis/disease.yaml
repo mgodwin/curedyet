@@ -1,0 +1,29 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: schistosomiasis
+name: "Schistosomiasis (bilharzia)"
+category: infectious
+tracking: proposed
+summary: "A parasitic worm infection picked up from freshwater that damages the bladder, gut and liver over years."
+toll:
+  text: "At least 254 million people needed preventive treatment in 2024 (WHO)."
+  url: https://www.who.int/news-room/fact-sheets/detail/schistosomiasis
+status:
+  level: 3
+  why: "One dose of praziquantel clears many infections, but not all, and people living near infested water are often reinfected."
+  today: "Praziquantel treats all forms and is given in mass drug campaigns, mostly to schoolchildren in Africa. WHO says only about 40% of people who needed treatment got it in 2024. Arpraziquantel, a child-friendly version for under-5s, began rollout in Africa in 2025."
+  last_reviewed: null
+treatment:
+  best:
+  - "Praziquantel"
+  - "Arpraziquantel (for young children)"
+  burden: light
+  burden_note: "A single cheap dose of tablets, repeated in yearly campaigns where infection is common."
+forecast:
+  bottleneck: access-limited
+pipeline: []
+recent:
+- date: "2025-09"
+  text: "Tanzania became the first country to approve arpraziquantel for preschool children."
+  url: https://www.undp.org/tanzania/stories/tanzania-grants-regulatory-approval-breakthrough-schistosomiasis-treatment-preschool-aged-children-paving-way-pilot-rollout
+next_milestone: null
+markets: []
