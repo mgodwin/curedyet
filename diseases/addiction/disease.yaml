@@ -2,7 +2,7 @@
 id: addiction
 name: Alcohol and opioid addiction
 category: mental
-tracking: proposed
+tracking: active
 summary: Compulsive use of alcohol or opioids that continues despite harm.
 toll:
   text: About 2.6 million deaths from alcohol and 0.6 million from drug use in 2019; about 400 million
@@ -16,7 +16,7 @@ status:
     death, and monthly naltrexone injections are another option. For alcohol, naltrexone, acamprosate
     and disulfiram are approved. In 2026 a small trial found weekly semaglutide cut heavy drinking more
     than placebo.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Methadone
@@ -30,6 +30,20 @@ treatment:
     between under 1% and 35% of people in reporting countries.
 forecast:
   bottleneck: biology-limited
+  normal:
+    p2035: 2
+    p2045: 8
+    median: 2072
+    low: 2045
+    high: 2100
+  faster:
+    p2035: 5
+    p2045: 16
+    median: 2058
+    low: 2038
+    high: 2100
+  faster_note: "Faster brain-circuit research and cheaper trials would help most. The missing piece is proof that any treatment ends craving after it stops."
+  outlook: "Medicines such as methadone, buprenorphine and naltrexone control addiction for many, but relapse is common and nothing resets craving for good. GLP-1 drugs are in Phase 2 for alcohol use disorder. No late-stage trial aims at a lasting cure."
 pipeline:
 - name: Semaglutide for alcohol use disorder
   stage: Phase 2

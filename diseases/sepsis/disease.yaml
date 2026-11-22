@@ -2,7 +2,7 @@
 id: sepsis
 name: Sepsis
 category: infectious
-tracking: proposed
+tracking: active
 summary: The body's extreme response to an infection, which can damage organs and kill.
 toll:
   text: About 49 million cases and 11 million deaths a year, about 1 in 5 deaths worldwide (WHO, data
@@ -15,7 +15,7 @@ status:
   today: Treatment means early antimicrobials aimed at the infection, intravenous fluids, finding and
     treating the source, and drugs to raise blood pressure when needed. Drug-resistant infections make
     it harder to treat.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Early antimicrobials
@@ -27,6 +27,20 @@ treatment:
     in 2021.
 forecast:
   bottleneck: biology-limited
+  normal:
+    p2035: 5
+    p2045: 15
+    median: 2058
+    low: 2036
+    high: 2100
+  faster:
+    p2035: 9
+    p2045: 25
+    median: 2048
+    low: 2034
+    high: 2095
+  faster_note: "Faster diagnosis, better drugs for resistant bacteria and trials that sort patients by biology would help most."
+  outlook: "Fast antibiotics and organ support save most patients, but 12% to 17% of US patients admitted mainly for sepsis still die in hospital, and survivors often have lasting harm. Many drugs aimed at the body's response have failed, and this tracker found no Phase 3 running."
 pipeline: []
 recent: []
 next_milestone: null

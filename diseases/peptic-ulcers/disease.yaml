@@ -2,8 +2,12 @@
 id: peptic-ulcers
 name: Stomach ulcers (H. pylori)
 category: infectious
-tracking: proposed
+tracking: active
 summary: Sores in the lining of the stomach or small intestine, often caused by H. pylori bacteria.
+toll:
+  text: About 4.4 billion people worldwide carried H. pylori in 2015, the bacteria behind most stomach
+    ulcers (CUHK meta-analysis, 2017).
+  url: https://cpr.cuhk.edu.hk/en/?p=49529
 status:
   level: 4
   why: A combination of antibiotics and an acid-reducing drug clears H. pylori in most people, which lets
@@ -11,7 +15,7 @@ status:
   today: Doctors combine two or more antibiotics with an acid-reducing drug, sometimes with bismuth, and
     retest at least 4 weeks later to confirm the bacteria are gone. Antibiotic resistance means some people
     need a second regimen.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Bismuth quadruple therapy
@@ -21,6 +25,10 @@ treatment:
   burden_note: A short course of several pills, followed by a test to confirm cure.
 forecast:
   bottleneck: access-limited
+  reached: 1994
+  reached_easy: 1994
+  faster_note: "Already curable. Faster progress would come from tests that pick the right antibiotics and from a vaccine."
+  outlook: "Since a 1994 NIH panel advised treating H. pylori with antibiotics, most ulcers caused by the bacteria can be cured with a short pill course (year approximate). Rising antibiotic resistance means some people need a second regimen."
 pipeline: []
 recent: []
 next_milestone: null

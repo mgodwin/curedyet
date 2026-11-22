@@ -11,9 +11,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [WHO: The top 10 causes of death](https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death)
 - [Endovascular thrombectomy after large-vessel ischaemic stroke: a meta-analysis of individual patient data from five randomised trials (HERMES, The Lancet 2016)](https://doi.org/10.1016/S0140-6736(16)00163-X) - survival by subtype
 - [Hyperacute prediction of functional outcome in spontaneous intracerebral haemorrhage: systematic review and meta-analysis (European Stroke Journal 2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8921779) - survival by subtype
+- [AJMC: FDA approves asundexian, first FXIa inhibitor (Nov 2026)](https://www.ajmc.com/view/fda-approves-asundexian-first-fxia-inhibitor-to-prevent-repeat-stroke) - approval date, indication and OCEANIC-STROKE results
 
 ## Research log
 
+- 2026-11-22: Full review. FDA approved asundexian (Sunharbo) on Nov 9, 2026 for secondary prevention after non-cardioembolic stroke or high-risk TIA. It prevents some repeat strokes but does not change recovery from stroke, so the forecast is unchanged.
 - 2026-11-04: Level 1 -> 3. Ischemic stroke (about 87% of strokes) rates 'cured for some' because timely clot treatment reverses a meaningful subset.
 - 2026-11-04: Added status.groups rating each subtype on the cure ladder with its own burden and survival.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).

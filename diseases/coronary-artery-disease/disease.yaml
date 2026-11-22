@@ -19,7 +19,7 @@ status:
     sharply cut heart attacks and deaths. GLP-1 drugs like semaglutide now also reduce events in people
     with obesity. Many patients still have heart attacks despite treatment, and nothing reverses established
     disease.
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Statins + ezetimibe
@@ -69,6 +69,9 @@ pipeline:
   stage: Phase 3
   url: https://clinicaltrials.gov/study/NCT05581303
 recent:
+- date: 2026-11
+  text: "Full Lp(a)HORIZON results at AHA 2026: pelacarsen cut Lp(a) by 78% but did not lower heart attacks, strokes or other major events."
+  url: https://newsroom.heart.org/news/lp-a-horizon-trial-lp-a-fell-by-78-but-cardiovascular-outcomes-unexpectedly-neutral
 - date: 2026-07
   text: FDA approved enlicitide, the first oral PCSK9 inhibitor, for LDL lowering.
   url: https://www.tctmd.com/news/fda-approves-enlicitide-oral-pcsk9-inhibitor-ldl-lowering

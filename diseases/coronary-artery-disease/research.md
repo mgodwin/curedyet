@@ -9,9 +9,11 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [TCTMD: Lp(a)HORIZON top-line results](https://www.tctmd.com/news/lpahorizon-top-line-results-dash-hopes-pelacarsen)
 - [Lilly VERVE-102 Heart-2 data](https://www.biospace.com/press-releases/a-single-dose-of-lillys-pcsk9-base-editor-verve-102-reduced-pcsk9-by-up-to-88-and-ldl-c-by-up-to-62-with-durable-effects-supporting-its-potential-as-a-one-time-treatment-for-hypercholesterolemia)
 - [NewAmsterdam Pharma Q1 2026 update](https://ir.newamsterdampharma.com/news-releases/news-release-details/newamsterdam-pharma-provides-corporate-update-and-reports-6)
+- [AHA newsroom: Lp(a)HORIZON results (Nov 2026)](https://newsroom.heart.org/news/lp-a-horizon-trial-lp-a-fell-by-78-but-cardiovascular-outcomes-unexpectedly-neutral) - 8,323 patients; Lp(a) down 78%, outcomes neutral
 
 ## Research log
 
+- 2026-11-22: Full review. Full Lp(a)HORIZON results at AHA 2026 (Nov 7) confirmed the neutral topline: 78% Lp(a) lowering with no outcome benefit. The topline was already reflected, so the forecast is unchanged.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 
 ## Open questions

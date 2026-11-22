@@ -23,6 +23,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-22: Full review. No approval, rejection or pivotal readout found since the last review. Forecast unchanged.
 - 2026-11-05: Baseline research for the first Cure Watch record. Rated level 2 (controlled). Kept as a single record without variants.
 
 ## Open questions

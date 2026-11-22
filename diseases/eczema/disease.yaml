@@ -2,7 +2,7 @@
 id: eczema
 name: Eczema (atopic dermatitis)
 category: immune
-tracking: proposed
+tracking: active
 summary: A long-term inflammatory skin disease that causes dry, itchy, inflamed skin, often starting in
   childhood.
 toll:
@@ -14,7 +14,7 @@ status:
   why: Biologic drugs control moderate to severe eczema for many people, but none cures it.
   today: Dupilumab, the first biologic for atopic dermatitis, is approved from 6 months of age, and tralokinumab
     and lebrikizumab have followed. Treatment aims at long-term control rather than cure.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Dupilumab (Dupixent)
@@ -24,6 +24,20 @@ treatment:
   burden_note: Regular injections for moderate to severe disease, long term.
 forecast:
   bottleneck: biology-limited
+  normal:
+    p2035: 2
+    p2045: 9
+    median: 2068
+    low: 2042
+    high: 2100
+  faster:
+    p2035: 5
+    p2045: 17
+    median: 2056
+    low: 2036
+    high: 2100
+  faster_note: "Trials designed to test lasting drug-free remission, and better understanding of why eczema comes back, would help most."
+  outlook: "Biologic injections and JAK pills control eczema well for many, but it returns when treatment stops. A cure would need a way to reset the skin barrier and immune response for good, and no late-stage trial aims for that."
 pipeline: []
 recent: []
 next_milestone: null

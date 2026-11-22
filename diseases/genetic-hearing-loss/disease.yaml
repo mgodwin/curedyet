@@ -2,7 +2,7 @@
 id: genetic-hearing-loss
 name: Genetic hearing loss
 category: genetic
-tracking: proposed
+tracking: active
 summary: Deafness or hearing loss caused by inherited gene changes, often present from birth.
 toll:
   text: The OTOF form alone affects about 50 US newborns a year (Regeneron, 2026); many other genes cause
@@ -16,7 +16,7 @@ status:
     do not restore normal hearing. For the OTOF form, Otarmeni gene therapy brought 16 of 20 trial participants
     to a hearing threshold of 70 dB or better by 24 weeks, and 5 of 12 followed to 48 weeks reached normal
     hearing.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Cochlear implants
@@ -25,6 +25,20 @@ treatment:
   burden_note: Implants need surgery and a worn device; the gene therapy is for one rare form only.
 forecast:
   bottleneck: design-limited
+  normal:
+    p2035: 3
+    p2045: 12
+    median: 2058
+    low: 2040
+    high: 2100
+  faster:
+    p2035: 7
+    p2045: 24
+    median: 2050
+    low: 2036
+    high: 2085
+  faster_note: "Faster design of gene therapies for many rare genes, and shared trial platforms, would help most."
+  outlook: "The first gene therapy, for the rare OTOF form, won US accelerated approval in 2026 and restored useful hearing in most trial children. Hundreds of genes cause hearing loss, so cured for most needs many more gene therapies or a way to regrow lost hair cells."
 pipeline: []
 recent:
 - date: 2026-04

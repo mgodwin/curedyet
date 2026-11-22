@@ -11,6 +11,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-22: Activated from proposed. Disease-level reached years match the primary variant (1989). Added a forecast for the advanced variant.
 - 2026-11-17: Added as a proposed disease at Mark's request. Level, toll and treatment drafted from the sources above; forecasts left for the next rotation update.
 
 ## Open questions

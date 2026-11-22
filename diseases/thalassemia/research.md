@@ -27,6 +27,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-22: Full review. No approval, rejection or pivotal readout found since the last review. Forecast unchanged.
 - 2026-11-05: Baseline research for the first Cure Watch snapshot: global toll, split into transfusion-dependent and non-transfusion-dependent variants, gene therapy and transplant outcomes, mitapivat and luspatercept approvals, forecasts.
 
 ## Open questions

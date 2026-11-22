@@ -21,7 +21,7 @@ status:
     help certain mutations modestly. Sarepta's Elevidys gene therapy is now limited to ambulatory boys
     4 and older with a boxed liver warning after deaths. New muscle-targeted oligonucleotides and a second
     gene therapy are nearing FDA decisions.
-  last_reviewed: '2026-11-03'
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Corticosteroids (deflazacort, vamorolone)
@@ -63,10 +63,13 @@ pipeline:
   stage: Filed
   url: https://www.parentprojectmd.org/wp-content/uploads/2026/09/FA-11774961_AOC-1044_Avidity-BLA-Acceptance-PAG-Community-Letter_2026.pdf
 - name: RGX-202 (Regenxbio gene therapy)
-  note: Met microdystrophin endpoint; BLA planned early 1H 2027 if FDA does not demand an RCT.
+  note: Met microdystrophin endpoint; pre-BLA meeting expected Q4 2026 and BLA submission planned for Q1 2027.
   stage: Phase 3
   url: https://www.neurologylive.com/view/rgx-202-meets-primary-end-point-phase-3-duchenne-trial
 recent:
+- date: 2026-11
+  text: "FDA rejected Capricor's cell therapy deramiocel for a second time, citing insufficient evidence it works."
+  url: https://www.statnews.com/2026/11/20/fda-rejects-capricor-duchenne-therapy/
 - date: 2026-10
   text: RGX-202 gene therapy met its pivotal microdystrophin endpoint with 93% of boys above 10% of normal.
   url: https://www.neurologylive.com/view/rgx-202-meets-primary-end-point-phase-3-duchenne-trial

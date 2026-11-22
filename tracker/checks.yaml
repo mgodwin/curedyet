@@ -3,11 +3,11 @@
   disease: alzheimers
   label: AriBio reports AR1001 POLARIS-AD Phase 3 met its primary endpoint by 2026-12-31
   resolves_by: '2026-12-31'
-  prob: 15
-  resolved: null
-  last_forecast: null
-  note: ''
-  url: https://clinicaltrials.gov/study/NCT05531526
+  prob: 100
+  resolved: 'yes'
+  last_forecast: 15
+  note: Resolved yes on 2026-11-17; last forecast 15%. The monotherapy group, one of two prespecified primary populations, met the CDR-SB endpoint (P=.027); the full population did not.
+  url: https://www.neurologylive.com/view/ar1001-slows-decline-monotherapy-group-phase-3-alzheimer-trial
 - id: chk-breast-cancer
   disease: breast-cancer
   label: FDA approves giredestrant for early ER-positive breast cancer by 2026-12-31
@@ -21,10 +21,10 @@
   disease: epilepsy
   label: FDA accepts the azetukalner NDA for review by 2026-12-31
   resolves_by: '2026-12-31'
-  prob: 88
+  prob: 80
   resolved: null
-  last_forecast: null
-  note: ''
+  last_forecast: 88
+  note: Lowered from 88 on 2026-11-22 because no acceptance was announced by about 60 days after the Sept submission.
   url: https://www.neurologylive.com/view/xenon-submits-new-drug-application-azetukalner-treatment-focal-seizures
 - id: chk-h5n1
   disease: h5n1
@@ -171,3 +171,12 @@
   last_forecast: null
   note: NDA completed Nov 9, 2026 with a priority voucher; Kalshi priced approval before July 2027 at about 81% in Nov 2026.
   url: https://kalshi.com/markets/kxfdaapprovaldatecmps/compass-pathways-drug-approval/kxfdaapprovaldatecmps-360
+- id: chk-hereditary-angioedema
+  disease: hereditary-angioedema
+  label: FDA approves lonvo-z (lonvoguran ziclumeran) for hereditary angioedema by 2027-03-31
+  resolves_by: '2027-03-31'
+  prob: 85
+  resolved: null
+  last_forecast: null
+  note: ''
+  url: https://www.globenewswire.com/news-release/2026/11/05/3396399/0/en/intellia-therapeutics-announces-third-quarter-2026-financial-results-and-business-updates.html

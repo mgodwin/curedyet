@@ -22,7 +22,7 @@ status:
     gives years of factor IX production, but the hemophilia A gene therapy Roctavian was withdrawn in
     2026 for commercial reasons. Access is poor in low-income countries, where most people with
     hemophilia are undiagnosed.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Emicizumab (Hemlibra)
@@ -56,14 +56,14 @@ forecast:
     A, which is still early. Expect better control near term and cure for most in the 2040s. About 80% of patients have hemophilia A, which has no cure available, so this forecast follows hemophilia A's.
 pipeline:
 - name: Denecimig (Mim8, Frehemgo)
-  stage: Filed
-  note: Bispecific for hemophilia A; positive CHMP opinion in Sept 2026, awaiting EU decision; US review ongoing.
-  url: https://www.ema.europa.eu/en/medicines/human/EPAR/frehemgo
+  stage: Approved 2026
+  note: Bispecific for hemophilia A, approved in the EU in Nov 2026 with monthly, every-two-weeks or weekly
+    dosing; US review ongoing.
+  url: https://www.globenewswire.com/news-release/2026/11/13/3402854/0/en/frehemgo-denecimig-approved-in-the-eu-for-haemophilia-a-with-a-choice-of-monthly-every-two-weeks-or-weekly-dosing.html
   variants:
   - hemophilia-a
-  expected: 2026-11
   effect: small
-  effect_note: If the EU approves it, a once-monthly pen adds a convenient preventive option, but it is
+  effect_note: A once-monthly pen adds a convenient preventive option, but it is
     lifelong prevention, not a cure.
 - name: Fitusiran (Qfitlia)
   stage: Approved 2025-26
@@ -85,6 +85,9 @@ pipeline:
   effect_note: Already approved; one-time gene therapy already keeps most treated people off regular prevention,
     so wider access, not new data, is the bottleneck.
 recent:
+- date: 2026-11
+  text: "The EU approved denecimig (Frehemgo) for hemophilia A, with dosing as rarely as once a month."
+  url: https://www.globenewswire.com/news-release/2026/11/13/3402854/0/en/frehemgo-denecimig-approved-in-the-eu-for-haemophilia-a-with-a-choice-of-monthly-every-two-weeks-or-weekly-dosing.html
 - date: 2026-09
   text: EMA's CHMP recommended approval of denecimig, a once-weekly-or-less bispecific for hemophilia
     A.
@@ -92,10 +95,7 @@ recent:
 - date: 2026-02
   text: BioMarin pulled the hemophilia A gene therapy Roctavian from the market after finding no buyer.
   url: https://www.biomarin.com/news/company-statements/biomarin-voluntarily-withdraws-roctavian-from-the-market/
-next_milestone:
-  date: 2026-11
-  url: https://www.ema.europa.eu/en/medicines/human/EPAR/frehemgo
-  what: European Commission decision on denecimig (Frehemgo) after the Sept 2026 positive CHMP opinion
+next_milestone: null
 ai:
   impact: low
   note: Leading new therapies are antibodies, siRNAs and AAV vectors from conventional development; AI

@@ -15,12 +15,15 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 - [Scholar Rock: apitegromab MAA resubmitted to EMA (Oct 2026)](https://investors.scholarrock.com/news-releases/news-release-details/scholar-rock-resubmits-apitegromab-marketing-authorisation/) - resubmission with an alternate fill-finish site
 - [Strauss et al., Nature Medicine 2022: Onasemnogene abeparvovec for presymptomatic infants with three copies of SMN2 (SPR1NT, PubMed)](https://pubmed.ncbi.nlm.nih.gov/35715567/) - survival by subtype
 - [Day et al., Lancet Neurology 2021: Onasemnogene abeparvovec for symptomatic infantile-onset SMA (STR1VE, PubMed)](https://pubmed.ncbi.nlm.nih.gov/33743238/) - survival by subtype
+- [NeurologyLive: FDA investigates insertional oncogenesis with SMA gene therapy (Nov 2026)](https://www.neurologylive.com/view/fda-investigates-confirmed-insertional-oncogenesis-sma-gene-therapy) - tumor reports and FDA review
 
 ## Research log
 
+- 2026-11-22: Full review. FDA safety communication (Nov 6, 2026) on possible insertional oncogenesis after Zolgensma: 3 GLI1-linked tumors among more than 6,000 treated, none yet after Itvisma. FDA still judges benefits to outweigh risks. Forecast unchanged for now.
 - 2026-11-04: Added status.groups rating each subtype on the cure ladder with its own burden and survival.
 - 2026-11-03: Baseline research for the first Cure Watch snapshot (level, treatment, pipeline, forecasts).
 
 ## Open questions
 
 - Baseline research ran short on lookups; Wikipedia citations were replaced with primary sources on 2026-11-05.
+- Watch for FDA label changes or new requirements on Zolgensma and Itvisma after the tumor reports.

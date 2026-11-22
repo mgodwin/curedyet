@@ -12,3 +12,10 @@ share_url: https://www.cancer.org/cancer/thyroid-cancer/about/what-is-thyroid-ca
 treatment: Treatment slows it for some; most patients die within 5 years.
 url: https://www.cancer.org/cancer/thyroid-cancer/detection-diagnosis-staging/survival-rates.html
 caveat: Treatment detail not yet sourced.
+forecast:
+  median: 2065
+  low: 2042
+  high: 2100
+  p2035: 2
+  p2045: 8
+  note: "No therapy cures most anaplastic thyroid cancers, and no curative Phase 3 is listed here."

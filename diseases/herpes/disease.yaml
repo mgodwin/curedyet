@@ -2,7 +2,7 @@
 id: herpes
 name: Herpes (HSV)
 category: infectious
-tracking: proposed
+tracking: active
 summary: A lifelong viral infection that causes recurring cold sores or genital sores.
 toll:
   text: About 846 million people aged 15-49 had genital herpes in 2020, more than 1 in 5 (WHO, 2024).
@@ -13,7 +13,7 @@ status:
     there is no cure.
   today: Antiviral medicines treat outbreaks and can be taken daily to prevent them. WHO says there is
     no cure, and it is calling for new treatments and vaccines.
-  last_reviewed: null
+  last_reviewed: '2026-11-22'
 treatment:
   best:
   - Antiviral medicines
@@ -21,6 +21,20 @@ treatment:
   burden_note: Pills during outbreaks, or daily to suppress them; they do not clear the virus.
 forecast:
   bottleneck: biology-limited
+  normal:
+    p2035: 2
+    p2045: 7
+    median: 2075
+    low: 2045
+    high: 2100
+  faster:
+    p2035: 5
+    p2045: 15
+    median: 2060
+    low: 2038
+    high: 2100
+  faster_note: "Faster delivery of gene editors to nerve cells, and a working vaccine, would help most."
+  outlook: "Antiviral pills control outbreaks and cut spread, but the virus hides in nerve cells for life. Gene editing to clear hidden virus works only in animals so far, and no human cure trial is running."
 pipeline:
 - name: Gene editing of latent HSV
   stage: Preclinical

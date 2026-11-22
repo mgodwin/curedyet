@@ -22,6 +22,7 @@ Evidence behind this disease's record. Every claim in disease.yaml should trace 
 
 ## Research log
 
+- 2026-11-22: Full review. No approval, rejection or pivotal readout found since the last review. Forecast unchanged.
 - 2026-11-05: Baseline research for the first Cure Watch record (level, treatment, variants, pipeline, forecasts). Split into primary and secondary high blood pressure because secondary causes can sometimes be cured by surgery while primary cannot; resistant high blood pressure kept inside primary because its outlook is still lifelong control.
 
 ## Open questions
