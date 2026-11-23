@@ -1,0 +1,32 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: scabies
+name: "Scabies"
+category: infectious
+tracking: proposed
+summary: "A skin infestation by tiny mites that burrow under the skin, causing intense itching and sores that can lead to serious bacterial infections."
+toll:
+  text: "At least 200 million people at any time (WHO)."
+  url: https://www.who.int/news-room/fact-sheets/detail/scabies
+status:
+  level: 4
+  why: "Creams or two doses of pills cure most cases, though reinfection is common in crowded settings."
+  today: "Permethrin cream or two doses of oral ivermectin cure most people,. Ivermectin is not used in pregnancy or small children. Whole-community ivermectin campaigns are used where scabies is widespread."
+  last_reviewed: null
+treatment:
+  best:
+  - "Permethrin 5% cream"
+  - "Oral ivermectin"
+  burden: light
+  burden_note: "One or two treatments a week apart, cheap, with mild side effects."
+forecast:
+  bottleneck: access-limited
+pipeline:
+- name: "Moxidectin"
+  stage: "Phase 2"
+  note: "Single-dose oral drug being tested against placebo for complete cure in adults with scabies."
+  url: https://clinicaltrials.gov/study/NCT05875441
+  effect: small
+  effect_note: "One dose instead of two would make community campaigns simpler."
+recent: []
+next_milestone: null
+markets: []

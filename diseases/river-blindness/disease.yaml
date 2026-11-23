@@ -1,0 +1,34 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: river-blindness
+name: "River blindness (onchocerciasis)"
+category: infectious
+tracking: proposed
+summary: "A worm infection spread by blackfly bites near rivers that causes severe itching, skin damage and blindness."
+toll:
+  text: "171.6 million people treated in 26 countries in 2024 (WHO)."
+  url: https://www.who.int/news-room/fact-sheets/detail/onchocerciasis
+status:
+  level: 2
+  why: "Yearly ivermectin kills the young worms and prevents blindness, but the adult worms survive for years, so treatment must continue."
+  today: "Community-wide ivermectin controls symptoms and stops spread when taken for years. Colombia, Ecuador, Mexico, Guatemala and, in 2025, Niger have been verified free of the disease. There is no approved drug that kills the adult worm in a short course."
+  last_reviewed: null
+treatment:
+  best:
+  - "Ivermectin (yearly or twice yearly)"
+  burden: light
+  burden_note: "A single dose of tablets once or twice a year, for 10 to 15 years."
+forecast:
+  bottleneck: design-limited
+pipeline:
+- name: "Emodepside (DNDi and Bayer)"
+  stage: "Phase 2"
+  note: "Candidate drug to kill adult worms; part 1 of its Phase 2 trial showed acceptable safety and activity against young and adult worms."
+  url: https://dndi.org/research-development/portfolio/emodepside
+  effect: big
+  effect_note: "A short course that kills adult worms would make cure possible and speed elimination."
+recent:
+- date: "2025-01"
+  text: "WHO verified Niger as the first African country to eliminate river blindness."
+  url: https://www.healio.com/news/infectious-disease/20250205/who-niger-first-african-country-to-eliminate-river-blindness
+next_milestone: null
+markets: []

@@ -1,0 +1,30 @@
+# Cure Watch disease record. Field guide: CONTRIBUTING.md. Sources live in research.md.
+id: soil-transmitted-helminths
+name: "Soil-transmitted worms (hookworm, roundworm, whipworm)"
+category: infectious
+tracking: proposed
+summary: "Intestinal worm infections picked up from soil contaminated with human feces, which can cause anemia, malnutrition and stunted growth in children."
+toll:
+  text: "About 1.5 billion people infected, 24% of the world (WHO)."
+  url: https://www.who.int/news-room/fact-sheets/detail/soil-transmitted-helminth-infections
+  ratio: "1 in 4"
+  ratio_caption: "people worldwide are infected, according to WHO"
+  ratio_url: https://www.who.int/news-room/fact-sheets/detail/soil-transmitted-helminth-infections
+status:
+  level: 3
+  why: "Cheap single-dose pills clear many infections, but they work poorly against some worms and people are quickly reinfected."
+  today: "WHO recommends regular albendazole or mebendazole for children where infection is common, and more than 883 million children needed it in 2024. Clean water, toilets and hygiene prevent reinfection. One worm, Strongyloides, does not respond to these drugs and needs ivermectin."
+  last_reviewed: null
+treatment:
+  best:
+  - "Albendazole"
+  - "Mebendazole"
+  - "Ivermectin (for Strongyloides)"
+  burden: light
+  burden_note: "A single cheap dose once or twice a year."
+forecast:
+  bottleneck: access-limited
+pipeline: []
+recent: []
+next_milestone: null
+markets: []
